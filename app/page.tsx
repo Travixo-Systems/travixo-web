@@ -1,8 +1,11 @@
 import Image from 'next/image';
+import Navigation from './components/navigation';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      <Navigation />
+      <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20">
         {/* Logo */}
@@ -274,5 +277,6 @@ export default function Home() {
         </div>
       </footer>
     </main>
+    </>
   );
 }
