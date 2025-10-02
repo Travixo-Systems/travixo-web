@@ -170,8 +170,8 @@ export default function PricingPage() {
                   Is there a free trial?
                 </h3>
                 <p className="text-gray-600">
-                  Yes! Founding customers (first 20 companies) get a 3-month
-                  free pilot with up to 100 assets. After the pilot, you can
+                  Yes! Founding customers (first 20 companies) get a 2-month
+                  free pilot with up to 60 assets. After the pilot, you can
                   choose any paid plan.
                 </p>
               </div>

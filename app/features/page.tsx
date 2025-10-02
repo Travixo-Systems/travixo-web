@@ -13,20 +13,20 @@ export default function FeaturesPage() {
       <main className="min-h-screen bg-white">
         
         {/* Hero */}
-        <section className="container mx-auto px-4 py-16 max-w-5xl">
+        <section className="container mx-auto px-4 py-10 max-w-5xl">
           <h1 className="text-md font-bold text-center text-gray-900 mb-4">
             Everything You Need to Master Asset Tracking
           </h1>
-          <p className="text-xl text-center text-gray-600 mb-12">
+          <p className="text-xl text-center text-gray-600 mb-2">
             TraviXO combines simple QR technology with enterprise-grade integrations 
             to give you complete visibility and control over your equipment fleet.
           </p>
         </section>
 
         {/* Core Features */}
-        <section className="bg-gray-50 py-16">
+        <section className="bg-[#2d3a39] py-8">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 className="text-3xl font-bold text-center text-white mb-6">
               Core Features
             </h2>
 
