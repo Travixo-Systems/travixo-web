@@ -48,7 +48,7 @@ export default function ProblemSolutionCarousel() {
                   2-5% Asset Loss Every Year
                 </h3>
                 <p className="text-gray-600">
-                  For €20M in equipment, that's €400k-1M written off annually.
+                  For €20M in equipment, that&apos;s €400k-1M written off annually.
                 </p>
               </div>
 

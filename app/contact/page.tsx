@@ -9,11 +9,11 @@ export default function ContactPage() {
         {/* Hero */}
         <section className="container mx-auto px-4 py-20 max-w-4xl">
           <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
-            Let's Talk About Your Equipment Tracking Needs
+            Let&apos;s Talk About Your Equipment Tracking Needs
           </h1>
           <p className="text-xl text-center text-gray-600 mb-16">
-            Whether you're interested in a pilot, have questions about integrations, 
-            or want to see TraviXO in action, we're here to help.
+            Whether you&apos;re interested in a pilot, have questions about integrations, 
+            or want to see TraviXO in action, we&apos;re here to help.
           </p>
 
           {/* Contact Form */}
@@ -90,7 +90,7 @@ export default function ContactPage() {
 
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  What's your fleet size? *
+                  What&apos;s your fleet size? *
                 </label>
                 <select 
                   required

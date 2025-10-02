@@ -48,7 +48,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600">
                   Real-time QR scanning means you always know where your assets
-                  are. No more writing off "missing" equipment.
+                  are. No more writing off &quot;missing&quot; equipment.
                 </p>
               </div>
 

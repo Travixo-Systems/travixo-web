@@ -124,10 +124,10 @@ export default function PricingPage() {
               
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  What counts as an "asset"?
+                  What counts as an &quot;asset&quot;?
                 </h3>
                 <p className="text-gray-600">
-                  An asset is any piece of equipment you're tracking. This includes heavy machinery, 
+                  An asset is any piece of equipment you&apos;re tracking. This includes heavy machinery, 
                   tools, vehicles, containers—anything with a QR code attached.
                 </p>
               </div>
@@ -137,7 +137,7 @@ export default function PricingPage() {
                   Can I change plans later?
                 </h3>
                 <p className="text-gray-600">
-                  Yes, upgrade or downgrade anytime. If you upgrade mid-month, we'll prorate the difference. 
+                  Yes, upgrade or downgrade anytime. If you upgrade mid-month, we&apos;'ll prorate the difference. 
                   If you downgrade, the new rate applies at your next billing cycle.
                 </p>
               </div>
