@@ -137,7 +137,7 @@ export default function PricingPage() {
                   Can I change plans later?
                 </h3>
                 <p className="text-gray-600">
-                  Yes, upgrade or downgrade anytime. If you upgrade mid-month, we&apos;'ll prorate the difference. 
+                  Yes, upgrade or downgrade anytime. If you upgrade mid-month, we&apos;ll prorate the difference. 
                   If you downgrade, the new rate applies at your next billing cycle.
                 </p>
               </div>
