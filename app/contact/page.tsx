@@ -1,5 +1,10 @@
 import Navigation from '../components/navigation';
 
+export const metadata = {
+  title: 'Contact - TraviXO',
+  description: 'Get in touch about a free pilot. Contact TraviXO for equipment tracking solutions.',
+}
+
 export default function ContactPage() {
   return (
     <>

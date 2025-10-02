@@ -1,4 +1,10 @@
+import Link from "next/link";
 import Navigation from '../components/navigation';
+
+export const metadata = {
+  title: 'Features - TraviXO Asset Tracking',
+  description: 'Complete asset tracking features: QR codes, mobile scanning, real-time dashboards, and enterprise integrations.',
+}
 
 export default function FeaturesPage() {
   return (
@@ -7,34 +13,31 @@ export default function FeaturesPage() {
       <main className="min-h-screen bg-white">
         
         {/* Hero */}
-        <section className="container mx-auto px-4 py-20 max-w-5xl">
-          <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
+        <section className="container mx-auto px-4 py-16 max-w-5xl">
+          <h1 className="text-md font-bold text-center text-gray-900 mb-4">
             Everything You Need to Master Asset Tracking
           </h1>
-          <p className="text-xl text-center text-gray-600 mb-16">
+          <p className="text-xl text-center text-gray-600 mb-12">
             TraviXO combines simple QR technology with enterprise-grade integrations 
             to give you complete visibility and control over your equipment fleet.
           </p>
         </section>
 
         {/* Core Features */}
-        <section className="bg-gray-50 py-20">
+        <section className="bg-gray-50 py-16">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
               Core Features
             </h2>
 
-            <div className="space-y-16">
+            <div className="space-y-12">
               
               {/* Feature 1 */}
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-4xl">🏷️</span>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    QR Code Asset Tracking
-                  </h3>
-                </div>
-                <p className="text-gray-600 mb-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  QR Code Asset Tracking
+                </h3>
+                <p className="text-gray-600 mb-4">
                   Generate unlimited QR codes for your entire fleet. Each asset gets a unique, 
                   scannable code that links to its digital record in TraviXO.
                 </p>
@@ -47,14 +50,11 @@ export default function FeaturesPage() {
               </div>
 
               {/* Feature 2 */}
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-4xl">📱</span>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Mobile-First Scanning
-                  </h3>
-                </div>
-                <p className="text-gray-600 mb-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Mobile-First Scanning
+                </h3>
+                <p className="text-gray-600 mb-4">
                   Your team can scan assets using any smartphone—no app download required. 
                   Fast, accurate, works in low light.
                 </p>
@@ -67,14 +67,11 @@ export default function FeaturesPage() {
               </div>
 
               {/* Feature 3 */}
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-4xl">📊</span>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Real-Time Dashboards
-                  </h3>
-                </div>
-                <p className="text-gray-600 mb-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Real-Time Dashboards
+                </h3>
+                <p className="text-gray-600 mb-4">
                   Know exactly where every asset is, who has it, and when it was last verified. 
                   Filter by status, location, category, or custom fields.
                 </p>
@@ -87,14 +84,11 @@ export default function FeaturesPage() {
               </div>
 
               {/* Feature 4 */}
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-4xl">✅</span>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Digital Inventory Audits
-                  </h3>
-                </div>
-                <p className="text-gray-600 mb-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Digital Inventory Audits
+                </h3>
+                <p className="text-gray-600 mb-4">
                   Replace manual audits with digital workflows. Generate expected asset lists, 
                   track verification progress in real-time, and flag discrepancies automatically.
                 </p>
@@ -107,14 +101,11 @@ export default function FeaturesPage() {
               </div>
 
               {/* Feature 5 */}
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-4xl">🔗</span>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Enterprise Integrations
-                  </h3>
-                </div>
-                <p className="text-gray-600 mb-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Enterprise Integrations
+                </h3>
+                <p className="text-gray-600 mb-4">
                   Your asset data flows everywhere it needs to go. Push to ServiceNow, 
                   sync costs to QuickBooks, or build custom integrations via webhooks.
                 </p>
@@ -127,14 +118,11 @@ export default function FeaturesPage() {
               </div>
 
               {/* Feature 6 */}
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-4xl">👥</span>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Team Management & Security
-                  </h3>
-                </div>
-                <p className="text-gray-600 mb-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Team Management & Security
+                </h3>
+                <p className="text-gray-600 mb-4">
                   Role-based permissions, audit logs, and multi-location support ensure 
                   your team has the right access.
                 </p>
@@ -151,14 +139,14 @@ export default function FeaturesPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-gray-900 text-white">
+        <section className="py-16 bg-gray-900 text-white">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">
               Ready to See TraviXO in Action?
             </h2>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+            <Link href="/contact" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-block">
               Start Your Free Pilot
-            </button>
+            </Link>
           </div>
         </section>
 

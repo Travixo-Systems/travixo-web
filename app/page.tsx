@@ -3,13 +3,18 @@ import Navigation from "./components/navigation";
 
 import ProblemSolutionCarousel from "./components/ProblemSolutionCarousel";
 
+export const metadata = {
+  title: 'TraviXO - QR-Based Asset Tracking for Equipment Rental',
+  description: 'Eliminate equipment loss with TraviXO. Real-time QR tracking and automated audits for equipment rental companies.',
+}
+
 export default function Home() {
   return (
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-16">
+        <section className="container mx-auto px-4 py-8">
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-6">
             Stop Losing Equipment.
@@ -38,11 +43,11 @@ export default function Home() {
           </div>
         </section>
         {/* Value Props */}
-        <section className="bg-gray-50 py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <section className="bg-gray-50 py-8">
+          <div className="container mx-auto px-2">
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {/* Card 1 */}
-              <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Reduce Loss by 70%
                 </h3>
@@ -53,7 +58,7 @@ export default function Home() {
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   2-Day Audits, Not 2 Weeks
                 </h3>
@@ -65,7 +70,7 @@ export default function Home() {
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Enterprise-Ready Integrations
                 </h3>
@@ -83,7 +88,7 @@ export default function Home() {
         <ProblemSolutionCarousel />
 
         {/* Final CTA Section */}
-        <section className="py-20 bg-gray-900 text-white">
+        <section className="py-10 bg-gray-900 text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-4xl font-bold mb-6">
               Ready to Stop Losing Equipment?
@@ -116,7 +121,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-black text-gray-400 py-8">
+        <footer className="bg-black text-gray-400 py-4">
           <div className="container mx-auto px-4 text-center">
             <p>© 2025 TraviXO Systems. All rights reserved.</p>
             <p className="mt-2 text-sm">

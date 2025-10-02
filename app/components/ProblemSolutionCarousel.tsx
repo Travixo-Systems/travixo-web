@@ -6,7 +6,7 @@ export default function ProblemSolutionCarousel() {
   const [activeTab, setActiveTab] = useState<"problem" | "solution">("problem");
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Tab Buttons */}
         <div className="flex justify-center gap-4 mb-12">

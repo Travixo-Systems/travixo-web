@@ -1,26 +1,32 @@
-import Navigation from '../components/navigation';
+import Navigation from "../components/navigation";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Pricing - TraviXO",
+  description:
+    "Simple transparent pricing for equipment tracking. Plans from €250/month.",
+};
 
 export default function PricingPage() {
   return (
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
-        
         {/* Hero */}
         <section className="container mx-auto px-4 py-20 max-w-5xl">
           <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
             Simple, Transparent Pricing
           </h1>
           <p className="text-xl text-center text-gray-600 mb-16">
-            Choose the plan that fits your fleet size. All plans include unlimited scans, 
-            QR code generation, and email support. Upgrade or downgrade anytime.
+            Choose the plan that fits your fleet size. All plans include
+            unlimited scans, QR code generation, and email support. Upgrade or
+            downgrade anytime.
           </p>
         </section>
 
         {/* Pricing Cards */}
         <section className="container mx-auto px-4 pb-20 max-w-7xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
             {/* Starter */}
             <div className="border-2 border-gray-200 rounded-lg p-8 hover:border-orange-500 transition-colors">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
@@ -28,7 +34,9 @@ export default function PricingPage() {
                 <span className="text-4xl font-bold">€250</span>
                 <span className="text-gray-600">/month</span>
               </div>
-              <p className="text-gray-600 mb-6">Perfect for small equipment rental companies</p>
+              <p className="text-gray-600 mb-6">
+                Perfect for small equipment rental companies
+              </p>
               <ul className="space-y-3 mb-8 text-gray-600">
                 <li>✓ Up to 100 assets</li>
                 <li>✓ 5 team members</li>
@@ -38,9 +46,12 @@ export default function PricingPage() {
                 <li>✓ CSV export</li>
                 <li>✓ Email support</li>
               </ul>
-              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+              <Link
+                href="/contact"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-block"
+              >
                 Start Free Pilot
-              </button>
+              </Link>
             </div>
 
             {/* Professional */}
@@ -48,12 +59,16 @@ export default function PricingPage() {
               <div className="absolute top-0 right-0 bg-orange-500 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-semibold">
                 POPULAR
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Professional
+              </h3>
               <div className="mb-6">
                 <span className="text-4xl font-bold">€750</span>
                 <span className="text-gray-600">/month</span>
               </div>
-              <p className="text-gray-600 mb-6">Growing companies with multiple locations</p>
+              <p className="text-gray-600 mb-6">
+                Growing companies with multiple locations
+              </p>
               <ul className="space-y-3 mb-8 text-gray-600">
                 <li>✓ Up to 500 assets</li>
                 <li>✓ 20 team members</li>
@@ -70,12 +85,16 @@ export default function PricingPage() {
 
             {/* Business */}
             <div className="border-2 border-gray-200 rounded-lg p-8 hover:border-orange-500 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Business</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Business
+              </h3>
               <div className="mb-6">
                 <span className="text-4xl font-bold">€2,500</span>
                 <span className="text-gray-600">/month</span>
               </div>
-              <p className="text-gray-600 mb-6">Mid-market with audits and integrations</p>
+              <p className="text-gray-600 mb-6">
+                Mid-market with audits and integrations
+              </p>
               <ul className="space-y-3 mb-8 text-gray-600">
                 <li>✓ Up to 2,000 assets</li>
                 <li>✓ 50 team members</li>
@@ -92,11 +111,15 @@ export default function PricingPage() {
 
             {/* Enterprise */}
             <div className="border-2 border-gray-200 rounded-lg p-8 hover:border-orange-500 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Enterprise
+              </h3>
               <div className="mb-6">
                 <span className="text-4xl font-bold">Custom</span>
               </div>
-              <p className="text-gray-600 mb-6">Large companies with complex needs</p>
+              <p className="text-gray-600 mb-6">
+                Large companies with complex needs
+              </p>
               <ul className="space-y-3 mb-8 text-gray-600">
                 <li>✓ Unlimited assets</li>
                 <li>✓ Unlimited users</li>
@@ -110,7 +133,6 @@ export default function PricingPage() {
                 Contact Sales
               </button>
             </div>
-
           </div>
         </section>
 
@@ -121,14 +143,14 @@ export default function PricingPage() {
               Frequently Asked Questions
             </h2>
             <div className="space-y-8">
-              
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   What counts as an &quot;asset&quot;?
                 </h3>
                 <p className="text-gray-600">
-                  An asset is any piece of equipment you&apos;re tracking. This includes heavy machinery, 
-                  tools, vehicles, containers—anything with a QR code attached.
+                  An asset is any piece of equipment you&apos;re tracking. This
+                  includes heavy machinery, tools, vehicles, containers—anything
+                  with a QR code attached.
                 </p>
               </div>
 
@@ -137,8 +159,9 @@ export default function PricingPage() {
                   Can I change plans later?
                 </h3>
                 <p className="text-gray-600">
-                  Yes, upgrade or downgrade anytime. If you upgrade mid-month, we&apos;ll prorate the difference. 
-                  If you downgrade, the new rate applies at your next billing cycle.
+                  Yes, upgrade or downgrade anytime. If you upgrade mid-month,
+                  we&apos;ll prorate the difference. If you downgrade, the new
+                  rate applies at your next billing cycle.
                 </p>
               </div>
 
@@ -147,8 +170,9 @@ export default function PricingPage() {
                   Is there a free trial?
                 </h3>
                 <p className="text-gray-600">
-                  Yes! Founding customers (first 20 companies) get a 3-month free pilot with up to 100 assets. 
-                  After the pilot, you can choose any paid plan.
+                  Yes! Founding customers (first 20 companies) get a 3-month
+                  free pilot with up to 100 assets. After the pilot, you can
+                  choose any paid plan.
                 </p>
               </div>
 
@@ -157,11 +181,10 @@ export default function PricingPage() {
                   Where is my data stored?
                 </h3>
                 <p className="text-gray-600">
-                  All data is hosted in EU datacenters (France) with full GDPR compliance. 
-                  We never store data outside the EU.
+                  All data is hosted in EU datacenters (France) with full GDPR
+                  compliance. We never store data outside the EU.
                 </p>
               </div>
-
             </div>
           </div>
         </section>
@@ -169,15 +192,12 @@ export default function PricingPage() {
         {/* CTA */}
         <section className="py-20 bg-gray-900 text-white">
           <div className="container mx-auto px-4 max-w-3xl text-center">
-            <h2 className="text-4xl font-bold mb-6">
-              Ready to Track Smarter?
-            </h2>
+            <h2 className="text-4xl font-bold mb-6">Ready to Track Smarter?</h2>
             <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
               Start Your Free Pilot
             </button>
           </div>
         </section>
-
       </main>
 
       <footer className="bg-black text-gray-400 py-8">
