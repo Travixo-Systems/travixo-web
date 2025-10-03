@@ -13,11 +13,11 @@ export default function PricingPage() {
       <Navigation />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="container mx-auto px-4 py-20 max-w-5xl">
-          <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
+        <section className="container mx-auto px-4 py-10 max-w-5xl">
+          <h1 className="text-5xl font-bold text-center text-gray-900 mb-4">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-xl text-center text-gray-600 mb-16">
+          <p className="text-xl text-center text-gray-600 mb-4">
             Choose the plan that fits your fleet size. All plans include
             unlimited scans, QR code generation, and email support. Upgrade or
             downgrade anytime.
@@ -25,119 +25,101 @@ export default function PricingPage() {
         </section>
 
         {/* Pricing Cards */}
-        <section className="container mx-auto px-4 pb-20 max-w-7xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section className="container mx-auto px-4 pb-16 max-w-7xl">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Starter */}
-            <div className="border-2 border-gray-200 rounded-lg p-8 hover:border-orange-500 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">€250</span>
-                <span className="text-gray-600">/month</span>
+            <div className="border-2 border-gray-200 rounded-lg p-4 hover:border-orange-500 transition-colors">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Starter</h3>
+              <div className="mb-3">
+                <span className="text-2xl font-bold">€250</span>
+                <span className="text-sm text-gray-600">/mo</span>
               </div>
-              <p className="text-gray-600 mb-6">
-                Perfect for small equipment rental companies
-              </p>
-              <ul className="space-y-3 mb-8 text-gray-600">
-                <li>✓ Up to 100 assets</li>
+              <p className="text-sm text-gray-600 mb-3">Small companies</p>
+              <ul className="space-y-1 mb-4 text-sm text-gray-600">
+                <li>✓ 100 assets</li>
                 <li>✓ 5 team members</li>
-                <li>✓ Unlimited QR scans</li>
-                <li>✓ Mobile scanning (PWA)</li>
-                <li>✓ Real-time dashboard</li>
+                <li>✓ Unlimited scans</li>
+                <li>✓ Mobile scanning</li>
+                <li>✓ Dashboard</li>
                 <li>✓ CSV export</li>
-                <li>✓ Email support</li>
               </ul>
-              <Link
-                href="/contact"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-block"
-              >
-                Start Free Pilot
-              </Link>
+              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+                Start Pilot
+              </button>
             </div>
 
             {/* Professional */}
-            <div className="border-2 border-orange-500 rounded-lg p-8 relative">
-              <div className="absolute top-0 right-0 bg-orange-500 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-semibold">
+            <div className="border-2 border-orange-500 rounded-lg p-4 relative">
+              <div className="absolute -top-3 right-2 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                 POPULAR
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
                 Professional
               </h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">€750</span>
-                <span className="text-gray-600">/month</span>
+              <div className="mb-3">
+                <span className="text-2xl font-bold">€750</span>
+                <span className="text-sm text-gray-600">/mo</span>
               </div>
-              <p className="text-gray-600 mb-6">
-                Growing companies with multiple locations
-              </p>
-              <ul className="space-y-3 mb-8 text-gray-600">
-                <li>✓ Up to 500 assets</li>
+              <p className="text-sm text-gray-600 mb-3">Growing companies</p>
+              <ul className="space-y-1 mb-4 text-sm text-gray-600">
+                <li>✓ 500 assets</li>
                 <li>✓ 20 team members</li>
-                <li>✓ Multi-location support</li>
-                <li>✓ Zapier integration</li>
-                <li>✓ Webhooks & API access</li>
-                <li>✓ Advanced reporting</li>
+                <li>✓ Multi-location</li>
+                <li>✓ Zapier</li>
+                <li>✓ API access</li>
                 <li>✓ Priority support</li>
               </ul>
-              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
-                Start Free Pilot
+              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+                Start Pilot
               </button>
             </div>
 
             {/* Business */}
-            <div className="border-2 border-gray-200 rounded-lg p-8 hover:border-orange-500 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Business
-              </h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">€2,500</span>
-                <span className="text-gray-600">/month</span>
+            <div className="border-2 border-gray-200 rounded-lg p-4 hover:border-orange-500 transition-colors">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Business</h3>
+              <div className="mb-3">
+                <span className="text-2xl font-bold">€2,500</span>
+                <span className="text-sm text-gray-600">/mo</span>
               </div>
-              <p className="text-gray-600 mb-6">
-                Mid-market with audits and integrations
-              </p>
-              <ul className="space-y-3 mb-8 text-gray-600">
-                <li>✓ Up to 2,000 assets</li>
+              <p className="text-sm text-gray-600 mb-3">Mid-market</p>
+              <ul className="space-y-1 mb-4 text-sm text-gray-600">
+                <li>✓ 2,000 assets</li>
                 <li>✓ 50 team members</li>
-                <li>✓ Digital audit module</li>
+                <li>✓ Audit module</li>
                 <li>✓ 2 ITSM integrations</li>
-                <li>✓ QuickBooks/Xero sync</li>
-                <li>✓ Custom workflows</li>
+                <li>✓ QuickBooks sync</li>
                 <li>✓ Phone support</li>
               </ul>
-              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors">
-                Schedule Demo
+              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+                Demo
               </button>
             </div>
 
             {/* Enterprise */}
-            <div className="border-2 border-gray-200 rounded-lg p-8 hover:border-orange-500 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+            <div className="border-2 border-gray-200 rounded-lg p-4 hover:border-orange-500 transition-colors">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
                 Enterprise
               </h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">Custom</span>
+              <div className="mb-3">
+                <span className="text-2xl font-bold">Custom</span>
               </div>
-              <p className="text-gray-600 mb-6">
-                Large companies with complex needs
-              </p>
-              <ul className="space-y-3 mb-8 text-gray-600">
+              <p className="text-sm text-gray-600 mb-3">Large companies</p>
+              <ul className="space-y-1 mb-4 text-sm text-gray-600">
                 <li>✓ Unlimited assets</li>
                 <li>✓ Unlimited users</li>
                 <li>✓ All integrations</li>
-                <li>✓ Custom development</li>
+                <li>✓ Custom dev</li>
                 <li>✓ Dedicated manager</li>
                 <li>✓ 99.9% SLA</li>
-                <li>✓ 1-hour support</li>
               </ul>
-              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors">
-                Contact Sales
+              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+                Contact
               </button>
             </div>
           </div>
         </section>
-
         {/* FAQ */}
-        <section className="bg-gray-50 py-20">
+        <section className="bg-gray-50 py-10">
           <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
               Frequently Asked Questions
@@ -149,7 +131,7 @@ export default function PricingPage() {
                 </h3>
                 <p className="text-gray-600">
                   An asset is any piece of equipment you&apos;re tracking. This
-                  includes heavy machinery, tools, vehicles, containers—anything
+                  includes heavy machinery, tools, vehicles, containers anything
                   with a QR code attached.
                 </p>
               </div>
