@@ -4,9 +4,10 @@ import Navigation from "./components/navigation";
 import ProblemSolutionCarousel from "./components/ProblemSolutionCarousel";
 
 export const metadata = {
-  title: 'TraviXO - QR-Based Asset Tracking for Equipment Rental',
-  description: 'Eliminate equipment loss with TraviXO. Real-time QR tracking and automated audits for equipment rental companies.',
-}
+  title: "TraviXO - QR-Based Asset Tracking for Equipment Rental",
+  description:
+    "Eliminate equipment loss with TraviXO. Real-time QR tracking and automated audits for equipment rental companies.",
+};
 
 export default function Home() {
   return (
@@ -133,6 +134,15 @@ export default function Home() {
               </a>
               {" • "}
               <span>+33 78 335 75 35</span>
+            </p>
+            <p className="mt-2 text-sm">
+              <a href="/privacy" className="hover:text-white">
+                Privacy Policy
+              </a>
+              {" • "}
+              <a href="/terms" className="hover:text-white">
+                Terms of Service
+              </a>
             </p>
           </div>
         </footer>

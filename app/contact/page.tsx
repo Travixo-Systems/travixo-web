@@ -1,37 +1,37 @@
-import Navigation from '../components/navigation';
+import Navigation from "../components/navigation";
 
 export const metadata = {
-  title: 'Contact - TraviXO',
-  description: 'Get in touch about a free pilot. Contact TraviXO for equipment tracking solutions.',
-}
+  title: "Contact - TraviXO",
+  description:
+    "Get in touch about a free pilot. Contact TraviXO for equipment tracking solutions.",
+};
 
 export default function ContactPage() {
   return (
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
-        
         {/* Hero */}
         <section className="container mx-auto px-4 py-20 max-w-4xl">
           <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
             Let&apos;s Talk About Your Equipment Tracking Needs
           </h1>
           <p className="text-xl text-center text-gray-600 mb-16">
-            Whether you&apos;re interested in a pilot, have questions about integrations, 
-            or want to see TraviXO in action, we&apos;re here to help.
+            Whether you&apos;re interested in a pilot, have questions about
+            integrations, or want to see TraviXO in action, we&apos;re here to
+            help.
           </p>
 
           {/* Contact Form */}
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8">
             <form className="space-y-6">
-              
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Full Name *
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     placeholder="John Doe"
@@ -42,8 +42,8 @@ export default function ContactPage() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Email *
                   </label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     placeholder="john@company.com"
@@ -56,8 +56,8 @@ export default function ContactPage() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Company *
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     placeholder="Your Company"
@@ -68,7 +68,7 @@ export default function ContactPage() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Phone (optional)
                   </label>
-                  <input 
+                  <input
                     type="tel"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     placeholder="+33 1 23 45 67 89"
@@ -80,7 +80,7 @@ export default function ContactPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   What best describes you? *
                 </label>
-                <select 
+                <select
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 >
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   What&apos;s your fleet size? *
                 </label>
-                <select 
+                <select
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 >
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Message *
                 </label>
-                <textarea 
+                <textarea
                   required
                   rows={6}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
@@ -121,13 +121,12 @@ export default function ContactPage() {
                 />
               </div>
 
-              <button 
+              <button
                 type="submit"
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
               >
                 Send Message
               </button>
-
             </form>
           </div>
 
@@ -135,13 +134,19 @@ export default function ContactPage() {
           <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-              <a href="mailto:travixosystems@gmail.com" className="text-orange-500 hover:text-orange-600">
+              <a
+                href="mailto:travixosystems@gmail.com"
+                className="text-orange-500 hover:text-orange-600"
+              >
                 travixosystems@gmail.com
               </a>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
-              <a href="tel:+33783357535" className="text-orange-500 hover:text-orange-600">
+              <a
+                href="tel:+33783357535"
+                className="text-orange-500 hover:text-orange-600"
+              >
                 +33 78 335 75 35
               </a>
             </div>
@@ -150,15 +155,22 @@ export default function ContactPage() {
               <p className="text-gray-600">Paris, France</p>
             </div>
           </div>
-
         </section>
-
       </main>
 
       {/* Footer */}
       <footer className="bg-black text-gray-400 py-8">
         <div className="container mx-auto px-4 text-center">
           <p>© 2025 TraviXO Systems. All rights reserved.</p>
+          <p className="mt-2 text-sm">
+            <a href="/privacy" className="hover:text-white">
+              Privacy Policy
+            </a>
+            {" • "}
+            <a href="/terms" className="hover:text-white">
+              Terms of Service
+            </a>
+          </p>
         </div>
       </footer>
     </>
