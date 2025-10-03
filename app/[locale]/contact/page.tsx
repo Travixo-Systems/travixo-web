@@ -2,8 +2,12 @@
 
 import Navigation from "../components/navigation";
 import { useState } from 'react';
+import Link from "next/link";
+import { use } from "react"; 
 
-export default function ContactPage() {
+export default function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = use(params);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,7 +17,7 @@ export default function ContactPage() {
     fleetSize: '',
     message: ''
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | '_error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,9 +28,7 @@ export default function ContactPage() {
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
@@ -42,9 +44,7 @@ ${formData.message}
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to send message');
-      }
+      if (!response.ok) throw new Error('Failed to send message');
 
       setStatus('success');
       setFormData({
@@ -57,12 +57,14 @@ ${formData.message}
         message: ''
       });
     } catch (_error) {
-      setStatus('_error');
+      setStatus('error');
       setErrorMessage('Failed to send message. Please try emailing us directly at info@travixosystems.com');
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
@@ -92,7 +94,7 @@ ${formData.message}
               </div>
             )}
 
-            {status === '_error' && (
+            {status === 'error' && (
               <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
                 <p className="text-red-800 font-semibold">Error sending message</p>
                 <p className="text-red-700 text-sm">{errorMessage}</p>
@@ -100,6 +102,8 @@ ${formData.message}
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* --- FORM FIELDS --- */}
+              {/* Full Name + Email */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -132,6 +136,7 @@ ${formData.message}
                 </div>
               </div>
 
+              {/* Company + Phone */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -163,6 +168,7 @@ ${formData.message}
                 </div>
               </div>
 
+              {/* Type */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   What best describes you? *
@@ -183,6 +189,7 @@ ${formData.message}
                 </select>
               </div>
 
+              {/* Fleet Size */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   What&apos;s your fleet size? *
@@ -202,6 +209,7 @@ ${formData.message}
                 </select>
               </div>
 
+              {/* Message */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Message *
@@ -217,6 +225,7 @@ ${formData.message}
                 />
               </div>
 
+              {/* Submit */}
               <button
                 type="submit"
                 disabled={status === 'loading'}
@@ -236,16 +245,16 @@ ${formData.message}
                 className="text-orange-500 hover:text-orange-600"
               >
                 info@travixosystems.com
-              </Link>
+              </a>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
-              
-              <a  href="tel:+33783357535"
+              <a
+                href="tel:+33783357535"
                 className="text-orange-500 hover:text-orange-600"
               >
                 +33 78 335 75 35
-              </Link>
+              </a>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Location</h3>
@@ -255,15 +264,16 @@ ${formData.message}
         </section>
       </main>
 
+      {/* Footer inline */}
       <footer className="bg-black text-gray-400 py-8">
         <div className="container mx-auto px-4 text-center">
           <p>© 2025 TraviXO Systems. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            <a href="/privacy" className="hover:text-white">
+            <Link href={`/${locale}/privacy`} className="hover:text-white">
               Privacy Policy
             </Link>
             {" • "}
-            <a href="/terms" className="hover:text-white">
+            <Link href={`/${locale}/terms`} className="hover:text-white">
               Terms of Service
             </Link>
           </p>

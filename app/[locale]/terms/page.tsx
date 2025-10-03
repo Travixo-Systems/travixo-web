@@ -6,10 +6,13 @@ export const metadata = {
   description: "TraviXO terms of service and user agreement.",
 };
 
-export default function TermsPage() {
+export default function TermsPage({ params }: { params: { locale: string } }) {
+  const { locale } = params;
+
   return (
     <>
       <Navigation />
+
       <main className="min-h-screen bg-white">
         <div className="container border-l-4 border-[#f26f00] mx-auto px-4 py-12 max-w-4xl">
           <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
@@ -455,11 +458,11 @@ export default function TermsPage() {
         <div className="container mx-auto px-4 text-center">
           <p>© 2025 TraviXO Systems. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            <Link href="/privacy" className="hover:text-white">
+            <Link href={`/${locale}/privacy`} className="hover:text-white">
               Privacy Policy
             </Link>
             {" • "}
-            <Link href="/terms" className="hover:text-white">
+            <Link href={`/${locale}/terms`} className="hover:text-white">
               Terms of Service
             </Link>
           </p>

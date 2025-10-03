@@ -1,43 +1,37 @@
 import Link from "next/link";
 import Navigation from "./components/navigation";
-
 import ProblemSolutionCarousel from "./components/ProblemSolutionCarousel";
+import { getTranslations } from "next-intl/server";
 
-import { getTranslations } from 'next-intl/server';
-
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ _locale: string }>
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
 }) {
-  const { _locale } = await params;
-  const t = await getTranslations({ _locale, namespace: 'metadata.home' });
+  const { locale } = params;
+  const t = await getTranslations({ locale: locale, namespace: "metadata.home" });
 
   return {
-    title: t('title'),
-    description: t('description'),
+    title: t("title"),
+    description: t("description"),
   };
 }
-export default async function Home({ 
-  params 
-}: { 
-  params: Promise<{ _locale: string }>
-}) {
-  const { _locale } = await params;
+
+export default function Home({ params }: { params: { locale: string } }) {
+  const { locale } = params;
+
   return (
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-8">
-          {/* Headline */}
           <h1 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-6">
             Stop Losing Equipment.
             <br />
             Start Tracking Smarter.
           </h1>
 
-          {/* Subheadline */}
           <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-4">
             TraviXO helps equipment rental companies eliminate asset loss,
             automate quarterly audits, and track every piece of equipment in
@@ -47,7 +41,7 @@ export default async function Home({
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-2 justify-center">
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors block text-center"
             >
               Start Free Pilot
@@ -57,11 +51,11 @@ export default async function Home({
             </button>
           </div>
         </section>
+
         {/* Value Props */}
         <section className="bg-gray-50 py-8">
           <div className="container mx-auto px-2">
             <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-              {/* Card 1 */}
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-1">
                   Reduce Loss by 70%
@@ -72,7 +66,6 @@ export default async function Home({
                 </p>
               </div>
 
-              {/* Card 2 */}
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-1">
                   2-Day Audits, Not 2 Weeks
@@ -84,7 +77,6 @@ export default async function Home({
                 </p>
               </div>
 
-              {/* Card 3 */}
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-1">
                   Enterprise-Ready Integrations
@@ -97,9 +89,8 @@ export default async function Home({
             </div>
           </div>
         </section>
-        {/* Problem Section */}
 
-        {/* Solution Section */}
+        {/* Problem + Solution */}
         <ProblemSolutionCarousel />
 
         {/* Final CTA Section */}
@@ -116,11 +107,11 @@ export default async function Home({
 
             <div className="flex flex-col sm:flex-row gap-2 justify-center mb-6">
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-block text-center"
               >
                 Start Your Free Pilot
-              </Link>{" "}
+              </Link>
               <button className="bg-gray-700 hover:bg-gray-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
                 Schedule a Demo
               </button>
@@ -145,16 +136,16 @@ export default async function Home({
                 className="hover:text-white"
               >
                 travixosystems@gmail.com
-              </Link>
+              </a>
               {" • "}
               <span>+33 78 335 75 35</span>
             </p>
             <p className="mt-2 text-sm">
-              <a href="/privacy" className="hover:text-white">
+              <Link href={`/${locale}/privacy`} className="hover:text-white">
                 Privacy Policy
               </Link>
               {" • "}
-              <a href="/terms" className="hover:text-white">
+              <Link href={`/${locale}/terms`} className="hover:text-white">
                 Terms of Service
               </Link>
             </p>

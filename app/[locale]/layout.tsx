@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
-import { ReactNode } from 'react';
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { ReactNode } from "react";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -18,29 +17,34 @@ const geistMono = Geist_Mono({
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ _locale: string }>;
+  params: { locale: string };
 };
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const params = await props.params;
-  const t = await getTranslations({ _locale: params._locale, namespace: 'metadata.home' });
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: "metadata.home" });
 
   return {
-    title: t('title'),
-    description: t('description'),
+    title: t("title"),
+    description: t("description"),
   };
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const { _locale } = await params;
-  
+  const { locale } = params;
+
   // Enable static rendering
-  setRequestLocale(_locale);
+  setRequestLocale(locale);
 
   return (
-    <html lang={_locale}>
-      <head>
-{/* Google Tag Manager */}
+    <html lang={locale}>
+      <head />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -51,8 +55,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           `}
         </Script>
         {/* End Google Tag Manager */}
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -60,7 +63,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 

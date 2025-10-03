@@ -7,7 +7,13 @@ export const metadata = {
     "Complete asset tracking features: QR codes, mobile scanning, real-time dashboards, and enterprise integrations.",
 };
 
-export default function FeaturesPage() {
+export default function FeaturesPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const locale = params?.locale ?? "en";
+
   return (
     <>
       <Navigation />
@@ -56,8 +62,8 @@ export default function FeaturesPage() {
                   Mobile-First Scanning
                 </h3>
                 <p className="text-gray-600 mb-2">
-                  Your team can scan assets using any smartphone no app download
-                  required. Fast, accurate, works in low light.
+                  Your team can scan assets using any smartphone no app
+                  download required. Fast, accurate, works in low light.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li>✓ Progressive Web App (install optional)</li>
@@ -148,7 +154,7 @@ export default function FeaturesPage() {
               Ready to See TraviXO in Action?
             </h2>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-block"
             >
               Start Your Free Pilot
@@ -161,11 +167,11 @@ export default function FeaturesPage() {
         <div className="container mx-auto px-4 text-center">
           <p>© 2025 TraviXO Systems. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            <a href="/privacy" className="hover:text-white">
+            <Link href={`/${locale}/privacy`} className="hover:text-white">
               Privacy Policy
             </Link>
             {" • "}
-            <a href="/terms" className="hover:text-white">
+            <Link href={`/${locale}/terms`} className="hover:text-white">
               Terms of Service
             </Link>
           </p>

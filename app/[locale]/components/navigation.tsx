@@ -1,24 +1,22 @@
-import Link from "next/link";
 'use client';
-
+import Link from "next/link";
 import { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  
-  // Extract current _locale from pathname (e.g., /en/features -> en)
-  const currentLocale = pathname.split('/')[1] || 'en';
-  
-  // Helper to create _locale-aware links
+
+  // Extract current locale safely (default to 'en')
+  const currentLocale = pathname?.split('/')[1] || 'en';
+
+  // Locale-aware links
   const getLocalizedPath = (path: string) => `/${currentLocale}${path}`;
-  
-  // Language switcher helper
+
+  // Switch locale while preserving rest of path
   const switchLocale = (newLocale: string) => {
-    const pathWithoutLocale = pathname.replace(/^\/(en|fr)/, '') || '/';
+    const pathWithoutLocale = pathname?.replace(/^\/(en|fr)/, '') || '/';
     return `/${newLocale}${pathWithoutLocale}`;
   };
 
@@ -27,8 +25,8 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           
-          {/* Logo */}
-          <Link href={getLocalizedPath('/')} className="flex items-center gap-2">
+          {/* Logo (locale-aware) */}
+          <Link href={`/${currentLocale}`} className="flex items-center gap-2">
             <Image 
               src="/logo-color.png" 
               alt="TraviXO" 
@@ -49,7 +47,7 @@ export default function Navigation() {
             <Link href={getLocalizedPath('/contact')} className="text-gray-600 hover:text-gray-900">
               Contact
             </Link>
-            
+
             {/* Language Switcher */}
             <div className="flex items-center gap-2 border-l border-gray-300 pl-4">
               <Link 
@@ -68,7 +66,10 @@ export default function Navigation() {
           </div>
 
           {/* Desktop CTA */}
-          <Link href={getLocalizedPath('/contact')} className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+          <Link 
+            href={getLocalizedPath('/contact')} 
+            className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+          >
             Start Free Pilot
           </Link>
 
@@ -86,7 +87,6 @@ export default function Navigation() {
               )}
             </svg>
           </button>
-
         </div>
 
         {/* Mobile Menu */}
@@ -114,7 +114,7 @@ export default function Navigation() {
               >
                 Contact
               </Link>
-              
+
               {/* Mobile Language Switcher */}
               <div className="flex gap-2 py-2 border-t border-gray-200 mt-2 pt-4">
                 <Link 
@@ -132,7 +132,7 @@ export default function Navigation() {
                   Français
                 </Link>
               </div>
-              
+
               <Link 
                 href={getLocalizedPath('/contact')} 
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors"
