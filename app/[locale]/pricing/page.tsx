@@ -4,12 +4,12 @@ import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 
 type Props = {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ _locale: string }>;
 };
 
 export async function generateMetadata(props: Props) {
   const params = await props.params;
-  const t = await getTranslations({ locale: params.locale, namespace: 'metadata.pricing' });
+  const t = await getTranslations({ _locale: params._locale, namespace: 'metadata.pricing' });
 
   return {
     title: t('title'),
@@ -19,9 +19,9 @@ export async function generateMetadata(props: Props) {
 
 export default async function PricingPage(props: Props) {
   const params = await props.params;
-  setRequestLocale(params.locale);
+  setRequestLocale(params._locale);
   
-  const t = await getTranslations({ locale: params.locale, namespace: 'pricing' });
+  const t = await getTranslations({ _locale: params._locale, namespace: 'pricing' });
 
   return (
     <>
@@ -72,7 +72,7 @@ export default async function PricingPage(props: Props) {
                 </li>
               </ul>
               <Link 
-                href={`/${params.locale}/contact`}
+                href={`/${params._locale}/contact`}
                 className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('cta.contact')}
@@ -117,7 +117,7 @@ export default async function PricingPage(props: Props) {
                 </li>
               </ul>
               <Link 
-                href={`/${params.locale}/contact`}
+                href={`/${params._locale}/contact`}
                 className="block text-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('cta.start')}
@@ -158,7 +158,7 @@ export default async function PricingPage(props: Props) {
                 </li>
               </ul>
               <Link 
-                href={`/${params.locale}/contact`}
+                href={`/${params._locale}/contact`}
                 className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('cta.contact')}

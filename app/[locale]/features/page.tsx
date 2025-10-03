@@ -163,11 +163,11 @@ export default function FeaturesPage() {
           <p className="mt-2 text-sm">
             <a href="/privacy" className="hover:text-white">
               Privacy Policy
-            </a>
+            </Link>
             {" • "}
             <a href="/terms" className="hover:text-white">
               Terms of Service
-            </a>
+            </Link>
           </p>
         </div>
       </footer>

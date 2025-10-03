@@ -8,10 +8,10 @@ import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ 
   params 
 }: { 
-  params: Promise<{ locale: string }>
+  params: Promise<{ _locale: string }>
 }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'metadata.home' });
+  const { _locale } = await params;
+  const t = await getTranslations({ _locale, namespace: 'metadata.home' });
 
   return {
     title: t('title'),
@@ -21,9 +21,9 @@ export async function generateMetadata({
 export default async function Home({ 
   params 
 }: { 
-  params: Promise<{ locale: string }>
+  params: Promise<{ _locale: string }>
 }) {
-  const { locale } = await params;
+  const { _locale } = await params;
   return (
     <>
       <Navigation />
@@ -145,18 +145,18 @@ export default async function Home({
                 className="hover:text-white"
               >
                 travixosystems@gmail.com
-              </a>
+              </Link>
               {" • "}
               <span>+33 78 335 75 35</span>
             </p>
             <p className="mt-2 text-sm">
               <a href="/privacy" className="hover:text-white">
                 Privacy Policy
-              </a>
+              </Link>
               {" • "}
               <a href="/terms" className="hover:text-white">
                 Terms of Service
-              </a>
+              </Link>
             </p>
           </div>
         </footer>

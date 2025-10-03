@@ -1,4 +1,5 @@
 import Navigation from "../components/navigation";
+import Link from "next/link";
 
 export const metadata = {
   title: "Privacy Policy - TraviXO",
@@ -353,13 +354,13 @@ export default function PrivacyPage() {
         <div className="container mx-auto px-4 text-center">
           <p>© 2025 TraviXO Systems. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            <a href="/privacy" className="hover:text-white">
+            <Link href="/privacy" className="hover:text-white">
               Privacy Policy
-            </a>
+            </Link>
             {" • "}
-            <a href="/terms" className="hover:text-white">
+            <Link href="/terms" className="hover:text-white">
               Terms of Service
-            </a>
+            </Link>
           </p>
         </div>
       </footer>

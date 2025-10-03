@@ -13,7 +13,7 @@ export default function ContactPage() {
     fleetSize: '',
     message: ''
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | '_error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -56,8 +56,8 @@ ${formData.message}
         fleetSize: '',
         message: ''
       });
-    } catch (error) {
-      setStatus('error');
+    } catch (_error) {
+      setStatus('_error');
       setErrorMessage('Failed to send message. Please try emailing us directly at info@travixosystems.com');
     }
   };
@@ -92,7 +92,7 @@ ${formData.message}
               </div>
             )}
 
-            {status === 'error' && (
+            {status === '_error' && (
               <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
                 <p className="text-red-800 font-semibold">Error sending message</p>
                 <p className="text-red-700 text-sm">{errorMessage}</p>
@@ -236,7 +236,7 @@ ${formData.message}
                 className="text-orange-500 hover:text-orange-600"
               >
                 info@travixosystems.com
-              </a>
+              </Link>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
@@ -245,7 +245,7 @@ ${formData.message}
                 className="text-orange-500 hover:text-orange-600"
               >
                 +33 78 335 75 35
-              </a>
+              </Link>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Location</h3>
@@ -261,11 +261,11 @@ ${formData.message}
           <p className="mt-2 text-sm">
             <a href="/privacy" className="hover:text-white">
               Privacy Policy
-            </a>
+            </Link>
             {" • "}
             <a href="/terms" className="hover:text-white">
               Terms of Service
-            </a>
+            </Link>
           </p>
         </div>
       </footer>

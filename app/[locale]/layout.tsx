@@ -4,6 +4,7 @@ import "./globals.css";
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { ReactNode } from 'react';
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,12 +18,12 @@ const geistMono = Geist_Mono({
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ _locale: string }>;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
-  const t = await getTranslations({ locale: params.locale, namespace: 'metadata.home' });
+  const t = await getTranslations({ _locale: params._locale, namespace: 'metadata.home' });
 
   return {
     title: t('title'),
@@ -31,26 +32,24 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = await params;
+  const { _locale } = await params;
   
   // Enable static rendering
-  setRequestLocale(locale);
+  setRequestLocale(_locale);
 
   return (
-    <html lang={locale}>
+    <html lang={_locale}>
       <head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-N679J3PH');
-            `,
-          }}
-        />
+{/* Google Tag Manager */}
+        <Script id="gtm" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N679J3PH');
+          `}
+        </Script>
         {/* End Google Tag Manager */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -64,6 +63,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+
         {children}
       </body>
     </html>

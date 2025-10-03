@@ -1,3 +1,4 @@
+import Link from "next/link";
 'use client';
 
 import { useState } from 'react';
@@ -9,10 +10,10 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   
-  // Extract current locale from pathname (e.g., /en/features -> en)
+  // Extract current _locale from pathname (e.g., /en/features -> en)
   const currentLocale = pathname.split('/')[1] || 'en';
   
-  // Helper to create locale-aware links
+  // Helper to create _locale-aware links
   const getLocalizedPath = (path: string) => `/${currentLocale}${path}`;
   
   // Language switcher helper
