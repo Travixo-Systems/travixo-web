@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "home": {
+      "title": "TraviXO - Suivi d'actifs par QR Code",
+      "description": "Suivez votre équipement de location avec TraviXO."
+    },
+    "contact": {
+      "title": "Contact - TraviXO",
+      "description": "Contactez-nous pour un essai gratuit. Contactez TraviXO pour des solutions de suivi d'équipement."
+    },
+    "features": {
+      "title": "Fonctionnalités - Suivi d'actifs TraviXO",
+      "description": "Fonctionnalités complètes de suivi d'actifs : codes QR, scan mobile, tableaux de bord en temps réel et intégrations d'entreprise."
+    },
+    "pricing": {
+      "title": "Tarifs - TraviXO",
+      "description": "Tarification simple et transparente pour le suivi d'équipement. Plans à partir de 250€/mois."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité - TraviXO",
+      "description": "Politique de confidentialité et informations sur la protection des données de TraviXO."
+    },
+    "terms": {
+      "title": "Conditions d'utilisation - TraviXO",
+      "description": "Conditions d'utilisation et accord d'utilisateur de TraviXO."
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "homepage": {
+    "hero": "Suivez vos actifs avec des codes QR",
+    "cta": "Commencer"
+  },
+ "pricing": {
+  "hero": {
+    "title": "Tarification Simple et Transparente",
+    "subtitle": "Choisissez le plan adapté à la taille de votre flotte. Tous les plans incluent des scans illimités, la génération de codes QR et le support par email. Changez de plan à tout moment."
+  },
+  "plans": {
+    "popular": "POPULAIRE",
+    "suffix": "/mois",
+    "starter": {
+      "name": "Démarrage",
+      "price": "250€",
+      "description": "Petites entreprises",
+      "features": ["100 actifs", "5 membres d'équipe", "Scans illimités", "Scan mobile", "Tableau de bord", "Export CSV"]
+    },
+    "professional": {
+      "name": "Professionnel",
+      "price": "750€",
+      "description": "Entreprises en croissance",
+      "features": ["500 actifs", "20 membres d'équipe", "Multi-sites", "Zapier", "Accès API", "Support prioritaire"]
+    },
+    "business": {
+      "name": "Business",
+      "price": "2 500€",
+      "description": "Marché intermédiaire",
+      "features": ["2 000 actifs", "50 membres d'équipe", "Module d'audit", "2 intégrations ITSM", "Sync QuickBooks", "Support téléphonique"]
+    },
+    "enterprise": {
+      "name": "Entreprise",
+      "price": "Sur Mesure",
+      "description": "Grandes entreprises",
+      "features": ["Actifs illimités", "Utilisateurs illimités", "Toutes les intégrations", "Développement personnalisé", "Gestionnaire dédié", "SLA 99,9%"]
+    }
+  },
+  "cta": {
+    "start": "Démarrer l'Essai",
+    "demo": "Démo",
+    "contact": "Contact"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "questions": [
+      {
+        "question": "Qu'est-ce qu'un \"actif\" ?",
+        "answer": "Un actif est tout équipement que vous suivez. Cela inclut les machines lourdes, les outils, les véhicules, les conteneurs - tout ce qui porte un code QR."
+      },
+      {
+        "question": "Puis-je changer de plan plus tard ?",
+        "answer": "Oui, changez de plan à tout moment. Si vous passez à un plan supérieur en cours de mois, nous calculerons la différence au prorata. Si vous rétrogradez, le nouveau tarif s'appliquera au prochain cycle de facturation."
+      },
+      {
+        "question": "Y a-t-il un essai gratuit ?",
+        "answer": "Oui ! Les clients fondateurs (20 premières entreprises) bénéficient d'un essai gratuit de 2 mois avec jusqu'à 60 actifs. Après l'essai, vous pouvez choisir n'importe quel plan payant."
+      },
+      {
+        "question": "Où sont stockées mes données ?",
+        "answer": "Toutes les données sont hébergées dans des centres de données européens (France) avec une conformité RGPD complète. Nous ne stockons jamais de données en dehors de l'UE."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prêt à Suivre Plus Intelligemment ?",
+    "button": "Démarrer Votre Essai Gratuit"
+  }
+}
+}

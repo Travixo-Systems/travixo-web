@@ -3,13 +3,27 @@ import Navigation from "./components/navigation";
 
 import ProblemSolutionCarousel from "./components/ProblemSolutionCarousel";
 
-export const metadata = {
-  title: "TraviXO - QR-Based Asset Tracking for Equipment Rental",
-  description:
-    "Eliminate equipment loss with TraviXO. Real-time QR tracking and automated audits for equipment rental companies.",
-};
+import { getTranslations } from 'next-intl/server';
 
-export default function Home() {
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.home' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+export default async function Home({ 
+  params 
+}: { 
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params;
   return (
     <>
       <Navigation />

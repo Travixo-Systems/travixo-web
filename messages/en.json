@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "home": {
+      "title": "TraviXO - QR-Based Asset Tracking",
+      "description": "Track your rental equipment with TraviXO."
+    },
+    "contact": {
+      "title": "Contact - TraviXO",
+      "description": "Get in touch about a free pilot. Contact TraviXO for equipment tracking solutions."
+    },
+    "features": {
+      "title": "Features - TraviXO Asset Tracking",
+      "description": "Complete asset tracking features: QR codes, mobile scanning, real-time dashboards, and enterprise integrations."
+    },
+    "pricing": {
+      "title": "Pricing - TraviXO",
+      "description": "Simple transparent pricing for equipment tracking. Plans from €250/month."
+    },
+    "privacy": {
+      "title": "Privacy Policy - TraviXO",
+      "description": "TraviXO privacy policy and data protection information."
+    },
+    "terms": {
+      "title": "Terms of Service - TraviXO",
+      "description": "TraviXO terms of service and user agreement."
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "homepage": {
+    "hero": "Track Your Assets with QR Codes",
+    "cta": "Get Started"
+  },
+  "pricing": {
+  "hero": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your fleet size. All plans include unlimited scans, QR code generation, and email support. Upgrade or downgrade anytime."
+  },
+  "plans": {
+    "popular": "POPULAR",
+    "suffix": "/mo",
+    "starter": {
+      "name": "Starter",
+      "price": "€250",
+      "description": "Small companies",
+      "features": ["100 assets", "5 team members", "Unlimited scans", "Mobile scanning", "Dashboard", "CSV export"]
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "€750",
+      "description": "Growing companies",
+      "features": ["500 assets", "20 team members", "Multi-location", "Zapier", "API access", "Priority support"]
+    },
+    "business": {
+      "name": "Business",
+      "price": "€2,500",
+      "description": "Mid-market",
+      "features": ["2,000 assets", "50 team members", "Audit module", "2 ITSM integrations", "QuickBooks sync", "Phone support"]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "description": "Large companies",
+      "features": ["Unlimited assets", "Unlimited users", "All integrations", "Custom dev", "Dedicated manager", "99.9% SLA"]
+    }
+  },
+  "cta": {
+    "start": "Start Pilot",
+    "demo": "Demo",
+    "contact": "Contact"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "What counts as an \"asset\"?",
+        "answer": "An asset is any piece of equipment you're tracking. This includes heavy machinery, tools, vehicles, containers anything with a QR code attached."
+      },
+      {
+        "question": "Can I change plans later?",
+        "answer": "Yes, upgrade or downgrade anytime. If you upgrade mid-month, we'll prorate the difference. If you downgrade, the new rate applies at your next billing cycle."
+      },
+      {
+        "question": "Is there a free trial?",
+        "answer": "Yes! Founding customers (first 20 companies) get a 2-month free pilot with up to 60 assets. After the pilot, you can choose any paid plan."
+      },
+      {
+        "question": "Where is my data stored?",
+        "answer": "All data is hosted in EU datacenters (France) with full GDPR compliance. We never store data outside the EU."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to Track Smarter?",
+    "button": "Start Your Free Pilot"
+  }
+}
+}
