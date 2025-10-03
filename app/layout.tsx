@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
  return (
-  <>
+  <html lang="en">
     <head>
       {/* Google Tag Manager */}
       <script
@@ -52,8 +52,6 @@ export default function RootLayout({
       {/* End Google Tag Manager (noscript) */}
       {children}
     </body>
-  </>
+  </html>
 );
-    </html>
-  );
 }
