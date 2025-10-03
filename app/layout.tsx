@@ -39,7 +39,7 @@ export default function RootLayout({
         />
         {/* End Google Tag Manager */}
       </head>
-      <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className={${geistSans.variable} ${geistMono.variable} antialiased}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
