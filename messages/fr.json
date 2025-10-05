@@ -1,7 +1,7 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - Suivi d'actifs par QR Code",
+      "title": "TraviXO - Suivi d'équipements par QR Code",
       "description": "Suivez votre équipement de location avec TraviXO."
     },
     "contact": {
@@ -9,8 +9,8 @@
       "description": "Contactez-nous pour un essai gratuit. Contactez TraviXO pour des solutions de suivi d'équipement."
     },
     "features": {
-      "title": "Fonctionnalités - Suivi d'actifs TraviXO",
-      "description": "Fonctionnalités complètes de suivi d'actifs : codes QR, scan mobile, tableaux de bord en temps réel et intégrations d'entreprise."
+      "title": "Fonctionnalités - Suivi d'équipements TraviXO",
+      "description": "Fonctionnalités complètes de suivi d'équipements : codes QR, scan mobile, tableaux de bord en temps réel et intégrations d'entreprise."
     },
     "pricing": {
       "title": "Tarifs - TraviXO",
@@ -31,74 +31,710 @@
     "pricing": "Tarifs",
     "contact": "Contact",
     "privacy": "Confidentialité",
-    "terms": "Conditions"
+    "terms": "Conditions",
+    "startPilot": "Démarrer l'essai gratuit",
+     "languages": {
+    "english": "Anglais",
+    "french": "Français"
+  }
   },
   "homepage": {
-    "hero": "Suivez vos actifs avec des codes QR",
-    "cta": "Commencer"
-  },
- "pricing": {
-  "hero": {
-    "title": "Tarification Simple et Transparente",
-    "subtitle": "Choisissez le plan adapté à la taille de votre flotte. Tous les plans incluent des scans illimités, la génération de codes QR et le support par email. Changez de plan à tout moment."
-  },
-  "plans": {
-    "popular": "POPULAIRE",
-    "suffix": "/mois",
-    "starter": {
-      "name": "Démarrage",
-      "price": "250€",
-      "description": "Petites entreprises",
-      "features": ["100 actifs", "5 membres d'équipe", "Scans illimités", "Scan mobile", "Tableau de bord", "Export CSV"]
+    "hero": {
+      "title": "Arrêtez de perdre vos équipements.\nAdoptez un suivi intelligent.",
+      "subtitle": "TraviXO aide les entreprises de location d'équipements à éliminer les pertes, automatiser les audits trimestriels et suivre chaque actif en temps réel grâce aux codes QR.",
+      "ctaPrimary": "Démarrer l'essai gratuit",
+      "ctaSecondary": "Voir la démo de 2 minutes"
     },
-    "professional": {
-      "name": "Professionnel",
-      "price": "750€",
-      "description": "Entreprises en croissance",
-      "features": ["500 actifs", "20 membres d'équipe", "Multi-sites", "Zapier", "Accès API", "Support prioritaire"]
+    "values": {
+      "1": {
+        "title": "Réduisez les pertes de 70 %",
+        "text": "Le scan QR en temps réel vous indique toujours où se trouvent vos équipements. Finies les pertes inexpliquées."
+      },
+      "2": {
+        "title": "Des audits en 2 jours, pas en 2 semaines",
+        "text": "Remplacez les tableurs et formulaires papier par des flux d'audit numériques. Terminez vos vérifications trimestrielles en quelques jours."
+      },
+      "3": {
+        "title": "Intégrations prêtes pour l'entreprise",
+        "text": "Connectez TraviXO à ServiceNow, Jira, QuickBooks ou plus de 5 000 applications via Zapier. Vos données circulent là où vous en avez besoin."
+      }
     },
-    "business": {
-      "name": "Business",
-      "price": "2 500€",
-      "description": "Marché intermédiaire",
-      "features": ["2 000 actifs", "50 membres d'équipe", "Module d'audit", "2 intégrations ITSM", "Sync QuickBooks", "Support téléphonique"]
+    "carousel": {
+      "tabs": {
+        "problem": "Le Problème",
+        "solution": "La Solution"
+      },
+      "problem": {
+        "title": "Les entreprises perdent plus de 1M€ par an",
+        "subtitle": "Un suivi d’actifs inefficace génère des coûts cachés massifs",
+        "items": {
+          "1": {
+            "title": "2 à 5 % de pertes d’équipement chaque année",
+            "text": "Pour 20M€ d’équipements, cela représente 400k€ à 1M€ de pertes annuelles."
+          },
+          "2": {
+            "title": "Plus de 50k€ par audit trimestriel",
+            "text": "Comptages manuels, 2 semaines de travail, écarts inévitables."
+          },
+          "3": {
+            "title": "Tickets de support 3x plus longs",
+            "text": "15 minutes à fouiller des tableurs pour chaque demande client."
+          },
+          "4": {
+            "title": "Cauchemar de réconciliation comptable",
+            "text": "Croisements manuels de plus de 5 fichiers Excel chaque mois."
+          }
+        }
+      },
+      "solution": {
+        "title": "TraviXO : Votre Plateforme d’Intelligence d’Équipement",
+        "subtitle": "Des QR codes simples. Un suivi puissant. Une visibilité complète.",
+        "items": {
+          "1": {
+            "title": "QR sur tout",
+            "text": "Stickers QR résistants. Collez une fois, suivez pour toujours."
+          },
+          "2": {
+            "title": "Scanner partout",
+            "text": "Scan via téléphone, sans application. Enregistrement en 10 secondes."
+          },
+          "3": {
+            "title": "Suivi automatique",
+            "text": "Tableau de bord en temps réel. Localisez chaque actif immédiatement."
+          },
+          "4": {
+            "title": "Intégration totale",
+            "text": "ServiceNow, QuickBooks, Jira. Fini la saisie manuelle."
+          }
+        }
+      }
     },
-    "enterprise": {
-      "name": "Entreprise",
-      "price": "Sur Mesure",
-      "description": "Grandes entreprises",
-      "features": ["Actifs illimités", "Utilisateurs illimités", "Toutes les intégrations", "Développement personnalisé", "Gestionnaire dédié", "SLA 99,9%"]
+    "finalCta": {
+      "title": "Prêt à arrêter les pertes d'équipement ?",
+      "subtitle": "Rejoignez les entreprises qui éliminent les pertes et économisent des centaines de milliers d'euros chaque année.",
+      "primary": "Démarrer votre essai gratuit",
+      "secondary": "Planifier une démo",
+      "badges": [
+        "Aucune carte requise",
+        "Essai gratuit de 3 mois",
+        "Hébergement UE (RGPD)",
+        "Résiliation à tout moment"
+      ],
+      "footer": {
+        "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+        "email": "contact.travixosystems.com",
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation"
+      }
     }
   },
-  "cta": {
-    "start": "Démarrer l'Essai",
-    "demo": "Démo",
-    "contact": "Contact"
-  },
-  "faq": {
-    "title": "Questions Fréquentes",
-    "questions": [
-      {
-        "question": "Qu'est-ce qu'un \"actif\" ?",
-        "answer": "Un actif est tout équipement que vous suivez. Cela inclut les machines lourdes, les outils, les véhicules, les conteneurs - tout ce qui porte un code QR."
+  "features": {
+    "hero": {
+      "title": "Tout ce dont vous avez besoin pour maîtriser le suivi d'actifs",
+      "subtitle": "TraviXO combine la simplicité de la technologie QR avec des intégrations de niveau entreprise pour vous offrir une visibilité et un contrôle complets sur votre flotte d'équipements."
+    },
+    "coreFeatures": {
+      "title": "Fonctionnalités Principales",
+      "qrTracking": {
+        "title": "Suivi d'Actifs par Code QR",
+        "description": "Générez des codes QR illimités pour toute votre flotte. Chaque actif obtient un code unique et scannable lié à son dossier numérique dans TraviXO.",
+        "oneClick": "Génération de QR en un clic",
+        "weatherproof": "Recommandations d'étiquettes résistantes aux intempéries incluses",
+        "staticUrls": "URLs statiques (révocables si nécessaire)",
+        "batchGeneration": "Génération par lots pour grandes flottes"
       },
-      {
-        "question": "Puis-je changer de plan plus tard ?",
-        "answer": "Oui, changez de plan à tout moment. Si vous passez à un plan supérieur en cours de mois, nous calculerons la différence au prorata. Si vous rétrogradez, le nouveau tarif s'appliquera au prochain cycle de facturation."
+      "mobileScanning": {
+        "title": "Scan Mobile Prioritaire",
+        "description": "Votre équipe peut scanner les actifs avec n'importe quel smartphone, sans téléchargement d'application. Rapide, précis, fonctionne en faible luminosité.",
+        "pwa": "Application Web Progressive (installation optionnelle)",
+        "cameraScanner": "Scanner QR basé sur la caméra",
+        "offlineSync": "Fonctionne hors ligne, synchronise en ligne",
+        "gpsLocation": "Géolocalisation GPS"
       },
-      {
-        "question": "Y a-t-il un essai gratuit ?",
-        "answer": "Oui ! Les clients fondateurs (20 premières entreprises) bénéficient d'un essai gratuit de 2 mois avec jusqu'à 60 actifs. Après l'essai, vous pouvez choisir n'importe quel plan payant."
+      "dashboards": {
+        "title": "Tableaux de Bord en Temps Réel",
+        "description": "Sachez exactement où se trouve chaque actif, qui l'a, et quand il a été vérifié pour la dernière fois. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
+        "statusBreakdown": "Répartition du statut des actifs",
+        "utilizationRates": "Taux d'utilisation par catégorie",
+        "customAlerts": "Alertes et notifications personnalisées",
+        "exportData": "Export vers CSV/Excel"
       },
-      {
-        "question": "Où sont stockées mes données ?",
-        "answer": "Toutes les données sont hébergées dans des centres de données européens (France) avec une conformité RGPD complète. Nous ne stockons jamais de données en dehors de l'UE."
+      "audits": {
+        "title": "Audits d'Inventaire Numériques",
+        "description": "Remplacez les audits manuels par des flux de travail numériques. Générez des listes d'actifs attendus, suivez la progression de vérification en temps réel, et signalez automatiquement les divergences.",
+        "mobileChecklist": "Liste de contrôle mobile pour audit",
+        "progressTracking": "Suivi de progression en temps réel",
+        "missingAlerts": "Alertes d'actifs manquants",
+        "complianceExports": "Exports de conformité (GAAP, IFRS)"
+      },
+      "integrations": {
+        "title": "Intégrations d'Entreprise",
+        "description": "Vos données d'actifs circulent partout où elles sont nécessaires. Envoyez vers ServiceNow, synchronisez les coûts avec QuickBooks, ou créez des intégrations personnalisées via webhooks.",
+        "serviceNow": "ServiceNow & Jira Service Management",
+        "accounting": "Synchronisation QuickBooks & Xero",
+        "zapier": "Zapier (5 000+ applications)",
+        "api": "Webhooks & API REST"
+      },
+      "teamSecurity": {
+        "title": "Gestion d'Équipe & Sécurité",
+        "description": "Permissions basées sur les rôles, journaux d'audit et support multi-sites garantissent que votre équipe a le bon accès.",
+        "roles": "Rôles Propriétaire, Admin, Membre, Observateur",
+        "twoFactor": "Authentification à deux facteurs",
+        "auditLogs": "Journaux d'audit complets",
+        "multiLocation": "Support multi-sites"
       }
-    ]
+    },
+    "cta": {
+      "title": "Prêt à voir TraviXO en action ?",
+      "button": "Démarrez votre essai gratuit"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
   },
-  "finalCta": {
-    "title": "Prêt à Suivre Plus Intelligemment ?",
-    "button": "Démarrer Votre Essai Gratuit"
+  "contact": {
+    "hero": {
+      "title": "Parlons de vos besoins en suivi d'équipement",
+      "subtitle": "Que vous soyez intéressé par un essai, ayez des questions sur les intégrations, ou souhaitiez voir TraviXO en action, nous sommes là pour vous aider."
+    },
+    "form": {
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Jean Dupont",
+      "email": "Email",
+      "emailPlaceholder": "jean@entreprise.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Votre Entreprise",
+      "phone": "Téléphone (optionnel)",
+      "phonePlaceholder": "+33 1 23 45 67 89",
+      "typeLabel": "Qu'est-ce qui vous décrit le mieux ?",
+      "typeSelect": "Sélectionnez une option",
+      "fleetLabel": "Quelle est la taille de votre flotte ?",
+      "fleetSelect": "Sélectionnez la taille de flotte",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de vos besoins en suivi d'équipement...",
+      "send": "Envoyer le message",
+      "sending": "Envoi...",
+      "successTitle": "Message envoyé avec succès !",
+      "successMessage": "Nous vous répondrons dans les 24 heures.",
+      "errorTitle": "Erreur lors de l'envoi du message",
+      "errorMessage": "Échec de l'envoi du message. Veuillez nous envoyer un email directement à info@travixosystems.com",
+      "notProvided": "Non fourni"
+    },
+    "typeOptions": {
+      "rental": "Entreprise de location d'équipement intéressée par un essai",
+      "investor": "Investisseur/VC",
+      "partner": "Partenaire d'intégration",
+      "press": "Presse/Médias",
+      "other": "Autre"
+    },
+    "fleetOptions": {
+      "small": "1-100 actifs",
+      "medium": "100-500 actifs",
+      "large": "500-2 000 actifs",
+      "enterprise": "2 000+ actifs"
+    },
+    "contactInfo": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "locationValue": "Paris, France"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Tarification Simple et Transparente",
+      "subtitle": "Choisissez le plan adapté à la taille de votre flotte. Tous les plans incluent des scans illimités, la génération de codes QR et le support par email. Changez de plan à tout moment."
+    },
+    "plans": {
+      "popular": "POPULAIRE",
+      "suffix": "/mois",
+      "starter": {
+        "name": "Démarrage",
+        "price": "250€",
+        "description": "Petites entreprises",
+        "features": [
+          "100 équipements",
+          "5 membres d'équipe",
+          "Scans illimités",
+          "Scan mobile",
+          "Tableau de bord",
+          "Export CSV"
+        ]
+      },
+      "professional": {
+        "name": "Professionnel",
+        "price": "750€",
+        "description": "Entreprises en croissance",
+        "features": [
+          "500 équipements",
+          "20 membres d'équipe",
+          "Multi-sites",
+          "Zapier",
+          "Accès API",
+          "Support prioritaire"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "price": "2 500€",
+        "description": "Marché intermédiaire",
+        "features": [
+          "2 000 équipements",
+          "50 membres d'équipe",
+          "Module d'audit",
+          "2 intégrations ITSM",
+          "Sync QuickBooks",
+          "Support téléphonique"
+        ]
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "price": "Sur Mesure",
+        "description": "Grandes entreprises",
+        "features": [
+          "Équipements illimités",
+          "Utilisateurs illimités",
+          "Toutes les intégrations",
+          "Développement personnalisé",
+          "Gestionnaire dédié",
+          "SLA 99,9%"
+        ]
+      }
+    },
+    "cta": {
+      "start": "Démarrer l'Essai",
+      "demo": "Démo",
+      "contact": "Contact"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "questions": [
+        {
+          "question": "Qu'est-ce qu'un \"actif\" ?",
+          "answer": "Un actif est tout équipement que vous suivez. Cela inclut les machines lourdes, les outils, les véhicules, les conteneurs - tout ce qui porte un code QR."
+        },
+        {
+          "question": "Puis-je changer de plan plus tard ?",
+          "answer": "Oui, changez de plan à tout moment. Si vous passez à un plan supérieur en cours de mois, nous calculerons la différence au prorata. Si vous rétrogradez, le nouveau tarif s'appliquera au prochain cycle de facturation."
+        },
+        {
+          "question": "Y a-t-il un essai gratuit ?",
+          "answer": "Oui ! Les clients fondateurs (20 premières entreprises) bénéficient d'un essai gratuit de 2 mois avec jusqu'à 60 équipements. Après l'essai, vous pouvez choisir n'importe quel plan payant."
+        },
+        {
+          "question": "Où sont stockées mes données ?",
+          "answer": "Toutes les données sont hébergées dans des centres de données européens (France) avec une conformité RGPD complète. Nous ne stockons jamais de données en dehors de l'UE."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à Suivre Plus Intelligemment ?",
+      "button": "Démarrer Votre Essai Gratuit"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "effective": "Date d'entrée en vigueur :",
+    "effectiveDate": "[Date à insérer]",
+    "lastUpdated": "Dernière mise à jour :",
+    "lastUpdatedDate": "[Date à insérer]",
+    "section1": {
+      "title": "1. Introduction",
+      "paragraph1": "TraviXO Systems (« TraviXO », « nous », « notre » ou « nos ») exploite le site travixosystems.com et fournit un logiciel de suivi d'actifs par QR code. Nous nous engageons à protéger vos données personnelles et à respecter vos droits à la vie privée conformément au Règlement Général sur la Protection des Données (RGPD) et aux autres lois applicables en matière de protection des données.",
+      "paragraph2": "Cette Politique de Confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations lorsque vous utilisez notre site web et nos services."
+    },
+    "section2": {
+      "title": "2. Responsable du Traitement",
+      "intro": "Le responsable du traitement de vos données personnelles est :",
+      "companyName": "TraviXO Systems",
+      "address": "[Adresse du siège social à insérer]",
+      "email": "Email :",
+      "phone": "Téléphone :"
+    },
+    "section3": {
+      "title": "3. Informations que Nous Collectons",
+      "subsection1": {
+        "title": "3.1 Informations que Vous Fournissez",
+        "intro": "Nous collectons les informations que vous fournissez volontairement lorsque vous :",
+        "item1": "Remplissez des formulaires de contact (nom, email, entreprise, numéro de téléphone, message)",
+        "item2": "Demandez un projet pilote ou une démonstration",
+        "item3": "Créez un compte (le cas échéant)",
+        "item4": "Vous abonnez à notre newsletter ou à nos actualités",
+        "item5": "Communiquez avec nous par email ou par téléphone"
+      },
+      "subsection2": {
+        "title": "3.2 Informations Collectées Automatiquement",
+        "intro": "Lorsque vous visitez notre site web, nous collectons automatiquement :",
+        "item1": "Adresse IP et localisation géographique (niveau pays/ville)",
+        "item2": "Type et version du navigateur",
+        "item3": "Système d'exploitation",
+        "item4": "Pages visitées et temps passé sur chaque page",
+        "item5": "Site web de provenance",
+        "item6": "Date et heure d'accès"
+      },
+      "subsection3": {
+        "title": "3.3 Cookies et Technologies de Suivi",
+        "content": "Nous utilisons des cookies essentiels pour garantir le bon fonctionnement de notre site web. Nous n'utilisons pas de cookies publicitaires ou de suivi. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur, bien que cela puisse affecter les fonctionnalités du site."
+      }
+    },
+    "section4": {
+      "title": "4. Comment Nous Utilisons Vos Informations",
+      "intro": "Nous utilisons vos données personnelles aux fins suivantes :",
+      "item1": {
+        "title": "Prestation de Services :",
+        "description": "Pour répondre aux demandes de renseignements, fournir des démonstrations et intégrer les clients pilotes"
+      },
+      "item2": {
+        "title": "Communication :",
+        "description": "Pour vous envoyer des mises à jour concernant votre projet pilote, les fonctionnalités du produit et l'assistance"
+      },
+      "item3": {
+        "title": "Amélioration :",
+        "description": "Pour analyser l'utilisation du site web et améliorer nos services"
+      },
+      "item4": {
+        "title": "Conformité Légale :",
+        "description": "Pour nous conformer aux obligations légales et résoudre les litiges"
+      },
+      "item5": {
+        "title": "Marketing :",
+        "description": "Pour vous envoyer des emails promotionnels (avec votre consentement explicite, que vous pouvez retirer à tout moment)"
+      },
+      "legalBasis": {
+        "title": "Base Juridique (Article 6 du RGPD) :",
+        "intro": "Nous traitons vos données sur la base de :",
+        "item1": "Consentement (pour les communications marketing)",
+        "item2": "Nécessité contractuelle (pour fournir les services que vous avez demandés)",
+        "item3": "Intérêts légitimes (pour améliorer nos services et prévenir la fraude)",
+        "item4": "Obligations légales (pour nous conformer aux exigences fiscales et réglementaires)"
+      }
+    },
+    "section5": {
+      "title": "5. Partage et Divulgation des Données",
+      "intro": "Nous ne vendons pas vos données personnelles. Nous pouvons partager vos informations avec :",
+      "item1": {
+        "title": "Prestataires de Services :",
+        "description": "Fournisseurs d'hébergement (Vercel), services d'email, outils d'analyse (uniquement des prestataires basés dans l'UE)"
+      },
+      "item2": {
+        "title": "Exigences Légales :",
+        "description": "Si requis par la loi, une ordonnance du tribunal ou une autorité gouvernementale"
+      },
+      "item3": {
+        "title": "Transferts d'Entreprise :",
+        "description": "En cas de fusion, d'acquisition ou de cession d'actifs"
+      },
+      "footer": "Tous les prestataires de services tiers sont contractuellement tenus de protéger vos données et de les traiter uniquement selon nos instructions."
+    },
+    "section6": {
+      "title": "6. Stockage et Sécurité des Données",
+      "storage": {
+        "title": "Lieu de Stockage :",
+        "description": "Toutes les données sont stockées sur des serveurs situés dans l'Union Européenne (France)."
+      },
+      "security": {
+        "title": "Mesures de Sécurité :",
+        "intro": "Nous mettons en œuvre des mesures de sécurité conformes aux normes de l'industrie, notamment :",
+        "item1": "Chiffrement en transit (HTTPS/TLS)",
+        "item2": "Chiffrement au repos pour les données sensibles",
+        "item3": "Contrôles d'accès et authentification",
+        "item4": "Audits de sécurité réguliers",
+        "item5": "Procédures de sauvegarde et de reprise après sinistre"
+      },
+      "disclaimer": "Bien que nous prenions des précautions raisonnables, aucune méthode de transmission sur Internet n'est sûre à 100%. Nous ne pouvons garantir une sécurité absolue."
+    },
+    "section7": {
+      "title": "7. Conservation des Données",
+      "intro": "Nous conservons vos données personnelles aussi longtemps que nécessaire pour réaliser les finalités décrites dans cette politique :",
+      "item1": {
+        "title": "Demandes via formulaire de contact :",
+        "duration": "2 ans à compter du dernier contact"
+      },
+      "item2": {
+        "title": "Données des clients pilotes :",
+        "duration": "Durée du pilote + 1 an"
+      },
+      "item3": {
+        "title": "Données des clients actifs :",
+        "duration": "Durée de l'abonnement + 3 ans (à des fins légales/fiscales)"
+      },
+      "item4": {
+        "title": "Consentement marketing :",
+        "duration": "Jusqu'à ce que vous retiriez votre consentement ou après 3 ans d'inactivité"
+      },
+      "footer": "À l'expiration des périodes de conservation, nous supprimons ou anonymisons vos données de manière sécurisée."
+    },
+    "section8": {
+      "title": "8. Vos Droits en Vertu du RGPD",
+      "intro": "En tant que personne concernée dans l'UE, vous disposez des droits suivants :",
+      "right1": {
+        "title": "Droit d'Accès :",
+        "description": "Demander une copie de vos données personnelles"
+      },
+      "right2": {
+        "title": "Droit de Rectification :",
+        "description": "Corriger les données inexactes ou incomplètes"
+      },
+      "right3": {
+        "title": "Droit à l'Effacement (« Droit à l'Oubli ») :",
+        "description": "Demander la suppression de vos données"
+      },
+      "right4": {
+        "title": "Droit à la Limitation :",
+        "description": "Limiter la manière dont nous traitons vos données"
+      },
+      "right5": {
+        "title": "Droit à la Portabilité des Données :",
+        "description": "Recevoir vos données dans un format structuré et lisible par machine"
+      },
+      "right6": {
+        "title": "Droit d'Opposition :",
+        "description": "Vous opposer à certaines activités de traitement (ex. marketing)"
+      },
+      "right7": {
+        "title": "Droit de Retirer le Consentement :",
+        "description": "Retirer votre consentement à tout moment (n'affecte pas le traitement antérieur)"
+      },
+      "contact": {
+        "intro": "Pour exercer l'un de ces droits, contactez-nous à :",
+        "response": "Nous répondrons à votre demande dans un délai de 30 jours. Vous avez également le droit de déposer une plainte auprès de votre autorité locale de protection des données (CNIL en France)."
+      }
+    },
+    "section9": {
+      "title": "9. Confidentialité des Mineurs",
+      "content": "Nos services ne sont pas destinés aux personnes de moins de 18 ans. Nous ne collectons pas sciemment de données personnelles auprès d'enfants. Si nous apprenons que nous avons collecté des données auprès d'un mineur, nous les supprimerons rapidement."
+    },
+    "section10": {
+      "title": "10. Transferts Internationaux de Données",
+      "content": "Nous ne transférons pas vos données en dehors de l'Espace Économique Européen (EEE). Tout traitement de données s'effectue au sein d'infrastructures basées dans l'UE afin de garantir la conformité au RGPD."
+    },
+    "section11": {
+      "title": "11. Modifications de Cette Politique",
+      "intro": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre pour refléter les changements dans nos pratiques ou les exigences légales. Nous vous informerons des modifications importantes par :",
+      "method1": "Publication de la politique mise à jour sur cette page avec une nouvelle date de « Dernière mise à jour »",
+      "method2": "Envoi d'une notification par email (si vous êtes client ou abonné)",
+      "footer": "L'utilisation continue de nos services après les modifications constitue une acceptation de la politique mise à jour."
+    },
+    "section12": {
+      "title": "12. Nous Contacter",
+      "intro": "Si vous avez des questions concernant cette Politique de Confidentialité ou la manière dont nous traitons vos données, contactez-nous :",
+      "email": "Email :",
+      "phone": "Téléphone :",
+      "address": "Adresse :",
+      "addressValue": "[Adresse du siège social à insérer]"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation"
+    }
+  },
+  "terms": {
+    "title": "Conditions Générales d'Utilisation",
+    "effective": "Date d'entrée en vigueur :",
+    "effectiveDate": "[À finaliser]",
+    "lastUpdated": "Dernière mise à jour :",
+    "lastUpdatedDate": "[À déterminer]",
+    "section1": {
+      "title": "1. Acceptation des Conditions",
+      "paragraph1": "En accédant ou en utilisant le site web de TraviXO (travixosystems.com) et ses services (les « Services »), vous acceptez d'être lié par ces Conditions Générales d'Utilisation (les « Conditions »). Si vous n'acceptez pas ces Conditions, n'utilisez pas nos Services.",
+      "paragraph2": "Ces Conditions constituent un accord juridiquement contraignant entre vous (le « Client », « vous » ou « votre ») et TraviXO Systems (« TraviXO », « nous », « notre » ou « nos »)."
+    },
+    "section2": {
+      "title": "2. Description des Services",
+      "intro": "TraviXO fournit un logiciel de suivi d'actifs par QR code conçu pour les entreprises de location et de leasing d'équipements. Nos Services comprennent :",
+      "item1": "Génération de QR codes et suivi d'actifs",
+      "item2": "Interfaces de scan mobiles et web",
+      "item3": "Tableaux de bord et rapports en temps réel",
+      "item4": "Outils d'audit d'inventaire numérique",
+      "item5": "Intégrations tierces (ServiceNow, Jira, QuickBooks, etc.)",
+      "footer": "Nous nous réservons le droit de modifier, suspendre ou interrompre toute partie des Services à tout moment avec un préavis raisonnable."
+    },
+    "section3": {
+      "title": "3. Comptes Utilisateurs et Inscription",
+      "subsection1": {
+        "title": "3.1 Création de Compte",
+        "intro": "Pour utiliser certaines fonctionnalités de nos Services, vous devez créer un compte. Vous acceptez de :",
+        "item1": "Fournir des informations exactes, actuelles et complètes",
+        "item2": "Maintenir et mettre à jour vos informations pour qu'elles restent exactes",
+        "item3": "Garder votre mot de passe sécurisé et confidentiel",
+        "item4": "Nous informer immédiatement de tout accès non autorisé à votre compte"
+      },
+      "subsection2": {
+        "title": "3.2 Responsabilité du Compte",
+        "content": "Vous êtes responsable de toutes les activités qui se produisent sous votre compte. Vous devez avoir au moins 18 ans pour créer un compte."
+      }
+    },
+    "section4": {
+      "title": "4. Abonnements et Facturation",
+      "subsection1": {
+        "title": "4.1 Tarification et Paiement",
+        "paragraph1": "Les frais d'abonnement sont basés sur le plan que vous sélectionnez (Starter, Professional, Business ou Enterprise). Les prix sont indiqués sur notre page Tarifs et peuvent être modifiés avec un préavis de 30 jours.",
+        "paragraph2": "Le paiement est dû mensuellement ou annuellement à l'avance, selon le cycle de facturation que vous avez choisi. Nous acceptons les cartes bancaires et les virements bancaires (pour les plans Enterprise)."
+      },
+      "subsection2": {
+        "title": "4.2 Renouvellement Automatique",
+        "content": "Les abonnements se renouvellent automatiquement à la fin de chaque période de facturation sauf si vous annulez avant la date de renouvellement. Vous serez débité en utilisant le moyen de paiement enregistré."
+      },
+      "subsection3": {
+        "title": "4.3 Remboursements",
+        "content": "Nous offrons une garantie satisfait ou remboursé de 14 jours pour les nouveaux abonnés. Après 14 jours, les frais ne sont pas remboursables. Les remboursements pour les portions non utilisées des abonnements annuels sont calculés au prorata si vous annulez en cours d'année."
+      },
+      "subsection4": {
+        "title": "4.4 Retard de Paiement",
+        "content": "En cas d'échec de paiement, nous tenterons de débiter votre moyen de paiement jusqu'à 3 fois. Si le paiement n'est pas reçu dans les 7 jours, votre compte peut être suspendu. Nous pouvons facturer des frais de retard de 25 € ou 5 % du solde impayé, selon le montant le plus élevé."
+      }
+    },
+    "section5": {
+      "title": "5. Résiliation et Annulation",
+      "subsection1": {
+        "title": "5.1 Votre Droit d'Annulation",
+        "content": "Vous pouvez annuler votre abonnement à tout moment en nous contactant ou en utilisant la fonction d'annulation dans les paramètres de votre compte. L'annulation prend effet à la fin de votre période de facturation en cours."
+      },
+      "subsection2": {
+        "title": "5.2 Notre Droit de Résiliation",
+        "intro": "Nous pouvons suspendre ou résilier votre compte si vous :",
+        "item1": "Violez ces Conditions",
+        "item2": "Ne payez pas les frais dus",
+        "item3": "Vous engagez dans une activité frauduleuse ou illégale",
+        "item4": "Utilisez les Services d'une manière qui nuit à TraviXO ou à d'autres utilisateurs",
+        "footer": "Nous fournirons un préavis raisonnable avant la résiliation, sauf si une résiliation immédiate est requise pour des raisons légales ou de sécurité."
+      },
+      "subsection3": {
+        "title": "5.3 Effet de la Résiliation",
+        "content": "À la résiliation, votre accès aux Services cessera. Vous disposerez de 30 jours pour exporter vos données avant qu'elles ne soient définitivement supprimées. Les frais payés ne sont pas remboursables, sauf dans les cas prévus à la Section 4.3."
+      }
+    },
+    "section6": {
+      "title": "6. Politique d'Utilisation Acceptable",
+      "intro": "Vous acceptez de ne pas :",
+      "item1": "Utiliser les Services à des fins illégales",
+      "item2": "Tenter d'obtenir un accès non autorisé à nos systèmes",
+      "item3": "Procéder à de la rétro-ingénierie, décompiler ou désassembler les Services",
+      "item4": "Télécharger du code malveillant, des virus ou des logiciels malveillants",
+      "item5": "Interférer avec ou perturber les Services ou les serveurs",
+      "item6": "Revendre ou redistribuer les Services sans autorisation",
+      "item7": "Utiliser les Services pour enfreindre les droits de propriété intellectuelle",
+      "item8": "Usurper l'identité d'une autre personne ou entité"
+    },
+    "section7": {
+      "title": "7. Propriété Intellectuelle",
+      "subsection1": {
+        "title": "7.1 Notre Propriété",
+        "content": "TraviXO conserve tous les droits, titres et intérêts sur les Services, y compris tous les logiciels, conceptions, marques et documentation. Ces Conditions ne vous accordent aucun droit de propriété."
+      },
+      "subsection2": {
+        "title": "7.2 Votre Contenu",
+        "paragraph1": "Vous conservez la propriété de toutes les données que vous téléchargez sur TraviXO (les « Données Client »). Vous nous accordez une licence limitée pour stocker, traiter et afficher vos données uniquement dans le but de fournir les Services.",
+        "paragraph2": "Vous déclarez avoir le droit de télécharger les Données Client et qu'elles ne violent aucune loi ni aucun droit de tiers."
+      },
+      "subsection3": {
+        "title": "7.3 Retours d'Expérience",
+        "content": "Si vous fournissez des retours, suggestions ou idées concernant les Services, nous pouvons les utiliser sans obligation envers vous."
+      }
+    },
+    "section8": {
+      "title": "8. Protection des Données et Confidentialité",
+      "paragraph1": "La collecte et l'utilisation de vos données personnelles sont régies par notre Politique de Confidentialité. En utilisant les Services, vous consentez à nos pratiques en matière de données telles que décrites dans la Politique de Confidentialité.",
+      "paragraph2": "Nous mettons en œuvre des mesures de sécurité raisonnables pour protéger vos données, mais nous ne pouvons garantir une sécurité absolue. Vous êtes responsable du maintien de la confidentialité de vos identifiants de compte."
+    },
+    "section9": {
+      "title": "9. Niveau de Service et Disponibilité",
+      "paragraph1": "Nous nous efforçons de fournir des Services fiables, mais ne garantissons pas un accès ininterrompu. Les Services sont fournis « en l'état » et « selon disponibilité ». Nous pouvons effectuer une maintenance qui affecte temporairement la disponibilité, et nous fournirons un préavis dans la mesure du possible.",
+      "sla": {
+        "title": "Accord de Niveau de Service (SLA) :",
+        "content": "Les clients Enterprise bénéficient d'un SLA de disponibilité de 99,9 % tel que spécifié dans leur contrat. Les autres plans n'incluent pas de SLA."
+      }
+    },
+    "section10": {
+      "title": "10. Limitation de Responsabilité",
+      "intro": "Dans toute la mesure permise par la loi :",
+      "paragraph1": "TraviXO et ses affiliés, dirigeants, employés et agents ne seront pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris la perte de profits, de revenus, de données ou d'utilisation, découlant de :",
+      "item1": "Votre utilisation ou incapacité à utiliser les Services",
+      "item2": "Un accès non autorisé à vos données",
+      "item3": "Des erreurs, bugs ou interruptions dans les Services",
+      "item4": "Du contenu ou des intégrations de tiers",
+      "paragraph2": "Notre responsabilité totale envers vous pour toute réclamation découlant de ces Conditions ou des Services ne dépassera pas les frais que vous avez payés au cours des 12 mois précédant la réclamation.",
+      "paragraph3": "Certaines juridictions n'autorisent pas l'exclusion de certaines garanties ou limitations de responsabilité, ces limitations peuvent donc ne pas s'appliquer à vous."
+    },
+    "section11": {
+      "title": "11. Indemnisation",
+      "intro": "Vous acceptez d'indemniser et de dégager TraviXO de toute responsabilité pour toute réclamation, dommage, perte, responsabilité et dépense (y compris les frais juridiques) découlant de :",
+      "item1": "Votre utilisation des Services",
+      "item2": "Votre violation de ces Conditions",
+      "item3": "Votre violation de toute loi ou de tout droit de tiers",
+      "item4": "Les Données Client que vous téléchargez sur les Services"
+    },
+    "section12": {
+      "title": "12. Résolution des Litiges",
+      "subsection1": {
+        "title": "12.1 Loi Applicable",
+        "content": "Ces Conditions sont régies par les lois de la France, sans égard aux principes de conflit de lois."
+      },
+      "subsection2": {
+        "title": "12.2 Juridiction",
+        "content": "Tout litige découlant de ces Conditions ou des Services sera résolu exclusivement devant les tribunaux de Paris, France. Vous consentez à la compétence personnelle de ces tribunaux."
+      },
+      "subsection3": {
+        "title": "12.3 Résolution Informelle",
+        "content": "Avant de déposer une action en justice, vous acceptez de nous contacter à contact@travixosystems.com pour tenter de résoudre le litige de manière informelle."
+      }
+    },
+    "section13": {
+      "title": "13. Modifications de Ces Conditions",
+      "intro": "Nous pouvons mettre à jour ces Conditions de temps à autre. Nous vous informerons des modifications importantes par :",
+      "method1": "Publication des Conditions mises à jour sur cette page avec une nouvelle date de « Dernière mise à jour »",
+      "method2": "Envoi d'une notification par email (pour les clients actifs)",
+      "footer": "Votre utilisation continue des Services après l'entrée en vigueur des modifications constitue une acceptation des Conditions mises à jour. Si vous n'acceptez pas les modifications, vous devez annuler votre abonnement."
+    },
+    "section14": {
+      "title": "14. Dispositions Générales",
+      "subsection1": {
+        "title": "14.1 Intégralité de l'Accord",
+        "content": "Ces Conditions, ainsi que notre Politique de Confidentialité, constituent l'intégralité de l'accord entre vous et TraviXO concernant les Services."
+      },
+      "subsection2": {
+        "title": "14.2 Divisibilité",
+        "content": "Si une disposition de ces Conditions est jugée inapplicable, les dispositions restantes continueront de s'appliquer pleinement."
+      },
+      "subsection3": {
+        "title": "14.3 Renonciation",
+        "content": "Notre défaut d'exercer un droit ou une disposition de ces Conditions ne sera pas considéré comme une renonciation à ce droit ou à cette disposition."
+      },
+      "subsection4": {
+        "title": "14.4 Cession",
+        "content": "Vous ne pouvez pas céder ces Conditions sans notre consentement écrit préalable. Nous pouvons céder ces Conditions sans restriction."
+      },
+      "subsection5": {
+        "title": "14.5 Force Majeure",
+        "content": "Aucune partie ne sera responsable de tout retard ou défaut d'exécution dû à des causes échappant à son contrôle raisonnable (par ex., catastrophes naturelles, guerre, pandémies, actions gouvernementales)."
+      }
+    },
+    "section15": {
+      "title": "15. Informations de Contact",
+      "intro": "Si vous avez des questions concernant ces Conditions, contactez-nous :",
+      "companyName": "TraviXO Systems",
+      "email": "Email :",
+      "phone": "Téléphone :",
+      "address": "Adresse :",
+      "addressValue": "[Adresse du siège social à insérer]"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation"
+    }
   }
-}
 }

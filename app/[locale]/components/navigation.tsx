@@ -3,10 +3,12 @@ import Link from "next/link";
 import { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations('navigation');
 
   // Extract current locale safely (default to 'en')
   const currentLocale = pathname?.split('/')[1] || 'en';
@@ -39,13 +41,13 @@ export default function Navigation() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <Link href={getLocalizedPath('/features')} className="text-gray-600 hover:text-gray-900">
-              Features
+              {t('features')}
             </Link>
             <Link href={getLocalizedPath('/pricing')} className="text-gray-600 hover:text-gray-900">
-              Pricing
+              {t('pricing')}
             </Link>
             <Link href={getLocalizedPath('/contact')} className="text-gray-600 hover:text-gray-900">
-              Contact
+              {t('contact')}
             </Link>
 
             {/* Language Switcher */}
@@ -70,7 +72,7 @@ export default function Navigation() {
             href={getLocalizedPath('/contact')} 
             className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
           >
-            Start Free Pilot
+            {t('startPilot')}
           </Link>
 
           {/* Mobile Hamburger */}
@@ -98,21 +100,21 @@ export default function Navigation() {
                 className="text-gray-600 hover:text-gray-900 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Features
+                {t('features')}
               </Link>
               <Link 
                 href={getLocalizedPath('/pricing')} 
                 className="text-gray-600 hover:text-gray-900 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Pricing
+                {t('pricing')}
               </Link>
               <Link 
                 href={getLocalizedPath('/contact')} 
                 className="text-gray-600 hover:text-gray-900 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact
+                {t('contact')}
               </Link>
 
               {/* Mobile Language Switcher */}
@@ -122,14 +124,14 @@ export default function Navigation() {
                   className={`flex-1 text-center px-4 py-2 rounded ${currentLocale === 'en' ? 'bg-orange-500 text-white font-semibold' : 'bg-gray-100 text-gray-600'}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  English
+                  {t('languages.english')}
                 </Link>
                 <Link 
                   href={switchLocale('fr')}
                   className={`flex-1 text-center px-4 py-2 rounded ${currentLocale === 'fr' ? 'bg-orange-500 text-white font-semibold' : 'bg-gray-100 text-gray-600'}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Français
+                  {t('languages.french')}
                 </Link>
               </div>
 
@@ -138,7 +140,7 @@ export default function Navigation() {
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Start Free Pilot
+                {t('startPilot')}
               </Link>
             </div>
           </div>

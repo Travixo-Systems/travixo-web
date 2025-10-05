@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ReactNode } from "react";
+import { getTranslations, setRequestLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
 import Script from "next/script";
+import { ReactNode } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,18 +17,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const locales = ["en", "fr"];
+
 type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata(props: {
-  params: Promise<{ locale: string }>; 
-}): Promise<Metadata> {
-  const params = await props.params;  
-  const { locale } = params;
-  const t = await getTranslations({ locale, namespace: "metadata.home" });
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata.home" });
 
   return {
     title: t("title"),
@@ -37,8 +43,12 @@ export async function generateMetadata(props: {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  // Enable static rendering
+  if (!locales.includes(locale)) {
+    notFound();
+  }
+
   setRequestLocale(locale);
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
@@ -54,9 +64,6 @@ export default async function LocaleLayout({ children, params }: Props) {
             })(window,document,'script','dataLayer','GTM-N679J3PH');
           `}
         </Script>
-        {/* End Google Tag Manager */}
-
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N679J3PH"
@@ -65,9 +72,11 @@ export default async function LocaleLayout({ children, params }: Props) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
+        {/* End Google Tag Manager */}
 
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
