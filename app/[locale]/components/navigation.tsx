@@ -76,78 +76,77 @@ export default function Navigation() {
             {t('startPilot')}
           </Link>
 
-          {/* Mobile Hamburger + Dropdown */}
-          <div className="relative md:hidden">
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2"
-              aria-label="Toggle menu"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {mobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+          {/* Mobile: Language Switcher + Hamburger (Only visible on mobile) */}
+          <div className="flex items-center md:hidden gap-2">
 
-            {mobileMenuOpen && (
-              <div className="fixed top-16 right-0 w-50 bg-white shadow-md">
-                <div className="flex flex-col p-4 gap-3">
-                  <Link
-                    href={getLocalizedPath('/features')}
-                    className="text-gray-700 hover:text-black"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {t('features')}
-                  </Link>
-                  <Link
-                    href={getLocalizedPath('/pricing')}
-                    className="text-gray-700 hover:text-black"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {t('pricing')}
-                  </Link>
-                  <Link
-                    href={getLocalizedPath('/contact')}
-                    className="text-gray-700 hover:text-black"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {t('contact')}
-                  </Link>
+            {/* Mobile Language Switcher */}
+            <div className="flex gap-1">
+              <Link
+                href={switchLocale('en')}
+                className={`text-sm px-2 py-1 rounded ${currentLocale === 'en' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
+              >
+                EN
+              </Link>
+              <Link
+                href={switchLocale('fr')}
+                className={`text-sm px-2 py-1 rounded ${currentLocale === 'fr' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
+              >
+                FR
+              </Link>
+            </div>
 
-                  <div className="flex gap-2 border-t border-gray-100 pt-3">
+            {/* Hamburger Button */}
+            <div className="relative">
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2"
+                aria-label="Toggle menu"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  {mobileMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+
+              {mobileMenuOpen && (
+                <div className="fixed top-16 right-0 w-50 bg-white shadow-md">
+                  <div className="flex flex-col p-4 gap-3">
                     <Link
-                      href={switchLocale('en')}
-                      className={`flex-1 text-center px-3 py-1 rounded ${currentLocale === 'en'
-                        ? 'bg-orange-500 text-white font-semibold'
-                        : 'bg-gray-100 text-gray-700'}`}
+                      href={getLocalizedPath('/features')}
+                      className="text-gray-700 hover:text-black"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      EN
+                      {t('features')}
                     </Link>
                     <Link
-                      href={switchLocale('fr')}
-                      className={`flex-1 text-center px-3 py-1 rounded ${currentLocale === 'fr'
-                        ? 'bg-orange-500 text-white font-semibold'
-                        : 'bg-gray-100 text-gray-700'}`}
+                      href={getLocalizedPath('/pricing')}
+                      className="text-gray-700 hover:text-black"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      FR
+                      {t('pricing')}
+                    </Link>
+                    <Link
+                      href={getLocalizedPath('/contact')}
+                      className="text-gray-700 hover:text-black"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {t('contact')}
+                    </Link>
+
+                    <Link
+                      href={getLocalizedPath('/contact')}
+                      className="bg-orange-500 hover:bg-orange-600 text-white text-center py-2 rounded-lg font-semibold"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {t('startPilot')}
                     </Link>
                   </div>
-
-                  <Link
-                    href={getLocalizedPath('/contact')}
-                    className="bg-orange-500 hover:bg-orange-600 text-white text-center py-2 rounded-lg font-semibold"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {t('startPilot')}
-                  </Link>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>
