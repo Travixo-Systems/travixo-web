@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Navigation from "../components/navigation";
 import { getTranslations } from 'next-intl/server'
+import Link from 'next/link'
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
     const t = await getTranslations({ locale, namespace: 'metadata.about' })
@@ -157,12 +158,12 @@ export default function AboutPage() {
                         <p className="text-xl mb-8">
                             {t('cta.description')}
                         </p>
-                        <a
+                        <Link
                             href="/demo"
                             className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                         >
                             {t('cta.button')}
-                        </a>
+                        </Link>
                     </div>
                 </section>
             </main>
