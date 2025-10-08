@@ -5,24 +5,26 @@ import Link from 'next/link'
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
     const t = await getTranslations({ locale, namespace: 'metadata.about' })
-
+    
     return {
         title: t('title'),
         description: t('description'),
     }
 }
 
-export default function AboutPage() {
-    const t = useTranslations('about')
+export default function AboutPage({ params }: { params: { locale: string } }) {
+    const t = useTranslations('about')  // Keep single namespace
+    const { locale } = params
+
 
     return (
         <>
             <Navigation />
             <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
                 {/* Hero Section */}
-                <section className="bg-gradient-to-r from-[#00252b] to-[#2d3a39] text-white py-20">
+                <section className="bg-gradient-to-r from-[#00252b] to-[#2d3a39] text-white py-10">
                     <div className="container mx-auto px-4 max-w-4xl text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-2">
                             {t('hero.title')}
                         </h1>
                         <p className="text-xl text-gray-200">
@@ -32,10 +34,10 @@ export default function AboutPage() {
                 </section>
 
                 {/* Story Section */}
-                <section className="py-16">
+                <section className="py-8">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <div className="prose prose-lg max-w-none">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-2">
                                 {t('story.title')}
                             </h2>
 
@@ -52,7 +54,7 @@ export default function AboutPage() {
                                     {t('story.paragraph3')}
                                 </p>
 
-                                <ul className="list-disc list-inside space-y-2 ml-4">
+                                <ul className="list-disc list-inside space-y-2 ml-2">
                                     <li>{t('story.list.item1')}</li>
                                     <li>{t('story.list.item2')}</li>
                                     <li>{t('story.list.item3')}</li>
@@ -63,7 +65,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* Mission Section */}
-                <section className="bg-orange-50 py-16">
+                <section className="bg-orange-50 py-6">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">
                             {t('mission.title')}
@@ -75,16 +77,16 @@ export default function AboutPage() {
                 </section>
 
                 {/* Values Section */}
-                <section className="py-16">
+                <section className="py-6">
                     <div className="container mx-auto px-4 max-w-6xl">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
                             {t('values.title')}
                         </h2>
 
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Value 1 */}
-                            <div className="bg-white p-8 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-4">
+                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                <h3 className="text-xl font-bold text-orange-600 mb-2">
                                     {t('values.efficiency.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -93,8 +95,8 @@ export default function AboutPage() {
                             </div>
 
                             {/* Value 2 */}
-                            <div className="bg-white p-8 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-4">
+                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                <h3 className="text-xl font-bold text-orange-600 mb-2">
                                     {t('values.realWorld.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -103,8 +105,8 @@ export default function AboutPage() {
                             </div>
 
                             {/* Value 3 */}
-                            <div className="bg-white p-8 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-4">
+                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                <h3 className="text-xl font-bold text-orange-600 mb-2">
                                     {t('values.transparency.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -113,8 +115,8 @@ export default function AboutPage() {
                             </div>
 
                             {/* Value 4 */}
-                            <div className="bg-white p-8 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-4">
+                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                <h3 className="text-xl font-bold text-orange-600 mb-2">
                                     {t('values.customerFirst.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -126,9 +128,9 @@ export default function AboutPage() {
                 </section>
 
                 {/* Founders Section */}
-                <section className="bg-gray-50 py-16">
+                <section className="bg-gray-50 py-6">
                     <div className="container mx-auto px-4 max-w-4xl">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-2">
                             {t('founders.title')}
                         </h2>
 
@@ -150,12 +152,12 @@ export default function AboutPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-16">
+                <section className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-4">
                     <div className="container mx-auto px-4 max-w-4xl text-center">
-                        <h2 className="text-3xl font-bold mb-6">
+                        <h2 className="text-3xl font-bold mb-2">
                             {t('cta.title')}
                         </h2>
-                        <p className="text-xl mb-8">
+                        <p className="text-xl mb-4">
                             {t('cta.description')}
                         </p>
                         <Link
@@ -167,6 +169,21 @@ export default function AboutPage() {
                     </div>
                 </section>
             </main>
+             {/* Footer */}
+      <footer className="bg-black text-gray-400 py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p>{t('footer.copyright')}</p>
+          <p className="mt-2 text-sm">
+            <Link href={`/${locale}/privacy`} className="hover:text-white">
+              {t('footer.privacy')}
+            </Link>
+            {" • "}
+            <Link href={`/${locale}/terms`} className="hover:text-white">
+              {t('footer.terms')}
+            </Link>
+          </p>
+        </div>
+      </footer>
         </>
     )
 }

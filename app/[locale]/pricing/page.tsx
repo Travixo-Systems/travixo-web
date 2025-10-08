@@ -30,7 +30,7 @@ export default async function PricingPage(props: Props) {
 
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-8 max-w-5xl">
-          <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
+          <h1 className="text-5xl font-bold text-center text-gray-900 mb-4">
             {t('hero.title')}
           </h1>
           <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto">
@@ -39,10 +39,10 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* Comparison Table Section */}
-        <section className="bg-gray-50 py-20">
+        <section className="bg-gray-50 py-6">
           <div className="container mx-auto px-4 max-w-7xl">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-4">
+              <h2 className="text-4xl font-bold text-gray-900 mb-2">
                 {t('comparison.title')}
               </h2>
               <p className="text-xl text-gray-600">
@@ -173,22 +173,22 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* Pricing Cards Section - CORRECTED PRICES */}
-        <section className="container mx-auto px-4 py-20 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <section className="container mx-auto px-4 py-6 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
             {/* Starter - €250/mo */}
             <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-gray-900">
                 {locale === 'fr' ? 'Démarrage' : 'Starter'}
               </h3>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="text-4xl font-bold text-gray-900">€250</span>
                 <span className="text-lg text-gray-600">{t('plans.suffix')}</span>
               </div>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-2">
                 {locale === 'fr' ? 'Parfait pour petites flottes' : 'Perfect for small fleets'}
               </p>
-              <ul className="space-y-3 mb-8 text-gray-700">
+              <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{locale === 'fr' ? 'Jusqu\'à 100 équipements' : 'Up to 100 assets'}</span>
@@ -223,17 +223,17 @@ export default async function PricingPage(props: Props) {
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 {t('plans.popular')}
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-gray-900">
                 {locale === 'fr' ? 'Professionnel' : 'Professional'}
               </h3>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="text-4xl font-bold text-gray-900">€750</span>
                 <span className="text-lg text-gray-600">{t('plans.suffix')}</span>
               </div>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-2">
                 {locale === 'fr' ? 'Pour équipes en croissance' : 'For growing teams'}
               </p>
-              <ul className="space-y-3 mb-8 text-gray-700">
+              <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{locale === 'fr' ? 'Jusqu\'à 500 équipements' : 'Up to 500 assets'}</span>
@@ -275,17 +275,17 @@ export default async function PricingPage(props: Props) {
 
             {/* Business - €2,500/mo */}
             <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-gray-900">
                 Business
               </h3>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="text-3xl font-bold text-gray-900">€2 500</span>
                 <span className="text-lg text-gray-600">{t('plans.suffix')}</span>
               </div>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-2">
                 {locale === 'fr' ? 'Pour opérations moyennes' : 'For mid-size operations'}
               </p>
-              <ul className="space-y-3 mb-8 text-gray-700">
+              <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{locale === 'fr' ? 'Jusqu\'à 2 000 équipements' : 'Up to 2,000 assets'}</span>
@@ -317,18 +317,18 @@ export default async function PricingPage(props: Props) {
 
             {/* Enterprise - Custom pricing */}
             <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-gray-900">
                 Enterprise
               </h3>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="text-3xl font-bold text-gray-900">
                   {locale === 'fr' ? 'Sur mesure' : 'Custom'}
                 </span>
               </div>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-2">
                 {locale === 'fr' ? 'Pour grandes flottes' : 'For large fleets'}
               </p>
-              <ul className="space-y-3 mb-8 text-gray-700">
+              <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{locale === 'fr' ? 'Équipements illimités' : 'Unlimited assets'}</span>
@@ -362,15 +362,15 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-10 bg-gray-50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
               {t('faq.title')}
             </h2>
-            <div className="space-y-8">
+            <div className="space-y-4">
               {faq.map((item: { question: string; answer: string }, i: number) => (
                 <div key={i} className="border-b border-gray-200 pb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {item.question}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">{item.answer}</p>
@@ -381,7 +381,7 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* Final CTA */}
-        <section className="py-8 bg-gray-900 text-white">
+        <section className="py-6 bg-gray-900 text-white">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">{t('finalCta.title')}</h2>
             <p className="text-xl mb-8 opacity-90">{t('finalCta.subtitle')}</p>
