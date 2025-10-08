@@ -136,55 +136,60 @@
   "about": {
     "hero": {
       "title": "À Propos de TraviXO",
-      "subtitle": "Résoudre les vrais problèmes de suivi d'équipements avec une technologie simple et efficace"
+      "subtitle": "Créé par des vétérans de la location qui ont vécu le problème"
     },
     "story": {
       "title": "Notre Histoire",
-      "paragraph1": "TraviXO est né de la frustration. Après avoir vu des entreprises de location d'équipements perdre des millions à cause d'un mauvais suivi et passer des semaines sur des audits manuels, nous savions qu'il devait y avoir une meilleure solution.",
-      "paragraph2": "Nous ne sommes pas une autre startup de la Silicon Valley essayant de 'révolutionner' une industrie que nous ne comprenons pas. Nous avons travaillé avec des entreprises de location d'équipements, nous avons ressenti la douleur des actifs manquants et des audits échoués.",
-      "paragraph3": "C'est pourquoi TraviXO est différent. Nous avons construit exactement ce dont les entreprises de location ont besoin :",
+      "paragraph1": "TraviXO est né d'une expertise acquise sur le terrain. L'un de nous a travaillé dans le support informatique chez des leaders comme Loxam et Ariane. Dans ce secteur, même les meilleures entreprises font face aux mêmes défis : suivre des milliers d'équipements, maintenir des inventaires à jour, optimiser les audits. C'est là qu'on a compris qu'il manquait un outil vraiment adapté.",
+      "paragraph2": "L'autre venait du monde de la gestion de paie, un univers où chaque donnée compte, où la traçabilité et la rigueur ne sont pas négociables. Cette approche méthodique de la conformité et de la fiabilité est devenue la base du fonctionnement de TraviXO.",
+      "paragraph3": "En unissant ces deux expertises informatique de terrain et gestion rigoureuse des flux internes nous avons pensé et conçu un outil qui parle à la fois aux techniciens et aux décideurs :",
       "list": {
-        "item1": "Suivi QR simple qui fonctionne hors ligne",
-        "item2": "Import Excel qui comprend vraiment vos feuilles de calcul désordonnées",
-        "item3": "Automatisation de conformité VGP qui évite 15K€+ d'amendes"
+        "item1": "Simple à déployer",
+        "item2": "Rapide à prendre en main",
+        "item3": "Assez solide pour éviter des milliers d'euros de pertes"
       }
     },
     "mission": {
       "title": "Notre Mission",
-      "description": "Rendre le suivi d'équipements si simple et efficace que les entreprises de location peuvent se concentrer sur la croissance de leur activité, pas sur la recherche d'actifs manquants. Nous croyons que la technologie doit résoudre de vrais problèmes, pas en créer de nouveaux."
+      "description": "Aider les entreprises à retrouver la visibilité totale sur leurs équipements, sans passer des semaines à croiser des fichiers. TraviXO automatise le suivi d'actifs, fiabilise les inventaires et transforme le chaos des tableurs en clarté opérationnelle en moins de 15 minutes."
     },
     "values": {
-      "title": "Nos Valeurs",
+      "title": "Ce Qui Nous Anime",
       "efficiency": {
-        "title": "L'Efficacité Avant Tout",
-        "description": "Si l'intégration de votre flotte entière prend plus de 15 minutes, nous avons échoué. Nous sommes obsédés par rendre chaque fonctionnalité plus rapide et plus simple."
+        "title": "Efficacité Immédiate",
+        "description": "Chaque minute perdue sur un outil est une minute volée au terrain. Nous construisons pour la vitesse et la simplicité."
       },
       "realWorld": {
-        "title": "Solutions du Monde Réel",
-        "description": "Nous ne construisons pas des fonctionnalités parce qu'elles sont cool. Nous construisons ce qui aide vraiment les entreprises de location à économiser de l'argent et du temps."
+        "title": "Conçu pour le Réel",
+        "description": "Le réseau tombe, les données sont incomplètes, les équipes changent : TraviXO reste fonctionnel dans ces conditions, pas seulement en théorie."
       },
       "transparency": {
-        "title": "Transparence Radicale",
-        "description": "Pas de frais cachés, pas de fausse urgence, pas de réclamations gonflées. Nous vous disons exactement ce que TraviXO fait et ce que ça coûte."
+        "title": "Transparence Totale",
+        "description": "Tarification claire, données exportables, zéro verrouillage. Vous restez propriétaire de vos informations."
       },
       "customerFirst": {
-        "title": "Succès Client",
-        "description": "Votre succès est notre succès. C'est pourquoi nous offrons 2 mois d'essai gratuit et ne facturons que lorsque vous voyez une vraie valeur."
+        "title": "Ancrage Client",
+        "description": "Chaque fonctionnalité naît d'un problème réel vécu par des clients ou par nous-mêmes avant TraviXO."
       }
     },
     "founders": {
-      "title": "L'Équipe",
-      "description": "TraviXO est construit par une petite équipe d'ingénieurs et d'experts de l'industrie qui croient que le suivi d'équipements ne devrait pas nécessiter un département IT.",
+      "title": "Nos Racines",
+      "description": "Nous sommes deux co-fondateurs :",
       "list": {
-        "item1": "Ingénieurs ayant construit des systèmes traitant des millions de transactions",
-        "item2": "Vétérans de l'industrie ayant géré des flottes d'équipements de 10M€+"
+        "item1": "Un spécialiste du support informatique, habitué aux environnements exigeants",
+        "item2": "Une experte en gestion de paie, garante de la rigueur des processus"
       },
-      "conclusion": "Nous sommes autofinancés, rentables et concentrés sur la construction de la meilleure plateforme de suivi d'équipements en Europe."
+      "conclusion": "TraviXO est développé à Paris, hébergé en Europe et conforme au RGPD. Notre ambition est simple : permettre à toute entreprise de savoir quoi, où, et à qui en temps réel."
     },
     "cta": {
-      "title": "Prêt à Voir TraviXO en Action ?",
-      "description": "Rejoignez les entreprises de location d'équipements économisant 50K€+ annuellement avec un simple suivi QR",
-      "button": "Planifier Votre Démo"
+      "title": "Prêt à Suivre Plus Intelligemment ?",
+      "description": "Rejoignez les entreprises qui économisent 50K€+ par an avec le suivi QR",
+      "button": "Démarrer Votre Pilote Gratuit"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation"
     }
   },
   "features": {

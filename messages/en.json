@@ -29,7 +29,6 @@
       "description": "TraviXO terms of service and user agreement."
     }
   },
-  
   "navigation": {
     "home": "Home",
     "about": "About",
@@ -44,7 +43,6 @@
       "french": "French"
     }
   },
-  
   "homepage": {
     "hero": {
       "title": "From Spreadsheet to Tracking in 15 Minutes",
@@ -66,62 +64,67 @@
         "text": "Most companies take weeks to get started. With TraviXO, you're tracking equipment the same day you sign up."
       }
     },
-  "carousel": {
-    "tabs": {
-      "problem": "The Problem",
-      "solution": "Our Solution"
-    },
-    "problem": {
-      "title": "Equipment Rental Companies Lose €50K-200K Annually",
-      "subtitle": "Poor tracking and manual processes are killing your profitability",
-      "items": {
-        "1": {
-          "title": "1-2% Asset Loss Every Year",
-          "text": "For a €5M fleet, that's €50K-100K written off as 'missing' or 'stolen' annually. Equipment vanishes between sites, gets misplaced, or simply disappears."
-        },
-        "2": {
-          "title": "€50K+ Per Quarterly Audit",
-          "text": "Flying auditors to depots, manual counts with clipboards, 2 weeks of reconciliation work. Every quarter. And you still find discrepancies."
-        },
-        "3": {
-          "title": "VGP Compliance Nightmares",
-          "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules across hundreds of assets in spreadsheets is a disaster waiting to happen."
-        },
-        "4": {
-          "title": "40+ Hours of Data Entry",
-          "text": "Traditional systems require weeks of manual setup. By the time you're done entering data, it's already outdated."
+    "carousel": {
+      "tabs": {
+        "problem": "The Problem",
+        "solution": "Our Solution"
+      },
+      "problem": {
+        "title": "Equipment Rental Companies Lose €50K-200K Annually",
+        "subtitle": "Poor tracking and manual processes are killing your profitability",
+        "items": {
+          "1": {
+            "title": "1-2% Asset Loss Every Year",
+            "text": "For a €5M fleet, that's €50K-100K written off as 'missing' or 'stolen' annually. Equipment vanishes between sites, gets misplaced, or simply disappears."
+          },
+          "2": {
+            "title": "€50K+ Per Quarterly Audit",
+            "text": "Flying auditors to depots, manual counts with clipboards, 2 weeks of reconciliation work. Every quarter. And you still find discrepancies."
+          },
+          "3": {
+            "title": "VGP Compliance Nightmares",
+            "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules across hundreds of assets in spreadsheets is a disaster waiting to happen."
+          },
+          "4": {
+            "title": "40+ Hours of Data Entry",
+            "text": "Traditional systems require weeks of manual setup. By the time you're done entering data, it's already outdated."
+          }
+        }
+      },
+      "solution": {
+        "title": "TraviXO: From Zero to Tracking in 15 Minutes",
+        "subtitle": "Simple QR tracking that actually works in the real world",
+        "items": {
+          "1": {
+            "title": "Import Excel",
+            "text": "Upload your messy spreadsheet. We detect columns automatically. 500 assets imported in 5 minutes."
+          },
+          "2": {
+            "title": "Generate QR Codes",
+            "text": "Select all assets, click generate. Get a print-ready PDF with 500 QR codes in 30 seconds."
+          },
+          "3": {
+            "title": "Start Scanning",
+            "text": "No app needed. Field workers scan with any phone. Track location, status, and condition instantly."
+          },
+          "4": {
+            "title": "Stay Compliant",
+            "text": "Automated VGP alerts prevent €15K+ fines. Never miss an inspection deadline again."
+          }
         }
       }
     },
-    "solution": {
-      "title": "TraviXO: From Zero to Tracking in 15 Minutes",
-      "subtitle": "Simple QR tracking that actually works in the real world",
-      "items": {
-        "1": {
-          "title": "Import Excel",
-          "text": "Upload your messy spreadsheet. We detect columns automatically. 500 assets imported in 5 minutes."
-        },
-        "2": {
-          "title": "Generate QR Codes",
-          "text": "Select all assets, click generate. Get a print-ready PDF with 500 QR codes in 30 seconds."
-        },
-        "3": {
-          "title": "Start Scanning",
-          "text": "No app needed. Field workers scan with any phone. Track location, status, and condition instantly."
-        },
-        "4": {
-          "title": "Stay Compliant",
-          "text": "Automated VGP alerts prevent €15K+ fines. Never miss an inspection deadline again."
-        }
-      }
-    }
-  },
     "finalCta": {
       "title": "Ready to Stop Losing Equipment?",
       "subtitle": "Join equipment rental companies who are eliminating asset loss and achieving VGP compliance effortlessly.",
       "primary": "Start Your Free Pilot",
       "secondary": "Schedule a Demo",
-      "badges": ["No credit card required", "2-month free trial", "EU-hosted (GDPR)", "Cancel anytime"],
+      "badges": [
+        "No credit card required",
+        "2-month free trial",
+        "EU-hosted (GDPR)",
+        "Cancel anytime"
+      ],
       "footer": {
         "copyright": "© 2025 TraviXO Systems. All rights reserved.",
         "email": "contact@travixosystems.com",
@@ -130,62 +133,65 @@
       }
     }
   },
-  
-"about": {
-  "hero": {
-    "title": "About TraviXO",
-    "subtitle": "Solving real equipment tracking problems with simple, effective technology"
-  },
-  "story": {
-    "title": "Our Story",
-    "paragraph1": "TraviXO was born from frustration. After watching equipment rental companies lose millions to poor tracking and spend weeks on manual audits, we knew there had to be a better way.",
-    "paragraph2": "We're not another Silicon Valley startup trying to 'revolutionize' an industry we don't understand. We've worked with equipment rental companies, we've felt the pain of missing assets and failed audits.",
-    "paragraph3": "That's why TraviXO is different. We built exactly what rental companies need:",
-    "list": {
-      "item1": "Simple QR tracking that works offline",
-      "item2": "Excel import that actually understands your messy spreadsheets",
-      "item3": "VGP compliance automation that prevents €15K+ fines"
+  "about": {
+    "hero": {
+      "title": "About TraviXO",
+      "subtitle": "Built by equipment rental veterans who lived the problem"
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "TraviXO was born from field expertise. One of us worked in IT support at industry leaders like Loxam and Ariane. In this sector, even the best companies face the same challenges: tracking thousands of assets, maintaining accurate inventories, optimizing audits. That's when we realized a truly adapted tool was missing.",
+      "paragraph2": "The other came from payroll management, a world where every data point matters, where traceability and compliance are non-negotiable. This methodical approach to compliance and reliability became TraviXO's foundation.",
+      "paragraph3": "By combining these two types of expertise field IT and rigorous process management we built a tool that speaks to both technicians and decision-makers:",
+      "list": {
+        "item1": "Simple to deploy",
+        "item2": "Quick to master",
+        "item3": "Robust enough to prevent thousands in losses"
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Help companies achieve total visibility over their equipment without weeks of spreadsheet reconciliation. TraviXO automates asset tracking, streamlines audits, and transforms spreadsheet chaos into operational clarity in under 15 minutes."
+    },
+    "values": {
+      "title": "What Drives Us",
+      "efficiency": {
+        "title": "Immediate Efficiency",
+        "description": "Every minute spent fighting with software is a minute stolen from real work. We build for speed and simplicity."
+      },
+      "realWorld": {
+        "title": "Built for Reality",
+        "description": "Networks fail, data is incomplete, teams change. TraviXO works in these conditions, not just in perfect demos."
+      },
+      "transparency": {
+        "title": "Total Transparency",
+        "description": "Clear pricing, exportable data, zero vendor lock-in. You own your information."
+      },
+      "customerFirst": {
+        "title": "Customer-Driven",
+        "description": "Every feature comes from a real problem experienced by customers or by us before TraviXO."
+      }
+    },
+    "founders": {
+      "title": "Our Roots",
+      "description": "We are two co-founders:",
+      "list": {
+        "item1": "An IT support specialist from demanding equipment environments",
+        "item2": "A payroll management expert ensuring process reliability and compliance"
+      },
+      "conclusion": "TraviXO is developed in Paris, hosted in Europe, and GDPR compliant. Our ambition is simple: enable any company managing equipment to know what, where, and who in real-time."
+    },
+    "cta": {
+      "title": "Ready to Track Smarter?",
+      "description": "Join companies preventing €50K+ in annual losses with simple QR tracking",
+      "button": "Start Your Free Pilot"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
     }
   },
-  "mission": {
-    "title": "Our Mission",
-    "description": "Make equipment tracking so simple and effective that rental companies can focus on growing their business, not hunting for missing assets. We believe technology should solve real problems, not create new ones."
-  },
-  "values": {
-    "title": "Our Values",
-    "efficiency": {
-      "title": "Efficiency First",
-      "description": "If it takes more than 15 minutes to onboard your entire fleet, we've failed. We obsess over making every feature faster and simpler."
-    },
-    "realWorld": {
-      "title": "Real-World Solutions",
-      "description": "We don't build features because they're cool. We build what actually helps rental companies save money and time."
-    },
-    "transparency": {
-      "title": "Radical Transparency",
-      "description": "No hidden fees, no fake urgency, no inflated claims. We tell you exactly what TraviXO does and what it costs."
-    },
-    "customerFirst": {
-      "title": "Customer Success",
-      "description": "Your success is our success. That's why we offer 2-month free trials and only charge when you see real value."
-    }
-  },
-  "founders": {
-    "title": "The Team",
-    "description": "TraviXO is built by a small team of engineers and industry experts who believe equipment tracking shouldn't require an IT department.",
-    "list": {
-      "item1": "Engineers who've built systems processing millions of transactions",
-      "item2": "Industry veterans who've managed €10M+ equipment fleets"
-    },
-    "conclusion": "We're bootstrapped, profitable, and focused on building the best equipment tracking platform in Europe."
-  },
-  "cta": {
-    "title": "Ready to See TraviXO in Action?",
-    "description": "Join equipment rental companies saving €50K+ annually with simple QR tracking",
-    "button": "Schedule Your Demo"
-  }
-},
-  
   "features": {
     "hero": {
       "title": "Everything You Need to Master Asset Tracking",
@@ -289,7 +295,6 @@
       "terms": "Terms of Service"
     }
   },
-  
   "contact": {
     "hero": {
       "title": "Let's Talk About Your Equipment Tracking Needs",
@@ -343,7 +348,6 @@
       "terms": "Terms of Service"
     }
   },
-  
   "pricing": {
     "hero": {
       "title": "Simple, Transparent Pricing",
@@ -519,7 +523,6 @@
       "terms": "Terms of Service"
     }
   },
-  
   "privacy": {
     "title": "Privacy Policy",
     "effective": "Effective Date:",
@@ -717,7 +720,6 @@
       "terms": "Terms of Service"
     }
   },
-  
   "terms": {
     "title": "Terms of Service",
     "effective": "Effective Date:",
