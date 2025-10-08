@@ -36,7 +36,8 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
+
             <Link href={getLocalizedPath('/features')} className="text-gray-600 hover:text-gray-900">
               {t('features')}
             </Link>
@@ -45,6 +46,9 @@ export default function Navigation() {
             </Link>
             <Link href={getLocalizedPath('/contact')} className="text-gray-600 hover:text-gray-900">
               {t('contact')}
+            </Link>            
+            <Link href={getLocalizedPath('/about')} className="text-gray-600 hover:text-gray-900">
+              {t('about')}
             </Link>
 
             {/* Language Switcher */}
@@ -71,13 +75,13 @@ export default function Navigation() {
           {/* Desktop CTA */}
           <Link
             href={getLocalizedPath('/contact')}
-            className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+            className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
           >
-            {t('startPilot')}
+            {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
           </Link>
 
-          {/* Mobile: Language Switcher + Hamburger (Only visible on mobile) */}
-          <div className="flex items-center md:hidden gap-2">
+          {/* Mobile: Language Switcher + Hamburger (Only visible on mobile & tablet) */}
+          <div className="flex items-center lg:hidden gap-2">
 
             {/* Mobile Language Switcher */}
             <div className="flex gap-1">
@@ -115,6 +119,13 @@ export default function Navigation() {
                 <div className="fixed top-16 right-0 w-50 bg-white shadow-md">
                   <div className="flex flex-col p-4 gap-3">
                     <Link
+                      href={getLocalizedPath('/about')}
+                      className="text-gray-700 hover:text-black"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {t('about')}
+                    </Link>
+                    <Link
                       href={getLocalizedPath('/features')}
                       className="text-gray-700 hover:text-black"
                       onClick={() => setMobileMenuOpen(false)}
@@ -141,7 +152,7 @@ export default function Navigation() {
                       className="bg-orange-500 hover:bg-orange-600 text-white text-center py-2 rounded-lg font-semibold"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {t('startPilot')}
+                      {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
                     </Link>
                   </div>
                 </div>

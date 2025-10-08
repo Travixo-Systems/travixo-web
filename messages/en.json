@@ -1,8 +1,12 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - QR-Based Asset Tracking",
-      "description": "Track your rental equipment with TraviXO."
+      "title": "TraviXO - QR Asset Tracking | VGP Compliant Equipment Management",
+      "description": "Track rental equipment with TraviXO. VGP compliance automation, real-time tracking, from spreadsheet to tracking in 15 minutes."
+    },
+    "about": {
+      "title": "About Us - TraviXO",
+      "description": "Learn about TraviXO's mission to eliminate equipment loss and save companies through intelligent asset tracking and VGP compliance."
     },
     "contact": {
       "title": "Contact - TraviXO",
@@ -10,11 +14,11 @@
     },
     "features": {
       "title": "Features - TraviXO Asset Tracking",
-      "description": "Complete asset tracking features: QR codes, mobile scanning, real-time dashboards, and enterprise integrations."
+      "description": "Complete asset tracking features: smart Excel import, bulk QR generation, VGP compliance automation, real-time dashboards, and enterprise integrations."
     },
     "pricing": {
       "title": "Pricing - TraviXO",
-      "description": "Simple transparent pricing for equipment tracking. Plans from €250/month."
+      "description": "Simple transparent pricing for equipment tracking with VGP compliance. Plans from €129/month."
     },
     "privacy": {
       "title": "Privacy Policy - TraviXO",
@@ -28,109 +32,201 @@
   
   "navigation": {
     "home": "Home",
+    "about": "About",
     "features": "Features",
     "pricing": "Pricing",
     "contact": "Contact",
     "privacy": "Privacy",
     "terms": "Terms",
     "startPilot": "Start Free Pilot",
-      "languages": {
-    "english": "English",
-    "french": "French"
-  }
-
+    "languages": {
+      "english": "English",
+      "french": "French"
+    }
   },
   
   "homepage": {
     "hero": {
-      "title": "Stop Losing Equipment.\nStart Tracking Smarter.",
-      "subtitle": "TraviXO helps equipment rental companies eliminate asset loss, automate quarterly audits, and track every piece of equipment in real-time with simple QR codes.",
+      "title": "From Spreadsheet to Tracking in 15 Minutes",
+      "subtitle": "While competitors require 40 hours of manual data entry, TraviXO gets you tracking in 15 minutes with smart Excel import, bulk QR generation, and instant deployment.",
       "ctaPrimary": "Start Free Pilot",
       "ctaSecondary": "Watch 2-Min Demo"
     },
     "values": {
       "1": {
-        "title": "Reduce Loss by 70%",
-        "text": "Real-time QR scanning means you always know where your assets are. No more writing off \"missing\" equipment."
+        "title": "Import 500 Assets in 5 Minutes",
+        "text": "Smart column detection works with any spreadsheet format. No manual mapping, no data entry hell. Just upload and go."
       },
       "2": {
-        "title": "2-Day Audits, Not 2 Weeks",
-        "text": "Replace clipboards and spreadsheets with digital audit workflows. Complete quarterly reconciliation in days, not weeks."
+        "title": "Generate 500 QR Codes in 30 Seconds",
+        "text": "Bulk QR generation creates print-ready PDFs instantly. No clicking through assets one by one."
       },
       "3": {
-        "title": "Enterprise-Ready Integrations",
-        "text": "Connect TraviXO to ServiceNow, Jira, QuickBooks, or 5,000+ apps via Zapier. Your asset data flows where you need it."
+        "title": "Deploy Same Day",
+        "text": "Most companies take weeks to get started. With TraviXO, you're tracking equipment the same day you sign up."
       }
     },
-    "carousel": {
-      "tabs": {
-        "problem": "The Problem",
-        "solution": "The Solution"
-      },
-      "problem": {
-        "title": "Equipment Companies Lose €1M+ Annually",
-        "subtitle": "Poor asset tracking creates massive hidden costs",
-        "items": {
-          "1": {
-            "title": "2-5% Asset Loss Every Year",
-            "text": "For €20M in equipment, that's €400k-1M written off annually."
-          },
-          "2": {
-            "title": "€50k+ Per Quarterly Audit",
-            "text": "Manual counts, 2 weeks of work, inevitable discrepancies."
-          },
-          "3": {
-            "title": "3x Longer Support Tickets",
-            "text": "15 minutes hunting spreadsheets per customer inquiry."
-          },
-          "4": {
-            "title": "Finance Reconciliation Nightmare",
-            "text": "Manual cross-referencing of 5+ Excel files monthly."
-          }
-        }
-      },
-      "solution": {
-        "title": "TraviXO: Your Equipment Intelligence Platform",
-        "subtitle": "Simple QR codes. Powerful tracking. Complete visibility.",
-        "items": {
-          "1": {
-            "title": "QR Everything",
-            "text": "Weatherproof QR stickers. Stick once, track forever."
-          },
-          "2": {
-            "title": "Scan Anywhere",
-            "text": "Phone scanning, no app needed. 10-second logging."
-          },
-          "3": {
-            "title": "Track Automatically",
-            "text": "Real-time dashboard. Know exactly where every asset is."
-          },
-          "4": {
-            "title": "Integrate Everything",
-            "text": "ServiceNow, QuickBooks, Jira. No manual data entry."
-          }
+  "carousel": {
+    "tabs": {
+      "problem": "The Problem",
+      "solution": "Our Solution"
+    },
+    "problem": {
+      "title": "Equipment Rental Companies Lose €50K-200K Annually",
+      "subtitle": "Poor tracking and manual processes are killing your profitability",
+      "items": {
+        "1": {
+          "title": "1-2% Asset Loss Every Year",
+          "text": "For a €5M fleet, that's €50K-100K written off as 'missing' or 'stolen' annually. Equipment vanishes between sites, gets misplaced, or simply disappears."
+        },
+        "2": {
+          "title": "€50K+ Per Quarterly Audit",
+          "text": "Flying auditors to depots, manual counts with clipboards, 2 weeks of reconciliation work. Every quarter. And you still find discrepancies."
+        },
+        "3": {
+          "title": "VGP Compliance Nightmares",
+          "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules across hundreds of assets in spreadsheets is a disaster waiting to happen."
+        },
+        "4": {
+          "title": "40+ Hours of Data Entry",
+          "text": "Traditional systems require weeks of manual setup. By the time you're done entering data, it's already outdated."
         }
       }
     },
+    "solution": {
+      "title": "TraviXO: From Zero to Tracking in 15 Minutes",
+      "subtitle": "Simple QR tracking that actually works in the real world",
+      "items": {
+        "1": {
+          "title": "Import Excel",
+          "text": "Upload your messy spreadsheet. We detect columns automatically. 500 assets imported in 5 minutes."
+        },
+        "2": {
+          "title": "Generate QR Codes",
+          "text": "Select all assets, click generate. Get a print-ready PDF with 500 QR codes in 30 seconds."
+        },
+        "3": {
+          "title": "Start Scanning",
+          "text": "No app needed. Field workers scan with any phone. Track location, status, and condition instantly."
+        },
+        "4": {
+          "title": "Stay Compliant",
+          "text": "Automated VGP alerts prevent €15K+ fines. Never miss an inspection deadline again."
+        }
+      }
+    }
+  },
     "finalCta": {
       "title": "Ready to Stop Losing Equipment?",
-      "subtitle": "Join equipment rental companies who are eliminating asset loss and saving hundreds of thousands annually.",
+      "subtitle": "Join equipment rental companies who are eliminating asset loss and achieving VGP compliance effortlessly.",
       "primary": "Start Your Free Pilot",
       "secondary": "Schedule a Demo",
-      "badges": ["No credit card required", "3-month free trial", "EU-hosted (GDPR)", "Cancel anytime"],
+      "badges": ["No credit card required", "2-month free trial", "EU-hosted (GDPR)", "Cancel anytime"],
       "footer": {
         "copyright": "© 2025 TraviXO Systems. All rights reserved.",
-        "email": "contact.travixosystems.com",
+        "email": "contact@travixosystems.com",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
       }
     }
   },
   
+"about": {
+  "hero": {
+    "title": "About TraviXO",
+    "subtitle": "Solving real equipment tracking problems with simple, effective technology"
+  },
+  "story": {
+    "title": "Our Story",
+    "paragraph1": "TraviXO was born from frustration. After watching equipment rental companies lose millions to poor tracking and spend weeks on manual audits, we knew there had to be a better way.",
+    "paragraph2": "We're not another Silicon Valley startup trying to 'revolutionize' an industry we don't understand. We've worked with equipment rental companies, we've felt the pain of missing assets and failed audits.",
+    "paragraph3": "That's why TraviXO is different. We built exactly what rental companies need:",
+    "list": {
+      "item1": "Simple QR tracking that works offline",
+      "item2": "Excel import that actually understands your messy spreadsheets",
+      "item3": "VGP compliance automation that prevents €15K+ fines"
+    }
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "Make equipment tracking so simple and effective that rental companies can focus on growing their business, not hunting for missing assets. We believe technology should solve real problems, not create new ones."
+  },
+  "values": {
+    "title": "Our Values",
+    "efficiency": {
+      "title": "Efficiency First",
+      "description": "If it takes more than 15 minutes to onboard your entire fleet, we've failed. We obsess over making every feature faster and simpler."
+    },
+    "realWorld": {
+      "title": "Real-World Solutions",
+      "description": "We don't build features because they're cool. We build what actually helps rental companies save money and time."
+    },
+    "transparency": {
+      "title": "Radical Transparency",
+      "description": "No hidden fees, no fake urgency, no inflated claims. We tell you exactly what TraviXO does and what it costs."
+    },
+    "customerFirst": {
+      "title": "Customer Success",
+      "description": "Your success is our success. That's why we offer 2-month free trials and only charge when you see real value."
+    }
+  },
+  "founders": {
+    "title": "The Team",
+    "description": "TraviXO is built by a small team of engineers and industry experts who believe equipment tracking shouldn't require an IT department.",
+    "list": {
+      "item1": "Engineers who've built systems processing millions of transactions",
+      "item2": "Industry veterans who've managed €10M+ equipment fleets"
+    },
+    "conclusion": "We're bootstrapped, profitable, and focused on building the best equipment tracking platform in Europe."
+  },
+  "cta": {
+    "title": "Ready to See TraviXO in Action?",
+    "description": "Join equipment rental companies saving €50K+ annually with simple QR tracking",
+    "button": "Schedule Your Demo"
+  }
+},
+  
   "features": {
     "hero": {
       "title": "Everything You Need to Master Asset Tracking",
-      "subtitle": "TraviXO combines simple QR technology with enterprise-grade integrations to give you complete visibility and control over your equipment fleet."
+      "subtitle": "TraviXO combines simple QR technology with enterprise-grade automation to give you complete visibility, VGP compliance, and control over your equipment fleet. No 40-hour data entry. No weeks of training. Just smart tracking from day one."
+    },
+    "moat": {
+      "title": "What Makes TraviXO Different",
+      "subtitle": "While competitors lock you into weeks of setup, TraviXO gets you tracking in minutes",
+      "import": {
+        "title": "Smart Excel Import",
+        "description": "Upload your existing equipment spreadsheet and start tracking in 5 minutes. Our intelligent column detection automatically maps Serial Numbers, Locations, Purchase Dates - even if your headers are in French, use abbreviations, or don't match our format. Import 500 assets faster than you can make coffee.",
+        "features": [
+          "Automatic column detection (works with any language)",
+          "Handles messy data (blank cells, merged columns, weird formats)",
+          "Validates as it imports (catches errors before they become problems)",
+          "Preview before committing (see exactly what will import)",
+          "Supports Excel (.xlsx), CSV, and Google Sheets"
+        ]
+      },
+      "bulk": {
+        "title": "Bulk Operations That Actually Work",
+        "description": "Stop clicking through assets one by one. TraviXO's bulk operations let you manage hundreds of assets simultaneously - the way you actually work.",
+        "features": [
+          "Generate 500 QR codes as a print-ready PDF in 30 seconds",
+          "Update status for 100+ assets at once (move entire depot to maintenance)",
+          "Bulk assign equipment to teams or locations",
+          "Export filtered data to CSV (only what you need, when you need it)",
+          "Delete with safety checks (we make you confirm, every time)"
+        ]
+      },
+      "smart": {
+        "title": "Smart Enough to Save Time, Simple Enough to Use",
+        "description": "TraviXO doesn't require training manuals or consultant onboarding. If you can use a smartphone and Excel, you already know how to use TraviXO.",
+        "features": [
+          "Mobile QR scanning works without installing an app",
+          "Offline mode (scan assets, sync later when you have internet)",
+          "Smart search (find assets by partial serial, nickname, or location)",
+          "Real-time dashboard updates (see changes as they happen)",
+          "One-click exports for finance reconciliation"
+        ]
+      }
     },
     "coreFeatures": {
       "title": "Core Features",
@@ -140,11 +236,11 @@
         "oneClick": "One-click QR generation",
         "weatherproof": "Weatherproof label recommendations included",
         "staticUrls": "Static URLs (revocable if needed)",
-        "batchGeneration": "Batch generation for large fleets"
+        "batchGeneration": "Bulk PDF generation for 500+ codes"
       },
       "mobileScanning": {
         "title": "Mobile-First Scanning",
-        "description": "Your team can scan assets using any smartphone no app download required. Fast, accurate, works in low light.",
+        "description": "Your team can scan assets using any smartphone - no app download required. Fast, accurate, works in low light.",
         "pwa": "Progressive Web App (install optional)",
         "cameraScanner": "Camera-based QR scanner",
         "offlineSync": "Works offline, syncs when online",
@@ -251,47 +347,148 @@
   "pricing": {
     "hero": {
       "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your fleet size. All plans include unlimited scans, QR code generation, and email support. Upgrade or downgrade anytime."
+      "subtitle": "Choose the plan that fits your fleet size. All plans include smart Excel import, bulk QR generation, VGP compliance tools, and unlimited scans. Upgrade or downgrade anytime."
+    },
+    "moat": {
+      "title": "What Makes TraviXO Different",
+      "subtitle": "While competitors require weeks of setup, TraviXO gets you tracking and VGP compliant the same day",
+      "features": {
+        "import": {
+          "title": "Smart Excel Import",
+          "description": "Import 500 assets in 5 minutes, not 40 hours. Smart column detection works with any spreadsheet format."
+        },
+        "bulkQR": {
+          "title": "Bulk QR Generation",
+          "description": "Generate 500 QR codes as a print-ready PDF in 30 seconds. No clicking through assets one by one."
+        },
+        "autoDetect": {
+          "title": "VGP Compliance Automation",
+          "description": "Automated inspection alerts and DIRECCTE-ready reports. Never miss a compliance deadline again."
+        }
+      }
     },
     "plans": {
-      "popular": "POPULAR",
+      "popular": "MOST POPULAR",
       "suffix": "/mo",
       "starter": {
         "name": "Starter",
-        "price": "€250",
-        "description": "Small companies",
-        "features": ["100 assets", "5 team members", "Unlimited scans", "Mobile scanning", "Dashboard", "CSV export"]
+        "price": "€129",
+        "description": "Perfect for small fleets",
+        "features": [
+          "Up to 100 assets",
+          "5 team members",
+          "Smart Excel import",
+          "Bulk QR generation (PDF)",
+          "VGP compliance tracking",
+          "Mobile scanning",
+          "Real-time dashboard",
+          "CSV export",
+          "Email support"
+        ]
       },
       "professional": {
         "name": "Professional",
-        "price": "€750",
-        "description": "Growing companies",
-        "features": ["500 assets", "20 team members", "Multi-location", "Zapier", "API access", "Priority support"]
+        "price": "€249",
+        "description": "Most popular for growing teams",
+        "features": [
+          "Up to 500 assets",
+          "20 team members",
+          "Everything in Starter, plus:",
+          "VGP automated alerts",
+          "Multi-location support",
+          "Digital audit module",
+          "Zapier integration",
+          "API access",
+          "Priority email support"
+        ]
       },
-      "business": {
-        "name": "Business",
-        "price": "€2,500",
-        "description": "Mid-market",
-        "features": ["2,000 assets", "50 team members", "Audit module", "2 ITSM integrations", "QuickBooks sync", "Phone support"]
+      "scale": {
+        "name": "Scale",
+        "price": "€499",
+        "description": "For mid-market companies",
+        "features": [
+          "Up to 2,000 assets",
+          "50 team members",
+          "Everything in Professional, plus:",
+          "VGP digital certificates",
+          "ServiceNow integration",
+          "Jira Service Desk integration",
+          "QuickBooks sync",
+          "Advanced reporting",
+          "Phone support"
+        ]
       },
       "enterprise": {
         "name": "Enterprise",
-        "price": "Custom",
-        "description": "Large companies",
-        "features": ["Unlimited assets", "Unlimited users", "All integrations", "Custom dev", "Dedicated manager", "99.9% SLA"]
+        "price": "€999",
+        "description": "For large operations",
+        "features": [
+          "Unlimited assets",
+          "Unlimited team members",
+          "Everything in Scale, plus:",
+          "Custom VGP workflows",
+          "Custom integrations",
+          "Dedicated account manager",
+          "Custom SLA (99.9%+)",
+          "On-premise deployment option",
+          "24/7 phone support"
+        ]
       }
     },
     "cta": {
-      "start": "Start Pilot",
-      "demo": "Demo",
-      "contact": "Contact"
+      "start": "Start Free Trial",
+      "demo": "Book Demo",
+      "contact": "Contact Sales"
+    },
+    "comparison": {
+      "title": "TraviXO vs. Traditional Asset Tracking",
+      "subtitle": "See why equipment companies choose TraviXO",
+      "headers": {
+        "feature": "Feature",
+        "traditional": "Traditional Tools",
+        "travixo": "TraviXO"
+      },
+      "rows": {
+        "setup": {
+          "feature": "Setup Time",
+          "traditional": "2-4 weeks of data entry",
+          "travixo": "15 minutes with Excel import"
+        },
+        "qr": {
+          "feature": "QR Generation",
+          "traditional": "Manual, one at a time",
+          "travixo": "Bulk: 500 codes in 30 seconds"
+        },
+        "learning": {
+          "feature": "Learning Curve",
+          "traditional": "2 weeks training required",
+          "travixo": "Start tracking same day"
+        },
+        "value": {
+          "feature": "Time to Value",
+          "traditional": "3-4 weeks minimum",
+          "travixo": "Same day deployment"
+        }
+      }
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "questions": [
         {
           "question": "What counts as an \"asset\"?",
-          "answer": "An asset is any piece of equipment you're tracking. This includes heavy machinery, tools, vehicles, containers anything with a QR code attached."
+          "answer": "An asset is any piece of equipment you're tracking. This includes heavy machinery, tools, vehicles, containers - anything with a QR code attached. Each asset uses one slot in your plan."
+        },
+        {
+          "question": "How does the Excel import work?",
+          "answer": "Simply upload your existing equipment spreadsheet (Excel or CSV). Our smart column detection automatically identifies fields like Serial Number, Asset Name, Location, Purchase Date, etc. No manual mapping required. You can import 500 assets in about 5 minutes."
+        },
+        {
+          "question": "Can I generate QR codes in bulk?",
+          "answer": "Yes! Select any number of assets and generate all QR codes as a single print-ready PDF in seconds. The PDF is formatted for easy printing on standard label sheets (30 labels per page, 6x5 grid)."
+        },
+        {
+          "question": "What is VGP compliance?",
+          "answer": "VGP (Vérification Générale Périodique) is mandatory equipment inspection in France. TraviXO automates inspection tracking, sends alerts before deadlines, and generates DIRECCTE-ready reports. One missed inspection can cost €15K+ in fines."
         },
         {
           "question": "Can I change plans later?",
@@ -299,17 +496,22 @@
         },
         {
           "question": "Is there a free trial?",
-          "answer": "Yes! Founding customers (first 20 companies) get a 2-month free pilot with up to 60 assets. After the pilot, you can choose any paid plan."
+          "answer": "Yes! All new customers get a 2-month free trial with up to 100 assets. No credit card required. After the trial, choose the plan that fits your fleet size."
         },
         {
           "question": "Where is my data stored?",
           "answer": "All data is hosted in EU datacenters (France) with full GDPR compliance. We never store data outside the EU."
+        },
+        {
+          "question": "What's the typical ROI?",
+          "answer": "Most customers see 500-1,300% ROI. For a €5M fleet, preventing 1-2% losses (€50k-€100k), avoiding VGP fines (€15k+), and reducing audit costs (€15k+) totals €80k-€170k annual value for €9k-€30k investment."
         }
       ]
     },
     "finalCta": {
       "title": "Ready to Track Smarter?",
-      "button": "Start Your Free Pilot"
+      "subtitle": "Start your 2-month free trial today. No credit card required.",
+      "button": "Start Your Free Trial"
     },
     "footer": {
       "copyright": "© 2025 TraviXO Systems. All rights reserved.",
@@ -514,22 +716,19 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
-  
-  
   },
+  
   "terms": {
     "title": "Terms of Service",
     "effective": "Effective Date:",
     "effectiveDate": "[To be finalized]",
     "lastUpdated": "Last Updated:",
     "lastUpdatedDate": "[To be decided]",
-    
     "section1": {
       "title": "1. Agreement to Terms",
       "paragraph1": "By accessing or using TraviXO's website (travixosystems.com) and services (\"Services\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use our Services.",
       "paragraph2": "These Terms constitute a legally binding agreement between you (the \"Customer,\" \"you,\" or \"your\") and TraviXO Systems (\"TraviXO,\" \"we,\" \"us,\" or \"our\")."
     },
-    
     "section2": {
       "title": "2. Description of Services",
       "intro": "TraviXO provides QR-based asset tracking software designed for equipment rental and leasing companies. Our Services include:",
@@ -540,7 +739,6 @@
       "item5": "Third-party integrations (ServiceNow, Jira, QuickBooks, etc.)",
       "footer": "We reserve the right to modify, suspend, or discontinue any part of the Services at any time with reasonable notice."
     },
-    
     "section3": {
       "title": "3. User Accounts and Registration",
       "subsection1": {
@@ -556,12 +754,11 @@
         "content": "You are responsible for all activities that occur under your account. You must be at least 18 years old to create an account."
       }
     },
-    
     "section4": {
       "title": "4. Subscription Plans and Billing",
       "subsection1": {
         "title": "4.1 Pricing and Payment",
-        "paragraph1": "Subscription fees are based on the plan you select (Starter, Professional, Business, or Enterprise). Prices are listed on our Pricing page and are subject to change with 30 days' notice.",
+        "paragraph1": "Subscription fees are based on the plan you select (Starter, Professional, Scale, or Enterprise). Prices are listed on our Pricing page and are subject to change with 30 days' notice.",
         "paragraph2": "Payment is due monthly or annually in advance, depending on your chosen billing cycle. We accept credit cards and bank transfers (for Enterprise plans)."
       },
       "subsection2": {
@@ -577,7 +774,6 @@
         "content": "If payment fails, we will attempt to charge your payment method up to 3 times. If payment is not received within 7 days, your account may be suspended. We may charge a late fee of €25 or 5% of the outstanding balance, whichever is greater."
       }
     },
-    
     "section5": {
       "title": "5. Cancellation and Termination",
       "subsection1": {
@@ -598,7 +794,6 @@
         "content": "Upon termination, your access to the Services will cease. You will have 30 days to export your data before it is permanently deleted. Fees paid are non-refundable except as stated in Section 4.3."
       }
     },
-    
     "section6": {
       "title": "6. Acceptable Use Policy",
       "intro": "You agree not to:",
@@ -611,7 +806,6 @@
       "item7": "Use the Services to infringe on intellectual property rights",
       "item8": "Impersonate another person or entity"
     },
-    
     "section7": {
       "title": "7. Intellectual Property",
       "subsection1": {
@@ -628,13 +822,11 @@
         "content": "If you provide feedback, suggestions, or ideas about the Services, we may use them without obligation to you."
       }
     },
-    
     "section8": {
       "title": "8. Data Protection and Privacy",
       "paragraph1": "Our collection and use of personal data is governed by our Privacy Policy. By using the Services, you consent to our data practices as described in the Privacy Policy.",
       "paragraph2": "We implement reasonable security measures to protect your data, but we cannot guarantee absolute security. You are responsible for maintaining the confidentiality of your account credentials."
     },
-    
     "section9": {
       "title": "9. Service Level and Availability",
       "paragraph1": "We strive to provide reliable Services but do not guarantee uninterrupted access. The Services are provided \"as is\" and \"as available.\" We may perform maintenance that temporarily affects availability, and we will provide advance notice when possible.",
@@ -643,7 +835,6 @@
         "content": "Enterprise customers receive a 99.9% uptime SLA as specified in their contract. Other plans do not include an SLA."
       }
     },
-    
     "section10": {
       "title": "10. Limitation of Liability",
       "intro": "To the fullest extent permitted by law:",
@@ -655,7 +846,6 @@
       "paragraph2": "Our total liability to you for any claim arising from these Terms or the Services will not exceed the fees you paid in the 12 months preceding the claim.",
       "paragraph3": "Some jurisdictions do not allow exclusion of certain warranties or limitations on liability, so these limitations may not apply to you."
     },
-    
     "section11": {
       "title": "11. Indemnification",
       "intro": "You agree to indemnify and hold harmless TraviXO from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:",
@@ -664,7 +854,6 @@
       "item3": "Your violation of any laws or third-party rights",
       "item4": "Customer Data you upload to the Services"
     },
-    
     "section12": {
       "title": "12. Dispute Resolution",
       "subsection1": {
@@ -680,7 +869,6 @@
         "content": "Before filing a legal claim, you agree to contact us at contact@travixosystems.com to attempt to resolve the dispute informally."
       }
     },
-    
     "section13": {
       "title": "13. Changes to These Terms",
       "intro": "We may update these Terms from time to time. We will notify you of material changes by:",
@@ -688,7 +876,6 @@
       "method2": "Sending an email notification (for active customers)",
       "footer": "Your continued use of the Services after changes take effect constitutes acceptance of the updated Terms. If you do not agree to the changes, you must cancel your subscription."
     },
-    
     "section14": {
       "title": "14. General Provisions",
       "subsection1": {
@@ -712,7 +899,6 @@
         "content": "Neither party will be liable for any delay or failure to perform due to causes beyond its reasonable control (e.g., natural disasters, war, pandemics, government actions)."
       }
     },
-    
     "section15": {
       "title": "15. Contact Information",
       "intro": "If you have questions about these Terms, contact us:",
@@ -722,11 +908,10 @@
       "address": "Address:",
       "addressValue": "[Insert registered address when available]"
     },
-    
     "footer": {
       "copyright": "© 2025 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
-}
+  }
 }

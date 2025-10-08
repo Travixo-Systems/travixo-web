@@ -1,8 +1,12 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - Suivi d'équipements par QR Code",
-      "description": "Suivez votre équipement de location avec TraviXO."
+      "title": "TraviXO - Suivi d'équipements par QR Code | Conformité VGP",
+      "description": "Suivez votre équipement de location avec TraviXO. Automatisation de la conformité VGP, suivi en temps réel, du tableur au suivi en 15 minutes."
+    },
+    "about": {
+      "title": "À Propos - TraviXO",
+      "description": "Découvrez la mission de TraviXO : éliminer les pertes d'équipements et faire économiser aux entreprises grâce au suivi intelligent des actifs et à la conformité VGP."
     },
     "contact": {
       "title": "Contact - TraviXO",
@@ -10,11 +14,11 @@
     },
     "features": {
       "title": "Fonctionnalités - Suivi d'équipements TraviXO",
-      "description": "Fonctionnalités complètes de suivi d'équipements : codes QR, scan mobile, tableaux de bord en temps réel et intégrations d'entreprise."
+      "description": "Fonctionnalités complètes de suivi d'équipements : import Excel intelligent, génération de QR en masse, automatisation VGP, tableaux de bord en temps réel et intégrations d'entreprise."
     },
     "pricing": {
       "title": "Tarifs - TraviXO",
-      "description": "Tarification simple et transparente pour le suivi d'équipement. Plans à partir de 250€/mois."
+      "description": "Tarification simple et transparente pour le suivi d'équipement avec conformité VGP. Plans à partir de 129€/mois."
     },
     "privacy": {
       "title": "Politique de confidentialité - TraviXO",
@@ -27,111 +31,203 @@
   },
   "navigation": {
     "home": "Accueil",
+    "about": "À Propos",
     "features": "Fonctionnalités",
     "pricing": "Tarifs",
     "contact": "Contact",
     "privacy": "Confidentialité",
     "terms": "Conditions",
-    "startPilot": "Démarrer l'essai gratuit",
-     "languages": {
-    "english": "Anglais",
-    "french": "Français"
-  }
+    "startPilot": "Essai Gratuit",
+    "languages": {
+      "english": "Anglais",
+      "french": "Français"
+    }
   },
   "homepage": {
     "hero": {
-      "title": "Arrêtez de perdre vos équipements.\nAdoptez un suivi intelligent.",
-      "subtitle": "TraviXO aide les entreprises de location d'équipements à éliminer les pertes, automatiser les audits trimestriels et suivre chaque actif en temps réel grâce aux codes QR.",
+      "title": "Du Tableur au Suivi en 15 Minutes",
+      "subtitle": "Alors que les concurrents nécessitent 40 heures de saisie manuelle, TraviXO vous permet de suivre vos équipements en 15 minutes grâce à l'import Excel intelligent, la génération de QR en masse et le déploiement instantané.",
       "ctaPrimary": "Démarrer l'essai gratuit",
       "ctaSecondary": "Voir la démo de 2 minutes"
     },
     "values": {
       "1": {
-        "title": "Réduisez les pertes de 70 %",
-        "text": "Le scan QR en temps réel vous indique toujours où se trouvent vos équipements. Finies les pertes inexpliquées."
+        "title": "Importez 500 équipements en 5 minutes",
+        "text": "La détection intelligente des colonnes fonctionne avec n'importe quel format de tableur. Pas de mappage manuel, pas d'enfer de saisie de données. Il suffit de télécharger et c'est parti."
       },
       "2": {
-        "title": "Des audits en 2 jours, pas en 2 semaines",
-        "text": "Remplacez les tableurs et formulaires papier par des flux d'audit numériques. Terminez vos vérifications trimestrielles en quelques jours."
+        "title": "Générez 500 codes QR en 30 secondes",
+        "text": "La génération en masse de QR crée des PDF prêts à imprimer instantanément. Plus besoin de cliquer sur les actifs un par un."
       },
       "3": {
-        "title": "Intégrations prêtes pour l'entreprise",
-        "text": "Connectez TraviXO à ServiceNow, Jira, QuickBooks ou plus de 5 000 applications via Zapier. Vos données circulent là où vous en avez besoin."
+        "title": "Déployez le jour même",
+        "text": "La plupart des entreprises mettent des semaines à démarrer. Avec TraviXO, vous suivez vos équipements le jour même de votre inscription."
       }
     },
     "carousel": {
       "tabs": {
         "problem": "Le Problème",
-        "solution": "La Solution"
+        "solution": "Notre Solution"
       },
       "problem": {
-        "title": "Les entreprises perdent plus de 1M€ par an",
-        "subtitle": "Un suivi d’actifs inefficace génère des coûts cachés massifs",
+        "title": "Les Loueurs d'Équipements Perdent 50K-200K€ Par An",
+        "subtitle": "Le mauvais suivi et les processus manuels tuent votre rentabilité",
         "items": {
           "1": {
-            "title": "2 à 5 % de pertes d’équipement chaque année",
-            "text": "Pour 20M€ d’équipements, cela représente 400k€ à 1M€ de pertes annuelles."
+            "title": "1-2% de Pertes d'Actifs Chaque Année",
+            "text": "Pour une flotte de 5M€, c'est 50K-100K€ comptabilisés comme 'manquants' ou 'volés' annuellement. L'équipement disparaît entre les sites ou s'égare simplement."
           },
           "2": {
-            "title": "Plus de 50k€ par audit trimestriel",
-            "text": "Comptages manuels, 2 semaines de travail, écarts inévitables."
+            "title": "50K€+ Par Audit Trimestriel",
+            "text": "Envoyer des auditeurs aux dépôts, comptages manuels avec tablettes, 2 semaines de réconciliation. Chaque trimestre. Et vous trouvez encore des écarts."
           },
           "3": {
-            "title": "Tickets de support 3x plus longs",
-            "text": "15 minutes à fouiller des tableurs pour chaque demande client."
+            "title": "Cauchemars de Conformité VGP",
+            "text": "Une inspection manquée = 15K€+ d'amende DIRECCTE. Gérer les calendriers d'inspection pour des centaines d'actifs dans Excel est un désastre annoncé."
           },
           "4": {
-            "title": "Cauchemar de réconciliation comptable",
-            "text": "Croisements manuels de plus de 5 fichiers Excel chaque mois."
+            "title": "40+ Heures de Saisie de Données",
+            "text": "Les systèmes traditionnels nécessitent des semaines de configuration manuelle. Le temps de finir la saisie, les données sont déjà obsolètes."
           }
         }
       },
       "solution": {
-        "title": "TraviXO : Votre Plateforme d’Intelligence d’Équipement",
-        "subtitle": "Des QR codes simples. Un suivi puissant. Une visibilité complète.",
+        "title": "TraviXO : De Zéro au Suivi en 15 Minutes",
+        "subtitle": "Suivi QR simple qui fonctionne vraiment dans le monde réel",
         "items": {
           "1": {
-            "title": "QR sur tout",
-            "text": "Stickers QR résistants. Collez une fois, suivez pour toujours."
+            "title": "Importez Excel",
+            "text": "Uploadez votre tableur désordonné. Nous détectons les colonnes automatiquement. 500 actifs importés en 5 minutes."
           },
           "2": {
-            "title": "Scanner partout",
-            "text": "Scan via téléphone, sans application. Enregistrement en 10 secondes."
+            "title": "Générez les QR",
+            "text": "Sélectionnez tous les actifs, cliquez générer. Obtenez un PDF prêt à imprimer avec 500 codes QR en 30 secondes."
           },
           "3": {
-            "title": "Suivi automatique",
-            "text": "Tableau de bord en temps réel. Localisez chaque actif immédiatement."
+            "title": "Commencez à Scanner",
+            "text": "Pas d'app nécessaire. Les équipes terrain scannent avec n'importe quel téléphone. Suivez localisation et état instantanément."
           },
           "4": {
-            "title": "Intégration totale",
-            "text": "ServiceNow, QuickBooks, Jira. Fini la saisie manuelle."
+            "title": "Restez Conforme",
+            "text": "Alertes VGP automatiques évitent 15K€+ d'amendes. Ne manquez plus jamais une échéance d'inspection."
           }
         }
       }
     },
     "finalCta": {
       "title": "Prêt à arrêter les pertes d'équipement ?",
-      "subtitle": "Rejoignez les entreprises qui éliminent les pertes et économisent des centaines de milliers d'euros chaque année.",
+      "subtitle": "Rejoignez les entreprises qui éliminent les pertes et atteignent la conformité VGP sans effort.",
       "primary": "Démarrer votre essai gratuit",
       "secondary": "Planifier une démo",
       "badges": [
         "Aucune carte requise",
-        "Essai gratuit de 3 mois",
+        "Essai gratuit de 2 mois",
         "Hébergement UE (RGPD)",
         "Résiliation à tout moment"
       ],
       "footer": {
         "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
-        "email": "contact.travixosystems.com",
+        "email": "contact@travixosystems.com",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
       }
     }
   },
+  "about": {
+    "hero": {
+      "title": "À Propos de TraviXO",
+      "subtitle": "Résoudre les vrais problèmes de suivi d'équipements avec une technologie simple et efficace"
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "paragraph1": "TraviXO est né de la frustration. Après avoir vu des entreprises de location d'équipements perdre des millions à cause d'un mauvais suivi et passer des semaines sur des audits manuels, nous savions qu'il devait y avoir une meilleure solution.",
+      "paragraph2": "Nous ne sommes pas une autre startup de la Silicon Valley essayant de 'révolutionner' une industrie que nous ne comprenons pas. Nous avons travaillé avec des entreprises de location d'équipements, nous avons ressenti la douleur des actifs manquants et des audits échoués.",
+      "paragraph3": "C'est pourquoi TraviXO est différent. Nous avons construit exactement ce dont les entreprises de location ont besoin :",
+      "list": {
+        "item1": "Suivi QR simple qui fonctionne hors ligne",
+        "item2": "Import Excel qui comprend vraiment vos feuilles de calcul désordonnées",
+        "item3": "Automatisation de conformité VGP qui évite 15K€+ d'amendes"
+      }
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Rendre le suivi d'équipements si simple et efficace que les entreprises de location peuvent se concentrer sur la croissance de leur activité, pas sur la recherche d'actifs manquants. Nous croyons que la technologie doit résoudre de vrais problèmes, pas en créer de nouveaux."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "efficiency": {
+        "title": "L'Efficacité Avant Tout",
+        "description": "Si l'intégration de votre flotte entière prend plus de 15 minutes, nous avons échoué. Nous sommes obsédés par rendre chaque fonctionnalité plus rapide et plus simple."
+      },
+      "realWorld": {
+        "title": "Solutions du Monde Réel",
+        "description": "Nous ne construisons pas des fonctionnalités parce qu'elles sont cool. Nous construisons ce qui aide vraiment les entreprises de location à économiser de l'argent et du temps."
+      },
+      "transparency": {
+        "title": "Transparence Radicale",
+        "description": "Pas de frais cachés, pas de fausse urgence, pas de réclamations gonflées. Nous vous disons exactement ce que TraviXO fait et ce que ça coûte."
+      },
+      "customerFirst": {
+        "title": "Succès Client",
+        "description": "Votre succès est notre succès. C'est pourquoi nous offrons 2 mois d'essai gratuit et ne facturons que lorsque vous voyez une vraie valeur."
+      }
+    },
+    "founders": {
+      "title": "L'Équipe",
+      "description": "TraviXO est construit par une petite équipe d'ingénieurs et d'experts de l'industrie qui croient que le suivi d'équipements ne devrait pas nécessiter un département IT.",
+      "list": {
+        "item1": "Ingénieurs ayant construit des systèmes traitant des millions de transactions",
+        "item2": "Vétérans de l'industrie ayant géré des flottes d'équipements de 10M€+"
+      },
+      "conclusion": "Nous sommes autofinancés, rentables et concentrés sur la construction de la meilleure plateforme de suivi d'équipements en Europe."
+    },
+    "cta": {
+      "title": "Prêt à Voir TraviXO en Action ?",
+      "description": "Rejoignez les entreprises de location d'équipements économisant 50K€+ annuellement avec un simple suivi QR",
+      "button": "Planifier Votre Démo"
+    }
+  },
   "features": {
     "hero": {
       "title": "Tout ce dont vous avez besoin pour maîtriser le suivi d'actifs",
-      "subtitle": "TraviXO combine la simplicité de la technologie QR avec des intégrations de niveau entreprise pour vous offrir une visibilité et un contrôle complets sur votre flotte d'équipements."
+      "subtitle": "TraviXO combine la simplicité de la technologie QR avec une automatisation de niveau entreprise pour vous offrir une visibilité complète, la conformité VGP et le contrôle sur votre flotte d'équipements. Pas de 40 heures de saisie de données. Pas de semaines de formation. Juste un suivi intelligent dès le premier jour."
+    },
+    "moat": {
+      "title": "Ce Qui Rend TraviXO Différent",
+      "subtitle": "Alors que les concurrents vous enferment dans des semaines de configuration, TraviXO vous fait suivre en quelques minutes",
+      "import": {
+        "title": "Import Excel Intelligent",
+        "description": "Téléchargez votre tableur d'équipements existant et commencez à suivre en 5 minutes. Notre détection intelligente des colonnes mappe automatiquement les Numéros de Série, les Emplacements, les Dates d'Achat - même si vos en-têtes sont en français, utilisent des abréviations ou ne correspondent pas à notre format. Importez 500 actifs plus rapidement que vous ne faites votre café.",
+        "features": [
+          "Détection automatique des colonnes (fonctionne dans n'importe quelle langue)",
+          "Gère les données désordonnées (cellules vides, colonnes fusionnées, formats étranges)",
+          "Valide pendant l'importation (détecte les erreurs avant qu'elles ne deviennent des problèmes)",
+          "Aperçu avant validation (voyez exactement ce qui sera importé)",
+          "Prend en charge Excel (.xlsx), CSV et Google Sheets"
+        ]
+      },
+      "bulk": {
+        "title": "Opérations en Masse Qui Fonctionnent Vraiment",
+        "description": "Arrêtez de cliquer sur les actifs un par un. Les opérations en masse de TraviXO vous permettent de gérer des centaines d'actifs simultanément - comme vous travaillez réellement.",
+        "features": [
+          "Générez 500 codes QR sous forme de PDF prêt à imprimer en 30 secondes",
+          "Mettez à jour le statut de plus de 100 actifs à la fois (déplacez un dépôt entier en maintenance)",
+          "Affectation en masse d'équipements à des équipes ou des emplacements",
+          "Exportez les données filtrées vers CSV (uniquement ce dont vous avez besoin, quand vous en avez besoin)",
+          "Suppression avec vérifications de sécurité (nous vous faisons confirmer, à chaque fois)"
+        ]
+      },
+      "smart": {
+        "title": "Assez Intelligent pour Gagner du Temps, Assez Simple à Utiliser",
+        "description": "TraviXO ne nécessite pas de manuels de formation ni d'intégration de consultants. Si vous savez utiliser un smartphone et Excel, vous savez déjà comment utiliser TraviXO.",
+        "features": [
+          "Le scan QR mobile fonctionne sans installer d'application",
+          "Mode hors ligne (scannez les actifs, synchronisez plus tard quand vous avez internet)",
+          "Recherche intelligente (trouvez des actifs par numéro de série partiel, surnom ou emplacement)",
+          "Mises à jour du tableau de bord en temps réel (voyez les changements au fur et à mesure)",
+          "Exports en un clic pour la réconciliation financière"
+        ]
+      }
     },
     "coreFeatures": {
       "title": "Fonctionnalités Principales",
@@ -141,11 +237,11 @@
         "oneClick": "Génération de QR en un clic",
         "weatherproof": "Recommandations d'étiquettes résistantes aux intempéries incluses",
         "staticUrls": "URLs statiques (révocables si nécessaire)",
-        "batchGeneration": "Génération par lots pour grandes flottes"
+        "batchGeneration": "Génération PDF en masse pour plus de 500 codes"
       },
       "mobileScanning": {
         "title": "Scan Mobile Prioritaire",
-        "description": "Votre équipe peut scanner les actifs avec n'importe quel smartphone, sans téléchargement d'application. Rapide, précis, fonctionne en faible luminosité.",
+        "description": "Votre équipe peut scanner les actifs avec n'importe quel smartphone - sans téléchargement d'application. Rapide, précis, fonctionne en faible luminosité.",
         "pwa": "Application Web Progressive (installation optionnelle)",
         "cameraScanner": "Scanner QR basé sur la caméra",
         "offlineSync": "Fonctionne hors ligne, synchronise en ligne",
@@ -250,92 +346,173 @@
   "pricing": {
     "hero": {
       "title": "Tarification Simple et Transparente",
-      "subtitle": "Choisissez le plan adapté à la taille de votre flotte. Tous les plans incluent des scans illimités, la génération de codes QR et le support par email. Changez de plan à tout moment."
+      "subtitle": "Choisissez le plan adapté à la taille de votre flotte. Tous les plans incluent l'import Excel intelligent, la génération de QR en masse et la conformité VGP automatisée. Changez de plan à tout moment."
     },
     "plans": {
-      "popular": "POPULAIRE",
+      "popular": "LE PLUS POPULAIRE",
       "suffix": "/mois",
       "starter": {
-        "name": "Démarrage",
+        "name": "Starter",
         "price": "250€",
-        "description": "Petites entreprises",
+        "description": "Parfait pour les petites agences",
         "features": [
-          "100 équipements",
+          "Jusqu'à 100 équipements",
           "5 membres d'équipe",
-          "Scans illimités",
-          "Scan mobile",
-          "Tableau de bord",
-          "Export CSV"
+          "Import Excel intelligent",
+          "Génération de QR en masse (PDF)",
+          "Suivi de base VGP",
+          "Scan mobile (sans app)",
+          "Tableau de bord en temps réel",
+          "Export CSV",
+          "Support par email"
         ]
       },
       "professional": {
         "name": "Professionnel",
         "price": "750€",
-        "description": "Entreprises en croissance",
+        "description": "Idéal pour les agences Loxam",
+        "highlight": "Évitez 15K€+ d'amendes DIRECCTE",
         "features": [
-          "500 équipements",
+          "Jusqu'à 500 équipements",
           "20 membres d'équipe",
-          "Multi-sites",
-          "Zapier",
+          "Tout dans Starter, plus:",
+          "Conformité VGP automatisée complète",
+          "Alertes DIRECCTE automatiques",
+          "Certificats numériques VGP",
+          "Support multi-sites",
+          "Module d'audit numérique",
+          "Intégration Zapier",
           "Accès API",
-          "Support prioritaire"
+          "Support prioritaire",
+          "ROI: 50K-95K€ économisés/an"
         ]
       },
       "business": {
         "name": "Business",
         "price": "2 500€",
-        "description": "Marché intermédiaire",
+        "description": "Pour les opérations moyennes",
         "features": [
-          "2 000 équipements",
+          "Jusqu'à 2 000 équipements",
           "50 membres d'équipe",
-          "Module d'audit",
-          "2 intégrations ITSM",
-          "Sync QuickBooks",
+          "Tout dans Professionnel, plus:",
+          "Workflows VGP personnalisés",
+          "Intégration ServiceNow",
+          "Intégration Jira Service Desk",
+          "Synchronisation QuickBooks",
+          "Rapports avancés",
+          "Gestionnaire de compte dédié",
           "Support téléphonique"
         ]
       },
       "enterprise": {
-        "name": "Entreprise",
-        "price": "Sur Mesure",
-        "description": "Grandes entreprises",
+        "name": "Enterprise",
+        "price": "Sur mesure",
+        "description": "Pour les grandes flottes",
         "features": [
           "Équipements illimités",
           "Utilisateurs illimités",
-          "Toutes les intégrations",
-          "Développement personnalisé",
-          "Gestionnaire dédié",
-          "SLA 99,9%"
+          "Tout dans Business, plus:",
+          "Déploiement sur site possible",
+          "SLA personnalisé (99,9%+)",
+          "Intégrations sur mesure",
+          "Formation personnalisée",
+          "Support 24/7"
         ]
       }
     },
-    "cta": {
-      "start": "Démarrer l'Essai",
-      "demo": "Démo",
-      "contact": "Contact"
+    "comparison": {
+      "title": "TraviXO vs. Suivi d'Actifs Traditionnel",
+      "subtitle": "Pourquoi les agences d'équipement choisissent TraviXO",
+      "headers": {
+        "feature": "Fonctionnalité",
+        "traditional": "Outils Traditionnels",
+        "travixo": "TraviXO",
+        "impact": "Impact Financier"
+      },
+      "rows": {
+        "setup": {
+          "feature": "Temps de Configuration",
+          "traditional": "2-4 semaines de saisie",
+          "travixo": "15 minutes avec import Excel",
+          "impact": "Commencez à prévenir les pertes immédiatement"
+        },
+        "vgp": {
+          "feature": "Conformité VGP",
+          "traditional": "Suivi manuel, risque d'oubli",
+          "travixo": "Alertes automatiques DIRECCTE",
+          "impact": "Évitez 15K€+ d'amendes par inspection manquée"
+        },
+        "loss": {
+          "feature": "Taux de Perte",
+          "traditional": "1-2% de pertes annuelles",
+          "travixo": "0.3-0.5% avec QR tracking",
+          "impact": "50K-100K€ économisés sur flotte 5M€"
+        },
+        "audit": {
+          "feature": "Audits Trimestriels",
+          "traditional": "2 semaines, 50K€ de coûts",
+          "travixo": "2 jours, 75% moins cher",
+          "impact": "15K-20K€ économisés par audit"
+        }
+      }
+    },
+    "roi": {
+      "title": "Retour sur Investissement Réel",
+      "subtitle": "Pour une agence Loxam typique avec flotte de 5M€",
+      "breakdown": {
+        "losses": "50K-100K€ de pertes évitées (réduction de 1-2%)",
+        "vgp": "15K-50K€ d'amendes DIRECCTE évitées",
+        "audit": "15K-20K€ économisés sur les audits",
+        "total": "Total: 80K-170K€ de valeur annuelle",
+        "cost": "Coût TraviXO: 9K€/an (Plan Professionnel)",
+        "roi": "ROI: 889-1,889%"
+      }
     },
     "faq": {
       "title": "Questions Fréquentes",
       "questions": [
         {
-          "question": "Qu'est-ce qu'un \"actif\" ?",
-          "answer": "Un actif est tout équipement que vous suivez. Cela inclut les machines lourdes, les outils, les véhicules, les conteneurs - tout ce qui porte un code QR."
+          "question": "Qu'est-ce qu'un \"équipement\"?",
+          "answer": "Un équipement est tout matériel que vous suivez. Cela inclut les machines lourdes, les outils, les véhicules, les conteneurs - tout ce qui porte un code QR. Chaque équipement utilise un emplacement dans votre plan."
         },
         {
-          "question": "Puis-je changer de plan plus tard ?",
-          "answer": "Oui, changez de plan à tout moment. Si vous passez à un plan supérieur en cours de mois, nous calculerons la différence au prorata. Si vous rétrogradez, le nouveau tarif s'appliquera au prochain cycle de facturation."
+          "question": "Comment fonctionne l'import Excel?",
+          "answer": "Il suffit de télécharger votre tableur d'équipements existant (Excel ou CSV). Notre détection intelligente des colonnes identifie automatiquement les champs comme Numéro de Série, Nom de l'Équipement, Emplacement, Date d'Achat, etc. Aucun mappage manuel requis. Vous pouvez importer 500 équipements en environ 5 minutes."
         },
         {
-          "question": "Y a-t-il un essai gratuit ?",
-          "answer": "Oui ! Les clients fondateurs (20 premières entreprises) bénéficient d'un essai gratuit de 2 mois avec jusqu'à 60 équipements. Après l'essai, vous pouvez choisir n'importe quel plan payant."
+          "question": "Puis-je générer des codes QR en masse?",
+          "answer": "Oui! Sélectionnez n'importe quel nombre d'équipements et générez tous les codes QR sous forme d'un seul PDF prêt à imprimer en quelques secondes. Le PDF est formaté pour une impression facile sur des feuilles d'étiquettes standard (30 étiquettes par page, grille 6x5)."
         },
         {
-          "question": "Où sont stockées mes données ?",
+          "question": "Qu'est-ce que la conformité VGP?",
+          "answer": "La VGP (Vérification Générale Périodique) est une inspection obligatoire des équipements en France. TraviXO automatise le suivi des inspections, envoie des alertes avant les échéances et génère des rapports conformes DIRECCTE. Une inspection manquée peut coûter plus de 15K€ d'amendes."
+        },
+        {
+          "question": "Puis-je changer de plan plus tard?",
+          "answer": "Oui, passez à un plan supérieur ou inférieur à tout moment. Si vous passez à un plan supérieur en cours de mois, nous calculerons la différence au prorata. Si vous rétrogradez, le nouveau tarif s'appliquera au prochain cycle de facturation."
+        },
+        {
+          "question": "Y a-t-il un essai gratuit?",
+          "answer": "Oui! Tous les nouveaux clients bénéficient d'un essai gratuit de 2 mois avec jusqu'à 100 équipements. Aucune carte bancaire requise. Après l'essai, choisissez le plan adapté à la taille de votre flotte."
+        },
+        {
+          "question": "Où sont stockées mes données?",
           "answer": "Toutes les données sont hébergées dans des centres de données européens (France) avec une conformité RGPD complète. Nous ne stockons jamais de données en dehors de l'UE."
+        },
+        {
+          "question": "Quel est le ROI typique?",
+          "answer": "La plupart des clients voient 500-1,300% de ROI. Pour une flotte de 5M€, prévenir 1-2% de pertes (50k€-100k€), éviter amendes VGP (15k€+), et réduire coûts d'audit (15k€+) totalise 80k€-170k€ de valeur annuelle pour 9k€-30k€ d'investissement."
         }
       ]
     },
+    "cta": {
+      "start": "Démarrer l'Essai Gratuit",
+      "demo": "Réserver une Démo",
+      "contact": "Contacter les Ventes"
+    },
     "finalCta": {
-      "title": "Prêt à Suivre Plus Intelligemment ?",
+      "title": "Prêt à Suivre Plus Intelligemment?",
+      "subtitle": "Commencez votre essai gratuit de 2 mois aujourd'hui. Aucune carte bancaire requise.",
       "button": "Démarrer Votre Essai Gratuit"
     },
     "footer": {
@@ -581,8 +758,8 @@
       "title": "4. Abonnements et Facturation",
       "subsection1": {
         "title": "4.1 Tarification et Paiement",
-        "paragraph1": "Les frais d'abonnement sont basés sur le plan que vous sélectionnez (Starter, Professional, Business ou Enterprise). Les prix sont indiqués sur notre page Tarifs et peuvent être modifiés avec un préavis de 30 jours.",
-        "paragraph2": "Le paiement est dû mensuellement ou annuellement à l'avance, selon le cycle de facturation que vous avez choisi. Nous acceptons les cartes bancaires et les virements bancaires (pour les plans Enterprise)."
+        "paragraph1": "Les frais d'abonnement sont basés sur le plan que vous sélectionnez (Démarrage, Professionnel, Scale ou Entreprise). Les prix sont indiqués sur notre page Tarifs et peuvent être modifiés avec un préavis de 30 jours.",
+        "paragraph2": "Le paiement est dû mensuellement ou annuellement à l'avance, selon le cycle de facturation que vous avez choisi. Nous acceptons les cartes bancaires et les virements bancaires (pour les plans Entreprise)."
       },
       "subsection2": {
         "title": "4.2 Renouvellement Automatique",
@@ -655,7 +832,7 @@
       "paragraph1": "Nous nous efforçons de fournir des Services fiables, mais ne garantissons pas un accès ininterrompu. Les Services sont fournis « en l'état » et « selon disponibilité ». Nous pouvons effectuer une maintenance qui affecte temporairement la disponibilité, et nous fournirons un préavis dans la mesure du possible.",
       "sla": {
         "title": "Accord de Niveau de Service (SLA) :",
-        "content": "Les clients Enterprise bénéficient d'un SLA de disponibilité de 99,9 % tel que spécifié dans leur contrat. Les autres plans n'incluent pas de SLA."
+        "content": "Les clients Entreprise bénéficient d'un SLA de disponibilité de 99,9 % tel que spécifié dans leur contrat. Les autres plans n'incluent pas de SLA."
       }
     },
     "section10": {
