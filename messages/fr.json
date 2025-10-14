@@ -45,8 +45,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "Du Tableur au Suivi en 15 Minutes",
-      "subtitle": "Alors que les concurrents requièrent jusqu’à 40 heures de saisie manuelle, TraviXO vous permet de suivre vos équipements en seulement 15 minutes, grâce à l’import Excel intelligent, à la génération de QR codes en masse et au déploiement instantané.",
+      "title": "Des Données au Déploiement : 15 Minutes",
+      "subtitle": "Transformez le chaos des tableurs en contrôle opérationnel. L'import automatisé de TraviXO traite plus de 500 équipements, génère des QR codes prêts à déployer et offre un suivi en temps réel pour que votre équipe se concentre sur les opérations, pas sur la saisie de données.",
       "ctaPrimary": "Démarrer l'essai gratuit",
       "ctaSecondary": "Voir la démo de 2 minutes"
     },

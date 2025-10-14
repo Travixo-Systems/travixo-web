@@ -45,8 +45,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "From Spreadsheet to Tracking in 15 Minutes",
-      "subtitle": "While competitors require 40 hours of manual data entry, TraviXO gets you tracking in 15 minutes with smart Excel import, bulk QR generation, and instant deployment.",
+      "title": "From Data to Deployment: 15 Minutes",
+      "subtitle": "Transform spreadsheet chaos into operational control. TraviXO's automated import processes 500+ assets, generates deployment-ready QR codes, and delivers real-time tracking so your team can focus on operations, not data entry.",
       "ctaPrimary": "Start Free Pilot",
       "ctaSecondary": "Watch 2-Min Demo"
     },
