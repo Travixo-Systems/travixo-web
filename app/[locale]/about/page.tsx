@@ -157,7 +157,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
                         <h2 className="text-3xl font-bold mb-2">
                             {t('cta.title')}
                         </h2>
-                        <p className="text-xl mb-4">
+                        <p className="text-xl mb-">
                             {t('cta.description')}
                         </p>
                         <Link

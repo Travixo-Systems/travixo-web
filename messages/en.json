@@ -195,8 +195,26 @@
   "features": {
     "hero": {
       "title": "Everything You Need to Master Asset Tracking",
-      "subtitle": "TraviXO combines simple QR technology with enterprise-grade automation to give you complete visibility, VGP compliance, and control over your equipment fleet. No 40-hour data entry. No weeks of training. Just smart tracking from day one."
+      "subtitle": "TraviXO combines straightforward QR technology with professional-grade automation to give you complete visibility, VGP compliance, and full fleet control. Zero manual data entry. Zero lengthy onboarding. Just immediate, intelligent tracking."
     },
+    "differentiators": {
+      "import": {
+        "time": "5 min",
+        "title": "Smart Excel Import",
+        "description": "Import 500 assets in 5 minutes. Smart column detection works with any spreadsheet format."
+      },
+      "bulk": {
+        "time": "30 sec",
+        "title": "Bulk QR Generation",
+        "description": "Generate 500 QR codes as print-ready PDF in 30 seconds. No clicking through assets one by one."
+      },
+      "deploy": {
+        "time": "Same day",
+        "title": "Deploy Immediately",
+        "description": "Start tracking equipment the same day you sign up. No weeks of training or setup required."
+      }
+    },
+    "coreTitle": "Complete Asset Tracking Platform",
     "moat": {
       "title": "What Makes TraviXO Different",
       "subtitle": "While competitors lock you into weeks of setup, TraviXO gets you tracking in minutes",

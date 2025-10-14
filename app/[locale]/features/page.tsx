@@ -65,32 +65,32 @@ export default async function FeaturesPage(props: Props) {
             <div className="grid md:grid-cols-3 gap-8">
               
               <div className="text-center">
-                <div className="text-4xl font-bold text-orange-500 mb-">5 min</div>
+                <div className="text-4xl font-bold text-orange-500 mb-">{t("differentiators.import.time")}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Smart Excel Import
+                {t("differentiators.import.title")}                
                 </h3>
                 <p className="text-gray-600">
-                  Import 500 assets in 5 minutes. Smart column detection works with any spreadsheet format.
+                  {t("differentiators.import.description")}
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-4xl font-bold text-orange-500 mb-">30 sec</div>
+                <div className="text-4xl font-bold text-orange-500 mb-">{t("differentiators.bulk.time")}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Bulk QR Generation
+                  {t("differentiators.bulk.title")}
                 </h3>
                 <p className="text-gray-600">
-                  Generate 500 QR codes as print-ready PDF in 30 seconds. No clicking through assets one by one.
+                  {t("differentiators.bulk.description")}
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-4xl font-bold text-orange-500 mb-">Same day</div>
+                <div className="text-4xl font-bold text-orange-500 mb-">{t("differentiators.deploy.time")}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Deploy Immediately
+                  {t("differentiators.deploy.title")}
                 </h3>
                 <p className="text-gray-600">
-                  Start tracking equipment the same day you sign up. No weeks of training or setup required.
+                  {t("differentiators.deploy.description")}
                 </p>
               </div>
 
@@ -102,7 +102,7 @@ export default async function FeaturesPage(props: Props) {
         <section className="py-8 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-6">
-              Complete Asset Tracking Platform
+              {t("coreTitle")}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
