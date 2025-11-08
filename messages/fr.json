@@ -366,31 +366,28 @@
       "terms": "Conditions d'utilisation"
     }
   },
-  "pricing": {
-  "hero": {
+  "pricing": {"hero": {
     "title": "Automatisez Votre Conformité VGP",
-    "subtitle": "Évitez €15K-€75K d'amendes DIRECCTE avec le seul système qui automatise la conformité réglementaire française",
-    "supporting": "Conçu pour les sociétés de location et maintenance d'équipements qui ne peuvent pas se permettre d'inspections manquées."
+    "subtitle": "Évitez €15K-€75K d'amendes DIRECCTE avec le seul système qui automatise la conformité réglementaire française"
   },
   "billing": {
-    "orMonthly": "ou",
-    "savingsHint": "Économisez 15% avec facturation annuelle"
+    "discount": "Économisez 15% avec paiement annuel"
   },
   "comparison": {
-    "title": "Pourquoi TraviXO ?",
-    "subtitle": "Comparaison avec les outils traditionnels"
+    "title": "Pourquoi TraviXO ?"
   },
   "plans": {
-    "suffix": "/mois",
-    "popular": "Recommandé",
+    "popular": "Le Plus Populaire",
+    "vgpIncluded": "VGP Inclus",
     "starter": {
       "name": "Démarrage",
-      "subtitle": "Suivi d'actifs de base",
+      "subtitle": "Suivi d'actifs de base pour petites flottes",
       "features": {
         "assets": "Jusqu'à 100 équipements",
         "excel": "Import Excel intelligent",
-        "qr": "Génération QR en masse",
-        "scan": "Scan mobile sans app",
+        "qr": "Génération de QR en masse",
+        "scan": "Scan mobile (sans app)",
+        "support": "Support par email",
         "noVgp": "Conformité VGP non incluse"
       }
     },
@@ -400,16 +397,19 @@
       "features": {
         "vgp": "Conformité VGP automatisée",
         "assets": "Jusqu'à 500 équipements",
+        "starter": "Tout du Démarrage, plus:",
         "multiSite": "Support multi-sites",
         "audit": "Module d'audit numérique",
-        "integration": "Intégration Zapier"
+        "integration": "Intégration Zapier",
+        "support": "Support prioritaire"
       }
     },
     "business": {
       "name": "Business",
-      "subtitle": "Support dédié pour opérations moyennes",
+      "subtitle": "Pour opérations moyennes avec support dédié",
       "features": {
         "assets": "Jusqu'à 2 000 équipements",
+        "professional": "Tout du Professionnel +",
         "vgpPriority": "VGP + support de conformité prioritaire",
         "integrations": "ServiceNow + QuickBooks",
         "manager": "Gestionnaire de compte dédié",
@@ -419,47 +419,20 @@
     "enterprise": {
       "name": "Enterprise",
       "price": "Sur mesure",
-      "subtitle": "Conformité totale pour grandes flottes",
-      "annualNote": "À partir de €40K/an",
+      "annual": "À partir de €40K/an",
+      "subtitle": "Pour grandes flottes avec conformité totale",
       "features": {
         "unlimited": "Équipements illimités",
         "vgpDedicated": "VGP + équipe de conformité dédiée",
         "custom": "Intégrations sur mesure",
         "onPremise": "Déploiement sur site disponible",
+        "sla": "SLA 99.9%+",
         "support": "Support 24/7"
       }
     }
   },
-  "extensions": {
-    "title": "Modules Optionnels",
-    "subtitle": "Capacités avancées pour besoins spécifiques",
-    "extraAssets": {
-      "title": "Pack Actifs Supplémentaires",
-      "description": "Dépassez votre limite sans changer de forfait",
-      "price": "+€100 par tranche de 100 actifs"
-    },
-    "predictive": {
-      "title": "Analyse Prédictive de Conformité",
-      "description": "Réduisez les inspections inutiles avec prédiction basée sur les données d'usure",
-      "price": "À partir de €300/mois"
-    },
-    "erp": {
-      "title": "Connecteur ERP",
-      "description": "Liaison transparente avec SAP, Oracle ou votre système interne",
-      "price": "€2 500 setup + €50/mois"
-    },
-    "sla": {
-      "title": "SLA Garanti 24h",
-      "description": "Pour les flottes qui ne peuvent pas attendre le support standard",
-      "price": "+€400/mois"
-    },
-    "cta": {
-      "text": "Besoin d'une configuration personnalisée ?",
-      "button": "Parler aux Ventes"
-    }
-  },
   "cta": {
-    "start": "Commencer",
+    "start": "Commencer Gratuitement",
     "demo": "Réserver une Démo",
     "contact": "Nous Contacter"
   },
@@ -472,15 +445,15 @@
       },
       {
         "question": "Quelle est la différence entre facturation mensuelle et annuelle ?",
-        "answer": "La facturation annuelle est notre option par défaut et offre une réduction de 15% par rapport aux paiements mensuels. Par exemple, le plan Professionnel coûte €14 400/an (€1 200/mois) en facturation annuelle, contre €1 412/mois en facturation mensuelle."
+        "answer": "La facturation annuelle offre une réduction de 15% par rapport aux paiements mensuels. Par exemple, le plan Professionnel coûte €14 400/an avec facturation annuelle, contre €1 412/mois en facturation mensuelle (€16 944/an au total)."
       },
       {
         "question": "Puis-je changer de plan à tout moment ?",
         "answer": "Oui, vous pouvez upgrader votre plan à tout moment. Les downgrades sont possibles à la fin de votre période de facturation annuelle. Contactez notre équipe pour discuter de votre situation spécifique."
       },
       {
-        "question": "Les modules sont-ils compatibles avec tous les plans ?",
-        "answer": "Le Pack Actifs Supplémentaires est disponible pour tous les plans. Les autres modules (analyse prédictive, connecteurs ERP, SLA garanti) nécessitent le plan Professionnel ou supérieur."
+        "question": "Les extensions sont-elles compatibles avec tous les plans ?",
+        "answer": "Le Pack Actifs Supplémentaires est disponible pour tous les plans. Les autres extensions (maintenance prédictive, intégrations ERP, SLA prioritaire) nécessitent le plan Professionnel ou supérieur."
       },
       {
         "question": "Offrez-vous une période d'essai ?",
@@ -498,7 +471,6 @@
     "privacy": "Confidentialité",
     "terms": "Conditions d'utilisation"
   }
-
   },
   "privacy": {
     "title": "Politique de Confidentialité",

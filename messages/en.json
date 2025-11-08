@@ -367,30 +367,28 @@
     }
   },
   "pricing": {
-"hero": {
+  "hero": {
     "title": "Automate Your VGP Compliance",
-    "subtitle": "Avoid €15K-€75K DIRECCTE fines with the only system that automates French regulatory compliance",
-    "supporting": "Built for equipment rental and maintenance companies that can't afford missed inspections."
+    "subtitle": "Avoid €15K-€75K DIRECCTE fines with the only system that automates French regulatory compliance"
   },
   "billing": {
-    "orMonthly": "or",
-    "savingsHint": "Save 15% with annual billing"
+    "discount": "Save 15% with annual payment"
   },
   "comparison": {
-    "title": "Why TraviXO?",
-    "subtitle": "Comparison with traditional tools"
+    "title": "Why TraviXO?"
   },
   "plans": {
-    "suffix": "/month",
-    "popular": "Recommended",
+    "popular": "Most Popular",
+    "vgpIncluded": "VGP Included",
     "starter": {
       "name": "Starter",
-      "subtitle": "Basic asset tracking",
+      "subtitle": "Basic asset tracking for small fleets",
       "features": {
         "assets": "Up to 100 assets",
         "excel": "Smart Excel import",
         "qr": "Bulk QR generation",
         "scan": "Mobile scanning (no app)",
+        "support": "Email support",
         "noVgp": "VGP compliance not included"
       }
     },
@@ -400,16 +398,19 @@
       "features": {
         "vgp": "Automated VGP compliance",
         "assets": "Up to 500 assets",
+        "starter": "Everything in Starter, plus:",
         "multiSite": "Multi-location support",
         "audit": "Digital audit module",
-        "integration": "Zapier integration"
+        "integration": "Zapier integration",
+        "support": "Priority support"
       }
     },
     "business": {
       "name": "Business",
-      "subtitle": "Dedicated support for mid-size operations",
+      "subtitle": "For mid-size operations with dedicated support",
       "features": {
         "assets": "Up to 2,000 assets",
+        "professional": "Everything in Professional +",
         "vgpPriority": "VGP + priority compliance support",
         "integrations": "ServiceNow + QuickBooks",
         "manager": "Dedicated account manager",
@@ -419,47 +420,20 @@
     "enterprise": {
       "name": "Enterprise",
       "price": "Custom",
-      "subtitle": "Full compliance for large fleets",
-      "annualNote": "From €40K/year",
+      "annual": "From €40K/year",
+      "subtitle": "For large fleets with full compliance",
       "features": {
         "unlimited": "Unlimited assets",
         "vgpDedicated": "VGP + dedicated compliance team",
         "custom": "Custom integrations",
         "onPremise": "On-premise deployment available",
+        "sla": "SLA 99.9%+",
         "support": "24/7 support"
       }
     }
   },
-  "extensions": {
-    "title": "Optional Modules",
-    "subtitle": "Advanced capabilities for specific needs",
-    "extraAssets": {
-      "title": "Extra Assets Pack",
-      "description": "Exceed your limit without changing plans",
-      "price": "+€100 per 100 assets"
-    },
-    "predictive": {
-      "title": "Predictive Compliance Analytics",
-      "description": "Reduce unnecessary inspections with data-based wear prediction",
-      "price": "From €300/month"
-    },
-    "erp": {
-      "title": "ERP Connector",
-      "description": "Seamlessly link with SAP, Oracle or your internal system",
-      "price": "€2,500 setup + €50/month"
-    },
-    "sla": {
-      "title": "Guaranteed 24h SLA",
-      "description": "For fleets that can't wait on standard support",
-      "price": "+€400/month"
-    },
-    "cta": {
-      "text": "Need a custom configuration?",
-      "button": "Talk to Sales"
-    }
-  },
   "cta": {
-    "start": "Get Started",
+    "start": "Start Free Trial",
     "demo": "Book a Demo",
     "contact": "Contact Us"
   },
@@ -472,15 +446,15 @@
       },
       {
         "question": "What's the difference between monthly and annual billing?",
-        "answer": "Annual billing is our default option and offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year with annual billing, versus €1,412/month with monthly billing (€16,944/year total)."
+        "answer": "Annual billing offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year with annual billing, versus €1,412/month with monthly billing (€16,944/year total)."
       },
       {
         "question": "Can I change plans at any time?",
         "answer": "Yes, you can upgrade your plan at any time. Downgrades are possible at the end of your annual billing period. Contact our team to discuss your specific situation."
       },
       {
-        "question": "Are modules compatible with all plans?",
-        "answer": "The Extra Assets Pack is available for all plans. Other modules (predictive analytics, ERP connectors, guaranteed SLA) require the Professional plan or higher."
+        "question": "Are extensions compatible with all plans?",
+        "answer": "The Extra Assets Pack is available for all plans. Other extensions (predictive maintenance, ERP integrations, priority SLA) require the Professional plan or higher."
       },
       {
         "question": "Do you offer a trial period?",
@@ -498,6 +472,7 @@
     "privacy": "Privacy",
     "terms": "Terms of Service"
   }
+
   },
   "privacy": {
     "title": "Privacy Policy",
