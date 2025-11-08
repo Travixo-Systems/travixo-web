@@ -370,11 +370,11 @@
 "hero": {
     "title": "Automate Your VGP Compliance",
     "subtitle": "Avoid €15K-€75K DIRECCTE fines with the only system that automates French regulatory compliance",
-    "vgpTagline": "The only technology moat that US competitors cannot replicate"
+    "supporting": "Built for equipment rental and maintenance companies that can't afford missed inspections."
   },
   "billing": {
-    "annualDefault": "Annual billing by default",
-    "discount": "(-15% vs monthly billing)"
+    "orMonthly": "or",
+    "savingsHint": "Save 15% with annual billing"
   },
   "comparison": {
     "title": "Why TraviXO?",
@@ -382,42 +382,34 @@
   },
   "plans": {
     "suffix": "/month",
-    "popular": "Most Popular",
-    "vgpIncluded": "VGP Included",
+    "popular": "Recommended",
     "starter": {
       "name": "Starter",
-      "subtitle": "Basic asset tracking for small fleets",
-      "annual": "€5,880/year",
+      "subtitle": "Basic asset tracking",
       "features": {
         "assets": "Up to 100 assets",
         "excel": "Smart Excel import",
         "qr": "Bulk QR generation",
         "scan": "Mobile scanning (no app)",
-        "support": "Email support",
         "noVgp": "VGP compliance not included"
       }
     },
     "professional": {
       "name": "Professional",
       "subtitle": "Full compliance + fleet management",
-      "annual": "€14,400/year",
       "features": {
         "vgp": "Automated VGP compliance",
         "assets": "Up to 500 assets",
-        "starter": "Everything in Starter, plus:",
         "multiSite": "Multi-location support",
         "audit": "Digital audit module",
-        "integration": "Zapier integration",
-        "support": "Priority support"
+        "integration": "Zapier integration"
       }
     },
     "business": {
       "name": "Business",
-      "subtitle": "For mid-size operations with dedicated support",
-      "annual": "€28,800/year",
+      "subtitle": "Dedicated support for mid-size operations",
       "features": {
         "assets": "Up to 2,000 assets",
-        "professional": "Everything in Professional +",
         "vgpPriority": "VGP + priority compliance support",
         "integrations": "ServiceNow + QuickBooks",
         "manager": "Dedicated account manager",
@@ -427,39 +419,38 @@
     "enterprise": {
       "name": "Enterprise",
       "price": "Custom",
-      "subtitle": "For large fleets with full compliance",
-      "annual": "From €40K/year",
+      "subtitle": "Full compliance for large fleets",
+      "annualNote": "From €40K/year",
       "features": {
         "unlimited": "Unlimited assets",
         "vgpDedicated": "VGP + dedicated compliance team",
         "custom": "Custom integrations",
         "onPremise": "On-premise deployment available",
-        "sla": "SLA 99.9%+",
         "support": "24/7 support"
       }
     }
   },
   "extensions": {
-    "title": "Professional Extensions",
-    "subtitle": "Add features based on your needs",
+    "title": "Optional Modules",
+    "subtitle": "Advanced capabilities for specific needs",
     "extraAssets": {
       "title": "Extra Assets Pack",
-      "description": "Exceed your 500 asset limit without changing plans",
+      "description": "Exceed your limit without changing plans",
       "price": "+€100 per 100 assets"
     },
     "predictive": {
-      "title": "Predictive Maintenance Module",
-      "description": "Reduce unnecessary inspections with AI analysis of wear patterns",
+      "title": "Predictive Compliance Analytics",
+      "description": "Reduce unnecessary inspections with data-based wear prediction",
       "price": "From €300/month"
     },
     "erp": {
-      "title": "Custom ERP Integration",
-      "description": "Sync TraviXO with SAP, Oracle or your internal system",
-      "price": "€2,500 setup + €50/month maintenance"
+      "title": "ERP Connector",
+      "description": "Seamlessly link with SAP, Oracle or your internal system",
+      "price": "€2,500 setup + €50/month"
     },
     "sla": {
-      "title": "Priority Support SLA",
-      "description": "Guaranteed 24h response + dedicated account manager",
+      "title": "Guaranteed 24h SLA",
+      "description": "For fleets that can't wait on standard support",
       "price": "+€400/month"
     },
     "cta": {
@@ -468,7 +459,7 @@
     }
   },
   "cta": {
-    "start": "Start Free Trial",
+    "start": "Get Started",
     "demo": "Book a Demo",
     "contact": "Contact Us"
   },
@@ -481,15 +472,15 @@
       },
       {
         "question": "What's the difference between monthly and annual billing?",
-        "answer": "Annual billing is our default option and offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year (€1,200/month) with annual billing, versus €1,412/month with monthly billing."
+        "answer": "Annual billing is our default option and offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year with annual billing, versus €1,412/month with monthly billing (€16,944/year total)."
       },
       {
         "question": "Can I change plans at any time?",
         "answer": "Yes, you can upgrade your plan at any time. Downgrades are possible at the end of your annual billing period. Contact our team to discuss your specific situation."
       },
       {
-        "question": "Are extensions compatible with all plans?",
-        "answer": "The Extra Assets Pack is available for all plans. Other extensions (predictive AI, ERP integrations, priority SLA) require the Professional plan or higher."
+        "question": "Are modules compatible with all plans?",
+        "answer": "The Extra Assets Pack is available for all plans. Other modules (predictive analytics, ERP connectors, guaranteed SLA) require the Professional plan or higher."
       },
       {
         "question": "Do you offer a trial period?",

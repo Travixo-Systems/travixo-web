@@ -370,11 +370,11 @@
   "hero": {
     "title": "Automatisez Votre Conformité VGP",
     "subtitle": "Évitez €15K-€75K d'amendes DIRECCTE avec le seul système qui automatise la conformité réglementaire française",
-    "vgpTagline": "Le seul moat technologique que les concurrents américains ne peuvent pas répliquer"
+    "supporting": "Conçu pour les sociétés de location et maintenance d'équipements qui ne peuvent pas se permettre d'inspections manquées."
   },
   "billing": {
-    "annualDefault": "Tarification annuelle par défaut",
-    "discount": "(-15% vs facturation mensuelle)"
+    "orMonthly": "ou",
+    "savingsHint": "Économisez 15% avec facturation annuelle"
   },
   "comparison": {
     "title": "Pourquoi TraviXO ?",
@@ -382,42 +382,34 @@
   },
   "plans": {
     "suffix": "/mois",
-    "popular": "Le Plus Populaire",
-    "vgpIncluded": "VGP Inclus",
+    "popular": "Recommandé",
     "starter": {
       "name": "Démarrage",
-      "subtitle": "Suivi d'actifs de base pour petites flottes",
-      "annual": "€5 880/an",
+      "subtitle": "Suivi d'actifs de base",
       "features": {
         "assets": "Jusqu'à 100 équipements",
         "excel": "Import Excel intelligent",
-        "qr": "Génération de QR en masse",
-        "scan": "Scan mobile (sans app)",
-        "support": "Support par email",
+        "qr": "Génération QR en masse",
+        "scan": "Scan mobile sans app",
         "noVgp": "Conformité VGP non incluse"
       }
     },
     "professional": {
       "name": "Professionnel",
       "subtitle": "Conformité complète + gestion de flotte",
-      "annual": "€14 400/an",
       "features": {
         "vgp": "Conformité VGP automatisée",
         "assets": "Jusqu'à 500 équipements",
-        "starter": "Tout du Démarrage, plus:",
         "multiSite": "Support multi-sites",
         "audit": "Module d'audit numérique",
-        "integration": "Intégration Zapier",
-        "support": "Support prioritaire"
+        "integration": "Intégration Zapier"
       }
     },
     "business": {
       "name": "Business",
-      "subtitle": "Pour opérations moyennes avec support dédié",
-      "annual": "€28 800/an",
+      "subtitle": "Support dédié pour opérations moyennes",
       "features": {
         "assets": "Jusqu'à 2 000 équipements",
-        "professional": "Tout du Professionnel +",
         "vgpPriority": "VGP + support de conformité prioritaire",
         "integrations": "ServiceNow + QuickBooks",
         "manager": "Gestionnaire de compte dédié",
@@ -427,39 +419,38 @@
     "enterprise": {
       "name": "Enterprise",
       "price": "Sur mesure",
-      "subtitle": "Pour grandes flottes avec conformité totale",
-      "annual": "À partir de €40K/an",
+      "subtitle": "Conformité totale pour grandes flottes",
+      "annualNote": "À partir de €40K/an",
       "features": {
         "unlimited": "Équipements illimités",
         "vgpDedicated": "VGP + équipe de conformité dédiée",
         "custom": "Intégrations sur mesure",
         "onPremise": "Déploiement sur site disponible",
-        "sla": "SLA 99.9%+",
         "support": "Support 24/7"
       }
     }
   },
   "extensions": {
-    "title": "Extensions Professionnelles",
-    "subtitle": "Ajoutez des fonctionnalités selon vos besoins",
+    "title": "Modules Optionnels",
+    "subtitle": "Capacités avancées pour besoins spécifiques",
     "extraAssets": {
       "title": "Pack Actifs Supplémentaires",
-      "description": "Dépassez votre limite de 500 actifs sans changer de forfait",
+      "description": "Dépassez votre limite sans changer de forfait",
       "price": "+€100 par tranche de 100 actifs"
     },
     "predictive": {
-      "title": "Module Maintenance Prédictive",
-      "description": "Réduisez les inspections inutiles avec l'analyse IA des patterns d'usure",
+      "title": "Analyse Prédictive de Conformité",
+      "description": "Réduisez les inspections inutiles avec prédiction basée sur les données d'usure",
       "price": "À partir de €300/mois"
     },
     "erp": {
-      "title": "Intégration ERP Personnalisée",
-      "description": "Synchronisez TraviXO avec SAP, Oracle ou votre système interne",
-      "price": "€2 500 setup + €50/mois maintenance"
+      "title": "Connecteur ERP",
+      "description": "Liaison transparente avec SAP, Oracle ou votre système interne",
+      "price": "€2 500 setup + €50/mois"
     },
     "sla": {
-      "title": "SLA Support Prioritaire",
-      "description": "Réponse garantie sous 24h + gestionnaire de compte dédié",
+      "title": "SLA Garanti 24h",
+      "description": "Pour les flottes qui ne peuvent pas attendre le support standard",
       "price": "+€400/mois"
     },
     "cta": {
@@ -468,7 +459,7 @@
     }
   },
   "cta": {
-    "start": "Commencer Gratuitement",
+    "start": "Commencer",
     "demo": "Réserver une Démo",
     "contact": "Nous Contacter"
   },
@@ -488,8 +479,8 @@
         "answer": "Oui, vous pouvez upgrader votre plan à tout moment. Les downgrades sont possibles à la fin de votre période de facturation annuelle. Contactez notre équipe pour discuter de votre situation spécifique."
       },
       {
-        "question": "Les extensions sont-elles compatibles avec tous les plans ?",
-        "answer": "Le Pack Actifs Supplémentaires est disponible pour tous les plans. Les autres extensions (IA prédictive, intégrations ERP, SLA prioritaire) nécessitent le plan Professionnel ou supérieur."
+        "question": "Les modules sont-ils compatibles avec tous les plans ?",
+        "answer": "Le Pack Actifs Supplémentaires est disponible pour tous les plans. Les autres modules (analyse prédictive, connecteurs ERP, SLA garanti) nécessitent le plan Professionnel ou supérieur."
       },
       {
         "question": "Offrez-vous une période d'essai ?",
