@@ -367,179 +367,146 @@
     }
   },
   "pricing": {
-    "hero": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your fleet size. All plans include smart Excel import, bulk QR generation, VGP compliance tools, and unlimited scans. Upgrade or downgrade anytime."
-    },
-    "moat": {
-      "title": "What Makes TraviXO Different",
-      "subtitle": "While competitors require weeks of setup, TraviXO gets you tracking and VGP compliant the same day",
+"hero": {
+    "title": "Automate Your VGP Compliance",
+    "subtitle": "Avoid €15K-€75K DIRECCTE fines with the only system that automates French regulatory compliance",
+    "vgpTagline": "The only technology moat that US competitors cannot replicate"
+  },
+  "billing": {
+    "annualDefault": "Annual billing by default",
+    "discount": "(-15% vs monthly billing)"
+  },
+  "comparison": {
+    "title": "Why TraviXO?",
+    "subtitle": "Comparison with traditional tools"
+  },
+  "plans": {
+    "suffix": "/month",
+    "popular": "Most Popular",
+    "vgpIncluded": "VGP Included",
+    "starter": {
+      "name": "Starter",
+      "subtitle": "Basic asset tracking for small fleets",
+      "annual": "€5,880/year",
       "features": {
-        "import": {
-          "title": "Smart Excel Import",
-          "description": "Import 500 assets in 5 minutes, not 40 hours. Smart column detection works with any spreadsheet format."
-        },
-        "bulkQR": {
-          "title": "Bulk QR Generation",
-          "description": "Generate 500 QR codes as a print-ready PDF in 30 seconds. No clicking through assets one by one."
-        },
-        "autoDetect": {
-          "title": "VGP Compliance Automation",
-          "description": "Automated inspection alerts and DIRECCTE-ready reports. Never miss a compliance deadline again."
-        }
+        "assets": "Up to 100 assets",
+        "excel": "Smart Excel import",
+        "qr": "Bulk QR generation",
+        "scan": "Mobile scanning (no app)",
+        "support": "Email support",
+        "noVgp": "VGP compliance not included"
       }
     },
-    "plans": {
-      "popular": "MOST POPULAR",
-      "suffix": "/mo",
-      "starter": {
-        "name": "Starter",
-        "price": "€129",
-        "description": "Perfect for small fleets",
-        "features": [
-          "Up to 100 assets",
-          "5 team members",
-          "Smart Excel import",
-          "Bulk QR generation (PDF)",
-          "VGP compliance tracking",
-          "Mobile scanning",
-          "Real-time dashboard",
-          "CSV export",
-          "Email support"
-        ]
-      },
-      "professional": {
-        "name": "Professional",
-        "price": "€249",
-        "description": "Most popular for growing teams",
-        "features": [
-          "Up to 500 assets",
-          "20 team members",
-          "Everything in Starter, plus:",
-          "VGP automated alerts",
-          "Multi-location support",
-          "Digital audit module",
-          "Zapier integration",
-          "API access",
-          "Priority email support"
-        ]
-      },
-      "scale": {
-        "name": "Scale",
-        "price": "€499",
-        "description": "For mid-market companies",
-        "features": [
-          "Up to 2,000 assets",
-          "50 team members",
-          "Everything in Professional, plus:",
-          "VGP digital certificates",
-          "ServiceNow integration",
-          "Jira Service Desk integration",
-          "QuickBooks sync",
-          "Advanced reporting",
-          "Phone support"
-        ]
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "€999",
-        "description": "For large operations",
-        "features": [
-          "Unlimited assets",
-          "Unlimited team members",
-          "Everything in Scale, plus:",
-          "Custom VGP workflows",
-          "Custom integrations",
-          "Dedicated account manager",
-          "Custom SLA (99.9%+)",
-          "On-premise deployment option",
-          "24/7 phone support"
-        ]
+    "professional": {
+      "name": "Professional",
+      "subtitle": "Full compliance + fleet management",
+      "annual": "€14,400/year",
+      "features": {
+        "vgp": "Automated VGP compliance",
+        "assets": "Up to 500 assets",
+        "starter": "Everything in Starter, plus:",
+        "multiSite": "Multi-location support",
+        "audit": "Digital audit module",
+        "integration": "Zapier integration",
+        "support": "Priority support"
       }
+    },
+    "business": {
+      "name": "Business",
+      "subtitle": "For mid-size operations with dedicated support",
+      "annual": "€28,800/year",
+      "features": {
+        "assets": "Up to 2,000 assets",
+        "professional": "Everything in Professional +",
+        "vgpPriority": "VGP + priority compliance support",
+        "integrations": "ServiceNow + QuickBooks",
+        "manager": "Dedicated account manager",
+        "sla": "24h SLA guaranteed"
+      }
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "subtitle": "For large fleets with full compliance",
+      "annual": "From €40K/year",
+      "features": {
+        "unlimited": "Unlimited assets",
+        "vgpDedicated": "VGP + dedicated compliance team",
+        "custom": "Custom integrations",
+        "onPremise": "On-premise deployment available",
+        "sla": "SLA 99.9%+",
+        "support": "24/7 support"
+      }
+    }
+  },
+  "extensions": {
+    "title": "Professional Extensions",
+    "subtitle": "Add features based on your needs",
+    "extraAssets": {
+      "title": "Extra Assets Pack",
+      "description": "Exceed your 500 asset limit without changing plans",
+      "price": "+€100 per 100 assets"
+    },
+    "predictive": {
+      "title": "Predictive Maintenance Module",
+      "description": "Reduce unnecessary inspections with AI analysis of wear patterns",
+      "price": "From €300/month"
+    },
+    "erp": {
+      "title": "Custom ERP Integration",
+      "description": "Sync TraviXO with SAP, Oracle or your internal system",
+      "price": "€2,500 setup + €50/month maintenance"
+    },
+    "sla": {
+      "title": "Priority Support SLA",
+      "description": "Guaranteed 24h response + dedicated account manager",
+      "price": "+€400/month"
     },
     "cta": {
-      "start": "Start Free Trial",
-      "demo": "Book Demo",
-      "contact": "Contact Sales"
-    },
-    "comparison": {
-      "title": "TraviXO vs. Traditional Asset Tracking",
-      "subtitle": "See why equipment companies choose TraviXO",
-      "headers": {
-        "feature": "Feature",
-        "traditional": "Traditional Tools",
-        "travixo": "TraviXO"
-      },
-      "rows": {
-        "setup": {
-          "feature": "Setup Time",
-          "traditional": "2-4 weeks of data entry",
-          "travixo": "15 minutes with Excel import"
-        },
-        "qr": {
-          "feature": "QR Generation",
-          "traditional": "Manual, one at a time",
-          "travixo": "Bulk: 500 codes in 30 seconds"
-        },
-        "learning": {
-          "feature": "Learning Curve",
-          "traditional": "2 weeks training required",
-          "travixo": "Start tracking same day"
-        },
-        "value": {
-          "feature": "Time to Value",
-          "traditional": "3-4 weeks minimum",
-          "travixo": "Same day deployment"
-        }
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "questions": [
-        {
-          "question": "What counts as an \"asset\"?",
-          "answer": "An asset is any piece of equipment you're tracking. This includes heavy machinery, tools, vehicles, containers - anything with a QR code attached. Each asset uses one slot in your plan."
-        },
-        {
-          "question": "How does the Excel import work?",
-          "answer": "Simply upload your existing equipment spreadsheet (Excel or CSV). Our smart column detection automatically identifies fields like Serial Number, Asset Name, Location, Purchase Date, etc. No manual mapping required. You can import 500 assets in about 5 minutes."
-        },
-        {
-          "question": "Can I generate QR codes in bulk?",
-          "answer": "Yes! Select any number of assets and generate all QR codes as a single print-ready PDF in seconds. The PDF is formatted for easy printing on standard label sheets (30 labels per page, 6x5 grid)."
-        },
-        {
-          "question": "What is VGP compliance?",
-          "answer": "VGP (Vérification Générale Périodique) is mandatory equipment inspection in France. TraviXO automates inspection tracking, sends alerts before deadlines, and generates DIRECCTE-ready reports. One missed inspection can cost €15K+ in fines."
-        },
-        {
-          "question": "Can I change plans later?",
-          "answer": "Yes, upgrade or downgrade anytime. If you upgrade mid-month, we'll prorate the difference. If you downgrade, the new rate applies at your next billing cycle."
-        },
-        {
-          "question": "Is there a free trial?",
-          "answer": "Yes! All new customers get a 2-month free trial with up to 100 assets. No credit card required. After the trial, choose the plan that fits your fleet size."
-        },
-        {
-          "question": "Where is my data stored?",
-          "answer": "All data is hosted in EU datacenters (France) with full GDPR compliance. We never store data outside the EU."
-        },
-        {
-          "question": "What's the typical ROI?",
-          "answer": "Most customers see 500-1,300% ROI. For a €5M fleet, preventing 1-2% losses (€50k-€100k), avoiding VGP fines (€15k+), and reducing audit costs (€15k+) totals €80k-€170k annual value for €9k-€30k investment."
-        }
-      ]
-    },
-    "finalCta": {
-      "title": "Ready to Track Smarter?",
-      "subtitle": "Start your 2-month free trial today. No credit card required.",
-      "button": "Start Your Free Trial"
-    },
-    "footer": {
-      "copyright": "© 2025 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "text": "Need a custom configuration?",
+      "button": "Talk to Sales"
     }
+  },
+  "cta": {
+    "start": "Start Free Trial",
+    "demo": "Book a Demo",
+    "contact": "Contact Us"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "Why is VGP compliance not included in the Starter plan?",
+        "answer": "The Starter plan is designed for basic asset tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, DIRECCTE reporting) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
+      },
+      {
+        "question": "What's the difference between monthly and annual billing?",
+        "answer": "Annual billing is our default option and offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year (€1,200/month) with annual billing, versus €1,412/month with monthly billing."
+      },
+      {
+        "question": "Can I change plans at any time?",
+        "answer": "Yes, you can upgrade your plan at any time. Downgrades are possible at the end of your annual billing period. Contact our team to discuss your specific situation."
+      },
+      {
+        "question": "Are extensions compatible with all plans?",
+        "answer": "The Extra Assets Pack is available for all plans. Other extensions (predictive AI, ERP integrations, priority SLA) require the Professional plan or higher."
+      },
+      {
+        "question": "Do you offer a trial period?",
+        "answer": "Yes, we offer a 30-day trial period for all plans with full access to features. No credit card required to start."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to Automate Your Compliance?",
+    "subtitle": "Join French companies that have eliminated DIRECCTE fine risk",
+    "button": "Start Free Trial"
+  },
+  "footer": {
+    "copyright": "© 2025 TraviXO Systems. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms of Service"
+  }
   },
   "privacy": {
     "title": "Privacy Policy",

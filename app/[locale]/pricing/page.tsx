@@ -28,7 +28,7 @@ export default async function PricingPage(props: Props) {
       <Navigation />
       <main className="min-h-screen bg-white">
 
-        {/* Hero Section */}
+        {/* Hero Section - VGP-FIRST MESSAGING */}
         <section className="container mx-auto px-4 py-8 max-w-5xl">
           <h1 className="text-5xl font-bold text-center text-gray-900 mb-4">
             {t('hero.title')}
@@ -36,9 +36,13 @@ export default async function PricingPage(props: Props) {
           <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto">
             {t('hero.subtitle')}
           </p>
+          {/* NEW: VGP compliance tagline */}
+          <p className="text-lg text-center text-orange-600 font-semibold mt-4">
+            {t('hero.vgpTagline')}
+          </p>
         </section>
 
-        {/* Comparison Table Section */}
+        {/* Comparison Table Section - ADDED VGP ROW */}
         <section className="bg-gray-50 py-6">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-4">
@@ -71,6 +75,24 @@ export default async function PricingPage(props: Props) {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
+                    {/* NEW: VGP Compliance Row - TOP POSITION */}
+                    <tr className="hover:bg-gray-50 transition-colors bg-orange-50">
+                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
+                        {locale === 'fr' ? 'Conformité VGP' : 'VGP Compliance'}
+                      </td>
+                      <td className="px-6 py-5 text-sm text-gray-600">
+                        <span className="text-red-600 font-bold mr-2">✗</span>
+                        {locale === 'fr' ? 'Suivi manuel, risque d\'amendes €15K+' : 'Manual tracking, €15K+ fine risk'}
+                      </td>
+                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
+                        <span className="text-green-600 font-bold mr-2">✓</span>
+                        {locale === 'fr' ? 'Automatisé, zéro risque de non-conformité' : 'Fully automated, zero compliance risk'}
+                      </td>
+                      <td className="px-6 py-5 text-sm text-gray-700 italic">
+                        {locale === 'fr' ? 'Obligatoire pour location d\'équipement en France' : 'Mandatory for French equipment rental'}
+                      </td>
+                    </tr>
+
                     {/* Setup Time Row */}
                     <tr className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
@@ -172,42 +194,59 @@ export default async function PricingPage(props: Props) {
           </div>
         </section>
 
-        {/* Pricing Cards Section - CORRECTED PRICES */}
+        {/* Pricing Cards Section - NEW PRICES + ANNUAL FOCUS */}
         <section className="container mx-auto px-4 py-6 max-w-7xl">
+          {/* Annual billing notice */}
+          <div className="text-center mb-6">
+            <p className="text-lg text-gray-700">
+              {t('billing.annualDefault')}
+              <span className="ml-2 text-sm text-orange-600 font-semibold">
+                {t('billing.discount')}
+              </span>
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
-            {/* Starter - €250/mo */}
+            {/* Starter - €490/mo (€5,880/yr) */}
             <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
               <h3 className="text-2xl font-bold text-gray-900">
-                {locale === 'fr' ? 'Démarrage' : 'Starter'}
+                {t('plans.starter.name')}
               </h3>
               <div className="mb-2">
-                <span className="text-4xl font-bold text-gray-900">€250</span>
+                <span className="text-4xl font-bold text-gray-900">€490</span>
                 <span className="text-lg text-gray-600">{t('plans.suffix')}</span>
               </div>
+              <p className="text-sm text-gray-500 mb-2">
+                {t('plans.starter.annual')}
+              </p>
               <p className="text-gray-600 mb-2">
-                {locale === 'fr' ? 'Parfait pour petites flottes' : 'Perfect for small fleets'}
+                {t('plans.starter.subtitle')}
               </p>
               <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Jusqu\'à 100 équipements' : 'Up to 100 assets'}</span>
+                  <span className="text-sm">{t('plans.starter.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Import Excel intelligent' : 'Smart Excel import'}</span>
+                  <span className="text-sm">{t('plans.starter.features.excel')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Génération de QR en masse' : 'Bulk QR generation'}</span>
+                  <span className="text-sm">{t('plans.starter.features.qr')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Scan mobile (sans app)' : 'Mobile scanning (no app)'}</span>
+                  <span className="text-sm">{t('plans.starter.features.scan')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Support par email' : 'Email support'}</span>
+                  <span className="text-sm">{t('plans.starter.features.support')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 mr-2 flex-shrink-0">✗</span>
+                  <span className="text-sm text-gray-500">{t('plans.starter.features.noVgp')}</span>
                 </li>
               </ul>
               <Link
@@ -218,51 +257,57 @@ export default async function PricingPage(props: Props) {
               </Link>
             </div>
 
-            {/* Professional - €750/mo - MOST POPULAR */}
+            {/* Professional - €1,200/mo (€14,400/yr) - MOST POPULAR */}
             <div className="border-2 border-orange-500 rounded-lg p-6 relative transform lg:scale-105 shadow-xl">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 {t('plans.popular')}
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">
-                {locale === 'fr' ? 'Professionnel' : 'Professional'}
+              {/* VGP Badge */}
+              <div className="absolute -top-3 right-4 bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold border-2 border-orange-500">
+                {t('plans.vgpIncluded')}
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mt-2">
+                {t('plans.professional.name')}
               </h3>
               <div className="mb-2">
-                <span className="text-4xl font-bold text-gray-900">€750</span>
+                <span className="text-4xl font-bold text-gray-900">€1 200</span>
                 <span className="text-lg text-gray-600">{t('plans.suffix')}</span>
               </div>
+              <p className="text-sm text-gray-500 mb-2">
+                {t('plans.professional.annual')}
+              </p>
               <p className="text-gray-600 mb-2">
-                {locale === 'fr' ? 'Pour équipes en croissance' : 'For growing teams'}
+                {t('plans.professional.subtitle')}
               </p>
               <ul className="space-y-2 mb-8 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Jusqu\'à 500 équipements' : 'Up to 500 assets'}</span>
+                {/* VGP FIRST */}
+                <li className="flex items-start bg-orange-50 p-2 rounded -mx-2">
+                  <span className="text-orange-600 mr-2 flex-shrink-0 font-bold">✓</span>
+                  <span className="text-sm font-semibold text-orange-900">{t('plans.professional.features.vgp')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Tout du Starter, plus:' : 'Everything in Starter, plus:'}</span>
-                </li>
-                {locale === 'fr' && (
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                    <span className="text-sm">Conformité VGP automatisée</span>
-                  </li>
-                )}
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Support multi-sites' : 'Multi-location support'}</span>
+                  <span className="text-sm">{t('plans.professional.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Module d\'audit numérique' : 'Digital audit module'}</span>
+                  <span className="text-sm">{t('plans.professional.features.starter')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Intégration Zapier' : 'Zapier integration'}</span>
+                  <span className="text-sm">{t('plans.professional.features.multiSite')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Support prioritaire' : 'Priority support'}</span>
+                  <span className="text-sm">{t('plans.professional.features.audit')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-sm">{t('plans.professional.features.integration')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-sm">{t('plans.professional.features.support')}</span>
                 </li>
               </ul>
               <Link
@@ -273,38 +318,45 @@ export default async function PricingPage(props: Props) {
               </Link>
             </div>
 
-            {/* Business - €2,500/mo */}
+            {/* Business - €2,400/mo (€28,800/yr) */}
             <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
               <h3 className="text-2xl font-bold text-gray-900">
-                Business
+                {t('plans.business.name')}
               </h3>
               <div className="mb-2">
-                <span className="text-3xl font-bold text-gray-900">€2 500</span>
+                <span className="text-3xl font-bold text-gray-900">€2 400</span>
                 <span className="text-lg text-gray-600">{t('plans.suffix')}</span>
               </div>
+              <p className="text-sm text-gray-500 mb-2">
+                {t('plans.business.annual')}
+              </p>
               <p className="text-gray-600 mb-2">
-                {locale === 'fr' ? 'Pour opérations moyennes' : 'For mid-size operations'}
+                {t('plans.business.subtitle')}
               </p>
               <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Jusqu\'à 2 000 équipements' : 'Up to 2,000 assets'}</span>
+                  <span className="text-sm">{t('plans.business.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Tout du Professionnel +' : 'Everything in Professional +'}</span>
+                  <span className="text-sm">{t('plans.business.features.professional')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">ServiceNow</span>
+                  <span className="text-sm">{t('plans.business.features.vgpPriority')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">QuickBooks</span>
+                  <span className="text-sm">{t('plans.business.features.integrations')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Gestionnaire dédié' : 'Dedicated manager'}</span>
+                  <span className="text-sm">{t('plans.business.features.manager')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-sm">{t('plans.business.features.sla')}</span>
                 </li>
               </ul>
               <Link
@@ -315,39 +367,46 @@ export default async function PricingPage(props: Props) {
               </Link>
             </div>
 
-            {/* Enterprise - Custom pricing */}
+            {/* Enterprise - €40K+/yr */}
             <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
               <h3 className="text-2xl font-bold text-gray-900">
-                Enterprise
+                {t('plans.enterprise.name')}
               </h3>
               <div className="mb-2">
                 <span className="text-3xl font-bold text-gray-900">
-                  {locale === 'fr' ? 'Sur mesure' : 'Custom'}
+                  {t('plans.enterprise.price')}
                 </span>
               </div>
+              <p className="text-sm text-gray-500 mb-2">
+                {t('plans.enterprise.annual')}
+              </p>
               <p className="text-gray-600 mb-2">
-                {locale === 'fr' ? 'Pour grandes flottes' : 'For large fleets'}
+                {t('plans.enterprise.subtitle')}
               </p>
               <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Équipements illimités' : 'Unlimited assets'}</span>
+                  <span className="text-sm">{t('plans.enterprise.features.unlimited')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Intégrations sur mesure' : 'Custom integrations'}</span>
+                  <span className="text-sm">{t('plans.enterprise.features.vgpDedicated')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Déploiement sur site' : 'On-premise option'}</span>
+                  <span className="text-sm">{t('plans.enterprise.features.custom')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">SLA 99.9%+</span>
+                  <span className="text-sm">{t('plans.enterprise.features.onPremise')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{locale === 'fr' ? 'Support 24/7' : '24/7 support'}</span>
+                  <span className="text-sm">{t('plans.enterprise.features.sla')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-sm">{t('plans.enterprise.features.support')}</span>
                 </li>
               </ul>
               <Link
@@ -361,8 +420,91 @@ export default async function PricingPage(props: Props) {
           </div>
         </section>
 
+        {/* NEW: Professional Extensions Section */}
+        <section className="py-8 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                {t('extensions.title')}
+              </h2>
+              <p className="text-lg text-gray-600">
+                {t('extensions.subtitle')}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              {/* Add-on 1: Extra Assets */}
+              <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {t('extensions.extraAssets.title')}
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  {t('extensions.extraAssets.description')}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {t('extensions.extraAssets.price')}
+                </p>
+              </div>
+
+              {/* Add-on 2: Predictive Maintenance */}
+              <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {t('extensions.predictive.title')}
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  {t('extensions.predictive.description')}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {t('extensions.predictive.price')}
+                </p>
+              </div>
+
+              {/* Add-on 3: Custom ERP Integration */}
+              <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {t('extensions.erp.title')}
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  {t('extensions.erp.description')}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {t('extensions.erp.price')}
+                </p>
+              </div>
+
+              {/* Add-on 4: Priority Support SLA */}
+              <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {t('extensions.sla.title')}
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  {t('extensions.sla.description')}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {t('extensions.sla.price')}
+                </p>
+              </div>
+
+            </div>
+
+            {/* CTA to contact sales */}
+            <div className="text-center mt-8">
+              <p className="text-gray-600 mb-4">
+                {t('extensions.cta.text')}
+              </p>
+              <Link
+                href={`/${locale}/contact`}
+                className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+              >
+                {t('extensions.cta.button')}
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
-        <section className="py-10 bg-gray-50">
+        <section className="py-10 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
               {t('faq.title')}

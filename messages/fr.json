@@ -367,182 +367,147 @@
     }
   },
   "pricing": {
-    "hero": {
-      "title": "Tarification Simple et Transparente",
-      "subtitle": "Choisissez le plan adapté à la taille de votre flotte. Tous les plans incluent l'import Excel intelligent, la génération de QR en masse et la conformité VGP automatisée. Changez de plan à tout moment."
-    },
-    "plans": {
-      "popular": "LE PLUS POPULAIRE",
-      "suffix": "/mois",
-      "starter": {
-        "name": "Starter",
-        "price": "250€",
-        "description": "Parfait pour les petites agences",
-        "features": [
-          "Jusqu'à 100 équipements",
-          "5 membres d'équipe",
-          "Import Excel intelligent",
-          "Génération de QR en masse (PDF)",
-          "Suivi de base VGP",
-          "Scan mobile (sans app)",
-          "Tableau de bord en temps réel",
-          "Export CSV",
-          "Support par email"
-        ]
-      },
-      "professional": {
-        "name": "Professionnel",
-        "price": "750€",
-        "description": "Idéal pour les agences Loxam",
-        "highlight": "Évitez 15K€+ d'amendes DIRECCTE",
-        "features": [
-          "Jusqu'à 500 équipements",
-          "20 membres d'équipe",
-          "Tout dans Starter, plus:",
-          "Conformité VGP automatisée complète",
-          "Alertes DIRECCTE automatiques",
-          "Certificats numériques VGP",
-          "Support multi-sites",
-          "Module d'audit numérique",
-          "Intégration Zapier",
-          "Accès API",
-          "Support prioritaire",
-          "ROI: 50K-95K€ économisés/an"
-        ]
-      },
-      "business": {
-        "name": "Business",
-        "price": "2 500€",
-        "description": "Pour les opérations moyennes",
-        "features": [
-          "Jusqu'à 2 000 équipements",
-          "50 membres d'équipe",
-          "Tout dans Professionnel, plus:",
-          "Workflows VGP personnalisés",
-          "Intégration ServiceNow",
-          "Intégration Jira Service Desk",
-          "Synchronisation QuickBooks",
-          "Rapports avancés",
-          "Gestionnaire de compte dédié",
-          "Support téléphonique"
-        ]
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Sur mesure",
-        "description": "Pour les grandes flottes",
-        "features": [
-          "Équipements illimités",
-          "Utilisateurs illimités",
-          "Tout dans Business, plus:",
-          "Déploiement sur site possible",
-          "SLA personnalisé (99,9%+)",
-          "Intégrations sur mesure",
-          "Formation personnalisée",
-          "Support 24/7"
-        ]
+  "hero": {
+    "title": "Automatisez Votre Conformité VGP",
+    "subtitle": "Évitez €15K-€75K d'amendes DIRECCTE avec le seul système qui automatise la conformité réglementaire française",
+    "vgpTagline": "Le seul moat technologique que les concurrents américains ne peuvent pas répliquer"
+  },
+  "billing": {
+    "annualDefault": "Tarification annuelle par défaut",
+    "discount": "(-15% vs facturation mensuelle)"
+  },
+  "comparison": {
+    "title": "Pourquoi TraviXO ?",
+    "subtitle": "Comparaison avec les outils traditionnels"
+  },
+  "plans": {
+    "suffix": "/mois",
+    "popular": "Le Plus Populaire",
+    "vgpIncluded": "VGP Inclus",
+    "starter": {
+      "name": "Démarrage",
+      "subtitle": "Suivi d'actifs de base pour petites flottes",
+      "annual": "€5 880/an",
+      "features": {
+        "assets": "Jusqu'à 100 équipements",
+        "excel": "Import Excel intelligent",
+        "qr": "Génération de QR en masse",
+        "scan": "Scan mobile (sans app)",
+        "support": "Support par email",
+        "noVgp": "Conformité VGP non incluse"
       }
     },
-    "comparison": {
-      "title": "TraviXO vs. Suivi d'equipments Traditionnel",
-      "subtitle": "Pourquoi les agences d'équipement choisissent TraviXO",
-      "headers": {
-        "feature": "Fonctionnalité",
-        "traditional": "Outils Traditionnels",
-        "travixo": "TraviXO",
-        "impact": "Impact Financier"
-      },
-      "rows": {
-        "setup": {
-          "feature": "Temps de Configuration",
-          "traditional": "2-4 semaines de saisie",
-          "travixo": "15 minutes avec import Excel",
-          "impact": "Commencez à prévenir les pertes immédiatement"
-        },
-        "vgp": {
-          "feature": "Conformité VGP",
-          "traditional": "Suivi manuel, risque d'oubli",
-          "travixo": "Alertes automatiques DIRECCTE",
-          "impact": "Évitez 15K€+ d'amendes par inspection manquée"
-        },
-        "loss": {
-          "feature": "Taux de Perte",
-          "traditional": "1-2% de pertes annuelles",
-          "travixo": "0.3-0.5% avec QR tracking",
-          "impact": "50K-100K€ économisés sur flotte 5M€"
-        },
-        "audit": {
-          "feature": "Audits Trimestriels",
-          "traditional": "2 semaines, 50K€ de coûts",
-          "travixo": "2 jours, 75% moins cher",
-          "impact": "15K-20K€ économisés par audit"
-        }
+    "professional": {
+      "name": "Professionnel",
+      "subtitle": "Conformité complète + gestion de flotte",
+      "annual": "€14 400/an",
+      "features": {
+        "vgp": "Conformité VGP automatisée",
+        "assets": "Jusqu'à 500 équipements",
+        "starter": "Tout du Démarrage, plus:",
+        "multiSite": "Support multi-sites",
+        "audit": "Module d'audit numérique",
+        "integration": "Intégration Zapier",
+        "support": "Support prioritaire"
       }
     },
-    "roi": {
-      "title": "Retour sur Investissement Réel",
-      "subtitle": "Pour une agence Loxam typique avec flotte de 5M€",
-      "breakdown": {
-        "losses": "50K-100K€ de pertes évitées (réduction de 1-2%)",
-        "vgp": "15K-50K€ d'amendes DIRECCTE évitées",
-        "audit": "15K-20K€ économisés sur les audits",
-        "total": "Total: 80K-170K€ de valeur annuelle",
-        "cost": "Coût TraviXO: 9K€/an (Plan Professionnel)",
-        "roi": "ROI: 889-1,889%"
+    "business": {
+      "name": "Business",
+      "subtitle": "Pour opérations moyennes avec support dédié",
+      "annual": "€28 800/an",
+      "features": {
+        "assets": "Jusqu'à 2 000 équipements",
+        "professional": "Tout du Professionnel +",
+        "vgpPriority": "VGP + support de conformité prioritaire",
+        "integrations": "ServiceNow + QuickBooks",
+        "manager": "Gestionnaire de compte dédié",
+        "sla": "SLA 24h garanti"
       }
     },
-    "faq": {
-      "title": "Questions Fréquentes",
-      "questions": [
-        {
-          "question": "Qu'est-ce qu'un \"équipement\"?",
-          "answer": "Un équipement est tout matériel que vous suivez. Cela inclut les machines lourdes, les outils, les véhicules, les conteneurs - tout ce qui porte un code QR. Chaque équipement utilise un emplacement dans votre plan."
-        },
-        {
-          "question": "Comment fonctionne l'import Excel?",
-          "answer": "Il suffit de télécharger votre tableur d'équipements existant (Excel ou CSV). Notre détection intelligente des colonnes identifie automatiquement les champs comme Numéro de Série, Nom de l'Équipement, Emplacement, Date d'Achat, etc. Aucun mappage manuel requis. Vous pouvez importer 500 équipements en environ 5 minutes."
-        },
-        {
-          "question": "Puis-je générer des codes QR en masse?",
-          "answer": "Oui! Sélectionnez n'importe quel nombre d'équipements et générez tous les codes QR sous forme d'un seul PDF prêt à imprimer en quelques secondes. Le PDF est formaté pour une impression facile sur des feuilles d'étiquettes standard (30 étiquettes par page, grille 6x5)."
-        },
-        {
-          "question": "Qu'est-ce que la conformité VGP?",
-          "answer": "La VGP (Vérification Générale Périodique) est une inspection obligatoire des équipements en France. TraviXO automatise le suivi des inspections, envoie des alertes avant les échéances et génère des rapports conformes DIRECCTE. Une inspection manquée peut coûter plus de 15K€ d'amendes."
-        },
-        {
-          "question": "Puis-je changer de plan plus tard?",
-          "answer": "Oui, passez à un plan supérieur ou inférieur à tout moment. Si vous passez à un plan supérieur en cours de mois, nous calculerons la différence au prorata. Si vous rétrogradez, le nouveau tarif s'appliquera au prochain cycle de facturation."
-        },
-        {
-          "question": "Y a-t-il un essai gratuit?",
-          "answer": "Oui! Tous les nouveaux clients bénéficient d'un essai gratuit de 2 mois avec jusqu'à 100 équipements. Aucune carte bancaire requise. Après l'essai, choisissez le plan adapté à la taille de votre flotte."
-        },
-        {
-          "question": "Où sont stockées mes données?",
-          "answer": "Toutes les données sont hébergées dans des centres de données européens (France) avec une conformité RGPD complète. Nous ne stockons jamais de données en dehors de l'UE."
-        },
-        {
-          "question": "Quel est le ROI typique?",
-          "answer": "La plupart des clients voient 500-1,300% de ROI. Pour une flotte de 5M€, prévenir 1-2% de pertes (50k€-100k€), éviter amendes VGP (15k€+), et réduire coûts d'audit (15k€+) totalise 80k€-170k€ de valeur annuelle pour 9k€-30k€ d'investissement."
-        }
-      ]
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Sur mesure",
+      "subtitle": "Pour grandes flottes avec conformité totale",
+      "annual": "À partir de €40K/an",
+      "features": {
+        "unlimited": "Équipements illimités",
+        "vgpDedicated": "VGP + équipe de conformité dédiée",
+        "custom": "Intégrations sur mesure",
+        "onPremise": "Déploiement sur site disponible",
+        "sla": "SLA 99.9%+",
+        "support": "Support 24/7"
+      }
+    }
+  },
+  "extensions": {
+    "title": "Extensions Professionnelles",
+    "subtitle": "Ajoutez des fonctionnalités selon vos besoins",
+    "extraAssets": {
+      "title": "Pack Actifs Supplémentaires",
+      "description": "Dépassez votre limite de 500 actifs sans changer de forfait",
+      "price": "+€100 par tranche de 100 actifs"
+    },
+    "predictive": {
+      "title": "Module Maintenance Prédictive",
+      "description": "Réduisez les inspections inutiles avec l'analyse IA des patterns d'usure",
+      "price": "À partir de €300/mois"
+    },
+    "erp": {
+      "title": "Intégration ERP Personnalisée",
+      "description": "Synchronisez TraviXO avec SAP, Oracle ou votre système interne",
+      "price": "€2 500 setup + €50/mois maintenance"
+    },
+    "sla": {
+      "title": "SLA Support Prioritaire",
+      "description": "Réponse garantie sous 24h + gestionnaire de compte dédié",
+      "price": "+€400/mois"
     },
     "cta": {
-      "start": "Démarrer l'Essai Gratuit",
-      "demo": "Réserver une Démo",
-      "contact": "Contacter les Ventes"
-    },
-    "finalCta": {
-      "title": "Prêt à Suivre Plus Intelligemment?",
-      "subtitle": "Commencez votre essai gratuit de 2 mois aujourd'hui. Aucune carte bancaire requise.",
-      "button": "Démarrer Votre Essai Gratuit"
-    },
-    "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
+      "text": "Besoin d'une configuration personnalisée ?",
+      "button": "Parler aux Ventes"
     }
+  },
+  "cta": {
+    "start": "Commencer Gratuitement",
+    "demo": "Réserver une Démo",
+    "contact": "Nous Contacter"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "questions": [
+      {
+        "question": "Pourquoi la conformité VGP n'est pas incluse dans le plan Démarrage ?",
+        "answer": "Le plan Démarrage est conçu pour le suivi d'actifs de base uniquement. La conformité VGP nécessite des fonctionnalités avancées (planification d'inspections, gestion de certificats, rapports DIRECCTE) disponibles à partir du plan Professionnel. Pour les sociétés de location d'équipement en France, nous recommandons fortement le plan Professionnel."
+      },
+      {
+        "question": "Quelle est la différence entre facturation mensuelle et annuelle ?",
+        "answer": "La facturation annuelle est notre option par défaut et offre une réduction de 15% par rapport aux paiements mensuels. Par exemple, le plan Professionnel coûte €14 400/an (€1 200/mois) en facturation annuelle, contre €1 412/mois en facturation mensuelle."
+      },
+      {
+        "question": "Puis-je changer de plan à tout moment ?",
+        "answer": "Oui, vous pouvez upgrader votre plan à tout moment. Les downgrades sont possibles à la fin de votre période de facturation annuelle. Contactez notre équipe pour discuter de votre situation spécifique."
+      },
+      {
+        "question": "Les extensions sont-elles compatibles avec tous les plans ?",
+        "answer": "Le Pack Actifs Supplémentaires est disponible pour tous les plans. Les autres extensions (IA prédictive, intégrations ERP, SLA prioritaire) nécessitent le plan Professionnel ou supérieur."
+      },
+      {
+        "question": "Offrez-vous une période d'essai ?",
+        "answer": "Oui, nous offrons une période d'essai de 30 jours pour tous les plans avec accès complet aux fonctionnalités. Aucune carte de crédit requise pour commencer."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prêt à Automatiser Votre Conformité ?",
+    "subtitle": "Rejoignez les entreprises françaises qui ont éliminé le risque d'amendes DIRECCTE",
+    "button": "Démarrer l'Essai Gratuit"
+  },
+  "footer": {
+    "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d'utilisation"
+  }
+
   },
   "privacy": {
     "title": "Politique de Confidentialité",
