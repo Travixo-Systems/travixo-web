@@ -156,13 +156,6 @@ export default async function PricingPage(props: Props) {
 
         {/* Pricing Cards Section - ANNUAL FIRST */}
         <section className="container mx-auto px-4 py-6 max-w-7xl">
-          {/* Annual billing notice - far right */}
-          <div className="text-right mb-6">
-            <p className="text-sm text-orange-600 font-semibold">
-              {t('billing.discount')}
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
             {/* Starter - €5,880/yr (€490/mo) */}
@@ -173,10 +166,10 @@ export default async function PricingPage(props: Props) {
               <div className="mb-2">
                 <div className="mb-1">
                   <span className="text-4xl font-bold text-gray-900">€5 880</span>
-                  <span className="text-lg text-gray-600">/an</span>
+                  <span className="text-lg text-gray-600">/{t('billing.year')}</span>
                 </div>
                 <p className="text-sm text-gray-600">
-                  ou <span className="font-medium">€490</span>/mois
+                  {t('billing.or')} <span className="font-medium">€490</span>/{t('billing.month')}
                 </p>
               </div>
               <p className="text-gray-600 mb-2">
@@ -241,10 +234,10 @@ export default async function PricingPage(props: Props) {
               <div className="mb-2">
                 <div className="mb-1">
                   <span className="text-4xl font-bold text-gray-900">€14 400</span>
-                  <span className="text-lg text-gray-600">/an</span>
+                  <span className="text-lg text-gray-600">/{t('billing.year')}</span>
                 </div>
                 <p className="text-sm text-gray-600">
-                  ou <span className="font-medium">€1 200</span>/mois
+                  {t('billing.or')} <span className="font-medium">€1 200</span>/{t('billing.month')}
                 </p>
               </div>
               <p className="text-gray-600 mb-2">
@@ -280,6 +273,25 @@ export default async function PricingPage(props: Props) {
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.support')}</span>
                 </li>
+                {/* Roadmap Features */}
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.professional.features.teamManagement')}
+                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
+                      {t('status.comingQ1')}
+                    </span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.professional.features.emailAlerts')}
+                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
+                      {t('status.comingQ2')}
+                    </span>
+                  </div>
+                </li>
               </ul>
 
               {/* Available Extensions - Collapsible */}
@@ -309,10 +321,10 @@ export default async function PricingPage(props: Props) {
               <div className="mb-2">
                 <div className="mb-1">
                   <span className="text-3xl font-bold text-gray-900">€28 800</span>
-                  <span className="text-lg text-gray-600">/an</span>
+                  <span className="text-lg text-gray-600">/{t('billing.year')}</span>
                 </div>
                 <p className="text-sm text-gray-600">
-                  ou <span className="font-medium">€2 400</span>/mois
+                  {t('billing.or')} <span className="font-medium">€2 400</span>/{t('billing.month')}
                 </p>
               </div>
               <p className="text-gray-600 mb-2">
@@ -342,6 +354,20 @@ export default async function PricingPage(props: Props) {
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.sla')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-sm">{t('plans.business.features.advancedReporting')}</span>
+                </li>
+                {/* Roadmap Features */}
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.business.features.apiAccess')}
+                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
+                      {t('status.comingQ2')}
+                    </span>
+                  </div>
                 </li>
               </ul>
 
@@ -390,21 +416,46 @@ export default async function PricingPage(props: Props) {
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{t('plans.enterprise.features.custom')}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{t('plans.enterprise.features.onPremise')}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm">{t('plans.enterprise.features.sla')}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.support')}</span>
                 </li>
+                {/* Enterprise Custom Features */}
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.enterprise.features.customIntegrations')}
+                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                      {t('status.builtOnDemand')}
+                    </span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.enterprise.features.whiteLabel')}
+                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                      {t('status.builtOnDemand')}
+                    </span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.enterprise.features.onPremise')}
+                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                      {t('status.builtOnDemand')}
+                    </span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 flex-shrink-0">•</span>
+                  <div className="text-sm">
+                    {t('plans.enterprise.features.sla')}
+                  </div>
+                </li>
               </ul>
+              <p className="text-xs text-gray-500 mb-4 italic">
+                {t('plans.enterprise.note')}
+              </p>
               <Link
                 href={`/${locale}/contact`}
                 className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors"

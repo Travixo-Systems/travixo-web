@@ -192,127 +192,145 @@
       "terms": "Conditions d'Utilisation"
     }
   },
-"features": {
+"features": 
+{
   "hero": {
-    "title": "Tout ce dont vous avez besoin pour maîtriser le suivi d'equipments",
-    "subtitle": "TraviXO marie l'accessibilité du QR code à une automatisation robuste pour vous garantir une visibilité complète, la conformité VGP et la maîtrise de votre parc. Zéro saisie manuelle fastidieuse. Zéro formation longue. Juste un suivi opérationnel immédiat."
+    "title": "Fonctionnalités TraviXO",
+    "subtitle": "Du suivi QR à la conformité VGP automatisée - tout ce dont votre entreprise a besoin"
   },
   "differentiators": {
     "import": {
       "time": "5 min",
       "title": "Import Excel Intelligent",
-      "description": "Importez 500 equipments en 5 minutes. La détection intelligente des colonnes fonctionne avec n'importe quel format de tableur."
+      "description": "Importez 500 actifs en 5 minutes. Les concurrents nécessitent 40+ heures de saisie manuelle."
     },
     "bulk": {
       "time": "30 sec",
-      "title": "Génération de QR en Masse",
-      "description": "Générez 500 codes QR sous forme de PDF prêt à imprimer en 30 secondes. Pas de clic sur les equipments un par un."
+      "title": "Génération QR en Masse",
+      "description": "Générez 500 codes QR prêts à imprimer en 30 secondes. Pas de clics un par un."
     },
     "deploy": {
-      "time": "Le jour même",
-      "title": "Déploiement Immédiat",
-      "description": "Commencez à suivre les équipements le jour même de votre inscription. Pas de semaines de formation ou de configuration requises."
+      "time": "4 heures",
+      "title": "Déploiement le Jour Même",
+      "description": "De l'inscription au suivi en 4 heures totales. Les concurrents prennent 2-4 semaines."
     }
   },
-  "coreTitle": "Plateforme Complète de Suivi d'Équipements",
-  "moat": {
-    "title": "Ce Qui Rend TraviXO Différent",
-    "subtitle": "Alors que les concurrents vous enferment dans des semaines de configuration, TraviXO vous fait suivre en quelques minutes",
-    "import": {
-      "title": "Import Excel Intelligent",
-      "description": "Téléchargez votre tableur d'équipements existant et commencez à suivre en 5 minutes. Notre détection intelligente des colonnes mappe automatiquement les Numéros de Série, les Emplacements, les Dates d'Achat - même si vos en-têtes sont en français, utilisent des abréviations ou ne correspondent pas à notre format. Importez 500 equipments plus rapidement que vous ne faites votre café.",
-      "features": [
-        "Détection automatique des colonnes (fonctionne dans n'importe quelle langue)",
-        "Gère les données désordonnées (cellules vides, colonnes fusionnées, formats étranges)",
-        "Valide pendant l'importation (détecte les erreurs avant qu'elles ne deviennent des problèmes)",
-        "Aperçu avant validation (voyez exactement ce qui sera importé)",
-        "Prend en charge Excel (.xlsx), CSV et Google Sheets"
-      ]
-    },
-    "bulk": {
-      "title": "Opérations en Masse Qui Fonctionnent Vraiment",
-      "description": "Arrêtez de cliquer sur les equipments un par un. Les opérations en masse de TraviXO vous permettent de gérer des centaines d'equipments simultanément - comme vous travaillez réellement.",
-      "features": [
-        "Générez 500 codes QR sous forme de PDF prêt à imprimer en 30 secondes",
-        "Mettez à jour le statut de plus de 100 equipments à la fois (déplacez un dépôt entier en maintenance)",
-        "Affectation en masse d'équipements à des équipes ou des emplacements",
-        "Exportez les données filtrées vers CSV (uniquement ce dont vous avez besoin, quand vous en avez besoin)",
-        "Suppression avec vérifications de sécurité (nous vous faisons confirmer, à chaque fois)"
-      ]
-    },
-    "smart": {
-      "title": "Assez Intelligent pour Gagner du Temps, Assez Simple à Utiliser",
-      "description": "TraviXO ne nécessite pas de manuels de formation ni d'intégration de consultants. Si vous savez utiliser un smartphone et Excel, vous savez déjà comment utiliser TraviXO.",
-      "features": [
-        "Le scan QR mobile fonctionne sans installer d'application",
-        "Mode hors ligne (scannez les equipments, synchronisez plus tard quand vous avez internet)",
-        "Recherche intelligente (trouvez des equipments par numéro de série partiel, surnom ou emplacement)",
-        "Mises à jour du tableau de bord en temps réel (voyez les changements au fur et à mesure)",
-        "Exports en un clic pour la réconciliation financière"
-      ]
+  "availableNow": {
+    "title": "Disponible Maintenant",
+    "subtitle": "Fonctionnalités prêtes à l'emploi dès le premier jour",
+    "features": {
+      "qrTracking": {
+        "title": "Suivi d'Actifs par QR",
+        "description": "Générez des codes QR illimités pour toute votre flotte. Chaque actif obtient un code unique et scannable qui pointe vers son enregistrement numérique dans TraviXO.",
+        "items": [
+          "Génération QR en un clic",
+          "Recommandations d'étiquettes résistantes aux intempéries incluses",
+          "URLs statiques (révocables si nécessaire)",
+          "Génération PDF en masse pour 500+ codes"
+        ]
+      },
+      "vgp": {
+        "title": "Conformité VGP Automatisée",
+        "description": "Éliminez le risque d'amendes DIRECCTE avec le suivi automatisé des inspections. Planification automatique, alertes avant échéance, et rapports conformes aux audits.",
+        "items": [
+          "Planification automatique des inspections",
+          "Alertes email (30/7 jours avant échéance)",
+          "Téléchargement et stockage de certificats PDF",
+          "Rapports DIRECCTE prêts à l'audit"
+        ]
+      },
+      "excelImport": {
+        "title": "Import Excel Intelligent",
+        "description": "Téléchargez votre feuille de calcul d'équipements existante et commencez le suivi en 5 minutes. Notre détection intelligente de colonnes mappe automatiquement les numéros de série, emplacements, dates d'achat - même si vos en-têtes sont en français, utilisent des abréviations, ou ne correspondent pas à notre format.",
+        "items": [
+          "Détection automatique des colonnes (fonctionne dans toutes les langues)",
+          "Gère les données désordonnées (cellules vides, colonnes fusionnées, formats étranges)",
+          "Validation pendant l'import (détecte les erreurs avant qu'elles ne deviennent des problèmes)",
+          "Aperçu avant validation (voyez exactement ce qui sera importé)"
+        ]
+      },
+      "mobileScanning": {
+        "title": "Scan Mobile Sans App",
+        "description": "Votre équipe peut scanner des actifs depuis n'importe quel smartphone - aucun téléchargement d'application requis. Rapide, précis, fonctionne en faible luminosité.",
+        "items": [
+          "Application Web Progressive (installation optionnelle)",
+          "Scanner QR basé sur la caméra",
+          "Fonctionne hors ligne, synchronise en ligne",
+          "Marquage de localisation GPS"
+        ]
+      },
+      "direccte": {
+        "title": "Rapports DIRECCTE",
+        "description": "Générez des rapports de conformité prêts pour audit en un clic. Historique complet des inspections, statut de conformité, et exports formatés pour les audits DIRECCTE.",
+        "items": [
+          "Suivi automatique de la conformité",
+          "Export PDF/Excel",
+          "Historique complet des inspections",
+          "Rapports formatés pour audits réglementaires"
+        ]
+      },
+      "dashboard": {
+        "title": "Tableau de Bord Temps Réel",
+        "description": "Sachez exactement où se trouve chaque actif, qui l'a, et quand il a été vérifié pour la dernière fois. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
+        "items": [
+          "Répartition du statut des actifs",
+          "Taux d'utilisation par catégorie",
+          "Alertes et notifications personnalisées",
+          "Export vers CSV/Excel"
+        ]
+      }
     }
   },
-  "coreFeatures": {
-    "title": "Fonctionnalités Principales",
-    "qrTracking": {
-      "title": "Suivi d'equipments par Code QR",
-      "description": "Gérez votre flotte d'équipments facilement grâce à des codes QR uniques et scannables, chacun lié à son dossier numérique dans TravixO.",
-      "oneClick": "Génération instantanée de QR codes : créez un code pour chaque actif en un seul clic.",
-      "weatherproof": "Étiquettes durables recommandées : résistantes aux intempéries pour un usage long terme.",
-      "staticUrls": "URLs statiques et sécurisées : modifiables ou révoquées si nécessaire.",
-      "batchGeneration": "Production en masse simplifiée : exportez plus de 500 QR codes au format PDF en quelques secondes."
-    },
-    "mobileScanning": {
-      "title": "Scan Mobile Prioritaire",
-      "description": "Permettez à votre équipe de scanner vos actifs rapidement et efficacement, directement depuis n'importe quel smartphone, sans application à installer.",
-      "pwa": "Application Web Progressive : installation optionnelle pour plus de flexibilité.",
-      "cameraScanner": "Scanner QR intégré à la caméra : simple et intuitif.",
-      "offlineSync": "Fonctionnement hors ligne : synchronisation automatique dès qu'une connexion est disponible.",
-      "gpsLocation": "Géolocalisation GPS : traçabilité précise des actifs en temps réel."
-    },
-    "dashboards": {
-      "title": "Tableaux de Bord en Temps Réel",
-      "description": "Sachez exactement où se trouve chaque actif, qui l'a, et quand il a été vérifié pour la dernière fois. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
-      "statusBreakdown": "Répartition du statut des equipments",
-      "utilizationRates": "Taux d'utilisation par catégorie",
-      "customAlerts": "Alertes et notifications personnalisées",
-      "exportData": "Export vers CSV/Excel"
-    },
-    "audits": {
-      "title": "Audits d'Inventaire Numériques",
-      "description": "Remplacez les audits manuels par des flux de travail numériques. Générez des listes d'equipments attendus, suivez la progression de vérification en temps réel, et signalez automatiquement les divergences.",
-      "mobileChecklist": "Liste de contrôle mobile pour audit",
-      "progressTracking": "Suivi de progression en temps réel",
-      "missingAlerts": "Alertes d'equipments manquants",
-      "complianceExports": "Exports de conformité (GAAP, IFRS)"
-    },
-    "integrations": {
-      "title": "Intégrations d'Entreprise",
-      "description": "Vos données d'equipments circulent partout où elles sont nécessaires. Envoyez vers ServiceNow, synchronisez les coûts avec QuickBooks, ou créez des intégrations personnalisées via webhooks.",
-      "serviceNow": "ServiceNow & Jira Service Management",
-      "accounting": "Synchronisation QuickBooks & Xero",
-      "zapier": "Zapier (5 000+ applications)",
-      "api": "Webhooks & API REST"
-    },
-    "teamSecurity": {
-      "title": "Gestion d'Équipe & Sécurité",
-      "description": "Permissions basées sur les rôles, journaux d'audit et support multi-sites garantissent que votre équipe a le bon accès.",
-      "roles": "Rôles Propriétaire, Admin, Membre, Observateur",
-      "twoFactor": "Authentification à deux facteurs",
-      "auditLogs": "Journaux d'audit complets",
-      "multiLocation": "Support multi-sites"
+  "comingSoon": {
+    "title": "Prochainement",
+    "subtitle": "Fonctionnalités en développement actif",
+    "features": {
+      "teamManagement": {
+        "title": "Gestion d'Équipe",
+        "description": "Invitez des membres d'équipe, contrôlez les niveaux d'accès, suivez les actions. Contrôle d'accès basé sur les rôles avec logs d'audit complets."
+      },
+      "emailAlerts": {
+        "title": "Alertes Email",
+        "description": "Recevez des notifications automatiques pour les inspections à venir et les alertes critiques. Rappels d'inspection 30 jours avant échéance."
+      },
+      "apiAccess": {
+        "title": "Accès API",
+        "description": "Intégrez TraviXO avec vos systèmes existants via API REST. Documentation complète et webhooks pour événements en temps réel."
+      }
     }
   },
-  "cta": {
-    "title": "Prêt à voir TraviXO en action ?",
-    "button": "Démarrez votre essai gratuit"
+  "enterprise": {
+    "title": "Développement Sur Mesure (Enterprise)",
+    "subtitle": "Fonctionnalités construites pendant l'implémentation pour les clients Enterprise",
+    "note": "Les fonctionnalités Enterprise sont développées sur demande pendant la phase d'implémentation",
+    "cta": "Discuter des Besoins Enterprise",
+    "features": {
+      "customIntegrations": {
+        "title": "Intégrations Personnalisées",
+        "description": "Connectez TraviXO à vos systèmes ERP, CMMS ou CRM existants.",
+        "examples": "Exemples : ServiceNow, SAP, Oracle, synchronisation bidirectionnelle des données"
+      },
+      "whiteLabel": {
+        "title": "Marque Blanche",
+        "description": "Rebrandez TraviXO avec votre logo, couleurs et domaine personnalisé. Interface complète de marque blanche."
+      },
+      "onPremise": {
+        "title": "Déploiement Sur Site",
+        "description": "Hébergez TraviXO sur votre propre infrastructure pour un contrôle total des données et la souveraineté."
+      }
+    }
   },
-  "footer": {
-    "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation"
-  }
-},
+  "status": {
+    "availableNow": "Disponible Maintenant",
+    "comingQ1": "T1 2026",
+    "comingQ2": "T2 2026",
+    "builtOnDemand": "Sur Mesure"
+  },
+  "finalCta": {
+    "title": "Prêt à Commencer?",
+    "subtitle": "Démarrez avec la conformité VGP aujourd'hui",
+    "button": "Démarrer l'Essai Gratuit"
+  }},
   "contact": {
     "hero": {
       "title": "Parlons de vos besoins en suivi d'équipement",
@@ -366,12 +384,15 @@
       "terms": "Conditions d'utilisation"
     }
   },
-  "pricing": {"hero": {
+  "pricing": {
+  "hero": {
     "title": "Automatisez Votre Conformité VGP",
     "subtitle": "Évitez €15K-€75K d'amendes DIRECCTE avec le seul système qui automatise la conformité réglementaire française"
   },
   "billing": {
-    "discount": "Économisez 15% avec paiement annuel"
+    "year": "an",
+    "month": "mois",
+    "or": "ou"
   },
   "comparison": {
     "title": "Pourquoi TraviXO ?"
@@ -401,7 +422,9 @@
         "multiSite": "Support multi-sites",
         "audit": "Module d'audit numérique",
         "integration": "Intégration Zapier",
-        "support": "Support prioritaire"
+        "support": "Support prioritaire",
+        "teamManagement": "Gestion d'équipe",
+        "emailAlerts": "Alertes email"
       }
     },
     "business": {
@@ -413,23 +436,32 @@
         "vgpPriority": "VGP + support de conformité prioritaire",
         "integrations": "ServiceNow + QuickBooks",
         "manager": "Gestionnaire de compte dédié",
-        "sla": "SLA 24h garanti"
+        "sla": "SLA 24h garanti",
+        "advancedReporting": "Rapports avancés",
+        "apiAccess": "Accès API"
       }
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "Sur mesure",
-      "annual": "Tarif sur mesure selon besoins",
+      "annual": "À partir de €40K/an",
       "subtitle": "Pour grandes flottes avec conformité totale",
+      "note": "Fonctionnalités développées pendant l'implémentation",
       "features": {
         "unlimited": "Équipements illimités",
         "vgpDedicated": "VGP + équipe de conformité dédiée",
-        "custom": "Intégrations sur mesure",
-        "onPremise": "Déploiement sur site disponible",
-        "sla": "SLA 99.9%+",
-        "support": "Support 24/7"
+        "support": "Support 24/7",
+        "customIntegrations": "Intégrations sur mesure (ServiceNow, SAP)",
+        "whiteLabel": "Marque blanche personnalisée",
+        "onPremise": "Déploiement sur site",
+        "sla": "SLA 99.9%+"
       }
     }
+  },
+  "status": {
+    "comingQ1": "T1 2026",
+    "comingQ2": "T2 2026",
+    "builtOnDemand": "Sur mesure"
   },
   "cta": {
     "start": "Commencer Gratuitement",
@@ -471,6 +503,7 @@
     "privacy": "Confidentialité",
     "terms": "Conditions d'utilisation"
   }
+
   },
   "privacy": {
     "title": "Politique de Confidentialité",

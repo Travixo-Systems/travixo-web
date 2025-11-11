@@ -193,126 +193,144 @@
     }
   },
   "features": {
-    "hero": {
-      "title": "Everything You Need to Master Asset Tracking",
-      "subtitle": "TraviXO combines straightforward QR technology with professional-grade automation to give you complete visibility, VGP compliance, and full fleet control. Zero manual data entry. Zero lengthy onboarding. Just immediate, intelligent tracking."
+  "hero": {
+    "title": "TraviXO Features",
+    "subtitle": "From QR tracking to automated VGP compliance - everything your business needs"
+  },
+  "differentiators": {
+    "import": {
+      "time": "5 min",
+      "title": "Smart Excel Import",
+      "description": "Import 500 assets in 5 minutes. Competitors require 40+ hours of manual data entry."
     },
-    "differentiators": {
-      "import": {
-        "time": "5 min",
-        "title": "Smart Excel Import",
-        "description": "Import 500 assets in 5 minutes. Smart column detection works with any spreadsheet format."
-      },
-      "bulk": {
-        "time": "30 sec",
-        "title": "Bulk QR Generation",
-        "description": "Generate 500 QR codes as print-ready PDF in 30 seconds. No clicking through assets one by one."
-      },
-      "deploy": {
-        "time": "Same day",
-        "title": "Deploy Immediately",
-        "description": "Start tracking equipment the same day you sign up. No weeks of training or setup required."
-      }
+    "bulk": {
+      "time": "30 sec",
+      "title": "Bulk QR Generation",
+      "description": "Generate 500 print-ready QR codes in 30 seconds. No clicking one-by-one."
     },
-    "coreTitle": "Complete Asset Tracking Platform",
-    "moat": {
-      "title": "What Makes TraviXO Different",
-      "subtitle": "While competitors lock you into weeks of setup, TraviXO gets you tracking in minutes",
-      "import": {
+    "deploy": {
+      "time": "4 hours",
+      "title": "Deploy Same Day",
+      "description": "From signup to tracking in 4 hours total. Competitors take 2-4 weeks."
+    }
+  },
+  "availableNow": {
+    "title": "Available Now",
+    "subtitle": "Production-ready features from day one",
+    "features": {
+      "qrTracking": {
+        "title": "QR Asset Tracking",
+        "description": "Generate unlimited QR codes for your entire fleet. Each asset gets a unique, scannable code that links to its digital record in TraviXO.",
+        "items": [
+          "One-click QR generation",
+          "Weatherproof label recommendations included",
+          "Static URLs (revocable if needed)",
+          "Bulk PDF generation for 500+ codes"
+        ]
+      },
+      "vgp": {
+        "title": "VGP Compliance Automation",
+        "description": "Eliminate DIRECCTE fine risk with automated inspection tracking. Automatic scheduling, pre-deadline alerts, and audit-ready reporting.",
+        "items": [
+          "Automatic inspection scheduling",
+          "Email alerts (30/7 days before due)",
+          "PDF certificate upload and storage",
+          "Audit-ready DIRECCTE reports"
+        ]
+      },
+      "excelImport": {
         "title": "Smart Excel Import",
-        "description": "Upload your existing equipment spreadsheet and start tracking in 5 minutes. Our intelligent column detection automatically maps Serial Numbers, Locations, Purchase Dates - even if your headers are in French, use abbreviations, or don't match our format. Import 500 assets faster than you can make coffee.",
-        "features": [
+        "description": "Upload your existing equipment spreadsheet and start tracking in 5 minutes. Our intelligent column detection automatically maps Serial Numbers, Locations, Purchase Dates - even if your headers are in French, use abbreviations, or don't match our format.",
+        "items": [
           "Automatic column detection (works with any language)",
           "Handles messy data (blank cells, merged columns, weird formats)",
           "Validates as it imports (catches errors before they become problems)",
-          "Preview before committing (see exactly what will import)",
-          "Supports Excel (.xlsx), CSV, and Google Sheets"
+          "Preview before committing (see exactly what will import)"
         ]
-      },
-      "bulk": {
-        "title": "Bulk Operations That Actually Work",
-        "description": "Stop clicking through assets one by one. TraviXO's bulk operations let you manage hundreds of assets simultaneously - the way you actually work.",
-        "features": [
-          "Generate 500 QR codes as a print-ready PDF in 30 seconds",
-          "Update status for 100+ assets at once (move entire depot to maintenance)",
-          "Bulk assign equipment to teams or locations",
-          "Export filtered data to CSV (only what you need, when you need it)",
-          "Delete with safety checks (we make you confirm, every time)"
-        ]
-      },
-      "smart": {
-        "title": "Smart Enough to Save Time, Simple Enough to Use",
-        "description": "TraviXO doesn't require training manuals or consultant onboarding. If you can use a smartphone and Excel, you already know how to use TraviXO.",
-        "features": [
-          "Mobile QR scanning works without installing an app",
-          "Offline mode (scan assets, sync later when you have internet)",
-          "Smart search (find assets by partial serial, nickname, or location)",
-          "Real-time dashboard updates (see changes as they happen)",
-          "One-click exports for finance reconciliation"
-        ]
-      }
-    },
-    "coreFeatures": {
-      "title": "Core Features",
-      "qrTracking": {
-        "title": "QR Code Asset Tracking",
-        "description": "Generate unlimited QR codes for your entire fleet. Each asset gets a unique, scannable code that links to its digital record in TraviXO.",
-        "oneClick": "One-click QR generation",
-        "weatherproof": "Weatherproof label recommendations included",
-        "staticUrls": "Static URLs (revocable if needed)",
-        "batchGeneration": "Bulk PDF generation for 500+ codes"
       },
       "mobileScanning": {
-        "title": "Mobile-First Scanning",
+        "title": "Mobile Scanning (No App)",
         "description": "Your team can scan assets using any smartphone - no app download required. Fast, accurate, works in low light.",
-        "pwa": "Progressive Web App (install optional)",
-        "cameraScanner": "Camera-based QR scanner",
-        "offlineSync": "Works offline, syncs when online",
-        "gpsLocation": "GPS location tagging"
+        "items": [
+          "Progressive Web App (install optional)",
+          "Camera-based QR scanner",
+          "Works offline, syncs when online",
+          "GPS location tagging"
+        ]
       },
-      "dashboards": {
-        "title": "Real-Time Dashboards",
+      "direccte": {
+        "title": "DIRECCTE Reporting",
+        "description": "Generate audit-ready compliance reports with one click. Complete inspection history, compliance status, and exports formatted for DIRECCTE audits.",
+        "items": [
+          "Automatic compliance tracking",
+          "PDF/Excel export",
+          "Complete inspection history",
+          "Formatted for regulatory audits"
+        ]
+      },
+      "dashboard": {
+        "title": "Real-Time Dashboard",
         "description": "Know exactly where every asset is, who has it, and when it was last verified. Filter by status, location, category, or custom fields.",
-        "statusBreakdown": "Asset status breakdown",
-        "utilizationRates": "Utilization rates by category",
-        "customAlerts": "Custom alerts and notifications",
-        "exportData": "Export to CSV/Excel"
-      },
-      "audits": {
-        "title": "Digital Inventory Audits",
-        "description": "Replace manual audits with digital workflows. Generate expected asset lists, track verification progress in real-time, and flag discrepancies automatically.",
-        "mobileChecklist": "Mobile audit checklist",
-        "progressTracking": "Real-time progress tracking",
-        "missingAlerts": "Missing asset alerts",
-        "complianceExports": "Compliance exports (GAAP, IFRS)"
-      },
-      "integrations": {
-        "title": "Enterprise Integrations",
-        "description": "Your asset data flows everywhere it needs to go. Push to ServiceNow, sync costs to QuickBooks, or build custom integrations via webhooks.",
-        "serviceNow": "ServiceNow & Jira Service Management",
-        "accounting": "QuickBooks & Xero sync",
-        "zapier": "Zapier (5,000+ apps)",
-        "api": "Webhooks & REST API"
-      },
-      "teamSecurity": {
-        "title": "Team Management & Security",
-        "description": "Role-based permissions, audit logs, and multi-location support ensure your team has the right access.",
-        "roles": "Owner, Admin, Member, Viewer roles",
-        "twoFactor": "Two-factor authentication",
-        "auditLogs": "Complete audit logs",
-        "multiLocation": "Multi-location support"
+        "items": [
+          "Asset status breakdown",
+          "Utilization rates by category",
+          "Custom alerts and notifications",
+          "Export to CSV/Excel"
+        ]
       }
-    },
-    "cta": {
-      "title": "Ready to See TraviXO in Action?",
-      "button": "Start Your Free Pilot"
-    },
-    "footer": {
-      "copyright": "© 2025 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
     }
   },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "subtitle": "Features in active development",
+    "features": {
+      "teamManagement": {
+        "title": "Team Management",
+        "description": "Invite team members, control access levels, track actions. Role-based access control with complete audit logs."
+      },
+      "emailAlerts": {
+        "title": "Email Alerts",
+        "description": "Receive automatic notifications for upcoming inspections and critical alerts. Inspection reminders 30 days before due."
+      },
+      "apiAccess": {
+        "title": "API Access",
+        "description": "Integrate TraviXO with your existing systems via REST API. Full documentation and webhooks for real-time events."
+      }
+    }
+  },
+  "enterprise": {
+    "title": "Custom Development (Enterprise)",
+    "subtitle": "Features built during implementation for Enterprise customers",
+    "note": "Enterprise features are developed on-demand during implementation phase",
+    "cta": "Discuss Enterprise Needs",
+    "features": {
+      "customIntegrations": {
+        "title": "Custom Integrations",
+        "description": "Connect TraviXO to your existing ERP, CMMS, or CRM systems.",
+        "examples": "Examples: ServiceNow, SAP, Oracle, bi-directional data sync"
+      },
+      "whiteLabel": {
+        "title": "White-Label Branding",
+        "description": "Rebrand TraviXO with your logo, colors, and custom domain. Complete white-labeled interface."
+      },
+      "onPremise": {
+        "title": "On-Premise Deployment",
+        "description": "Host TraviXO on your own infrastructure for complete data control and sovereignty."
+      }
+    }
+  },
+  "status": {
+    "availableNow": "Available Now",
+    "comingQ1": "Q1 2026",
+    "comingQ2": "Q2 2026",
+    "builtOnDemand": "Built on-demand"
+  },
+  "finalCta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Start with VGP compliance today",
+    "button": "Start Free Trial"
+  }
+},
   "contact": {
     "hero": {
       "title": "Let's Talk About Your Equipment Tracking Needs",
@@ -372,7 +390,9 @@
     "subtitle": "Avoid €15K-€75K DIRECCTE fines with the only system that automates French regulatory compliance"
   },
   "billing": {
-    "discount": "Save 15% with annual payment"
+    "year": "year",
+    "month": "mo",
+    "or": "or"
   },
   "comparison": {
     "title": "Why TraviXO?"
@@ -402,7 +422,9 @@
         "multiSite": "Multi-location support",
         "audit": "Digital audit module",
         "integration": "Zapier integration",
-        "support": "Priority support"
+        "support": "Priority support",
+        "teamManagement": "Team management",
+        "emailAlerts": "Email alerts"
       }
     },
     "business": {
@@ -414,23 +436,32 @@
         "vgpPriority": "VGP + priority compliance support",
         "integrations": "ServiceNow + QuickBooks",
         "manager": "Dedicated account manager",
-        "sla": "24h SLA guaranteed"
+        "sla": "24h SLA guaranteed",
+        "advancedReporting": "Advanced reporting",
+        "apiAccess": "API access"
       }
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "Custom",
-      "annual": "Custom pricing based on your needs",
+      "annual": "From €40K/year",
       "subtitle": "For large fleets with full compliance",
+      "note": "Features developed during implementation",
       "features": {
         "unlimited": "Unlimited assets",
         "vgpDedicated": "VGP + dedicated compliance team",
-        "custom": "Custom integrations",
-        "onPremise": "On-premise deployment available",
-        "sla": "SLA 99.9%+",
-        "support": "24/7 support"
+        "support": "24/7 support",
+        "customIntegrations": "Custom integrations (ServiceNow, SAP)",
+        "whiteLabel": "White-label branding",
+        "onPremise": "On-premise deployment",
+        "sla": "SLA 99.9%+"
       }
     }
+  },
+  "status": {
+    "comingQ1": "Q1 2026",
+    "comingQ2": "Q2 2026",
+    "builtOnDemand": "Built on-demand"
   },
   "cta": {
     "start": "Start Free Trial",
@@ -472,6 +503,7 @@
     "privacy": "Privacy",
     "terms": "Terms of Service"
   }
+
 
   },
   "privacy": {
