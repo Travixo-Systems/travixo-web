@@ -1,24 +1,24 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - QR Asset Tracking | VGP Compliant Equipment Management",
-      "description": "Track rental equipment with TraviXO. VGP compliance automation, real-time tracking, from spreadsheet to tracking in 15 minutes."
+      "title": "TraviXO - Stop Equipment Loss & VGP Compliance Fines",
+      "description": "Track rental equipment with QR codes. Prevent equipment loss and avoid VGP compliance fines. Upload spreadsheet, print codes, start tracking in hours."
     },
     "about": {
-      "title": "About Us - TraviXO",
-      "description": "Learn about TraviXO's mission to eliminate equipment loss and save companies through intelligent asset tracking and VGP compliance."
+      "title": "About TraviXO - Built by Equipment Rental Veterans",
+      "description": "Learn how TraviXO helps equipment rental companies stop losing equipment and avoid compliance fines through simple QR tracking."
     },
     "contact": {
-      "title": "Contact - TraviXO",
+      "title": "Contact TraviXO - Start Your Free Pilot",
       "description": "Get in touch about a free pilot. Contact TraviXO for equipment tracking solutions."
     },
     "features": {
-      "title": "Features - TraviXO Asset Tracking",
-      "description": "Complete asset tracking features: smart Excel import, bulk QR generation, VGP compliance automation, real-time dashboards, and enterprise integrations."
+      "title": "Features - TraviXO Equipment Tracking",
+      "description": "Upload any spreadsheet, generate QR codes, track equipment location. VGP compliance automation included."
     },
     "pricing": {
-      "title": "Pricing - TraviXO",
-      "description": "Simple transparent pricing for equipment tracking with VGP compliance. Plans from €129/month."
+      "title": "Pricing - TraviXO Equipment Tracking",
+      "description": "Simple transparent pricing for equipment tracking with VGP compliance. Plans from €490/month."
     },
     "privacy": {
       "title": "Privacy Policy - TraviXO",
@@ -45,23 +45,23 @@
   },
   "homepage": {
     "hero": {
-      "title": "From Data to Deployment: 15 Minutes",
-      "subtitle": "Transform spreadsheet chaos into operational control. TraviXO's automated import processes 500+ assets, generates deployment-ready QR codes, and delivers real-time tracking so your team can focus on operations, not data entry.",
+      "title": "Equipment Keeps Disappearing. Inspections Get Missed. Fines Pile Up.",
+      "subtitle": "Upload your spreadsheet as-is. Print tracking codes. Know where every piece of equipment is. Built for French equipment rental companies.",
       "ctaPrimary": "Start Free Pilot",
-      "ctaSecondary": "Watch 2-Min Demo"
+      "ctaSecondary": "See How It Works"
     },
     "values": {
       "1": {
-        "title": "Import 500 Assets in 5 Minutes",
-        "text": "Smart column detection works with any spreadsheet format. No manual mapping, no data entry hell. Just upload and go."
+        "title": "Upload Any Spreadsheet in 5 Minutes",
+        "text": "Don't clean up your file first. Messy columns? Blank cells? We'll handle it. Just upload and go."
       },
       "2": {
-        "title": "Generate 500 QR Codes in 30 Seconds",
-        "text": "Bulk QR generation creates print-ready PDFs instantly. No clicking through assets one by one."
+        "title": "Print 500 Tracking Codes in 30 Seconds",
+        "text": "Get a print-ready PDF instantly. Stick codes on your equipment and you're done."
       },
       "3": {
-        "title": "Deploy Same Day",
-        "text": "Most companies take weeks to get started. With TraviXO, you're tracking equipment the same day you sign up."
+        "title": "Start Tracking in Hours",
+        "text": "Most companies take weeks to get started. With TraviXO, you're typically tracking equipment the same day."
       }
     },
     "carousel": {
@@ -71,52 +71,52 @@
       },
       "problem": {
         "title": "Equipment Rental Companies Lose €50K-200K Annually",
-        "subtitle": "Poor tracking and manual processes are killing your profitability",
+        "subtitle": "Poor tracking and manual processes are costing you money",
         "items": {
           "1": {
-            "title": "1-2% Asset Loss Every Year",
-            "text": "For a €5M fleet, that's €50K-100K written off as 'missing' or 'stolen' annually. Equipment vanishes between sites, gets misplaced, or simply disappears."
+            "title": "1-2% Equipment Loss Every Year",
+            "text": "For a €5M fleet, that's €50K-100K written off as 'missing' annually. Equipment vanishes between sites or gets misplaced."
           },
           "2": {
             "title": "€50K+ Per Quarterly Audit",
-            "text": "Flying auditors to depots, manual counts with clipboards, 2 weeks of reconciliation work. Every quarter. And you still find discrepancies."
+            "text": "Flying auditors to locations, manual counts, 2 weeks reconciling spreadsheets. Every quarter. And you still find errors."
           },
           "3": {
             "title": "VGP Compliance Nightmares",
-            "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules across hundreds of assets in spreadsheets is a disaster waiting to happen."
+            "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules in spreadsheets means missed deadlines."
           },
           "4": {
-            "title": "40+ Hours of Data Entry",
-            "text": "Traditional systems require weeks of manual setup. By the time you're done entering data, it's already outdated."
+            "title": "40+ Hours of Setup Time",
+            "text": "Traditional systems require weeks of manual data entry. By the time you're done entering data, it's already outdated."
           }
         }
       },
       "solution": {
-        "title": "TraviXO: From Zero to Tracking in 15 Minutes",
-        "subtitle": "Simple QR tracking that actually works in the real world",
+        "title": "TraviXO: Start Tracking in Hours, Not Weeks",
+        "subtitle": "Simple QR tracking that works in the real world",
         "items": {
           "1": {
-            "title": "Import Excel",
-            "text": "Upload your messy spreadsheet. We detect columns automatically. 500 assets imported in 5 minutes."
+            "title": "Upload Spreadsheet",
+            "text": "Upload your file exactly as it is. We figure out the columns automatically. 500 assets imported in 5 minutes."
           },
           "2": {
-            "title": "Generate QR Codes",
-            "text": "Select all assets, click generate. Get a print-ready PDF with 500 QR codes in 30 seconds."
+            "title": "Print QR Codes",
+            "text": "Select all assets, click generate. Get a PDF with 500 tracking codes in 30 seconds. Print and stick."
           },
           "3": {
-            "title": "Start Scanning",
-            "text": "No app needed. Field workers scan with any phone. Track location, status, and condition instantly."
+            "title": "Scan with Any Phone",
+            "text": "No app needed. Workers scan with any smartphone. See location, status, and history instantly."
           },
           "4": {
-            "title": "Stay Compliant",
-            "text": "Automated VGP alerts prevent €15K+ fines. Never miss an inspection deadline again."
+            "title": "Avoid Compliance Fines",
+            "text": "Automatic VGP reminders help prevent €15K+ fines. Never miss an inspection deadline."
           }
         }
       }
     },
     "finalCta": {
-      "title": "Ready to Stop Losing Equipment?",
-      "subtitle": "Join equipment rental companies who are eliminating asset loss and achieving VGP compliance effortlessly.",
+      "title": "Ready to Reduce Equipment Loss?",
+      "subtitle": "Join French equipment rental companies that are tracking equipment and meeting VGP compliance requirements.",
       "primary": "Start Your Free Pilot",
       "secondary": "Schedule a Demo",
       "badges": [
@@ -136,32 +136,32 @@
   "about": {
     "hero": {
       "title": "About TraviXO",
-      "subtitle": "Built by equipment rental veterans who lived the problem"
+      "subtitle": "Built by equipment rental veterans who experienced these problems firsthand"
     },
     "story": {
       "title": "Our Story",
-      "paragraph1": "TraviXO was born from field expertise. One of us worked in IT support at industry leaders like Loxam and Ariane. In this sector, even the best companies face the same challenges: tracking thousands of assets, maintaining accurate inventories, optimizing audits. That's when we realized a truly adapted tool was missing.",
-      "paragraph2": "The other came from payroll management, a world where every data point matters, where traceability and compliance are non-negotiable. This methodical approach to compliance and reliability became TraviXO's foundation.",
-      "paragraph3": "By combining these two types of expertise field IT and rigorous process management we built a tool that speaks to both technicians and decision-makers:",
+      "paragraph1": "TraviXO was born from real experience. One of us worked in IT support at industry leaders like Loxam and Ariane. Even the best companies face the same challenges: tracking thousands of assets, keeping accurate counts, managing audits. We realized the right tool didn't exist.",
+      "paragraph2": "The other came from payroll management, where every detail matters and compliance is mandatory. This methodical approach to accuracy and reliability became TraviXO's foundation.",
+      "paragraph3": "By combining field experience with process management expertise, we built a tool that works for both technicians and decision-makers:",
       "list": {
-        "item1": "Simple to deploy",
-        "item2": "Quick to master",
-        "item3": "Robust enough to prevent thousands in losses"
+        "item1": "Simple to set up",
+        "item2": "Quick to learn",
+        "item3": "Reliable enough to prevent thousands in losses"
       }
     },
     "mission": {
       "title": "Our Mission",
-      "description": "Help companies achieve total visibility over their equipment without weeks of spreadsheet reconciliation. TraviXO automates asset tracking, streamlines audits, and transforms spreadsheet chaos into operational clarity in under 15 minutes."
+      "description": "Help companies know where their equipment is without weeks of spreadsheet work. TraviXO makes asset tracking simple, streamlines audits, and helps you go from spreadsheet to tracking in hours."
     },
     "values": {
       "title": "What Drives Us",
       "efficiency": {
-        "title": "Immediate Efficiency",
-        "description": "Every minute spent fighting with software is a minute stolen from real work. We build for speed and simplicity."
+        "title": "Speed Matters",
+        "description": "Every minute spent fighting with software is time stolen from real work. We build for speed and simplicity."
       },
       "realWorld": {
         "title": "Built for Reality",
-        "description": "Networks fail, data is incomplete, teams change. TraviXO works in these conditions, not just in perfect demos."
+        "description": "Networks fail, data is messy, teams change. TraviXO works in these conditions, not just in perfect demos."
       },
       "transparency": {
         "title": "Total Transparency",
@@ -173,17 +173,17 @@
       }
     },
     "founders": {
-      "title": "Our Roots",
+      "title": "Our Background",
       "description": "We are two co-founders:",
       "list": {
         "item1": "An IT support specialist from demanding equipment environments",
         "item2": "A payroll management expert ensuring process reliability and compliance"
       },
-      "conclusion": "TraviXO is developed in Paris, hosted in Europe, and GDPR compliant. Our ambition is simple: enable any company managing equipment to know what, where, and who in real-time."
+      "conclusion": "TraviXO is developed in Paris, hosted in Europe, and GDPR compliant. Our goal is simple: help any company managing equipment know what they have, where it is, and who has it."
     },
     "cta": {
       "title": "Ready to Track Smarter?",
-      "description": "Join companies preventing €50K+ in annual losses with simple QR tracking",
+      "description": "Join companies reducing equipment losses with simple QR tracking",
       "button": "Start Your Free Pilot"
     },
     "footer": {
@@ -193,148 +193,148 @@
     }
   },
   "features": {
-  "hero": {
-    "title": "TraviXO Features",
-    "subtitle": "From QR tracking to automated VGP compliance - everything your business needs"
-  },
-  "differentiators": {
-    "import": {
-      "time": "5 min",
-      "title": "Smart Excel Import",
-      "description": "Import 500 assets in 5 minutes. Competitors require 40+ hours of manual data entry."
+    "hero": {
+      "title": "TraviXO Features",
+      "subtitle": "From QR tracking to VGP compliance - everything you need"
     },
-    "bulk": {
-      "time": "30 sec",
-      "title": "Bulk QR Generation",
-      "description": "Generate 500 print-ready QR codes in 30 seconds. No clicking one-by-one."
+    "differentiators": {
+      "import": {
+        "time": "5 min",
+        "title": "Upload Any Spreadsheet",
+        "description": "Import 500 assets in 5 minutes. Competitors require 40+ hours of manual data entry."
+      },
+      "bulk": {
+        "time": "30 sec",
+        "title": "Bulk QR Generation",
+        "description": "Generate 500 print-ready codes in 30 seconds. No clicking through assets one by one."
+      },
+      "deploy": {
+        "time": "Hours",
+        "title": "Start Tracking Fast",
+        "description": "Typically tracking within hours of signup. Competitors take 2-4 weeks."
+      }
     },
-    "deploy": {
-      "time": "4 hours",
-      "title": "Deploy Same Day",
-      "description": "From signup to tracking in 4 hours total. Competitors take 2-4 weeks."
-    }
-  },
-  "availableNow": {
-    "title": "Available Now",
-    "subtitle": "Production-ready features from day one",
-    "features": {
-      "qrTracking": {
-        "title": "QR Asset Tracking",
-        "description": "Generate unlimited QR codes for your entire fleet. Each asset gets a unique, scannable code that links to its digital record in TraviXO.",
-        "items": [
-          "One-click QR generation",
-          "Weatherproof label recommendations included",
-          "Static URLs (revocable if needed)",
-          "Bulk PDF generation for 500+ codes"
-        ]
-      },
-      "vgp": {
-        "title": "VGP Compliance Automation",
-        "description": "Eliminate DIRECCTE fine risk with automated inspection tracking. Automatic scheduling, pre-deadline alerts, and audit-ready reporting.",
-        "items": [
-          "Automatic inspection scheduling",
-          "Email alerts (30/7 days before due)",
-          "PDF certificate upload and storage",
-          "Audit-ready DIRECCTE reports"
-        ]
-      },
-      "excelImport": {
-        "title": "Smart Excel Import",
-        "description": "Upload your existing equipment spreadsheet and start tracking in 5 minutes. Our intelligent column detection automatically maps Serial Numbers, Locations, Purchase Dates - even if your headers are in French, use abbreviations, or don't match our format.",
-        "items": [
-          "Automatic column detection (works with any language)",
-          "Handles messy data (blank cells, merged columns, weird formats)",
-          "Validates as it imports (catches errors before they become problems)",
-          "Preview before committing (see exactly what will import)"
-        ]
-      },
-      "mobileScanning": {
-        "title": "Mobile Scanning (No App)",
-        "description": "Your team can scan assets using any smartphone - no app download required. Fast, accurate, works in low light.",
-        "items": [
-          "Progressive Web App (install optional)",
-          "Camera-based QR scanner",
-          "Works offline, syncs when online",
-          "GPS location tagging"
-        ]
-      },
-      "direccte": {
-        "title": "DIRECCTE Reporting",
-        "description": "Generate audit-ready compliance reports with one click. Complete inspection history, compliance status, and exports formatted for DIRECCTE audits.",
-        "items": [
-          "Automatic compliance tracking",
-          "PDF/Excel export",
-          "Complete inspection history",
-          "Formatted for regulatory audits"
-        ]
-      },
-      "dashboard": {
-        "title": "Real-Time Dashboard",
-        "description": "Know exactly where every asset is, who has it, and when it was last verified. Filter by status, location, category, or custom fields.",
-        "items": [
-          "Asset status breakdown",
-          "Utilization rates by category",
-          "Custom alerts and notifications",
-          "Export to CSV/Excel"
-        ]
+    "availableNow": {
+      "title": "Available Now",
+      "subtitle": "Ready to use from day one",
+      "features": {
+        "qrTracking": {
+          "title": "QR Equipment Tracking",
+          "description": "Generate QR codes for your entire fleet. Each piece of equipment gets a unique code that links to its information.",
+          "items": [
+            "Generate codes with one click",
+            "Weatherproof label recommendations included",
+            "Revoke codes if needed",
+            "Bulk PDF generation for 500+ codes"
+          ]
+        },
+        "vgp": {
+          "title": "VGP Compliance Automation",
+          "description": "Avoid DIRECCTE fines with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
+          "items": [
+            "Automatic inspection scheduling",
+            "Email reminders (30/7 days before due)",
+            "Upload and store PDF certificates",
+            "Generate audit-ready reports"
+          ]
+        },
+        "excelImport": {
+          "title": "Upload Any Spreadsheet",
+          "description": "Upload your equipment file and start tracking in 5 minutes. We automatically figure out which columns are Serial Numbers, Locations, Purchase Dates - even if your headers are in French or use abbreviations.",
+          "items": [
+            "Works with any column names (any language)",
+            "Handles messy data (blank cells, weird formats)",
+            "Catches errors before importing",
+            "Preview before confirming"
+          ]
+        },
+        "mobileScanning": {
+          "title": "Scan with Any Phone",
+          "description": "Your team can scan equipment using any smartphone - no app download required. Fast, works in low light.",
+          "items": [
+            "Works in any phone browser",
+            "Camera-based scanning",
+            "Works offline, syncs when connected",
+            "Captures GPS location"
+          ]
+        },
+        "direccte": {
+          "title": "DIRECCTE Reporting",
+          "description": "Generate compliance reports with one click. Complete inspection history and exports formatted for DIRECCTE audits.",
+          "items": [
+            "Automatic compliance tracking",
+            "Export to PDF or Excel",
+            "Complete inspection history",
+            "Formatted for regulatory audits"
+          ]
+        },
+        "dashboard": {
+          "title": "Dashboard",
+          "description": "Know where every asset is, who has it, and when it was last verified. Filter by status, location, category, or custom fields.",
+          "items": [
+            "See equipment status at a glance",
+            "Track usage rates by category",
+            "Set up custom alerts",
+            "Export to CSV or Excel"
+          ]
+        }
       }
-    }
-  },
-  "comingSoon": {
-    "title": "Coming Soon",
-    "subtitle": "Features in active development",
-    "features": {
-      "teamManagement": {
-        "title": "Team Management",
-        "description": "Invite team members, control access levels, track actions. Role-based access control with complete audit logs."
-      },
-      "emailAlerts": {
-        "title": "Email Alerts",
-        "description": "Receive automatic notifications for upcoming inspections and critical alerts. Inspection reminders 30 days before due."
-      },
-      "apiAccess": {
-        "title": "API Access",
-        "description": "Integrate TraviXO with your existing systems via REST API. Full documentation and webhooks for real-time events."
+    },
+    "comingSoon": {
+      "title": "Coming Soon",
+      "subtitle": "Features in active development",
+      "features": {
+        "teamManagement": {
+          "title": "Team Management",
+          "description": "Invite team members, control access levels, track actions. See who did what and when."
+        },
+        "emailAlerts": {
+          "title": "Email Alerts",
+          "description": "Get automatic notifications for upcoming inspections and important alerts. Inspection reminders 30 days before due."
+        },
+        "apiAccess": {
+          "title": "API Access",
+          "description": "Connect TraviXO with your existing systems. Full documentation and real-time event notifications."
+        }
       }
-    }
-  },
-  "enterprise": {
-    "title": "Custom Development (Enterprise)",
-    "subtitle": "Features built during implementation for Enterprise customers",
-    "note": "Enterprise features are developed on-demand during implementation phase",
-    "cta": "Discuss Enterprise Needs",
-    "features": {
-      "customIntegrations": {
-        "title": "Custom Integrations",
-        "description": "Connect TraviXO to your existing ERP, CMMS, or CRM systems.",
-        "examples": "Examples: ServiceNow, SAP, Oracle, bi-directional data sync"
-      },
-      "whiteLabel": {
-        "title": "White-Label Branding",
-        "description": "Rebrand TraviXO with your logo, colors, and custom domain. Complete white-labeled interface."
-      },
-      "onPremise": {
-        "title": "On-Premise Deployment",
-        "description": "Host TraviXO on your own infrastructure for complete data control and sovereignty."
+    },
+    "enterprise": {
+      "title": "Custom Development (Enterprise)",
+      "subtitle": "Features built during implementation for Enterprise customers",
+      "note": "Enterprise features are developed during implementation based on your needs",
+      "cta": "Discuss Enterprise Needs",
+      "features": {
+        "customIntegrations": {
+          "title": "Custom Integrations",
+          "description": "Connect TraviXO to your existing ERP, maintenance, or CRM systems.",
+          "examples": "Examples: ServiceNow, SAP, Oracle, two-way data sync"
+        },
+        "whiteLabel": {
+          "title": "White-Label Branding",
+          "description": "Rebrand TraviXO with your logo, colors, and custom domain. Complete branded interface."
+        },
+        "onPremise": {
+          "title": "On-Premise Deployment",
+          "description": "Host TraviXO on your own infrastructure for complete data control."
+        }
       }
+    },
+    "status": {
+      "availableNow": "Available Now",
+      "comingQ1": "Q1 2026",
+      "comingQ2": "Q2 2026",
+      "builtOnDemand": "Built on-demand"
+    },
+    "finalCta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Start with VGP compliance today",
+      "button": "Start Free Trial"
     }
   },
-  "status": {
-    "availableNow": "Available Now",
-    "comingQ1": "Q1 2026",
-    "comingQ2": "Q2 2026",
-    "builtOnDemand": "Built on-demand"
-  },
-  "finalCta": {
-    "title": "Ready to Get Started?",
-    "subtitle": "Start with VGP compliance today",
-    "button": "Start Free Trial"
-  }
-},
   "contact": {
     "hero": {
       "title": "Let's Talk About Your Equipment Tracking Needs",
-      "subtitle": "Whether you're interested in a pilot, have questions about integrations, or want to see TraviXO in action, we're here to help."
+      "subtitle": "Whether you're interested in a pilot, have questions about features, or want to see TraviXO in action, we're here to help."
     },
     "form": {
       "fullName": "Full Name",
@@ -385,126 +385,124 @@
     }
   },
   "pricing": {
-  "hero": {
-    "title": "Automate Your VGP Compliance",
-    "subtitle": "Avoid €15K-€75K DIRECCTE fines with the only system that automates French regulatory compliance"
-  },
-  "billing": {
-    "year": "year",
-    "month": "mo",
-    "or": "or"
-  },
-  "comparison": {
-    "title": "Why TraviXO?"
-  },
-  "plans": {
-    "popular": "Most Popular",
-    "vgpIncluded": "VGP Included",
-    "starter": {
-      "name": "Starter",
-      "subtitle": "Basic asset tracking for small fleets",
-      "features": {
-        "assets": "Up to 100 assets",
-        "excel": "Smart Excel import",
-        "qr": "Bulk QR generation",
-        "scan": "Mobile scanning (no app)",
-        "support": "Email support",
-        "noVgp": "VGP compliance not included"
+    "hero": {
+      "title": "Automate Your VGP Compliance",
+      "subtitle": "Avoid €15K-€75K DIRECCTE fines with automated French regulatory compliance tracking"
+    },
+    "billing": {
+      "year": "year",
+      "month": "mo",
+      "or": "or"
+    },
+    "comparison": {
+      "title": "Why TraviXO?"
+    },
+    "plans": {
+      "popular": "Most Popular",
+      "vgpIncluded": "VGP Included",
+      "starter": {
+        "name": "Starter",
+        "subtitle": "Basic tracking for small fleets",
+        "features": {
+          "assets": "Up to 100 assets",
+          "excel": "Upload any spreadsheet",
+          "qr": "Bulk QR generation",
+          "scan": "Scan with any phone",
+          "support": "Email support",
+          "noVgp": "VGP compliance not included"
+        }
+      },
+      "professional": {
+        "name": "Professional",
+        "subtitle": "Full compliance + fleet management",
+        "features": {
+          "vgp": "Automated VGP compliance",
+          "assets": "Up to 500 assets",
+          "starter": "Everything in Starter, plus:",
+          "multiSite": "Multi-location support",
+          "audit": "Digital audit module",
+          "integration": "Zapier integration",
+          "support": "Priority support",
+          "teamManagement": "Team management",
+          "emailAlerts": "Email alerts"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "subtitle": "For mid-size operations with dedicated support",
+        "features": {
+          "assets": "Up to 2,000 assets",
+          "professional": "Everything in Professional +",
+          "vgpPriority": "VGP + priority compliance support",
+          "integrations": "ServiceNow + QuickBooks",
+          "manager": "Dedicated account manager",
+          "sla": "24h SLA guaranteed",
+          "advancedReporting": "Advanced reporting",
+          "apiAccess": "API access"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "annual": "",
+        "subtitle": "For large fleets with full compliance",
+        "note": "Features developed during implementation",
+        "features": {
+          "unlimited": "Unlimited assets",
+          "vgpDedicated": "VGP + dedicated compliance team",
+          "support": "24/7 support",
+          "customIntegrations": "Custom integrations (ServiceNow, SAP)",
+          "whiteLabel": "White-label branding",
+          "onPremise": "On-premise deployment",
+          "sla": "SLA 99.9%+"
+        }
       }
     },
-    "professional": {
-      "name": "Professional",
-      "subtitle": "Full compliance + fleet management",
-      "features": {
-        "vgp": "Automated VGP compliance",
-        "assets": "Up to 500 assets",
-        "starter": "Everything in Starter, plus:",
-        "multiSite": "Multi-location support",
-        "audit": "Digital audit module",
-        "integration": "Zapier integration",
-        "support": "Priority support",
-        "teamManagement": "Team management",
-        "emailAlerts": "Email alerts"
-      }
+    "status": {
+      "comingQ1": "Q1 2026",
+      "comingQ2": "Q2 2026",
+      "builtOnDemand": "Built on-demand"
     },
-    "business": {
-      "name": "Business",
-      "subtitle": "For mid-size operations with dedicated support",
-      "features": {
-        "assets": "Up to 2,000 assets",
-        "professional": "Everything in Professional +",
-        "vgpPriority": "VGP + priority compliance support",
-        "integrations": "ServiceNow + QuickBooks",
-        "manager": "Dedicated account manager",
-        "sla": "24h SLA guaranteed",
-        "advancedReporting": "Advanced reporting",
-        "apiAccess": "API access"
-      }
+    "cta": {
+      "start": "Start Free Trial",
+      "demo": "Book a Demo",
+      "contact": "Contact Us"
     },
-    "enterprise": {
-      "name": "Enterprise",
-      "price": "Custom",
-      "annual": "From €40K/year",
-      "subtitle": "For large fleets with full compliance",
-      "note": "Features developed during implementation",
-      "features": {
-        "unlimited": "Unlimited assets",
-        "vgpDedicated": "VGP + dedicated compliance team",
-        "support": "24/7 support",
-        "customIntegrations": "Custom integrations (ServiceNow, SAP)",
-        "whiteLabel": "White-label branding",
-        "onPremise": "On-premise deployment",
-        "sla": "SLA 99.9%+"
-      }
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why is VGP compliance not included in the Starter plan?",
+          "answer": "The Starter plan is designed for basic tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, DIRECCTE reporting) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
+        },
+        {
+          "question": "What's the difference between monthly and annual billing?",
+          "answer": "Annual billing offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year with annual billing, versus €1,412/month with monthly billing (€16,944/year total)."
+        },
+        {
+          "question": "Can I change plans at any time?",
+          "answer": "Yes, you can upgrade your plan at any time. Downgrades are possible at the end of your annual billing period. Contact our team to discuss your specific situation."
+        },
+        {
+          "question": "Are extensions compatible with all plans?",
+          "answer": "The Extra Assets Pack is available for all plans. Other extensions (predictive maintenance, ERP integrations, priority SLA) require the Professional plan or higher."
+        },
+        {
+          "question": "Do you offer a trial period?",
+          "answer": "Yes, we offer a 30-day trial period for all plans with full access to features. No credit card required to start."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Ready to Automate Your Compliance?",
+      "subtitle": "Join French companies that are meeting VGP compliance requirements",
+      "button": "Start Free Trial"
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms of Service"
     }
-  },
-  "status": {
-    "comingQ1": "Q1 2026",
-    "comingQ2": "Q2 2026",
-    "builtOnDemand": "Built on-demand"
-  },
-  "cta": {
-    "start": "Start Free Trial",
-    "demo": "Book a Demo",
-    "contact": "Contact Us"
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "questions": [
-      {
-        "question": "Why is VGP compliance not included in the Starter plan?",
-        "answer": "The Starter plan is designed for basic asset tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, DIRECCTE reporting) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
-      },
-      {
-        "question": "What's the difference between monthly and annual billing?",
-        "answer": "Annual billing offers a 15% discount compared to monthly payments. For example, the Professional plan costs €14,400/year with annual billing, versus €1,412/month with monthly billing (€16,944/year total)."
-      },
-      {
-        "question": "Can I change plans at any time?",
-        "answer": "Yes, you can upgrade your plan at any time. Downgrades are possible at the end of your annual billing period. Contact our team to discuss your specific situation."
-      },
-      {
-        "question": "Are extensions compatible with all plans?",
-        "answer": "The Extra Assets Pack is available for all plans. Other extensions (predictive maintenance, ERP integrations, priority SLA) require the Professional plan or higher."
-      },
-      {
-        "question": "Do you offer a trial period?",
-        "answer": "Yes, we offer a 30-day trial period for all plans with full access to features. No credit card required to start."
-      }
-    ]
-  },
-  "finalCta": {
-    "title": "Ready to Automate Your Compliance?",
-    "subtitle": "Join French companies that have eliminated DIRECCTE fine risk",
-    "button": "Start Free Trial"
-  },
-  "footer": {
-    "copyright": "© 2025 TraviXO Systems. All rights reserved.",
-    "privacy": "Privacy",
-    "terms": "Terms of Service"
-  }
-
-
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -548,151 +546,98 @@
       },
       "subsection3": {
         "title": "3.3 Cookies and Tracking Technologies",
-        "content": "We use essential cookies to ensure our website functions properly. We do not use advertising or tracking cookies. You can disable cookies in your browser settings, though this may affect website functionality."
+        "content": "We use cookies and similar technologies to enhance your experience. See our Cookie Policy for details."
       }
     },
     "section4": {
       "title": "4. How We Use Your Information",
-      "intro": "We use your personal data for the following purposes:",
-      "item1": {
-        "title": "Service Delivery:",
-        "description": "To respond to inquiries, provide demos, and onboard pilot customers"
-      },
-      "item2": {
-        "title": "Communication:",
-        "description": "To send you updates about your pilot, product features, and support"
-      },
-      "item3": {
-        "title": "Improvement:",
-        "description": "To analyze website usage and improve our services"
-      },
-      "item4": {
-        "title": "Legal Compliance:",
-        "description": "To comply with legal obligations and resolve disputes"
-      },
-      "item5": {
-        "title": "Marketing:",
-        "description": "To send promotional emails (with your explicit consent, which you can withdraw anytime)"
-      },
-      "legalBasis": {
-        "title": "Legal Basis (GDPR Article 6):",
-        "intro": "We process your data based on:",
-        "item1": "Consent (for marketing communications)",
-        "item2": "Contractual necessity (to provide services you requested)",
-        "item3": "Legitimate interests (to improve our services and prevent fraud)",
-        "item4": "Legal obligations (to comply with tax and regulatory requirements)"
-      }
+      "intro": "We use your information to:",
+      "item1": "Provide and improve our Services",
+      "item2": "Respond to your inquiries and support requests",
+      "item3": "Send you updates, newsletters, and promotional materials (with your consent)",
+      "item4": "Analyze website usage and optimize performance",
+      "item5": "Comply with legal obligations",
+      "item6": "Detect and prevent fraud or security issues"
     },
     "section5": {
-      "title": "5. Data Sharing and Disclosure",
-      "intro": "We do not sell your personal data. We may share your information with:",
-      "item1": {
-        "title": "Service Providers:",
-        "description": "Hosting providers (Vercel), email services, analytics tools (only EU-based providers)"
-      },
-      "item2": {
-        "title": "Legal Requirements:",
-        "description": "If required by law, court order, or government authority"
-      },
-      "item3": {
-        "title": "Business Transfers:",
-        "description": "In the event of a merger, acquisition, or sale of assets"
-      },
-      "footer": "All third-party service providers are contractually obligated to protect your data and only process it according to our instructions."
+      "title": "5. Legal Basis for Processing (GDPR)",
+      "intro": "We process your data based on:",
+      "item1": "Consent: When you provide explicit consent (e.g., newsletter signup)",
+      "item2": "Contractual Necessity: To provide Services you requested",
+      "item3": "Legitimate Interests: To improve our Services, prevent fraud, and ensure security",
+      "item4": "Legal Obligations: To comply with laws and regulations"
     },
     "section6": {
-      "title": "6. Data Storage and Security",
-      "storage": {
-        "title": "Storage Location:",
-        "description": "All data is stored on servers located in the European Union (France)."
+      "title": "6. Data Sharing and Disclosure",
+      "paragraph1": "We do not sell your personal data. We may share your data with:",
+      "subsection1": {
+        "title": "6.1 Service Providers",
+        "content": "We work with third-party providers for hosting, analytics, email delivery, and payment processing. These providers are bound by confidentiality agreements and may only use your data as instructed."
       },
-      "security": {
-        "title": "Security Measures:",
-        "intro": "We implement industry-standard security measures including:",
-        "item1": "Encryption in transit (HTTPS/TLS)",
-        "item2": "Encryption at rest for sensitive data",
-        "item3": "Access controls and authentication",
-        "item4": "Regular security audits",
-        "item5": "Backup and disaster recovery procedures"
+      "subsection2": {
+        "title": "6.2 Legal Requirements",
+        "content": "We may disclose your data if required by law, court order, or government request, or to protect our rights, safety, or property."
       },
-      "disclaimer": "While we take reasonable precautions, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security."
+      "subsection3": {
+        "title": "6.3 Business Transfers",
+        "content": "If TraviXO is involved in a merger, acquisition, or sale of assets, your data may be transferred. We will notify you before your data is transferred and becomes subject to a different Privacy Policy."
+      }
     },
     "section7": {
       "title": "7. Data Retention",
-      "intro": "We retain your personal data for as long as necessary to fulfill the purposes outlined in this policy:",
-      "item1": {
-        "title": "Contact form inquiries:",
-        "duration": "2 years from last contact"
-      },
-      "item2": {
-        "title": "Pilot customer data:",
-        "duration": "Duration of pilot + 1 year"
-      },
-      "item3": {
-        "title": "Active customer data:",
-        "duration": "Duration of subscription + 3 years (for legal/tax purposes)"
-      },
-      "item4": {
-        "title": "Marketing consent:",
-        "duration": "Until you withdraw consent or 3 years of inactivity"
-      },
-      "footer": "After retention periods expire, we securely delete or anonymize your data."
+      "content": "We retain your data only as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. Account data is retained while your account is active. Contact form data is retained for up to 2 years. Analytics data is anonymized and retained indefinitely."
     },
     "section8": {
-      "title": "8. Your Rights Under GDPR",
-      "intro": "As an EU data subject, you have the following rights:",
-      "right1": {
-        "title": "Right of Access:",
-        "description": "Request a copy of your personal data"
-      },
-      "right2": {
-        "title": "Right to Rectification:",
-        "description": "Correct inaccurate or incomplete data"
-      },
-      "right3": {
-        "title": "Right to Erasure (\"Right to be Forgotten\"):",
-        "description": "Request deletion of your data"
-      },
-      "right4": {
-        "title": "Right to Restriction:",
-        "description": "Limit how we process your data"
-      },
-      "right5": {
-        "title": "Right to Data Portability:",
-        "description": "Receive your data in a structured, machine-readable format"
-      },
-      "right6": {
-        "title": "Right to Object:",
-        "description": "Opt out of certain processing activities (e.g., marketing)"
-      },
-      "right7": {
-        "title": "Right to Withdraw Consent:",
-        "description": "Withdraw consent at any time (does not affect prior processing)"
-      },
-      "contact": {
-        "intro": "To exercise any of these rights, contact us at:",
-        "response": "We will respond to your request within 30 days. You also have the right to lodge a complaint with your local data protection authority (CNIL in France)."
-      }
+      "title": "8. Your Rights (GDPR)",
+      "intro": "Under GDPR, you have the right to:",
+      "item1": "Access: Request a copy of your personal data",
+      "item2": "Rectification: Correct inaccurate or incomplete data",
+      "item3": "Erasure: Request deletion of your data (\"right to be forgotten\")",
+      "item4": "Restriction: Limit how we process your data",
+      "item5": "Portability: Receive your data in a structured, machine-readable format",
+      "item6": "Object: Object to processing based on legitimate interests",
+      "item7": "Withdraw Consent: Withdraw consent at any time (does not affect prior processing)",
+      "footer": "To exercise these rights, contact us at contact@travixosystems.com."
     },
     "section9": {
-      "title": "9. Children's Privacy",
-      "content": "Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal data from children. If we become aware that we have collected data from a child, we will delete it promptly."
+      "title": "9. Data Security",
+      "paragraph1": "We implement reasonable technical and organizational measures to protect your data from unauthorized access, disclosure, alteration, or destruction. These include encryption, secure servers, and access controls.",
+      "paragraph2": "However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security."
     },
     "section10": {
       "title": "10. International Data Transfers",
-      "content": "We do not transfer your data outside the European Economic Area (EEA). All data processing occurs within EU-based infrastructure to ensure GDPR compliance."
+      "content": "Your data may be transferred to and processed in countries outside the European Economic Area (EEA). We ensure that such transfers comply with GDPR by using Standard Contractual Clauses (SCCs) or ensuring the recipient country has adequate data protection laws."
     },
     "section11": {
-      "title": "11. Changes to This Policy",
-      "intro": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of significant changes by:",
-      "method1": "Posting the updated policy on this page with a new \"Last Updated\" date",
-      "method2": "Sending an email notification (if you are a customer or have subscribed)",
-      "footer": "Continued use of our services after changes constitutes acceptance of the updated policy."
+      "title": "11. Children's Privacy",
+      "content": "Our Services are not intended for individuals under the age of 16. We do not knowingly collect personal data from children. If we become aware that we have collected data from a child, we will delete it promptly."
     },
     "section12": {
-      "title": "12. Contact Us",
-      "intro": "If you have questions about this Privacy Policy or how we handle your data, contact us:",
+      "title": "12. Cookies and Tracking",
+      "paragraph1": "We use cookies to enhance your experience, analyze traffic, and personalize content. Cookies are small text files stored on your device.",
+      "types": {
+        "title": "Types of Cookies We Use:",
+        "essential": "Essential Cookies: Required for the website to function",
+        "analytics": "Analytics Cookies: Help us understand how visitors use our site (e.g., Google Analytics)",
+        "marketing": "Marketing Cookies: Track your activity to show relevant ads"
+      },
+      "footer": "You can manage cookie preferences through your browser settings. Disabling cookies may affect website functionality."
+    },
+    "section13": {
+      "title": "13. Third-Party Links",
+      "content": "Our website may contain links to third-party sites. We are not responsible for the privacy practices of these sites. We encourage you to review their privacy policies."
+    },
+    "section14": {
+      "title": "14. Changes to This Privacy Policy",
+      "paragraph1": "We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy on this page with a new \"Last Updated\" date or by sending an email notification.",
+      "paragraph2": "Your continued use of the Services after changes take effect constitutes acceptance of the updated Privacy Policy."
+    },
+    "section15": {
+      "title": "15. Contact Us",
+      "intro": "If you have questions or concerns about this Privacy Policy or wish to exercise your rights, contact us:",
+      "companyName": "TraviXO Systems",
       "email": "Email:",
+      "emailValue": "contact@travixosystems.com",
       "phone": "Phone:",
       "address": "Address:",
       "addressValue": "[Insert registered address when available]"
@@ -706,48 +651,49 @@
   "terms": {
     "title": "Terms of Service",
     "effective": "Effective Date:",
-    "effectiveDate": "[To be finalized]",
+    "effectiveDate": "[Insert Date]",
     "lastUpdated": "Last Updated:",
-    "lastUpdatedDate": "[To be decided]",
+    "lastUpdatedDate": "[Insert Date]",
     "section1": {
-      "title": "1. Agreement to Terms",
-      "paragraph1": "By accessing or using TraviXO's website (travixosystems.com) and services (\"Services\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use our Services.",
-      "paragraph2": "These Terms constitute a legally binding agreement between you (the \"Customer,\" \"you,\" or \"your\") and TraviXO Systems (\"TraviXO,\" \"we,\" \"us,\" or \"our\")."
+      "title": "1. Acceptance of Terms",
+      "paragraph1": "Welcome to TraviXO Systems (\"TraviXO,\" \"we,\" \"us,\" or \"our\"). By accessing or using our website (travixosystems.com) and services (collectively, the \"Services\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, you may not use the Services.",
+      "paragraph2": "These Terms apply to all users, including visitors, customers, and anyone who accesses the Services."
     },
     "section2": {
-      "title": "2. Description of Services",
-      "intro": "TraviXO provides QR-based asset tracking software designed for equipment rental and leasing companies. Our Services include:",
-      "item1": "QR code generation and asset tracking",
-      "item2": "Mobile and web-based scanning interfaces",
-      "item3": "Real-time dashboards and reporting",
-      "item4": "Digital inventory audit tools",
-      "item5": "Third-party integrations (ServiceNow, Jira, QuickBooks, etc.)",
-      "footer": "We reserve the right to modify, suspend, or discontinue any part of the Services at any time with reasonable notice."
+      "title": "2. Eligibility",
+      "intro": "To use the Services, you must:",
+      "item1": "Be at least 18 years old or the age of majority in your jurisdiction",
+      "item2": "Have the legal authority to enter into binding contracts",
+      "item3": "Not be prohibited from using the Services under applicable law",
+      "footer": "By using the Services, you represent and warrant that you meet these requirements."
     },
     "section3": {
-      "title": "3. User Accounts and Registration",
+      "title": "3. Account Registration and Security",
       "subsection1": {
         "title": "3.1 Account Creation",
-        "intro": "To use certain features of our Services, you must create an account. You agree to:",
-        "item1": "Provide accurate, current, and complete information",
-        "item2": "Maintain and update your information to keep it accurate",
-        "item3": "Keep your password secure and confidential",
-        "item4": "Notify us immediately of any unauthorized access to your account"
+        "content": "To access certain features, you may need to create an account. You agree to provide accurate, current, and complete information during registration and to update it as necessary."
       },
       "subsection2": {
-        "title": "3.2 Account Responsibility",
-        "content": "You are responsible for all activities that occur under your account. You must be at least 18 years old to create an account."
+        "title": "3.2 Account Security",
+        "intro": "You are responsible for:",
+        "item1": "Maintaining the confidentiality of your account credentials",
+        "item2": "All activities that occur under your account",
+        "item3": "Notifying us immediately of any unauthorized access or security breach",
+        "footer": "We are not liable for any loss or damage arising from your failure to protect your account."
+      },
+      "subsection3": {
+        "title": "3.3 Account Termination",
+        "content": "We reserve the right to suspend or terminate your account if you violate these Terms or engage in fraudulent, abusive, or illegal activity."
       }
     },
     "section4": {
-      "title": "4. Subscription Plans and Billing",
+      "title": "4. Fees and Payment",
       "subsection1": {
-        "title": "4.1 Pricing and Payment",
-        "paragraph1": "Subscription fees are based on the plan you select (Starter, Professional, Scale, or Enterprise). Prices are listed on our Pricing page and are subject to change with 30 days' notice.",
-        "paragraph2": "Payment is due monthly or annually in advance, depending on your chosen billing cycle. We accept credit cards and bank transfers (for Enterprise plans)."
+        "title": "4.1 Pricing",
+        "content": "Our pricing plans are listed on travixosystems.com/pricing. Prices are subject to change, but we will notify you before any changes affect your subscription."
       },
       "subsection2": {
-        "title": "4.2 Auto-Renewal",
+        "title": "4.2 Billing and Renewal",
         "content": "Subscriptions automatically renew at the end of each billing period unless you cancel before the renewal date. You will be charged using your payment method on file."
       },
       "subsection3": {
@@ -889,6 +835,7 @@
       "intro": "If you have questions about these Terms, contact us:",
       "companyName": "TraviXO Systems",
       "email": "Email:",
+      "emailValue": "contact@travixosystems.com",
       "phone": "Phone:",
       "address": "Address:",
       "addressValue": "[Insert registered address when available]"
