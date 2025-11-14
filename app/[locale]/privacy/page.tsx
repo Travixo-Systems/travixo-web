@@ -1,6 +1,43 @@
 import { getTranslations } from "next-intl/server";
 import Navigation from "../components/navigation";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata.privacy" });
+
+  const baseUrl = 'https://travixo.com';
+  const currentUrl = `${baseUrl}/${locale}/privacy`;
+  const title = t("title");
+  const description = t("description");
+
+  return {
+    title: title,
+    description: description,
+    openGraph: {
+      title: title,
+      description: description,
+      url: currentUrl,
+      type: 'website',
+      locale: locale,
+      alternateLocale: locale === 'en' ? ['fr'] : ['en'],
+      siteName: 'TraviXO',
+    },
+    twitter: {
+      card: 'summary',
+      title: title,
+      description: description,
+    },
+    alternates: {
+      canonical: currentUrl,
+      languages: {
+        'en': `${baseUrl}/en/privacy`,
+        'fr': `${baseUrl}/fr/privacy`,
+      },
+    },
+  };
+}
 
 export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

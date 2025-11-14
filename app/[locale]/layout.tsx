@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { ReactNode } from "react";
+import StructuredData from "./components/StructuredData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,9 +35,72 @@ export async function generateMetadata(props: {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
+  const baseUrl = 'https://travixo.com';
+  const currentUrl = `${baseUrl}/${locale}`;
+  const title = t("title");
+  const description = t("description");
+
   return {
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL(baseUrl),
+    title: {
+      default: title,
+      template: `%s | ${title}`,
+    },
+    description: description,
+    keywords: ['TraviXO', 'VGP', 'Vehicle Guard Pro', 'fleet management', 'GPS tracking', 'vehicle tracking', 'telematics'],
+    authors: [{ name: 'TraviXO' }],
+    creator: 'TraviXO',
+    publisher: 'TraviXO',
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    icons: {
+      icon: '/icon.png',
+      shortcut: '/favicon333ild.ico',
+      apple: '/icon.png',
+    },
+    openGraph: {
+      type: 'website',
+      locale: locale,
+      alternateLocale: locale === 'en' ? ['fr'] : ['en'],
+      url: currentUrl,
+      title: title,
+      description: description,
+      siteName: 'TraviXO',
+      images: [
+        {
+          url: `${baseUrl}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: description,
+      images: [`${baseUrl}/og-image.png`],
+      creator: '@TraviXO',
+    },
+    alternates: {
+      canonical: currentUrl,
+      languages: {
+        'en': `${baseUrl}/en`,
+        'fr': `${baseUrl}/fr`,
+      },
+    },
+    verification: {
+      google: 'your-google-verification-code',
+    },
   };
 }
 
@@ -49,6 +113,45 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+
+  // Structured Data
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TraviXO Systems",
+    "alternateName": "TraviXO",
+    "url": "https://travixo.com",
+    "logo": "https://travixo.com/icon.png",
+    "description": "Advanced GPS fleet management and vehicle tracking solutions with TraviXO Vehicle Guard Pro (VGP)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR",
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+33-78-335-75-35",
+      "email": "contact@travixosystems.com",
+      "contactType": "customer service",
+      "areaServed": ["FR", "US", "GB"],
+      "availableLanguage": ["English", "French"]
+    },
+    "sameAs": [
+      // Add social media profiles here when available
+    ]
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TraviXO",
+    "url": `https://travixo.com/${locale}`,
+    "description": "Advanced GPS fleet management and vehicle tracking solutions",
+    "inLanguage": locale,
+    "publisher": {
+      "@type": "Organization",
+      "name": "TraviXO Systems"
+    }
+  };
 
   return (
     <html lang={locale}>
@@ -73,6 +176,14 @@ export default async function LocaleLayout({ children, params }: Props) {
           />
         </noscript>
         {/* End Google Tag Manager */}
+
+        {/* Structured Data */}
+        <StructuredData data={organizationSchema} />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
 
         <NextIntlClientProvider messages={messages}>
           {children}
