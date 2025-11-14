@@ -35,7 +35,7 @@ export async function generateMetadata(props: {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
-  const baseUrl = 'https://travixo.com';
+  const baseUrl = 'https://travixosystems.com';
   const currentUrl = `${baseUrl}/${locale}`;
   const title = t("title");
   const description = t("description");
@@ -120,8 +120,8 @@ export default async function LocaleLayout({ children, params }: Props) {
     "@type": "Organization",
     "name": "TraviXO Systems",
     "alternateName": "TraviXO",
-    "url": "https://travixo.com",
-    "logo": "https://travixo.com/icon.png",
+    "url": "https://travixosystems.com",
+    "logo": "https://travixosystems.com/icon.png",
     "description": "Advanced GPS fleet management and vehicle tracking solutions with TraviXO Vehicle Guard Pro (VGP)",
     "address": {
       "@type": "PostalAddress",
@@ -144,7 +144,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "TraviXO",
-    "url": `https://travixo.com/${locale}`,
+    "url": `https://travixosystems.com/${locale}`,
     "description": "Advanced GPS fleet management and vehicle tracking solutions",
     "inLanguage": locale,
     "publisher": {

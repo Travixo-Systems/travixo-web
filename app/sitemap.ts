@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://travixo.com'
+  const baseUrl = 'https://travixosystems.com'
   const locales = ['en', 'fr']
 
   // Define all pages

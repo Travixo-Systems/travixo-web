@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.privacy" });
 
-  const baseUrl = 'https://travixo.com';
+  const baseUrl = 'https://travixosystems.com';
   const currentUrl = `${baseUrl}/${locale}/privacy`;
   const title = t("title");
   const description = t("description");
