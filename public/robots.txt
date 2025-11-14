@@ -1,0 +1,8 @@
+# TraviXO Systems - Robots.txt
+# Allow all search engines to crawl all pages
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://travixosystems.com/sitemap.xml
