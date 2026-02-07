@@ -283,6 +283,39 @@ export default async function FeaturesPage(props: Props) {
                 </ul>
               </div>
 
+              {/* Feature 7: Email Alerts */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {t("availableNow.features.emailAlerts.title")}
+                  </h3>
+                  <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                    {t("status.availableNow")}
+                  </span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  {t("availableNow.features.emailAlerts.description")}
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span>{t("availableNow.features.emailAlerts.items.0")}</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span>{t("availableNow.features.emailAlerts.items.1")}</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span>{t("availableNow.features.emailAlerts.items.2")}</span>
+                  </li>
+                  <li className="flex items-start text-gray-700">
+                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span>{t("availableNow.features.emailAlerts.items.3")}</span>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </section>
@@ -299,8 +332,8 @@ export default async function FeaturesPage(props: Props) {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
               {/* Roadmap Feature 1: Team Management */}
               <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t("comingSoon.features.teamManagement.title")}</h3>
@@ -310,16 +343,7 @@ export default async function FeaturesPage(props: Props) {
                 <p className="text-gray-700 mb-4">{t("comingSoon.features.teamManagement.description")}</p>
               </div>
 
-              {/* Roadmap Feature 2: Email Alerts */}
-              <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{t("comingSoon.features.emailAlerts.title")}</h3>
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 mb-3">
-                  {t("status.comingQ2")}
-                </span>
-                <p className="text-gray-700 mb-4">{t("comingSoon.features.emailAlerts.description")}</p>
-              </div>
-
-              {/* Roadmap Feature 3: API Access */}
+              {/* Roadmap Feature 2: API Access */}
               <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t("comingSoon.features.apiAccess.title")}</h3>
                 <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 mb-3">

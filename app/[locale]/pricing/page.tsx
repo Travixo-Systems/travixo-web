@@ -284,13 +284,8 @@ export default async function PricingPage(props: Props) {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2 flex-shrink-0">•</span>
-                  <div className="text-sm">
-                    {t('plans.professional.features.emailAlerts')}
-                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
-                      {t('status.comingQ2')}
-                    </span>
-                  </div>
+                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-sm">{t('plans.professional.features.emailAlerts')}</span>
                 </li>
               </ul>
 

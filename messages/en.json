@@ -277,6 +277,16 @@
             "Set up custom alerts",
             "Export to CSV or Excel"
           ]
+        },
+        "emailAlerts": {
+          "title": "Email Alerts",
+          "description": "Get automatic notifications for upcoming inspections and overdue equipment. Configurable reminders at 30, 15, 7, and 1 day before due dates with tiered urgency levels.",
+          "items": [
+            "Automated reminders at 30/15/7/1 days before due",
+            "Overdue equipment escalation alerts",
+            "Configurable recipients and timing",
+            "Bilingual notifications (FR/EN)"
+          ]
         }
       }
     },
@@ -287,10 +297,6 @@
         "teamManagement": {
           "title": "Team Management",
           "description": "Invite team members, control access levels, track actions. See who did what and when."
-        },
-        "emailAlerts": {
-          "title": "Email Alerts",
-          "description": "Get automatic notifications for upcoming inspections and important alerts. Inspection reminders 30 days before due."
         },
         "apiAccess": {
           "title": "API Access",

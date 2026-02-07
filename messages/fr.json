@@ -277,6 +277,16 @@
             "Configurez des alertes personnalisées",
             "Exportez en CSV ou Excel"
           ]
+        },
+        "emailAlerts": {
+          "title": "Alertes email",
+          "description": "Recevez des notifications automatiques pour les inspections à venir et les équipements en retard. Rappels configurables à 30, 15, 7 et 1 jour avant échéance avec niveaux d'urgence progressifs.",
+          "items": [
+            "Rappels automatiques à 30/15/7/1 jours avant échéance",
+            "Alertes d'escalade pour équipements en retard",
+            "Destinataires et calendrier configurables",
+            "Notifications bilingues (FR/EN)"
+          ]
         }
       }
     },
@@ -287,10 +297,6 @@
         "teamManagement": {
           "title": "Gestion d'équipe",
           "description": "Invitez des membres d'équipe, contrôlez les niveaux d'accès, suivez les actions. Voyez qui a fait quoi et quand."
-        },
-        "emailAlerts": {
-          "title": "Alertes email",
-          "description": "Recevez des notifications automatiques pour les inspections à venir et les alertes importantes. Rappels d'inspection 30 jours avant échéance."
         },
         "apiAccess": {
           "title": "Accès API",
