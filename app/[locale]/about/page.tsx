@@ -160,12 +160,14 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
                         <p className="text-xl mb-">
                             {t('cta.description')}
                         </p>
-                        <Link
-                            href="/demo"
+                        <a
+                            href="https://app.travixosystems.com/signup"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                         >
                             {t('cta.button')}
-                        </Link>
+                        </a>
                     </div>
                 </section>
             </main>

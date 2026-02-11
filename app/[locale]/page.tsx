@@ -36,9 +36,14 @@ export default async function Home(props: Props) {
             >
               {t("hero.ctaPrimary")}
             </Link>
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+            <a
+              href="https://app.travixosystems.com/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+            >
               {t("hero.ctaSecondary")}
-            </button>
+            </a>
           </div>
         </section>
 
@@ -73,9 +78,14 @@ export default async function Home(props: Props) {
               >
                 {t("finalCta.primary")}
               </Link>
-              <button className="bg-gray-700 hover:bg-gray-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+              <a
+                href="https://app.travixosystems.com/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-700 hover:bg-gray-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+              >
                 {t("finalCta.secondary")}
-              </button>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-400 max-w-2xl mx-auto">
