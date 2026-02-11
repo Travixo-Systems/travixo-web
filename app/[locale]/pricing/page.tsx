@@ -376,14 +376,12 @@ export default async function PricingPage(props: Props) {
                   <li>• {locale === 'fr' ? 'Intégrations ERP Multiples (sur devis)' : 'Multiple ERP Integrations (custom quote)'}</li>
                 </ul>
               </details>
-              <a
-                href="https://app.travixosystems.com/signup"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={`/${locale}/contact`}
                 className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 {t('cta.demo')}
-              </a>
+              </Link>
             </div>
 
             {/* Enterprise - Custom */}

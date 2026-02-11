@@ -78,14 +78,12 @@ export default async function Home(props: Props) {
               >
                 {t("finalCta.primary")}
               </Link>
-              <a
-                href="https://app.travixosystems.com/signup"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={`/${locale}/contact`}
                 className="bg-gray-700 hover:bg-gray-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("finalCta.secondary")}
-              </a>
+              </Link>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-400 max-w-2xl mx-auto">
