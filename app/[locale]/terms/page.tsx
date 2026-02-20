@@ -77,13 +77,11 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
                 <li>{t('section2.item1')}</li>
                 <li>{t('section2.item2')}</li>
                 <li>{t('section2.item3')}</li>
-                <li>{t('section2.item4')}</li>
-                <li>{t('section2.item5')}</li>
               </ul>
               <p className="mt-3">{t('section2.footer')}</p>
             </section>
 
-            {/* Section 3: User Accounts and Registration */}
+            {/* Section 3: Account Registration and Security */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section3.title')}
@@ -92,18 +90,23 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {t('section3.subsection1.title')}
               </h3>
-              <p className="mb-2">{t('section3.subsection1.intro')}</p>
-              <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>{t('section3.subsection1.item1')}</li>
-                <li>{t('section3.subsection1.item2')}</li>
-                <li>{t('section3.subsection1.item3')}</li>
-                <li>{t('section3.subsection1.item4')}</li>
-              </ul>
+              <p className="mb-4">{t('section3.subsection1.content')}</p>
 
               <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
                 {t('section3.subsection2.title')}
               </h3>
-              <p>{t('section3.subsection2.content')}</p>
+              <p className="mb-2">{t('section3.subsection2.intro')}</p>
+              <ul className="list-disc pl-6 space-y-1 mb-4">
+                <li>{t('section3.subsection2.item1')}</li>
+                <li>{t('section3.subsection2.item2')}</li>
+                <li>{t('section3.subsection2.item3')}</li>
+              </ul>
+              <p className="mt-3">{t('section3.subsection2.footer')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section3.subsection3.title')}
+              </h3>
+              <p>{t('section3.subsection3.content')}</p>
             </section>
 
             {/* Section 4: Subscription Plans and Billing */}
@@ -115,8 +118,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {t('section4.subsection1.title')}
               </h3>
-              <p className="mb-2">{t('section4.subsection1.paragraph1')}</p>
-              <p className="mb-4">{t('section4.subsection1.paragraph2')}</p>
+              <p className="mb-4">{t('section4.subsection1.content')}</p>
 
               <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
                 {t('section4.subsection2.title')}

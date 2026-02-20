@@ -133,79 +133,51 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                 {t('section4.title')}
               </h2>
               <p className="mb-2">{t('section4.intro')}</p>
-              <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>
-                  <strong>{t('section4.item1.title')}</strong> {t('section4.item1.description')}
-                </li>
-                <li>
-                  <strong>{t('section4.item2.title')}</strong> {t('section4.item2.description')}
-                </li>
-                <li>
-                  <strong>{t('section4.item3.title')}</strong> {t('section4.item3.description')}
-                </li>
-                <li>
-                  <strong>{t('section4.item4.title')}</strong> {t('section4.item4.description')}
-                </li>
-                <li>
-                  <strong>{t('section4.item5.title')}</strong> {t('section4.item5.description')}
-                </li>
-              </ul>
-              <p className="mt-3 mb-2">
-                <strong>{t('section4.legalBasis.title')}</strong> {t('section4.legalBasis.intro')}
-              </p>
               <ul className="list-disc pl-6 space-y-1">
-                <li>{t('section4.legalBasis.item1')}</li>
-                <li>{t('section4.legalBasis.item2')}</li>
-                <li>{t('section4.legalBasis.item3')}</li>
-                <li>{t('section4.legalBasis.item4')}</li>
+                <li>{t('section4.item1')}</li>
+                <li>{t('section4.item2')}</li>
+                <li>{t('section4.item3')}</li>
+                <li>{t('section4.item4')}</li>
+                <li>{t('section4.item5')}</li>
+                <li>{t('section4.item6')}</li>
               </ul>
             </section>
 
-            {/* Section 5: Data Sharing and Disclosure */}
+            {/* Section 5: Legal Basis for Processing (GDPR) */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section5.title')}
               </h2>
-              <p className="mb-2">
-                {t('section5.intro')}
-              </p>
-              <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>
-                  <strong>{t('section5.item1.title')}</strong> {t('section5.item1.description')}
-                </li>
-                <li>
-                  <strong>{t('section5.item2.title')}</strong> {t('section5.item2.description')}
-                </li>
-                <li>
-                  <strong>{t('section5.item3.title')}</strong> {t('section5.item3.description')}
-                </li>
+              <p className="mb-2">{t('section5.intro')}</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>{t('section5.item1')}</li>
+                <li>{t('section5.item2')}</li>
+                <li>{t('section5.item3')}</li>
+                <li>{t('section5.item4')}</li>
               </ul>
-              <p className="mt-3">
-                {t('section5.footer')}
-              </p>
             </section>
 
-            {/* Section 6: Data Storage and Security */}
+            {/* Section 6: Data Sharing and Disclosure */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section6.title')}
               </h2>
-              <p className="mb-2">
-                <strong>{t('section6.storage.title')}</strong> {t('section6.storage.description')}
-              </p>
-              <p className="mb-2">
-                <strong>{t('section6.security.title')}</strong> {t('section6.security.intro')}
-              </p>
-              <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>{t('section6.security.item1')}</li>
-                <li>{t('section6.security.item2')}</li>
-                <li>{t('section6.security.item3')}</li>
-                <li>{t('section6.security.item4')}</li>
-                <li>{t('section6.security.item5')}</li>
-              </ul>
-              <p className="mt-3">
-                {t('section6.disclaimer')}
-              </p>
+              <p className="mb-4">{t('section6.paragraph1')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {t('section6.subsection1.title')}
+              </h3>
+              <p className="mb-4">{t('section6.subsection1.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section6.subsection2.title')}
+              </h3>
+              <p className="mb-4">{t('section6.subsection2.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section6.subsection3.title')}
+              </h3>
+              <p>{t('section6.subsection3.content')}</p>
             </section>
 
             {/* Section 7: Data Retention */}
@@ -213,73 +185,34 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section7.title')}
               </h2>
-              <p className="mb-2">
-                {t('section7.intro')}
-              </p>
-              <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>
-                  <strong>{t('section7.item1.title')}</strong> {t('section7.item1.duration')}
-                </li>
-                <li>
-                  <strong>{t('section7.item2.title')}</strong> {t('section7.item2.duration')}
-                </li>
-                <li>
-                  <strong>{t('section7.item3.title')}</strong> {t('section7.item3.duration')}
-                </li>
-                <li>
-                  <strong>{t('section7.item4.title')}</strong> {t('section7.item4.duration')}
-                </li>
-              </ul>
-              <p className="mt-3">
-                {t('section7.footer')}
-              </p>
+              <p>{t('section7.content')}</p>
             </section>
 
-            {/* Section 8: Your Rights Under GDPR */}
+            {/* Section 8: Your Rights (GDPR) */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section8.title')}
               </h2>
               <p className="mb-2">{t('section8.intro')}</p>
               <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>
-                  <strong>{t('section8.right1.title')}</strong> {t('section8.right1.description')}
-                </li>
-                <li>
-                  <strong>{t('section8.right2.title')}</strong> {t('section8.right2.description')}
-                </li>
-                <li>
-                  <strong>{t('section8.right3.title')}</strong> {t('section8.right3.description')}
-                </li>
-                <li>
-                  <strong>{t('section8.right4.title')}</strong> {t('section8.right4.description')}
-                </li>
-                <li>
-                  <strong>{t('section8.right5.title')}</strong> {t('section8.right5.description')}
-                </li>
-                <li>
-                  <strong>{t('section8.right6.title')}</strong> {t('section8.right6.description')}
-                </li>
-                <li>
-                  <strong>{t('section8.right7.title')}</strong> {t('section8.right7.description')}
-                </li>
+                <li>{t('section8.item1')}</li>
+                <li>{t('section8.item2')}</li>
+                <li>{t('section8.item3')}</li>
+                <li>{t('section8.item4')}</li>
+                <li>{t('section8.item5')}</li>
+                <li>{t('section8.item6')}</li>
+                <li>{t('section8.item7')}</li>
               </ul>
-              <p className="mt-3 mb-2">
-                {t('section8.contact.intro')} <strong>contact@travixosystems.com</strong>
-              </p>
-              <p>
-                {t('section8.contact.response')}
-              </p>
+              <p className="mt-3">{t('section8.footer')}</p>
             </section>
 
-            {/* Section 9: Children's Privacy */}
+            {/* Section 9: Data Security */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section9.title')}
               </h2>
-              <p>
-                {t('section9.content')}
-              </p>
+              <p className="mb-4">{t('section9.paragraph1')}</p>
+              <p>{t('section9.paragraph2')}</p>
             </section>
 
             {/* Section 10: International Data Transfers */}
@@ -287,42 +220,63 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section10.title')}
               </h2>
-              <p>
-                {t('section10.content')}
-              </p>
+              <p>{t('section10.content')}</p>
             </section>
 
-            {/* Section 11: Changes to This Policy */}
+            {/* Section 11: Children's Privacy */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section11.title')}
               </h2>
-              <p className="mb-2">
-                {t('section11.intro')}
-              </p>
-              <ul className="list-disc pl-6 space-y-1 mb-4">
-                <li>{t('section11.method1')}</li>
-                <li>{t('section11.method2')}</li>
-              </ul>
-              <p className="mt-3">
-                {t('section11.footer')}
-              </p>
+              <p>{t('section11.content')}</p>
             </section>
 
-            {/* Section 12: Contact Us */}
+            {/* Section 12: Cookies and Tracking */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section12.title')}
               </h2>
-              <p className="mb-4">
-                {t('section12.intro')}
-              </p>
+              <p className="mb-4">{t('section12.paragraph1')}</p>
+              <p className="mb-2"><strong>{t('section12.types.title')}</strong></p>
+              <ul className="list-disc pl-6 space-y-1 mb-4">
+                <li>{t('section12.types.essential')}</li>
+                <li>{t('section12.types.analytics')}</li>
+                <li>{t('section12.types.marketing')}</li>
+              </ul>
+              <p className="mt-3">{t('section12.footer')}</p>
+            </section>
+
+            {/* Section 13: Third-Party Links */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section13.title')}
+              </h2>
+              <p>{t('section13.content')}</p>
+            </section>
+
+            {/* Section 14: Changes to This Privacy Policy */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section14.title')}
+              </h2>
+              <p className="mb-4">{t('section14.paragraph1')}</p>
+              <p>{t('section14.paragraph2')}</p>
+            </section>
+
+            {/* Section 15: Contact Us */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section15.title')}
+              </h2>
+              <p className="mb-4">{t('section15.intro')}</p>
               <p>
-                <strong>{t('section12.email')}</strong> contact@travixosystems.com
+                <strong>{t('section15.companyName')}</strong>
                 <br />
-                <strong>{t('section12.phone')}</strong> +33 78 335 75 35
+                {t('section15.email')} {t('section15.emailValue')}
                 <br />
-                <strong>{t('section12.address')}</strong> {t('section12.addressValue')}
+                {t('section15.phone')} +33 78 335 75 35
+                <br />
+                {t('section15.address')} {t('section15.addressValue')}
               </p>
             </section>
           </div>
