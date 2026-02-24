@@ -55,7 +55,7 @@ export default function Navigation() {
             <div className="flex items-center gap-2 border-l border-gray-300 pl-4">
               <Link
                 href={switchLocale('en')}
-                className={`px-2 py-1 rounded ${currentLocale === 'en'
+                className={`px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'en'
                   ? 'bg-orange-100 text-orange-600 font-semibold'
                   : 'text-gray-600 hover:text-gray-900'}`}
               >
@@ -63,7 +63,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href={switchLocale('fr')}
-                className={`px-2 py-1 rounded ${currentLocale === 'fr'
+                className={`px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'fr'
                   ? 'bg-orange-100 text-orange-600 font-semibold'
                   : 'text-gray-600 hover:text-gray-900'}`}
               >
@@ -87,13 +87,13 @@ export default function Navigation() {
             <div className="flex gap-1">
               <Link
                 href={switchLocale('en')}
-                className={`text-sm px-2 py-1 rounded ${currentLocale === 'en' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`text-sm px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'en' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 EN
               </Link>
               <Link
                 href={switchLocale('fr')}
-                className={`text-sm px-2 py-1 rounded ${currentLocale === 'fr' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`text-sm px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'fr' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 FR
               </Link>
