@@ -517,10 +517,6 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "effective": "Effective Date:",
-    "effectiveDate": "[Insert Date]",
-    "lastUpdated": "Last Updated:",
-    "lastUpdatedDate": "[Insert Date]",
     "section1": {
       "title": "1. Introduction",
       "paragraph1": "TraviXO Systems (\"TraviXO,\" \"we,\" \"us,\" or \"our\") operates travixosystems.com and provides QR-based asset tracking software. We are committed to protecting your personal data and respecting your privacy rights under the General Data Protection Regulation (GDPR) and other applicable data protection laws.",
@@ -530,7 +526,6 @@
       "title": "2. Data Controller",
       "intro": "The data controller responsible for your personal data is:",
       "companyName": "TraviXO Systems",
-      "address": "[Insert registered address when available]",
       "email": "Email:",
       "phone": "Phone:"
     },
@@ -659,9 +654,7 @@
       "companyName": "TraviXO Systems",
       "email": "Email:",
       "emailValue": "contact@travixosystems.com",
-      "phone": "Phone:",
-      "address": "Address:",
-      "addressValue": "[Insert registered address when available]"
+      "phone": "Phone:"
     },
     "footer": {
       "copyright": "© 2025 TraviXO Systems. All rights reserved.",
@@ -672,10 +665,6 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "effective": "Effective Date:",
-    "effectiveDate": "[Insert Date]",
-    "lastUpdated": "Last Updated:",
-    "lastUpdatedDate": "[Insert Date]",
     "section1": {
       "title": "1. Acceptance of Terms",
       "paragraph1": "Welcome to TraviXO Systems (\"TraviXO,\" \"we,\" \"us,\" or \"our\"). By accessing or using our website (travixosystems.com) and services (collectively, the \"Services\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, you may not use the Services.",
@@ -893,9 +882,7 @@
       "companyName": "TraviXO Systems",
       "email": "Email:",
       "emailValue": "contact@travixosystems.com",
-      "phone": "Phone:",
-      "address": "Address:",
-      "addressValue": "[Insert registered address when available]"
+      "phone": "Phone:"
     },
     "footer": {
       "copyright": "© 2025 TraviXO Systems. All rights reserved.",
@@ -911,7 +898,6 @@
       "companyName": "TraviXO Systems",
       "legalForm": "Legal form: [SAS / SARL — to be inserted upon registration]",
       "capital": "Share capital: [To be inserted upon registration]",
-      "registeredAddress": "Registered office: Paris, France — [Full address to be inserted]",
       "registration": "Registration: [RCS Paris — SIREN/SIRET number to be inserted upon registration]",
       "vatNumber": "Intra-community VAT number: [To be inserted upon registration]",
       "director": "Publication director (Directeur de la publication): [Name to be inserted]",

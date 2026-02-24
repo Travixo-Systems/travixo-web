@@ -51,12 +51,6 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
           <h1 className="text-4xl font-bold text-center text-[#00252b] mb-4">
             {t('title')}
           </h1>
-          <p className="text-gray-600 mb-8">
-            <strong>{t('effective')}</strong> {t('effectiveDate')}
-            <br />
-            <strong>{t('lastUpdated')}</strong> {t('lastUpdatedDate')}
-          </p>
-
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             {/* Section 1: Introduction */}
             <section>
@@ -79,8 +73,6 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               <p className="mb-4">{t('section2.intro')}</p>
               <p>
                 <strong>{t('section2.companyName')}</strong>
-                <br />
-                {t('section2.address')}
                 <br />
                 {t('section2.email')} contact@travixosystems.com
                 <br />
@@ -293,8 +285,6 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                 {t('section15.email')} {t('section15.emailValue')}
                 <br />
                 {t('section15.phone')} +33 78 335 75 35
-                <br />
-                {t('section15.address')} {t('section15.addressValue')}
               </p>
             </section>
           </div>

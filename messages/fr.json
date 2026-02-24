@@ -517,10 +517,6 @@
   },
   "privacy": {
     "title": "Politique de confidentialité",
-    "effective": "Date d'entrée en vigueur :",
-    "effectiveDate": "[À insérer]",
-    "lastUpdated": "Dernière mise à jour :",
-    "lastUpdatedDate": "[À insérer]",
     "section1": {
       "title": "1. Introduction",
       "paragraph1": "TraviXO Systems (« TraviXO », « nous », « notre » ou « nos ») exploite travixosystems.com et fournit un logiciel de suivi d'actifs basé sur les codes QR. Nous nous engageons à protéger vos données personnelles et à respecter vos droits à la vie privée en vertu du Règlement Général sur la Protection des Données (RGPD) et des autres lois applicables en matière de protection des données.",
@@ -530,7 +526,6 @@
       "title": "2. Responsable du traitement",
       "intro": "Le responsable du traitement de vos données personnelles est :",
       "companyName": "TraviXO Systems",
-      "address": "[Adresse du siège social à insérer]",
       "email": "Email :",
       "phone": "Téléphone :"
     },
@@ -659,9 +654,7 @@
       "companyName": "TraviXO Systems",
       "email": "Email :",
       "emailValue": "contact@travixosystems.com",
-      "phone": "Téléphone :",
-      "address": "Adresse :",
-      "addressValue": "[Adresse du siège social à insérer]"
+      "phone": "Téléphone :"
     },
     "footer": {
       "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
@@ -672,10 +665,6 @@
   },
   "terms": {
     "title": "Conditions d'utilisation",
-    "effective": "Date d'entrée en vigueur :",
-    "effectiveDate": "[À insérer]",
-    "lastUpdated": "Dernière mise à jour :",
-    "lastUpdatedDate": "[À insérer]",
     "section1": {
       "title": "1. Acceptation des conditions",
       "paragraph1": "Bienvenue sur TraviXO Systems (« TraviXO », « nous », « notre » ou « nos »). En accédant ou en utilisant notre site web (travixosystems.com) et nos services (collectivement, les « Services »), vous acceptez d'être lié par les présentes Conditions d'utilisation (« Conditions »). Si vous n'acceptez pas ces Conditions, vous ne pouvez pas utiliser les Services.",
@@ -893,9 +882,7 @@
       "companyName": "TraviXO Systems",
       "email": "Email :",
       "emailValue": "contact@travixosystems.com",
-      "phone": "Téléphone :",
-      "address": "Adresse :",
-      "addressValue": "[Adresse du siège social à insérer]"
+      "phone": "Téléphone :"
     },
     "footer": {
       "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
@@ -911,7 +898,6 @@
       "companyName": "TraviXO Systems",
       "legalForm": "Forme juridique : [SAS / SARL — à insérer lors de l'immatriculation]",
       "capital": "Capital social : [À insérer lors de l'immatriculation]",
-      "registeredAddress": "Siège social : Paris, France — [Adresse complète à insérer]",
       "registration": "Immatriculation : [RCS Paris — Numéro SIREN/SIRET à insérer lors de l'immatriculation]",
       "vatNumber": "Numéro de TVA intracommunautaire : [À insérer lors de l'immatriculation]",
       "director": "Directeur de la publication : [Nom à insérer]",
