@@ -118,7 +118,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "TraviXO Systems",
+    "name": "Deralis Digital",
     "alternateName": "TraviXO",
     "url": "https://travixosystems.com",
     "logo": "https://travixosystems.com/icon.png",
@@ -149,7 +149,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     "inLanguage": locale,
     "publisher": {
       "@type": "Organization",
-      "name": "TraviXO Systems"
+      "name": "Deralis Digital"
     }
   };
 
