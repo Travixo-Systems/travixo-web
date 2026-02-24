@@ -27,6 +27,10 @@
     "terms": {
       "title": "Conditions d'utilisation - TraviXO",
       "description": "Conditions générales d'utilisation des services TraviXO."
+    },
+    "legalNotice": {
+      "title": "Mentions légales - TraviXO",
+      "description": "Mentions légales et informations sur la société TraviXO conformément à la loi française."
     }
   },
   "navigation": {
@@ -37,6 +41,7 @@
     "contact": "Contact",
     "privacy": "Confidentialité",
     "terms": "Conditions",
+    "legalNotice": "Mentions légales",
     "startPilot": "Démarrer l'essai gratuit",
     "languages": {
       "english": "Anglais",
@@ -603,7 +608,9 @@
       "item5": "Portabilité : Recevoir vos données dans un format structuré et lisible par machine",
       "item6": "Opposition : Vous opposer au traitement fondé sur des intérêts légitimes",
       "item7": "Retrait du consentement : Retirer votre consentement à tout moment (sans affecter le traitement antérieur)",
-      "footer": "Pour exercer ces droits, contactez-nous à contact@travixosystems.com."
+      "item8": "Réclamation : Déposer une plainte auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés), l'autorité française de protection des données, sur www.cnil.fr ou par courrier à CNIL, 3 Place de Fontenoy - TSA 80715, 75334 Paris Cedex 07",
+      "footer": "Pour exercer ces droits, contactez-nous à contact@travixosystems.com. Nous répondrons à votre demande dans un délai de 30 jours.",
+      "dpo": "Délégué à la protection des données : Pour toute question relative à la protection des données, vous pouvez contacter notre référent protection des données à dpo@travixosystems.com."
     },
     "section9": {
       "title": "9. Sécurité des données",
@@ -627,11 +634,19 @@
         "analytics": "Cookies analytiques : Nous aident à comprendre comment les visiteurs utilisent notre site (par ex., Google Analytics)",
         "marketing": "Cookies marketing : Suivent votre activité pour afficher des publicités pertinentes"
       },
-      "footer": "Vous pouvez gérer vos préférences de cookies via les paramètres de votre navigateur. La désactivation des cookies peut affecter les fonctionnalités du site."
+      "footer": "Conformément aux directives de la CNIL (Commission Nationale de l'Informatique et des Libertés) et à la réglementation ePrivacy, nous sollicitons votre consentement explicite avant de placer des cookies non essentiels. Vous pouvez gérer vos préférences de cookies à tout moment via le bandeau cookies affiché sur notre site ou via les paramètres de votre navigateur. Les cookies essentiels nécessaires au fonctionnement du site ne requièrent pas de consentement. La désactivation des cookies non essentiels n'affectera pas les fonctionnalités de base du site."
     },
     "section13": {
       "title": "13. Liens vers des tiers",
       "content": "Notre site web peut contenir des liens vers des sites tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites. Nous vous encourageons à consulter leurs politiques de confidentialité."
+    },
+    "section13b": {
+      "title": "13b. Prise de décision automatisée",
+      "content": "Nous n'utilisons pas de prise de décision automatisée ni de profilage produisant des effets juridiques ou des effets significatifs similaires vous concernant, tels que définis à l'Article 22 du RGPD. Si cela venait à changer, nous mettrons à jour cette Politique de confidentialité et obtiendrons votre consentement explicite lorsque requis."
+    },
+    "section13c": {
+      "title": "13c. Délégué à la protection des données (DPO)",
+      "content": "Pour toute question ou préoccupation concernant nos pratiques de traitement des données, vous pouvez contacter notre référent désigné pour la protection des données à dpo@travixosystems.com. Vous pouvez également contacter la CNIL directement sur www.cnil.fr."
     },
     "section14": {
       "title": "14. Modifications de cette Politique de confidentialité",
@@ -651,7 +666,8 @@
     "footer": {
       "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
+      "terms": "Conditions d'utilisation",
+      "legalNotice": "Mentions légales"
     }
   },
   "terms": {
@@ -814,30 +830,65 @@
       "footer": "Votre utilisation continue des Services après l'entrée en vigueur des modifications constitue une acceptation des Conditions mises à jour. Si vous n'acceptez pas les modifications, vous devez annuler votre abonnement."
     },
     "section14": {
-      "title": "14. Dispositions générales",
+      "title": "14. Droit de rétractation",
+      "paragraph1": "Conformément à l'Article L221-18 du Code de la consommation, les consommateurs et, en vertu de l'Article L221-3, certaines entités non professionnelles et micro-entreprises (moins de 10 salariés et chiffre d'affaires annuel inférieur à 2 millions d'euros) qui souscrivent à nos Services par vente à distance disposent d'un droit de rétractation de 14 jours calendaires à compter de la date de souscription, sans avoir à justifier de motifs.",
+      "paragraph2": "Pour exercer votre droit de rétractation, vous devez nous notifier par une déclaration claire (par ex., un email à contact@travixosystems.com) avant l'expiration du délai de rétractation. Vous pouvez utiliser le formulaire type de rétractation, bien que cela ne soit pas obligatoire.",
+      "paragraph3": "Si vous exercez votre droit de rétractation, nous vous rembourserons tous les paiements reçus dans un délai de 14 jours à compter de la réception de votre notification de rétractation, en utilisant le même moyen de paiement que celui de votre transaction initiale.",
+      "paragraph4": "À noter : Conformément à l'Article L221-28, le droit de rétractation ne s'applique pas aux contrats de fourniture de contenu numérique non fourni sur un support matériel si l'exécution a commencé avec votre consentement préalable exprès et votre reconnaissance que vous perdez ainsi votre droit de rétractation. Si vous consentez expressément à la fourniture immédiate de nos Services pendant le délai de rétractation, vous renoncez à votre droit de rétractation."
+    },
+    "section15": {
+      "title": "15. Garanties légales",
       "subsection1": {
-        "title": "14.1 Intégralité de l'accord",
+        "title": "15.1 Garantie légale de conformité",
+        "content": "Conformément aux Articles L217-3 à L217-20 du Code de la consommation, vous bénéficiez de la garantie légale de conformité pour tout contenu numérique ou service numérique fourni dans le cadre de ces Conditions. Si un défaut de conformité est constaté dans les 2 ans suivant la livraison, vous avez droit à un remède (réparation, remplacement, réduction du prix ou résolution du contrat) sans frais supplémentaires."
+      },
+      "subsection2": {
+        "title": "15.2 Garantie des vices cachés",
+        "content": "Conformément aux Articles 1641 à 1649 du Code civil, vous bénéficiez de la garantie des vices cachés. Si un vice caché rend le Service impropre à l'usage auquel il est destiné ou diminue tellement cet usage, vous pouvez choisir de rendre le Service et d'en obtenir le remboursement, ou de conserver le Service et d'obtenir un remboursement partiel."
+      },
+      "subsection3": {
+        "title": "15.3 Applicabilité",
+        "content": "Ces garanties légales s'appliquent en plus de toute garantie commerciale que nous pourrions offrir. Elles s'appliquent aux consommateurs et, le cas échéant, aux non-professionnels tels que définis par la loi française."
+      }
+    },
+    "section16": {
+      "title": "16. Prix et taxes",
+      "paragraph1": "Tous les prix affichés sur notre site web sont en Euros (€) et sont hors taxes (HT) sauf indication contraire. La TVA applicable et toute autre taxe seront ajoutées lors du paiement ou sur les factures conformément à la réglementation fiscale applicable.",
+      "paragraph2": "Pour les clients au sein de l'Union européenne, la TVA sera appliquée selon le taux applicable dans le pays de résidence du client, sauf si un numéro de TVA intracommunautaire valide est fourni. Les clients français sont soumis au taux normal de TVA française."
+    },
+    "section17": {
+      "title": "17. Médiation de la consommation",
+      "content": "Conformément aux Articles L611-1 à L616-3 du Code de la consommation, en cas de litige non résolu par notre service client, les consommateurs et entités non professionnelles éligibles peuvent recourir gratuitement à un médiateur de la consommation. Les coordonnées de notre médiateur désigné seront fournies sur demande. Vous pouvez également utiliser la plateforme de Résolution des Litiges en Ligne de l'Union européenne à l'adresse https://ec.europa.eu/consumers/odr."
+    },
+    "section18": {
+      "title": "18. Accord de traitement des données",
+      "content": "Lorsque TraviXO traite des données personnelles pour le compte d'un client (agissant en tant que sous-traitant au sens de l'Article 28 du RGPD), les termes de notre Accord de traitement des données (DPA) s'appliquent. Le DPA décrit nos obligations en matière de sécurité des données, de sous-traitants ultérieurs, de notification de violation de données et de droits des personnes concernées. Un exemplaire du DPA est disponible sur demande à contact@travixosystems.com."
+    },
+    "section19": {
+      "title": "19. Dispositions générales",
+      "subsection1": {
+        "title": "19.1 Intégralité de l'accord",
         "content": "Ces Conditions, ainsi que notre Politique de confidentialité, constituent l'intégralité de l'accord entre vous et TraviXO concernant les Services."
       },
       "subsection2": {
-        "title": "14.2 Divisibilité",
+        "title": "19.2 Divisibilité",
         "content": "Si une disposition de ces Conditions est jugée inapplicable, les dispositions restantes resteront pleinement en vigueur."
       },
       "subsection3": {
-        "title": "14.3 Renonciation",
+        "title": "19.3 Renonciation",
         "content": "Notre manquement à faire respecter tout droit ou disposition de ces Conditions ne sera pas considéré comme une renonciation à ce droit ou à cette disposition."
       },
       "subsection4": {
-        "title": "14.4 Cession",
+        "title": "19.4 Cession",
         "content": "Vous ne pouvez pas céder ces Conditions sans notre consentement écrit préalable. Nous pouvons céder ces Conditions sans restriction."
       },
       "subsection5": {
-        "title": "14.5 Force majeure",
+        "title": "19.5 Force majeure",
         "content": "Aucune des parties ne sera responsable de tout retard ou manquement à exécuter ses obligations en raison de causes indépendantes de sa volonté (par exemple, catastrophes naturelles, guerre, pandémies, actions gouvernementales)."
       }
     },
-    "section15": {
-      "title": "15. Coordonnées",
+    "section20": {
+      "title": "20. Coordonnées",
       "intro": "Si vous avez des questions concernant ces Conditions, contactez-nous :",
       "companyName": "TraviXO Systems",
       "email": "Email :",
@@ -849,7 +900,57 @@
     "footer": {
       "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
+      "terms": "Conditions d'utilisation",
+      "legalNotice": "Mentions légales"
+    }
+  },
+  "legalNotice": {
+    "title": "Mentions légales",
+    "section1": {
+      "title": "1. Éditeur du site",
+      "companyName": "TraviXO Systems",
+      "legalForm": "Forme juridique : [SAS / SARL — à insérer lors de l'immatriculation]",
+      "capital": "Capital social : [À insérer lors de l'immatriculation]",
+      "registeredAddress": "Siège social : Paris, France — [Adresse complète à insérer]",
+      "registration": "Immatriculation : [RCS Paris — Numéro SIREN/SIRET à insérer lors de l'immatriculation]",
+      "vatNumber": "Numéro de TVA intracommunautaire : [À insérer lors de l'immatriculation]",
+      "director": "Directeur de la publication : [Nom à insérer]",
+      "email": "Email : contact@travixosystems.com",
+      "phone": "Téléphone : +33 78 335 75 35"
+    },
+    "section2": {
+      "title": "2. Hébergeur",
+      "content": "Ce site web est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Site web : vercel.com."
+    },
+    "section3": {
+      "title": "3. Propriété intellectuelle",
+      "content": "L'ensemble du contenu de ce site web (textes, images, graphiques, logos, icônes, logiciels, etc.) est la propriété de TraviXO Systems ou de ses concédants de licence et est protégé par les lois françaises et internationales sur la propriété intellectuelle. Toute reproduction, représentation, modification, distribution ou exploitation de toute partie de ce site sans autorisation écrite expresse est strictement interdite et constitue une contrefaçon sanctionnable au titre des Articles L.335-2 et suivants du Code de la propriété intellectuelle."
+    },
+    "section4": {
+      "title": "4. Données personnelles",
+      "content": "La collecte et le traitement des données personnelles sur ce site sont effectués conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée. Pour plus d'informations, veuillez consulter notre Politique de confidentialité. Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous à contact@travixosystems.com. Vous pouvez également déposer une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) sur www.cnil.fr."
+    },
+    "section5": {
+      "title": "5. Cookies",
+      "content": "Ce site web utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic. Conformément aux directives de la CNIL, nous sollicitons votre consentement avant de placer des cookies non essentiels. Vous pouvez gérer vos préférences de cookies à tout moment via le bandeau cookies ou les paramètres de votre navigateur. Pour plus d'informations, consultez notre Politique de confidentialité."
+    },
+    "section6": {
+      "title": "6. Limitation de responsabilité",
+      "content": "TraviXO Systems s'efforce de fournir des informations exactes et à jour sur ce site web. Toutefois, nous ne pouvons garantir l'exactitude, l'exhaustivité ou l'actualité des informations fournies. TraviXO Systems ne saurait être tenu responsable de tout dommage direct ou indirect résultant de l'accès ou de l'utilisation de ce site web, y compris toute perte de données, dommage aux équipements ou transmission de virus."
+    },
+    "section7": {
+      "title": "7. Liens hypertextes",
+      "content": "Ce site web peut contenir des liens hypertextes vers des sites web tiers. TraviXO Systems n'exerce aucun contrôle sur le contenu de ces sites externes et n'accepte aucune responsabilité les concernant. L'inclusion de tout lien n'implique pas l'approbation par TraviXO Systems."
+    },
+    "section8": {
+      "title": "8. Droit applicable",
+      "content": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation de ce site web sera soumis à la compétence exclusive des tribunaux de Paris, France."
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "legalNotice": "Mentions légales"
     }
   }
 }

@@ -27,6 +27,10 @@
     "terms": {
       "title": "Terms of Service - TraviXO",
       "description": "TraviXO terms of service and user agreement."
+    },
+    "legalNotice": {
+      "title": "Legal Notice - TraviXO",
+      "description": "TraviXO legal notices and company information as required by French law."
     }
   },
   "navigation": {
@@ -37,6 +41,7 @@
     "contact": "Contact",
     "privacy": "Privacy",
     "terms": "Terms",
+    "legalNotice": "Legal Notice",
     "startPilot": "Start Free Pilot",
     "languages": {
       "english": "English",
@@ -603,7 +608,9 @@
       "item5": "Portability: Receive your data in a structured, machine-readable format",
       "item6": "Object: Object to processing based on legitimate interests",
       "item7": "Withdraw Consent: Withdraw consent at any time (does not affect prior processing)",
-      "footer": "To exercise these rights, contact us at contact@travixosystems.com."
+      "item8": "Lodge a Complaint: File a complaint with the CNIL (Commission Nationale de l'Informatique et des Libertés), the French data protection authority, at www.cnil.fr or by post at CNIL, 3 Place de Fontenoy - TSA 80715, 75334 Paris Cedex 07",
+      "footer": "To exercise these rights, contact us at contact@travixosystems.com. We will respond to your request within 30 days.",
+      "dpo": "Data Protection Officer: For any questions regarding data protection, you may contact our data protection contact at dpo@travixosystems.com."
     },
     "section9": {
       "title": "9. Data Security",
@@ -627,11 +634,19 @@
         "analytics": "Analytics Cookies: Help us understand how visitors use our site (e.g., Google Analytics)",
         "marketing": "Marketing Cookies: Track your activity to show relevant ads"
       },
-      "footer": "You can manage cookie preferences through your browser settings. Disabling cookies may affect website functionality."
+      "footer": "In accordance with CNIL (French Data Protection Authority) guidelines and ePrivacy regulations, we request your explicit consent before placing non-essential cookies. You can manage your cookie preferences at any time through the cookie banner displayed on our website or through your browser settings. Essential cookies required for site functionality do not require consent. Disabling non-essential cookies will not affect core website functionality."
     },
     "section13": {
       "title": "13. Third-Party Links",
       "content": "Our website may contain links to third-party sites. We are not responsible for the privacy practices of these sites. We encourage you to review their privacy policies."
+    },
+    "section13b": {
+      "title": "13b. Automated Decision-Making",
+      "content": "We do not use automated decision-making or profiling that produces legal effects or similarly significant effects on you, as defined under Article 22 of the GDPR. If this changes in the future, we will update this Privacy Policy and obtain your explicit consent where required."
+    },
+    "section13c": {
+      "title": "13c. Data Protection Officer (DPO)",
+      "content": "For any questions or concerns regarding our data processing practices, you may contact our designated data protection contact at dpo@travixosystems.com. You may also contact the CNIL directly at www.cnil.fr."
     },
     "section14": {
       "title": "14. Changes to This Privacy Policy",
@@ -651,7 +666,8 @@
     "footer": {
       "copyright": "© 2025 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "terms": "Terms of Service",
+      "legalNotice": "Legal Notice"
     }
   },
   "terms": {
@@ -814,30 +830,65 @@
       "footer": "Your continued use of the Services after changes take effect constitutes acceptance of the updated Terms. If you do not agree to the changes, you must cancel your subscription."
     },
     "section14": {
-      "title": "14. General Provisions",
+      "title": "14. Right of Withdrawal (Droit de Rétractation)",
+      "paragraph1": "In accordance with Article L221-18 of the French Consumer Code, consumers and, under Article L221-3, certain non-professional entities and micro-enterprises (fewer than 10 employees and annual turnover under €2 million) who subscribe to our Services through distance selling have the right to withdraw from the contract within 14 calendar days from the date of subscription, without providing any reason.",
+      "paragraph2": "To exercise your right of withdrawal, you must notify us by sending a clear statement (e.g., email to contact@travixosystems.com) before the expiration of the withdrawal period. You may use the standard withdrawal form, although it is not mandatory.",
+      "paragraph3": "If you exercise your right of withdrawal, we will reimburse all payments received from you within 14 days of receiving your withdrawal notice, using the same payment method as your original transaction.",
+      "paragraph4": "Please note: In accordance with Article L221-28, the right of withdrawal does not apply to contracts for the supply of digital content not provided on a tangible medium if performance has begun with your prior express consent and your acknowledgment that you thereby lose your right of withdrawal. If you expressly consent to the immediate provision of our Services during the withdrawal period, you waive your right of withdrawal."
+    },
+    "section15": {
+      "title": "15. Legal Warranties (Garanties Légales)",
       "subsection1": {
-        "title": "14.1 Entire Agreement",
+        "title": "15.1 Warranty of Conformity",
+        "content": "In accordance with Articles L217-3 to L217-20 of the French Consumer Code, you benefit from the legal warranty of conformity for any digital content or digital services provided under these Terms. If a lack of conformity is found within 2 years of delivery, you are entitled to a remedy (repair, replacement, price reduction, or contract termination) at no additional cost."
+      },
+      "subsection2": {
+        "title": "15.2 Warranty Against Hidden Defects",
+        "content": "In accordance with Articles 1641 to 1649 of the French Civil Code, you benefit from the warranty against hidden defects. If a hidden defect renders the Service unfit for its intended use or significantly diminishes that use, you may choose to return the Service and receive a refund, or keep the Service and receive a partial refund."
+      },
+      "subsection3": {
+        "title": "15.3 Applicability",
+        "content": "These legal warranties apply in addition to any commercial warranty or guarantee we may offer. They apply to consumers and, where applicable, to non-professionals as defined by French law."
+      }
+    },
+    "section16": {
+      "title": "16. Prices and Taxes",
+      "paragraph1": "All prices displayed on our website are in Euros (€) and are exclusive of taxes (HT — Hors Taxes) unless otherwise indicated. Applicable VAT and any other taxes will be added at checkout or on invoices in accordance with the applicable tax regulations.",
+      "paragraph2": "For customers within the European Union, VAT will be applied according to the applicable rate in the customer's country of residence, unless a valid intra-community VAT number is provided. French customers are subject to the standard French VAT rate."
+    },
+    "section17": {
+      "title": "17. Consumer Mediation",
+      "content": "In accordance with Articles L611-1 to L616-3 of the French Consumer Code, in the event of a dispute that has not been resolved by our customer service, consumers and eligible non-professional entities may refer the matter free of charge to a consumer mediator. The contact details of our designated mediator will be provided upon request. You may also use the European Union's Online Dispute Resolution platform at https://ec.europa.eu/consumers/odr."
+    },
+    "section18": {
+      "title": "18. Data Processing Agreement",
+      "content": "When TraviXO processes personal data on behalf of a customer (acting as a data processor under GDPR Article 28), the terms of our Data Processing Agreement (DPA) shall apply. The DPA describes our obligations regarding data security, sub-processors, data breach notification, and data subject rights. A copy of the DPA is available upon request at contact@travixosystems.com."
+    },
+    "section19": {
+      "title": "19. General Provisions",
+      "subsection1": {
+        "title": "19.1 Entire Agreement",
         "content": "These Terms, together with our Privacy Policy, constitute the entire agreement between you and TraviXO regarding the Services."
       },
       "subsection2": {
-        "title": "14.2 Severability",
+        "title": "19.2 Severability",
         "content": "If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect."
       },
       "subsection3": {
-        "title": "14.3 Waiver",
+        "title": "19.3 Waiver",
         "content": "Our failure to enforce any right or provision of these Terms will not be deemed a waiver of that right or provision."
       },
       "subsection4": {
-        "title": "14.4 Assignment",
+        "title": "19.4 Assignment",
         "content": "You may not assign these Terms without our prior written consent. We may assign these Terms without restriction."
       },
       "subsection5": {
-        "title": "14.5 Force Majeure",
+        "title": "19.5 Force Majeure",
         "content": "Neither party will be liable for any delay or failure to perform due to causes beyond its reasonable control (e.g., natural disasters, war, pandemics, government actions)."
       }
     },
-    "section15": {
-      "title": "15. Contact Information",
+    "section20": {
+      "title": "20. Contact Information",
       "intro": "If you have questions about these Terms, contact us:",
       "companyName": "TraviXO Systems",
       "email": "Email:",
@@ -849,7 +900,57 @@
     "footer": {
       "copyright": "© 2025 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "terms": "Terms of Service",
+      "legalNotice": "Legal Notice"
+    }
+  },
+  "legalNotice": {
+    "title": "Legal Notice (Mentions Légales)",
+    "section1": {
+      "title": "1. Site Publisher",
+      "companyName": "TraviXO Systems",
+      "legalForm": "Legal form: [SAS / SARL — to be inserted upon registration]",
+      "capital": "Share capital: [To be inserted upon registration]",
+      "registeredAddress": "Registered office: Paris, France — [Full address to be inserted]",
+      "registration": "Registration: [RCS Paris — SIREN/SIRET number to be inserted upon registration]",
+      "vatNumber": "Intra-community VAT number: [To be inserted upon registration]",
+      "director": "Publication director (Directeur de la publication): [Name to be inserted]",
+      "email": "Email: contact@travixosystems.com",
+      "phone": "Phone: +33 78 335 75 35"
+    },
+    "section2": {
+      "title": "2. Hosting Provider",
+      "content": "This website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States. Website: vercel.com."
+    },
+    "section3": {
+      "title": "3. Intellectual Property",
+      "content": "The entire content of this website (texts, images, graphics, logos, icons, software, etc.) is the property of TraviXO Systems or its licensors and is protected by French and international intellectual property laws. Any reproduction, representation, modification, distribution, or exploitation of any part of this website without express written permission is strictly prohibited and constitutes an infringement sanctionable under Articles L.335-2 and following of the French Intellectual Property Code."
+    },
+    "section4": {
+      "title": "4. Personal Data",
+      "content": "The collection and processing of personal data on this website is carried out in accordance with the General Data Protection Regulation (GDPR) and the French Data Protection Act (Loi Informatique et Libertés of January 6, 1978, as amended). For more information, please consult our Privacy Policy. You have the right to access, rectify, erase, restrict, and port your personal data. To exercise these rights, contact us at contact@travixosystems.com. You may also file a complaint with the CNIL (Commission Nationale de l'Informatique et des Libertés) at www.cnil.fr."
+    },
+    "section5": {
+      "title": "5. Cookies",
+      "content": "This website uses cookies to enhance user experience and analyze traffic. In accordance with CNIL guidelines, we request your consent before placing non-essential cookies. You may manage your cookie preferences at any time through the cookie banner or your browser settings. For more information, see our Privacy Policy."
+    },
+    "section6": {
+      "title": "6. Limitation of Liability",
+      "content": "TraviXO Systems endeavors to provide accurate and up-to-date information on this website. However, we cannot guarantee the accuracy, completeness, or timeliness of the information provided. TraviXO Systems shall not be held liable for any direct or indirect damage resulting from access to or use of this website, including any data loss, damage to equipment, or virus transmission."
+    },
+    "section7": {
+      "title": "7. Hyperlinks",
+      "content": "This website may contain hyperlinks to third-party websites. TraviXO Systems has no control over the content of these external sites and accepts no responsibility for them. The inclusion of any link does not imply endorsement by TraviXO Systems."
+    },
+    "section8": {
+      "title": "8. Applicable Law",
+      "content": "These legal notices are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
+    },
+    "footer": {
+      "copyright": "© 2025 TraviXO Systems. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "legalNotice": "Legal Notice"
     }
   }
 }

@@ -294,52 +294,110 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
               <p className="mt-3">{t('section13.footer')}</p>
             </section>
 
-            {/* Section 14: General Provisions */}
+            {/* Section 14: Right of Withdrawal */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section14.title')}
               </h2>
-
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {t('section14.subsection1.title')}
-              </h3>
-              <p className="mb-4">{t('section14.subsection1.content')}</p>
-
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
-                {t('section14.subsection2.title')}
-              </h3>
-              <p className="mb-4">{t('section14.subsection2.content')}</p>
-
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
-                {t('section14.subsection3.title')}
-              </h3>
-              <p className="mb-4">{t('section14.subsection3.content')}</p>
-
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
-                {t('section14.subsection4.title')}
-              </h3>
-              <p className="mb-4">{t('section14.subsection4.content')}</p>
-
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
-                {t('section14.subsection5.title')}
-              </h3>
-              <p>{t('section14.subsection5.content')}</p>
+              <p className="mb-4">{t('section14.paragraph1')}</p>
+              <p className="mb-4">{t('section14.paragraph2')}</p>
+              <p className="mb-4">{t('section14.paragraph3')}</p>
+              <p>{t('section14.paragraph4')}</p>
             </section>
 
-            {/* Section 15: Contact Information */}
+            {/* Section 15: Legal Warranties */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
                 {t('section15.title')}
               </h2>
-              <p className="mb-4">{t('section15.intro')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {t('section15.subsection1.title')}
+              </h3>
+              <p className="mb-4">{t('section15.subsection1.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section15.subsection2.title')}
+              </h3>
+              <p className="mb-4">{t('section15.subsection2.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section15.subsection3.title')}
+              </h3>
+              <p>{t('section15.subsection3.content')}</p>
+            </section>
+
+            {/* Section 16: Prices and Taxes */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section16.title')}
+              </h2>
+              <p className="mb-4">{t('section16.paragraph1')}</p>
+              <p>{t('section16.paragraph2')}</p>
+            </section>
+
+            {/* Section 17: Consumer Mediation */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section17.title')}
+              </h2>
+              <p>{t('section17.content')}</p>
+            </section>
+
+            {/* Section 18: Data Processing Agreement */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section18.title')}
+              </h2>
+              <p>{t('section18.content')}</p>
+            </section>
+
+            {/* Section 19: General Provisions */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section19.title')}
+              </h2>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {t('section19.subsection1.title')}
+              </h3>
+              <p className="mb-4">{t('section19.subsection1.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section19.subsection2.title')}
+              </h3>
+              <p className="mb-4">{t('section19.subsection2.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section19.subsection3.title')}
+              </h3>
+              <p className="mb-4">{t('section19.subsection3.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section19.subsection4.title')}
+              </h3>
+              <p className="mb-4">{t('section19.subsection4.content')}</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-4">
+                {t('section19.subsection5.title')}
+              </h3>
+              <p>{t('section19.subsection5.content')}</p>
+            </section>
+
+            {/* Section 20: Contact Information */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section20.title')}
+              </h2>
+              <p className="mb-4">{t('section20.intro')}</p>
               <p>
-                <strong>{t('section15.companyName')}</strong>
+                <strong>{t('section20.companyName')}</strong>
                 <br />
-                {t('section15.email')} contact@travixosystems.com
+                {t('section20.email')} contact@travixosystems.com
                 <br />
-                {t('section15.phone')} +33 78 335 75 35
+                {t('section20.phone')} +33 78 335 75 35
                 <br />
-                {t('section15.address')} {t('section15.addressValue')}
+                {t('section20.address')} {t('section20.addressValue')}
               </p>
             </section>
           </div>
@@ -356,6 +414,10 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
             {" • "}
             <Link href={`/${locale}/terms`} className="hover:text-white">
               {t('footer.terms')}
+            </Link>
+            {" • "}
+            <Link href={`/${locale}/legal-notice`} className="hover:text-white">
+              {t('footer.legalNotice')}
             </Link>
           </p>
         </div>

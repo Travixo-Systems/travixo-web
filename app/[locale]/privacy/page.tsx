@@ -202,8 +202,10 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                 <li>{t('section8.item5')}</li>
                 <li>{t('section8.item6')}</li>
                 <li>{t('section8.item7')}</li>
+                <li>{t('section8.item8')}</li>
               </ul>
               <p className="mt-3">{t('section8.footer')}</p>
+              <p className="mt-2 text-sm text-gray-600">{t('section8.dpo')}</p>
             </section>
 
             {/* Section 9: Data Security */}
@@ -254,6 +256,22 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               <p>{t('section13.content')}</p>
             </section>
 
+            {/* Section 13b: Automated Decision-Making */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section13b.title')}
+              </h2>
+              <p>{t('section13b.content')}</p>
+            </section>
+
+            {/* Section 13c: Data Protection Officer */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+                {t('section13c.title')}
+              </h2>
+              <p>{t('section13c.content')}</p>
+            </section>
+
             {/* Section 14: Changes to This Privacy Policy */}
             <section>
               <h2 className="text-2xl font-bold text-[#00252b] mb-3">
@@ -293,6 +311,10 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
             {" • "}
             <Link href={`/${locale}/terms`} className="hover:text-white">
               {t('footer.terms')}
+            </Link>
+            {" • "}
+            <Link href={`/${locale}/legal-notice`} className="hover:text-white">
+              {t('footer.legalNotice')}
             </Link>
           </p>
         </div>
