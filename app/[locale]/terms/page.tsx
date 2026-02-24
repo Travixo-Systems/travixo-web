@@ -51,12 +51,6 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
           <h1 className="text-4xl font-bold text-center text-[#00252b] mb-4">
             {t('title')}
           </h1>
-          <p className="text-gray-600 mb-8">
-            <strong>{t('effective')}</strong> {t('effectiveDate')}
-            <br />
-            <strong>{t('lastUpdated')}</strong> {t('lastUpdatedDate')}
-          </p>
-
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             {/* Section 1: Agreement to Terms */}
             <section>
@@ -396,8 +390,6 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
                 {t('section20.email')} contact@travixosystems.com
                 <br />
                 {t('section20.phone')} +33 78 335 75 35
-                <br />
-                {t('section20.address')} {t('section20.addressValue')}
               </p>
             </section>
           </div>

@@ -131,7 +131,7 @@
         "Résiliation à tout moment"
       ],
       "footer": {
-        "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+        "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
         "email": "contact@travixosystems.com",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
@@ -192,7 +192,7 @@
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -390,7 +390,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -510,27 +510,22 @@
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
       "privacy": "Confidentialité",
       "terms": "Conditions d'utilisation"
     }
   },
   "privacy": {
     "title": "Politique de confidentialité",
-    "effective": "Date d'entrée en vigueur :",
-    "effectiveDate": "[À insérer]",
-    "lastUpdated": "Dernière mise à jour :",
-    "lastUpdatedDate": "[À insérer]",
     "section1": {
       "title": "1. Introduction",
-      "paragraph1": "TraviXO Systems (« TraviXO », « nous », « notre » ou « nos ») exploite travixosystems.com et fournit un logiciel de suivi d'actifs basé sur les codes QR. Nous nous engageons à protéger vos données personnelles et à respecter vos droits à la vie privée en vertu du Règlement Général sur la Protection des Données (RGPD) et des autres lois applicables en matière de protection des données.",
+      "paragraph1": "Deralis Digital (« nous », « notre » ou « nos ») exploite travixosystems.com sous la marque TraviXO et fournit un logiciel de suivi d'actifs basé sur les codes QR. Nous nous engageons à protéger vos données personnelles et à respecter vos droits à la vie privée en vertu du Règlement Général sur la Protection des Données (RGPD) et des autres lois applicables en matière de protection des données.",
       "paragraph2": "Cette Politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations lorsque vous utilisez notre site web et nos services."
     },
     "section2": {
       "title": "2. Responsable du traitement",
       "intro": "Le responsable du traitement de vos données personnelles est :",
-      "companyName": "TraviXO Systems",
-      "address": "[Adresse du siège social à insérer]",
+      "companyName": "Deralis Digital",
       "email": "Email :",
       "phone": "Téléphone :"
     },
@@ -656,15 +651,13 @@
     "section15": {
       "title": "15. Nous contacter",
       "intro": "Si vous avez des questions ou des préoccupations concernant cette Politique de confidentialité ou si vous souhaitez exercer vos droits, contactez-nous :",
-      "companyName": "TraviXO Systems",
+      "companyName": "Deralis Digital",
       "email": "Email :",
       "emailValue": "contact@travixosystems.com",
-      "phone": "Téléphone :",
-      "address": "Adresse :",
-      "addressValue": "[Adresse du siège social à insérer]"
+      "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -672,13 +665,9 @@
   },
   "terms": {
     "title": "Conditions d'utilisation",
-    "effective": "Date d'entrée en vigueur :",
-    "effectiveDate": "[À insérer]",
-    "lastUpdated": "Dernière mise à jour :",
-    "lastUpdatedDate": "[À insérer]",
     "section1": {
       "title": "1. Acceptation des conditions",
-      "paragraph1": "Bienvenue sur TraviXO Systems (« TraviXO », « nous », « notre » ou « nos »). En accédant ou en utilisant notre site web (travixosystems.com) et nos services (collectivement, les « Services »), vous acceptez d'être lié par les présentes Conditions d'utilisation (« Conditions »). Si vous n'acceptez pas ces Conditions, vous ne pouvez pas utiliser les Services.",
+      "paragraph1": "Bienvenue sur TraviXO, exploité par Deralis Digital (« nous », « notre » ou « nos »). En accédant ou en utilisant notre site web (travixosystems.com) et nos services (collectivement, les « Services »), vous acceptez d'être lié par les présentes Conditions d'utilisation (« Conditions »). Si vous n'acceptez pas ces Conditions, vous ne pouvez pas utiliser les Services.",
       "paragraph2": "Ces Conditions s'appliquent à tous les utilisateurs, y compris les visiteurs, les clients et toute personne qui accède aux Services."
     },
     "section2": {
@@ -890,15 +879,13 @@
     "section20": {
       "title": "20. Coordonnées",
       "intro": "Si vous avez des questions concernant ces Conditions, contactez-nous :",
-      "companyName": "TraviXO Systems",
+      "companyName": "Deralis Digital",
       "email": "Email :",
       "emailValue": "contact@travixosystems.com",
-      "phone": "Téléphone :",
-      "address": "Adresse :",
-      "addressValue": "[Adresse du siège social à insérer]"
+      "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -908,10 +895,9 @@
     "title": "Mentions légales",
     "section1": {
       "title": "1. Éditeur du site",
-      "companyName": "TraviXO Systems",
+      "companyName": "Deralis Digital",
       "legalForm": "Forme juridique : [SAS / SARL — à insérer lors de l'immatriculation]",
       "capital": "Capital social : [À insérer lors de l'immatriculation]",
-      "registeredAddress": "Siège social : Paris, France — [Adresse complète à insérer]",
       "registration": "Immatriculation : [RCS Paris — Numéro SIREN/SIRET à insérer lors de l'immatriculation]",
       "vatNumber": "Numéro de TVA intracommunautaire : [À insérer lors de l'immatriculation]",
       "director": "Directeur de la publication : [Nom à insérer]",
@@ -924,7 +910,7 @@
     },
     "section3": {
       "title": "3. Propriété intellectuelle",
-      "content": "L'ensemble du contenu de ce site web (textes, images, graphiques, logos, icônes, logiciels, etc.) est la propriété de TraviXO Systems ou de ses concédants de licence et est protégé par les lois françaises et internationales sur la propriété intellectuelle. Toute reproduction, représentation, modification, distribution ou exploitation de toute partie de ce site sans autorisation écrite expresse est strictement interdite et constitue une contrefaçon sanctionnable au titre des Articles L.335-2 et suivants du Code de la propriété intellectuelle."
+      "content": "L'ensemble du contenu de ce site web (textes, images, graphiques, logos, icônes, logiciels, etc.) est la propriété de Deralis Digital ou de ses concédants de licence et est protégé par les lois françaises et internationales sur la propriété intellectuelle. Toute reproduction, représentation, modification, distribution ou exploitation de toute partie de ce site sans autorisation écrite expresse est strictement interdite et constitue une contrefaçon sanctionnable au titre des Articles L.335-2 et suivants du Code de la propriété intellectuelle."
     },
     "section4": {
       "title": "4. Données personnelles",
@@ -936,18 +922,18 @@
     },
     "section6": {
       "title": "6. Limitation de responsabilité",
-      "content": "TraviXO Systems s'efforce de fournir des informations exactes et à jour sur ce site web. Toutefois, nous ne pouvons garantir l'exactitude, l'exhaustivité ou l'actualité des informations fournies. TraviXO Systems ne saurait être tenu responsable de tout dommage direct ou indirect résultant de l'accès ou de l'utilisation de ce site web, y compris toute perte de données, dommage aux équipements ou transmission de virus."
+      "content": "Deralis Digital s'efforce de fournir des informations exactes et à jour sur ce site web. Toutefois, nous ne pouvons garantir l'exactitude, l'exhaustivité ou l'actualité des informations fournies. Deralis Digital ne saurait être tenu responsable de tout dommage direct ou indirect résultant de l'accès ou de l'utilisation de ce site web, y compris toute perte de données, dommage aux équipements ou transmission de virus."
     },
     "section7": {
       "title": "7. Liens hypertextes",
-      "content": "Ce site web peut contenir des liens hypertextes vers des sites web tiers. TraviXO Systems n'exerce aucun contrôle sur le contenu de ces sites externes et n'accepte aucune responsabilité les concernant. L'inclusion de tout lien n'implique pas l'approbation par TraviXO Systems."
+      "content": "Ce site web peut contenir des liens hypertextes vers des sites web tiers. Deralis Digital n'exerce aucun contrôle sur le contenu de ces sites externes et n'accepte aucune responsabilité les concernant. L'inclusion de tout lien n'implique pas l'approbation par Deralis Digital."
     },
     "section8": {
       "title": "8. Droit applicable",
       "content": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation de ce site web sera soumis à la compétence exclusive des tribunaux de Paris, France."
     },
     "footer": {
-      "copyright": "© 2025 TraviXO Systems. Tous droits réservés.",
+      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"

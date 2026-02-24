@@ -65,8 +65,6 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
                 <br />
                 {t('section1.capital')}
                 <br />
-                {t('section1.registeredAddress')}
-                <br />
                 {t('section1.registration')}
                 <br />
                 {t('section1.vatNumber')}
