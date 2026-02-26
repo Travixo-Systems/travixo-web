@@ -126,12 +126,12 @@
       "secondary": "Planifier une démo",
       "badges": [
         "Aucune carte bancaire requise",
-        "Essai gratuit de 2 mois",
+        "Essai gratuit de 30 jours",
         "Hébergement UE (RGPD)",
         "Résiliation à tout moment"
       ],
       "footer": {
-        "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+        "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
         "email": "contact@travixosystems.com",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
@@ -192,7 +192,7 @@
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -311,14 +311,14 @@
     },
     "enterprise": {
       "title": "Développement personnalisé (Enterprise)",
-      "subtitle": "Fonctionnalités développées pendant l'implémentation pour les clients Enterprise",
-      "note": "Les fonctionnalités Enterprise sont développées pendant l'implémentation selon vos besoins",
+      "subtitle": "Service d'intégration et de développement sur mesure pour les clients Enterprise",
+      "note": "Inclut un service d'intégration et de développement sur mesure selon vos besoins",
       "cta": "Discuter de vos besoins Enterprise",
       "features": {
         "customIntegrations": {
           "title": "Intégrations personnalisées",
           "description": "Connectez TraviXO à vos systèmes ERP, maintenance ou CRM existants.",
-          "examples": "Exemples : ServiceNow, SAP, Oracle, synchronisation bidirectionnelle des données"
+          "examples": "Exemples : SAGE, SAP, Cegid, synchronisation bidirectionnelle des données"
         },
         "whiteLabel": {
           "title": "Marque blanche",
@@ -390,7 +390,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -406,21 +406,53 @@
       "or": "ou"
     },
     "comparison": {
-      "title": "Pourquoi TraviXO ?"
+      "title": "Pourquoi TraviXO ?",
+      "scrollHint": "Faites défiler pour voir toutes les colonnes",
+      "headers": {
+        "feature": "Fonctionnalité",
+        "traditional": "Excel & méthodes manuelles",
+        "whyItMatters": "Pourquoi c'est important"
+      },
+      "rows": {
+        "vgp": {
+          "label": "Conformité VGP",
+          "traditional": "Suivi manuel, risque d'amendes €15K+",
+          "travixo": "Automatisé, zéro risque de non-conformité",
+          "whyItMatters": "Obligatoire pour location d'équipement en France"
+        },
+        "setup": {
+          "label": "Délai avant utilisation",
+          "traditional": "2-4 semaines de saisie",
+          "travixo": "15 minutes avec import Excel",
+          "whyItMatters": "Économisez 2 à 4 semaines de saisie"
+        },
+        "excel": {
+          "label": "Reprise de vos données",
+          "traditional": "Non supporté",
+          "travixo": "500 actifs en 5 minutes",
+          "whyItMatters": "Éliminez 40+ heures de saisie manuelle"
+        },
+        "qr": {
+          "label": "Génération QR",
+          "traditional": "Manuel, un par un",
+          "travixo": "En masse: 500 codes en 30 secondes",
+          "whyItMatters": "Vos équipements sont identifiés dès le premier jour"
+        }
+      }
     },
     "plans": {
       "popular": "Le plus populaire",
       "vgpIncluded": "VGP inclus",
       "starter": {
         "name": "Starter",
-        "subtitle": "Suivi basique pour petits parcs",
+        "subtitle": "Organisez votre parc avant d'activer la conformité VGP",
         "features": {
           "assets": "Jusqu'à 100 équipements",
           "excel": "Importez n'importe quel fichier",
           "qr": "Génération QR en masse",
           "scan": "Scannez avec n'importe quel téléphone",
           "support": "Support par email",
-          "noVgp": "Conformité VGP non incluse"
+          "noVgp": "Conformité VGP disponible en passant au plan Professional"
         }
       },
       "professional": {
@@ -431,8 +463,8 @@
           "assets": "Jusqu'à 500 équipements",
           "starter": "Tout ce qui est dans Starter, plus :",
           "multiSite": "Support multi-sites",
-          "audit": "Module d'audit numérique",
-          "integration": "Intégration Zapier",
+          "audit": "Rapports d'inspection prêts pour le contrôle DIRECCTE",
+          "integration": "Export comptable automatique",
           "support": "Support prioritaire",
           "teamManagement": "Gestion d'équipe",
           "emailAlerts": "Alertes email"
@@ -445,7 +477,7 @@
           "assets": "Jusqu'à 2 000 équipements",
           "professional": "Tout ce qui est dans Professional +",
           "vgpPriority": "VGP + support de conformité prioritaire",
-          "integrations": "ServiceNow + QuickBooks",
+          "integrations": "Export comptable SAGE & EBP",
           "manager": "Gestionnaire de compte dédié",
           "sla": "SLA de 24h garanti",
           "advancedReporting": "Rapports avancés",
@@ -457,16 +489,25 @@
         "price": "Personnalisé",
         "annual": "",
         "subtitle": "Pour grands parcs avec conformité complète",
-        "note": "Fonctionnalités développées pendant l'implémentation",
+        "note": "Inclut un service d'intégration et de développement sur mesure",
         "features": {
           "unlimited": "Équipements illimités",
           "vgpDedicated": "VGP + équipe de conformité dédiée",
           "support": "Support 24h/24, 7j/7",
-          "customIntegrations": "Intégrations personnalisées (ServiceNow, SAP)",
+          "customIntegrations": "Intégrations personnalisées (SAGE, SAP, Cegid)",
           "whiteLabel": "Marque blanche",
           "onPremise": "Déploiement sur site",
           "sla": "SLA 99,9 % +"
         }
+      },
+      "extensions": {
+        "title": "Extensions Disponibles ▼",
+        "starterAssets": "Pack Actifs Supplémentaires (+€100/mois)",
+        "predictive": "Maintenance Prédictive (+€300/mois)",
+        "erp": "Intégration ERP (+€2 500 setup)",
+        "sla": "SLA Support 24h (+€400/mois)",
+        "advancedAnalytics": "Analyse Prédictive Avancée (+€300/mois)",
+        "multiErp": "Intégrations ERP Multiples (sur devis)"
       }
     },
     "status": {
@@ -506,11 +547,11 @@
     },
     "finalCta": {
       "title": "Prêt à automatiser votre conformité ?",
-      "subtitle": "Rejoignez les entreprises françaises qui respectent les exigences VGP",
+      "subtitle": "Ne laissez pas la prochaine inspection vous coûter 15 000 €. Testez gratuitement pendant 30 jours.",
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
       "privacy": "Confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -657,7 +698,7 @@
       "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -885,7 +926,7 @@
       "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -896,11 +937,11 @@
     "section1": {
       "title": "1. Éditeur du site",
       "companyName": "Deralis Digital",
-      "legalForm": "Forme juridique : [SAS / SARL — à insérer lors de l'immatriculation]",
-      "capital": "Capital social : [À insérer lors de l'immatriculation]",
-      "registration": "Immatriculation : [RCS Paris — Numéro SIREN/SIRET à insérer lors de l'immatriculation]",
-      "vatNumber": "Numéro de TVA intracommunautaire : [À insérer lors de l'immatriculation]",
-      "director": "Directeur de la publication : [Nom à insérer]",
+      "legalForm": "Forme juridique : Entrepreneur individuel",
+      "registration": "SIREN : 852 525 963 | SIRET : 852 525 963 00025",
+      "ape": "Code APE : 6201Z - Programmation informatique",
+      "address": "Adresse : 57 rue Léo Lagrange, 93130 Noisy-le-Sec, France",
+      "director": "Directeur de la publication : Uwa Chidera UGBOAJA",
       "email": "Email : contact@travixosystems.com",
       "phone": "Téléphone : +33 78 335 75 35"
     },
@@ -933,7 +974,7 @@
       "content": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation de ce site web sera soumis à la compétence exclusive des tribunaux de Paris, France."
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
