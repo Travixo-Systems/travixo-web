@@ -126,12 +126,12 @@
       "secondary": "Schedule a Demo",
       "badges": [
         "No credit card required",
-        "2-month free trial",
+        "30-day free trial",
         "EU-hosted (GDPR)",
         "Cancel anytime"
       ],
       "footer": {
-        "copyright": "© 2025 Deralis Digital. All rights reserved.",
+        "copyright": "© 2026 Deralis Digital. All rights reserved.",
         "email": "contact@travixosystems.com",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
@@ -192,7 +192,7 @@
       "button": "Start Your Free Pilot"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 Deralis Digital. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
@@ -311,14 +311,14 @@
     },
     "enterprise": {
       "title": "Custom Development (Enterprise)",
-      "subtitle": "Features built during implementation for Enterprise customers",
-      "note": "Enterprise features are developed during implementation based on your needs",
+      "subtitle": "Custom integration and development service for Enterprise customers",
+      "note": "Includes custom integration and development service tailored to your needs",
       "cta": "Discuss Enterprise Needs",
       "features": {
         "customIntegrations": {
           "title": "Custom Integrations",
           "description": "Connect TraviXO to your existing ERP, maintenance, or CRM systems.",
-          "examples": "Examples: ServiceNow, SAP, Oracle, two-way data sync"
+          "examples": "Examples: SAGE, SAP, Cegid, two-way data sync"
         },
         "whiteLabel": {
           "title": "White-Label Branding",
@@ -390,7 +390,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 Deralis Digital. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
@@ -406,21 +406,53 @@
       "or": "or"
     },
     "comparison": {
-      "title": "Why TraviXO?"
+      "title": "Why TraviXO?",
+      "scrollHint": "Scroll to see all columns",
+      "headers": {
+        "feature": "Feature",
+        "traditional": "Excel & manual methods",
+        "whyItMatters": "Why It Matters"
+      },
+      "rows": {
+        "vgp": {
+          "label": "VGP Compliance",
+          "traditional": "Manual tracking, €15K+ fine risk",
+          "travixo": "Fully automated, zero compliance risk",
+          "whyItMatters": "Mandatory for French equipment rental"
+        },
+        "setup": {
+          "label": "Time to get started",
+          "traditional": "2-4 weeks of data entry",
+          "travixo": "15 minutes with Excel import",
+          "whyItMatters": "Save 2-4 weeks of data entry"
+        },
+        "excel": {
+          "label": "Migrating your data",
+          "traditional": "Not supported",
+          "travixo": "500 assets in 5 minutes",
+          "whyItMatters": "Eliminate 40+ hours of manual entry"
+        },
+        "qr": {
+          "label": "QR Generation",
+          "traditional": "Manual, one at a time",
+          "travixo": "Bulk: 500 codes in 30 seconds",
+          "whyItMatters": "Your equipment is tagged from day one"
+        }
+      }
     },
     "plans": {
       "popular": "Most Popular",
       "vgpIncluded": "VGP Included",
       "starter": {
         "name": "Starter",
-        "subtitle": "Basic tracking for small fleets",
+        "subtitle": "Organize your fleet before activating VGP compliance",
         "features": {
           "assets": "Up to 100 assets",
           "excel": "Upload any spreadsheet",
           "qr": "Bulk QR generation",
           "scan": "Scan with any phone",
           "support": "Email support",
-          "noVgp": "VGP compliance not included"
+          "noVgp": "VGP compliance available by upgrading to Professional"
         }
       },
       "professional": {
@@ -431,8 +463,8 @@
           "assets": "Up to 500 assets",
           "starter": "Everything in Starter, plus:",
           "multiSite": "Multi-location support",
-          "audit": "Digital audit module",
-          "integration": "Zapier integration",
+          "audit": "Inspection reports ready for DIRECCTE audit",
+          "integration": "Automatic accounting export",
           "support": "Priority support",
           "teamManagement": "Team management",
           "emailAlerts": "Email alerts"
@@ -445,7 +477,7 @@
           "assets": "Up to 2,000 assets",
           "professional": "Everything in Professional +",
           "vgpPriority": "VGP + priority compliance support",
-          "integrations": "ServiceNow + QuickBooks",
+          "integrations": "SAGE & EBP accounting export",
           "manager": "Dedicated account manager",
           "sla": "24h SLA guaranteed",
           "advancedReporting": "Advanced reporting",
@@ -457,16 +489,25 @@
         "price": "Custom",
         "annual": "",
         "subtitle": "For large fleets with full compliance",
-        "note": "Features developed during implementation",
+        "note": "Includes custom integration and development service",
         "features": {
           "unlimited": "Unlimited assets",
           "vgpDedicated": "VGP + dedicated compliance team",
           "support": "24/7 support",
-          "customIntegrations": "Custom integrations (ServiceNow, SAP)",
+          "customIntegrations": "Custom integrations (SAGE, SAP, Cegid)",
           "whiteLabel": "White-label branding",
           "onPremise": "On-premise deployment",
           "sla": "SLA 99.9%+"
         }
+      },
+      "extensions": {
+        "title": "Available Extensions ▼",
+        "starterAssets": "Extra Assets Pack (+€100/mo)",
+        "predictive": "Predictive Maintenance (+€300/mo)",
+        "erp": "ERP Integration (+€2,500 setup)",
+        "sla": "24h Support SLA (+€400/mo)",
+        "advancedAnalytics": "Advanced Predictive Analytics (+€300/mo)",
+        "multiErp": "Multiple ERP Integrations (custom quote)"
       }
     },
     "status": {
@@ -506,11 +547,11 @@
     },
     "finalCta": {
       "title": "Ready to Automate Your Compliance?",
-      "subtitle": "Join French companies that are meeting VGP compliance requirements",
+      "subtitle": "Don't let the next inspection cost you €15,000. Try free for 30 days.",
       "button": "Start Free Trial"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 Deralis Digital. All rights reserved.",
       "privacy": "Privacy",
       "terms": "Terms of Service"
     }
@@ -657,7 +698,7 @@
       "phone": "Phone:"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 Deralis Digital. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
@@ -885,7 +926,7 @@
       "phone": "Phone:"
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 Deralis Digital. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
@@ -896,11 +937,11 @@
     "section1": {
       "title": "1. Site Publisher",
       "companyName": "Deralis Digital",
-      "legalForm": "Legal form: [SAS / SARL — to be inserted upon registration]",
-      "capital": "Share capital: [To be inserted upon registration]",
-      "registration": "Registration: [RCS Paris — SIREN/SIRET number to be inserted upon registration]",
-      "vatNumber": "Intra-community VAT number: [To be inserted upon registration]",
-      "director": "Publication director (Directeur de la publication): [Name to be inserted]",
+      "legalForm": "Legal form: Sole proprietorship (Entrepreneur individuel)",
+      "registration": "SIREN: 852 525 963 | SIRET: 852 525 963 00025",
+      "ape": "APE Code: 6201Z - Computer programming",
+      "address": "Address: 57 rue Léo Lagrange, 93130 Noisy-le-Sec, France",
+      "director": "Publication director (Directeur de la publication): Uwa Chidera UGBOAJA",
       "email": "Email: contact@travixosystems.com",
       "phone": "Phone: +33 78 335 75 35"
     },
@@ -933,7 +974,7 @@
       "content": "These legal notices are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
     },
     "footer": {
-      "copyright": "© 2025 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 Deralis Digital. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"

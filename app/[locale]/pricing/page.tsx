@@ -38,7 +38,7 @@ export default async function PricingPage(props: Props) {
           </p>
         </section>
 
-        {/* Comparison Table Section - REMOVED 2 ROWS */}
+        {/* Comparison Table Section */}
         <section className="bg-gray-50 py-6">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-4">
@@ -54,16 +54,16 @@ export default async function PricingPage(props: Props) {
                   <thead className="bg-gray-50 border-b-2 border-gray-200">
                     <tr>
                       <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
-                        {locale === 'fr' ? 'Fonctionnalité' : 'Feature'}
+                        {t('comparison.headers.feature')}
                       </th>
                       <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[25%]">
-                        {locale === 'fr' ? 'Outils Traditionnels' : 'Traditional Tools'}
+                        {t('comparison.headers.traditional')}
                       </th>
                       <th className="px-6 py-4 text-left text-sm font-bold text-orange-600 w-[25%]">
                         TraviXO
                       </th>
                       <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[30%]">
-                        {locale === 'fr' ? 'Pourquoi c\'est important' : 'Why It Matters'}
+                        {t('comparison.headers.whyItMatters')}
                       </th>
                     </tr>
                   </thead>
@@ -71,77 +71,77 @@ export default async function PricingPage(props: Props) {
                     {/* VGP Compliance Row */}
                     <tr className="hover:bg-gray-50 transition-colors bg-orange-50">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {locale === 'fr' ? 'Conformité VGP' : 'VGP Compliance'}
+                        {t('comparison.rows.vgp.label')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-600">
                         <span className="text-red-600 font-bold mr-2">✗</span>
-                        {locale === 'fr' ? 'Suivi manuel, risque d\'amendes €15K+' : 'Manual tracking, €15K+ fine risk'}
+                        {t('comparison.rows.vgp.traditional')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
                         <span className="text-green-600 font-bold mr-2">✓</span>
-                        {locale === 'fr' ? 'Automatisé, zéro risque de non-conformité' : 'Fully automated, zero compliance risk'}
+                        {t('comparison.rows.vgp.travixo')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {locale === 'fr' ? 'Obligatoire pour location d\'équipement en France' : 'Mandatory for French equipment rental'}
+                        {t('comparison.rows.vgp.whyItMatters')}
                       </td>
                     </tr>
 
                     {/* Setup Time Row */}
                     <tr className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {locale === 'fr' ? 'Temps de Configuration' : 'Setup Time'}
+                        {t('comparison.rows.setup.label')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-600">
                         <span className="text-red-600 font-bold mr-2">✗</span>
-                        {locale === 'fr' ? '2-4 semaines de saisie' : '2-4 weeks of data entry'}
+                        {t('comparison.rows.setup.traditional')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
                         <span className="text-green-600 font-bold mr-2">✓</span>
-                        {locale === 'fr' ? '15 minutes avec import Excel' : '15 minutes with Excel import'}
+                        {t('comparison.rows.setup.travixo')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {locale === 'fr' ? 'Commencez à suivre immédiatement' : 'Start tracking immediately'}
+                        {t('comparison.rows.setup.whyItMatters')}
                       </td>
                     </tr>
 
-                    {/* Excel Import Row */}
+                    {/* Data Migration Row */}
                     <tr className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {locale === 'fr' ? 'Import Excel' : 'Excel Import'}
+                        {t('comparison.rows.excel.label')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-600">
                         <span className="text-red-600 font-bold mr-2">✗</span>
-                        {locale === 'fr' ? 'Non supporté' : 'Not supported'}
+                        {t('comparison.rows.excel.traditional')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
                         <span className="text-green-600 font-bold mr-2">✓</span>
-                        {locale === 'fr' ? '500 actifs en 5 minutes' : '500 assets in 5 minutes'}
+                        {t('comparison.rows.excel.travixo')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {locale === 'fr' ? 'Éliminez 40+ heures de saisie manuelle' : 'Eliminate 40+ hours of manual entry'}
+                        {t('comparison.rows.excel.whyItMatters')}
                       </td>
                     </tr>
 
                     {/* QR Generation Row */}
                     <tr className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {locale === 'fr' ? 'Génération QR' : 'QR Generation'}
+                        {t('comparison.rows.qr.label')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-600">
                         <span className="text-red-600 font-bold mr-2">✗</span>
-                        {locale === 'fr' ? 'Manuel, un par un' : 'Manual, one at a time'}
+                        {t('comparison.rows.qr.traditional')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
                         <span className="text-green-600 font-bold mr-2">✓</span>
-                        {locale === 'fr' ? 'En masse: 500 codes en 30 secondes' : 'Bulk: 500 codes in 30 seconds'}
+                        {t('comparison.rows.qr.travixo')}
                       </td>
                       <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {locale === 'fr' ? 'Imprimez les étiquettes le jour même' : 'Print labels same day'}
+                        {t('comparison.rows.qr.whyItMatters')}
                       </td>
                     </tr>
 
-                    {/* REMOVED: Learning Curve Row */}
-                    {/* REMOVED: Mobile App Row */}
+
+
                   </tbody>
                 </table>
               </div>
@@ -149,7 +149,7 @@ export default async function PricingPage(props: Props) {
 
             {/* Mobile scroll hint */}
             <p className="text-center text-sm text-gray-500 mt-4 md:hidden">
-              ← {locale === 'fr' ? 'Faites défiler pour voir toutes les colonnes' : 'Scroll to see all columns'} →
+              ← {t('comparison.scrollHint')} →
             </p>
           </div>
         </section>
@@ -197,18 +197,18 @@ export default async function PricingPage(props: Props) {
                   <span className="text-sm">{t('plans.starter.features.support')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-600 mr-2 flex-shrink-0">✗</span>
-                  <span className="text-sm text-gray-500">{t('plans.starter.features.noVgp')}</span>
+                  <span className="text-orange-500 mr-2 flex-shrink-0">→</span>
+                  <span className="text-sm text-orange-700">{t('plans.starter.features.noVgp')}</span>
                 </li>
               </ul>
 
               {/* Available Extensions - Collapsible */}
               <details className="mb-6 text-sm">
                 <summary className="cursor-pointer text-gray-600 hover:text-gray-800">
-                  {locale === 'fr' ? 'Extensions Disponibles ▼' : 'Available Extensions ▼'}
+                  {t('plans.extensions.title')}
                 </summary>
                 <ul className="mt-2 pl-4 space-y-1 text-gray-700">
-                  <li>• {locale === 'fr' ? 'Pack Actifs Supplémentaires (+€100/mois)' : 'Extra Assets Pack (+€100/mo)'}</li>
+                  <li>• {t('plans.extensions.starterAssets')}</li>
                 </ul>
               </details>
               <Link
@@ -273,16 +273,6 @@ export default async function PricingPage(props: Props) {
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.support')}</span>
                 </li>
-                {/* Roadmap Features */}
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2 flex-shrink-0">•</span>
-                  <div className="text-sm">
-                    {t('plans.professional.features.teamManagement')}
-                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
-                      {t('status.comingQ1')}
-                    </span>
-                  </div>
-                </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.emailAlerts')}</span>
@@ -292,12 +282,12 @@ export default async function PricingPage(props: Props) {
               {/* Available Extensions - Collapsible */}
               <details className="mb-6 text-sm">
                 <summary className="cursor-pointer text-gray-600 hover:text-gray-800">
-                  {locale === 'fr' ? 'Extensions Disponibles ▼' : 'Available Extensions ▼'}
+                  {t('plans.extensions.title')}
                 </summary>
                 <ul className="mt-2 pl-4 space-y-1 text-gray-700">
-                  <li>• {locale === 'fr' ? 'Maintenance Prédictive (+€300/mois)' : 'Predictive Maintenance (+€300/mo)'}</li>
-                  <li>• {locale === 'fr' ? 'Intégration ERP (+€2 500 setup)' : 'ERP Integration (+€2,500 setup)'}</li>
-                  <li>• {locale === 'fr' ? 'SLA Support 24h (+€400/mois)' : '24h Support SLA (+€400/mo)'}</li>
+                  <li>• {t('plans.extensions.predictive')}</li>
+                  <li>• {t('plans.extensions.erp')}</li>
+                  <li>• {t('plans.extensions.sla')}</li>
                 </ul>
               </details>
               <Link
@@ -354,26 +344,18 @@ export default async function PricingPage(props: Props) {
                   <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.advancedReporting')}</span>
                 </li>
-                {/* Roadmap Features */}
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2 flex-shrink-0">•</span>
-                  <div className="text-sm">
-                    {t('plans.business.features.apiAccess')}
-                    <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
-                      {t('status.comingQ2')}
-                    </span>
-                  </div>
-                </li>
+
+
               </ul>
 
               {/* Available Extensions - Collapsible */}
               <details className="mb-6 text-sm">
                 <summary className="cursor-pointer text-gray-600 hover:text-gray-800">
-                  {locale === 'fr' ? 'Extensions Disponibles ▼' : 'Available Extensions ▼'}
+                  {t('plans.extensions.title')}
                 </summary>
                 <ul className="mt-2 pl-4 space-y-1 text-gray-700">
-                  <li>• {locale === 'fr' ? 'Analyse Prédictive Avancée (+€300/mois)' : 'Advanced Predictive Analytics (+€300/mo)'}</li>
-                  <li>• {locale === 'fr' ? 'Intégrations ERP Multiples (sur devis)' : 'Multiple ERP Integrations (custom quote)'}</li>
+                  <li>• {t('plans.extensions.advancedAnalytics')}</li>
+                  <li>• {t('plans.extensions.multiErp')}</li>
                 </ul>
               </details>
               <Link
