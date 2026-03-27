@@ -51,7 +51,7 @@
   "homepage": {
     "hero": {
       "title": "Equipment Keeps Disappearing. Inspections Get Missed. Fines Pile Up.",
-      "subtitle": "Upload your spreadsheet as-is. Print tracking codes. Know where every piece of equipment is. Built for French equipment rental companies.",
+      "subtitle": "Upload your spreadsheet as-is. Print tracking codes. Know who has it, when it was last seen, and whether it's ready to rent. Built for French equipment rental companies.",
       "ctaPrimary": "Start Free Pilot",
       "ctaSecondary": "See How It Works"
     },
@@ -260,7 +260,7 @@
             "Works in any phone browser",
             "Camera-based scanning",
             "Works offline, syncs when connected",
-            "Captures GPS location"
+            "Last scan context: operator, notes, and equipment condition"
           ]
         },
         "direccte": {
@@ -275,7 +275,7 @@
         },
         "dashboard": {
           "title": "Dashboard",
-          "description": "Know where every asset is, who has it, and when it was last verified. Filter by status, location, category, or custom fields.",
+          "description": "Know who has it, when it was last seen, and whether it's ready to rent. Filter by status, location, category, or custom fields.",
           "items": [
             "See equipment status at a glance",
             "Track usage rates by category",

@@ -51,7 +51,7 @@
   "homepage": {
     "hero": {
       "title": "Les équipements disparaissent. Les inspections sont manquées. Les amendes s'accumulent vite.",
-      "subtitle": "Importez votre fichier Excel tel quel. Imprimez les codes de suivi. Sachez où se trouve chaque équipement. Conçu pour les sociétés de location d'équipement françaises.",
+      "subtitle": "Importez votre fichier Excel tel quel. Imprimez les codes de suivi. Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer. Conçu pour les sociétés de location d'équipement françaises.",
       "ctaPrimary": "Démarrer l'essai gratuit",
       "ctaSecondary": "Voir comment ça fonctionne"
     },
@@ -260,7 +260,7 @@
             "Fonctionne dans n'importe quel navigateur mobile",
             "Scan par caméra",
             "Fonctionne hors ligne, synchronise quand connecté",
-            "Capture la position GPS"
+            "Contexte du dernier scan : opérateur, notes et état du matériel"
           ]
         },
         "direccte": {
@@ -275,7 +275,7 @@
         },
         "dashboard": {
           "title": "Tableau de bord",
-          "description": "Sachez où se trouve chaque équipement, qui l'a, et quand il a été vérifié la dernière fois. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
+          "description": "Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
           "items": [
             "Voyez le statut des équipements d'un coup d'œil",
             "Suivez les taux d'utilisation par catégorie",

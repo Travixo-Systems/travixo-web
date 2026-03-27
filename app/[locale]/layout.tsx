@@ -47,7 +47,7 @@ export async function generateMetadata(props: {
       template: `%s | ${title}`,
     },
     description: description,
-    keywords: ['TraviXO', 'VGP', 'Vehicle Guard Pro', 'fleet management', 'GPS tracking', 'vehicle tracking', 'telematics'],
+    keywords: ['TraviXO', 'VGP', 'suivi équipement', 'equipment tracking', 'QR tracking', 'fleet management', 'conformité VGP', 'DREETS', 'location matériel', 'equipment rental'],
     authors: [{ name: 'TraviXO' }],
     creator: 'TraviXO',
     publisher: 'TraviXO',
@@ -122,7 +122,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     "alternateName": "TraviXO",
     "url": "https://travixosystems.com",
     "logo": "https://travixosystems.com/icon.png",
-    "description": "Advanced GPS fleet management and vehicle tracking solutions with TraviXO Vehicle Guard Pro (VGP)",
+    "description": "QR-based equipment tracking and VGP compliance automation for French equipment rental companies",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "FR",
@@ -145,7 +145,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     "@type": "WebSite",
     "name": "TraviXO",
     "url": `https://travixosystems.com/${locale}`,
-    "description": "Advanced GPS fleet management and vehicle tracking solutions",
+    "description": "QR-based equipment tracking and VGP compliance automation for rental companies",
     "inLanguage": locale,
     "publisher": {
       "@type": "Organization",
