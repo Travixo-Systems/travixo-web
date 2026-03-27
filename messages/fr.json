@@ -2,7 +2,7 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stoppez les pertes d'équipement et les amendes de conformité VGP",
-      "description": "Suivez votre matériel de location avec des codes QR. Réduisez les pertes d'équipement et gardez le contrôle de votre conformité VGP. Importez votre fichier Excel, imprimez les codes et commencez le suivi en quelques heures."
+      "description": "Traçabilité QR et conformité VGP automatisée pour les loueurs d'engins en France. Onboarding en 4 heures. Alertes quotidiennes. Rapports d'inspection prêts à l'emploi."
     },
     "about": {
       "title": "À propos de TraviXO - Conçu par des vétérans de la location d'équipement",
@@ -50,8 +50,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "Les équipements disparaissent. Les inspections sont manquées. Les amendes s'accumulent vite.",
-      "subtitle": "Importez votre fichier Excel tel quel. Imprimez les codes de suivi. Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer. Conçu pour les sociétés de location d'équipement françaises.",
+      "title": "Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer.",
+      "subtitle": "TraviXO donne aux loueurs d'engins français une traçabilité horodatée pour chaque machine, du départ client au retour, avec des alertes VGP automatisées pour que votre parc soit toujours documenté et prêt pour un contrôle.",
       "ctaPrimary": "Démarrer l'essai gratuit",
       "ctaSecondary": "Voir comment ça fonctionne"
     },
@@ -181,7 +181,7 @@
         "Résiliation à tout moment"
       ],
       "footer": {
-        "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+        "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
         "email": "contact@travixosystems.com",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
@@ -242,7 +242,7 @@
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -309,7 +309,7 @@
           "items": [
             "Fonctionne dans n'importe quel navigateur mobile",
             "Scan par caméra",
-            "Fonctionne hors ligne, synchronise quand connecté",
+            "Fonctionne sur tout smartphone, sans installation d'application",
             "Contexte du dernier scan : opérateur, notes et état du matériel"
           ]
         },
@@ -440,7 +440,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -601,7 +601,7 @@
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -748,7 +748,7 @@
       "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -976,7 +976,7 @@
       "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -1024,7 +1024,7 @@
       "content": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation de ce site web sera soumis à la compétence exclusive des tribunaux de Paris, France."
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"

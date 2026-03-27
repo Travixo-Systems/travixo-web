@@ -2,7 +2,7 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stop Equipment Loss & VGP Compliance Fines",
-      "description": "Track rental equipment with QR codes. Prevent equipment loss and stay on top of VGP compliance. Upload spreadsheet, print codes, start tracking in hours."
+      "description": "QR traceability and automated VGP compliance for equipment rental companies in France. Onboarding in 4 hours. Daily alerts. Inspection-ready reports."
     },
     "about": {
       "title": "About TraviXO - Built by Equipment Rental Veterans",
@@ -50,8 +50,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "Equipment Keeps Disappearing. Inspections Get Missed. Fines Pile Up.",
-      "subtitle": "Upload your spreadsheet as-is. Print tracking codes. Know who has it, when it was last seen, and whether it's ready to rent. Built for French equipment rental companies.",
+      "title": "Know who has it, when it was last seen, and whether it's ready to rent.",
+      "subtitle": "TraviXO gives French equipment rental companies a timestamped chain-of-custody for every asset — from checkout to return — plus automated VGP compliance alerts, so your fleet is always documented and inspection-ready.",
       "ctaPrimary": "Start Free Pilot",
       "ctaSecondary": "See How It Works"
     },
@@ -181,7 +181,7 @@
         "Cancel anytime"
       ],
       "footer": {
-        "copyright": "© 2026 Deralis Digital. All rights reserved.",
+        "copyright": "© 2026 TraviXO Systems. All rights reserved.",
         "email": "contact@travixosystems.com",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
@@ -242,7 +242,7 @@
       "button": "Start Your Free Pilot"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
@@ -309,7 +309,7 @@
           "items": [
             "Works in any phone browser",
             "Camera-based scanning",
-            "Works offline, syncs when connected",
+            "Works on any smartphone, no app install required",
             "Last scan context: operator, notes, and equipment condition"
           ]
         },
@@ -440,7 +440,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
@@ -601,7 +601,7 @@
       "button": "Start Free Trial"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy",
       "terms": "Terms of Service"
     }
@@ -748,7 +748,7 @@
       "phone": "Phone:"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
@@ -976,7 +976,7 @@
       "phone": "Phone:"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
@@ -1024,7 +1024,7 @@
       "content": "These legal notices are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
