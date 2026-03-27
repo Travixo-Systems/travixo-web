@@ -2,11 +2,11 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stop Equipment Loss & VGP Compliance Fines",
-      "description": "Track rental equipment with QR codes. Prevent equipment loss and avoid VGP compliance fines. Upload spreadsheet, print codes, start tracking in hours."
+      "description": "Track rental equipment with QR codes. Prevent equipment loss and stay on top of VGP compliance. Upload spreadsheet, print codes, start tracking in hours."
     },
     "about": {
       "title": "About TraviXO - Built by Equipment Rental Veterans",
-      "description": "Learn how TraviXO helps equipment rental companies stop losing equipment and avoid compliance fines through simple QR tracking."
+      "description": "Learn how TraviXO helps equipment rental companies stop losing equipment and stay compliant through simple QR tracking."
     },
     "contact": {
       "title": "Contact TraviXO - Start Your Free Pilot",
@@ -88,7 +88,7 @@
           },
           "3": {
             "title": "VGP Compliance Nightmares",
-            "text": "One missed inspection = €15K+ labor inspection (DREETS) fine. Managing inspection schedules in spreadsheets means missed deadlines."
+            "text": "Missed inspections can lead to penalties under periodic compliance obligations (Code du travail, Art. L4741-1). Managing inspection schedules in spreadsheets means missed deadlines."
           },
           "4": {
             "title": "40+ Hours of Setup Time",
@@ -113,8 +113,8 @@
             "text": "No app needed. Workers scan with any smartphone. See location, status, and history instantly."
           },
           "4": {
-            "title": "Avoid Compliance Fines",
-            "text": "Automatic VGP reminders help prevent €15K+ fines. Never miss an inspection deadline."
+            "title": "Stay Compliant",
+            "text": "Automatic VGP reminders help you stay compliant. Never miss an inspection deadline."
           }
         }
       }
@@ -235,7 +235,7 @@
         },
         "vgp": {
           "title": "VGP Compliance Automation",
-          "description": "Avoid labor inspection (DREETS) fines with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
+          "description": "Stay on top of compliance with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
           "items": [
             "Automatic inspection scheduling",
             "Email reminders (30/7 days before due)",
@@ -398,7 +398,7 @@
   "pricing": {
     "hero": {
       "title": "Automate Your VGP Compliance",
-      "subtitle": "Avoid €15K-€75K labor inspection (DREETS) fines with automated French regulatory compliance tracking"
+      "subtitle": "Penalties can apply for failure to meet periodic compliance obligations (Code du travail, Art. L4741-1). Automate your French regulatory compliance tracking."
     },
     "billing": {
       "year": "year",
@@ -416,8 +416,8 @@
       "rows": {
         "vgp": {
           "label": "VGP Compliance",
-          "traditional": "Manual tracking, €15K+ fine risk",
-          "travixo": "Fully automated, zero compliance risk",
+          "traditional": "Manual tracking, risk of penalties for non-compliance",
+          "travixo": "Automated reminders, centralised reports, and documents available for inspection",
           "whyItMatters": "Mandatory for French equipment rental"
         },
         "setup": {
@@ -547,7 +547,7 @@
     },
     "finalCta": {
       "title": "Ready to Automate Your Compliance?",
-      "subtitle": "Don't let the next inspection cost you €15,000. Try free for 30 days.",
+      "subtitle": "Don't let the next inspection catch you off guard. Try free for 30 days.",
       "button": "Start Free Trial"
     },
     "footer": {

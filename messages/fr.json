@@ -2,11 +2,11 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stoppez les pertes d'équipement et les amendes de conformité VGP",
-      "description": "Suivez votre matériel de location avec des codes QR. Réduisez les pertes d'équipement et évitez les amendes de conformité VGP. Importez votre fichier Excel, imprimez les codes et commencez le suivi en quelques heures."
+      "description": "Suivez votre matériel de location avec des codes QR. Réduisez les pertes d'équipement et gardez le contrôle de votre conformité VGP. Importez votre fichier Excel, imprimez les codes et commencez le suivi en quelques heures."
     },
     "about": {
       "title": "À propos de TraviXO - Conçu par des vétérans de la location d'équipement",
-      "description": "Découvrez comment TraviXO aide les sociétés de location à arrêter de perdre du matériel et à éviter les amendes de conformité grâce à un suivi simple par QR."
+      "description": "Découvrez comment TraviXO aide les sociétés de location à arrêter de perdre du matériel et à rester conformes grâce à un suivi simple par QR."
     },
     "contact": {
       "title": "Contacter TraviXO - Démarrer un essai gratuit",
@@ -88,7 +88,7 @@
           },
           "3": {
             "title": "Cauchemars de conformité VGP",
-            "text": "Une inspection manquée = plus de 15 000 € d'amende de l'inspection du travail (DREETS). Gérer les plannings d'inspection dans des fichiers Excel signifie des échéances manquées."
+            "text": "Des sanctions peuvent s'appliquer en cas de manquement aux obligations de vérification périodique (Code du travail, Art. L4741-1). Gérer les plannings d'inspection dans des fichiers Excel signifie des échéances manquées."
           },
           "4": {
             "title": "Plus de 40 heures de configuration",
@@ -113,8 +113,8 @@
             "text": "Aucune application nécessaire. Vos équipes scannent avec n'importe quel smartphone. Voyez l'emplacement, le statut et l'historique instantanément."
           },
           "4": {
-            "title": "Évitez les amendes de conformité",
-            "text": "Les rappels VGP automatiques aident à éviter des amendes de plus de 15 000 €. Ne manquez jamais une échéance d'inspection."
+            "title": "Restez conforme",
+            "text": "Les rappels VGP automatiques vous aident à rester conforme. Ne manquez jamais une échéance d'inspection."
           }
         }
       }
@@ -235,7 +235,7 @@
         },
         "vgp": {
           "title": "Automatisation de la conformité VGP",
-          "description": "Évitez les amendes de l'inspection du travail (DREETS) avec un suivi automatique des inspections. Planification, rappels et rapports prêts pour audit.",
+          "description": "Gardez le contrôle de votre conformité avec un suivi automatique des inspections. Planification, rappels et rapports prêts pour audit.",
           "items": [
             "Planification automatique des inspections",
             "Rappels par email (30/7 jours avant échéance)",
@@ -398,7 +398,7 @@
   "pricing": {
     "hero": {
       "title": "Automatisez votre conformité VGP",
-      "subtitle": "Évitez les amendes de l'inspection du travail (DREETS) de 15 000 à 75 000 € avec un suivi automatisé de la conformité réglementaire française"
+      "subtitle": "Des sanctions peuvent s'appliquer en cas de manquement aux obligations de conformité périodique (Code du travail, Art. L4741-1). Automatisez votre suivi de conformité réglementaire."
     },
     "billing": {
       "year": "an",
@@ -416,8 +416,8 @@
       "rows": {
         "vgp": {
           "label": "Conformité VGP",
-          "traditional": "Suivi manuel, risque d'amendes €15K+",
-          "travixo": "Automatisé, zéro risque de non-conformité",
+          "traditional": "Suivi manuel, risque de sanctions en cas de non-conformité",
+          "travixo": "Rappels automatisés, rapports centralisés, documents disponibles pour tout contrôle",
           "whyItMatters": "Obligatoire pour location d'équipement en France"
         },
         "setup": {
@@ -547,7 +547,7 @@
     },
     "finalCta": {
       "title": "Prêt à automatiser votre conformité ?",
-      "subtitle": "Ne laissez pas la prochaine inspection vous coûter 15 000 €. Testez gratuitement pendant 30 jours.",
+      "subtitle": "Ne laissez pas la prochaine inspection vous prendre au dépourvu. Testez gratuitement pendant 30 jours.",
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
