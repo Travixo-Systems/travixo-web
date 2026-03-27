@@ -95,6 +95,91 @@ export default async function Home(props: Props) {
           </div>
         </section>
 
+        {/* VGP Recall */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="text-4xl font-bold mb-6" style={{ color: '#00252b' }}>
+              {t("recall.title")}
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {t("recall.body")}
+            </p>
+            <p className="text-sm font-semibold" style={{ color: '#f26f00' }}>
+              {t("recall.cta")}
+            </p>
+          </div>
+        </section>
+
+        {/* Exceptions Panel */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#00252b' }}>
+              {t("exceptions.title")}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("exceptions.overdueReturn.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("exceptions.overdueReturn.body")}
+                </p>
+              </div>
+              <div className="p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("exceptions.missingAudit.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("exceptions.missingAudit.body")}
+                </p>
+              </div>
+              <div className="p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("exceptions.vgpExpiring.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("exceptions.vgpExpiring.body")}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Use Cases */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#00252b' }}>
+              {t("useCases.title")}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="p-6 border border-gray-200 rounded-lg bg-white">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("useCases.btp.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("useCases.btp.body")}
+                </p>
+              </div>
+              <div className="p-6 border border-gray-200 rounded-lg bg-white">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("useCases.multiDepot.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("useCases.multiDepot.body")}
+                </p>
+              </div>
+              <div className="p-6 border border-gray-200 rounded-lg bg-white">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("useCases.excel.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("useCases.excel.body")}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-6 bg-gray-900 text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">

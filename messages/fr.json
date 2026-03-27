@@ -134,6 +134,41 @@
         "body": "Chaque engin affiche l'historique complet de ses mouvements. Qui l'avait, de quand à quand, dans quel état rendu."
       }
     },
+    "recall": {
+      "title": "Votre matériel expire chez un client ? Vous le savez avant lui.",
+      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel — assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
+      "cta": "Zéro matériel non conforme en circulation par inadvertance."
+    },
+    "exceptions": {
+      "title": "Les exceptions que vous devez voir immédiatement",
+      "overdueReturn": {
+        "title": "Retard de retour non scanné",
+        "body": "Un engin attendu ce soir n'est pas revenu. TraviXO vous alerte le lendemain matin si aucun scan de retour n'a été enregistré."
+      },
+      "missingAudit": {
+        "title": "Manquant après audit",
+        "body": "L'audit de dépôt est terminé. Deux engins ne sont pas localisés. TraviXO génère la liste en PDF et vous l'envoie automatiquement."
+      },
+      "vgpExpiring": {
+        "title": "VGP expirant en location active",
+        "body": "Un engin dont le contrôle arrive à échéance dans 10 jours est encore chez un client. Alerte de rappel envoyée. Retour à organiser avant la date limite."
+      }
+    },
+    "useCases": {
+      "title": "Conçu pour votre réalité",
+      "btp": {
+        "title": "Loueurs d'engins BTP",
+        "body": "Nacelles, chariots, compresseurs, groupes électrogènes. Gérez les VGP de tout votre parc, sachez exactement à quel client chaque machine est affectée, et recevez une alerte avant qu'une vérification expire pendant une location."
+      },
+      "multiDepot": {
+        "title": "Parc multi-dépôts",
+        "body": "Vous avez du matériel sur 2 ou 3 sites, et vous ne savez plus toujours ce qui est où. Chaque scan crée un événement horodaté. Un audit d'inventaire produit la liste des manquants en PDF, envoyée automatiquement."
+      },
+      "excel": {
+        "title": "La transition depuis Excel",
+        "body": "Vous gérez vos VGP sur un fichier partagé ou dans votre email. Importez votre liste d'actifs en 10 minutes. TraviXO prend le relais : alertes automatiques, certificats centralisés, historique consultable."
+      }
+    },
     "finalCta": {
       "title": "Prêt à réduire les pertes d'équipement ?",
       "subtitle": "Rejoignez les sociétés de location françaises qui suivent leurs équipements et respectent les exigences de conformité VGP.",

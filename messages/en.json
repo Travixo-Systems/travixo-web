@@ -134,6 +134,41 @@
         "body": "Every asset shows its full movement history. Who had it, from when to when, in what condition it was returned."
       }
     },
+    "recall": {
+      "title": "Your equipment expires at a client? You know before they do.",
+      "body": "TraviXO automatically cross-references your VGP dates with active rentals. If an asset will expire while at a client, you receive a recall alert — with enough time to plan the return and schedule the inspection before the deadline.",
+      "cta": "No non-compliant equipment in circulation by accident."
+    },
+    "exceptions": {
+      "title": "The exceptions you need to see immediately",
+      "overdueReturn": {
+        "title": "Overdue return not scanned",
+        "body": "An asset expected back tonight hasn't returned. TraviXO alerts you the next morning if no return scan was recorded."
+      },
+      "missingAudit": {
+        "title": "Missing after audit",
+        "body": "The depot audit is done. Two assets can't be located. TraviXO generates the list as PDF and sends it to you automatically."
+      },
+      "vgpExpiring": {
+        "title": "VGP expiring during active rental",
+        "body": "An asset whose inspection is due in 10 days is still at a client. Recall alert sent. Return to be organised before the deadline."
+      }
+    },
+    "useCases": {
+      "title": "Built for your reality",
+      "btp": {
+        "title": "BTP Equipment Rental",
+        "body": "Aerial platforms, forklifts, compressors, generators. Manage VGP for your entire fleet, know exactly which client each machine is assigned to, and get an alert before an inspection expires during a rental."
+      },
+      "multiDepot": {
+        "title": "Multi-depot fleet",
+        "body": "Equipment across 2 or 3 sites, and you're not always sure what's where. Every scan creates a timestamped event. An inventory audit produces the missing list as PDF, sent automatically."
+      },
+      "excel": {
+        "title": "Moving off Excel",
+        "body": "You track VGP on a shared file or in email. Import your asset list in 10 minutes. TraviXO takes over: automatic alerts, centralised certificates, accessible history."
+      }
+    },
     "finalCta": {
       "title": "Ready to Reduce Equipment Loss?",
       "subtitle": "Join French equipment rental companies that are tracking equipment and meeting VGP compliance requirements.",
