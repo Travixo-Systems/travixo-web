@@ -285,13 +285,17 @@
         },
         "emailAlerts": {
           "title": "Alertes email",
-          "description": "Recevez des notifications automatiques pour les inspections à venir et les équipements en retard. Rappels configurables à 30, 15, 7 et 1 jour avant échéance avec niveaux d'urgence progressifs.",
+          "description": "Alertes VGP quotidiennes (J-30, J-14, J-7, J-1 et dépassement). Rappel si un engin expire pendant une location active. Notifications d'audit avec liste des manquants.",
           "items": [
-            "Rappels automatiques à 30/15/7/1 jours avant échéance",
-            "Alertes d'escalade pour équipements en retard",
-            "Destinataires et calendrier configurables",
+            "Rappels automatiques à J-30/J-14/J-7/J-1 avant échéance",
+            "Alerte quand un engin expire pendant une location active",
+            "Notifications d'audit avec liste des manquants",
             "Notifications bilingues (FR/EN)"
           ]
+        },
+        "teamManagement": {
+          "title": "Gestion d'équipe",
+          "description": "Invitez vos techniciens, connexions séparées, auditez qui a scanné quoi et quand."
         }
       }
     },
@@ -299,10 +303,6 @@
       "title": "Prochainement",
       "subtitle": "Fonctionnalités en développement actif",
       "features": {
-        "teamManagement": {
-          "title": "Gestion d'équipe",
-          "description": "Invitez des membres d'équipe, contrôlez les niveaux d'accès, suivez les actions. Voyez qui a fait quoi et quand."
-        },
         "apiAccess": {
           "title": "Accès API",
           "description": "Connectez TraviXO avec vos systèmes existants. Documentation complète et notifications d'événements en temps réel."

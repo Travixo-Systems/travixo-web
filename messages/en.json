@@ -285,13 +285,17 @@
         },
         "emailAlerts": {
           "title": "Email Alerts",
-          "description": "Get automatic notifications for upcoming inspections and overdue equipment. Configurable reminders at 30, 15, 7, and 1 day before due dates with tiered urgency levels.",
+          "description": "Daily VGP alerts (J-30, J-14, J-7, J-1 and overdue). Recall alert when an asset expires during an active rental. Audit notifications with missing assets list.",
           "items": [
-            "Automated reminders at 30/15/7/1 days before due",
-            "Overdue equipment escalation alerts",
-            "Configurable recipients and timing",
+            "Automated reminders at 30/14/7/1 days before due",
+            "Alert when an asset expires during active rental",
+            "Audit notifications with missing assets list",
             "Bilingual notifications (FR/EN)"
           ]
+        },
+        "teamManagement": {
+          "title": "Team Management",
+          "description": "Invite technicians, separate logins, audit who scanned what and when."
         }
       }
     },
@@ -299,10 +303,6 @@
       "title": "Coming Soon",
       "subtitle": "Features in active development",
       "features": {
-        "teamManagement": {
-          "title": "Team Management",
-          "description": "Invite team members, control access levels, track actions. See who did what and when."
-        },
         "apiAccess": {
           "title": "API Access",
           "description": "Connect TraviXO with your existing systems. Full documentation and real-time event notifications."
