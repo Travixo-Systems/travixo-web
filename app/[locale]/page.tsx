@@ -61,12 +61,12 @@ export default async function Home(props: Props) {
         <ProblemSolutionCarousel />
 
         {/* Handover Proof */}
-        <section className="py-16 bg-white">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#00252b' }}>
               {t("handover.title")}
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 border border-gray-200 rounded-lg">
                 <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
                   {t("handover.scanOut.title")}
@@ -96,7 +96,7 @@ export default async function Home(props: Props) {
         </section>
 
         {/* VGP Recall */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-4xl font-bold mb-6" style={{ color: '#00252b' }}>
               {t("recall.title")}
@@ -111,12 +111,12 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Exceptions Panel */}
-        <section className="py-16 bg-white">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#00252b' }}>
               {t("exceptions.title")}
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 border border-gray-200 rounded-lg">
                 <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
                   {t("exceptions.overdueReturn.title")}
