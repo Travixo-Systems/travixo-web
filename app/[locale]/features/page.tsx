@@ -217,7 +217,7 @@ export default async function FeaturesPage(props: Props) {
                 </ul>
               </div>
 
-              {/* Feature 5: DIRECCTE Reporting */}
+              {/* Feature 5: VGP Inspection Reports */}
               <div className="border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-2xl font-bold text-gray-900">

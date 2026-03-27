@@ -88,7 +88,7 @@
           },
           "3": {
             "title": "VGP Compliance Nightmares",
-            "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules in spreadsheets means missed deadlines."
+            "text": "One missed inspection = €15K+ labor inspection (DREETS) fine. Managing inspection schedules in spreadsheets means missed deadlines."
           },
           "4": {
             "title": "40+ Hours of Setup Time",
@@ -235,7 +235,7 @@
         },
         "vgp": {
           "title": "VGP Compliance Automation",
-          "description": "Avoid DIRECCTE fines with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
+          "description": "Avoid labor inspection (DREETS) fines with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
           "items": [
             "Automatic inspection scheduling",
             "Email reminders (30/7 days before due)",
@@ -264,8 +264,8 @@
           ]
         },
         "direccte": {
-          "title": "DIRECCTE Reporting",
-          "description": "Generate compliance reports with one click. Complete inspection history and exports formatted for DIRECCTE audits.",
+          "title": "VGP Inspection Reports",
+          "description": "Generate compliance reports with one click. Complete inspection history and exports formatted for DREETS inspections.",
           "items": [
             "Automatic compliance tracking",
             "Export to PDF or Excel",
@@ -398,7 +398,7 @@
   "pricing": {
     "hero": {
       "title": "Automate Your VGP Compliance",
-      "subtitle": "Avoid €15K-€75K DIRECCTE fines with automated French regulatory compliance tracking"
+      "subtitle": "Avoid €15K-€75K labor inspection (DREETS) fines with automated French regulatory compliance tracking"
     },
     "billing": {
       "year": "year",
@@ -463,7 +463,7 @@
           "assets": "Up to 500 assets",
           "starter": "Everything in Starter, plus:",
           "multiSite": "Multi-location support",
-          "audit": "Inspection reports ready for DIRECCTE audit",
+          "audit": "Inspection reports ready for DREETS inspection",
           "integration": "Automatic accounting export",
           "support": "Priority support",
           "teamManagement": "Team management",
@@ -525,7 +525,7 @@
       "questions": [
         {
           "question": "Why is VGP compliance not included in the Starter plan?",
-          "answer": "The Starter plan is designed for basic tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, DIRECCTE reporting) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
+          "answer": "The Starter plan is designed for basic tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, VGP inspection reports) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
         },
         {
           "question": "What's the difference between monthly and annual billing?",
