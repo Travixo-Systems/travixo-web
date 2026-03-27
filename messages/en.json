@@ -119,6 +119,21 @@
         }
       }
     },
+    "handover": {
+      "title": "Every handover, documented.",
+      "scanOut": {
+        "title": "Scan-out to client",
+        "body": "When equipment leaves the depot, a scan creates a timestamped event: who took it, when, with what notes. No paperwork. The proof is in the system."
+      },
+      "scanReturn": {
+        "title": "Scan-back with condition",
+        "body": "On return, a second scan captures equipment condition: notes, photos if needed. If a client disputes damage or timing, you have an incontestable history."
+      },
+      "chain": {
+        "title": "Complete responsibility chain",
+        "body": "Every asset shows its full movement history. Who had it, from when to when, in what condition it was returned."
+      }
+    },
     "finalCta": {
       "title": "Ready to Reduce Equipment Loss?",
       "subtitle": "Join French equipment rental companies that are tracking equipment and meeting VGP compliance requirements.",

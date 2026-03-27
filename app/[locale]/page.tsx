@@ -60,6 +60,41 @@ export default async function Home(props: Props) {
 
         <ProblemSolutionCarousel />
 
+        {/* Handover Proof */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#00252b' }}>
+              {t("handover.title")}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("handover.scanOut.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("handover.scanOut.body")}
+                </p>
+              </div>
+              <div className="p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("handover.scanReturn.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("handover.scanReturn.body")}
+                </p>
+              </div>
+              <div className="p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#00252b' }}>
+                  {t("handover.chain.title")}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t("handover.chain.body")}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-6 bg-gray-900 text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">

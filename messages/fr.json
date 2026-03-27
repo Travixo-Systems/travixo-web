@@ -119,6 +119,21 @@
         }
       }
     },
+    "handover": {
+      "title": "Toute mise à disposition, documentée.",
+      "scanOut": {
+        "title": "Scan de départ client",
+        "body": "Quand un engin quitte le dépôt, un scan crée un événement horodaté : qui l'a pris, quand, avec quelles notes. Pas de paperasse. La preuve est dans le système."
+      },
+      "scanReturn": {
+        "title": "Scan de retour avec état",
+        "body": "Au retour, un second scan capture l'état du matériel : notes de condition, photos si besoin. En cas de litige sur des dommages ou des dates, vous avez un historique incontestable."
+      },
+      "chain": {
+        "title": "Chaîne de responsabilité complète",
+        "body": "Chaque engin affiche l'historique complet de ses mouvements. Qui l'avait, de quand à quand, dans quel état rendu."
+      }
+    },
     "finalCta": {
       "title": "Prêt à réduire les pertes d'équipement ?",
       "subtitle": "Rejoignez les sociétés de location françaises qui suivent leurs équipements et respectent les exigences de conformité VGP.",
