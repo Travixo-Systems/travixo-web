@@ -464,7 +464,7 @@
           "starter": "Tout ce qui est dans Starter, plus :",
           "multiSite": "Support multi-sites",
           "audit": "Rapports d'inspection prêts pour le contrôle DREETS",
-          "integration": "Export comptable automatique",
+          "integration": "Export CSV liste d'actifs et historique VGP",
           "support": "Support prioritaire",
           "teamManagement": "Gestion d'équipe",
           "emailAlerts": "Alertes email"
@@ -477,7 +477,7 @@
           "assets": "Jusqu'à 2 000 équipements",
           "professional": "Tout ce qui est dans Professional +",
           "vgpPriority": "VGP + support de conformité prioritaire",
-          "integrations": "Export comptable SAGE & EBP",
+          "integrations": "Compatible SAGE, EBP, Cegid (configuration sur demande)",
           "manager": "Gestionnaire de compte dédié",
           "sla": "SLA de 24h garanti",
           "advancedReporting": "Rapports avancés",

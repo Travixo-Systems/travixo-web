@@ -464,7 +464,7 @@
           "starter": "Everything in Starter, plus:",
           "multiSite": "Multi-location support",
           "audit": "Inspection reports ready for DREETS inspection",
-          "integration": "Automatic accounting export",
+          "integration": "CSV export of asset list and VGP history",
           "support": "Priority support",
           "teamManagement": "Team management",
           "emailAlerts": "Email alerts"
@@ -477,7 +477,7 @@
           "assets": "Up to 2,000 assets",
           "professional": "Everything in Professional +",
           "vgpPriority": "VGP + priority compliance support",
-          "integrations": "SAGE & EBP accounting export",
+          "integrations": "Compatible with SAGE, EBP, Cegid (on request)",
           "manager": "Dedicated account manager",
           "sla": "24h SLA guaranteed",
           "advancedReporting": "Advanced reporting",
