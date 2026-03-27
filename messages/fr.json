@@ -2,11 +2,11 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stoppez les pertes d'équipement et les amendes de conformité VGP",
-      "description": "Suivez votre matériel de location avec des codes QR. Réduisez les pertes d'équipement et évitez les amendes de conformité VGP. Importez votre fichier Excel, imprimez les codes et commencez le suivi en quelques heures."
+      "description": "Traçabilité QR et conformité VGP automatisée pour les loueurs d'engins en France. Onboarding en 4 heures. Alertes quotidiennes. Rapports d'inspection prêts à l'emploi."
     },
     "about": {
       "title": "À propos de TraviXO - Conçu par des vétérans de la location d'équipement",
-      "description": "Découvrez comment TraviXO aide les sociétés de location à arrêter de perdre du matériel et à éviter les amendes de conformité grâce à un suivi simple par QR."
+      "description": "Découvrez comment TraviXO aide les sociétés de location à arrêter de perdre du matériel et à rester conformes grâce à un suivi simple par QR."
     },
     "contact": {
       "title": "Contacter TraviXO - Démarrer un essai gratuit",
@@ -50,8 +50,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "Les équipements disparaissent. Les inspections sont manquées. Les amendes s'accumulent vite.",
-      "subtitle": "Importez votre fichier Excel tel quel. Imprimez les codes de suivi. Sachez où se trouve chaque équipement. Conçu pour les sociétés de location d'équipement françaises.",
+      "title": "Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer.",
+      "subtitle": "TraviXO donne aux loueurs d'engins français une traçabilité horodatée pour chaque machine, du départ client au retour, avec des alertes VGP automatisées pour que votre parc soit toujours documenté et prêt pour un contrôle.",
       "ctaPrimary": "Démarrer l'essai gratuit",
       "ctaSecondary": "Voir comment ça fonctionne"
     },
@@ -88,7 +88,7 @@
           },
           "3": {
             "title": "Cauchemars de conformité VGP",
-            "text": "Une inspection manquée = plus de 15 000 € d'amende DIRECCTE. Gérer les plannings d'inspection dans des fichiers Excel signifie des échéances manquées."
+            "text": "Des sanctions peuvent s'appliquer en cas de manquement aux obligations de vérification périodique (Code du travail, Art. L4741-1). Gérer les plannings d'inspection dans des fichiers Excel signifie des échéances manquées."
           },
           "4": {
             "title": "Plus de 40 heures de configuration",
@@ -113,10 +113,60 @@
             "text": "Aucune application nécessaire. Vos équipes scannent avec n'importe quel smartphone. Voyez l'emplacement, le statut et l'historique instantanément."
           },
           "4": {
-            "title": "Évitez les amendes de conformité",
-            "text": "Les rappels VGP automatiques aident à éviter des amendes de plus de 15 000 €. Ne manquez jamais une échéance d'inspection."
+            "title": "Restez conforme",
+            "text": "Les rappels VGP automatiques vous aident à rester conforme. Ne manquez jamais une échéance d'inspection."
           }
         }
+      }
+    },
+    "handover": {
+      "title": "Toute mise à disposition, documentée.",
+      "scanOut": {
+        "title": "Scan de départ client",
+        "body": "Quand un engin quitte le dépôt, un scan crée un événement horodaté : qui l'a pris, quand, avec quelles notes. Pas de paperasse. La preuve est dans le système."
+      },
+      "scanReturn": {
+        "title": "Scan de retour avec état",
+        "body": "Au retour, un second scan capture l'état du matériel : notes de condition, photos si besoin. En cas de litige sur des dommages ou des dates, vous avez un historique incontestable."
+      },
+      "chain": {
+        "title": "Chaîne de responsabilité complète",
+        "body": "Chaque engin affiche l'historique complet de ses mouvements. Qui l'avait, de quand à quand, dans quel état rendu."
+      }
+    },
+    "recall": {
+      "title": "Votre matériel expire chez un client ? Vous le savez avant lui.",
+      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel — assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
+      "cta": "Zéro matériel non conforme en circulation par inadvertance."
+    },
+    "exceptions": {
+      "title": "Les exceptions que vous devez voir immédiatement",
+      "overdueReturn": {
+        "title": "Retard de retour non scanné",
+        "body": "Un engin attendu ce soir n'est pas revenu. TraviXO vous alerte le lendemain matin si aucun scan de retour n'a été enregistré."
+      },
+      "missingAudit": {
+        "title": "Manquant après audit",
+        "body": "L'audit de dépôt est terminé. Deux engins ne sont pas localisés. TraviXO génère la liste en PDF et vous l'envoie automatiquement."
+      },
+      "vgpExpiring": {
+        "title": "VGP expirant en location active",
+        "body": "Un engin dont le contrôle arrive à échéance dans 10 jours est encore chez un client. Alerte de rappel envoyée. Retour à organiser avant la date limite."
+      }
+    },
+    "useCases": {
+      "title": "Conçu pour votre réalité",
+      "btp": {
+        "title": "Loueurs d'engins BTP",
+        "body": "Nacelles, chariots, compresseurs, groupes électrogènes. Gérez les VGP de tout votre parc, sachez exactement à quel client chaque machine est affectée, et recevez une alerte avant qu'une vérification expire pendant une location."
+      },
+      "multiDepot": {
+        "title": "Parc multi-dépôts",
+        "body": "Vous avez du matériel sur 2 ou 3 sites, et vous ne savez plus toujours ce qui est où. Chaque scan crée un événement horodaté. Un audit d'inventaire produit la liste des manquants en PDF, envoyée automatiquement."
+      },
+      "excel": {
+        "title": "La transition depuis Excel",
+        "body": "Vous gérez vos VGP sur un fichier partagé ou dans votre email. Importez votre liste d'actifs en 10 minutes. TraviXO prend le relais : alertes automatiques, certificats centralisés, historique consultable."
       }
     },
     "finalCta": {
@@ -131,7 +181,7 @@
         "Résiliation à tout moment"
       ],
       "footer": {
-        "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+        "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
         "email": "contact@travixosystems.com",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
@@ -192,7 +242,7 @@
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -235,7 +285,7 @@
         },
         "vgp": {
           "title": "Automatisation de la conformité VGP",
-          "description": "Évitez les amendes DIRECCTE avec un suivi automatique des inspections. Planification, rappels et rapports prêts pour audit.",
+          "description": "Gardez le contrôle de votre conformité avec un suivi automatique des inspections. Planification, rappels et rapports prêts pour audit.",
           "items": [
             "Planification automatique des inspections",
             "Rappels par email (30/7 jours avant échéance)",
@@ -259,13 +309,13 @@
           "items": [
             "Fonctionne dans n'importe quel navigateur mobile",
             "Scan par caméra",
-            "Fonctionne hors ligne, synchronise quand connecté",
-            "Capture la position GPS"
+            "Fonctionne sur tout smartphone, sans installation d'application",
+            "Contexte du dernier scan : opérateur, notes et état du matériel"
           ]
         },
         "direccte": {
-          "title": "Rapports DIRECCTE",
-          "description": "Générez des rapports de conformité en un clic. Historique complet des inspections et exports formatés pour les audits DIRECCTE.",
+          "title": "Rapports de vérification VGP",
+          "description": "Générez des rapports de conformité en un clic. Historique complet des inspections et exports formatés pour les audits de l'inspection du travail (DREETS).",
           "items": [
             "Suivi automatique de la conformité",
             "Exportez en PDF ou Excel",
@@ -275,7 +325,7 @@
         },
         "dashboard": {
           "title": "Tableau de bord",
-          "description": "Sachez où se trouve chaque équipement, qui l'a, et quand il a été vérifié la dernière fois. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
+          "description": "Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
           "items": [
             "Voyez le statut des équipements d'un coup d'œil",
             "Suivez les taux d'utilisation par catégorie",
@@ -285,13 +335,17 @@
         },
         "emailAlerts": {
           "title": "Alertes email",
-          "description": "Recevez des notifications automatiques pour les inspections à venir et les équipements en retard. Rappels configurables à 30, 15, 7 et 1 jour avant échéance avec niveaux d'urgence progressifs.",
+          "description": "Alertes VGP quotidiennes (J-30, J-14, J-7, J-1 et dépassement). Rappel si un engin expire pendant une location active. Notifications d'audit avec liste des manquants.",
           "items": [
-            "Rappels automatiques à 30/15/7/1 jours avant échéance",
-            "Alertes d'escalade pour équipements en retard",
-            "Destinataires et calendrier configurables",
+            "Rappels automatiques à J-30/J-14/J-7/J-1 avant échéance",
+            "Alerte quand un engin expire pendant une location active",
+            "Notifications d'audit avec liste des manquants",
             "Notifications bilingues (FR/EN)"
           ]
+        },
+        "teamManagement": {
+          "title": "Gestion d'équipe",
+          "description": "Invitez vos techniciens, connexions séparées, auditez qui a scanné quoi et quand."
         }
       }
     },
@@ -299,10 +353,6 @@
       "title": "Prochainement",
       "subtitle": "Fonctionnalités en développement actif",
       "features": {
-        "teamManagement": {
-          "title": "Gestion d'équipe",
-          "description": "Invitez des membres d'équipe, contrôlez les niveaux d'accès, suivez les actions. Voyez qui a fait quoi et quand."
-        },
         "apiAccess": {
           "title": "Accès API",
           "description": "Connectez TraviXO avec vos systèmes existants. Documentation complète et notifications d'événements en temps réel."
@@ -390,7 +440,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -398,7 +448,7 @@
   "pricing": {
     "hero": {
       "title": "Automatisez votre conformité VGP",
-      "subtitle": "Évitez les amendes DIRECCTE de 15 000 à 75 000 € avec un suivi automatisé de la conformité réglementaire française"
+      "subtitle": "Des sanctions peuvent s'appliquer en cas de manquement aux obligations de conformité périodique (Code du travail, Art. L4741-1). Automatisez votre suivi de conformité réglementaire."
     },
     "billing": {
       "year": "an",
@@ -416,8 +466,8 @@
       "rows": {
         "vgp": {
           "label": "Conformité VGP",
-          "traditional": "Suivi manuel, risque d'amendes €15K+",
-          "travixo": "Automatisé, zéro risque de non-conformité",
+          "traditional": "Suivi manuel, risque de sanctions en cas de non-conformité",
+          "travixo": "Rappels automatisés, rapports centralisés, documents disponibles pour tout contrôle",
           "whyItMatters": "Obligatoire pour location d'équipement en France"
         },
         "setup": {
@@ -463,8 +513,8 @@
           "assets": "Jusqu'à 500 équipements",
           "starter": "Tout ce qui est dans Starter, plus :",
           "multiSite": "Support multi-sites",
-          "audit": "Rapports d'inspection prêts pour le contrôle DIRECCTE",
-          "integration": "Export comptable automatique",
+          "audit": "Rapports d'inspection prêts pour le contrôle DREETS",
+          "integration": "Export CSV liste d'actifs et historique VGP",
           "support": "Support prioritaire",
           "teamManagement": "Gestion d'équipe",
           "emailAlerts": "Alertes email"
@@ -477,7 +527,7 @@
           "assets": "Jusqu'à 2 000 équipements",
           "professional": "Tout ce qui est dans Professional +",
           "vgpPriority": "VGP + support de conformité prioritaire",
-          "integrations": "Export comptable SAGE & EBP",
+          "integrations": "Compatible SAGE, EBP, Cegid (configuration sur demande)",
           "manager": "Gestionnaire de compte dédié",
           "sla": "SLA de 24h garanti",
           "advancedReporting": "Rapports avancés",
@@ -525,7 +575,7 @@
       "questions": [
         {
           "question": "Pourquoi la conformité VGP n'est-elle pas incluse dans le plan Starter ?",
-          "answer": "Le plan Starter est conçu pour le suivi basique uniquement. La conformité VGP nécessite des fonctionnalités avancées (planification des inspections, gestion des certificats, rapports DIRECCTE) disponibles à partir du plan Professional. Pour les sociétés de location d'équipement françaises, nous recommandons fortement le plan Professional."
+          "answer": "Le plan Starter est conçu pour le suivi basique uniquement. La conformité VGP nécessite des fonctionnalités avancées (planification des inspections, gestion des certificats, rapports de vérification VGP) disponibles à partir du plan Professional. Pour les sociétés de location d'équipement françaises, nous recommandons fortement le plan Professional."
         },
         {
           "question": "Quelle est la différence entre la facturation mensuelle et annuelle ?",
@@ -547,11 +597,11 @@
     },
     "finalCta": {
       "title": "Prêt à automatiser votre conformité ?",
-      "subtitle": "Ne laissez pas la prochaine inspection vous coûter 15 000 €. Testez gratuitement pendant 30 jours.",
+      "subtitle": "Ne laissez pas la prochaine inspection vous prendre au dépourvu. Testez gratuitement pendant 30 jours.",
       "button": "Démarrer l'essai gratuit"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Confidentialité",
       "terms": "Conditions d'utilisation"
     }
@@ -698,7 +748,7 @@
       "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -926,7 +976,7 @@
       "phone": "Téléphone :"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"
@@ -974,7 +1024,7 @@
       "content": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation de ce site web sera soumis à la compétence exclusive des tribunaux de Paris, France."
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. Tous droits réservés.",
+      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "legalNotice": "Mentions légales"

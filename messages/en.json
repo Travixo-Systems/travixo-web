@@ -2,11 +2,11 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stop Equipment Loss & VGP Compliance Fines",
-      "description": "Track rental equipment with QR codes. Prevent equipment loss and avoid VGP compliance fines. Upload spreadsheet, print codes, start tracking in hours."
+      "description": "QR traceability and automated VGP compliance for equipment rental companies in France. Onboarding in 4 hours. Daily alerts. Inspection-ready reports."
     },
     "about": {
       "title": "About TraviXO - Built by Equipment Rental Veterans",
-      "description": "Learn how TraviXO helps equipment rental companies stop losing equipment and avoid compliance fines through simple QR tracking."
+      "description": "Learn how TraviXO helps equipment rental companies stop losing equipment and stay compliant through simple QR tracking."
     },
     "contact": {
       "title": "Contact TraviXO - Start Your Free Pilot",
@@ -50,8 +50,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "Equipment Keeps Disappearing. Inspections Get Missed. Fines Pile Up.",
-      "subtitle": "Upload your spreadsheet as-is. Print tracking codes. Know where every piece of equipment is. Built for French equipment rental companies.",
+      "title": "Know who has it, when it was last seen, and whether it's ready to rent.",
+      "subtitle": "TraviXO gives French equipment rental companies a timestamped chain-of-custody for every asset — from checkout to return — plus automated VGP compliance alerts, so your fleet is always documented and inspection-ready.",
       "ctaPrimary": "Start Free Pilot",
       "ctaSecondary": "See How It Works"
     },
@@ -88,7 +88,7 @@
           },
           "3": {
             "title": "VGP Compliance Nightmares",
-            "text": "One missed inspection = €15K+ DIRECCTE fine. Managing inspection schedules in spreadsheets means missed deadlines."
+            "text": "Missed inspections can lead to penalties under periodic compliance obligations (Code du travail, Art. L4741-1). Managing inspection schedules in spreadsheets means missed deadlines."
           },
           "4": {
             "title": "40+ Hours of Setup Time",
@@ -113,10 +113,60 @@
             "text": "No app needed. Workers scan with any smartphone. See location, status, and history instantly."
           },
           "4": {
-            "title": "Avoid Compliance Fines",
-            "text": "Automatic VGP reminders help prevent €15K+ fines. Never miss an inspection deadline."
+            "title": "Stay Compliant",
+            "text": "Automatic VGP reminders help you stay compliant. Never miss an inspection deadline."
           }
         }
+      }
+    },
+    "handover": {
+      "title": "Every handover, documented.",
+      "scanOut": {
+        "title": "Scan-out to client",
+        "body": "When equipment leaves the depot, a scan creates a timestamped event: who took it, when, with what notes. No paperwork. The proof is in the system."
+      },
+      "scanReturn": {
+        "title": "Scan-back with condition",
+        "body": "On return, a second scan captures equipment condition: notes, photos if needed. If a client disputes damage or timing, you have an incontestable history."
+      },
+      "chain": {
+        "title": "Complete responsibility chain",
+        "body": "Every asset shows its full movement history. Who had it, from when to when, in what condition it was returned."
+      }
+    },
+    "recall": {
+      "title": "Your equipment expires at a client? You know before they do.",
+      "body": "TraviXO automatically cross-references your VGP dates with active rentals. If an asset will expire while at a client, you receive a recall alert — with enough time to plan the return and schedule the inspection before the deadline.",
+      "cta": "No non-compliant equipment in circulation by accident."
+    },
+    "exceptions": {
+      "title": "The exceptions you need to see immediately",
+      "overdueReturn": {
+        "title": "Overdue return not scanned",
+        "body": "An asset expected back tonight hasn't returned. TraviXO alerts you the next morning if no return scan was recorded."
+      },
+      "missingAudit": {
+        "title": "Missing after audit",
+        "body": "The depot audit is done. Two assets can't be located. TraviXO generates the list as PDF and sends it to you automatically."
+      },
+      "vgpExpiring": {
+        "title": "VGP expiring during active rental",
+        "body": "An asset whose inspection is due in 10 days is still at a client. Recall alert sent. Return to be organised before the deadline."
+      }
+    },
+    "useCases": {
+      "title": "Built for your reality",
+      "btp": {
+        "title": "BTP Equipment Rental",
+        "body": "Aerial platforms, forklifts, compressors, generators. Manage VGP for your entire fleet, know exactly which client each machine is assigned to, and get an alert before an inspection expires during a rental."
+      },
+      "multiDepot": {
+        "title": "Multi-depot fleet",
+        "body": "Equipment across 2 or 3 sites, and you're not always sure what's where. Every scan creates a timestamped event. An inventory audit produces the missing list as PDF, sent automatically."
+      },
+      "excel": {
+        "title": "Moving off Excel",
+        "body": "You track VGP on a shared file or in email. Import your asset list in 10 minutes. TraviXO takes over: automatic alerts, centralised certificates, accessible history."
       }
     },
     "finalCta": {
@@ -131,7 +181,7 @@
         "Cancel anytime"
       ],
       "footer": {
-        "copyright": "© 2026 Deralis Digital. All rights reserved.",
+        "copyright": "© 2026 TraviXO Systems. All rights reserved.",
         "email": "contact@travixosystems.com",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
@@ -192,7 +242,7 @@
       "button": "Start Your Free Pilot"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
@@ -235,7 +285,7 @@
         },
         "vgp": {
           "title": "VGP Compliance Automation",
-          "description": "Avoid DIRECCTE fines with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
+          "description": "Stay on top of compliance with automatic inspection tracking. Scheduling, reminders, and audit-ready reports.",
           "items": [
             "Automatic inspection scheduling",
             "Email reminders (30/7 days before due)",
@@ -259,13 +309,13 @@
           "items": [
             "Works in any phone browser",
             "Camera-based scanning",
-            "Works offline, syncs when connected",
-            "Captures GPS location"
+            "Works on any smartphone, no app install required",
+            "Last scan context: operator, notes, and equipment condition"
           ]
         },
         "direccte": {
-          "title": "DIRECCTE Reporting",
-          "description": "Generate compliance reports with one click. Complete inspection history and exports formatted for DIRECCTE audits.",
+          "title": "VGP Inspection Reports",
+          "description": "Generate compliance reports with one click. Complete inspection history and exports formatted for DREETS inspections.",
           "items": [
             "Automatic compliance tracking",
             "Export to PDF or Excel",
@@ -275,7 +325,7 @@
         },
         "dashboard": {
           "title": "Dashboard",
-          "description": "Know where every asset is, who has it, and when it was last verified. Filter by status, location, category, or custom fields.",
+          "description": "Know who has it, when it was last seen, and whether it's ready to rent. Filter by status, location, category, or custom fields.",
           "items": [
             "See equipment status at a glance",
             "Track usage rates by category",
@@ -285,13 +335,17 @@
         },
         "emailAlerts": {
           "title": "Email Alerts",
-          "description": "Get automatic notifications for upcoming inspections and overdue equipment. Configurable reminders at 30, 15, 7, and 1 day before due dates with tiered urgency levels.",
+          "description": "Daily VGP alerts (J-30, J-14, J-7, J-1 and overdue). Recall alert when an asset expires during an active rental. Audit notifications with missing assets list.",
           "items": [
-            "Automated reminders at 30/15/7/1 days before due",
-            "Overdue equipment escalation alerts",
-            "Configurable recipients and timing",
+            "Automated reminders at 30/14/7/1 days before due",
+            "Alert when an asset expires during active rental",
+            "Audit notifications with missing assets list",
             "Bilingual notifications (FR/EN)"
           ]
+        },
+        "teamManagement": {
+          "title": "Team Management",
+          "description": "Invite technicians, separate logins, audit who scanned what and when."
         }
       }
     },
@@ -299,10 +353,6 @@
       "title": "Coming Soon",
       "subtitle": "Features in active development",
       "features": {
-        "teamManagement": {
-          "title": "Team Management",
-          "description": "Invite team members, control access levels, track actions. See who did what and when."
-        },
         "apiAccess": {
           "title": "API Access",
           "description": "Connect TraviXO with your existing systems. Full documentation and real-time event notifications."
@@ -390,7 +440,7 @@
       "locationValue": "Paris, France"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
@@ -398,7 +448,7 @@
   "pricing": {
     "hero": {
       "title": "Automate Your VGP Compliance",
-      "subtitle": "Avoid €15K-€75K DIRECCTE fines with automated French regulatory compliance tracking"
+      "subtitle": "Penalties can apply for failure to meet periodic compliance obligations (Code du travail, Art. L4741-1). Automate your French regulatory compliance tracking."
     },
     "billing": {
       "year": "year",
@@ -416,8 +466,8 @@
       "rows": {
         "vgp": {
           "label": "VGP Compliance",
-          "traditional": "Manual tracking, €15K+ fine risk",
-          "travixo": "Fully automated, zero compliance risk",
+          "traditional": "Manual tracking, risk of penalties for non-compliance",
+          "travixo": "Automated reminders, centralised reports, and documents available for inspection",
           "whyItMatters": "Mandatory for French equipment rental"
         },
         "setup": {
@@ -463,8 +513,8 @@
           "assets": "Up to 500 assets",
           "starter": "Everything in Starter, plus:",
           "multiSite": "Multi-location support",
-          "audit": "Inspection reports ready for DIRECCTE audit",
-          "integration": "Automatic accounting export",
+          "audit": "Inspection reports ready for DREETS inspection",
+          "integration": "CSV export of asset list and VGP history",
           "support": "Priority support",
           "teamManagement": "Team management",
           "emailAlerts": "Email alerts"
@@ -477,7 +527,7 @@
           "assets": "Up to 2,000 assets",
           "professional": "Everything in Professional +",
           "vgpPriority": "VGP + priority compliance support",
-          "integrations": "SAGE & EBP accounting export",
+          "integrations": "Compatible with SAGE, EBP, Cegid (on request)",
           "manager": "Dedicated account manager",
           "sla": "24h SLA guaranteed",
           "advancedReporting": "Advanced reporting",
@@ -525,7 +575,7 @@
       "questions": [
         {
           "question": "Why is VGP compliance not included in the Starter plan?",
-          "answer": "The Starter plan is designed for basic tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, DIRECCTE reporting) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
+          "answer": "The Starter plan is designed for basic tracking only. VGP compliance requires advanced features (inspection scheduling, certificate management, VGP inspection reports) available from the Professional plan onwards. For French equipment rental companies, we strongly recommend the Professional plan."
         },
         {
           "question": "What's the difference between monthly and annual billing?",
@@ -547,11 +597,11 @@
     },
     "finalCta": {
       "title": "Ready to Automate Your Compliance?",
-      "subtitle": "Don't let the next inspection cost you €15,000. Try free for 30 days.",
+      "subtitle": "Don't let the next inspection catch you off guard. Try free for 30 days.",
       "button": "Start Free Trial"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy",
       "terms": "Terms of Service"
     }
@@ -698,7 +748,7 @@
       "phone": "Phone:"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
@@ -926,7 +976,7 @@
       "phone": "Phone:"
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"
@@ -974,7 +1024,7 @@
       "content": "These legal notices are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
     },
     "footer": {
-      "copyright": "© 2026 Deralis Digital. All rights reserved.",
+      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legalNotice": "Legal Notice"

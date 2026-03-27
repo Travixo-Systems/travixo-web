@@ -217,7 +217,7 @@ export default async function FeaturesPage(props: Props) {
                 </ul>
               </div>
 
-              {/* Feature 5: DIRECCTE Reporting */}
+              {/* Feature 5: VGP Inspection Reports */}
               <div className="border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-2xl font-bold text-gray-900">
@@ -316,6 +316,21 @@ export default async function FeaturesPage(props: Props) {
                 </ul>
               </div>
 
+              {/* Feature 8: Team Management */}
+              <div className="border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {t("availableNow.features.teamManagement.title")}
+                  </h3>
+                  <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                    {t("status.availableNow")}
+                  </span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  {t("availableNow.features.teamManagement.description")}
+                </p>
+              </div>
+
             </div>
           </div>
         </section>
@@ -334,16 +349,7 @@ export default async function FeaturesPage(props: Props) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
 
-              {/* Roadmap Feature 1: Team Management */}
-              <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{t("comingSoon.features.teamManagement.title")}</h3>
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 mb-3">
-                  {t("status.comingQ1")}
-                </span>
-                <p className="text-gray-700 mb-4">{t("comingSoon.features.teamManagement.description")}</p>
-              </div>
-
-              {/* Roadmap Feature 2: API Access */}
+              {/* Roadmap Feature: API Access */}
               <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t("comingSoon.features.apiAccess.title")}</h3>
                 <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 mb-3">
