@@ -51,7 +51,7 @@
   "homepage": {
     "hero": {
       "title": "Know who has it, when it was last seen, and whether it's ready to rent.",
-      "subtitle": "TraviXO gives French equipment rental companies a timestamped chain-of-custody for every asset — from checkout to return — plus automated VGP compliance alerts, so your fleet is always documented and inspection-ready.",
+      "subtitle": "TraviXO gives French equipment rental companies a timestamped chain-of-custody for every asset, from checkout to return, plus automated VGP compliance alerts, so your fleet is always documented and inspection-ready.",
       "ctaPrimary": "Start Free Pilot",
       "ctaSecondary": "See How It Works"
     },
@@ -136,7 +136,7 @@
     },
     "recall": {
       "title": "Your equipment expires at a client? You know before they do.",
-      "body": "TraviXO automatically cross-references your VGP dates with active rentals. If an asset will expire while at a client, you receive a recall alert — with enough time to plan the return and schedule the inspection before the deadline.",
+      "body": "TraviXO automatically cross-references your VGP dates with active rentals. If an asset will expire while at a client, you receive a recall alert with enough time to plan the return and schedule the inspection before the deadline.",
       "cta": "No non-compliant equipment in circulation by accident."
     },
     "exceptions": {
@@ -933,7 +933,7 @@
     },
     "section16": {
       "title": "16. Prices and Taxes",
-      "paragraph1": "All prices displayed on our website are in Euros (€) and are exclusive of taxes (HT — Hors Taxes) unless otherwise indicated. Applicable VAT and any other taxes will be added at checkout or on invoices in accordance with the applicable tax regulations.",
+      "paragraph1": "All prices displayed on our website are in Euros (€) and are exclusive of taxes (HT - Hors Taxes) unless otherwise indicated. Applicable VAT and any other taxes will be added at checkout or on invoices in accordance with the applicable tax regulations.",
       "paragraph2": "For customers within the European Union, VAT will be applied according to the applicable rate in the customer's country of residence, unless a valid intra-community VAT number is provided. French customers are subject to the standard French VAT rate."
     },
     "section17": {

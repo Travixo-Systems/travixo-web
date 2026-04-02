@@ -136,7 +136,7 @@
     },
     "recall": {
       "title": "Votre matériel expire chez un client ? Vous le savez avant lui.",
-      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel — assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
+      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel, assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
       "cta": "Zéro matériel non conforme en circulation par inadvertance."
     },
     "exceptions": {
