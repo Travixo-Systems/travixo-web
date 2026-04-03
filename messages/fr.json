@@ -51,7 +51,7 @@
   "homepage": {
     "hero": {
       "title": "Votre parc vit dans 3 endroits. Il devrait n'en avoir qu'un.",
-      "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à son code QR, la conformité VGP, ses documents et à son historique, dans une seule chaîne, du dépôt au chantier.",
+      "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à la conformité VGP, ses documents et à son historique, dans une seule chaîne, du dépôt au chantier.",
       "ctaPrimary": "Tester sur votre parc réel",
       "ctaSecondary": "Organiser une démo"
     },
