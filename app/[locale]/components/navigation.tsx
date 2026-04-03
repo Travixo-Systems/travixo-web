@@ -73,12 +73,17 @@ export default function Navigation() {
           </div>
 
           {/* Desktop CTA */}
-          <Link
-            href={getLocalizedPath('/contact')}
-            className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
-          >
-            {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
-          </Link>
+          <div className="hidden lg:flex items-center gap-4">
+            <a href="tel:+33783357535" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
+              +33 7 83 35 75 35
+            </a>
+            <Link
+              href={getLocalizedPath('/contact')}
+              className="bg-[#e8600a] hover:bg-[#d05508] text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+            >
+              {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
+            </Link>
+          </div>
 
           {/* Mobile: Language Switcher + Hamburger (Only visible on mobile & tablet) */}
           <div className="flex items-center lg:hidden gap-2">
@@ -149,7 +154,7 @@ export default function Navigation() {
 
                     <Link
                       href={getLocalizedPath('/contact')}
-                      className="bg-orange-500 hover:bg-orange-600 text-white text-center py-2 rounded-lg font-semibold"
+                      className="bg-[#e8600a] hover:bg-[#d05508] text-white text-center py-2 rounded-lg font-semibold"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
