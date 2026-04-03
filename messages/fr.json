@@ -1,24 +1,24 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - Stoppez les pertes d'équipement et les amendes de conformité VGP",
-      "description": "Traçabilité QR et conformité VGP automatisée pour les loueurs d'engins en France. Onboarding en 4 heures. Alertes quotidiennes. Rapports d'inspection prêts à l'emploi."
+      "title": "TraviXO - Votre matériel est suivi. Mais pas connecté.",
+      "description": "Reliez chaque machine à son QR code, sa conformité VGP, ses documents et son historique. Remplacez le suivi dispersé entre vos systèmes. Opérationnel en quelques heures."
     },
     "about": {
-      "title": "À propos de TraviXO - Conçu par des vétérans de la location d'équipement",
-      "description": "Découvrez comment TraviXO aide les sociétés de location à arrêter de perdre du matériel et à rester conformes grâce à un suivi simple par QR."
+      "title": "À propos de TraviXO - Construit depuis le terrain de la location",
+      "description": "Découvrez comment TraviXO remplace le suivi fragmenté par un système clair : machine, QR, conformité, documents, historique."
     },
     "contact": {
-      "title": "Contacter TraviXO - Démarrer un essai gratuit",
-      "description": "Contactez-nous pour un essai gratuit. Échangez avec TraviXO sur vos besoins de suivi d'équipement."
+      "title": "Contacter TraviXO - Lancez votre pilote gratuit",
+      "description": "Parlons de votre parc. Voyez comment relier vos machines à leur conformité et à leurs documents en un seul endroit."
     },
     "features": {
-      "title": "Fonctionnalités - Suivi d'équipement TraviXO",
-      "description": "Importez vos fichiers Excel, générez des codes QR, suivez la localisation du matériel. Automatisation de la conformité VGP incluse."
+      "title": "Fonctionnalités - Suivi de matériel TraviXO",
+      "description": "Importez votre parc, générez les QR codes, suivez le matériel sur le terrain et gérez la conformité VGP sans bricolage entre vos systèmes."
     },
     "pricing": {
-      "title": "Tarifs - Suivi d'équipement TraviXO",
-      "description": "Tarification simple et transparente pour le suivi d'équipement avec conformité VGP. Abonnements à partir de 490 €/mois."
+      "title": "Tarifs - Suivi de matériel TraviXO",
+      "description": "Tarifs simples et lisibles pour le suivi de matériel avec VGP. Offres à partir de 490 €/mois."
     },
     "privacy": {
       "title": "Politique de confidentialité - TraviXO",
@@ -26,11 +26,11 @@
     },
     "terms": {
       "title": "Conditions d'utilisation - TraviXO",
-      "description": "Conditions générales d'utilisation des services TraviXO."
+      "description": "Conditions d'utilisation TraviXO et accord utilisateur."
     },
     "legalNotice": {
       "title": "Mentions légales - TraviXO",
-      "description": "Mentions légales et informations sur la société TraviXO conformément à la loi française."
+      "description": "Mentions légales TraviXO et informations sur l'entreprise conformément au droit français."
     }
   },
   "navigation": {
@@ -42,7 +42,7 @@
     "privacy": "Confidentialité",
     "terms": "Conditions",
     "legalNotice": "Mentions légales",
-    "startPilot": "Démarrer l'essai gratuit",
+    "startPilot": "Tester gratuitement",
     "languages": {
       "english": "Anglais",
       "french": "Français"
@@ -50,135 +50,135 @@
   },
   "homepage": {
     "hero": {
-      "title": "Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer.",
-      "subtitle": "TraviXO donne aux loueurs d'engins français une traçabilité horodatée pour chaque machine, du départ client au retour, avec des alertes VGP automatisées pour que votre parc soit toujours documenté et prêt pour un contrôle.",
-      "ctaPrimary": "Démarrer l'essai gratuit",
-      "ctaSecondary": "Voir comment ça fonctionne"
+      "title": "Votre parc vit dans 3 endroits. Il devrait n'en avoir qu'un.",
+      "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à son code QR, à sa conformité VGP, à ses documents et à son historique — dans une seule chaîne, du dépôt au chantier.",
+      "ctaPrimary": "Tester sur votre parc réel",
+      "ctaSecondary": "Organiser une démo"
     },
     "values": {
       "1": {
-        "title": "Importez n'importe quel fichier en 5 minutes",
-        "text": "Ne nettoyez pas votre fichier d'abord. Colonnes désordonnées ? Cellules vides ? Nous nous en occupons. Importez simplement et c'est parti."
+        "title": "Importez votre fichier en 5 minutes",
+        "text": "Pas besoin de nettoyer votre export avant. Colonnes incohérentes, cellules vides, intitulés approximatifs — on s'en charge. Vous importez, ça démarre."
       },
       "2": {
-        "title": "Imprimez 500 codes de suivi en 30 secondes",
-        "text": "Obtenez un PDF prêt à imprimer instantanément. Collez les codes sur vos équipements et c'est terminé."
+        "title": "Imprimez 500 QR codes en 30 secondes",
+        "text": "Le PDF prêt à imprimer est généré tout de suite. Vous collez les codes sur le matériel et c'est lancé."
       },
       "3": {
-        "title": "Commencez le suivi en quelques heures",
-        "text": "La plupart des entreprises prennent des semaines pour démarrer. Avec TraviXO, vous suivez généralement vos équipements le jour même."
+        "title": "Commencez à suivre le parc dans la journée",
+        "text": "Là où d'autres projets prennent des semaines, TraviXO vous permet en général de commencer le suivi le jour même."
       }
     },
     "carousel": {
       "tabs": {
         "problem": "Le problème",
-        "solution": "Notre solution"
+        "solution": "Notre réponse"
       },
       "problem": {
-        "title": "Les sociétés de location perdent 50 000 à 200 000 € par an",
-        "subtitle": "Un suivi insuffisant et des processus manuels vous coûtent de l'argent",
+        "title": "Votre matériel est suivi. Mais entre vos systèmes, vos dossiers et vos mails, rien n'est relié.",
+        "subtitle": "C'est de là que viennent les pertes, les erreurs et les risques de conformité.",
         "items": {
           "1": {
-            "title": "1 à 2 % de perte d'équipement chaque année",
-            "text": "Pour un parc de 5 millions d'euros, c'est 50 000 à 100 000 € décomptés comme « disparus » chaque année. Les équipements disparaissent entre les sites ou sont égarés."
+            "title": "Le matériel se perd entre les systèmes",
+            "text": "Les machines bougent entre dépôts, chantiers et clients. La trace est dans un système, le contrat dans un autre, le dernier état connu nulle part."
           },
           "2": {
-            "title": "Plus de 50 000 € par audit trimestriel",
-            "text": "Faire venir des auditeurs, comptages manuels, 2 semaines de réconciliation de fichiers. Chaque trimestre. Et vous trouvez quand même des erreurs."
+            "title": "Les inventaires restent manuels et incomplets",
+            "text": "Comptages terrain, rapprochements entre fichiers, écarts découverts trop tard. Le processus se répète chaque trimestre."
           },
           "3": {
-            "title": "Cauchemars de conformité VGP",
-            "text": "Des sanctions peuvent s'appliquer en cas de manquement aux obligations de conformité VGP (Code du travail, Art. L4741-1). Gérer les plannings d'inspection dans des fichiers Excel signifie des échéances manquées."
+            "title": "La conformité VGP n'est pas sous contrôle",
+            "text": "Les certificats sont à un endroit. Les dates à un autre. Les rappels sont manuels. Un contrôle oublié et vous êtes exposé."
           },
           "4": {
-            "title": "Plus de 40 heures de configuration",
-            "text": "Les systèmes traditionnels nécessitent des semaines de saisie manuelle. Le temps de finir la saisie, les données sont déjà obsolètes."
+            "title": "Aucune source unique de vérité",
+            "text": "La facturation est dans un système. Le suivi matériel dans un autre. Les certificats dans des dossiers. Rien n'est connecté."
           }
         }
       },
       "solution": {
-        "title": "TraviXO : Commencez le suivi en quelques heures, pas en semaines",
-        "subtitle": "Un suivi QR simple qui fonctionne dans la réalité",
+        "title": "Un seul système qui relie le matériel à sa conformité",
+        "subtitle": "Chaque machine devient traçable, documentée et prête en cas de contrôle",
         "items": {
           "1": {
-            "title": "Importez votre fichier",
-            "text": "Importez votre fichier tel quel. Nous détectons les colonnes automatiquement. 500 équipements importés en 5 minutes."
+            "title": "Import du fichier",
+            "text": "Vous importez votre fichier tel qu'il existe aujourd'hui. Les colonnes sont reconnues automatiquement. 500 matériels peuvent être intégrés en 5 minutes."
           },
           "2": {
-            "title": "Imprimez les codes QR",
-            "text": "Sélectionnez tous les équipements, cliquez sur générer. Obtenez un PDF avec 500 codes en 30 secondes. Imprimez et collez."
+            "title": "Un QR code par machine",
+            "text": "Chaque matériel reçoit un point d'entrée physique. Un scan donne accès à sa fiche complète."
           },
           "3": {
-            "title": "Scannez avec n'importe quel téléphone",
-            "text": "Aucune application nécessaire. Vos équipes scannent avec n'importe quel smartphone. Voyez l'emplacement, le statut et l'historique instantanément."
+            "title": "Scan avec n'importe quel téléphone",
+            "text": "Aucune application à installer. Un simple smartphone suffit pour voir l'emplacement, l'état, le statut et l'historique."
           },
           "4": {
-            "title": "Restez conforme",
-            "text": "Les rappels VGP automatiques vous aident à rester conforme. Ne manquez jamais une échéance d'inspection."
+            "title": "Conformité et documents reliés à la machine",
+            "text": "Dates VGP, certificats et historique sont attachés à la machine. Toujours disponibles en cas de contrôle."
           }
         }
       }
     },
     "handover": {
-      "title": "Toute mise à disposition, documentée.",
+      "title": "Chaque passage de main laisse une trace.",
       "scanOut": {
-        "title": "Scan de départ client",
-        "body": "Quand un engin quitte le dépôt, un scan crée un événement horodaté : qui l'a pris, quand, avec quelles notes. Pas de paperasse. La preuve est dans le système."
+        "title": "Départ chez le client",
+        "body": "Quand le matériel quitte le dépôt, un scan crée un événement horodaté : qui l'a sorti, quand, avec quelles remarques. Pas de papier à retrouver. La preuve est déjà enregistrée."
       },
       "scanReturn": {
-        "title": "Scan de retour avec état",
-        "body": "Au retour, un second scan capture l'état du matériel : notes de condition, photos si besoin. En cas de litige sur des dommages ou des dates, vous avez un historique incontestable."
+        "title": "Retour avec état constaté",
+        "body": "Au retour, un second scan enregistre l'état du matériel, avec notes et photos si besoin. En cas de litige sur un choc ou sur une date, l'historique est là."
       },
       "chain": {
         "title": "Chaîne de responsabilité complète",
-        "body": "Chaque engin affiche l'historique complet de ses mouvements. Qui l'avait, de quand à quand, dans quel état rendu."
+        "body": "Chaque matériel affiche son parcours complet : qui l'a eu, sur quelle période, et dans quel état il a été restitué."
       }
     },
     "recall": {
-      "title": "Votre matériel expire chez un client ? Vous le savez avant lui.",
-      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel, assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
-      "cta": "Zéro matériel non conforme en circulation par inadvertance."
+      "title": "Une VGP arrive à échéance chez un client ? Vous le savez avant lui.",
+      "body": "TraviXO recoupe automatiquement vos dates de VGP avec les locations en cours. Si une machine arrive à échéance pendant qu'elle est encore chez le client, vous recevez une alerte assez tôt pour organiser le retour et planifier le contrôle avant la date limite.",
+      "cta": "Pas de matériel non conforme qui circule sans que vous le sachiez."
     },
     "exceptions": {
-      "title": "Les exceptions que vous devez voir immédiatement",
+      "title": "Les écarts à voir tout de suite",
       "overdueReturn": {
-        "title": "Retard de retour non scanné",
-        "body": "Un engin attendu ce soir n'est pas revenu. TraviXO vous alerte le lendemain matin si aucun scan de retour n'a été enregistré."
+        "title": "Retour prévu non scanné",
+        "body": "Une machine devait rentrer hier soir et aucun retour n'a été scanné. TraviXO vous alerte dès le lendemain matin."
       },
       "missingAudit": {
-        "title": "Manquant après audit",
-        "body": "L'audit de dépôt est terminé. Deux engins ne sont pas localisés. TraviXO génère la liste en PDF et vous l'envoie automatiquement."
+        "title": "Matériel introuvable après inventaire",
+        "body": "L'inventaire dépôt est terminé. Deux matériels manquent. TraviXO sort la liste en PDF et vous l'envoie automatiquement."
       },
       "vgpExpiring": {
-        "title": "VGP expirant en location active",
-        "body": "Un engin dont le contrôle arrive à échéance dans 10 jours est encore chez un client. Alerte de rappel envoyée. Retour à organiser avant la date limite."
+        "title": "VGP qui arrive à échéance pendant une location",
+        "body": "Une machine dont la VGP expire dans 10 jours est encore chez un client. L'alerte de rappel part immédiatement pour organiser le retour avant l'échéance."
       }
     },
     "useCases": {
-      "title": "Conçu pour votre réalité",
+      "title": "Pensé pour votre façon de travailler",
       "btp": {
-        "title": "Loueurs d'engins BTP",
-        "body": "Nacelles, chariots, compresseurs, groupes électrogènes. Gérez les VGP de tout votre parc, sachez exactement à quel client chaque machine est affectée, et recevez une alerte avant qu'une vérification expire pendant une location."
+        "title": "Location de matériel BTP",
+        "body": "Nacelles, chariots, compresseurs, groupes électrogènes. Gérez les VGP de tout le parc, sachez à quel client chaque machine est affectée, et recevez une alerte avant qu'un contrôle n'expire en cours de location."
       },
       "multiDepot": {
-        "title": "Parc multi-dépôts",
-        "body": "Vous avez du matériel sur 2 ou 3 sites, et vous ne savez plus toujours ce qui est où. Chaque scan crée un événement horodaté. Un audit d'inventaire produit la liste des manquants en PDF, envoyée automatiquement."
+        "title": "Parc réparti sur plusieurs dépôts",
+        "body": "Du matériel sur 2 ou 3 sites, avec des mouvements permanents. Chaque scan crée une trace horodatée. Un inventaire fait ressortir la liste des manquants en PDF, envoyée automatiquement."
       },
       "excel": {
-        "title": "La transition depuis Excel",
-        "body": "Vous gérez vos VGP sur un fichier partagé ou dans votre email. Importez votre liste d'actifs en 10 minutes. TraviXO prend le relais : alertes automatiques, certificats centralisés, historique consultable."
+        "title": "Centraliser la conformité",
+        "body": "Vos certificats sont à un endroit, vos dates à un autre, votre historique nulle part. Importez votre liste matériel en 10 minutes. TraviXO relie le tout : alertes automatiques, certificats centralisés, historique accessible."
       }
     },
     "finalCta": {
-      "title": "Prêt à réduire les pertes d'équipement ?",
-      "subtitle": "Rejoignez les sociétés de location françaises qui suivent leurs équipements et respectent les exigences de conformité VGP.",
-      "primary": "Démarrer l'essai gratuit",
+      "title": "Arrêtez de perdre la trace de votre matériel",
+      "subtitle": "Remplacez le suivi dispersé entre vos systèmes, vos dossiers et vos mails par une seule chaîne qui relie la machine à ses documents.",
+      "primary": "Tester sur votre parc réel",
       "secondary": "Planifier une démo",
       "badges": [
-        "Aucune carte bancaire requise",
-        "Essai gratuit de 30 jours",
-        "Hébergement UE (RGPD)",
-        "Résiliation à tout moment"
+        "Aucune carte bancaire demandée",
+        "30 jours d'essai",
+        "Hébergement en Europe",
+        "Résiliable à tout moment"
       ],
       "footer": {
         "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
@@ -186,60 +186,82 @@
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
       }
+    },
+    "depotScene": {
+      "title": "Une machine doit partir ce matin.",
+      "trigger": "Avant qu'elle quitte le dépôt, il faut remettre au client le dernier rapport VGP et le certificat de conformité. C'est la loi.",
+      "search": {
+        "title": "Vous cherchez :",
+        "item1": "La date de dernière VGP — dans votre système, un classeur, ou de mémoire",
+        "item2": "Le certificat — dans un dossier partagé, un mail, ou une armoire",
+        "item3": "La confirmation que le rapport est sans réserve"
+      },
+      "result": "Le temps de tout rassembler, la machine aurait déjà pu être en route.",
+      "insight": "Si les documents étaient reliés à la machine, la réponse prendrait 30 secondes. Pas une demi-heure."
+    },
+    "erpPositioning": {
+      "title": "TraviXO ne remplace pas votre ERP.",
+      "body": "Il relie ce que votre ERP ne relie pas : la machine physique, sa conformité, ses documents et sa traçabilité terrain."
+    },
+    "credibility": {
+      "title": "Conçu pour des opérations réelles",
+      "item1": "Pensé pour des parcs de 50 à 2 000 machines",
+      "item2": "Utilisable sans changer vos outils existants",
+      "item3": "Aucune dépendance à un ERP spécifique"
     }
   },
   "about": {
     "hero": {
       "title": "À propos de TraviXO",
-      "subtitle": "Conçu par des vétérans de la location d'équipement qui ont vécu ces problèmes de première main"
+      "subtitle": "Construit à partir de problèmes opérationnels réels dans la location de matériel"
     },
     "story": {
       "title": "Notre histoire",
-      "paragraph1": "TraviXO est né d'une expérience réelle. L'un de nous a travaillé dans le support informatique chez des leaders du secteur comme. Les meilleures entreprises rencontrent les mêmes défis : suivre des milliers d'équipements, maintenir des inventaires précis, gérer les audits. Nous avons réalisé que l'outil adapté n'existait pas.",
-      "paragraph2": "L'autre venait de la gestion de paie, où chaque détail compte et où la conformité est obligatoire. Cette approche méthodique de la précision et de la fiabilité est devenue la base de TraviXO.",
-      "paragraph3": "En combinant l'expérience terrain avec l'expertise en gestion de processus, nous avons construit un outil qui fonctionne à la fois pour les techniciens et les décideurs :",
+      "paragraph1": "TraviXO vient d'une exposition directe à la gestion du matériel sur le terrain. Même les entreprises structurées ont le même problème : les données sont dans un système, les certificats dans un autre, et l'historique terrain n'est relié à rien.",
+      "paragraph2": "Ce n'est pas un manque d'outils. C'est un manque de lien entre eux. C'est pour ça que les documents se perdent, que les échéances passent, et que les inventaires ne tombent jamais juste.",
+      "paragraph3": "Nous avons construit TraviXO pour relier ce qui était fragmenté :",
       "list": {
-        "item1": "Simple à configurer",
-        "item2": "Rapide à maîtriser",
-        "item3": "Suffisamment fiable pour éviter des milliers d'euros de pertes"
+        "item1": "Le matériel relié à un QR code",
+        "item2": "La conformité attachée à chaque machine",
+        "item3": "Documents et historique accessibles immédiatement"
       }
     },
     "mission": {
       "title": "Notre mission",
-      "description": "Aider les entreprises à savoir où se trouvent leurs équipements sans des semaines de travail sur tableur. TraviXO simplifie le suivi des équipements, optimise les audits, et vous aide à passer du tableur au suivi en quelques heures."
+      "description": "Remplacer le suivi fragmenté par un système clair où chaque machine est identifiable, traçable et conforme sans travail manuel."
     },
     "values": {
-      "title": "Ce qui nous anime",
+      "title": "Ce qui nous guide",
       "efficiency": {
-        "title": "La rapidité compte",
-        "description": "Chaque minute passée à lutter contre un logiciel est du temps volé au vrai travail. Nous construisons pour la rapidité et la simplicité."
+        "title": "Le temps compte",
+        "description": "Chaque minute perdue contre un logiciel est une minute retirée à l'exploitation. Nous construisons pour aller vite et rester simple."
       },
       "realWorld": {
-        "title": "Conçu pour la réalité",
-        "description": "Les réseaux tombent en panne, les données sont désordonnées, les équipes changent. TraviXO fonctionne dans ces conditions, pas seulement dans des démonstrations parfaites."
+        "title": "Pensé pour le terrain",
+        "description": "Le réseau coupe, les données sont imparfaites, les équipes changent. TraviXO est fait pour ces conditions-là, pas pour une démonstration parfaite."
       },
       "transparency": {
-        "title": "Transparence totale",
-        "description": "Tarification claire, données exportables, aucun verrouillage fournisseur. Vous êtes propriétaire de vos informations."
+        "title": "Clarté totale",
+        "description": "Tarifs lisibles, données exportables, aucun verrouillage inutile. Vos informations restent à vous."
       },
       "customerFirst": {
-        "title": "Guidé par les clients",
-        "description": "Chaque fonctionnalité provient d'un vrai problème rencontré par des clients ou par nous avant TraviXO."
+        "title": "Guidé par les vrais problèmes",
+        "description": "Chaque fonctionnalité part d'un problème réel rencontré par un client ou par nous-mêmes avant TraviXO."
       }
     },
     "founders": {
       "title": "Notre parcours",
       "description": "Nous sommes deux cofondateurs :",
       "list": {
-        "item1": "Un spécialiste du support informatique dans des environnements d'équipement exigeants",
-        "item2": "Un expert en gestion de paie garantissant la fiabilité des processus et la conformité"
+        "item1": "Un profil support IT passé par des environnements matériels exigeants",
+        "item2": "Un profil gestion de paie orienté fiabilité des processus et conformité"
       },
-      "conclusion": "TraviXO est développé à Paris, hébergé en Europe, et conforme au RGPD. Notre objectif est simple : aider toute entreprise gérant des équipements à savoir ce qu'elle a, où c'est, et qui l'a."
+      "conclusion": "TraviXO est développé à Paris, hébergé en Europe et conforme au RGPD. Notre objectif est simple : aider toute entreprise qui gère du matériel à savoir ce qu'elle a, où cela se trouve, et qui l'a."
     },
     "cta": {
-      "title": "Prêt à suivre plus intelligemment ?",
-      "description": "Rejoignez les entreprises qui réduisent leurs pertes d'équipement grâce au suivi QR simple.",
-      "button": "Démarrer l'essai gratuit"
+      "title": "Commencez à suivre correctement",
+      "description": "Remplacez le suivi fragmenté par un système construit pour vos opérations",
+      "button": "Tester sur votre parc réel"
     },
     "footer": {
       "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
@@ -250,174 +272,174 @@
   "features": {
     "hero": {
       "title": "Fonctionnalités TraviXO",
-      "subtitle": "Du suivi par QR à la conformité VGP – tout ce dont vous avez besoin"
+      "subtitle": "Du suivi QR au pilotage VGP, l'essentiel pour exploiter un parc sans angle mort"
     },
     "differentiators": {
       "import": {
         "time": "5 min",
-        "title": "Importez n'importe quel fichier",
-        "description": "Importez 500 équipements en 5 minutes. Les concurrents nécessitent plus de 40 heures de saisie manuelle."
+        "title": "Import de n'importe quel fichier",
+        "description": "500 matériels importés en 5 minutes. Pas de ressaisie manuelle fiche par fiche."
       },
       "bulk": {
-        "time": "30 s",
+        "time": "30 sec",
         "title": "Génération QR en masse",
-        "description": "Générez 500 codes prêts à imprimer en 30 secondes. Pas besoin de cliquer équipement par équipement."
+        "description": "500 codes prêts à imprimer en 30 secondes. Pas besoin d'ouvrir chaque fiche une par une."
       },
       "deploy": {
         "time": "Heures",
-        "title": "Commencez le suivi rapidement",
-        "description": "Généralement opérationnel en quelques heures après l'inscription. Les concurrents prennent 2 à 4 semaines."
+        "title": "Mise en route rapide",
+        "description": "Le suivi peut commencer quelques heures après l'inscription. Pas 2 à 4 semaines plus tard."
       }
     },
     "availableNow": {
       "title": "Disponible dès maintenant",
-      "subtitle": "Prêt à l'emploi dès le premier jour",
+      "subtitle": "Utilisable dès le premier jour",
       "features": {
         "qrTracking": {
-          "title": "Suivi d'équipement par QR",
-          "description": "Générez des codes QR pour tout votre parc. Chaque équipement reçoit un code unique lié à ses informations.",
+          "title": "Suivi du matériel par QR code",
+          "description": "Générez des QR codes pour tout votre parc. Chaque matériel reçoit un code unique relié à sa fiche.",
           "items": [
-            "Générez des codes en un clic",
-            "Recommandations d'étiquettes résistantes aux intempéries incluses",
-            "Révoquez les codes si nécessaire",
-            "Génération PDF en masse pour plus de 500 codes"
+            "Génération des codes en un clic",
+            "Compatible avec étiquettes adhésives standard",
+            "Désactivation des codes si nécessaire",
+            "PDF en masse pour 500 codes et plus"
           ]
         },
         "vgp": {
-          "title": "Automatisation de la conformité VGP",
-          "description": "Gardez le contrôle de votre conformité avec un suivi automatique des inspections. Planification, rappels et rapports prêts pour audit.",
+          "title": "Suivi VGP automatisé",
+          "description": "Gardez vos échéances sous contrôle avec un suivi automatique des contrôles. Planification, rappels et rapports prêts pour vérification.",
           "items": [
-            "Planification automatique des inspections",
-            "Rappels par email (30/7 jours avant échéance)",
-            "Téléchargez et stockez les certificats PDF",
-            "Générez des rapports prêts pour audit"
+            "Planification automatique des contrôles",
+            "Rappels par e-mail à J-30, J-15, J-7, J-1 et en dépassement",
+            "Dépôt et conservation des certificats PDF",
+            "Génération de rapports prêts pour contrôle"
           ]
         },
         "excelImport": {
-          "title": "Importez n'importe quel fichier",
-          "description": "Importez votre fichier d'équipement et commencez le suivi en 5 minutes. Nous détectons automatiquement quelles colonnes sont les Numéros de série, Emplacements, Dates d'achat - même si vos en-têtes sont en français ou utilisent des abréviations.",
+          "title": "Importez votre fichier tel qu'il est",
+          "description": "Chargez votre fichier matériel et commencez le suivi en 5 minutes. Les colonnes Numéro de série, Emplacement ou Date d'achat sont reconnues automatiquement, même si vos en-têtes sont en français, abrégés ou irréguliers.",
           "items": [
-            "Fonctionne avec n'importe quels noms de colonnes (toute langue)",
-            "Gère les données désordonnées (cellules vides, formats étranges)",
-            "Détecte les erreurs avant l'import",
+            "Compatible avec les en-têtes français et anglais",
+            "Gère les données imparfaites",
+            "Repère les erreurs avant import",
             "Aperçu avant validation"
           ]
         },
         "mobileScanning": {
-          "title": "Scannez avec n'importe quel téléphone",
-          "description": "Votre équipe peut scanner les équipements avec n'importe quel smartphone - aucun téléchargement d'application requis. Rapide, fonctionne en faible luminosité.",
+          "title": "Scan avec n'importe quel téléphone",
+          "description": "Vos équipes scannent le matériel avec n'importe quel smartphone, sans installation d'application. Rapide, même dans des conditions peu idéales.",
           "items": [
-            "Fonctionne dans n'importe quel navigateur mobile",
-            "Scan par caméra",
-            "Fonctionne sur tout smartphone, sans installation d'application",
-            "Contexte du dernier scan : opérateur, notes et état du matériel"
+            "Fonctionne dans le navigateur du téléphone",
+            "Scan via l'appareil photo du téléphone",
+            "Compatible avec tous les smartphones, sans installation",
+            "Dernier scan enregistré : opérateur, remarques, état du matériel"
           ]
         },
         "direccte": {
-          "title": "Rapports de vérification VGP",
-          "description": "Générez des rapports de conformité en un clic. Historique complet des inspections et exports formatés pour les audits de l'inspection du travail (DREETS).",
+          "title": "Rapports de contrôle VGP",
+          "description": "Générez vos rapports en un clic. Historique complet des contrôles et exports formatés pour les inspections DREETS.",
           "items": [
             "Suivi automatique de la conformité",
-            "Exportez en PDF ou Excel",
-            "Historique complet des inspections",
-            "Formaté pour les audits réglementaires"
+            "Export PDF ou Excel",
+            "Historique complet des contrôles",
+            "Présentation adaptée aux contrôles réglementaires"
           ]
         },
         "dashboard": {
           "title": "Tableau de bord",
-          "description": "Sachez qui l'a, quand il a été vu pour la dernière fois, et s'il est prêt à louer. Filtrez par statut, emplacement, catégorie ou champs personnalisés.",
+          "description": "Sachez qui a la machine, quand elle a été vue pour la dernière fois, et si elle peut repartir en location. Filtrez par statut, dépôt, catégorie ou champs personnalisés.",
           "items": [
-            "Voyez le statut des équipements d'un coup d'œil",
-            "Suivez les taux d'utilisation par catégorie",
-            "Configurez des alertes personnalisées",
-            "Exportez en CSV ou Excel"
+            "Vue immédiate sur l'état du parc",
+            "Suivi des taux d'utilisation par catégorie",
+            "Alertes personnalisables",
+            "Export CSV ou Excel"
           ]
         },
         "emailAlerts": {
-          "title": "Alertes email",
-          "description": "Alertes VGP quotidiennes (J-30, J-14, J-7, J-1 et dépassement). Rappel si un engin expire pendant une location active. Notifications d'audit avec liste des manquants.",
+          "title": "Alertes e-mail",
+          "description": "Alertes VGP quotidiennes à J-30, J-14, J-7, J-1 et échues. Alerte de rappel si une machine arrive à échéance pendant une location. Notification d'inventaire avec liste des manquants.",
           "items": [
-            "Rappels automatiques à J-30/J-14/J-7/J-1 avant échéance",
-            "Alerte quand un engin expire pendant une location active",
-            "Notifications d'audit avec liste des manquants",
-            "Notifications bilingues (FR/EN)"
+            "Rappels automatiques à J-30, J-15, J-7 et J-1",
+            "Alerte si une machine arrive à échéance en cours de location",
+            "Notifications d'inventaire avec liste des manquants",
+            "Notifications bilingues FR/EN"
           ]
         },
         "teamManagement": {
           "title": "Gestion d'équipe",
-          "description": "Invitez vos techniciens, connexions séparées, auditez qui a scanné quoi et quand."
+          "description": "Invitez vos techniciens, séparez les accès, et tracez qui a scanné quoi et à quel moment."
         }
       }
     },
     "comingSoon": {
-      "title": "Prochainement",
-      "subtitle": "Fonctionnalités en développement actif",
+      "title": "Bientôt disponible",
+      "subtitle": "Fonctionnalités en cours de développement",
       "features": {
         "apiAccess": {
           "title": "Accès API",
-          "description": "Connectez TraviXO avec vos systèmes existants. Documentation complète et notifications d'événements en temps réel."
+          "description": "Connectez TraviXO à vos systèmes existants. Documentation complète et remontée d'événements en temps réel."
         }
       }
     },
     "enterprise": {
-      "title": "Développement personnalisé (Enterprise)",
-      "subtitle": "Service d'intégration et de développement sur mesure pour les clients Enterprise",
-      "note": "Inclut un service d'intégration et de développement sur mesure selon vos besoins",
-      "cta": "Discuter de vos besoins Enterprise",
+      "title": "Développements sur mesure",
+      "subtitle": "Intégration et développements spécifiques pour les clients Enterprise",
+      "note": "Comprend un service d'intégration et de développement adapté à vos besoins",
+      "cta": "Parler de vos besoins Enterprise",
       "features": {
         "customIntegrations": {
-          "title": "Intégrations personnalisées",
-          "description": "Connectez TraviXO à vos systèmes ERP, maintenance ou CRM existants.",
-          "examples": "Exemples : SAGE, SAP, Cegid, synchronisation bidirectionnelle des données"
+          "title": "Intégrations sur mesure",
+          "description": "Reliez TraviXO à votre ERP, votre maintenance ou votre CRM existants.",
+          "examples": "Exemples : SAGE, SAP, Cegid, synchronisation bidirectionnelle"
         },
         "whiteLabel": {
           "title": "Marque blanche",
-          "description": "Personnalisez TraviXO avec votre logo, vos couleurs et un domaine personnalisé. Interface entièrement à votre marque."
+          "description": "Habillez TraviXO avec votre logo, vos couleurs et votre domaine. Interface à vos couleurs."
         },
         "onPremise": {
-          "title": "Déploiement sur site",
-          "description": "Hébergez TraviXO sur votre propre infrastructure pour un contrôle total des données."
+          "title": "Déploiement sur votre infrastructure",
+          "description": "Hébergez TraviXO sur vos propres serveurs pour garder la maîtrise complète des données."
         }
       }
     },
     "status": {
-      "availableNow": "Disponible dès maintenant",
+      "availableNow": "Disponible maintenant",
       "comingQ1": "T1 2026",
       "comingQ2": "T2 2026",
       "builtOnDemand": "Développé à la demande"
     },
     "finalCta": {
-      "title": "Prêt à commencer ?",
-      "subtitle": "Démarrez dès aujourd'hui avec la conformité VGP",
-      "button": "Démarrer l'essai gratuit"
+      "title": "Prêt à démarrer ?",
+      "subtitle": "Commencez par reprendre le contrôle de vos VGP dès aujourd'hui",
+      "button": "Lancer l'essai gratuit"
     }
   },
   "contact": {
     "hero": {
-      "title": "Parlons de vos besoins de suivi d'équipement",
-      "subtitle": "Que vous soyez intéressé par un pilote, que vous ayez des questions sur les fonctionnalités ou que vous souhaitiez voir TraviXO en action, nous sommes là pour vous aider."
+      "title": "Parlons de votre suivi matériel",
+      "subtitle": "Pilote, questions sur les fonctionnalités, démonstration du produit : dites-nous où vous en êtes et ce que vous cherchez."
     },
     "form": {
       "fullName": "Nom complet",
       "fullNamePlaceholder": "Jean Dupont",
-      "email": "Email",
-      "emailPlaceholder": "jean@entreprise.com",
+      "email": "E-mail",
+      "emailPlaceholder": "jean@entreprise.fr",
       "company": "Société",
-      "companyPlaceholder": "Votre société",
-      "phone": "Téléphone (facultatif)",
+      "companyPlaceholder": "Nom de votre société",
+      "phone": "Téléphone (optionnel)",
       "phonePlaceholder": "+33 1 23 45 67 89",
-      "typeLabel": "Qui êtes-vous ?",
-      "typeSelect": "Sélectionner une option",
+      "typeLabel": "Quel profil vous décrit le mieux ?",
+      "typeSelect": "Choisissez une option",
       "fleetLabel": "Quelle est la taille de votre parc ?",
-      "fleetSelect": "Sélectionner une taille de parc",
+      "fleetSelect": "Choisissez une taille de parc",
       "message": "Message",
-      "messagePlaceholder": "Parlez-nous de vos besoins de suivi d'équipement...",
+      "messagePlaceholder": "Expliquez-nous votre organisation actuelle et ce qui bloque aujourd'hui...",
       "send": "Envoyer le message",
       "sending": "Envoi en cours...",
-      "successTitle": "Message envoyé avec succès !",
-      "successMessage": "Nous vous répondrons sous 24 heures.",
-      "errorTitle": "Erreur lors de l'envoi du message",
-      "errorMessage": "Échec de l'envoi du message. Veuillez réessayer ou nous écrire directement à info@travixosystems.com",
+      "successTitle": "Message envoyé",
+      "successMessage": "Nous revenons vers vous sous 24 heures.",
+      "errorTitle": "Erreur lors de l'envoi",
+      "errorMessage": "L'envoi a échoué. Vous pouvez aussi nous écrire directement à info@travixosystems.com",
       "notProvided": "Non renseigné"
     },
     "typeOptions": {
@@ -428,13 +450,13 @@
       "other": "Autre"
     },
     "fleetOptions": {
-      "small": "1 à 100 équipements",
-      "medium": "100 à 500 équipements",
-      "large": "500 à 2 000 équipements",
-      "enterprise": "Plus de 2 000 équipements"
+      "small": "1 à 100 matériels",
+      "medium": "100 à 500 matériels",
+      "large": "500 à 2 000 matériels",
+      "enterprise": "2 000 matériels et plus"
     },
     "contactInfo": {
-      "email": "Email",
+      "email": "E-mail",
       "phone": "Téléphone",
       "location": "Localisation",
       "locationValue": "Paris, France"
@@ -447,8 +469,8 @@
   },
   "pricing": {
     "hero": {
-      "title": "Automatisez votre conformité VGP",
-      "subtitle": "Des sanctions peuvent s'appliquer en cas de manquement aux obligations de conformité périodique (Code du travail, Art. L4741-1). Automatisez votre suivi de conformité réglementaire."
+      "title": "Gardez vos VGP sous contrôle",
+      "subtitle": "Un manquement aux obligations périodiques de vérification peut exposer l'entreprise à des sanctions. TraviXO automatise le suivi de conformité de votre parc en France."
     },
     "billing": {
       "year": "an",
@@ -459,105 +481,105 @@
       "title": "Pourquoi TraviXO ?",
       "scrollHint": "Faites défiler pour voir toutes les colonnes",
       "headers": {
-        "feature": "Fonctionnalité",
-        "traditional": "Excel & méthodes manuelles",
+        "feature": "Point comparé",
+        "traditional": "Méthodes actuelles",
         "whyItMatters": "Pourquoi c'est important"
       },
       "rows": {
         "vgp": {
-          "label": "Conformité VGP",
-          "traditional": "Suivi manuel, risque de sanctions en cas de non-conformité",
-          "travixo": "Rappels automatisés, rapports centralisés, documents disponibles pour tout contrôle",
-          "whyItMatters": "Obligatoire pour location d'équipement en France"
+          "label": "Suivi VGP",
+          "traditional": "Suivi manuel, risque d'écart de conformité",
+          "travixo": "Rappels automatiques, rapports centralisés, documents disponibles en cas de contrôle",
+          "whyItMatters": "Indispensable dans la location de matériel"
         },
         "setup": {
-          "label": "Délai avant utilisation",
-          "traditional": "2-4 semaines de saisie",
-          "travixo": "15 minutes avec import Excel",
-          "whyItMatters": "Économisez 2 à 4 semaines de saisie"
+          "label": "Temps de mise en route",
+          "traditional": "2 à 4 semaines de ressaisie",
+          "travixo": "15 minutes avec import de fichier",
+          "whyItMatters": "Évite 2 à 4 semaines de saisie"
         },
         "excel": {
           "label": "Reprise de vos données",
-          "traditional": "Non supporté",
-          "travixo": "500 actifs en 5 minutes",
-          "whyItMatters": "Éliminez 40+ heures de saisie manuelle"
+          "traditional": "Non prévue",
+          "travixo": "500 matériels en 5 minutes",
+          "whyItMatters": "Plus de ressaisie manuelle"
         },
         "qr": {
           "label": "Génération QR",
-          "traditional": "Manuel, un par un",
-          "travixo": "En masse: 500 codes en 30 secondes",
-          "whyItMatters": "Vos équipements sont identifiés dès le premier jour"
+          "traditional": "Manuelle, une fiche après l'autre",
+          "travixo": "En masse : 500 codes en 30 secondes",
+          "whyItMatters": "Le parc est étiqueté dès le départ"
         }
       }
     },
     "plans": {
-      "popular": "Le plus populaire",
-      "vgpIncluded": "VGP inclus",
+      "popular": "Le plus choisi",
+      "vgpIncluded": "VGP incluse",
       "starter": {
         "name": "Starter",
-        "subtitle": "Organisez votre parc avant d'activer la conformité VGP",
+        "subtitle": "Structurez votre parc avant d'activer le suivi VGP",
         "features": {
-          "assets": "Jusqu'à 100 équipements",
-          "excel": "Importez n'importe quel fichier",
+          "assets": "Jusqu'à 100 matériels",
+          "excel": "Import de n'importe quel fichier",
           "qr": "Génération QR en masse",
-          "scan": "Scannez avec n'importe quel téléphone",
-          "support": "Support par email",
-          "noVgp": "Conformité VGP disponible en passant au plan Professional"
+          "scan": "Scan avec n'importe quel téléphone",
+          "support": "Support e-mail",
+          "noVgp": "Le suivi VGP est disponible en passant sur Professional"
         }
       },
       "professional": {
         "name": "Professional",
-        "subtitle": "Conformité complète + gestion de parc",
+        "subtitle": "Conformité complète et gestion du parc",
         "features": {
-          "vgp": "Conformité VGP automatisée",
-          "assets": "Jusqu'à 500 équipements",
-          "starter": "Tout ce qui est dans Starter, plus :",
-          "multiSite": "Support multi-sites",
-          "audit": "Rapports d'inspection prêts pour le contrôle DREETS",
-          "integration": "Export CSV liste d'actifs et historique VGP",
+          "vgp": "Suivi VGP automatisé",
+          "assets": "Jusqu'à 500 matériels",
+          "starter": "Tout le contenu de Starter, plus :",
+          "multiSite": "Gestion multi-sites",
+          "audit": "Rapports prêts pour inspection DREETS",
+          "integration": "Export CSV de la liste du parc et de l'historique VGP",
           "support": "Support prioritaire",
           "teamManagement": "Gestion d'équipe",
-          "emailAlerts": "Alertes email"
+          "emailAlerts": "Alertes e-mail"
         }
       },
       "business": {
         "name": "Business",
-        "subtitle": "Pour opérations de taille moyenne avec support dédié",
+        "subtitle": "Pour les structures intermédiaires avec accompagnement renforcé",
         "features": {
-          "assets": "Jusqu'à 2 000 équipements",
-          "professional": "Tout ce qui est dans Professional +",
-          "vgpPriority": "VGP + support de conformité prioritaire",
-          "integrations": "Compatible SAGE, EBP, Cegid (configuration sur demande)",
-          "manager": "Gestionnaire de compte dédié",
-          "sla": "SLA de 24h garanti",
-          "advancedReporting": "Rapports avancés",
+          "assets": "Jusqu'à 2 000 matériels",
+          "professional": "Tout le contenu de Professional +",
+          "vgpPriority": "VGP + accompagnement conformité prioritaire",
+          "integrations": "Compatible SAGE, EBP, Cegid sur demande",
+          "manager": "Interlocuteur dédié",
+          "sla": "SLA 24 h garanti",
+          "advancedReporting": "Reporting avancé",
           "apiAccess": "Accès API"
         }
       },
       "enterprise": {
         "name": "Enterprise",
-        "price": "Personnalisé",
+        "price": "Sur devis",
         "annual": "",
-        "subtitle": "Pour grands parcs avec conformité complète",
-        "note": "Inclut un service d'intégration et de développement sur mesure",
+        "subtitle": "Pour les grands parcs avec exigences de conformité renforcées",
+        "note": "Comprend intégration et développements spécifiques",
         "features": {
-          "unlimited": "Équipements illimités",
-          "vgpDedicated": "VGP + équipe de conformité dédiée",
-          "support": "Support 24h/24, 7j/7",
-          "customIntegrations": "Intégrations personnalisées (SAGE, SAP, Cegid)",
+          "unlimited": "Matériels illimités",
+          "vgpDedicated": "VGP + équipe conformité dédiée",
+          "support": "Support 24/7",
+          "customIntegrations": "Intégrations sur mesure SAGE, SAP, Cegid",
           "whiteLabel": "Marque blanche",
-          "onPremise": "Déploiement sur site",
-          "sla": "SLA 99,9 % +"
+          "onPremise": "Déploiement sur votre infrastructure",
+          "sla": "SLA 99,9 % et plus"
         }
       },
       "extensions": {
-        "title": "Extensions Disponibles ▼",
-        "starterAssets": "Pack Actifs Supplémentaires (+€100/mois)",
-        "predictive": "Maintenance Prédictive (+€300/mois)",
-        "erp": "Intégration ERP (+€2 500 setup)",
-        "sla": "SLA Support 24h (+€400/mois)",
-        "advancedAnalytics": "Analyse Prédictive Avancée (+€300/mois)",
-        "multiErp": "Intégrations ERP Multiples (sur devis)"
+        "title": "Extensions disponibles ▼",
+        "starterAssets": "Pack matériels supplémentaires (+100 €/mois)",
+        "predictive": "Maintenance prédictive (+300 €/mois)",
+        "erp": "Intégration ERP (+2 500 € de mise en place)",
+        "sla": "SLA support 24 h (+400 €/mois)",
+        "advancedAnalytics": "Analytique prédictive avancée (+300 €/mois)",
+        "multiErp": "Plusieurs intégrations ERP (sur devis)"
       }
     },
     "status": {
@@ -566,39 +588,39 @@
       "builtOnDemand": "Développé à la demande"
     },
     "cta": {
-      "start": "Démarrer l'essai gratuit",
+      "start": "Lancer l'essai gratuit",
       "demo": "Réserver une démo",
       "contact": "Nous contacter"
     },
     "faq": {
-      "title": "Questions fréquemment posées",
+      "title": "Questions fréquentes",
       "questions": [
         {
-          "question": "Pourquoi la conformité VGP n'est-elle pas incluse dans le plan Starter ?",
-          "answer": "Le plan Starter est conçu pour le suivi basique uniquement. La conformité VGP nécessite des fonctionnalités avancées (planification des inspections, gestion des certificats, rapports de vérification VGP) disponibles à partir du plan Professional. Pour les sociétés de location d'équipement françaises, nous recommandons fortement le plan Professional."
+          "question": "Pourquoi le suivi VGP n'est-il pas inclus dans l'offre Starter ?",
+          "answer": "L'offre Starter est prévue pour le suivi de base du parc. Le pilotage VGP demande des fonctions plus avancées comme la planification des contrôles, la gestion des certificats et les rapports d'inspection. Elles sont disponibles à partir de l'offre Professional. Pour un loueur de matériel en France, c'est généralement l'offre à retenir."
         },
         {
-          "question": "Quelle est la différence entre la facturation mensuelle et annuelle ?",
-          "answer": "La facturation annuelle offre une réduction de 15 % par rapport aux paiements mensuels. Par exemple, le plan Professional coûte 14 400 €/an avec facturation annuelle, contre 1 412 €/mois avec facturation mensuelle (16 944 €/an au total)."
+          "question": "Quelle différence entre facturation mensuelle et annuelle ?",
+          "answer": "La facturation annuelle donne 15 % de remise par rapport au mensuel. Exemple : l'offre Professional revient à 14 400 €/an en annuel, contre 1 412 €/mois en mensuel, soit 16 944 € sur l'année."
         },
         {
-          "question": "Puis-je changer de plan à tout moment ?",
-          "answer": "Oui, vous pouvez passer à un plan supérieur à tout moment. Les rétrogradations sont possibles à la fin de votre période de facturation annuelle. Contactez notre équipe pour discuter de votre situation spécifique."
+          "question": "Puis-je changer d'offre à tout moment ?",
+          "answer": "Oui, vous pouvez monter d'offre à tout moment. Les passages à une offre inférieure sont possibles à la fin de la période annuelle. Contactez-nous pour voir votre cas précis."
         },
         {
-          "question": "Les extensions sont-elles compatibles avec tous les plans ?",
-          "answer": "Le pack d'actifs supplémentaires est disponible pour tous les plans. Les autres extensions (maintenance prédictive, intégrations ERP, SLA prioritaire) nécessitent le plan Professional ou supérieur."
+          "question": "Les extensions sont-elles compatibles avec toutes les offres ?",
+          "answer": "Le pack de matériels supplémentaires est disponible sur toutes les offres. Les autres extensions, comme la maintenance prédictive, les intégrations ERP ou le SLA prioritaire, nécessitent l'offre Professional ou supérieure."
         },
         {
           "question": "Proposez-vous une période d'essai ?",
-          "answer": "Oui, nous proposons une période d'essai de 30 jours pour tous les plans avec accès complet aux fonctionnalités. Aucune carte bancaire n'est requise pour démarrer."
+          "answer": "Oui. Toutes les offres peuvent être testées pendant 30 jours avec accès complet aux fonctionnalités. Aucune carte bancaire n'est demandée au démarrage."
         }
       ]
     },
     "finalCta": {
-      "title": "Prêt à automatiser votre conformité ?",
-      "subtitle": "Ne laissez pas la prochaine inspection vous prendre au dépourvu. Testez gratuitement pendant 30 jours.",
-      "button": "Démarrer l'essai gratuit"
+      "title": "Prêt à sécuriser votre conformité ?",
+      "subtitle": "N'attendez pas le prochain contrôle pour découvrir vos écarts. Essayez TraviXO gratuitement pendant 30 jours.",
+      "button": "Lancer l'essai gratuit"
     },
     "footer": {
       "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
@@ -610,140 +632,140 @@
     "title": "Politique de confidentialité",
     "section1": {
       "title": "1. Introduction",
-      "paragraph1": "Deralis Digital (« nous », « notre » ou « nos ») exploite travixosystems.com sous la marque TraviXO et fournit un logiciel de suivi d'actifs basé sur les codes QR. Nous nous engageons à protéger vos données personnelles et à respecter vos droits à la vie privée en vertu du Règlement Général sur la Protection des Données (RGPD) et des autres lois applicables en matière de protection des données.",
-      "paragraph2": "Cette Politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations lorsque vous utilisez notre site web et nos services."
+      "paragraph1": "Deralis Digital (« nous ») exploite travixosystems.com sous la marque TraviXO et fournit un logiciel de suivi de matériel par QR code. Nous nous engageons à protéger vos données personnelles et à respecter vos droits en matière de vie privée conformément au Règlement général sur la protection des données (RGPD) et aux autres lois applicables.",
+      "paragraph2": "La présente politique de confidentialité explique comment nous collectons, utilisons, conservons et protégeons vos informations lorsque vous utilisez notre site internet et nos services."
     },
     "section2": {
       "title": "2. Responsable du traitement",
       "intro": "Le responsable du traitement de vos données personnelles est :",
       "companyName": "Deralis Digital",
-      "email": "Email :",
+      "email": "E-mail :",
       "phone": "Téléphone :"
     },
     "section3": {
       "title": "3. Informations que nous collectons",
       "subsection1": {
         "title": "3.1 Informations que vous fournissez",
-        "intro": "Nous collectons les informations que vous fournissez volontairement lorsque vous :",
-        "item1": "Remplissez des formulaires de contact (nom, email, entreprise, numéro de téléphone, message)",
-        "item2": "Demandez un essai pilote ou une démonstration",
-        "item3": "Créez un compte (le cas échéant)",
-        "item4": "Vous inscrivez à notre newsletter ou à nos mises à jour",
-        "item5": "Communiquez avec nous par email ou téléphone"
+        "intro": "Nous collectons les informations que vous nous transmettez volontairement lorsque vous :",
+        "item1": "Remplissez un formulaire de contact (nom, e-mail, société, numéro de téléphone, message)",
+        "item2": "Demandez un pilote ou une démonstration",
+        "item3": "Créez un compte, le cas échéant",
+        "item4": "Vous inscrivez à notre newsletter ou à nos actualités",
+        "item5": "Échangez avec nous par e-mail ou par téléphone"
       },
       "subsection2": {
         "title": "3.2 Informations collectées automatiquement",
-        "intro": "Lorsque vous visitez notre site web, nous collectons automatiquement :",
-        "item1": "Adresse IP et localisation géographique (niveau pays/ville)",
-        "item2": "Type et version du navigateur",
-        "item3": "Système d'exploitation",
-        "item4": "Pages visitées et temps passé sur les pages",
-        "item5": "Site web de provenance",
-        "item6": "Date et heure d'accès"
+        "intro": "Lorsque vous visitez notre site, nous collectons automatiquement :",
+        "item1": "L'adresse IP et la localisation géographique au niveau pays / ville",
+        "item2": "Le type et la version du navigateur",
+        "item3": "Le système d'exploitation",
+        "item4": "Les pages consultées et le temps passé sur chaque page",
+        "item5": "Le site référent",
+        "item6": "La date et l'heure d'accès"
       },
       "subsection3": {
         "title": "3.3 Cookies et technologies de suivi",
-        "content": "Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience. Consultez notre Politique de cookies pour plus de détails."
+        "content": "Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience. Consultez notre politique relative aux cookies pour plus de détails."
       }
     },
     "section4": {
       "title": "4. Comment nous utilisons vos informations",
       "intro": "Nous utilisons vos informations pour :",
-      "item1": "Fournir et améliorer nos Services",
-      "item2": "Répondre à vos demandes et requêtes de support",
-      "item3": "Vous envoyer des mises à jour, newsletters et documents promotionnels (avec votre consentement)",
-      "item4": "Analyser l'utilisation du site web et optimiser les performances",
-      "item5": "Nous conformer aux obligations légales",
-      "item6": "Détecter et prévenir la fraude ou les problèmes de sécurité"
+      "item1": "Fournir et améliorer nos services",
+      "item2": "Répondre à vos demandes et besoins de support",
+      "item3": "Vous envoyer des actualités, newsletters et contenus promotionnels, avec votre consentement",
+      "item4": "Analyser l'usage du site et en améliorer les performances",
+      "item5": "Respecter nos obligations légales",
+      "item6": "Détecter et prévenir la fraude ou les incidents de sécurité"
     },
     "section5": {
-      "title": "5. Base juridique du traitement (RGPD)",
-      "intro": "Nous traitons vos données sur la base de :",
-      "item1": "Consentement : Lorsque vous donnez votre consentement explicite (par ex., inscription à la newsletter)",
-      "item2": "Nécessité contractuelle : Pour fournir les Services que vous avez demandés",
-      "item3": "Intérêts légitimes : Pour améliorer nos Services, prévenir la fraude et assurer la sécurité",
-      "item4": "Obligations légales : Pour nous conformer aux lois et réglementations"
+      "title": "5. Base légale du traitement (RGPD)",
+      "intro": "Nous traitons vos données sur les bases suivantes :",
+      "item1": "Consentement : lorsque vous donnez un accord explicite, par exemple pour la newsletter",
+      "item2": "Nécessité contractuelle : pour fournir les services que vous demandez",
+      "item3": "Intérêts légitimes : pour améliorer nos services, prévenir la fraude et garantir la sécurité",
+      "item4": "Obligations légales : pour respecter la réglementation applicable"
     },
     "section6": {
       "title": "6. Partage et divulgation des données",
-      "paragraph1": "Nous ne vendons pas vos données personnelles. Nous pouvons partager vos données avec :",
+      "paragraph1": "Nous ne vendons pas vos données personnelles. Nous pouvons les partager avec :",
       "subsection1": {
         "title": "6.1 Prestataires de services",
-        "content": "Nous travaillons avec des prestataires tiers pour l'hébergement, l'analyse, la livraison d'emails et le traitement des paiements. Ces prestataires sont liés par des accords de confidentialité et ne peuvent utiliser vos données que selon nos instructions."
+        "content": "Nous travaillons avec des prestataires tiers pour l'hébergement, l'analytique, l'envoi d'e-mails et le traitement des paiements. Ces prestataires sont soumis à des obligations de confidentialité et ne peuvent utiliser vos données que selon nos instructions."
       },
       "subsection2": {
         "title": "6.2 Exigences légales",
-        "content": "Nous pouvons divulguer vos données si la loi, une décision de justice ou une demande gouvernementale l'exige, ou pour protéger nos droits, notre sécurité ou nos biens."
+        "content": "Nous pouvons divulguer vos données si la loi, une décision de justice ou une demande administrative l'exige, ou pour protéger nos droits, notre sécurité ou nos biens."
       },
       "subsection3": {
-        "title": "6.3 Transferts d'entreprise",
-        "content": "Si TraviXO est impliqué dans une fusion, acquisition ou vente d'actifs, vos données peuvent être transférées. Nous vous informerons avant que vos données ne soient transférées et ne deviennent soumises à une Politique de confidentialité différente."
+        "title": "6.3 Transfert d'activité",
+        "content": "Si TraviXO est concerné par une fusion, une acquisition ou une cession d'actifs, vos données pourront être transférées. Nous vous informerons avant que ce transfert ne prenne effet et avant qu'une autre politique de confidentialité ne s'applique."
       }
     },
     "section7": {
-      "title": "7. Conservation des données",
-      "content": "Nous conservons vos données uniquement aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette Politique de confidentialité ou selon les exigences légales. Les données de compte sont conservées tant que votre compte est actif. Les données des formulaires de contact sont conservées pendant 2 ans maximum. Les données analytiques sont anonymisées et conservées indéfiniment."
+      "title": "7. Durée de conservation",
+      "content": "Nous conservons vos données uniquement pendant la durée nécessaire aux finalités décrites dans cette politique de confidentialité ou imposée par la loi. Les données de compte sont conservées tant que le compte est actif. Les données issues des formulaires de contact sont conservées jusqu'à 2 ans. Les données analytiques sont anonymisées et conservées sans limitation spécifique de durée."
     },
     "section8": {
       "title": "8. Vos droits (RGPD)",
-      "intro": "En vertu du RGPD, vous avez le droit de :",
-      "item1": "Accès : Demander une copie de vos données personnelles",
-      "item2": "Rectification : Corriger les données inexactes ou incomplètes",
-      "item3": "Effacement : Demander la suppression de vos données (« droit à l'oubli »)",
-      "item4": "Limitation : Limiter la façon dont nous traitons vos données",
-      "item5": "Portabilité : Recevoir vos données dans un format structuré et lisible par machine",
-      "item6": "Opposition : Vous opposer au traitement fondé sur des intérêts légitimes",
-      "item7": "Retrait du consentement : Retirer votre consentement à tout moment (sans affecter le traitement antérieur)",
-      "item8": "Réclamation : Déposer une plainte auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés), l'autorité française de protection des données, sur www.cnil.fr ou par courrier à CNIL, 3 Place de Fontenoy - TSA 80715, 75334 Paris Cedex 07",
+      "intro": "Au titre du RGPD, vous disposez des droits suivants :",
+      "item1": "Accès : demander une copie de vos données personnelles",
+      "item2": "Rectification : corriger des données inexactes ou incomplètes",
+      "item3": "Effacement : demander la suppression de vos données",
+      "item4": "Limitation : restreindre certains traitements de vos données",
+      "item5": "Portabilité : recevoir vos données dans un format structuré et lisible par machine",
+      "item6": "Opposition : vous opposer à un traitement fondé sur nos intérêts légitimes",
+      "item7": "Retrait du consentement : retirer votre consentement à tout moment, sans effet rétroactif",
+      "item8": "Réclamation : saisir la CNIL, Commission Nationale de l'Informatique et des Libertés, sur www.cnil.fr ou par courrier à CNIL, 3 Place de Fontenoy - TSA 80715, 75334 Paris Cedex 07",
       "footer": "Pour exercer ces droits, contactez-nous à contact@travixosystems.com. Nous répondrons à votre demande dans un délai de 30 jours.",
-      "dpo": "Délégué à la protection des données : Pour toute question relative à la protection des données, vous pouvez contacter notre référent protection des données à dpo@travixosystems.com."
+      "dpo": "Protection des données : pour toute question liée à la protection des données, vous pouvez écrire à notre contact dédié à dpo@travixosystems.com."
     },
     "section9": {
       "title": "9. Sécurité des données",
-      "paragraph1": "Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger vos données contre tout accès, divulgation, altération ou destruction non autorisés. Celles-ci incluent le chiffrement, des serveurs sécurisés et des contrôles d'accès.",
-      "paragraph2": "Toutefois, aucune méthode de transmission sur Internet ou de stockage électronique n'est sécurisée à 100 %. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir une sécurité absolue."
+      "paragraph1": "Nous mettons en place des mesures techniques et organisationnelles raisonnables pour protéger vos données contre tout accès non autorisé, divulgation, altération ou destruction. Ces mesures comprennent notamment le chiffrement, des serveurs sécurisés et des contrôles d'accès.",
+      "paragraph2": "Aucune transmission sur internet ni aucun stockage électronique n'offre une sécurité absolue. Même si nous faisons le nécessaire pour protéger vos données, nous ne pouvons pas garantir une sécurité totale."
     },
     "section10": {
       "title": "10. Transferts internationaux de données",
-      "content": "Vos données peuvent être transférées et traitées dans des pays situés en dehors de l'Espace Économique Européen (EEE). Nous veillons à ce que ces transferts soient conformes au RGPD en utilisant des Clauses Contractuelles Types (CCT) ou en nous assurant que le pays destinataire dispose de lois adéquates en matière de protection des données."
+      "content": "Vos données peuvent être transférées et traitées dans des pays situés hors de l'Espace économique européen. Nous veillons à ce que ces transferts respectent le RGPD, notamment via des clauses contractuelles types ou parce que le pays destinataire présente un niveau de protection adéquat."
     },
     "section11": {
-      "title": "11. Confidentialité des enfants",
-      "content": "Nos Services ne sont pas destinés aux personnes de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles auprès d'enfants. Si nous apprenons que nous avons collecté des données d'un enfant, nous les supprimerons rapidement."
+      "title": "11. Confidentialité des mineurs",
+      "content": "Nos services ne sont pas destinés aux personnes de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles concernant des mineurs. Si nous apprenons qu'un enfant nous a transmis des données, nous les supprimerons rapidement."
     },
     "section12": {
       "title": "12. Cookies et suivi",
-      "paragraph1": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le contenu. Les cookies sont de petits fichiers texte stockés sur votre appareil.",
+      "paragraph1": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et personnaliser certains contenus. Les cookies sont de petits fichiers texte enregistrés sur votre appareil.",
       "types": {
-        "title": "Types de cookies que nous utilisons :",
-        "essential": "Cookies essentiels : Nécessaires au fonctionnement du site web",
-        "analytics": "Cookies analytiques : Nous aident à comprendre comment les visiteurs utilisent notre site (par ex., Google Analytics)",
-        "marketing": "Cookies marketing : Suivent votre activité pour afficher des publicités pertinentes"
+        "title": "Types de cookies utilisés :",
+        "essential": "Cookies essentiels : nécessaires au fonctionnement du site",
+        "analytics": "Cookies analytiques : nous aident à comprendre l'usage du site, par exemple via Google Analytics",
+        "marketing": "Cookies marketing : suivent votre activité afin d'afficher des publicités pertinentes"
       },
-      "footer": "Conformément aux directives de la CNIL (Commission Nationale de l'Informatique et des Libertés) et à la réglementation ePrivacy, nous sollicitons votre consentement explicite avant de placer des cookies non essentiels. Vous pouvez gérer vos préférences de cookies à tout moment via le bandeau cookies affiché sur notre site ou via les paramètres de votre navigateur. Les cookies essentiels nécessaires au fonctionnement du site ne requièrent pas de consentement. La désactivation des cookies non essentiels n'affectera pas les fonctionnalités de base du site."
+      "footer": "Conformément aux recommandations de la CNIL et aux règles ePrivacy, nous demandons votre consentement explicite avant de déposer des cookies non essentiels. Vous pouvez gérer vos préférences à tout moment via le bandeau cookies du site ou les réglages de votre navigateur. Les cookies strictement nécessaires au fonctionnement du site ne requièrent pas de consentement. La désactivation des cookies non essentiels n'affecte pas les fonctions principales du site."
     },
     "section13": {
-      "title": "13. Liens vers des tiers",
-      "content": "Notre site web peut contenir des liens vers des sites tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites. Nous vous encourageons à consulter leurs politiques de confidentialité."
+      "title": "13. Liens vers des sites tiers",
+      "content": "Notre site peut contenir des liens vers des sites tiers. Nous ne sommes pas responsables de leurs pratiques en matière de confidentialité. Nous vous invitons à consulter leurs politiques respectives."
     },
     "section13b": {
-      "title": "13b. Prise de décision automatisée",
-      "content": "Nous n'utilisons pas de prise de décision automatisée ni de profilage produisant des effets juridiques ou des effets significatifs similaires vous concernant, tels que définis à l'Article 22 du RGPD. Si cela venait à changer, nous mettrons à jour cette Politique de confidentialité et obtiendrons votre consentement explicite lorsque requis."
+      "title": "13b. Décision automatisée",
+      "content": "Nous n'utilisons pas de prise de décision automatisée ni de profilage produisant des effets juridiques ou des effets significatifs comparables au sens de l'article 22 du RGPD. Si cela change, cette politique de confidentialité sera mise à jour et votre consentement explicite sera recueilli lorsque la loi l'exigera."
     },
     "section13c": {
-      "title": "13c. Délégué à la protection des données (DPO)",
-      "content": "Pour toute question ou préoccupation concernant nos pratiques de traitement des données, vous pouvez contacter notre référent désigné pour la protection des données à dpo@travixosystems.com. Vous pouvez également contacter la CNIL directement sur www.cnil.fr."
+      "title": "13c. Contact protection des données",
+      "content": "Pour toute question ou préoccupation concernant nos traitements de données, vous pouvez écrire à notre contact dédié à dpo@travixosystems.com. Vous pouvez également contacter directement la CNIL sur www.cnil.fr."
     },
     "section14": {
-      "title": "14. Modifications de cette Politique de confidentialité",
-      "paragraph1": "Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre. Nous vous informerons des modifications importantes en publiant la politique mise à jour sur cette page avec une nouvelle date de « Dernière mise à jour » ou en envoyant une notification par email.",
-      "paragraph2": "Votre utilisation continue des Services après l'entrée en vigueur des modifications constitue une acceptation de la Politique de confidentialité mise à jour."
+      "title": "14. Modifications de cette politique de confidentialité",
+      "paragraph1": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. En cas de changement important, nous vous en informerons en publiant la version mise à jour sur cette page avec une nouvelle date de mise à jour ou en vous adressant un e-mail.",
+      "paragraph2": "La poursuite de l'utilisation des services après l'entrée en vigueur des modifications vaut acceptation de la politique mise à jour."
     },
     "section15": {
       "title": "15. Nous contacter",
-      "intro": "Si vous avez des questions ou des préoccupations concernant cette Politique de confidentialité ou si vous souhaitez exercer vos droits, contactez-nous :",
+      "intro": "Pour toute question ou préoccupation concernant cette politique de confidentialité, ou pour exercer vos droits, contactez-nous :",
       "companyName": "Deralis Digital",
-      "email": "Email :",
+      "email": "E-mail :",
       "emailValue": "contact@travixosystems.com",
       "phone": "Téléphone :"
     },
@@ -758,220 +780,220 @@
     "title": "Conditions d'utilisation",
     "section1": {
       "title": "1. Acceptation des conditions",
-      "paragraph1": "Bienvenue sur TraviXO, exploité par Deralis Digital (« nous », « notre » ou « nos »). En accédant ou en utilisant notre site web (travixosystems.com) et nos services (collectivement, les « Services »), vous acceptez d'être lié par les présentes Conditions d'utilisation (« Conditions »). Si vous n'acceptez pas ces Conditions, vous ne pouvez pas utiliser les Services.",
-      "paragraph2": "Ces Conditions s'appliquent à tous les utilisateurs, y compris les visiteurs, les clients et toute personne qui accède aux Services."
+      "paragraph1": "Bienvenue sur TraviXO, exploité par Deralis Digital (« nous »). En accédant à notre site internet (travixosystems.com) et à nos services (ensemble, les « Services »), vous acceptez d'être lié par les présentes conditions d'utilisation. Si vous n'acceptez pas ces conditions, vous ne pouvez pas utiliser les Services.",
+      "paragraph2": "Ces conditions s'appliquent à tous les utilisateurs, y compris les visiteurs, clients et toute personne accédant aux Services."
     },
     "section2": {
-      "title": "2. Éligibilité",
+      "title": "2. Conditions d'éligibilité",
       "intro": "Pour utiliser les Services, vous devez :",
       "item1": "Avoir au moins 18 ans ou l'âge de la majorité dans votre juridiction",
-      "item2": "Avoir l'autorité légale de conclure des contrats contraignants",
-      "item3": "Ne pas être interdit d'utiliser les Services en vertu de la loi applicable",
+      "item2": "Avoir la capacité légale de conclure des contrats contraignants",
+      "item3": "Ne pas être empêché d'utiliser les Services par la loi applicable",
       "footer": "En utilisant les Services, vous déclarez et garantissez que vous remplissez ces conditions."
     },
     "section3": {
-      "title": "3. Inscription et sécurité du compte",
+      "title": "3. Création de compte et sécurité",
       "subsection1": {
-        "title": "3.1 Création de compte",
-        "content": "Pour accéder à certaines fonctionnalités, vous devrez peut-être créer un compte. Vous acceptez de fournir des informations exactes, à jour et complètes lors de l'inscription et de les mettre à jour si nécessaire."
+        "title": "3.1 Création du compte",
+        "content": "Pour accéder à certaines fonctionnalités, il peut être nécessaire de créer un compte. Vous vous engagez à fournir des informations exactes, à jour et complètes lors de l'inscription, et à les mettre à jour si nécessaire."
       },
       "subsection2": {
         "title": "3.2 Sécurité du compte",
-        "intro": "Vous êtes responsable de :",
-        "item1": "Maintenir la confidentialité de vos identifiants de compte",
-        "item2": "Toutes les activités qui se produisent sous votre compte",
-        "item3": "Nous informer immédiatement de tout accès non autorisé ou de toute faille de sécurité",
-        "footer": "Nous ne sommes pas responsables de toute perte ou dommage résultant de votre incapacité à protéger votre compte."
+        "intro": "Vous êtes responsable :",
+        "item1": "De la confidentialité de vos identifiants de connexion",
+        "item2": "De l'ensemble des activités réalisées via votre compte",
+        "item3": "De nous signaler immédiatement tout accès non autorisé ou toute faille de sécurité",
+        "footer": "Nous ne pourrons être tenus responsables des pertes ou dommages résultant d'une protection insuffisante de votre compte."
       },
       "subsection3": {
         "title": "3.3 Résiliation du compte",
-        "content": "Nous nous réservons le droit de suspendre ou de résilier votre compte si vous enfreignez ces Conditions ou si vous vous livrez à des activités frauduleuses, abusives ou illégales."
+        "content": "Nous nous réservons le droit de suspendre ou résilier votre compte si vous ne respectez pas les présentes conditions ou si vous adoptez un comportement frauduleux, abusif ou illégal."
       }
     },
     "section4": {
-      "title": "4. Tarifs et paiement",
+      "title": "4. Prix et paiement",
       "subsection1": {
-        "title": "4.1 Tarification",
-        "content": "Nos plans tarifaires sont disponibles sur travixosystems.com/pricing. Les prix sont susceptibles de changer, mais nous vous informerons avant toute modification affectant votre abonnement."
+        "title": "4.1 Tarifs",
+        "content": "Nos offres tarifaires sont présentées sur travixosystems.com/pricing. Les prix peuvent évoluer, mais nous vous informerons avant qu'un changement n'affecte votre abonnement."
       },
       "subsection2": {
         "title": "4.2 Facturation et renouvellement",
-        "content": "Les abonnements se renouvellent automatiquement à la fin de chaque période de facturation, sauf si vous annulez avant la date de renouvellement. Vous serez facturé via votre moyen de paiement enregistré."
+        "content": "Les abonnements sont renouvelés automatiquement à la fin de chaque période de facturation, sauf résiliation avant la date de renouvellement. Le paiement est prélevé sur le moyen de paiement enregistré."
       },
       "subsection3": {
         "title": "4.3 Remboursements",
-        "content": "Nous offrons une garantie de remboursement de 14 jours pour les nouveaux abonnés. Après 14 jours, les frais ne sont pas remboursables. Les remboursements pour les portions non utilisées des abonnements annuels sont calculés au prorata si vous annulez en cours de période."
+        "content": "Nous proposons une garantie de remboursement de 14 jours pour une première souscription. Passé ce délai, les frais ne sont plus remboursables. Les remboursements des portions non utilisées d'un abonnement annuel sont calculés au prorata en cas de résiliation en cours de période."
       },
       "subsection4": {
         "title": "4.4 Retard de paiement",
-        "content": "En cas d'échec de paiement, nous tenterons de débiter votre moyen de paiement jusqu'à 3 fois. Si le paiement n'est pas reçu dans les 7 jours, votre compte pourra être suspendu. Nous pouvons appliquer des frais de retard de 25 € ou 5 % du solde impayé, le montant le plus élevé étant retenu."
+        "content": "En cas d'échec de paiement, nous tenterons le prélèvement jusqu'à 3 fois. Si le règlement n'est pas reçu dans un délai de 7 jours, le compte pourra être suspendu. Nous pouvons appliquer des frais de retard de 25 € ou de 5 % du montant dû, selon le montant le plus élevé."
       }
     },
     "section5": {
-      "title": "5. Annulation et résiliation",
+      "title": "5. Résiliation et fin des Services",
       "subsection1": {
-        "title": "5.1 Votre droit d'annulation",
-        "content": "Vous pouvez annuler votre abonnement à tout moment en nous contactant ou en utilisant la fonction d'annulation dans les paramètres de votre compte. L'annulation prend effet à la fin de votre période de facturation en cours."
+        "title": "5.1 Votre droit de résiliation",
+        "content": "Vous pouvez résilier votre abonnement à tout moment en nous contactant ou via la fonction de résiliation présente dans les paramètres de votre compte. La résiliation prend effet à la fin de la période de facturation en cours."
       },
       "subsection2": {
         "title": "5.2 Notre droit de résiliation",
         "intro": "Nous pouvons suspendre ou résilier votre compte si vous :",
-        "item1": "Enfreignez ces Conditions",
-        "item2": "Ne payez pas les frais à échéance",
-        "item3": "Vous livrez à des activités frauduleuses ou illégales",
+        "item1": "Ne respectez pas les présentes conditions",
+        "item2": "Ne réglez pas les frais dus à l'échéance",
+        "item3": "Adoptez une activité frauduleuse ou illégale",
         "item4": "Utilisez les Services d'une manière qui nuit à TraviXO ou aux autres utilisateurs",
-        "footer": "Nous fournirons un préavis raisonnable avant la résiliation, sauf si une résiliation immédiate est requise pour des raisons légales ou de sécurité."
+        "footer": "Nous donnerons un préavis raisonnable avant résiliation, sauf si une interruption immédiate est nécessaire pour des raisons légales ou de sécurité."
       },
       "subsection3": {
         "title": "5.3 Effets de la résiliation",
-        "content": "En cas de résiliation, votre accès aux Services cessera. Vous disposerez de 30 jours pour exporter vos données avant leur suppression définitive. Les frais payés ne sont pas remboursables, sauf dans les cas prévus à la Section 4.3."
+        "content": "À la résiliation, votre accès aux Services cesse. Vous disposez de 30 jours pour exporter vos données avant leur suppression définitive. Les frais déjà payés ne sont pas remboursables, sauf disposition contraire prévue à l'article 4.3."
       }
     },
     "section6": {
-      "title": "6. Politique d'utilisation acceptable",
+      "title": "6. Règles d'usage acceptable",
       "intro": "Vous vous engagez à ne pas :",
       "item1": "Utiliser les Services à des fins illégales",
-      "item2": "Tenter d'obtenir un accès non autorisé à nos systèmes",
-      "item3": "Procéder à l'ingénierie inverse, à la décompilation ou au désassemblage des Services",
-      "item4": "Télécharger du code malveillant, des virus ou des logiciels malveillants",
-      "item5": "Interférer avec ou perturber les Services ou les serveurs",
+      "item2": "Tenter d'accéder sans autorisation à nos systèmes",
+      "item3": "Rétroconcevoir, décompiler ou désassembler les Services",
+      "item4": "Téléverser du code malveillant, des virus ou des logiciels malveillants",
+      "item5": "Perturber les Services, les serveurs ou leur fonctionnement",
       "item6": "Revendre ou redistribuer les Services sans autorisation",
-      "item7": "Utiliser les Services pour porter atteinte aux droits de propriété intellectuelle",
+      "item7": "Utiliser les Services pour porter atteinte à des droits de propriété intellectuelle",
       "item8": "Usurper l'identité d'une autre personne ou entité"
     },
     "section7": {
       "title": "7. Propriété intellectuelle",
       "subsection1": {
-        "title": "7.1 Notre propriété",
-        "content": "TraviXO conserve tous les droits, titres et intérêts sur les Services, y compris tous les logiciels, designs, marques commerciales et documentation. Ces Conditions ne vous confèrent aucun droit de propriété."
+        "title": "7.1 Nos droits",
+        "content": "TraviXO conserve l'ensemble des droits, titres et intérêts relatifs aux Services, y compris les logiciels, designs, marques et documentations. Les présentes conditions ne vous confèrent aucun droit de propriété."
       },
       "subsection2": {
-        "title": "7.2 Votre contenu",
-        "paragraph1": "Vous conservez la propriété de toutes les données que vous téléchargez sur TraviXO (« Données Client »). Vous nous accordez une licence limitée pour stocker, traiter et afficher vos données uniquement dans le but de fournir les Services.",
-        "paragraph2": "Vous déclarez que vous avez le droit de télécharger les Données Client et qu'elles ne violent aucune loi ni aucun droit de tiers."
+        "title": "7.2 Vos contenus",
+        "paragraph1": "Vous restez propriétaire de l'ensemble des données que vous chargez dans TraviXO (« Données Client »). Vous nous accordez une licence limitée afin de stocker, traiter et afficher ces données uniquement pour fournir les Services.",
+        "paragraph2": "Vous déclarez disposer des droits nécessaires pour charger les Données Client et garantissez qu'elles ne violent aucune loi ni aucun droit de tiers."
       },
       "subsection3": {
-        "title": "7.3 Commentaires",
-        "content": "Si vous fournissez des commentaires, suggestions ou idées concernant les Services, nous pouvons les utiliser sans obligation envers vous."
+        "title": "7.3 Retours et suggestions",
+        "content": "Si vous nous transmettez des remarques, suggestions ou idées concernant les Services, nous pouvons les utiliser sans obligation particulière envers vous."
       }
     },
     "section8": {
-      "title": "8. Protection des données et confidentialité",
-      "paragraph1": "Notre collecte et utilisation des données personnelles est régie par notre Politique de confidentialité. En utilisant les Services, vous consentez à nos pratiques en matière de données telles que décrites dans la Politique de confidentialité.",
-      "paragraph2": "Nous mettons en œuvre des mesures de sécurité raisonnables pour protéger vos données, mais nous ne pouvons pas garantir une sécurité absolue. Vous êtes responsable de la confidentialité de vos identifiants de compte."
+      "title": "8. Protection des données et vie privée",
+      "paragraph1": "La collecte et l'utilisation des données personnelles sont régies par notre politique de confidentialité. En utilisant les Services, vous acceptez nos pratiques telles qu'elles y sont décrites.",
+      "paragraph2": "Nous mettons en place des mesures de sécurité raisonnables pour protéger vos données, sans pouvoir garantir une sécurité absolue. Vous êtes responsable de la confidentialité de vos identifiants de connexion."
     },
     "section9": {
       "title": "9. Niveau de service et disponibilité",
-      "paragraph1": "Nous nous efforçons de fournir des Services fiables mais ne garantissons pas un accès ininterrompu. Les Services sont fournis « en l'état » et « selon disponibilité ». Nous pouvons effectuer des opérations de maintenance qui affectent temporairement la disponibilité, et nous fournirons un préavis lorsque cela est possible.",
+      "paragraph1": "Nous faisons le nécessaire pour fournir des Services fiables, sans garantir un accès ininterrompu. Les Services sont fournis en l'état et selon disponibilité. Des opérations de maintenance peuvent affecter temporairement leur accessibilité, avec information préalable lorsque cela est possible.",
       "sla": {
         "title": "Accord de niveau de service (SLA) :",
-        "content": "Les clients Enterprise bénéficient d'un SLA de disponibilité de 99,9 % tel que spécifié dans leur contrat. Les autres plans n'incluent pas de SLA."
+        "content": "Les clients Enterprise bénéficient d'un SLA de disponibilité de 99,9 % selon les termes prévus dans leur contrat. Les autres offres n'incluent pas de SLA."
       }
     },
     "section10": {
       "title": "10. Limitation de responsabilité",
-      "intro": "Dans toute la mesure permise par la loi :",
-      "paragraph1": "TraviXO et ses sociétés affiliées, dirigeants, employés et agents ne seront pas responsables de tout dommage indirect, accessoire, spécial, consécutif ou punitif, y compris la perte de profits, de revenus, de données ou d'utilisation, résultant de :",
-      "item1": "Votre utilisation ou votre incapacité à utiliser les Services",
-      "item2": "L'accès non autorisé à vos données",
-      "item3": "Les erreurs, bugs ou interruptions dans les Services",
-      "item4": "Le contenu ou les intégrations de tiers",
-      "paragraph2": "Notre responsabilité totale envers vous pour toute réclamation découlant de ces Conditions ou des Services ne dépassera pas les frais que vous avez payés au cours des 12 mois précédant la réclamation.",
-      "paragraph3": "Certaines juridictions n'autorisent pas l'exclusion de certaines garanties ou limitations de responsabilité, de sorte que ces limitations peuvent ne pas s'appliquer à vous."
+      "intro": "Dans les limites autorisées par la loi :",
+      "paragraph1": "TraviXO ainsi que ses sociétés affiliées, dirigeants, salariés et agents ne pourront être tenus responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris la perte de bénéfices, de chiffre d'affaires, de données ou d'usage, résultant notamment de :",
+      "item1": "Votre utilisation ou votre impossibilité d'utiliser les Services",
+      "item2": "Un accès non autorisé à vos données",
+      "item3": "Des erreurs, anomalies ou interruptions des Services",
+      "item4": "Des contenus ou intégrations tiers",
+      "paragraph2": "Notre responsabilité totale au titre de toute réclamation fondée sur ces conditions ou sur les Services ne pourra excéder les montants que vous avez payés au cours des 12 mois précédant ladite réclamation.",
+      "paragraph3": "Certaines juridictions n'autorisent pas l'exclusion de certaines garanties ou la limitation de responsabilité. Dans ce cas, ces limitations peuvent ne pas vous être applicables."
     },
     "section11": {
       "title": "11. Indemnisation",
-      "intro": "Vous acceptez d'indemniser et de dégager TraviXO de toute responsabilité en cas de réclamations, dommages, pertes, responsabilités et dépenses (y compris les frais juridiques) résultant de :",
+      "intro": "Vous acceptez d'indemniser et de garantir TraviXO contre toute réclamation, dommage, perte, responsabilité et dépense, y compris les frais juridiques, résultant de :",
       "item1": "Votre utilisation des Services",
-      "item2": "Votre violation de ces Conditions",
-      "item3": "Votre violation de toute loi ou de tout droit de tiers",
-      "item4": "Les Données Client que vous téléchargez sur les Services"
+      "item2": "La violation des présentes conditions par vous",
+      "item3": "La violation de toute loi ou de tout droit de tiers par vous",
+      "item4": "Les Données Client que vous téléversez dans les Services"
     },
     "section12": {
-      "title": "12. Résolution des litiges",
+      "title": "12. Règlement des litiges",
       "subsection1": {
-        "title": "12.1 Droit applicable",
-        "content": "Ces Conditions sont régies par les lois de la France, sans tenir compte des principes de conflits de lois."
+        "title": "12.1 Loi applicable",
+        "content": "Les présentes conditions sont régies par le droit français, sans tenir compte des principes de conflit de lois."
       },
       "subsection2": {
-        "title": "12.2 Juridiction",
-        "content": "Tout litige découlant de ces Conditions ou des Services sera résolu exclusivement devant les tribunaux de Paris, France. Vous consentez à la compétence personnelle de ces tribunaux."
+        "title": "12.2 Juridiction compétente",
+        "content": "Tout litige relatif aux présentes conditions ou aux Services sera porté exclusivement devant les tribunaux de Paris, France. Vous acceptez leur compétence."
       },
       "subsection3": {
-        "title": "12.3 Résolution amiable",
-        "content": "Avant de déposer une action en justice, vous acceptez de nous contacter à contact@travixosystems.com pour tenter de résoudre le litige à l'amiable."
+        "title": "12.3 Tentative amiable",
+        "content": "Avant toute action en justice, vous vous engagez à nous contacter à contact@travixosystems.com afin de tenter de résoudre le litige à l'amiable."
       }
     },
     "section13": {
-      "title": "13. Modifications de ces Conditions",
-      "intro": "Nous pouvons mettre à jour ces Conditions de temps à autre. Nous vous informerons des modifications importantes par :",
-      "method1": "Publication des Conditions mises à jour sur cette page avec une nouvelle date de « Dernière mise à jour »",
-      "method2": "Envoi d'une notification par email (pour les clients actifs)",
-      "footer": "Votre utilisation continue des Services après l'entrée en vigueur des modifications constitue une acceptation des Conditions mises à jour. Si vous n'acceptez pas les modifications, vous devez annuler votre abonnement."
+      "title": "13. Modification des présentes conditions",
+      "intro": "Nous pouvons mettre à jour ces conditions de temps à autre. En cas de changement important, nous vous en informerons par :",
+      "method1": "Publication de la version mise à jour sur cette page avec une nouvelle date de mise à jour",
+      "method2": "Envoi d'un e-mail d'information pour les clients actifs",
+      "footer": "La poursuite de l'utilisation des Services après l'entrée en vigueur des modifications vaut acceptation des nouvelles conditions. Si vous n'êtes pas d'accord, vous devez résilier votre abonnement."
     },
     "section14": {
       "title": "14. Droit de rétractation",
-      "paragraph1": "Conformément à l'Article L221-18 du Code de la consommation, les consommateurs et, en vertu de l'Article L221-3, certaines entités non professionnelles et micro-entreprises (moins de 10 salariés et chiffre d'affaires annuel inférieur à 2 millions d'euros) qui souscrivent à nos Services par vente à distance disposent d'un droit de rétractation de 14 jours calendaires à compter de la date de souscription, sans avoir à justifier de motifs.",
-      "paragraph2": "Pour exercer votre droit de rétractation, vous devez nous notifier par une déclaration claire (par ex., un email à contact@travixosystems.com) avant l'expiration du délai de rétractation. Vous pouvez utiliser le formulaire type de rétractation, bien que cela ne soit pas obligatoire.",
-      "paragraph3": "Si vous exercez votre droit de rétractation, nous vous rembourserons tous les paiements reçus dans un délai de 14 jours à compter de la réception de votre notification de rétractation, en utilisant le même moyen de paiement que celui de votre transaction initiale.",
-      "paragraph4": "À noter : Conformément à l'Article L221-28, le droit de rétractation ne s'applique pas aux contrats de fourniture de contenu numérique non fourni sur un support matériel si l'exécution a commencé avec votre consentement préalable exprès et votre reconnaissance que vous perdez ainsi votre droit de rétractation. Si vous consentez expressément à la fourniture immédiate de nos Services pendant le délai de rétractation, vous renoncez à votre droit de rétractation."
+      "paragraph1": "Conformément à l'article L221-18 du Code de la consommation, les consommateurs et, dans les conditions de l'article L221-3, certaines entités non professionnelles et micro-entreprises de moins de 10 salariés et réalisant moins de 2 millions d'euros de chiffre d'affaires annuel, qui souscrivent à nos Services à distance disposent d'un droit de rétractation de 14 jours calendaires à compter de la souscription, sans avoir à motiver leur décision.",
+      "paragraph2": "Pour exercer ce droit, vous devez nous notifier votre décision par une déclaration claire, par exemple par e-mail à contact@travixosystems.com, avant l'expiration du délai de rétractation. Vous pouvez utiliser le formulaire type de rétractation, sans que cela soit obligatoire.",
+      "paragraph3": "Si vous exercez votre droit de rétractation, nous vous rembourserons l'ensemble des sommes perçues dans un délai de 14 jours à compter de la réception de votre demande, en utilisant le même moyen de paiement que celui utilisé lors de la transaction initiale.",
+      "paragraph4": "Attention : conformément à l'article L221-28, le droit de rétractation ne s'applique pas aux contrats de fourniture de contenu numérique non fourni sur un support matériel lorsque l'exécution a commencé avec votre accord préalable exprès et avec votre reconnaissance de la perte de ce droit. Si vous demandez expressément l'activation immédiate de nos Services pendant le délai de rétractation, vous renoncez à ce droit."
     },
     "section15": {
       "title": "15. Garanties légales",
       "subsection1": {
         "title": "15.1 Garantie légale de conformité",
-        "content": "Conformément aux Articles L217-3 à L217-20 du Code de la consommation, vous bénéficiez de la garantie légale de conformité pour tout contenu numérique ou service numérique fourni dans le cadre de ces Conditions. Si un défaut de conformité est constaté dans les 2 ans suivant la livraison, vous avez droit à un remède (réparation, remplacement, réduction du prix ou résolution du contrat) sans frais supplémentaires."
+        "content": "Conformément aux articles L217-3 à L217-20 du Code de la consommation, vous bénéficiez de la garantie légale de conformité pour tout contenu numérique ou service numérique fourni au titre des présentes conditions. En cas de défaut de conformité constaté dans les 2 ans suivant la fourniture, vous avez droit à une mesure corrective, réparation, remplacement, réduction du prix ou résolution du contrat, sans frais supplémentaires."
       },
       "subsection2": {
-        "title": "15.2 Garantie des vices cachés",
-        "content": "Conformément aux Articles 1641 à 1649 du Code civil, vous bénéficiez de la garantie des vices cachés. Si un vice caché rend le Service impropre à l'usage auquel il est destiné ou diminue tellement cet usage, vous pouvez choisir de rendre le Service et d'en obtenir le remboursement, ou de conserver le Service et d'obtenir un remboursement partiel."
+        "title": "15.2 Garantie contre les vices cachés",
+        "content": "Conformément aux articles 1641 à 1649 du Code civil, vous bénéficiez de la garantie contre les vices cachés. Si un vice caché rend le Service impropre à l'usage attendu ou diminue fortement cet usage, vous pouvez choisir entre la restitution du Service contre remboursement ou sa conservation contre remboursement partiel."
       },
       "subsection3": {
-        "title": "15.3 Applicabilité",
-        "content": "Ces garanties légales s'appliquent en plus de toute garantie commerciale que nous pourrions offrir. Elles s'appliquent aux consommateurs et, le cas échéant, aux non-professionnels tels que définis par la loi française."
+        "title": "15.3 Champ d'application",
+        "content": "Ces garanties légales s'appliquent en plus de toute garantie commerciale éventuellement proposée. Elles s'appliquent aux consommateurs et, lorsque la loi le prévoit, aux non-professionnels."
       }
     },
     "section16": {
       "title": "16. Prix et taxes",
-      "paragraph1": "Tous les prix affichés sur notre site web sont en Euros (€) et sont hors taxes (HT) sauf indication contraire. La TVA applicable et toute autre taxe seront ajoutées lors du paiement ou sur les factures conformément à la réglementation fiscale applicable.",
-      "paragraph2": "Pour les clients au sein de l'Union européenne, la TVA sera appliquée selon le taux applicable dans le pays de résidence du client, sauf si un numéro de TVA intracommunautaire valide est fourni. Les clients français sont soumis au taux normal de TVA française."
+      "paragraph1": "Tous les prix affichés sur notre site sont exprimés en euros (€) et hors taxes, sauf indication contraire. La TVA applicable et toute autre taxe seront ajoutées lors du paiement ou sur les factures conformément à la réglementation fiscale en vigueur.",
+      "paragraph2": "Pour les clients situés dans l'Union européenne, la TVA est appliquée selon le taux en vigueur dans le pays de résidence du client, sauf fourniture d'un numéro de TVA intracommunautaire valide. Les clients français sont soumis au taux de TVA français applicable."
     },
     "section17": {
       "title": "17. Médiation de la consommation",
-      "content": "Conformément aux Articles L611-1 à L616-3 du Code de la consommation, en cas de litige non résolu par notre service client, les consommateurs et entités non professionnelles éligibles peuvent recourir gratuitement à un médiateur de la consommation. Les coordonnées de notre médiateur désigné seront fournies sur demande. Vous pouvez également utiliser la plateforme de Résolution des Litiges en Ligne de l'Union européenne à l'adresse https://ec.europa.eu/consumers/odr."
+      "content": "Conformément aux articles L611-1 à L616-3 du Code de la consommation, en cas de litige non résolu par notre service client, les consommateurs et entités non professionnelles éligibles peuvent saisir gratuitement un médiateur de la consommation. Les coordonnées du médiateur désigné seront communiquées sur demande. Vous pouvez également utiliser la plateforme européenne de règlement en ligne des litiges."
     },
     "section18": {
       "title": "18. Accord de traitement des données",
-      "content": "Lorsque TraviXO traite des données personnelles pour le compte d'un client (agissant en tant que sous-traitant au sens de l'Article 28 du RGPD), les termes de notre Accord de traitement des données (DPA) s'appliquent. Le DPA décrit nos obligations en matière de sécurité des données, de sous-traitants ultérieurs, de notification de violation de données et de droits des personnes concernées. Un exemplaire du DPA est disponible sur demande à contact@travixosystems.com."
+      "content": "Lorsque TraviXO traite des données personnelles pour le compte d'un client, en qualité de sous-traitant au sens de l'article 28 du RGPD, les termes de notre accord de traitement des données s'appliquent. Cet accord précise nos obligations relatives à la sécurité des données, aux sous-traitants ultérieurs, aux notifications de violation de données et aux droits des personnes concernées. Une copie peut être obtenue sur demande à contact@travixosystems.com."
     },
     "section19": {
       "title": "19. Dispositions générales",
       "subsection1": {
         "title": "19.1 Intégralité de l'accord",
-        "content": "Ces Conditions, ainsi que notre Politique de confidentialité, constituent l'intégralité de l'accord entre vous et TraviXO concernant les Services."
+        "content": "Les présentes conditions, ainsi que notre politique de confidentialité, constituent l'accord complet entre vous et TraviXO concernant les Services."
       },
       "subsection2": {
         "title": "19.2 Divisibilité",
-        "content": "Si une disposition de ces Conditions est jugée inapplicable, les dispositions restantes resteront pleinement en vigueur."
+        "content": "Si une disposition des présentes conditions est jugée inapplicable, les autres dispositions restent pleinement en vigueur."
       },
       "subsection3": {
         "title": "19.3 Renonciation",
-        "content": "Notre manquement à faire respecter tout droit ou disposition de ces Conditions ne sera pas considéré comme une renonciation à ce droit ou à cette disposition."
+        "content": "Le fait pour nous de ne pas faire valoir un droit ou une disposition des présentes conditions ne vaut pas renonciation à ce droit ou à cette disposition."
       },
       "subsection4": {
         "title": "19.4 Cession",
-        "content": "Vous ne pouvez pas céder ces Conditions sans notre consentement écrit préalable. Nous pouvons céder ces Conditions sans restriction."
+        "content": "Vous ne pouvez pas céder les présentes conditions sans notre accord écrit préalable. Nous pouvons les céder librement."
       },
       "subsection5": {
         "title": "19.5 Force majeure",
-        "content": "Aucune des parties ne sera responsable de tout retard ou manquement à exécuter ses obligations en raison de causes indépendantes de sa volonté (par exemple, catastrophes naturelles, guerre, pandémies, actions gouvernementales)."
+        "content": "Aucune des parties ne pourra être tenue responsable d'un retard ou d'un manquement résultant d'une cause échappant raisonnablement à son contrôle, par exemple une catastrophe naturelle, une guerre, une pandémie ou une décision gouvernementale."
       }
     },
     "section20": {
-      "title": "20. Coordonnées",
-      "intro": "Si vous avez des questions concernant ces Conditions, contactez-nous :",
+      "title": "20. Coordonnées de contact",
+      "intro": "Pour toute question concernant les présentes conditions, contactez-nous :",
       "companyName": "Deralis Digital",
-      "email": "Email :",
+      "email": "E-mail :",
       "emailValue": "contact@travixosystems.com",
       "phone": "Téléphone :"
     },
@@ -992,36 +1014,36 @@
       "ape": "Code APE : 6201Z - Programmation informatique",
       "address": "Adresse : 57 rue Léo Lagrange, 93130 Noisy-le-Sec, France",
       "director": "Directeur de la publication : Uwa Chidera UGBOAJA",
-      "email": "Email : contact@travixosystems.com",
+      "email": "E-mail : contact@travixosystems.com",
       "phone": "Téléphone : +33 78 335 75 35"
     },
     "section2": {
       "title": "2. Hébergeur",
-      "content": "Ce site web est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Site web : vercel.com."
+      "content": "Ce site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Site internet : vercel.com."
     },
     "section3": {
       "title": "3. Propriété intellectuelle",
-      "content": "L'ensemble du contenu de ce site web (textes, images, graphiques, logos, icônes, logiciels, etc.) est la propriété de Deralis Digital ou de ses concédants de licence et est protégé par les lois françaises et internationales sur la propriété intellectuelle. Toute reproduction, représentation, modification, distribution ou exploitation de toute partie de ce site sans autorisation écrite expresse est strictement interdite et constitue une contrefaçon sanctionnable au titre des Articles L.335-2 et suivants du Code de la propriété intellectuelle."
+      "content": "L'ensemble du contenu de ce site, textes, images, graphismes, logos, icônes, logiciels, etc., est la propriété de Deralis Digital ou de ses concédants et est protégé par le droit français et international de la propriété intellectuelle. Toute reproduction, représentation, modification, diffusion ou exploitation de tout ou partie du site sans autorisation écrite expresse est interdite et constitue une contrefaçon sanctionnée notamment par les articles L.335-2 et suivants du Code de la propriété intellectuelle."
     },
     "section4": {
       "title": "4. Données personnelles",
-      "content": "La collecte et le traitement des données personnelles sur ce site sont effectués conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée. Pour plus d'informations, veuillez consulter notre Politique de confidentialité. Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous à contact@travixosystems.com. Vous pouvez également déposer une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) sur www.cnil.fr."
+      "content": "La collecte et le traitement des données personnelles sur ce site sont réalisés conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée. Pour en savoir plus, consultez notre politique de confidentialité. Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous à contact@travixosystems.com. Vous pouvez également déposer une réclamation auprès de la CNIL sur www.cnil.fr."
     },
     "section5": {
       "title": "5. Cookies",
-      "content": "Ce site web utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic. Conformément aux directives de la CNIL, nous sollicitons votre consentement avant de placer des cookies non essentiels. Vous pouvez gérer vos préférences de cookies à tout moment via le bandeau cookies ou les paramètres de votre navigateur. Pour plus d'informations, consultez notre Politique de confidentialité."
+      "content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur et d'analyser le trafic. Conformément aux recommandations de la CNIL, nous recueillons votre consentement avant le dépôt de cookies non essentiels. Vous pouvez gérer vos préférences à tout moment via le bandeau cookies ou les paramètres de votre navigateur. Pour plus d'informations, consultez notre politique de confidentialité."
     },
     "section6": {
       "title": "6. Limitation de responsabilité",
-      "content": "Deralis Digital s'efforce de fournir des informations exactes et à jour sur ce site web. Toutefois, nous ne pouvons garantir l'exactitude, l'exhaustivité ou l'actualité des informations fournies. Deralis Digital ne saurait être tenu responsable de tout dommage direct ou indirect résultant de l'accès ou de l'utilisation de ce site web, y compris toute perte de données, dommage aux équipements ou transmission de virus."
+      "content": "Deralis Digital fait ses meilleurs efforts pour fournir sur ce site des informations exactes et à jour. Nous ne pouvons toutefois pas garantir l'exactitude, l'exhaustivité ni l'actualité des informations diffusées. Deralis Digital ne pourra être tenu responsable des dommages directs ou indirects résultant de l'accès au site ou de son utilisation, y compris en cas de perte de données, de dommage matériel ou de transmission de virus."
     },
     "section7": {
       "title": "7. Liens hypertextes",
-      "content": "Ce site web peut contenir des liens hypertextes vers des sites web tiers. Deralis Digital n'exerce aucun contrôle sur le contenu de ces sites externes et n'accepte aucune responsabilité les concernant. L'inclusion de tout lien n'implique pas l'approbation par Deralis Digital."
+      "content": "Ce site peut contenir des liens vers des sites internet tiers. Deralis Digital n'exerce aucun contrôle sur le contenu de ces sites externes et n'assume aucune responsabilité à leur égard. La présence d'un lien ne vaut pas approbation par Deralis Digital."
     },
     "section8": {
       "title": "8. Droit applicable",
-      "content": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation de ce site web sera soumis à la compétence exclusive des tribunaux de Paris, France."
+      "content": "Les présentes mentions légales sont soumises au droit français. Tout litige relatif à l'utilisation du site relève de la compétence exclusive des tribunaux de Paris, France."
     },
     "footer": {
       "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",

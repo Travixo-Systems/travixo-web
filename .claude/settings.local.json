@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npx next:*)",
+      "Bash(cmd.exe /c \"npm run build\")",
+      "Bash(cmd.exe /c \"cd /d D:\\\\Dev\\\\projects\\\\travixo-web && npm run build\")",
+      "Bash(/c/nvm/v22.16.0/npm.cmd run:*)",
+      "Bash(git push:*)",
+      "Bash(cmd.exe /c \"cd /d D:\\\\Dev\\\\projects\\\\travixo-web && npm audit --omit=dev 2>&1\")",
+      "Bash(cmd.exe /c \"cd /d D:\\\\Dev\\\\projects\\\\travixo-web && npm audit --omit=dev --json\")",
+      "Bash(cmd.exe /c \"cd /d D:\\\\Dev\\\\projects\\\\travixo-web && npm.cmd audit --omit=dev\")",
+      "Bash(cmd.exe /c \"where npm\")",
+      "Bash(powershell.exe -Command \"cd D:\\\\Dev\\\\projects\\\\travixo-web; npm audit --omit=dev 2>&1\")",
+      "Bash(powershell.exe -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object Source; Get-ChildItem ''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'' -ErrorAction SilentlyContinue; Get-ChildItem ''C:\\\\Users\\\\Master\\\\AppData\\\\Roaming\\\\nvm'' -ErrorAction SilentlyContinue | Select-Object Name\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem Env:PATH | Select-Object -ExpandProperty Value\")",
+      "Bash(tr ';' '\\\\n')"
+    ]
+  }
+}
