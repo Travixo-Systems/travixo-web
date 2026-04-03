@@ -51,14 +51,14 @@
   "homepage": {
     "hero": {
       "title": "Votre parc vit dans 3 endroits. Il devrait n'en avoir qu'un.",
-      "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à son code QR, à sa conformité VGP, à ses documents et à son historique — dans une seule chaîne, du dépôt au chantier.",
+      "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à son code QR, à sa conformité VGP, à ses documents et à son historique, dans une seule chaîne, du dépôt au chantier.",
       "ctaPrimary": "Tester sur votre parc réel",
       "ctaSecondary": "Organiser une démo"
     },
     "values": {
       "1": {
         "title": "Importez votre fichier en 5 minutes",
-        "text": "Pas besoin de nettoyer votre export avant. Colonnes incohérentes, cellules vides, intitulés approximatifs — on s'en charge. Vous importez, ça démarre."
+        "text": "Pas besoin de nettoyer votre export avant. Colonnes incohérentes, cellules vides, intitulés approximatifs : on s'en charge. Vous importez, ça démarre."
       },
       "2": {
         "title": "Imprimez 500 QR codes en 30 secondes",
@@ -192,8 +192,8 @@
       "trigger": "Avant qu'elle quitte le dépôt, il faut remettre au client le dernier rapport VGP et le certificat de conformité. C'est la loi.",
       "search": {
         "title": "Vous cherchez :",
-        "item1": "La date de dernière VGP — dans votre système, un classeur, ou de mémoire",
-        "item2": "Le certificat — dans un dossier partagé, un mail, ou une armoire",
+        "item1": "La date de dernière VGP : dans votre système, un classeur, ou de mémoire",
+        "item2": "Le certificat : dans un dossier partagé, un mail, ou une armoire",
         "item3": "La confirmation que le rapport est sans réserve"
       },
       "result": "Le temps de tout rassembler, la machine aurait déjà pu être en route.",

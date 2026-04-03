@@ -51,14 +51,14 @@
   "homepage": {
     "hero": {
       "title": "Your fleet lives in 3 places. It should be one.",
-      "subtitle": "It's tracked, but not connected. TraviXO links each machine to its QR code, its VGP compliance, its documents, and its history — in one chain, from depot to site.",
+      "subtitle": "It's tracked, but not connected. TraviXO links each machine to its QR code, its VGP compliance, its documents, and its history, in one chain, from depot to site.",
       "ctaPrimary": "Try It on Your Real Fleet",
       "ctaSecondary": "Schedule a Demo"
     },
     "values": {
       "1": {
         "title": "Upload Your File in 5 Minutes",
-        "text": "No need to clean up your export first. Inconsistent columns, blank cells, rough headers — we handle it. You upload, it starts."
+        "text": "No need to clean up your export first. Inconsistent columns, blank cells, rough headers. We handle it. You upload, it starts."
       },
       "2": {
         "title": "Print 500 QR Codes in 30 Seconds",
@@ -192,8 +192,8 @@
       "trigger": "Before it leaves the depot, you must hand the client the last VGP report and the compliance certificate. It's the law.",
       "search": {
         "title": "You start looking:",
-        "item1": "Last VGP date — in your system, a binder, or from memory",
-        "item2": "The certificate — in a shared folder, an email, or a filing cabinet",
+        "item1": "Last VGP date: in your system, a binder, or from memory",
+        "item2": "The certificate: in a shared folder, an email, or a filing cabinet",
         "item3": "Confirmation that the report has no outstanding remarks"
       },
       "result": "By the time you've gathered everything, the machine could already have been on its way.",
@@ -272,7 +272,7 @@
   "features": {
     "hero": {
       "title": "TraviXO Features",
-      "subtitle": "From QR tracking to VGP management — the essentials for running a fleet with no blind spots"
+      "subtitle": "From QR tracking to VGP management. The essentials for running a fleet with no blind spots."
     },
     "differentiators": {
       "import": {
@@ -417,7 +417,7 @@
   "contact": {
     "hero": {
       "title": "Let's Talk About Your Equipment Tracking",
-      "subtitle": "Pilot, feature questions, product demo — tell us where you are and what you're looking for."
+      "subtitle": "Pilot, feature questions, product demo. Tell us where you are and what you're looking for."
     },
     "form": {
       "fullName": "Full Name",
