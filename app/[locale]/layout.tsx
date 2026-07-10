@@ -98,9 +98,6 @@ export async function generateMetadata(props: {
         'fr': `${baseUrl}/fr`,
       },
     },
-    verification: {
-      google: 'your-google-verification-code',
-    },
   };
 }
 
