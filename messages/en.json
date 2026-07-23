@@ -495,7 +495,7 @@
         "setup": {
           "label": "Time to get started",
           "traditional": "2 to 4 weeks of data re-entry",
-          "travixo": "15 minutes with file import",
+          "travixo": "Guided setup with file import",
           "whyItMatters": "Skip 2 to 4 weeks of data entry"
         },
         "excel": {
@@ -601,7 +601,7 @@
         },
         {
           "question": "What's the difference between monthly and annual billing?",
-          "answer": "Annual billing gives you a 15% discount compared to monthly. For example, the Professional plan costs €14,400/year on annual billing, versus €1,412/month on monthly billing (€16,944/year total)."
+          "answer": "Pricing is the same for monthly and annual billing. Pilot conversion terms are agreed together."
         },
         {
           "question": "Can I change plans at any time?",

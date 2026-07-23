@@ -495,7 +495,7 @@
         "setup": {
           "label": "Temps de mise en route",
           "traditional": "2 à 4 semaines de ressaisie",
-          "travixo": "15 minutes avec import de fichier",
+          "travixo": "Mise en route accompagnée avec import de fichier",
           "whyItMatters": "Évite 2 à 4 semaines de saisie"
         },
         "excel": {
@@ -601,7 +601,7 @@
         },
         {
           "question": "Quelle différence entre facturation mensuelle et annuelle ?",
-          "answer": "La facturation annuelle donne 15 % de remise par rapport au mensuel. Exemple : l'offre Professional revient à 14 400 €/an en annuel, contre 1 412 €/mois en mensuel, soit 16 944 € sur l'année."
+          "answer": "Les tarifs sont identiques en facturation mensuelle ou annuelle. Les conditions de conversion à l'issue d'un pilote sont définies ensemble."
         },
         {
           "question": "Puis-je changer d'offre à tout moment ?",
