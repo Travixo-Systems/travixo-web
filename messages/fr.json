@@ -2,7 +2,7 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Stoppez les pertes d'équipement et les amendes de conformité VGP",
-      "description": "Traçabilité QR et conformité VGP automatisée pour les loueurs d'engins en France. Onboarding en 4 heures. Alertes quotidiennes. Rapports d'inspection prêts à l'emploi."
+      "description": "Traçabilité QR et conformité VGP automatisée pour les loueurs d'engins en France. Mise en route accompagnée. Vos données existantes sont importées telles quelles. Alertes quotidiennes. Rapports d'inspection prêts à l'emploi."
     },
     "about": {
       "title": "À propos de TraviXO - Conçu par des vétérans de la location d'équipement",
@@ -136,7 +136,7 @@
     },
     "recall": {
       "title": "Votre matériel expire chez un client ? Vous le savez avant lui.",
-      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel — assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
+      "body": "TraviXO croise automatiquement vos dates de VGP avec vos locations actives. Si un engin va expirer pendant qu'il est chez un client, vous recevez une alerte de rappel, assez tôt pour organiser le retour et planifier la vérification avant que la date soit dépassée.",
       "cta": "Zéro matériel non conforme en circulation par inadvertance."
     },
     "exceptions": {
@@ -473,7 +473,7 @@
         "setup": {
           "label": "Délai avant utilisation",
           "traditional": "2-4 semaines de saisie",
-          "travixo": "15 minutes avec import Excel",
+          "travixo": "Mise en route accompagnée avec import Excel",
           "whyItMatters": "Économisez 2 à 4 semaines de saisie"
         },
         "excel": {
@@ -579,7 +579,7 @@
         },
         {
           "question": "Quelle est la différence entre la facturation mensuelle et annuelle ?",
-          "answer": "La facturation annuelle offre une réduction de 15 % par rapport aux paiements mensuels. Par exemple, le plan Professional coûte 14 400 €/an avec facturation annuelle, contre 1 412 €/mois avec facturation mensuelle (16 944 €/an au total)."
+          "answer": "Les tarifs sont identiques en facturation mensuelle ou annuelle. Les conditions de conversion à l'issue d'un pilote sont définies ensemble."
         },
         {
           "question": "Puis-je changer de plan à tout moment ?",
