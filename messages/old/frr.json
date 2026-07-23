@@ -1,0 +1,250 @@
+{
+"metadata": {
+"home": {
+"title": "TraviXO - Stop Equipment Loss and VGP Compliance Failures",
+"description": "Track every machine with QR codes and automate VGP compliance. Replace Excel, PDFs, and fragmented processes. Go live in hours. Stay audit-ready every day."
+},
+"about": {
+"title": "About TraviXO - Built from Real Rental Operations",
+"description": "See how TraviXO replaces Excel tracking, PDF certificates, and ERP gaps with a clear system: machine, QR, compliance, documents, history."
+},
+"contact": {
+"title": "Contact TraviXO - Start Your Pilot",
+"description": "Talk to us about your fleet. See how to replace Excel and manual tracking with a system that works on the ground."
+},
+"features": {
+"title": "Features - TraviXO Equipment Tracking and Compliance",
+"description": "Import your fleet, generate QR codes, track equipment in the field, and manage VGP compliance without Excel or PDFs."
+},
+"pricing": {
+"title": "Pricing - TraviXO Equipment and VGP Tracking",
+"description": "Clear pricing to replace manual tracking and ensure VGP compliance. Plans start at €490/month."
+},
+"privacy": {
+"title": "Privacy Policy - TraviXO",
+"description": "How TraviXO handles your data and protects your information."
+},
+"terms": {
+"title": "Terms of Service - TraviXO",
+"description": "Terms governing the use of TraviXO services."
+},
+"legalNotice": {
+"title": "Legal Notice - TraviXO",
+"description": "Company and legal information in accordance with French law."
+}
+},
+"navigation": {
+"home": "Home",
+"about": "About",
+"features": "Features",
+"pricing": "Pricing",
+"contact": "Contact",
+"privacy": "Privacy",
+"terms": "Terms",
+"legalNotice": "Legal Notice",
+"startPilot": "Start Free Pilot",
+"languages": {
+"english": "English",
+"french": "French"
+}
+},
+"homepage": {
+"hero": {
+"title": "From machine to rental readiness, everything is traceable.",
+"subtitle": "TraviXO replaces Excel files, scattered PDFs, and ERP gaps with one clear chain: machine → QR code → VGP compliance → documents → history → rental availability.",
+"ctaPrimary": "Start Free Pilot",
+"ctaSecondary": "See How It Works"
+},
+"values": {
+"1": {
+"title": "Import Your Existing Fleet File",
+"text": "Your Excel stays as it is. No cleaning. No reformatting. Upload it and the system structures your fleet automatically."
+},
+"2": {
+"title": "Tag Your Equipment with QR Codes",
+"text": "Generate all codes in one click. Print, stick on machines, and your tracking system is operational."
+},
+"3": {
+"title": "Operational the Same Day",
+"text": "No weeks of setup. Once QR codes are on machines, every scan creates traceability immediately."
+}
+},
+"carousel": {
+"tabs": {
+"problem": "The Problem",
+"solution": "Our Solution"
+},
+"problem": {
+"title": "You Are Managing Equipment Across Excel, ERP, and PDFs",
+"subtitle": "This is where losses, errors, and compliance risks come from",
+"items": {
+"1": {
+"title": "Equipment Goes Missing",
+"text": "Machines move between depots, sites, and clients. No clear trace. Excel is outdated the moment it's updated."
+},
+"2": {
+"title": "Audits Are Manual and Incomplete",
+"text": "You count equipment, compare spreadsheets, and still have gaps. Missing assets are discovered too late."
+},
+"3": {
+"title": "VGP Compliance Is Not Under Control",
+"text": "Certificates are in folders, dates are in Excel, reminders are manual. Miss one inspection and you are exposed."
+},
+"4": {
+"title": "No Single Source of Truth",
+"text": "ERP handles contracts, Excel tracks equipment, PDFs hold certificates. Nothing is connected."
+}
+}
+},
+"solution": {
+"title": "One System Linking Equipment to Compliance",
+"subtitle": "Each machine becomes traceable, documented, and audit-ready",
+"items": {
+"1": {
+"title": "Import Your Fleet",
+"text": "Upload your Excel. Each machine becomes a structured asset in the system."
+},
+"2": {
+"title": "Assign a QR Code to Each Machine",
+"text": "Each piece of equipment gets a physical entry point. Scan = access to its full record."
+},
+"3": {
+"title": "Every Scan Creates Traceability",
+"text": "Location, user, condition, timestamp. No manual entry. No paperwork."
+},
+"4": {
+"title": "Compliance and Documents Are Linked",
+"text": "VGP dates, certificates, and history are tied to the machine. Always available during inspection."
+}
+}
+}
+},
+"handover": {
+"title": "Every movement is recorded.",
+"scanOut": {
+"title": "Scan-out to client",
+"body": "When a machine leaves the depot, a scan records who took it, when, and in what condition. No paper, no ambiguity."
+},
+"scanReturn": {
+"title": "Scan-back on return",
+"body": "Return scan logs condition and notes. Photos can be added. Disputes are resolved with recorded facts."
+},
+"chain": {
+"title": "Full history per machine",
+"body": "Each asset shows its full lifecycle: movements, users, condition, and compliance status."
+}
+},
+"recall": {
+"title": "If a machine expires at a client, you know before it happens.",
+"body": "VGP dates are cross-checked with active rentals. If a deadline hits during a rental, you are alerted early enough to act.",
+"cta": "No equipment stays in circulation out of compliance."
+},
+"exceptions": {
+"title": "What needs your attention is visible immediately",
+"overdueReturn": {
+"title": "Machine not returned",
+"body": "Expected back but no scan recorded. You see it the next morning without searching."
+},
+"missingAudit": {
+"title": "Missing after inventory",
+"body": "Audit completed. Missing machines are listed automatically and exported."
+},
+"vgpExpiring": {
+"title": "Inspection due during rental",
+"body": "Machine still at client with upcoming deadline. You act before it becomes non-compliant."
+}
+},
+"useCases": {
+"title": "Matches how you operate",
+"btp": {
+"title": "Construction Equipment Rental",
+"body": "Track lifts, forklifts, generators. Know where each machine is, who has it, and whether it is compliant."
+},
+"multiDepot": {
+"title": "Multi-site operations",
+"body": "Equipment moves across sites. Each scan updates its location. No guessing."
+},
+"excel": {
+"title": "Leaving Excel behind",
+"body": "Stop managing compliance in files and emails. Centralize everything around the machine."
+}
+},
+"finalCta": {
+"title": "Stop Losing Track of Your Equipment",
+"subtitle": "Replace Excel, PDFs, and manual tracking with a system that works in the field.",
+"primary": "Start Your Free Pilot",
+"secondary": "Schedule a Demo",
+"badges": [
+"No credit card required",
+"30-day trial",
+"Hosted in EU",
+"Cancel anytime"
+],
+"footer": {
+"copyright": "© 2026 TraviXO Systems. All rights reserved.",
+"email": "[contact@travixosystems.com](mailto:contact@travixosystems.com)",
+"privacy": "Privacy Policy",
+"terms": "Terms of Service"
+}
+}
+},
+"about": {
+"hero": {
+"title": "About TraviXO",
+"subtitle": "Built from real operational problems in equipment rental"
+},
+"story": {
+"title": "Our Story",
+"paragraph1": "TraviXO comes from direct exposure to how equipment is managed in the field. Even structured companies rely on Excel, PDFs, and partial ERP data to track assets.",
+"paragraph2": "This creates gaps: unknown locations, missing documents, and compliance risks. The issue is not lack of tools, but lack of connection between them.",
+"paragraph3": "We built TraviXO to connect what was fragmented:",
+"list": {
+"item1": "Equipment linked to a QR code",
+"item2": "Compliance tied to each machine",
+"item3": "Documents and history accessible instantly"
+}
+},
+"mission": {
+"title": "Our Mission",
+"description": "Replace fragmented tracking with a clear system where every machine is identifiable, traceable, and compliant without manual work."
+},
+"values": {
+"title": "What We Focus On",
+"efficiency": {
+"title": "Remove wasted time",
+"description": "Manual updates, duplicate data entry, and searching across files should not exist."
+},
+"realWorld": {
+"title": "Built for field conditions",
+"description": "Works with imperfect data, changing teams, and real operational constraints."
+},
+"transparency": {
+"title": "Data stays yours",
+"description": "Export everything. No lock-in. Full visibility on your operations."
+},
+"customerFirst": {
+"title": "Driven by real use",
+"description": "Every feature exists because it solves an actual operational problem."
+}
+},
+"founders": {
+"title": "Background",
+"description": "Two profiles combined:",
+"list": {
+"item1": "Experience in technical environments managing equipment systems",
+"item2": "Process-driven approach to compliance and data reliability"
+},
+"conclusion": "TraviXO is built in Paris, hosted in Europe, and aligned with GDPR requirements. The objective is simple: know what you have, where it is, and whether it is compliant."
+},
+"cta": {
+"title": "Start Tracking Properly",
+"description": "Replace manual tracking with a system built for your operations",
+"button": "Start Your Free Pilot"
+},
+"footer": {
+"copyright": "© 2026 TraviXO Systems. All rights reserved.",
+"privacy": "Privacy Policy",
+"terms": "Terms of Service"
+}
+}
+}
