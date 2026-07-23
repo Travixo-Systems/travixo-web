@@ -39,7 +39,7 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* Comparison Table Section */}
-        <section className="bg-gray-50 py-6">
+        <section className="bg-[#f6f8fd] py-6">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-4">
               <h2 className="text-4xl font-bold text-gray-900 mb-2">
@@ -51,7 +51,7 @@ export default async function PricingPage(props: Props) {
             <div className="overflow-x-auto">
               <div className="bg-white rounded-lg border border-gray-200 shadow-sm min-w-[900px]">
                 <table className="w-full">
-                  <thead className="bg-gray-50 border-b-2 border-gray-200">
+                  <thead className="bg-[#f6f8fd] border-b-2 border-gray-200">
                     <tr>
                       <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
                         {t('comparison.headers.feature')}
@@ -69,7 +69,7 @@ export default async function PricingPage(props: Props) {
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     {/* VGP Compliance Row */}
-                    <tr className="hover:bg-gray-50 transition-colors bg-orange-50">
+                    <tr className="hover:bg-[#f6f8fd] transition-colors bg-orange-50">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
                         {t('comparison.rows.vgp.label')}
                       </td>
@@ -87,7 +87,7 @@ export default async function PricingPage(props: Props) {
                     </tr>
 
                     {/* Setup Time Row */}
-                    <tr className="hover:bg-gray-50 transition-colors">
+                    <tr className="hover:bg-[#f6f8fd] transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
                         {t('comparison.rows.setup.label')}
                       </td>
@@ -105,7 +105,7 @@ export default async function PricingPage(props: Props) {
                     </tr>
 
                     {/* Data Migration Row */}
-                    <tr className="hover:bg-gray-50 transition-colors">
+                    <tr className="hover:bg-[#f6f8fd] transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
                         {t('comparison.rows.excel.label')}
                       </td>
@@ -123,7 +123,7 @@ export default async function PricingPage(props: Props) {
                     </tr>
 
                     {/* QR Generation Row */}
-                    <tr className="hover:bg-gray-50 transition-colors">
+                    <tr className="hover:bg-[#f6f8fd] transition-colors">
                       <td className="px-6 py-5 text-sm font-semibold text-gray-900">
                         {t('comparison.rows.qr.label')}
                       </td>
@@ -466,7 +466,7 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* Final CTA */}
-        <section className="py-6 bg-gray-900 text-white">
+        <section className="py-6 bg-[#0a2730] text-white">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">{t('finalCta.title')}</h2>
             <p className="text-xl mb-8 opacity-90">{t('finalCta.subtitle')}</p>
@@ -481,7 +481,7 @@ export default async function PricingPage(props: Props) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black text-gray-400 py-8">
+      <footer className="bg-[#0a2730] text-gray-400 py-8">
         <div className="container mx-auto px-4 text-center">
           <p>{t('footer.copyright')}</p>
           <p className="mt-2 text-sm">
