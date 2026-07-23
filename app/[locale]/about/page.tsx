@@ -128,7 +128,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
                 </section>
 
                 {/* Founders Section */}
-                <section className="bg-gray-50 py-6">
+                <section className="bg-[#f6f8fd] py-6">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">
                             {t('founders.title')}
@@ -170,7 +170,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
                 </section>
             </main>
              {/* Footer */}
-      <footer className="bg-black text-gray-400 py-8">
+      <footer className="bg-[#0a2730] text-gray-400 py-8">
         <div className="container mx-auto px-4 text-center">
           <p>{t('footer.copyright')}</p>
           <p className="mt-2 text-sm">
