@@ -336,13 +336,13 @@ export default async function FeaturesPage(props: Props) {
         </section>
 
         {/* Section 2: Coming Soon - SPARSE */}
-        <section className="bg-[#f6f8fd] py-12">
+        <section className="bg-[#0a2730] py-12">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-3">
+              <h2 className="text-4xl font-bold text-white mb-3">
                 {t("comingSoon.title")}
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-white/80">
                 {t("comingSoon.subtitle")}
               </p>
             </div>

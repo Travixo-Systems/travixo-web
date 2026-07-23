@@ -180,9 +180,9 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Exceptions Panel */}
-        <section className="py-12 bg-[#f6f8fd]">
+        <section className="py-12 bg-[#0a2730]">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-4xl font-bold text-center text-[#0a2730] mb-12">
+            <h2 className="text-4xl font-bold text-center text-white mb-12">
               {t("exceptions.title")}
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
