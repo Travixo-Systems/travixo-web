@@ -29,13 +29,15 @@ export default async function PricingPage(props: Props) {
       <main className="min-h-screen bg-white">
 
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-8 max-w-5xl">
-          <h1 className="text-5xl font-bold text-center text-gray-900 mb-4">
-            {t('hero.title')}
-          </h1>
-          <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto">
-            {t('hero.subtitle')}
-          </p>
+        <section className="bg-[#0a2730] py-16">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h1 className="text-5xl font-bold text-center text-white mb-4">
+              {t('hero.title')}
+            </h1>
+            <p className="text-xl text-center text-white/80 max-w-3xl mx-auto">
+              {t('hero.subtitle')}
+            </p>
+          </div>
         </section>
 
         {/* Comparison Table Section */}

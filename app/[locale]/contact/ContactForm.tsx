@@ -89,15 +89,19 @@ ${formData.message}
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-white">
-        <section className="container mx-auto px-4 py-20 max-w-4xl">
-          <h1 className="text-5xl font-bold text-center text-gray-900 mb-6">
-            {t('hero.title')}
-          </h1>
-          <p className="text-xl text-center text-gray-600 mb-16">
-            {t('hero.subtitle')}
-          </p>
+      <main className="min-h-screen bg-[#0a2730]">
+        <section className="py-16">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h1 className="text-5xl font-bold text-center text-white mb-6">
+              {t('hero.title')}
+            </h1>
+            <p className="text-xl text-center text-white/80">
+              {t('hero.subtitle')}
+            </p>
+          </div>
+        </section>
 
+        <section className="container mx-auto px-4 py-16 max-w-4xl">
           {/* Contact Form */}
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8">
             {status === 'success' && (
@@ -251,7 +255,7 @@ ${formData.message}
           {/* Contact Info */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">{t('contactInfo.email')}</h3>
+              <h3 className="font-semibold text-white mb-2">{t('contactInfo.email')}</h3>
               <a
                 href="mailto:info@travixosystems.com"
                 className="text-orange-500 hover:text-orange-600"
@@ -260,7 +264,7 @@ ${formData.message}
               </a>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">{t('contactInfo.phone')}</h3>
+              <h3 className="font-semibold text-white mb-2">{t('contactInfo.phone')}</h3>
               <a
                 href="tel:+33783357535"
                 className="text-orange-500 hover:text-orange-600"
@@ -269,8 +273,8 @@ ${formData.message}
               </a>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">{t('contactInfo.location')}</h3>
-              <p className="text-gray-600">{t('contactInfo.locationValue')}</p>
+              <h3 className="font-semibold text-white mb-2">{t('contactInfo.location')}</h3>
+              <p className="text-white/70">{t('contactInfo.locationValue')}</p>
             </div>
           </div>
         </section>

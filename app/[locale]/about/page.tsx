@@ -22,12 +22,12 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
             <Navigation />
             <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
                 {/* Hero Section */}
-                <section className="bg-gradient-to-r from-[#00252b] to-[#2d3a39] text-white py-10">
+                <section className="bg-[#0a2730] text-white py-16">
                     <div className="container mx-auto px-4 max-w-4xl text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-2">
                             {t('hero.title')}
                         </h1>
-                        <p className="text-xl text-gray-200">
+                        <p className="text-xl text-white/80">
                             {t('hero.subtitle')}
                         </p>
                     </div>
