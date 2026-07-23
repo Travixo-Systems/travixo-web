@@ -21,12 +21,12 @@ export default async function FeaturesPage(props: Props) {
       <main className="min-h-screen bg-white">
         
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-12 max-w-5xl">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <section className="bg-[#0a2730] py-16">
+          <div className="container mx-auto px-4 max-w-5xl text-center">
+            <h1 className="text-5xl font-bold text-white mb-4">
               {t("hero.title")}
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               {t("hero.subtitle")}
             </p>
           </div>
