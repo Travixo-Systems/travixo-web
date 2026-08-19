@@ -1,13 +1,15 @@
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
-import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export async function generateMetadata(props: Props) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: "metadata.contact" });
-  return { title: t("title"), description: t("description") };
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "contact" });
 }
 
 export default async function ContactPage(props: Props) {

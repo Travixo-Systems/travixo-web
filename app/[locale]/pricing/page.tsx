@@ -1,3 +1,5 @@
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navigation from '../components/navigation';
 import Link from 'next/link';
@@ -6,14 +8,11 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata(props: Props) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: 'metadata.pricing' });
-
-  return {
-    title: t('title'),
-    description: t('description')
-  };
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "pricing" });
 }
 
 export default async function PricingPage(props: Props) {

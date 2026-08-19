@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { ReactNode } from "react";
 import StructuredData from "./components/StructuredData";
+import { BASE_URL, LOCALES, isLocale, ogImageFor, type Locale } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,15 +19,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const locales = ["en", "fr"];
-
 type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
 };
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return LOCALES.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata(props: {
@@ -35,16 +34,17 @@ export async function generateMetadata(props: {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
-  const baseUrl = 'https://travixosystems.com';
-  const currentUrl = `${baseUrl}/${locale}`;
   const title = t("title");
   const description = t("description");
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(BASE_URL),
+    // Fallback only. Pages set an absolute title through buildPageMetadata,
+    // because the copy in messages/*.json already carries the brand. The old
+    // template appended the full 54 character homepage title to every page.
     title: {
       default: title,
-      template: `%s | ${title}`,
+      template: "%s | TraviXO",
     },
     description: description,
     keywords: ['TraviXO', 'VGP', 'suivi équipement', 'equipment tracking', 'QR tracking', 'fleet management', 'conformité VGP', 'DREETS', 'location matériel', 'equipment rental'],
@@ -67,44 +67,35 @@ export async function generateMetadata(props: {
       shortcut: '/favicon333ild.ico',
       apple: '/icon.png',
     },
+    // Fallback card. Pages set their own through buildPageMetadata. Both point
+    // at the generated route rather than the /og-image.png that never existed.
     openGraph: {
       type: 'website',
       locale: locale,
-      alternateLocale: locale === 'en' ? ['fr'] : ['en'],
-      url: currentUrl,
+      alternateLocale: LOCALES.filter((l) => l !== locale),
       title: title,
       description: description,
       siteName: 'TraviXO',
-      images: [
-        {
-          url: `${baseUrl}/og-image.png`,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
+      images: [ogImageFor(locale as Locale)],
     },
     twitter: {
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [`${baseUrl}/og-image.png`],
+      images: [ogImageFor(locale as Locale).url],
       creator: '@TraviXO',
     },
-    alternates: {
-      canonical: currentUrl,
-      languages: {
-        'en': `${baseUrl}/en`,
-        'fr': `${baseUrl}/fr`,
-      },
-    },
+    // Deliberately no `alternates` here. Next merges parent metadata into any
+    // child that omits a key, so a canonical set at this level was inherited by
+    // every page that did not set its own, pointing them all at the locale
+    // root. Each page now sets its own through buildPageMetadata.
   };
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  if (!locales.includes(locale)) {
+  if (!isLocale(locale)) {
     notFound();
   }
 

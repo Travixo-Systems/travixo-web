@@ -1,35 +1,31 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
+import {
+  LOCALES,
+  ROUTES,
+  ROUTE_KEYS,
+  languageAlternates,
+  urlFor,
+} from "@/lib/seo";
 
+/**
+ * Derived from the route manifest in lib/seo.ts rather than a hardcoded list,
+ * so a new route cannot be added without appearing here. The previous
+ * hardcoded array had already lost legal-notice.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://travixosystems.com'
-  const locales = ['en', 'fr']
+  // Stable across builds. The previous `new Date()` made every URL claim to
+  // have changed on every deploy, which is noise for crawl scheduling.
+  const lastModified = new Date("2026-08-19");
 
-  // Define all pages
-  const pages = ['', 'features', 'pricing', 'about', 'contact', 'privacy', 'terms']
-
-  const sitemapEntries: MetadataRoute.Sitemap = []
-
-  // Generate entries for each page in each locale
-  pages.forEach((page) => {
-    locales.forEach((locale) => {
-      const url = page === ''
-        ? `${baseUrl}/${locale}`
-        : `${baseUrl}/${locale}/${page}`
-
-      sitemapEntries.push({
-        url,
-        lastModified: new Date(),
-        changeFrequency: page === '' || page === 'features' || page === 'pricing' ? 'weekly' : 'monthly',
-        priority: page === '' ? 1 : 0.8,
-        alternates: {
-          languages: {
-            en: page === '' ? `${baseUrl}/en` : `${baseUrl}/en/${page}`,
-            fr: page === '' ? `${baseUrl}/fr` : `${baseUrl}/fr/${page}`,
-          },
-        },
-      })
-    })
-  })
-
-  return sitemapEntries
+  return ROUTE_KEYS.flatMap((routeKey) =>
+    LOCALES.map((locale) => ({
+      url: urlFor(locale, routeKey),
+      lastModified,
+      changeFrequency: ROUTES[routeKey].changeFrequency,
+      priority: ROUTES[routeKey].priority,
+      alternates: {
+        languages: languageAlternates(routeKey),
+      },
+    })),
+  );
 }

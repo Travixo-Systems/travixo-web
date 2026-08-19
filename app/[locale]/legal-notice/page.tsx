@@ -1,47 +1,20 @@
-import { getTranslations } from "next-intl/server";
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navigation from "../components/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.legalNotice" });
-
-  const baseUrl = 'https://travixosystems.com';
-  const currentUrl = `${baseUrl}/${locale}/legal-notice`;
-  const title = t("title");
-  const description = t("description");
-
-  return {
-    title: title,
-    description: description,
-    openGraph: {
-      title: title,
-      description: description,
-      url: currentUrl,
-      type: 'website',
-      locale: locale,
-      alternateLocale: locale === 'en' ? ['fr'] : ['en'],
-      siteName: 'TraviXO',
-    },
-    twitter: {
-      card: 'summary',
-      title: title,
-      description: description,
-    },
-    alternates: {
-      canonical: currentUrl,
-      languages: {
-        'en': `${baseUrl}/en/legal-notice`,
-        'fr': `${baseUrl}/fr/legal-notice`,
-      },
-    },
-  };
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await props.params;
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "legalNotice" });
 }
 
 export default async function LegalNoticePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations("legalNotice");
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "legalNotice" });
 
   return (
     <>

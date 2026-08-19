@@ -1,3 +1,5 @@
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Search, FileText, ClipboardCheck } from "lucide-react";
@@ -7,10 +9,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export async function generateMetadata(props: Props) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: "metadata.home" });
-  return { title: t("title"), description: t("description") };
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "home" });
 }
 
 export default async function Home(props: Props) {

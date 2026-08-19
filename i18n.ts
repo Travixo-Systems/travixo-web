@@ -1,17 +1,13 @@
-import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
-
-// Can be imported from a shared config
-const locales = ['en', 'fr'];
+import { DEFAULT_LOCALE, isLocale } from './lib/seo';
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // This typically corresponds to the `[locale]` segment
-  let locale = await requestLocale;
+  const requested = await requestLocale;
 
-  // Ensure that a valid locale is used
-  if (!locale || !locales.includes(locale as any)) {
-    locale = 'en';
-  }
+  // Ensure that a valid locale is used. isLocale narrows the type, which
+  // removes the `as any` cast this previously needed.
+  const locale = requested && isLocale(requested) ? requested : DEFAULT_LOCALE;
 
   return {
     locale,
