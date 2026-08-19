@@ -6,8 +6,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { ReactNode } from "react";
-import StructuredData from "./components/StructuredData";
-import { BASE_URL, LOCALES, isLocale, ogImageFor, type Locale } from "@/lib/seo";
+import JsonLd from "./components/JsonLd";
+import { BASE_URL, LOCALES, isLocale, ogImageFor, pathFor, type Locale } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,7 +47,6 @@ export async function generateMetadata(props: {
       template: "%s | TraviXO",
     },
     description: description,
-    keywords: ['TraviXO', 'VGP', 'suivi équipement', 'equipment tracking', 'QR tracking', 'fleet management', 'conformité VGP', 'DREETS', 'location matériel', 'equipment rental'],
     authors: [{ name: 'TraviXO' }],
     creator: 'TraviXO',
     publisher: 'TraviXO',
@@ -117,7 +116,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+33-78-335-75-35",
+      "telephone": "+33783357535",
       "email": "contact@travixosystems.com",
       "contactType": "customer service",
       "areaServed": ["FR", "US", "GB"],
@@ -135,6 +134,28 @@ export default async function LocaleLayout({ children, params }: Props) {
     "url": `https://travixosystems.com/${locale}`,
     "description": "QR-based equipment tracking and VGP compliance automation for rental companies",
     "inLanguage": locale,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Deralis Digital"
+    }
+  };
+
+  // Entry price as published on the pricing page. Keep in step with it.
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TraviXO",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "url": `${BASE_URL}/${locale}`,
+    "description": "QR-based equipment tracking and VGP compliance for equipment rental fleets",
+    "inLanguage": locale,
+    "offers": {
+      "@type": "Offer",
+      "price": "490",
+      "priceCurrency": "EUR",
+      "url": `${BASE_URL}${pathFor(locale as Locale, "pricing")}`
+    },
     "publisher": {
       "@type": "Organization",
       "name": "Deralis Digital"
@@ -166,12 +187,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         {/* End Google Tag Manager */}
 
         {/* Structured Data */}
-        <StructuredData data={organizationSchema} />
-        <Script
-          id="website-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
+        <JsonLd id="organization-schema" data={organizationSchema} />
+        <JsonLd id="website-schema" data={websiteSchema} />
+        <JsonLd id="software-schema" data={softwareSchema} />
 
         <NextIntlClientProvider messages={messages}>
           {children}

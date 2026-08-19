@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { buildPageMetadata, type Locale } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -439,20 +440,7 @@ export default async function FeaturesPage(props: Props) {
 
       </main>
 
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>© 2025 Deralis Digital. {locale === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {locale === 'fr' ? 'Confidentialité' : 'Privacy'}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {locale === 'fr' ? 'Conditions d\'utilisation' : 'Terms of Service'}
-            </Link>
-          </p>
-        </div>
-      </footer>
+      <Footer locale={locale as Locale} />
     </>
   );
 }

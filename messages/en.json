@@ -48,6 +48,14 @@
       "french": "French"
     }
   },
+  "footer": {
+    "copyright": "© 2026 TraviXO Systems. All rights reserved.",
+    "email": "contact@travixosystems.com",
+    "phone": "+33 7 83 35 75 35",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "legalNotice": "Legal Notice"
+  },
   "homepage": {
     "hero": {
       "title": "Your fleet lives in 3 places. It should be one.",
@@ -179,13 +187,7 @@
         "30-day trial",
         "Hosted in Europe",
         "Cancel anytime"
-      ],
-      "footer": {
-        "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-        "email": "contact@travixosystems.com",
-        "privacy": "Privacy Policy",
-        "terms": "Terms of Service"
-      }
+      ]
     },
     "depotScene": {
       "title": "A machine needs to leave this morning.",
@@ -262,11 +264,6 @@
       "title": "Start tracking properly",
       "description": "Replace fragmented tracking with a system built for your operations",
       "button": "Try It on Your Real Fleet"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
     }
   },
   "features": {
@@ -460,11 +457,6 @@
       "phone": "Phone",
       "location": "Location",
       "locationValue": "Paris, France"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
     }
   },
   "pricing": {
@@ -621,11 +613,6 @@
       "title": "Ready to secure your compliance?",
       "subtitle": "Don't wait for the next inspection to discover your gaps. Try TraviXO free for 30 days.",
       "button": "Start Free Trial"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy",
-      "terms": "Terms of Service"
     }
   },
   "privacy": {
@@ -768,12 +755,6 @@
       "email": "Email:",
       "emailValue": "contact@travixosystems.com",
       "phone": "Phone:"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "legalNotice": "Legal Notice"
     }
   },
   "terms": {
@@ -996,12 +977,6 @@
       "email": "Email:",
       "emailValue": "contact@travixosystems.com",
       "phone": "Phone:"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "legalNotice": "Legal Notice"
     }
   },
   "legalNotice": {
@@ -1044,12 +1019,6 @@
     "section8": {
       "title": "8. Applicable Law",
       "content": "These legal notices are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. All rights reserved.",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "legalNotice": "Legal Notice"
     }
   }
 }

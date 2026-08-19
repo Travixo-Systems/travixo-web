@@ -1,7 +1,7 @@
+import Footer from "../components/Footer";
 import { buildPageMetadata, type Locale } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navigation from "../components/navigation";
-import Link from "next/link";
 import { Metadata } from "next";
 
 export async function generateMetadata(props: {
@@ -264,24 +264,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
         </div>
       </main>
 
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>{t('footer.copyright')}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {t('footer.privacy')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {t('footer.terms')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/legal-notice`} className="hover:text-white">
-              {t('footer.legalNotice')}
-            </Link>
-          </p>
-        </div>
-      </footer>
+      <Footer locale={locale as Locale} />
     </>
   );
 }

@@ -2,10 +2,9 @@
 
 import Navigation from "../components/navigation";
 import { useState } from 'react';
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-export default function ContactForm({ locale }: { locale: string }) {
+export default function ContactForm() {
   const t = useTranslations('contact');
 
   const [formData, setFormData] = useState({
@@ -280,21 +279,6 @@ ${formData.message}
         </section>
       </main>
 
-      {/* Footer inline */}
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>{t('footer.copyright')}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {t('footer.privacy')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {t('footer.terms')}
-            </Link>
-          </p>
-        </div>
-      </footer>
     </>
   );
 }
