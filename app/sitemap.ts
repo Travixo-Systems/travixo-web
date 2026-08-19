@@ -1,9 +1,9 @@
 import { MetadataRoute } from "next";
 import {
-  LOCALES,
   ROUTES,
   ROUTE_KEYS,
   languageAlternates,
+  localesFor,
   urlFor,
 } from "@/lib/seo";
 
@@ -17,8 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // have changed on every deploy, which is noise for crawl scheduling.
   const lastModified = new Date("2026-08-19");
 
+  // localesFor, not LOCALES: a route that exists only in French must not
+  // advertise an English URL that would 404.
   return ROUTE_KEYS.flatMap((routeKey) =>
-    LOCALES.map((locale) => ({
+    localesFor(routeKey).map((locale) => ({
       url: urlFor(locale, routeKey),
       lastModified,
       changeFrequency: ROUTES[routeKey].changeFrequency,

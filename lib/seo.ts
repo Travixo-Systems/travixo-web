@@ -21,10 +21,22 @@ export function isLocale(value: string): value is Locale {
 }
 
 type RouteDef = {
-  /** Namespace in messages/{locale}.json holding title and description. */
-  namespace: string;
-  /** Path segment per locale. Empty string means the locale root. */
-  slugs: Record<Locale, string>;
+  /**
+   * Namespace in messages/{locale}.json holding title and description.
+   * Landing routes leave this null: their copy lives in content/landing,
+   * because it is long form, locale specific, and would both bloat the
+   * message files and force a French page to exist in en.json to satisfy
+   * key parity.
+   */
+  namespace: string | null;
+  /**
+   * Path segment per locale. Empty string means the locale root.
+   * A locale may be absent, which means the route does not exist in that
+   * locale: it is not generated, not in the sitemap, and not offered as an
+   * hreflang alternate. The three landing routes are FR only until the
+   * English copy is written and reviewed.
+   */
+  slugs: Partial<Record<Locale, string>>;
   changeFrequency: "weekly" | "monthly";
   priority: number;
 };
@@ -78,19 +90,72 @@ export const ROUTES = {
     changeFrequency: "monthly",
     priority: 0.3,
   },
+
+  // Keyword landing pages. FR only for now, served by app/[locale]/[slug].
+  // English slugs go here once the EN copy is approved, and everything else
+  // (sitemap, hreflang, static params) follows automatically.
+  softwareVgp: {
+    namespace: null,
+    slugs: { fr: "logiciel-vgp" },
+    changeFrequency: "monthly",
+    priority: 0.9,
+  },
+  softwareFleet: {
+    namespace: null,
+    slugs: { fr: "logiciel-gestion-parc-materiel" },
+    changeFrequency: "monthly",
+    priority: 0.9,
+  },
+  softwareRental: {
+    namespace: null,
+    slugs: { fr: "logiciel-loueur-materiel" },
+    changeFrequency: "monthly",
+    priority: 0.9,
+  },
 } satisfies Record<string, RouteDef>;
 
 export type RouteKey = keyof typeof ROUTES;
 
 export const ROUTE_KEYS = Object.keys(ROUTES) as RouteKey[];
 
+/**
+ * `satisfies` above keeps the literal shape of each entry, which is what makes
+ * authoring mistakes visible, but it also means `slugs` is a union of object
+ * types where only some have an `en` key. Widening once here keeps every call
+ * site indexable by Locale.
+ */
+function slugsFor(routeKey: RouteKey): Partial<Record<Locale, string>> {
+  return ROUTES[routeKey].slugs;
+}
+
+/** Locales in which a route actually exists. */
+export function localesFor(routeKey: RouteKey): Locale[] {
+  const slugs = slugsFor(routeKey);
+  return LOCALES.filter((locale) => slugs[locale] !== undefined);
+}
+
+export function hasRoute(locale: Locale, routeKey: RouteKey): boolean {
+  return slugsFor(routeKey)[locale] !== undefined;
+}
+
 export function pathFor(locale: Locale, routeKey: RouteKey): string {
-  const slug = ROUTES[routeKey].slugs[locale];
+  const slug = slugsFor(routeKey)[locale];
+  if (slug === undefined) {
+    throw new Error(`Route "${routeKey}" has no slug for locale "${locale}"`);
+  }
   return slug ? `/${locale}/${slug}` : `/${locale}`;
 }
 
 export function urlFor(locale: Locale, routeKey: RouteKey): string {
   return `${BASE_URL}${pathFor(locale, routeKey)}`;
+}
+
+/** Resolve a URL slug back to its route key, per locale. Used by [slug]. */
+export function routeKeyForSlug(
+  locale: Locale,
+  slug: string,
+): RouteKey | undefined {
+  return ROUTE_KEYS.find((key) => slugsFor(key)[locale] === slug);
 }
 
 /**
@@ -114,11 +179,20 @@ export function ogImageFor(locale: Locale) {
  * hreflang map for a route, including the x-default the site never had.
  */
 export function languageAlternates(routeKey: RouteKey): Record<string, string> {
+  const available = localesFor(routeKey);
   const languages: Record<string, string> = {};
-  for (const locale of LOCALES) {
+  for (const locale of available) {
     languages[locale] = urlFor(locale, routeKey);
   }
-  languages["x-default"] = urlFor(DEFAULT_LOCALE, routeKey);
+  // x-default points at the default locale when the route exists there, and
+  // otherwise at the only locale that has it. A FR only page must not offer an
+  // English alternate that would 404.
+  const fallback = available.includes(DEFAULT_LOCALE)
+    ? DEFAULT_LOCALE
+    : available[0];
+  if (fallback) {
+    languages["x-default"] = urlFor(fallback, routeKey);
+  }
   return languages;
 }
 
@@ -141,17 +215,31 @@ export function languageAlternates(routeKey: RouteKey): Record<string, string> {
 export async function buildPageMetadata({
   locale,
   routeKey,
+  title: titleOverride,
+  description: descriptionOverride,
 }: {
   locale: Locale;
   routeKey: RouteKey;
+  /** Supplied by landing routes, whose copy is not in messages/*.json. */
+  title?: string;
+  description?: string;
 }): Promise<Metadata> {
-  const t = await getTranslations({
-    locale,
-    namespace: ROUTES[routeKey].namespace,
-  });
+  const { namespace } = ROUTES[routeKey];
 
-  const title = t("title");
-  const description = t("description");
+  let title = titleOverride;
+  let description = descriptionOverride;
+
+  if (title === undefined || description === undefined) {
+    if (namespace === null) {
+      throw new Error(
+        `Route "${routeKey}" has no messages namespace, so title and description must be passed in`,
+      );
+    }
+    const t = await getTranslations({ locale, namespace });
+    title ??= t("title");
+    description ??= t("description");
+  }
+
   const url = urlFor(locale, routeKey);
   const image = ogImageFor(locale);
 
@@ -161,7 +249,7 @@ export async function buildPageMetadata({
     openGraph: {
       type: "website",
       locale,
-      alternateLocale: LOCALES.filter((l) => l !== locale),
+      alternateLocale: localesFor(routeKey).filter((l) => l !== locale),
       url,
       title,
       description,
