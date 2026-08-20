@@ -33,8 +33,7 @@ type RouteDef = {
    * Path segment per locale. Empty string means the locale root.
    * A locale may be absent, which means the route does not exist in that
    * locale: it is not generated, not in the sitemap, and not offered as an
-   * hreflang alternate. The three landing routes are FR only until the
-   * English copy is written and reviewed.
+   * hreflang alternate. softwareVgp and vgpHub are French only.
    */
   slugs: Partial<Record<Locale, string>>;
   changeFrequency: "weekly" | "monthly";
@@ -91,9 +90,10 @@ export const ROUTES = {
     priority: 0.3,
   },
 
-  // Keyword landing pages. FR only for now, served by app/[locale]/[slug].
-  // English slugs go here once the EN copy is approved, and everything else
-  // (sitemap, hreflang, static params) follows automatically.
+  // Keyword landing pages, served by app/[locale]/[slug]. Slugs differ per
+  // locale so each targets a real query in its own language. softwareVgp stays
+  // French only: "VGP" is a French regulatory term with no English search
+  // volume, so an English page on it would target a phrase nobody types.
   softwareVgp: {
     namespace: null,
     slugs: { fr: "logiciel-vgp" },
@@ -102,13 +102,19 @@ export const ROUTES = {
   },
   softwareFleet: {
     namespace: null,
-    slugs: { fr: "logiciel-gestion-parc-materiel" },
+    slugs: {
+      fr: "logiciel-gestion-parc-materiel",
+      en: "equipment-fleet-management-software",
+    },
     changeFrequency: "monthly",
     priority: 0.9,
   },
   softwareRental: {
     namespace: null,
-    slugs: { fr: "logiciel-loueur-materiel" },
+    slugs: {
+      fr: "logiciel-loueur-materiel",
+      en: "equipment-rental-software",
+    },
     changeFrequency: "monthly",
     priority: 0.9,
   },

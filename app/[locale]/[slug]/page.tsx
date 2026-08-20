@@ -12,6 +12,7 @@ import {
   BASE_URL,
   LOCALES,
   buildPageMetadata,
+  hasRoute,
   isLocale,
   pathFor,
   routeKeyForSlug,
@@ -104,7 +105,7 @@ export default async function LandingRoute(props: Props) {
         ))}
 
         <FaqSection
-          title="Questions fréquentes"
+          title={page.faqTitle}
           items={page.faq}
           id={`${slug}-faq`}
         />
@@ -112,14 +113,16 @@ export default async function LandingRoute(props: Props) {
         <section className="py-10 bg-[#f6f8fd]">
           <div className="container mx-auto px-4 max-w-4xl">
             <ul className="space-y-2 text-gray-700">
-              {page.related.map((link) => (
+              {page.related
+                .filter((link) => hasRoute(page.locale, link.routeKey))
+                .map((link) => (
                 <li key={link.routeKey}>
                   {link.label}{" "}
                   <Link
                     href={pathFor(page.locale, link.routeKey)}
                     className="text-[#e8600a] hover:underline font-medium"
                   >
-                    Voir la page
+                    {page.readMoreLabel}
                   </Link>
                 </li>
               ))}

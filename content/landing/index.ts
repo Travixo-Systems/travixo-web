@@ -5,13 +5,20 @@ import logicielVgp from "./fr/logiciel-vgp";
 import logicielGestionParcMateriel from "./fr/logiciel-gestion-parc-materiel";
 import logicielLoueurMateriel from "./fr/logiciel-loueur-materiel";
 
+import equipmentFleetManagementSoftware from "./en/equipment-fleet-management-software";
+import equipmentRentalSoftware from "./en/equipment-rental-software";
+
 /**
  * Registry of landing pages, keyed by locale then route.
  *
- * English pages are absent on purpose. The route manifest in lib/seo.ts lists
- * no English slug for these routes either, so the two stay in step: no English
- * URL is generated, sitemapped, or offered as an hreflang alternate until the
- * English copy exists here.
+ * softwareVgp is French only, on purpose. "VGP" is a French regulatory term
+ * with no English equivalent and effectively no English search volume, so an
+ * English page built on it would target a phrase nobody types. The equivalent
+ * British market searches around LOLER and PUWER, which is different
+ * regulation and a rewrite rather than a translation.
+ *
+ * The route manifest in lib/seo.ts must stay in step with this file: a locale
+ * listed there without an entry here would 404.
  */
 const LANDING_PAGES: Partial<Record<Locale, Partial<Record<RouteKey, LandingPage>>>> =
   {
@@ -19,6 +26,10 @@ const LANDING_PAGES: Partial<Record<Locale, Partial<Record<RouteKey, LandingPage
       softwareVgp: logicielVgp,
       softwareFleet: logicielGestionParcMateriel,
       softwareRental: logicielLoueurMateriel,
+    },
+    en: {
+      softwareFleet: equipmentFleetManagementSoftware,
+      softwareRental: equipmentRentalSoftware,
     },
   };
 
