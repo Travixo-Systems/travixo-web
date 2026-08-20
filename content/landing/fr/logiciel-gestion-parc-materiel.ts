@@ -10,6 +10,7 @@ const page: LandingPage = {
     "Suivez chaque machine de votre parc par QR code : emplacement, état, documents et conformité. Import de votre fichier existant. À partir de 490 €/mois.",
 
   h1: "Logiciel de gestion de parc matériel pour le BTP",
+  shortLabel: "Logiciel de gestion de parc",
   subtitle:
     "Chaque machine porte un QR code relié à sa fiche : où elle est, qui l'a, dans quel état elle est revenue, et si elle est en règle.",
 
