@@ -1,11 +1,14 @@
 import { MetadataRoute } from "next";
 import {
+  BASE_URL,
   ROUTES,
   ROUTE_KEYS,
   languageAlternates,
   localesFor,
+  pathFor,
   urlFor,
 } from "@/lib/seo";
+import { FICHES } from "@/content/vgp/fiches";
 
 /**
  * Derived from the route manifest in lib/seo.ts rather than a hardcoded list,
@@ -19,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // localesFor, not LOCALES: a route that exists only in French must not
   // advertise an English URL that would 404.
-  return ROUTE_KEYS.flatMap((routeKey) =>
+  const fixed = ROUTE_KEYS.flatMap((routeKey) =>
     localesFor(routeKey).map((locale) => ({
       url: urlFor(locale, routeKey),
       lastModified,
@@ -30,4 +33,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     })),
   );
+
+  // Fiches are data, not manifest entries, so they come from the registry.
+  // Same source the route's generateStaticParams uses, so the two cannot drift.
+  const ficheBase = `${BASE_URL}${pathFor("fr", "vgpHub")}`;
+  const fiches = FICHES.map((fiche) => ({
+    url: `${ficheBase}/${fiche.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+    alternates: {
+      languages: {
+        fr: `${ficheBase}/${fiche.slug}`,
+        "x-default": `${ficheBase}/${fiche.slug}`,
+      },
+    },
+  }));
+
+  return [...fixed, ...fiches];
 }

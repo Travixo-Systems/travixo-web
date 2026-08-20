@@ -112,6 +112,16 @@ export const ROUTES = {
     changeFrequency: "monthly",
     priority: 0.9,
   },
+
+  // Hub for the fiches VGP. Physical segment, so it takes precedence over
+  // [slug]; the individual fiches hang off it at /fr/vgp/[engin] and are added
+  // to the sitemap from the fiche registry rather than this manifest.
+  vgpHub: {
+    namespace: null,
+    slugs: { fr: "vgp" },
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
 } satisfies Record<string, RouteDef>;
 
 export type RouteKey = keyof typeof ROUTES;
