@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import InlineRouteLink from "../components/InlineRouteLink";
 import { buildPageMetadata, type Locale } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -336,6 +337,12 @@ export default async function FeaturesPage(props: Props) {
               </div>
 
             </div>
+            <InlineRouteLink
+              locale={locale as Locale}
+              routeKey="softwareFleet"
+              lead="Ces fonctions vues du point de vue d'un parc BTP"
+              anchor="logiciel de gestion de parc matériel"
+            />
           </div>
         </section>
 

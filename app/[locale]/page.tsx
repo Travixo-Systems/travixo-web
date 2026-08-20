@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import InlineRouteLink from "./components/InlineRouteLink";
 import { buildPageMetadata, type Locale } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -165,6 +166,12 @@ export default async function Home(props: Props) {
                 </p>
               </div>
             </div>
+            <InlineRouteLink
+              locale={locale as Locale}
+              routeKey="softwareRental"
+              lead="Comment la chaîne se construit, scan par scan"
+              anchor="logiciel pour loueur de matériel"
+            />
           </div>
         </section>
 
@@ -180,6 +187,12 @@ export default async function Home(props: Props) {
             <p className="text-sm font-semibold text-[#e8600a]">
               {t("recall.cta")}
             </p>
+            <InlineRouteLink
+              locale={locale as Locale}
+              routeKey="softwareVgp"
+              lead="Le détail du suivi des échéances sur un parc complet"
+              anchor="logiciel de suivi VGP"
+            />
           </div>
         </section>
 
