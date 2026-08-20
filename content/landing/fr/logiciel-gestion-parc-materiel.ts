@@ -88,6 +88,8 @@ const page: LandingPage = {
     },
   ],
 
+  faqTitle: "Questions fréquentes",
+
   faq: [
     {
       question: "Combien de matériels peut-on suivre ?",
@@ -115,6 +117,8 @@ const page: LandingPage = {
         "Non. TraviXO se place à côté, sans dépendance à un ERP particulier.",
     },
   ],
+
+  readMoreLabel: "Voir la page",
 
   related: [
     {

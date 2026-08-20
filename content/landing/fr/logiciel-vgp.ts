@@ -95,6 +95,8 @@ const page: LandingPage = {
     },
   ],
 
+  faqTitle: "Questions fréquentes",
+
   faq: [
     {
       question: "Qu'est-ce qu'un logiciel de suivi VGP ?",
@@ -122,6 +124,8 @@ const page: LandingPage = {
         "TraviXO ne remplace pas votre ERP. Il relie ce que l'ERP ne relie pas : la machine physique, sa conformité, ses documents et sa traçabilité terrain.",
     },
   ],
+
+  readMoreLabel: "Voir la page",
 
   related: [
     {

@@ -63,7 +63,11 @@ export type LandingPage = {
   shortLabel: string;
   subtitle: string;
   sections: Section[];
+  /** Heading above the FAQ. Locale-carried, not hardcoded in the route. */
+  faqTitle: string;
   faq: { question: string; answer: string }[];
+  /** Anchor for each related-page link. */
+  readMoreLabel: string;
   /** Internal links to the sibling landing pages. */
   related: { label: string; routeKey: RouteKey }[];
   cta: { heading: string; label: string };

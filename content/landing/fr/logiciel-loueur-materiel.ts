@@ -89,6 +89,8 @@ const page: LandingPage = {
     },
   ],
 
+  faqTitle: "Questions fréquentes",
+
   faq: [
     {
       question: "Comment la sortie et le retour sont-ils documentés ?",
@@ -116,6 +118,8 @@ const page: LandingPage = {
         "Non. Le suivi repose sur des QR codes imprimés sur étiquettes adhésives standard, pas sur du matériel embarqué.",
     },
   ],
+
+  readMoreLabel: "Voir la page",
 
   related: [
     {
