@@ -47,9 +47,16 @@ h3 {
   line-height: 1.3;
 }
 
-p {
-  font-size: 1.125rem;
-  line-height: 1.6;
+/* Layered so Tailwind's utilities win. Written unlayered, this selector
+   overrode every text-* utility on a <p>: text-sm computed to 18px instead
+   of 14px and text-xl to 18px instead of 20px, across 48 elements.
+   The h1/h2/h3 rules above are deliberately left unlayered: layering them
+   would enlarge the hero headings, which is a design change, not a fix. */
+@layer base {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
 }
 
 /* Mobile Typography */

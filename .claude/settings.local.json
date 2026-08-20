@@ -16,7 +16,9 @@
       "Bash(powershell.exe -Command \"cd D:\\\\Dev\\\\projects\\\\travixo-web; npm audit --omit=dev 2>&1\")",
       "Bash(powershell.exe -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object Source; Get-ChildItem ''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'' -ErrorAction SilentlyContinue; Get-ChildItem ''C:\\\\Users\\\\Master\\\\AppData\\\\Roaming\\\\nvm'' -ErrorAction SilentlyContinue | Select-Object Name\")",
       "Bash(powershell.exe -Command \"Get-ChildItem Env:PATH | Select-Object -ExpandProperty Value\")",
-      "Bash(tr ';' '\\\\n')"
+      "Bash(tr ';' '\\\\n')",
+      "Bash(mkdir -p /home/user/travixo-web/content/reference)",
+      "Bash(cp /root/.claude/uploads/5b6c2739-2e5b-52fd-9eee-f4ccd282e81d/bae3b281-vgp_reglementation_sourcee.md /home/user/travixo-web/content/reference/vgp-reglementation.md)"
     ]
   }
 }

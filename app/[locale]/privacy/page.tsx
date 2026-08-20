@@ -1,47 +1,20 @@
-import { getTranslations } from "next-intl/server";
+import Footer from "../components/Footer";
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navigation from "../components/navigation";
-import Link from "next/link";
 import { Metadata } from "next";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.privacy" });
-
-  const baseUrl = 'https://travixosystems.com';
-  const currentUrl = `${baseUrl}/${locale}/privacy`;
-  const title = t("title");
-  const description = t("description");
-
-  return {
-    title: title,
-    description: description,
-    openGraph: {
-      title: title,
-      description: description,
-      url: currentUrl,
-      type: 'website',
-      locale: locale,
-      alternateLocale: locale === 'en' ? ['fr'] : ['en'],
-      siteName: 'TraviXO',
-    },
-    twitter: {
-      card: 'summary',
-      title: title,
-      description: description,
-    },
-    alternates: {
-      canonical: currentUrl,
-      languages: {
-        'en': `${baseUrl}/en/privacy`,
-        'fr': `${baseUrl}/fr/privacy`,
-      },
-    },
-  };
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await props.params;
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "privacy" });
 }
 
 export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations("privacy");
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "privacy" });
 
   return (
     <>
@@ -291,24 +264,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
         </div>
       </main>
 
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>{t('footer.copyright')}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {t('footer.privacy')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {t('footer.terms')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/legal-notice`} className="hover:text-white">
-              {t('footer.legalNotice')}
-            </Link>
-          </p>
-        </div>
-      </footer>
+      <Footer locale={locale as Locale} />
     </>
   );
 }

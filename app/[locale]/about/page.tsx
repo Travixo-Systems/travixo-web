@@ -1,20 +1,21 @@
-import { useTranslations } from 'next-intl'
+import Footer from "../components/Footer";
+import type { Metadata } from "next";
 import Navigation from "../components/navigation";
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
+import { buildPageMetadata, type Locale } from "@/lib/seo";
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-    const t = await getTranslations({ locale, namespace: 'metadata.about' })
-    
-    return {
-        title: t('title'),
-        description: t('description'),
-    }
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+    const { locale } = await props.params;
+    return buildPageMetadata({ locale: locale as Locale, routeKey: "about" });
 }
 
-export default function AboutPage({ params }: { params: { locale: string } }) {
-    const t = useTranslations('about')  // Keep single namespace
-    const { locale } = params
+export default async function AboutPage(props: Props) {
+    const { locale } = await props.params;
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: 'about' });
 
 
     return (
@@ -170,20 +171,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
                 </section>
             </main>
              {/* Footer */}
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>{t('footer.copyright')}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {t('footer.privacy')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {t('footer.terms')}
-            </Link>
-          </p>
-        </div>
-      </footer>
+      <Footer locale={locale as Locale} />
         </>
     )
 }

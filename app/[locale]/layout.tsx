@@ -6,7 +6,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { ReactNode } from "react";
-import StructuredData from "./components/StructuredData";
+import JsonLd from "./components/JsonLd";
+import { BASE_URL, LOCALES, isLocale, ogImageFor, pathFor, type Locale } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,15 +19,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const locales = ["en", "fr"];
-
 type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
 };
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return LOCALES.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata(props: {
@@ -35,19 +34,19 @@ export async function generateMetadata(props: {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
-  const baseUrl = 'https://travixosystems.com';
-  const currentUrl = `${baseUrl}/${locale}`;
   const title = t("title");
   const description = t("description");
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(BASE_URL),
+    // Fallback only. Pages set an absolute title through buildPageMetadata,
+    // because the copy in messages/*.json already carries the brand. The old
+    // template appended the full 54 character homepage title to every page.
     title: {
       default: title,
-      template: `%s | ${title}`,
+      template: "%s | TraviXO",
     },
     description: description,
-    keywords: ['TraviXO', 'VGP', 'suivi équipement', 'equipment tracking', 'QR tracking', 'fleet management', 'conformité VGP', 'DREETS', 'location matériel', 'equipment rental'],
     authors: [{ name: 'TraviXO' }],
     creator: 'TraviXO',
     publisher: 'TraviXO',
@@ -67,44 +66,35 @@ export async function generateMetadata(props: {
       shortcut: '/favicon333ild.ico',
       apple: '/icon.png',
     },
+    // Fallback card. Pages set their own through buildPageMetadata. Both point
+    // at the generated route rather than the /og-image.png that never existed.
     openGraph: {
       type: 'website',
       locale: locale,
-      alternateLocale: locale === 'en' ? ['fr'] : ['en'],
-      url: currentUrl,
+      alternateLocale: LOCALES.filter((l) => l !== locale),
       title: title,
       description: description,
       siteName: 'TraviXO',
-      images: [
-        {
-          url: `${baseUrl}/og-image.png`,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
+      images: [ogImageFor(locale as Locale)],
     },
     twitter: {
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [`${baseUrl}/og-image.png`],
+      images: [ogImageFor(locale as Locale).url],
       creator: '@TraviXO',
     },
-    alternates: {
-      canonical: currentUrl,
-      languages: {
-        'en': `${baseUrl}/en`,
-        'fr': `${baseUrl}/fr`,
-      },
-    },
+    // Deliberately no `alternates` here. Next merges parent metadata into any
+    // child that omits a key, so a canonical set at this level was inherited by
+    // every page that did not set its own, pointing them all at the locale
+    // root. Each page now sets its own through buildPageMetadata.
   };
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  if (!locales.includes(locale)) {
+  if (!isLocale(locale)) {
     notFound();
   }
 
@@ -126,7 +116,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+33-78-335-75-35",
+      "telephone": "+33783357535",
       "email": "contact@travixosystems.com",
       "contactType": "customer service",
       "areaServed": ["FR", "US", "GB"],
@@ -144,6 +134,28 @@ export default async function LocaleLayout({ children, params }: Props) {
     "url": `https://travixosystems.com/${locale}`,
     "description": "QR-based equipment tracking and VGP compliance automation for rental companies",
     "inLanguage": locale,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Deralis Digital"
+    }
+  };
+
+  // Entry price as published on the pricing page. Keep in step with it.
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TraviXO",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "url": `${BASE_URL}/${locale}`,
+    "description": "QR-based equipment tracking and VGP compliance for equipment rental fleets",
+    "inLanguage": locale,
+    "offers": {
+      "@type": "Offer",
+      "price": "490",
+      "priceCurrency": "EUR",
+      "url": `${BASE_URL}${pathFor(locale as Locale, "pricing")}`
+    },
     "publisher": {
       "@type": "Organization",
       "name": "Deralis Digital"
@@ -175,12 +187,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         {/* End Google Tag Manager */}
 
         {/* Structured Data */}
-        <StructuredData data={organizationSchema} />
-        <Script
-          id="website-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
+        <JsonLd id="organization-schema" data={organizationSchema} />
+        <JsonLd id="website-schema" data={websiteSchema} />
+        <JsonLd id="software-schema" data={softwareSchema} />
 
         <NextIntlClientProvider messages={messages}>
           {children}

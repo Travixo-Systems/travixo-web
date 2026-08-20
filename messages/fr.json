@@ -48,6 +48,14 @@
       "french": "Français"
     }
   },
+  "footer": {
+    "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
+    "email": "contact@travixosystems.com",
+    "phone": "+33 7 83 35 75 35",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "legalNotice": "Mentions légales"
+  },
   "homepage": {
     "hero": {
       "title": "Votre parc vit dans 3 endroits. Il devrait n'en avoir qu'un.",
@@ -179,13 +187,7 @@
         "30 jours d'essai",
         "Hébergement en Europe",
         "Résiliable à tout moment"
-      ],
-      "footer": {
-        "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-        "email": "contact@travixosystems.com",
-        "privacy": "Politique de confidentialité",
-        "terms": "Conditions d'utilisation"
-      }
+      ]
     },
     "depotScene": {
       "title": "Une machine doit partir ce matin.",
@@ -262,11 +264,6 @@
       "title": "Commencez à suivre correctement",
       "description": "Remplacez le suivi fragmenté par un système construit pour vos opérations",
       "button": "Tester sur votre parc réel"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
     }
   },
   "features": {
@@ -460,11 +457,6 @@
       "phone": "Téléphone",
       "location": "Localisation",
       "locationValue": "Paris, France"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
     }
   },
   "pricing": {
@@ -621,11 +613,6 @@
       "title": "Prêt à sécuriser votre conformité ?",
       "subtitle": "N'attendez pas le prochain contrôle pour découvrir vos écarts. Essayez TraviXO gratuitement pendant 30 jours.",
       "button": "Lancer l'essai gratuit"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Confidentialité",
-      "terms": "Conditions d'utilisation"
     }
   },
   "privacy": {
@@ -768,12 +755,6 @@
       "email": "E-mail :",
       "emailValue": "contact@travixosystems.com",
       "phone": "Téléphone :"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation",
-      "legalNotice": "Mentions légales"
     }
   },
   "terms": {
@@ -996,12 +977,6 @@
       "email": "E-mail :",
       "emailValue": "contact@travixosystems.com",
       "phone": "Téléphone :"
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation",
-      "legalNotice": "Mentions légales"
     }
   },
   "legalNotice": {
@@ -1044,12 +1019,6 @@
     "section8": {
       "title": "8. Droit applicable",
       "content": "Les présentes mentions légales sont soumises au droit français. Tout litige relatif à l'utilisation du site relève de la compétence exclusive des tribunaux de Paris, France."
-    },
-    "footer": {
-      "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation",
-      "legalNotice": "Mentions légales"
     }
   }
 }

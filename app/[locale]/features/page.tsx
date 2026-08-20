@@ -1,13 +1,17 @@
+import Footer from "../components/Footer";
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "../components/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export async function generateMetadata(props: Props) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: "metadata.features" });
-  return { title: t("title"), description: t("description") };
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "features" });
 }
 
 export default async function FeaturesPage(props: Props) {
@@ -436,20 +440,7 @@ export default async function FeaturesPage(props: Props) {
 
       </main>
 
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>© 2025 Deralis Digital. {locale === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {locale === 'fr' ? 'Confidentialité' : 'Privacy'}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {locale === 'fr' ? 'Conditions d\'utilisation' : 'Terms of Service'}
-            </Link>
-          </p>
-        </div>
-      </footer>
+      <Footer locale={locale as Locale} />
     </>
   );
 }

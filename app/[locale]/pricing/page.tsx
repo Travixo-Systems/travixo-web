@@ -1,3 +1,7 @@
+import FaqSection, { type FaqItem } from "../components/FaqSection";
+import Footer from "../components/Footer";
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navigation from '../components/navigation';
 import Link from 'next/link';
@@ -6,14 +10,11 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata(props: Props) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: 'metadata.pricing' });
-
-  return {
-    title: t('title'),
-    description: t('description')
-  };
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "pricing" });
 }
 
 export default async function PricingPage(props: Props) {
@@ -21,7 +22,7 @@ export default async function PricingPage(props: Props) {
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'pricing' });
-  const faq = await t.raw('faq.questions');
+  const faq = t.raw('faq.questions') as FaqItem[];
 
   return (
     <>
@@ -449,23 +450,7 @@ export default async function PricingPage(props: Props) {
 
 
         {/* FAQ Section */}
-        <section className="py-10 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
-              {t('faq.title')}
-            </h2>
-            <div className="space-y-4">
-              {faq.map((item: { question: string; answer: string }, i: number) => (
-                <div key={i} className="border-b border-gray-200 pb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {item.question}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <FaqSection title={t('faq.title')} items={faq} id="pricing-faq" />
 
         {/* Final CTA */}
         <section className="py-6 bg-[#0a2730] text-white">
@@ -483,20 +468,7 @@ export default async function PricingPage(props: Props) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#0a2730] text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>{t('footer.copyright')}</p>
-          <p className="mt-2 text-sm">
-            <Link href={`/${locale}/privacy`} className="hover:text-white">
-              {t('footer.privacy')}
-            </Link>
-            {" • "}
-            <Link href={`/${locale}/terms`} className="hover:text-white">
-              {t('footer.terms')}
-            </Link>
-          </p>
-        </div>
-      </footer>
+      <Footer locale={locale as Locale} />
     </>
   );
 }

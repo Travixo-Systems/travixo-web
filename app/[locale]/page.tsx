@@ -1,3 +1,6 @@
+import Footer from "./components/Footer";
+import { buildPageMetadata, type Locale } from "@/lib/seo";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Search, FileText, ClipboardCheck } from "lucide-react";
@@ -7,10 +10,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export async function generateMetadata(props: Props) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: "metadata.home" });
-  return { title: t("title"), description: t("description") };
+  return buildPageMetadata({ locale: locale as Locale, routeKey: "home" });
 }
 
 export default async function Home(props: Props) {
@@ -23,7 +27,7 @@ export default async function Home(props: Props) {
       <Navigation />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="bg-[#0a2730] pb-32 pt-16">
+        <section className="bg-[#0a2730] pb-20 pt-16">
           <div className="container mx-auto px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-center text-white mb-6 whitespace-pre-line">
               {t("hero.title")}
@@ -47,9 +51,9 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Product Screenshot */}
-        <section className="bg-[#f6f8fd] pt-0 pb-12">
+        <section className="bg-[#f6f8fd] pt-12 pb-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto -mt-20">
+            <div className="max-w-4xl mx-auto">
               <Image
                 src="/screenshots/dashboard-preview.png"
                 alt="TraviXO dashboard"
@@ -294,29 +298,8 @@ export default async function Home(props: Props) {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-[#0a2730] text-white/60 py-4">
-          <div className="container mx-auto px-4 text-center">
-            <p>{t("finalCta.footer.copyright")}</p>
-            <p className="mt-2 text-sm">
-              <a href="mailto:contact@travixosystems.com" className="hover:text-white">
-                {t("finalCta.footer.email")}
-              </a>
-              {" \u00B7 "}
-              <span>+33 7 83 35 75 35</span>
-            </p>
-            <p className="mt-2 text-sm">
-              <Link href={`/${locale}/privacy`} className="hover:text-white">
-                {t("finalCta.footer.privacy")}
-              </Link>
-              {" \u00B7 "}
-              <Link href={`/${locale}/terms`} className="hover:text-white">
-                {t("finalCta.footer.terms")}
-              </Link>
-            </p>
-          </div>
-        </footer>
       </main>
+      <Footer locale={locale as Locale} />
     </>
   );
 }
