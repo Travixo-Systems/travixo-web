@@ -59,6 +59,8 @@ export type LandingPage = {
   title: string;
   description: string;
   h1: string;
+  /** Short label for internal links, where the H1 is far too long. */
+  shortLabel: string;
   subtitle: string;
   sections: Section[];
   faq: { question: string; answer: string }[];

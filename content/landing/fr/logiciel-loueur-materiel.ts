@@ -19,6 +19,7 @@ const page: LandingPage = {
     "Logiciel pour loueurs de matériel : sortie, retour, état constaté, chaque passage de main laisse une trace horodatée. VGP et documents reliés à la machine.",
 
   h1: "Logiciel pour loueur de matériel : chaque passage de main laisse une trace",
+  shortLabel: "Logiciel pour loueurs",
   subtitle:
     "Sortie, retour, état constaté. Une trace horodatée est enregistrée au moment du scan, avec les éléments nécessaires pour documenter la sortie ou le retour en cas de contestation.",
 
