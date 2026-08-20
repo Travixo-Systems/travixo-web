@@ -56,8 +56,8 @@ const page: LandingPage = {
           body: "L'inventaire dépôt est terminé, deux matériels manquent. La liste part en PDF automatiquement.",
         },
         {
-          title: "VGP qui arrive à échéance pendant une location.",
-          body: "L'alerte de rappel part assez tôt pour organiser le retour.",
+          title: "VGP qui approche sur une machine en location.",
+          body: "La machine est chez un client et son échéance arrive. L'alerte de rappel part assez tôt pour organiser le retour.",
         },
       ],
     },

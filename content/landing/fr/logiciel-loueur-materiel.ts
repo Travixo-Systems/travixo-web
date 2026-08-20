@@ -7,9 +7,9 @@ import type { LandingPage } from "../types";
 // timeline linking departure, holder, return, observed condition, documents
 // and VGP deadline.
 //
-// The FAQ entry on what a locataire sees when scanning is deliberately absent:
-// VERIF-B is unresolved, and describing an access model that may not exist
-// would be a false capability claim. Add it once the product answer is known.
+// The scan FAQ describes the unauthenticated view as observed on 20/08/2026,
+// after the RLS migration: identity, location, status and last scan are shown,
+// purchase price and book value are not, and writes require a login.
 const page: LandingPage = {
   routeKey: "softwareRental",
   locale: "fr",
@@ -90,9 +90,14 @@ const page: LandingPage = {
         "Oui, des notes et des photos peuvent être jointes à l'événement de retour.",
     },
     {
-      question: "Que se passe-t-il si une VGP expire pendant une location ?",
+      question: "Que se passe-t-il si une VGP approche sur une machine en location ?",
       answer:
-        "Une alerte de rappel part assez tôt pour organiser le retour et planifier le contrôle avant l'échéance.",
+        "Une alerte de rappel part assez tôt pour organiser le retour et planifier le contrôle. Au moment de planifier ce contrôle, l'application compare l'échéance à la date de retour prévue et signale le cas où le contrôle tombe avant le retour, avec la possibilité de rappeler la machine ou d'organiser une intervention sur site.",
+    },
+    {
+      question: "Que voit un locataire qui scanne le QR code sans compte ?",
+      answer:
+        "La fiche de la machine : désignation, catégorie, numéro de série, emplacement, statut et description, ainsi que la date et le lieu du dernier scan. Les prix d'achat et les valeurs comptables ne sont jamais affichés. La modification du statut ou de l'emplacement demande une connexion.",
     },
     {
       question: "Faut-il équiper les machines de boîtiers ?",

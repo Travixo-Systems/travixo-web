@@ -61,8 +61,9 @@ const page: LandingPage = {
       kind: "prose",
       heading: "Une VGP qui arrive à échéance pendant une location",
       paragraphs: [
-        "C'est le scénario qu'un suivi isolé par tableur détecte difficilement : il faut rapprocher l'échéance VGP de la date de retour prévue.",
-        "TraviXO rapproche les échéances VGP des machines sorties de leur date de retour prévue. Si une échéance tombe pendant qu'une machine est encore chez un client, l'alerte part assez tôt pour organiser le retour et planifier le contrôle.",
+        "C'est le scénario qu'un suivi isolé par tableur détecte difficilement : il faut rapprocher l'échéance VGP de la situation locative de la machine.",
+        "TraviXO recoupe les échéances VGP avec les locations en cours. Si une machine est encore chez un client et que son échéance approche, l'alerte de rappel part assez tôt pour organiser le retour et planifier le contrôle.",
+        "Au moment de planifier un contrôle sur une machine en location, l'application compare l'échéance à la date de retour prévue et signale explicitement le cas où le contrôle tombe avant le retour.",
       ],
     },
     {
