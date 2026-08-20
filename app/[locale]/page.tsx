@@ -27,7 +27,7 @@ export default async function Home(props: Props) {
       <Navigation />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="bg-[#0a2730] pb-32 pt-16">
+        <section className="bg-[#0a2730] pb-20 pt-16">
           <div className="container mx-auto px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-center text-white mb-6 whitespace-pre-line">
               {t("hero.title")}
@@ -51,9 +51,9 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Product Screenshot */}
-        <section className="bg-[#f6f8fd] pt-0 pb-12">
+        <section className="bg-[#f6f8fd] pt-12 pb-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto -mt-20">
+            <div className="max-w-4xl mx-auto">
               <Image
                 src="/screenshots/dashboard-preview.png"
                 alt="TraviXO dashboard"
