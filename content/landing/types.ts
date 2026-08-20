@@ -33,6 +33,23 @@ export type Section =
       heading: string;
       paragraphs: string[];
       linkLabel: string;
+    }
+  /**
+   * A real screen from the product. With no customer logos or testimonials,
+   * the product is the only proof available, so these carry weight.
+   * Files live in public/screenshots and come from the app repo.
+   */
+  | {
+      kind: "screenshot";
+      heading: string;
+      lead?: string;
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+      /** Portrait captures (a phone view) render narrower. */
+      portrait?: boolean;
+      caption?: string;
     };
 
 export type LandingPage = {

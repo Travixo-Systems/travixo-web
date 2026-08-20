@@ -58,6 +58,15 @@ const page: LandingPage = {
       ],
     },
     {
+      kind: "screenshot",
+      heading: "L'état du parc en un écran",
+      lead: "Taux de conformité, échéances à trente jours, retards. La vue signale la non-conformité en citant l'article du Code du travail plutôt qu'un montant d'amende.",
+      src: "/screenshots/vgp-conformite.png",
+      alt: "Vue d'ensemble de la conformité VGP dans TraviXO : taux de conformité, inspections à venir, équipements en retard",
+      width: 1436,
+      height: 709,
+    },
+    {
       kind: "prose",
       heading: "Une VGP qui arrive à échéance pendant une location",
       paragraphs: [

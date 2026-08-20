@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 
@@ -223,6 +224,28 @@ function SectionBlock({
               </p>
             ))}
           </>
+        )}
+
+        {section.kind === "screenshot" && (
+          <figure className={section.portrait ? "max-w-sm mx-auto" : ""}>
+            <Image
+              src={section.src}
+              alt={section.alt}
+              width={section.width}
+              height={section.height}
+              className="rounded-lg border border-gray-200 shadow-sm w-full h-auto"
+              sizes={
+                section.portrait
+                  ? "(max-width: 640px) 100vw, 384px"
+                  : "(max-width: 896px) 100vw, 896px"
+              }
+            />
+            {section.caption ? (
+              <figcaption className="mt-3 text-sm text-gray-600 text-center">
+                {section.caption}
+              </figcaption>
+            ) : null}
+          </figure>
         )}
 
         {section.kind === "pricing" && (

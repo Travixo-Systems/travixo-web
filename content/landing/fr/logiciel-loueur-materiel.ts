@@ -61,6 +61,16 @@ const page: LandingPage = {
       ],
     },
     {
+      kind: "screenshot",
+      heading: "Ce que voit celui qui scanne",
+      lead: "La fiche machine ouverte depuis le QR code, sans compte : identité, emplacement, statut et dernier scan. Les prix d'achat ne sont pas affichés, et toute modification demande une connexion.",
+      src: "/screenshots/scan-public.png",
+      alt: "Fiche machine TraviXO ouverte par scan QR sans connexion : numéro de série, emplacement, statut, dernier scan",
+      width: 667,
+      height: 880,
+      portrait: true,
+    },
+    {
       kind: "prose",
       heading: "Qui porte la VGP pendant la location",
       paragraphs: [

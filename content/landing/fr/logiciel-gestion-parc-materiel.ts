@@ -44,6 +44,15 @@ const page: LandingPage = {
       ],
     },
     {
+      kind: "screenshot",
+      heading: "Chaque machine, sa catégorie, son échéance",
+      lead: "Le parc filtrable par statut, catégorie et emplacement, avec la prochaine échéance de chaque matériel.",
+      src: "/screenshots/vgp-suivi.png",
+      alt: "Suivi VGP dans TraviXO : liste des matériels avec catégorie, emplacement, prochaine échéance et statut",
+      width: 1447,
+      height: 745,
+    },
+    {
       kind: "bullets",
       heading: "Les écarts que vous voulez voir tout de suite",
       items: [
