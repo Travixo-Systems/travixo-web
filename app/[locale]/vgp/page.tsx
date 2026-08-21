@@ -40,6 +40,7 @@ export default async function VgpHubPage(props: Props) {
   if (!guard(locale)) notFound();
   setRequestLocale(locale);
 
+  const byThree = FICHES.filter((f) => f.periodicity.months === 3);
   const bySix = FICHES.filter((f) => f.periodicity.months === 6);
   const byTwelve = FICHES.filter((f) => f.periodicity.months === 12);
 
@@ -75,11 +76,12 @@ export default async function VgpHubPage(props: Props) {
               Périodicité des VGP par type d&apos;engin
             </h1>
             <p className="text-xl text-white/80 leading-relaxed">
-              La règle générale est de douze mois. Elle descend à six mois pour
-              les appareils énumérés au II de l&apos;article 20 de
-              l&apos;arrêté du 1er mars 2004, et à trois mois pour les appareils
-              mus par la force humaine déplaçant un poste de travail en
-              élévation.
+              Deux textes, pas un. L&apos;arrêté du 1er mars 2004 régit les
+              appareils de levage : douze mois en règle générale, six mois pour
+              ceux énumérés au II de son article 20. L&apos;arrêté du 5 mars
+              1993 régit d&apos;autres machines, dont les engins de terrassement
+              à conducteur porté : douze mois, ou trois mois pour les
+              équipements de son article 1er.
             </p>
           </div>
         </section>
@@ -87,6 +89,11 @@ export default async function VgpHubPage(props: Props) {
         <section className="py-12 bg-[#f6f8fd]">
           <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-3xl font-bold text-[#0a2730] mb-6">
+              Périodicité de trois mois
+            </h2>
+            <FicheList fiches={byThree} />
+
+            <h2 className="text-3xl font-bold text-[#0a2730] mt-12 mb-6">
               Périodicité de six mois
             </h2>
             <FicheList fiches={bySix} />
@@ -105,7 +112,8 @@ export default async function VgpHubPage(props: Props) {
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Ces fiches couvrent les appareils de levage relevant de
-              l&apos;arrêté du 1er mars 2004, pour lesquels la périodicité a été
+              l&apos;arrêté du 1er mars 2004 et les machines relevant de
+              l&apos;arrêté du 5 mars 1993, pour lesquels la périodicité a été
               vérifiée sur le texte. Les équipements relevant d&apos;autres
               régimes de vérification, comme les compresseurs au titre des
               équipements sous pression ou les groupes électrogènes au titre des
@@ -121,15 +129,28 @@ export default async function VgpHubPage(props: Props) {
 
         <section className="py-12 bg-[#0a2730]">
           <div className="container mx-auto px-4 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">
-              Suivre ces échéances sans tableur
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Appliquer ces périodicités à votre parc
             </h2>
-            <Link
-              href={pathFor("fr", "softwareVgp")}
-              className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
-            >
-              Voir le logiciel de suivi VGP
-            </Link>
+            <p className="text-white/80 mb-8">
+              Le tableau Excel reprend cette table et calcule les échéances.
+              Le logiciel les suit, avec les rapports et l&apos;historique
+              reliés à chaque machine.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href={pathFor("fr", "vgpTracker")}
+                className="inline-block bg-white hover:bg-white/90 text-[#0a2730] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                Télécharger le tableau Excel
+              </Link>
+              <Link
+                href={pathFor("fr", "softwareVgp")}
+                className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                Voir le logiciel de suivi VGP
+              </Link>
+            </div>
           </div>
         </section>
       </main>
@@ -151,8 +172,15 @@ function FicheList({ fiches }: { fiches: typeof FICHES }) {
             <span className="block font-bold text-[#0a2730] mb-1">
               {fiche.name}
             </span>
-            <span className="text-sm text-gray-600">
+            <span className="block text-sm text-gray-600">
               Tous les {fiche.periodicity.months} mois
+            </span>
+            {/* Two texts produce a twelve month band each, so name the one
+                this fiche relies on rather than leaving them merged. */}
+            <span className="block text-xs text-gray-500 mt-1">
+              {fiche.regime === "levage-2004"
+                ? "Arrêté du 1er mars 2004"
+                : "Arrêté du 5 mars 1993"}
             </span>
           </Link>
         </li>

@@ -128,6 +128,16 @@ export const ROUTES = {
     changeFrequency: "monthly",
     priority: 0.7,
   },
+
+  // Lead magnet. Physical segment too, because it carries a form and so needs
+  // a client boundary the [slug] content renderer does not model. French only:
+  // the file, its dropdown and its sources are built on French regulation.
+  vgpTracker: {
+    namespace: null,
+    slugs: { fr: "tableau-suivi-vgp-excel" },
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
 } satisfies Record<string, RouteDef>;
 
 export type RouteKey = keyof typeof ROUTES;
