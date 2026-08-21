@@ -413,7 +413,12 @@ function buildModeEmploi(wb: ExcelJS.Workbook) {
 
   const blocks: [string, string[]][] = [
     ["Tableau de suivi des VGP", []],
-    ["", ["Un onglet de saisie, un référentiel de périodicités sourcé, et les textes eux-mêmes."]],
+    [
+      "",
+      [
+        "Quatre onglets : ce mode d'emploi, la saisie dans « Suivi VGP », le référentiel de périodicités, et les textes sur lesquels il se fonde.",
+      ],
+    ],
     [
       "1. Remplissez l'onglet « Suivi VGP »",
       [
@@ -500,11 +505,14 @@ async function main() {
     "Registre de suivi des vérifications générales périodiques, avec périodicités sourcées sur les arrêtés du 1er mars 2004 et du 5 mars 1993.";
   wb.created = new Date();
 
-  // Creation order is tab order: register first, then the guide beside it.
-  buildRegister(wb, today);
+  // Creation order is tab order. The guide comes first so the file opens on
+  // an explanation rather than on an empty grid.
   buildModeEmploi(wb);
+  buildRegister(wb, today);
   buildReferentiel(wb);
   buildSources(wb, consultedOn);
+
+  wb.views = [{ activeTab: 0, x: 0, y: 0, width: 20000, height: 20000 }];
 
   await mkdir(dirname(OUT), { recursive: true });
   const buffer = await wb.xlsx.writeBuffer();
