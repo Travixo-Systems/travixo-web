@@ -32,8 +32,22 @@ const GREEN_FILL = "FFE8F5E9";
 const GREEN_TEXT = "FF1B5E20";
 const GREY_TEXT = "FF6B7280";
 
-/** Rows of data plus formatted empty rows the user types into. */
-const LAST_ROW = 200;
+/**
+ * Last row of the prepared register.
+ *
+ * Every cell from A2 to N{LAST_ROW} is bordered, so the prepared area reads as
+ * a table rather than as an unformatted sheet. The first version styled only
+ * the four computed columns, which left rows 8 and below as four grey stripes
+ * in empty space: functionally correct, and unreadable as a register.
+ *
+ * 500 rows because the product targets fleets of 50 to 2,000 machines and a
+ * tracker that stops at 200 answers the small half of that. Beyond 500 the
+ * Mode d'emploi says to copy the last row down.
+ */
+const LAST_ROW = 500;
+
+/** Ruled grid, definite enough to bound the table, quiet enough to ignore. */
+const GRID = "FFDFE3E8";
 
 /**
  * The reason periodicites.ts is worth having: if a fiche and the lookup table
@@ -237,14 +251,24 @@ function buildRegister(wb: ExcelJS.Workbook, today: Date) {
     row.getCell(11).alignment = { horizontal: "center" };
     row.getCell(11).font = { bold: true };
 
-    // The computed columns are formulas; shading them says "do not type here"
-    // more reliably than a note nobody reads.
-    for (const c of [7, 9, 10, 11]) {
-      row.getCell(c).fill = {
-        type: "pattern",
-        pattern: "solid",
-        fgColor: { argb: MIST },
+    // Border every cell of the row, not just the ones carrying a formula.
+    // A style is what makes ExcelJS emit the cell at all, so without this the
+    // empty columns have no cell record and the prepared area is invisible.
+    for (let c = 1; c <= 14; c++) {
+      const cell = row.getCell(c);
+      cell.border = {
+        bottom: { style: "thin", color: { argb: GRID } },
+        right: { style: "thin", color: { argb: GRID } },
       };
+      // The computed columns are formulas; shading them says "do not type
+      // here" more reliably than a note nobody reads.
+      if ([7, 9, 10, 11].includes(c)) {
+        cell.fill = {
+          type: "pattern",
+          pattern: "solid",
+          fgColor: { argb: MIST },
+        };
+      }
     }
   }
 
@@ -469,7 +493,10 @@ function buildModeEmploi(wb: ExcelJS.Workbook) {
     ],
     [
       "4. Les six premières lignes sont des exemples",
-      ["Supprimez-les avant de saisir votre parc. Les formules des lignes suivantes restent en place."],
+      [
+        "Supprimez-les avant de saisir votre parc. Les formules des lignes suivantes restent en place.",
+        "Le tableau est préparé jusqu'à la ligne 500. Au-delà, copiez la dernière ligne vers le bas : les formules et la liste déroulante suivent.",
+      ],
     ],
     [
       "5. Ce que ce fichier ne fait pas",
