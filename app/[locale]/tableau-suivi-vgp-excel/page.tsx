@@ -12,7 +12,7 @@ import JsonLd from "../components/JsonLd";
 import DownloadForm from "./DownloadForm";
 import { TRACKER_FILE } from "./file";
 import { BASE_URL, buildPageMetadata, pathFor, type Locale } from "@/lib/seo";
-import { PERIODICITES } from "@/content/vgp/periodicites";
+import { PERIODICITES, byFamily, rowNote } from "@/content/vgp/periodicites";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -215,8 +215,10 @@ export default async function TrackerPage(props: Props) {
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               C&apos;est la table que le fichier consulte pour déduire la
-              périodicité du type d&apos;équipement. Elle est reprise ici
-              telle quelle.
+              périodicité du type d&apos;équipement. {PERIODICITES.length}{" "}
+              lignes, reprenant l&apos;énumération complète des deux arrêtés,
+              y compris les machines qu&apos;un parc de travaux publics ne
+              croise pas tous les jours.
             </p>
             <div className="overflow-x-auto bg-white rounded-lg">
               <table className="w-full text-left border-collapse">
@@ -231,46 +233,64 @@ export default async function TrackerPage(props: Props) {
                     <th className="px-4 py-3 font-semibold">Fondement</th>
                   </tr>
                 </thead>
-                <tbody>
-                  {PERIODICITES.map((entry) => (
-                    <tr
-                      key={entry.label}
-                      className="border-b border-gray-100 last:border-0 align-top"
-                    >
-                      <td className="px-4 py-3 text-gray-800">
-                        {entry.ficheSlug ? (
-                          <Link
-                            href={`${pathFor("fr", "vgpHub")}/${entry.ficheSlug}`}
-                            className="text-[#0a2730] font-medium hover:text-[#e8600a] hover:underline"
-                          >
-                            {entry.label}
-                          </Link>
-                        ) : (
-                          entry.label
-                        )}
-                        {entry.caveat ? (
-                          <span className="block text-sm text-gray-500 mt-1">
-                            {entry.caveat}
+                {byFamily().map(({ family, rows, sharedNote }) => (
+                  <tbody key={family}>
+                    <tr>
+                      <th
+                        colSpan={3}
+                        scope="colgroup"
+                        className="px-4 pt-6 pb-2 text-left border-b-2 border-[#e8600a]/30"
+                      >
+                        <span className="block text-sm font-bold uppercase tracking-wide text-[#e8600a]">
+                          {family}
+                        </span>
+                        {sharedNote ? (
+                          <span className="block mt-1 text-sm font-normal normal-case tracking-normal text-gray-600 max-w-3xl">
+                            {sharedNote}
                           </span>
                         ) : null}
-                      </td>
-                      <td className="px-4 py-3 whitespace-nowrap">
-                        {entry.months ? (
-                          <span className="font-bold text-[#0a2730]">
-                            {entry.months} mois
-                          </span>
-                        ) : (
-                          <span className="text-gray-500 italic">
-                            Hors champ
-                          </span>
-                        )}
-                      </td>
-                      <td className="px-4 py-3 text-sm text-gray-600">
-                        {entry.basis}
-                      </td>
+                      </th>
                     </tr>
-                  ))}
-                </tbody>
+                    {rows.map((entry) => (
+                      <tr
+                        key={entry.label}
+                        className="border-b border-gray-100 align-top"
+                      >
+                        <td className="px-4 py-3 text-gray-800">
+                          {entry.ficheSlug ? (
+                            <Link
+                              href={`${pathFor("fr", "vgpHub")}/${entry.ficheSlug}`}
+                              className="text-[#0a2730] font-medium hover:text-[#e8600a] hover:underline"
+                            >
+                              {entry.label}
+                            </Link>
+                          ) : (
+                            entry.label
+                          )}
+                          {rowNote(entry, sharedNote) ? (
+                            <span className="block text-sm text-gray-500 mt-1">
+                              {rowNote(entry, sharedNote)}
+                            </span>
+                          ) : null}
+                        </td>
+                        <td className="px-4 py-3 whitespace-nowrap">
+                          {entry.months ? (
+                            <span className="font-bold text-[#0a2730]">
+                              {entry.months} mois
+                            </span>
+                          ) : (
+                            <span className="text-gray-500 italic">
+                              Hors champ
+                            </span>
+                          )}
+                        </td>
+                        <td className="px-4 py-3 text-sm text-gray-600">
+                          {entry.basis}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                ))}
               </table>
             </div>
             <p className="text-sm text-gray-600 mt-4">

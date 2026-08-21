@@ -289,15 +289,18 @@ function buildReferentiel(wb: ExcelJS.Workbook) {
     properties: { tabColor: { argb: NAVY } },
   });
 
+  // Type in A and périodicité in B is load-bearing: the register's VLOOKUP
+  // reads columns 1 and 2 of REFERENTIEL_RANGE. Famille comes after.
   headerRow(sheet, [
     "Type d'équipement",
     "Périodicité (mois)",
+    "Famille",
     "Fondement réglementaire",
     "Point de vigilance",
     "Fiche détaillée",
   ]);
   sheet.columns.forEach((column, i) => {
-    column.width = [46, 18, 40, 62, 52][i];
+    column.width = [58, 18, 44, 38, 66, 52][i];
   });
 
   // The register's VLOOKUP reads $A$2:$B$n of this sheet, so the row order
@@ -310,16 +313,29 @@ function buildReferentiel(wb: ExcelJS.Workbook) {
     if (entry.months === null) {
       row.getCell(2).font = { italic: true, color: { argb: GREY_TEXT } };
     }
-    row.getCell(3).value = entry.basis;
-    row.getCell(4).value = entry.caveat ?? "";
+    row.getCell(3).value = entry.family;
+    row.getCell(3).font = { color: { argb: GREY_TEXT }, size: 10 };
+    row.getCell(3).alignment = { wrapText: true, vertical: "top" };
+    row.getCell(4).value = entry.basis;
     row.getCell(4).alignment = { wrapText: true, vertical: "top" };
+    // Both notes, joined. The page hoists the shared one to its group heading;
+    // a spreadsheet row gets filtered away from its neighbours, so here it has
+    // to carry its own scope condition.
+    const vigilance = [entry.scopeNote, entry.caveat].filter(Boolean).join(" ");
+    row.getCell(5).value = vigilance;
+    row.getCell(5).alignment = { wrapText: true, vertical: "top" };
     if (entry.ficheSlug) {
       const url = `${BASE_URL}/fr/vgp/${entry.ficheSlug}`;
-      row.getCell(5).value = { text: url, hyperlink: url };
-      row.getCell(5).font = { color: { argb: ORANGE }, underline: true };
+      row.getCell(6).value = { text: url, hyperlink: url };
+      row.getCell(6).font = { color: { argb: ORANGE }, underline: true };
     }
-    row.height = entry.caveat ? 34 : 18;
+    row.getCell(1).alignment = { wrapText: true, vertical: "top" };
+    row.height = vigilance.length > 150 ? 48 : vigilance.length > 90 ? 34 : 20;
   });
+
+  // Thirty-plus rows across four families: a filter is how the reader gets to
+  // theirs, and freezing the header keeps the columns named while scrolling.
+  sheet.autoFilter = { from: "A1", to: `F${PERIODICITES.length + 1}` };
 }
 
 function buildSources(wb: ExcelJS.Workbook, consultedOn: string) {
@@ -428,6 +444,13 @@ function buildModeEmploi(wb: ExcelJS.Workbook) {
       ],
     ],
     [
+      "1 bis. Trouver son équipement dans la liste",
+      [
+        "L'onglet « Référentiel VGP » reprend l'énumération complète des deux arrêtés, regroupée par famille : appareils de levage, machines mobiles de chantier, machines de production, et hors champ.",
+        "Filtrez sur la colonne « Famille » pour ne garder que la vôtre. Les machines de production sont reprises pour que le référentiel soit complet, pas parce qu'un parc de travaux publics en détient.",
+      ],
+    ],
+    [
       "2. Les colonnes grisées se calculent seules",
       [
         "Périodicité : lue dans l'onglet « Référentiel VGP » à partir du type choisi.",
@@ -512,7 +535,17 @@ async function main() {
   buildReferentiel(wb);
   buildSources(wb, consultedOn);
 
-  wb.views = [{ activeTab: 0, x: 0, y: 0, width: 20000, height: 20000 }];
+  wb.views = [
+    {
+      activeTab: 0,
+      firstSheet: 0,
+      visibility: "visible",
+      x: 0,
+      y: 0,
+      width: 20000,
+      height: 20000,
+    },
+  ];
 
   await mkdir(dirname(OUT), { recursive: true });
   const buffer = await wb.xlsx.writeBuffer();
