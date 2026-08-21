@@ -32,8 +32,22 @@ const GREEN_FILL = "FFE8F5E9";
 const GREEN_TEXT = "FF1B5E20";
 const GREY_TEXT = "FF6B7280";
 
-/** Rows of data plus formatted empty rows the user types into. */
-const LAST_ROW = 200;
+/**
+ * Last row of the prepared register.
+ *
+ * Every cell from A2 to N{LAST_ROW} is bordered, so the prepared area reads as
+ * a table rather than as an unformatted sheet. The first version styled only
+ * the four computed columns, which left rows 8 and below as four grey stripes
+ * in empty space: functionally correct, and unreadable as a register.
+ *
+ * 500 rows because the product targets fleets of 50 to 2,000 machines and a
+ * tracker that stops at 200 answers the small half of that. Beyond 500 the
+ * Mode d'emploi says to copy the last row down.
+ */
+const LAST_ROW = 500;
+
+/** Ruled grid, definite enough to bound the table, quiet enough to ignore. */
+const GRID = "FFDFE3E8";
 
 /**
  * The reason periodicites.ts is worth having: if a fiche and the lookup table
@@ -84,6 +98,57 @@ function addMonths(date: Date, n: number) {
   return new Date(date.getFullYear(), date.getMonth() + n, date.getDate());
 }
 
+/**
+ * Illustrative rows, shown filled in so the register reads as a working
+ * document rather than a blank template.
+ *
+ * Six rows demonstrated the mechanics but looked like a demo: a loueur with
+ * two hundred machines opening a file with six in it discounts the whole
+ * thing. Eighteen reads as a small real fleet, covers all four families of the
+ * référentiel, and puts every one of the five statuses on screen at once,
+ * which is the only way the colour key explains itself. They still delete in
+ * one drag, and the Mode d'emploi says to do that first.
+ */
+type Example = {
+  designation: string;
+  categorie: string;
+  modele: string;
+  serie: string;
+  emplacement: string;
+  /** Must match a label in PERIODICITES exactly: it drives the VLOOKUP. */
+  type: string;
+  /**
+   * Days between today and the next due date, back-solved into a last-VGP
+   * date, so the spread of statuses is stated as intent rather than as a
+   * pile of magic dates. Null means no date recorded, the "À renseigner" case.
+   */
+  daysUntilDue: number | null;
+  responsabilite: string;
+  verificateur: string;
+  observations: string;
+};
+
+const EXAMPLES: Example[] = [
+  { designation: "Nacelle articulée 16 m", categorie: "Nacelle", modele: "Haulotte HA16RTJ", serie: "HA16-4471", emplacement: "Dépôt Noisy", type: "Nacelle élévatrice (PEMP)", daysUntilDue: -34, responsabilite: "Loueur", verificateur: "Apave", observations: "Échéance dépassée, machine immobilisée" },
+  { designation: "Nacelle ciseaux 12 m", categorie: "Nacelle", modele: "Genie GS-3246", serie: "GS-11907", emplacement: "Dépôt Bobigny", type: "Nacelle élévatrice (PEMP)", daysUntilDue: 12, responsabilite: "Loueur", verificateur: "Apave", observations: "" },
+  { designation: "Nacelle télescopique 18 m", categorie: "Nacelle", modele: "JLG 460SJ", serie: "JLG-30288", emplacement: "Chantier Saint-Denis", type: "Nacelle élévatrice (PEMP)", daysUntilDue: 140, responsabilite: "Locataire", verificateur: "Bureau Veritas", observations: "" },
+  { designation: "Chariot télescopique 4 t", categorie: "Chariot", modele: "Manitou MT1440", serie: "MT-220913", emplacement: "Chantier Bobigny", type: "Chariot élévateur", daysUntilDue: 18, responsabilite: "Locataire", verificateur: "Vérificateur interne", observations: "En location, retour prévu avant l'échéance" },
+  { designation: "Chariot télescopique 4,2 t", categorie: "Chariot", modele: "Merlo P40.17", serie: "ME-41630", emplacement: "Dépôt Noisy", type: "Chariot élévateur", daysUntilDue: 88, responsabilite: "Loueur", verificateur: "Dekra", observations: "" },
+  { designation: "Chariot frontal 2,5 t", categorie: "Chariot", modele: "Toyota 8FG25", serie: "TY-70255", emplacement: "Atelier", type: "Chariot élévateur", daysUntilDue: -9, responsabilite: "Interne", verificateur: "Dekra", observations: "Contrôle à replanifier" },
+  { designation: "Mini-pelle 2,5 t", categorie: "Engin", modele: "Kubota KX027-4", serie: "KX-88120", emplacement: "Dépôt Noisy", type: "Engin de terrassement à conducteur porté (sans levage)", daysUntilDue: 240, responsabilite: "Loueur", verificateur: "Bureau Veritas", observations: "Sans équipement de levage" },
+  { designation: "Pelle 8 t avec crochet", categorie: "Engin", modele: "Yanmar SV100", serie: "SV-33017", emplacement: "Chantier Pantin", type: "Engin de terrassement équipé pour le levage", daysUntilDue: 95, responsabilite: "Loueur", verificateur: "Bureau Veritas", observations: "Crochet de manutention monté, périodicité ramenée à 6 mois" },
+  { designation: "Tractopelle", categorie: "Engin", modele: "JCB 3CX", serie: "JCB-52741", emplacement: "Chantier Aubervilliers", type: "Engin de terrassement à conducteur porté (sans levage)", daysUntilDue: 310, responsabilite: "Locataire", verificateur: "Socotec", observations: "" },
+  { designation: "Pelle sur chenilles 14 t", categorie: "Engin", modele: "Caterpillar 315", serie: "CAT-90614", emplacement: "Chantier Montreuil", type: "Engin de terrassement à conducteur porté (sans levage)", daysUntilDue: 26, responsabilite: "Locataire", verificateur: "Socotec", observations: "En location longue durée" },
+  { designation: "Foreuse sur chenilles", categorie: "Engin", modele: "Casagrande C6", serie: "CG-10432", emplacement: "Chantier Saint-Denis", type: "Machine mobile d'excavation ou de forage du sol à conducteur porté", daysUntilDue: 175, responsabilite: "Loueur", verificateur: "Socotec", observations: "" },
+  { designation: "Grue auxiliaire 12 t/m", categorie: "Divers", modele: "Palfinger PK 15.501", serie: "PK-71204", emplacement: "Atelier", type: "Grue auxiliaire de chargement sur véhicule", daysUntilDue: null, responsabilite: "Interne", verificateur: "", observations: "Machine reprise, dernier rapport à retrouver" },
+  { designation: "Hayon élévateur 1,5 t", categorie: "Divers", modele: "Dhollandia DH-LM", serie: "DH-26085", emplacement: "Atelier", type: "Hayon élévateur", daysUntilDue: 55, responsabilite: "Interne", verificateur: "Apave", observations: "Monté sur le porteur 19 t" },
+  { designation: "Monte-matériaux 200 kg", categorie: "Divers", modele: "Böcker HD 21", serie: "BO-14550", emplacement: "Chantier Pantin", type: "Monte-matériaux de chantier", daysUntilDue: -3, responsabilite: "Loueur", verificateur: "Apave", observations: "Retour dépôt demandé" },
+  { designation: "Pont roulant atelier 5 t", categorie: "Divers", modele: "Demag EKKE", serie: "DM-60119", emplacement: "Atelier", type: "Pont roulant, palan ou potence", daysUntilDue: 200, responsabilite: "Interne", verificateur: "Bureau Veritas", observations: "Périodicité annuelle, hors liste art. 20-II" },
+  { designation: "Compacteur à déchets", categorie: "Divers", modele: "Presto PB 10", serie: "PR-33902", emplacement: "Dépôt Bobigny", type: "Compacteur à déchets", daysUntilDue: 20, responsabilite: "Interne", verificateur: "Dekra", observations: "Chargement manuel, périodicité trimestrielle" },
+  { designation: "Compresseur 5 m³/min", categorie: "Compresseur", modele: "Atlas Copco XAS 88", serie: "XAS-50611", emplacement: "Dépôt Noisy", type: "Compresseur", daysUntilDue: null, responsabilite: "Interne", verificateur: "", observations: "Relève d'un autre régime de vérification" },
+  { designation: "Groupe électrogène 60 kVA", categorie: "Groupe électrogène", modele: "SDMO R66", serie: "SD-77410", emplacement: "Chantier Aubervilliers", type: "Groupe électrogène", daysUntilDue: null, responsabilite: "Locataire", verificateur: "", observations: "Relève d'un autre régime de vérification" },
+];
+
 function buildRegister(wb: ExcelJS.Workbook, today: Date) {
   const referentielRange = REFERENTIEL_RANGE;
   const sheet = wb.addWorksheet("Suivi VGP", {
@@ -111,35 +176,7 @@ function buildRegister(wb: ExcelJS.Workbook, today: Date) {
     column.width = [30, 16, 20, 18, 20, 34, 14, 16, 16, 13, 15, 16, 22, 40][i];
   });
 
-  // Illustrative rows. Dates are set relative to generation so the four
-  // statuses are all visible on opening; the Mode d'emploi says to delete them.
-  type Example = {
-    designation: string;
-    categorie: string;
-    modele: string;
-    serie: string;
-    emplacement: string;
-    type: string;
-    /**
-     * Days between today and the next due date, back-solved into a last-VGP
-     * date. Written this way so the six rows deliberately cover all five
-     * statuses: the colour key is only legible if every colour is on screen.
-     * Null means no date recorded, which is the "À renseigner" case.
-     */
-    daysUntilDue: number | null;
-    responsabilite: string;
-    verificateur: string;
-    observations: string;
-  };
-
-  const examples: Example[] = [
-    { designation: "Nacelle articulée 16 m", categorie: "Nacelle", modele: "Haulotte HA16RTJ", serie: "HA16-4471", emplacement: "Dépôt Noisy", type: "Nacelle élévatrice (PEMP)", daysUntilDue: -34, responsabilite: "Loueur", verificateur: "Apave", observations: "Échéance dépassée, machine immobilisée" },
-    { designation: "Chariot télescopique 4 t", categorie: "Chariot", modele: "Manitou MT1440", serie: "MT-220913", emplacement: "Chantier Bobigny", type: "Chariot élévateur", daysUntilDue: 18, responsabilite: "Locataire", verificateur: "Vérificateur interne", observations: "En location, retour prévu avant l'échéance" },
-    { designation: "Mini-pelle 2,5 t", categorie: "Engin", modele: "Kubota KX027-4", serie: "KX-88120", emplacement: "Dépôt Noisy", type: "Engin de terrassement à conducteur porté (sans levage)", daysUntilDue: 240, responsabilite: "Loueur", verificateur: "Bureau Veritas", observations: "Sans équipement de levage" },
-    { designation: "Pelle 8 t avec crochet", categorie: "Engin", modele: "Yanmar SV100", serie: "SV-33017", emplacement: "Chantier Pantin", type: "Engin de terrassement équipé pour le levage", daysUntilDue: 95, responsabilite: "Loueur", verificateur: "Bureau Veritas", observations: "Crochet de manutention monté, périodicité ramenée à 6 mois" },
-    { designation: "Grue auxiliaire 12 t/m", categorie: "Divers", modele: "Palfinger PK 15.501", serie: "PK-71204", emplacement: "Atelier", type: "Grue auxiliaire de chargement sur véhicule", daysUntilDue: null, responsabilite: "Interne", verificateur: "", observations: "Machine reprise, dernier rapport à retrouver" },
-    { designation: "Compresseur 5 m³/min", categorie: "Compresseur", modele: "Atlas Copco XAS 88", serie: "XAS-50611", emplacement: "Dépôt Noisy", type: "Compresseur", daysUntilDue: null, responsabilite: "Interne", verificateur: "", observations: "Relève d'un autre régime de vérification" },
-  ];
+  const examples = EXAMPLES;
 
   const dayMs = 24 * 60 * 60 * 1000;
 
@@ -195,15 +232,28 @@ function buildRegister(wb: ExcelJS.Workbook, today: Date) {
               ? "À planifier"
               : "À jour";
 
+    // Core functions only. Apache OpenOffice Calc does not implement IFERROR
+    // and renders it as #NAME?, which cascaded into every downstream column:
+    // ISNUMBER of an error is FALSE, so every row read as "Hors champ".
+    // ISNA plus a repeated VLOOKUP is the portable equivalent, and EDATE is
+    // replaced below by DATE arithmetic for the same reason. Nothing here may
+    // use a function newer than Excel 2003.
+    //
     // Périodicité: read from the reference sheet rather than typed, so a
     // correction there reprices every line. Returns the text "Hors champ" for
     // equipment outside both arrêtés, which the date formulas then skip.
+    //
+    // Prochaine échéance: MIN of "same day, N months on" and "last day of that
+    // month" reproduces EDATE exactly, including its month-end clamping, so a
+    // VGP done on 31 August falls due on 28 February and not on 3 March. A due
+    // date later than the real one is the one rounding error a compliance
+    // tracker must not make.
     row.getCell(7).value = {
-      formula: `IF($F${n}="","",IFERROR(VLOOKUP($F${n},${referentielRange},2,FALSE),""))`,
+      formula: `IF($F${n}="","",IF(ISNA(VLOOKUP($F${n},${referentielRange},2,FALSE)),"",VLOOKUP($F${n},${referentielRange},2,FALSE)))`,
       result: example ? (months ?? "Hors champ") : "",
     };
     row.getCell(9).value = {
-      formula: `IF(OR($H${n}="",NOT(ISNUMBER($G${n}))),"",EDATE($H${n},$G${n}))`,
+      formula: `IF(OR($H${n}="",NOT(ISNUMBER($G${n}))),"",MIN(DATE(YEAR($H${n}),MONTH($H${n})+$G${n},DAY($H${n})),DATE(YEAR($H${n}),MONTH($H${n})+$G${n}+1,0)))`,
       result: echeance ?? "",
     };
     row.getCell(10).value = {
@@ -237,14 +287,24 @@ function buildRegister(wb: ExcelJS.Workbook, today: Date) {
     row.getCell(11).alignment = { horizontal: "center" };
     row.getCell(11).font = { bold: true };
 
-    // The computed columns are formulas; shading them says "do not type here"
-    // more reliably than a note nobody reads.
-    for (const c of [7, 9, 10, 11]) {
-      row.getCell(c).fill = {
-        type: "pattern",
-        pattern: "solid",
-        fgColor: { argb: MIST },
+    // Border every cell of the row, not just the ones carrying a formula.
+    // A style is what makes ExcelJS emit the cell at all, so without this the
+    // empty columns have no cell record and the prepared area is invisible.
+    for (let c = 1; c <= 14; c++) {
+      const cell = row.getCell(c);
+      cell.border = {
+        bottom: { style: "thin", color: { argb: GRID } },
+        right: { style: "thin", color: { argb: GRID } },
       };
+      // The computed columns are formulas; shading them says "do not type
+      // here" more reliably than a note nobody reads.
+      if ([7, 9, 10, 11].includes(c)) {
+        cell.fill = {
+          type: "pattern",
+          pattern: "solid",
+          fgColor: { argb: MIST },
+        };
+      }
     }
   }
 
@@ -468,8 +528,11 @@ function buildModeEmploi(wb: ExcelJS.Workbook) {
       ],
     ],
     [
-      "4. Les six premières lignes sont des exemples",
-      ["Supprimez-les avant de saisir votre parc. Les formules des lignes suivantes restent en place."],
+      `4. Les ${EXAMPLES.length} premières lignes sont des exemples`,
+      [
+        "Sélectionnez-les et supprimez leur contenu avant de saisir votre parc. Les formules et la liste déroulante restent en place.",
+        "Le tableau est préparé jusqu'à la ligne 500. Au-delà, copiez la dernière ligne vers le bas : les formules et la liste déroulante suivent.",
+      ],
     ],
     [
       "5. Ce que ce fichier ne fait pas",
