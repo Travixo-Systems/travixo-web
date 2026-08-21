@@ -46,11 +46,17 @@ export default async function Footer({ locale }: { locale: Locale }) {
     }))
     .filter((link) => link.label);
 
-  if (hasRoute(locale, "vgpHub")) {
-    solutionLinks.push({
-      href: pathFor(locale, "vgpHub"),
-      label: "Périodicité des VGP",
-    });
+  // FR only routes, appended after the landing pages. Both are French because
+  // the regulation they document is.
+  const frOnlyLinks: { key: RouteKey; label: string }[] = [
+    { key: "vgpHub", label: "Périodicité des VGP" },
+    { key: "vgpTracker", label: "Tableau de suivi Excel" },
+  ];
+
+  for (const { key, label } of frOnlyLinks) {
+    if (hasRoute(locale, key)) {
+      solutionLinks.push({ href: pathFor(locale, key), label });
+    }
   }
 
   return (

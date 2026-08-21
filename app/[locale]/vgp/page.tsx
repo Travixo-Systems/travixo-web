@@ -129,15 +129,28 @@ export default async function VgpHubPage(props: Props) {
 
         <section className="py-12 bg-[#0a2730]">
           <div className="container mx-auto px-4 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">
-              Suivre ces échéances sans tableur
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Appliquer ces périodicités à votre parc
             </h2>
-            <Link
-              href={pathFor("fr", "softwareVgp")}
-              className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
-            >
-              Voir le logiciel de suivi VGP
-            </Link>
+            <p className="text-white/80 mb-8">
+              Le tableau Excel reprend cette table et calcule les échéances.
+              Le logiciel les suit, avec les rapports et l&apos;historique
+              reliés à chaque machine.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href={pathFor("fr", "vgpTracker")}
+                className="inline-block bg-white hover:bg-white/90 text-[#0a2730] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                Télécharger le tableau Excel
+              </Link>
+              <Link
+                href={pathFor("fr", "softwareVgp")}
+                className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                Voir le logiciel de suivi VGP
+              </Link>
+            </div>
           </div>
         </section>
       </main>
