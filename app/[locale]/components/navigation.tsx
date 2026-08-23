@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import { hasRoute, isLocale, pathFor, routeKeyForSlug } from '@/lib/routes';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,9 +16,33 @@ export default function Navigation() {
 
   const getLocalizedPath = (path: string) => `/${currentLocale}${path}`;
 
+  /**
+   * The other locale's equivalent of the current page, or that locale's home.
+   *
+   * This used to swap the locale prefix and keep the path, which 404s twice
+   * over: on the French only routes (the VGP hub, its fiches, the tracker,
+   * logiciel-vgp), and on every route whose slug differs per locale, where
+   * /fr/logiciel-loueur-materiel became /en/logiciel-loueur-materiel rather
+   * than /en/equipment-rental-software. Fifteen of the site's pages offered a
+   * dead language switch.
+   *
+   * Resolving through the route manifest fixes both. Where no equivalent
+   * exists the switch goes to the other locale's home, which is the honest
+   * answer: hreflang already tells crawlers the page is single locale.
+   */
   const switchLocale = (newLocale: string) => {
-    const pathWithoutLocale = pathname?.replace(/^\/(en|fr)/, '') || '/';
-    return `/${newLocale}${pathWithoutLocale}`;
+    if (!isLocale(newLocale) || !isLocale(currentLocale)) return `/${newLocale}`;
+
+    const segments = (pathname ?? '').split('/').filter(Boolean).slice(1);
+    if (segments.length === 0) return `/${newLocale}`;
+
+    // Only the first segment is a manifest slug. A deeper path means a fiche
+    // under /fr/vgp, and those exist in French only.
+    const routeKey = routeKeyForSlug(currentLocale, segments[0]);
+    if (!routeKey || segments.length > 1 || !hasRoute(newLocale, routeKey)) {
+      return `/${newLocale}`;
+    }
+    return pathFor(newLocale, routeKey);
   };
 
   return (

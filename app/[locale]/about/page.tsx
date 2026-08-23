@@ -162,7 +162,7 @@ export default async function AboutPage(props: Props) {
                             {t('cta.description')}
                         </p>
                         <Link
-                            href="/demo"
+                            href={`/${locale}/contact`}
                             className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                         >
                             {t('cta.button')}

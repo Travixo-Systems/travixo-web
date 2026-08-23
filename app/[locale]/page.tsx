@@ -44,9 +44,12 @@ export default async function Home(props: Props) {
               >
                 {t("hero.ctaPrimary")}
               </Link>
-              <button className="border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+              <Link
+                href={`/${locale}/contact`}
+                className="border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+              >
                 {t("hero.ctaSecondary")}
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -298,9 +301,12 @@ export default async function Home(props: Props) {
               >
                 {t("finalCta.primary")}
               </Link>
-              <button className="border-2 border-[#0a2730] text-[#0a2730] hover:bg-[#0a2730] hover:text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+              <Link
+                href={`/${locale}/contact`}
+                className="border-2 border-[#0a2730] text-[#0a2730] hover:bg-[#0a2730] hover:text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+              >
                 {t("finalCta.secondary")}
-              </button>
+              </Link>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-500 max-w-2xl mx-auto">
