@@ -1,8 +1,7 @@
 import Footer from "./components/Footer";
 import InlineRouteLink from "./components/InlineRouteLink";
-import { buildPageMetadata, type Locale } from "@/lib/seo";
+import { buildPageMetadata, type Locale , SIGNUP_URL } from "@/lib/seo";
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import { Search, FileText, ClipboardCheck } from "lucide-react";
 import Navigation from "./components/navigation";
@@ -38,18 +37,18 @@ export default async function Home(props: Props) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link
-                href={`/${locale}/contact`}
+              <a
+                href={SIGNUP_URL}
                 className="bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("hero.ctaPrimary")}
-              </Link>
-              <Link
-                href={`/${locale}/contact`}
+              </a>
+              <a
+                href={SIGNUP_URL}
                 className="border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("hero.ctaSecondary")}
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -295,18 +294,18 @@ export default async function Home(props: Props) {
             <p className="text-xl text-gray-600 mb-6">{t("finalCta.subtitle")}</p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
-              <Link
-                href={`/${locale}/contact`}
+              <a
+                href={SIGNUP_URL}
                 className="bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("finalCta.primary")}
-              </Link>
-              <Link
-                href={`/${locale}/contact`}
+              </a>
+              <a
+                href={SIGNUP_URL}
                 className="border-2 border-[#0a2730] text-[#0a2730] hover:bg-[#0a2730] hover:text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("finalCta.secondary")}
-              </Link>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-500 max-w-2xl mx-auto">

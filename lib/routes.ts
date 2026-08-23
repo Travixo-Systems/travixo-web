@@ -24,6 +24,19 @@ export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "en";
 export const BASE_URL = "https://travixosystems.com";
 
+/**
+ * The product. Separate origin, separate deployment.
+ *
+ * The marketing site linked to it zero times: every call to action, including
+ * a nav button reading "Essai Gratuit" on every page, opened the contact form
+ * instead. Signing up already provisions a seeded demo fleet, so the form was
+ * standing between a visitor and a product that was ready for them.
+ */
+export const APP_URL = "https://app.travixosystems.com";
+
+/** Signup, which seeds a demo fleet on confirmation. Trial and demo both land here. */
+export const SIGNUP_URL = `${APP_URL}/signup`;
+
 export function isLocale(value: string): value is Locale {
   return (LOCALES as readonly string[]).includes(value);
 }

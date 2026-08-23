@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Navigation from "../components/navigation";
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
-import { buildPageMetadata, type Locale } from "@/lib/seo";
+import { buildPageMetadata, type Locale , SIGNUP_URL } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -161,12 +161,12 @@ export default async function AboutPage(props: Props) {
                         <p className="text-xl mb-">
                             {t('cta.description')}
                         </p>
-                        <Link
-                            href={`/${locale}/contact`}
+                        <a
+                            href={SIGNUP_URL}
                             className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                         >
                             {t('cta.button')}
-                        </Link>
+                        </a>
                     </div>
                 </section>
             </main>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { hasRoute, isLocale, pathFor, routeKeyForSlug } from '@/lib/routes';
+import { hasRoute, isLocale, pathFor, routeKeyForSlug, SIGNUP_URL } from '@/lib/routes';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -102,12 +102,12 @@ export default function Navigation() {
             <a href="tel:+33783357535" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
               +33 7 83 35 75 35
             </a>
-            <Link
-              href={getLocalizedPath('/contact')}
+            <a
+              href={SIGNUP_URL}
               className="bg-[#e8600a] hover:bg-[#d05508] text-white px-6 py-2 rounded-lg font-semibold transition-colors"
             >
               {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
-            </Link>
+            </a>
           </div>
 
           {/* Mobile: Language Switcher + Hamburger (Only visible on mobile & tablet) */}
@@ -177,13 +177,13 @@ export default function Navigation() {
                       {t('contact')}
                     </Link>
 
-                    <Link
-                      href={getLocalizedPath('/contact')}
+                    <a
+                      href={SIGNUP_URL}
                       className="bg-[#e8600a] hover:bg-[#d05508] text-white text-center py-2 rounded-lg font-semibold"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               )}
