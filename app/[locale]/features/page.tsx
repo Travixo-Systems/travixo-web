@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import InlineRouteLink from "../components/InlineRouteLink";
-import { buildPageMetadata, type Locale } from "@/lib/seo";
+import { buildPageMetadata, type Locale , SIGNUP_URL } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "../components/navigation";
@@ -436,12 +436,12 @@ export default async function FeaturesPage(props: Props) {
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">{t("finalCta.title")}</h2>
             <p className="text-xl mb-8 opacity-90">{t("finalCta.subtitle")}</p>
-            <Link
-              href={`/${locale}/contact`}
+            <a
+              href={SIGNUP_URL}
               className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors"
             >
               {t("finalCta.button")}
-            </Link>
+            </a>
           </div>
         </section>
 
