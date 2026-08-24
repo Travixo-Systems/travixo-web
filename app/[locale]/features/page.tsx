@@ -44,9 +44,9 @@ export default async function FeaturesPage(props: Props) {
               
               <div className="text-center">
                 <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.import.time")}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.import.title")}
-                </h3>
+                </h2>
                 <p className="text-gray-600">
                   {t("differentiators.import.description")}
                 </p>
@@ -54,9 +54,9 @@ export default async function FeaturesPage(props: Props) {
 
               <div className="text-center">
                 <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.bulk.time")}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.bulk.title")}
-                </h3>
+                </h2>
                 <p className="text-gray-600">
                   {t("differentiators.bulk.description")}
                 </p>
@@ -64,9 +64,9 @@ export default async function FeaturesPage(props: Props) {
 
               <div className="text-center">
                 <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.deploy.time")}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.deploy.title")}
-                </h3>
+                </h2>
                 <p className="text-gray-600">
                   {t("differentiators.deploy.description")}
                 </p>

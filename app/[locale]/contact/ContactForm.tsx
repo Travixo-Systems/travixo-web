@@ -261,7 +261,7 @@ ${formData.message}
           {/* Contact Info */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <h3 className="font-semibold text-white mb-2">{t('contactInfo.email')}</h3>
+              <h2 className="font-semibold text-white mb-2">{t('contactInfo.email')}</h2>
               <a
                 href="mailto:info@travixosystems.com"
                 className="text-brand-ink hover:text-brand-ink"
@@ -270,7 +270,7 @@ ${formData.message}
               </a>
             </div>
             <div>
-              <h3 className="font-semibold text-white mb-2">{t('contactInfo.phone')}</h3>
+              <h2 className="font-semibold text-white mb-2">{t('contactInfo.phone')}</h2>
               <a
                 href="tel:+33783357535"
                 className="text-brand-ink hover:text-brand-ink"
@@ -279,7 +279,7 @@ ${formData.message}
               </a>
             </div>
             <div>
-              <h3 className="font-semibold text-white mb-2">{t('contactInfo.location')}</h3>
+              <h2 className="font-semibold text-white mb-2">{t('contactInfo.location')}</h2>
               <p className="text-white/70">{t('contactInfo.locationValue')}</p>
             </div>
           </div>
