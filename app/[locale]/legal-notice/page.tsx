@@ -20,15 +20,15 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
-        <div className="container border-l-4 border-[#f26f00] mx-auto px-4 py-12 max-w-4xl">
-          <h1 className="text-4xl font-bold text-center text-[#00252b] mb-8">
+        <div className="container border-l-4 border-brand mx-auto px-4 py-12 max-w-4xl">
+          <h1 className="text-4xl font-bold text-center text-ink-deep mb-8">
             {t('title')}
           </h1>
 
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             {/* Section 1: Site Publisher */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section1.title')}
               </h2>
               <p>
@@ -52,7 +52,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 2: Hosting Provider */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section2.title')}
               </h2>
               <p>{t('section2.content')}</p>
@@ -60,7 +60,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 3: Intellectual Property */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section3.title')}
               </h2>
               <p>{t('section3.content')}</p>
@@ -68,7 +68,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 4: Personal Data */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section4.title')}
               </h2>
               <p>{t('section4.content')}</p>
@@ -76,7 +76,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 5: Cookies */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section5.title')}
               </h2>
               <p>{t('section5.content')}</p>
@@ -84,7 +84,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 6: Limitation of Liability */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section6.title')}
               </h2>
               <p>{t('section6.content')}</p>
@@ -92,7 +92,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 7: Hyperlinks */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section7.title')}
               </h2>
               <p>{t('section7.content')}</p>
@@ -100,7 +100,7 @@ export default async function LegalNoticePage({ params }: { params: Promise<{ lo
 
             {/* Section 8: Applicable Law */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section8.title')}
               </h2>
               <p>{t('section8.content')}</p>

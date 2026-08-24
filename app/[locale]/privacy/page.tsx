@@ -20,14 +20,14 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
-        <div className="container border-l-4 border-[#f26f00] mx-auto px-4 py-12 max-w-4xl">
-          <h1 className="text-4xl font-bold text-center text-[#00252b] mb-4">
+        <div className="container border-l-4 border-brand mx-auto px-4 py-12 max-w-4xl">
+          <h1 className="text-4xl font-bold text-center text-ink-deep mb-4">
             {t('title')}
           </h1>
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             {/* Section 1: Introduction */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section1.title')}
               </h2>
               <p className="mb-4">
@@ -40,7 +40,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 2: Data Controller */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section2.title')}
               </h2>
               <p className="mb-4">{t('section2.intro')}</p>
@@ -55,7 +55,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 3: Information We Collect */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section3.title')}
               </h2>
 
@@ -94,7 +94,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 4: How We Use Your Information */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section4.title')}
               </h2>
               <p className="mb-2">{t('section4.intro')}</p>
@@ -110,7 +110,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 5: Legal Basis for Processing (GDPR) */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section5.title')}
               </h2>
               <p className="mb-2">{t('section5.intro')}</p>
@@ -124,7 +124,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 6: Data Sharing and Disclosure */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section6.title')}
               </h2>
               <p className="mb-4">{t('section6.paragraph1')}</p>
@@ -147,7 +147,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 7: Data Retention */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section7.title')}
               </h2>
               <p>{t('section7.content')}</p>
@@ -155,7 +155,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 8: Your Rights (GDPR) */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section8.title')}
               </h2>
               <p className="mb-2">{t('section8.intro')}</p>
@@ -175,7 +175,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 9: Data Security */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section9.title')}
               </h2>
               <p className="mb-4">{t('section9.paragraph1')}</p>
@@ -184,7 +184,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 10: International Data Transfers */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section10.title')}
               </h2>
               <p>{t('section10.content')}</p>
@@ -192,7 +192,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 11: Children's Privacy */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section11.title')}
               </h2>
               <p>{t('section11.content')}</p>
@@ -200,7 +200,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 12: Cookies and Tracking */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section12.title')}
               </h2>
               <p className="mb-4">{t('section12.paragraph1')}</p>
@@ -215,7 +215,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 13: Third-Party Links */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section13.title')}
               </h2>
               <p>{t('section13.content')}</p>
@@ -223,7 +223,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 13b: Automated Decision-Making */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section13b.title')}
               </h2>
               <p>{t('section13b.content')}</p>
@@ -231,7 +231,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 13c: Data Protection Officer */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section13c.title')}
               </h2>
               <p>{t('section13c.content')}</p>
@@ -239,7 +239,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 14: Changes to This Privacy Policy */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section14.title')}
               </h2>
               <p className="mb-4">{t('section14.paragraph1')}</p>
@@ -248,7 +248,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
             {/* Section 15: Contact Us */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section15.title')}
               </h2>
               <p className="mb-4">{t('section15.intro')}</p>

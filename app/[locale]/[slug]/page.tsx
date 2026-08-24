@@ -83,7 +83,7 @@ export default async function LandingRoute(props: Props) {
       <JsonLd id="breadcrumb-schema" data={breadcrumbSchema(page)} />
 
       <main className="min-h-screen bg-white">
-        <section className="bg-[#0a2730] py-16">
+        <section className="bg-ink py-16">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {page.h1}
@@ -110,7 +110,7 @@ export default async function LandingRoute(props: Props) {
           id={`${slug}-faq`}
         />
 
-        <section className="py-10 bg-[#f6f8fd]">
+        <section className="py-10 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-4xl">
             <ul className="space-y-2 text-gray-700">
               {page.related
@@ -120,7 +120,7 @@ export default async function LandingRoute(props: Props) {
                   {link.label}{" "}
                   <Link
                     href={pathFor(page.locale, link.routeKey)}
-                    className="text-[#e8600a] hover:underline font-medium"
+                    className="text-brand hover:underline font-medium"
                   >
                     {page.readMoreLabel}
                   </Link>
@@ -130,14 +130,14 @@ export default async function LandingRoute(props: Props) {
           </div>
         </section>
 
-        <section className="py-12 bg-[#0a2730]">
+        <section className="py-12 bg-ink">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
               {page.cta.heading}
             </h2>
             <Link
               href={pathFor(page.locale, "contact")}
-              className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
             >
               {page.cta.label}
             </Link>
@@ -159,12 +159,12 @@ function SectionBlock({
   locale: Locale;
   tinted: boolean;
 }) {
-  const bg = tinted ? "bg-[#f6f8fd]" : "bg-white";
+  const bg = tinted ? "bg-surface-tint" : "bg-white";
 
   return (
     <section className={`py-12 ${bg}`}>
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl font-bold text-[#0a2730] mb-4">
+        <h2 className="text-3xl font-bold text-ink mb-4">
           {section.heading}
         </h2>
 
@@ -186,9 +186,9 @@ function SectionBlock({
             {section.items.map((item) => (
               <li
                 key={item.title}
-                className="border-l-[3px] border-[#e8600a] pl-6"
+                className="border-l-[3px] border-brand pl-6"
               >
-                <span className="font-bold text-[#0a2730]">{item.title}</span>{" "}
+                <span className="font-bold text-ink">{item.title}</span>{" "}
                 <span className="text-gray-700">{item.body}</span>
               </li>
             ))}
@@ -202,7 +202,7 @@ function SectionBlock({
                 key={item.title}
                 className="p-6 border border-gray-200 rounded-lg bg-white"
               >
-                <h3 className="text-xl font-bold text-[#0a2730] mb-2">
+                <h3 className="text-xl font-bold text-ink mb-2">
                   {item.title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">{item.body}</p>
@@ -213,7 +213,7 @@ function SectionBlock({
 
         {section.kind === "quote" && (
           <>
-            <blockquote className="border-l-[3px] border-[#e8600a] pl-6 my-6">
+            <blockquote className="border-l-[3px] border-brand pl-6 my-6">
               <p className="text-lg text-gray-800 italic leading-relaxed">
                 {section.quote}
               </p>
@@ -260,7 +260,7 @@ function SectionBlock({
             ))}
             <Link
               href={pathFor(locale, "pricing")}
-              className="text-[#e8600a] hover:underline font-medium"
+              className="text-brand hover:underline font-medium"
             >
               {section.linkLabel}
             </Link>

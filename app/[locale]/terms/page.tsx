@@ -20,14 +20,14 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
-        <div className="container border-l-4 border-[#f26f00] mx-auto px-4 py-12 max-w-4xl">
-          <h1 className="text-4xl font-bold text-center text-[#00252b] mb-4">
+        <div className="container border-l-4 border-brand mx-auto px-4 py-12 max-w-4xl">
+          <h1 className="text-4xl font-bold text-center text-ink-deep mb-4">
             {t('title')}
           </h1>
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             {/* Section 1: Agreement to Terms */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section1.title')}
               </h2>
               <p className="mb-4">{t('section1.paragraph1')}</p>
@@ -36,7 +36,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 2: Description of Services */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section2.title')}
               </h2>
               <p className="mb-2">{t('section2.intro')}</p>
@@ -50,7 +50,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 3: Account Registration and Security */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section3.title')}
               </h2>
 
@@ -78,7 +78,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 4: Subscription Plans and Billing */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section4.title')}
               </h2>
 
@@ -105,7 +105,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 5: Cancellation and Termination */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section5.title')}
               </h2>
 
@@ -134,7 +134,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 6: Acceptable Use Policy */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section6.title')}
               </h2>
               <p className="mb-2">{t('section6.intro')}</p>
@@ -152,7 +152,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 7: Intellectual Property */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section7.title')}
               </h2>
 
@@ -175,7 +175,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 8: Data Protection and Privacy */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section8.title')}
               </h2>
               <p className="mb-2">{t('section8.paragraph1')}</p>
@@ -184,7 +184,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 9: Service Level and Availability */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section9.title')}
               </h2>
               <p className="mb-2">{t('section9.paragraph1')}</p>
@@ -195,7 +195,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 10: Limitation of Liability */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section10.title')}
               </h2>
               <p className="mb-2">
@@ -214,7 +214,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 11: Indemnification */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section11.title')}
               </h2>
               <p className="mb-2">{t('section11.intro')}</p>
@@ -228,7 +228,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 12: Dispute Resolution */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section12.title')}
               </h2>
 
@@ -250,7 +250,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 13: Changes to These Terms */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section13.title')}
               </h2>
               <p className="mb-2">{t('section13.intro')}</p>
@@ -263,7 +263,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 14: Right of Withdrawal */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section14.title')}
               </h2>
               <p className="mb-4">{t('section14.paragraph1')}</p>
@@ -274,7 +274,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 15: Legal Warranties */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section15.title')}
               </h2>
 
@@ -296,7 +296,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 16: Prices and Taxes */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section16.title')}
               </h2>
               <p className="mb-4">{t('section16.paragraph1')}</p>
@@ -305,7 +305,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 17: Consumer Mediation */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section17.title')}
               </h2>
               <p>{t('section17.content')}</p>
@@ -313,7 +313,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 18: Data Processing Agreement */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section18.title')}
               </h2>
               <p>{t('section18.content')}</p>
@@ -321,7 +321,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 19: General Provisions */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section19.title')}
               </h2>
 
@@ -353,7 +353,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
 
             {/* Section 20: Contact Information */}
             <section>
-              <h2 className="text-2xl font-bold text-[#00252b] mb-3">
+              <h2 className="text-2xl font-bold text-ink-deep mb-3">
                 {t('section20.title')}
               </h2>
               <p className="mb-4">{t('section20.intro')}</p>

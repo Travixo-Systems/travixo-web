@@ -27,9 +27,9 @@ export default async function NotFound() {
     <>
       <Navigation />
       <main className="min-h-screen bg-white">
-        <section className="bg-[#0a2730] py-24">
+        <section className="bg-ink py-24">
           <div className="container mx-auto px-4 max-w-3xl text-center">
-            <p className="text-sm font-semibold tracking-widest text-[#e8600a] mb-4">
+            <p className="text-sm font-semibold tracking-widest text-brand mb-4">
               404
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -42,7 +42,7 @@ export default async function NotFound() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/"
-                className="bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+                className="bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("home")}
               </Link>
