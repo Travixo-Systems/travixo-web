@@ -27,7 +27,7 @@ export default async function Home(props: Props) {
       <Navigation />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="bg-[#0a2730] pb-20 pt-16">
+        <section className="bg-ink pb-20 pt-16">
           <div className="container mx-auto px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-center text-white mb-6 whitespace-pre-line">
               {t("hero.title")}
@@ -39,7 +39,7 @@ export default async function Home(props: Props) {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href={SIGNUP_URL}
-                className="bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+                className="bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("hero.ctaPrimary")}
               </a>
@@ -54,14 +54,19 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Product Screenshot */}
-        <section className="bg-[#f6f8fd] pt-12 pb-12">
+        <section className="bg-surface-tint pt-12 pb-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
+              {/* LCP element. sizes caps the served width at the 896px this
+                  actually renders at inside max-w-4xl, instead of shipping the
+                  full 1200px source to every viewport. priority already emits
+                  fetchpriority=high on the preload. */}
               <Image
                 src="/screenshots/dashboard-preview.png"
                 alt="TraviXO dashboard"
                 width={1200}
                 height={750}
+                sizes="(max-width: 896px) 100vw, 896px"
                 className="rounded-lg shadow-2xl w-full h-auto"
                 priority
               />
@@ -70,14 +75,17 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Values */}
-        <section className="bg-[#f6f8fd] py-8">
+        <section className="bg-surface-tint py-8">
           <div className="container mx-auto px-2">
             <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="text-2xl font-bold text-[#0a2730] mb-1">
+                  {/* h2, not h3: this section follows the hero h1 directly and
+                      has no heading of its own above it, so an h3 skipped a
+                      level and broke the document outline. */}
+                  <h2 className="text-2xl font-bold text-ink mb-1">
                     {t(`values.${i}.title`)}
-                  </h3>
+                  </h2>
                   <p className="text-gray-600">{t(`values.${i}.text`)}</p>
                 </div>
               ))}
@@ -86,12 +94,12 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Depot Scene */}
-        <section className="py-12 bg-[#0a2730]">
+        <section className="py-12 bg-ink">
           <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-4xl font-bold text-center text-white mb-6">
               {t("depotScene.title")}
             </h2>
-            <div className="border-l-[3px] border-[#e8600a] pl-6 mb-8">
+            <div className="border-l-[3px] border-brand pl-6 mb-8">
               <p className="text-lg text-white font-medium">
                 {t("depotScene.trigger")}
               </p>
@@ -114,7 +122,7 @@ export default async function Home(props: Props) {
             <p className="text-lg text-white mb-4">
               {t("depotScene.result")}
             </p>
-            <p className="text-lg font-bold text-[#e8600a]">
+            <p className="text-lg font-bold text-brand">
               {t("depotScene.insight")}
             </p>
           </div>
@@ -125,8 +133,8 @@ export default async function Home(props: Props) {
         {/* ERP Positioning */}
         <section className="py-10 bg-white">
           <div className="container mx-auto px-4 max-w-3xl">
-            <div className="border-l-[3px] border-[#e8600a] pl-6">
-              <h2 className="text-3xl font-bold text-[#0a2730] mb-3">
+            <div className="border-l-[3px] border-brand pl-6">
+              <h2 className="text-3xl font-bold text-ink mb-3">
                 {t("erpPositioning.title")}
               </h2>
               <p className="text-lg text-gray-700">
@@ -137,14 +145,14 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Handover Proof */}
-        <section className="py-12 bg-[#f6f8fd]">
+        <section className="py-12 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-4xl font-bold text-center text-[#0a2730] mb-12">
+            <h2 className="text-4xl font-bold text-center text-ink mb-12">
               {t("handover.title")}
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 border border-gray-200 rounded-lg bg-white">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("handover.scanOut.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -152,7 +160,7 @@ export default async function Home(props: Props) {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg bg-white">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("handover.scanReturn.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -160,7 +168,7 @@ export default async function Home(props: Props) {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg bg-white">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("handover.chain.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -180,13 +188,13 @@ export default async function Home(props: Props) {
         {/* VGP Recall */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-4xl font-bold text-[#0a2730] mb-6">
+            <h2 className="text-4xl font-bold text-ink mb-6">
               {t("recall.title")}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               {t("recall.body")}
             </p>
-            <p className="text-sm font-semibold text-[#e8600a]">
+            <p className="text-sm font-semibold text-brand">
               {t("recall.cta")}
             </p>
             <InlineRouteLink
@@ -199,14 +207,14 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Exceptions Panel */}
-        <section className="py-12 bg-[#0a2730]">
+        <section className="py-12 bg-ink">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl font-bold text-center text-white mb-12">
               {t("exceptions.title")}
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 border border-gray-200 rounded-lg bg-white">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("exceptions.overdueReturn.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -214,7 +222,7 @@ export default async function Home(props: Props) {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg bg-white">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("exceptions.missingAudit.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -222,7 +230,7 @@ export default async function Home(props: Props) {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg bg-white">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("exceptions.vgpExpiring.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -236,12 +244,12 @@ export default async function Home(props: Props) {
         {/* Use Cases */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-4xl font-bold text-center text-[#0a2730] mb-12">
+            <h2 className="text-4xl font-bold text-center text-ink mb-12">
               {t("useCases.title")}
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("useCases.btp.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -249,7 +257,7 @@ export default async function Home(props: Props) {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("useCases.multiDepot.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -257,7 +265,7 @@ export default async function Home(props: Props) {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-xl font-bold text-[#0a2730] mb-3">
+                <h3 className="text-xl font-bold text-ink mb-3">
                   {t("useCases.excel.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -269,7 +277,7 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Credibility */}
-        <section className="py-10 bg-[#0a2730]">
+        <section className="py-10 bg-ink">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
               {t("credibility.title")}
@@ -288,21 +296,21 @@ export default async function Home(props: Props) {
         </section>
 
         {/* Final CTA */}
-        <section className="py-12 bg-[#f6f8fd]">
+        <section className="py-12 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-4xl font-bold text-[#0a2730] mb-4">{t("finalCta.title")}</h2>
+            <h2 className="text-4xl font-bold text-ink mb-4">{t("finalCta.title")}</h2>
             <p className="text-xl text-gray-600 mb-6">{t("finalCta.subtitle")}</p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
               <a
                 href={SIGNUP_URL}
-                className="bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+                className="bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("finalCta.primary")}
               </a>
               <a
                 href={SIGNUP_URL}
-                className="border-2 border-[#0a2730] text-[#0a2730] hover:bg-[#0a2730] hover:text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+                className="border-2 border-ink text-ink hover:bg-ink hover:text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
                 {t("finalCta.secondary")}
               </a>
