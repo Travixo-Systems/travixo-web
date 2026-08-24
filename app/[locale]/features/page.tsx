@@ -105,19 +105,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.qrTracking.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.qrTracking.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.qrTracking.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.qrTracking.items.3")}</span>
                   </li>
                 </ul>
@@ -171,19 +171,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.excelImport.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.excelImport.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.excelImport.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.excelImport.items.3")}</span>
                   </li>
                 </ul>
@@ -204,19 +204,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.mobileScanning.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.mobileScanning.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.mobileScanning.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.mobileScanning.items.3")}</span>
                   </li>
                 </ul>
@@ -237,19 +237,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.direccte.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.direccte.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.direccte.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.direccte.items.3")}</span>
                   </li>
                 </ul>
@@ -270,19 +270,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.dashboard.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.dashboard.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.dashboard.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.dashboard.items.3")}</span>
                   </li>
                 </ul>
@@ -303,19 +303,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.emailAlerts.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.emailAlerts.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.emailAlerts.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-green-600 mr-2 flex-shrink-0 mt-1">✓</span>
+                    <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
                     <span>{t("availableNow.features.emailAlerts.items.3")}</span>
                   </li>
                 </ul>
