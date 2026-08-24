@@ -28,9 +28,10 @@ export default async function OpengraphImage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
-  // Brand palette as used by the post-rehaul pages.
+  // Brand palette, mirroring the --color-ink and --color-brand tokens in
+  // globals.css. Kept as literals because Satori resolves no CSS variables.
   const navy = "#0a2730";
-  const orange = "#e8600a";
+  const orange = "#bf5207";
 
   // Titles in messages/*.json are brand prefixed ("TraviXO - Votre materiel
   // ..."). The wordmark sits above the headline on the card, so drop the

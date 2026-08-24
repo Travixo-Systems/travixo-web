@@ -23,7 +23,7 @@ export default async function AboutPage(props: Props) {
             <Navigation />
             <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
                 {/* Hero Section */}
-                <section className="bg-[#0a2730] text-white py-16">
+                <section className="bg-ink text-white py-16">
                     <div className="container mx-auto px-4 max-w-4xl text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-2">
                             {t('hero.title')}
@@ -87,7 +87,7 @@ export default async function AboutPage(props: Props) {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Value 1 */}
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-2">
+                                <h3 className="text-xl font-bold text-brand-ink mb-2">
                                     {t('values.efficiency.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -97,7 +97,7 @@ export default async function AboutPage(props: Props) {
 
                             {/* Value 2 */}
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-2">
+                                <h3 className="text-xl font-bold text-brand-ink mb-2">
                                     {t('values.realWorld.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -107,7 +107,7 @@ export default async function AboutPage(props: Props) {
 
                             {/* Value 3 */}
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-2">
+                                <h3 className="text-xl font-bold text-brand-ink mb-2">
                                     {t('values.transparency.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -117,7 +117,7 @@ export default async function AboutPage(props: Props) {
 
                             {/* Value 4 */}
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-2">
+                                <h3 className="text-xl font-bold text-brand-ink mb-2">
                                     {t('values.customerFirst.title')}
                                 </h3>
                                 <p className="text-gray-700">
@@ -129,7 +129,7 @@ export default async function AboutPage(props: Props) {
                 </section>
 
                 {/* Founders Section */}
-                <section className="bg-[#f6f8fd] py-6">
+                <section className="bg-surface-tint py-6">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">
                             {t('founders.title')}
@@ -153,7 +153,7 @@ export default async function AboutPage(props: Props) {
                 </section>
 
                 {/* CTA Section */}
-                <section className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-4">
+                <section className="bg-gradient-to-r from-brand to-orange-700 text-white py-4">
                     <div className="container mx-auto px-4 max-w-4xl text-center">
                         <h2 className="text-3xl font-bold mb-2">
                             {t('cta.title')}
@@ -163,7 +163,7 @@ export default async function AboutPage(props: Props) {
                         </p>
                         <a
                             href={SIGNUP_URL}
-                            className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+                            className="inline-block bg-white text-brand-ink px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
                         >
                             {t('cta.button')}
                         </a>

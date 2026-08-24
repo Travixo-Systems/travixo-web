@@ -2,7 +2,7 @@
   "metadata": {
     "home": {
       "title": "TraviXO - Votre matériel est suivi. Mais pas connecté.",
-      "description": "Reliez chaque machine à son QR code, sa conformité VGP, ses documents et son historique. Remplacez le suivi dispersé entre vos systèmes. Opérationnel en quelques heures."
+      "description": "Reliez chaque machine à son QR code, sa conformité VGP, ses documents et son historique. Fini le suivi dispersé entre vos systèmes. Opérationnel en heures."
     },
     "about": {
       "title": "À propos de TraviXO - Construit depuis le terrain de la location",
@@ -18,7 +18,7 @@
     },
     "pricing": {
       "title": "Tarifs - Suivi de matériel TraviXO",
-      "description": "Tarifs simples et lisibles pour le suivi de matériel avec VGP. Offres à partir de 490 €/mois."
+      "description": "Suivi de matériel et conformité VGP à partir de 490 €/mois. Quatre offres, du dépôt unique au multi-sites. Essai de 30 jours, sans carte bancaire."
     },
     "privacy": {
       "title": "Politique de confidentialité - TraviXO",
@@ -46,7 +46,8 @@
     "languages": {
       "english": "Anglais",
       "french": "Français"
-    }
+    },
+    "menuToggle": "Menu"
   },
   "footer": {
     "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
@@ -80,7 +81,8 @@
     "carousel": {
       "tabs": {
         "problem": "Le problème",
-        "solution": "Notre réponse"
+        "solution": "Notre réponse",
+        "label": "Problème ou réponse"
       },
       "problem": {
         "title": "Votre matériel est suivi. Mais entre vos systèmes, vos dossiers et vos mails, rien n'est relié.",
@@ -471,7 +473,6 @@
     },
     "comparison": {
       "title": "Pourquoi TraviXO ?",
-      "scrollHint": "Faites défiler pour voir toutes les colonnes",
       "headers": {
         "feature": "Point comparé",
         "traditional": "Méthodes actuelles",

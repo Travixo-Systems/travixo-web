@@ -51,9 +51,11 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href={`/${currentLocale}`} className="flex items-center gap-2">
+            {/* Decorative: the wordmark beside it already names the link, so
+                alt="TraviXO" made a screen reader announce the brand twice. */}
             <Image
               src="/logo-color.png"
-              alt="TraviXO"
+              alt=""
               width={40}
               height={40}
             />
@@ -81,7 +83,7 @@ export default function Navigation() {
               <Link
                 href={switchLocale('en')}
                 className={`px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'en'
-                  ? 'bg-orange-100 text-orange-600 font-semibold'
+                  ? 'bg-brand-tint text-brand-ink font-semibold'
                   : 'text-gray-600 hover:text-gray-900'}`}
               >
                 EN
@@ -89,7 +91,7 @@ export default function Navigation() {
               <Link
                 href={switchLocale('fr')}
                 className={`px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'fr'
-                  ? 'bg-orange-100 text-orange-600 font-semibold'
+                  ? 'bg-brand-tint text-brand-ink font-semibold'
                   : 'text-gray-600 hover:text-gray-900'}`}
               >
                 FR
@@ -104,7 +106,7 @@ export default function Navigation() {
             </a>
             <a
               href={SIGNUP_URL}
-              className="bg-[#e8600a] hover:bg-[#d05508] text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+              className="bg-brand hover:bg-brand-hover text-white px-6 py-2 rounded-lg font-semibold transition-colors"
             >
               {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}
             </a>
@@ -117,13 +119,13 @@ export default function Navigation() {
             <div className="flex gap-1">
               <Link
                 href={switchLocale('en')}
-                className={`text-sm px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'en' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`text-sm px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'en' ? 'bg-brand-tint text-brand-ink font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 EN
               </Link>
               <Link
                 href={switchLocale('fr')}
-                className={`text-sm px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'fr' ? 'bg-orange-100 text-orange-600 font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`text-sm px-2 py-1 rounded font-[family-name:var(--font-geist-mono)] tracking-wide ${currentLocale === 'fr' ? 'bg-brand-tint text-brand-ink font-semibold' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 FR
               </Link>
@@ -134,7 +136,8 @@ export default function Navigation() {
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="p-2"
-                aria-label="Toggle menu"
+                aria-label={t("menuToggle")}
+                aria-expanded={mobileMenuOpen}
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {mobileMenuOpen ? (
@@ -179,7 +182,7 @@ export default function Navigation() {
 
                     <a
                       href={SIGNUP_URL}
-                      className="bg-[#e8600a] hover:bg-[#d05508] text-white text-center py-2 rounded-lg font-semibold"
+                      className="bg-brand hover:bg-brand-hover text-white text-center py-2 rounded-lg font-semibold"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {currentLocale === 'fr' ? 'Essai Gratuit' : t('startPilot')}

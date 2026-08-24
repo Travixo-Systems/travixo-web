@@ -36,7 +36,7 @@ export default function InlineRouteLink({
       <span className="text-gray-600">{lead} : </span>
       <Link
         href={pathFor(locale, routeKey)}
-        className="text-[#e8600a] hover:underline font-medium"
+        className="text-brand hover:underline font-medium"
       >
         {anchor}
       </Link>

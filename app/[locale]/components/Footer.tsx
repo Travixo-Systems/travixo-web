@@ -60,7 +60,7 @@ export default async function Footer({ locale }: { locale: Locale }) {
   }
 
   return (
-    <footer className="bg-[#0a2730] text-gray-400 py-10">
+    <footer className="bg-ink text-gray-400 py-10">
       <div className="container mx-auto px-4 text-center">
         {solutionLinks.length > 0 ? (
           <nav

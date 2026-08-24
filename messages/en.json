@@ -18,7 +18,7 @@
     },
     "pricing": {
       "title": "Pricing - TraviXO Equipment Tracking",
-      "description": "Simple, readable pricing for equipment tracking with VGP. Plans from €490/month."
+      "description": "Equipment tracking with VGP compliance from €490/month. Four plans from single-depot fleets to multi-site operations. 30-day trial, no card required."
     },
     "privacy": {
       "title": "Privacy Policy - TraviXO",
@@ -46,7 +46,8 @@
     "languages": {
       "english": "English",
       "french": "French"
-    }
+    },
+    "menuToggle": "Menu"
   },
   "footer": {
     "copyright": "© 2026 TraviXO Systems. All rights reserved.",
@@ -80,7 +81,8 @@
     "carousel": {
       "tabs": {
         "problem": "The Problem",
-        "solution": "Our Answer"
+        "solution": "Our Answer",
+        "label": "Problem or answer"
       },
       "problem": {
         "title": "Your equipment is tracked. But across your systems, your folders, and your emails, nothing connects.",
@@ -471,7 +473,6 @@
     },
     "comparison": {
       "title": "Why TraviXO?",
-      "scrollHint": "Scroll to see all columns",
       "headers": {
         "feature": "Comparison",
         "traditional": "Current methods",

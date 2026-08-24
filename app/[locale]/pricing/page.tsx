@@ -10,6 +10,22 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+/**
+ * The comparison rows, in display order.
+ *
+ * Drives both the stacked cards below md and the table above it. The four rows
+ * were previously hand duplicated in the markup, so the two views would have
+ * had to be kept in step by hand.
+ *
+ * Keys index into pricing.comparison.rows in messages/*.json.
+ */
+const COMPARISON_ROWS = [
+  { key: "vgp", highlight: true },
+  { key: "setup", highlight: false },
+  { key: "excel", highlight: false },
+  { key: "qr", highlight: false },
+] as const;
+
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
@@ -30,7 +46,7 @@ export default async function PricingPage(props: Props) {
       <main className="min-h-screen bg-white">
 
         {/* Hero Section */}
-        <section className="bg-[#0a2730] py-16">
+        <section className="bg-ink py-16">
           <div className="container mx-auto px-4 max-w-5xl">
             <h1 className="text-5xl font-bold text-center text-white mb-4">
               {t('hero.title')}
@@ -42,7 +58,7 @@ export default async function PricingPage(props: Props) {
         </section>
 
         {/* Comparison Table Section */}
-        <section className="bg-[#f6f8fd] py-6">
+        <section className="bg-surface-tint py-6">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-4">
               <h2 className="text-4xl font-bold text-gray-900 mb-2">
@@ -50,110 +66,104 @@ export default async function PricingPage(props: Props) {
               </h2>
             </div>
 
-            {/* Responsive table wrapper */}
-            <div className="overflow-x-auto">
-              <div className="bg-white rounded-lg border border-gray-200 shadow-sm min-w-[900px]">
+            {/* Below lg the table becomes one card per row: 900px could not be
+                made to fit a phone (an iPhone 14 was 542px short), and the four
+                rows are four before/after arguments rather than data anyone
+                scans across, so stacking them loses nothing.
+
+                lg rather than md because the table's natural width is 771px:
+                at exactly 768px it rendered but overflowed by 47px, since the
+                container's own padding comes out of that. Cards carry the
+                whole tablet range instead.
+
+                Both views render from COMPARISON_ROWS above, so the card copy
+                and the table copy cannot drift apart. */}
+            <div className="space-y-4 lg:hidden">
+              {COMPARISON_ROWS.map((row) => (
+                <div
+                  key={row.key}
+                  className="bg-white rounded-lg border border-gray-200 shadow-sm p-5"
+                >
+                  <h3 className="text-base font-bold text-gray-900 mb-4">
+                    {t(`comparison.rows.${row.key}.label`)}
+                  </h3>
+
+                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">
+                    {t('comparison.headers.traditional')}
+                  </p>
+                  <p className="text-sm text-gray-600 mb-4">
+                    <span className="text-red-600 font-bold mr-2">✗</span>
+                    {t(`comparison.rows.${row.key}.traditional`)}
+                  </p>
+
+                  <p className="text-xs font-semibold uppercase tracking-wide text-brand-ink mb-1">
+                    TraviXO
+                  </p>
+                  <p className="text-sm text-gray-900 font-semibold">
+                    <span className="text-green-700 font-bold mr-2">✓</span>
+                    {t(`comparison.rows.${row.key}.travixo`)}
+                  </p>
+
+                  <p className="text-sm text-gray-700 italic border-t border-gray-200 mt-4 pt-3">
+                    {t(`comparison.rows.${row.key}.whyItMatters`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Tightened cell padding took the table's natural width from 900px
+                down to 771px, measured in the browser. min-w is 768 rather than
+                the old 820, which was padding beyond what the content needs and
+                put a scrollbar back at 820px. overflow-x-auto stays as the
+                backstop for longer translated strings. */}
+            <div className="hidden lg:block overflow-x-auto">
+              <div className="bg-white rounded-lg border border-gray-200 shadow-sm min-w-[768px]">
                 <table className="w-full">
-                  <thead className="bg-[#f6f8fd] border-b-2 border-gray-200">
+                  <thead className="bg-surface-tint border-b-2 border-gray-200">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
                         {t('comparison.headers.feature')}
                       </th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[25%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[25%]">
                         {t('comparison.headers.traditional')}
                       </th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-orange-600 w-[25%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-brand-ink w-[25%]">
                         TraviXO
                       </th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[30%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[30%]">
                         {t('comparison.headers.whyItMatters')}
                       </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
-                    {/* VGP Compliance Row */}
-                    <tr className="hover:bg-[#f6f8fd] transition-colors bg-orange-50">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.vgp.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.vgp.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.vgp.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.vgp.whyItMatters')}
-                      </td>
-                    </tr>
-
-                    {/* Setup Time Row */}
-                    <tr className="hover:bg-[#f6f8fd] transition-colors">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.setup.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.setup.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.setup.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.setup.whyItMatters')}
-                      </td>
-                    </tr>
-
-                    {/* Data Migration Row */}
-                    <tr className="hover:bg-[#f6f8fd] transition-colors">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.excel.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.excel.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.excel.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.excel.whyItMatters')}
-                      </td>
-                    </tr>
-
-                    {/* QR Generation Row */}
-                    <tr className="hover:bg-[#f6f8fd] transition-colors">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.qr.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.qr.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.qr.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.qr.whyItMatters')}
-                      </td>
-                    </tr>
-
-
-
+                    {COMPARISON_ROWS.map((row) => (
+                      <tr
+                        key={row.key}
+                        className={`hover:bg-surface-tint transition-colors ${
+                          row.highlight ? "bg-orange-50" : ""
+                        }`}
+                      >
+                        <td className="px-4 py-5 text-sm font-semibold text-gray-900">
+                          {t(`comparison.rows.${row.key}.label`)}
+                        </td>
+                        <td className="px-4 py-5 text-sm text-gray-600">
+                          <span className="text-red-600 font-bold mr-2">✗</span>
+                          {t(`comparison.rows.${row.key}.traditional`)}
+                        </td>
+                        <td className="px-4 py-5 text-sm text-gray-900 font-semibold">
+                          <span className="text-green-700 font-bold mr-2">✓</span>
+                          {t(`comparison.rows.${row.key}.travixo`)}
+                        </td>
+                        <td className="px-4 py-5 text-sm text-gray-700 italic">
+                          {t(`comparison.rows.${row.key}.whyItMatters`)}
+                        </td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
             </div>
 
-            {/* Mobile scroll hint */}
-            <p className="text-center text-sm text-gray-500 mt-4 md:hidden">
-              ← {t('comparison.scrollHint')} →
-            </p>
           </div>
         </section>
 
@@ -180,27 +190,27 @@ export default async function PricingPage(props: Props) {
               </p>
               <ul className="space-y-2 mb-6 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.excel')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.qr')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.scan')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.support')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2 flex-shrink-0">→</span>
+                  <span className="text-brand-ink mr-2 flex-shrink-0">→</span>
                   <span className="text-sm text-orange-700">{t('plans.starter.features.noVgp')}</span>
                 </li>
               </ul>
@@ -216,19 +226,19 @@ export default async function PricingPage(props: Props) {
               </details>
               <a
                 href={SIGNUP_URL}
-                className="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+                className="block text-center bg-brand hover:bg-brand-hover text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 {t('cta.start')}
               </a>
             </div>
 
             {/* Professional - €14,400/yr (€1,200/mo) - MOST POPULAR */}
-            <div className="border-2 border-orange-500 rounded-lg p-6 relative transform lg:scale-105 shadow-xl">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+            <div className="border-2 border-brand rounded-lg p-6 relative transform lg:scale-105 shadow-xl">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand text-white px-4 py-1 rounded-full text-sm font-semibold">
                 {t('plans.popular')}
               </div>
               {/* VGP Badge */}
-              <div className="absolute -top-3 right-4 bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold border-2 border-orange-500">
+              <div className="absolute -top-3 right-4 bg-brand-tint text-orange-700 px-3 py-1 rounded-full text-xs font-bold border-2 border-brand">
                 {t('plans.vgpIncluded')}
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mt-2">
@@ -249,35 +259,35 @@ export default async function PricingPage(props: Props) {
               <ul className="space-y-2 mb-6 text-gray-700">
                 {/* VGP FIRST */}
                 <li className="flex items-start bg-orange-50 p-2 rounded -mx-2">
-                  <span className="text-orange-600 mr-2 flex-shrink-0 font-bold">✓</span>
+                  <span className="text-brand-ink mr-2 flex-shrink-0 font-bold">✓</span>
                   <span className="text-sm font-semibold text-orange-900">{t('plans.professional.features.vgp')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.starter')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.multiSite')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.audit')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.integration')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.support')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.emailAlerts')}</span>
                 </li>
               </ul>
@@ -295,7 +305,7 @@ export default async function PricingPage(props: Props) {
               </details>
               <a
                 href={SIGNUP_URL}
-                className="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+                className="block text-center bg-brand hover:bg-brand-hover text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 {t('cta.start')}
               </a>
@@ -320,31 +330,31 @@ export default async function PricingPage(props: Props) {
               </p>
               <ul className="space-y-2 mb-6 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.professional')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.vgpPriority')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.integrations')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.manager')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.sla')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.advancedReporting')}</span>
                 </li>
 
@@ -387,15 +397,15 @@ export default async function PricingPage(props: Props) {
               </p>
               <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.unlimited')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.vgpDedicated')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.support')}</span>
                 </li>
                 {/* Enterprise Custom Features */}
@@ -453,13 +463,13 @@ export default async function PricingPage(props: Props) {
         <FaqSection title={t('faq.title')} items={faq} id="pricing-faq" />
 
         {/* Final CTA */}
-        <section className="py-6 bg-[#0a2730] text-white">
+        <section className="py-6 bg-ink text-white">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">{t('finalCta.title')}</h2>
             <p className="text-xl mb-8 opacity-90">{t('finalCta.subtitle')}</p>
             <a
               href={SIGNUP_URL}
-              className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors"
+              className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors"
             >
               {t('finalCta.button')}
             </a>

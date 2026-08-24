@@ -61,9 +61,11 @@ export async function generateMetadata(props: {
         'max-snippet': -1,
       },
     },
+    // favicon.ico is picked up from app/ by the file convention. It cannot
+    // live under app/[locale]/, where it was: the convention does not resolve
+    // behind a dynamic segment, so /favicon.ico returned a 500 in production.
     icons: {
       icon: '/icon.png',
-      shortcut: '/favicon333ild.ico',
       apple: '/icon.png',
     },
     // Fallback card. Pages set their own through buildPageMetadata. Both point
@@ -122,8 +124,11 @@ export default async function LocaleLayout({ children, params }: Props) {
       "areaServed": ["FR", "US", "GB"],
       "availableLanguage": ["English", "French"]
     },
+    // Entity graph: lets a crawler corroborate the organisation against a
+    // profile it already knows, rather than taking this page's word for it.
+    // The profile is branded TraviXO, which alternateName above carries.
     "sameAs": [
-      // Add social media profiles here when available
+      "https://www.linkedin.com/company/travixosystems"
     ]
   };
 

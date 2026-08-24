@@ -152,7 +152,7 @@ export default async function TrackerPage(props: Props) {
       />
 
       <main className="min-h-screen bg-white">
-        <section className="bg-[#0a2730] py-16">
+        <section className="bg-ink py-16">
           <div className="container mx-auto px-4 max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Tableau de suivi des VGP à télécharger
@@ -168,16 +168,16 @@ export default async function TrackerPage(props: Props) {
 
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold text-[#0a2730] mb-8">
+            <h2 className="text-3xl font-bold text-ink mb-8">
               Ce que fait le fichier
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {CONTENU.map((item) => (
                 <div
                   key={item.title}
-                  className="bg-[#f6f8fd] rounded-lg p-6 border-l-[3px] border-[#e8600a]"
+                  className="bg-surface-tint rounded-lg p-6 border-l-[3px] border-brand"
                 >
-                  <h3 className="font-bold text-[#0a2730] mb-2">
+                  <h3 className="font-bold text-ink mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">{item.body}</p>
@@ -185,7 +185,7 @@ export default async function TrackerPage(props: Props) {
               ))}
             </div>
 
-            <h3 className="text-xl font-bold text-[#0a2730] mt-10 mb-4">
+            <h3 className="text-xl font-bold text-ink mt-10 mb-4">
               Les cinq statuts
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -208,9 +208,9 @@ export default async function TrackerPage(props: Props) {
 
         {/* The reference sheet, rendered from the same data the file is built
             from, so the page and the download cannot disagree. */}
-        <section className="py-12 bg-[#f6f8fd]">
+        <section className="py-12 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-3xl font-bold text-[#0a2730] mb-3">
+            <h2 className="text-3xl font-bold text-ink mb-3">
               Le référentiel de périodicités inclus
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -223,7 +223,7 @@ export default async function TrackerPage(props: Props) {
             <div className="overflow-x-auto bg-white rounded-lg">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-[#0a2730] text-white">
+                  <tr className="bg-ink text-white">
                     <th className="px-4 py-3 font-semibold">
                       Type d&apos;équipement
                     </th>
@@ -239,9 +239,9 @@ export default async function TrackerPage(props: Props) {
                       <th
                         colSpan={3}
                         scope="colgroup"
-                        className="px-4 pt-6 pb-2 text-left border-b-2 border-[#e8600a]/30"
+                        className="px-4 pt-6 pb-2 text-left border-b-2 border-brand/30"
                       >
-                        <span className="block text-sm font-bold uppercase tracking-wide text-[#e8600a]">
+                        <span className="block text-sm font-bold uppercase tracking-wide text-brand">
                           {family}
                         </span>
                         {sharedNote ? (
@@ -260,7 +260,7 @@ export default async function TrackerPage(props: Props) {
                           {entry.ficheSlug ? (
                             <Link
                               href={`${pathFor("fr", "vgpHub")}/${entry.ficheSlug}`}
-                              className="text-[#0a2730] font-medium hover:text-[#e8600a] hover:underline"
+                              className="text-ink font-medium hover:text-brand hover:underline"
                             >
                               {entry.label}
                             </Link>
@@ -275,7 +275,7 @@ export default async function TrackerPage(props: Props) {
                         </td>
                         <td className="px-4 py-3 whitespace-nowrap">
                           {entry.months ? (
-                            <span className="font-bold text-[#0a2730]">
+                            <span className="font-bold text-ink">
                               {entry.months} mois
                             </span>
                           ) : (
@@ -297,7 +297,7 @@ export default async function TrackerPage(props: Props) {
               Détail article par article sur la{" "}
               <Link
                 href={pathFor("fr", "vgpHub")}
-                className="text-[#e8600a] hover:underline"
+                className="text-brand hover:underline"
               >
                 page des périodicités par type d&apos;engin
               </Link>
@@ -306,7 +306,7 @@ export default async function TrackerPage(props: Props) {
           </div>
         </section>
 
-        <section className="py-12 bg-[#0a2730]">
+        <section className="py-12 bg-ink">
           <div className="container mx-auto px-4 max-w-2xl">
             <DownloadForm sizeLabel={sizeLabel} />
           </div>
@@ -314,7 +314,7 @@ export default async function TrackerPage(props: Props) {
 
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-bold text-[#0a2730] mb-4">
+            <h2 className="text-3xl font-bold text-ink mb-4">
               Ce qu&apos;un tableur ne fera pas
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -334,7 +334,7 @@ export default async function TrackerPage(props: Props) {
             </p>
             <Link
               href={pathFor("fr", "softwareVgp")}
-              className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
             >
               Voir le logiciel de suivi VGP
             </Link>

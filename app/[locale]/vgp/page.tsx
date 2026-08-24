@@ -70,7 +70,7 @@ export default async function VgpHubPage(props: Props) {
       />
 
       <main className="min-h-screen bg-white">
-        <section className="bg-[#0a2730] py-16">
+        <section className="bg-ink py-16">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Périodicité des VGP par type d&apos;engin
@@ -86,19 +86,19 @@ export default async function VgpHubPage(props: Props) {
           </div>
         </section>
 
-        <section className="py-12 bg-[#f6f8fd]">
+        <section className="py-12 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold text-[#0a2730] mb-6">
+            <h2 className="text-3xl font-bold text-ink mb-6">
               Périodicité de trois mois
             </h2>
             <FicheList fiches={byThree} />
 
-            <h2 className="text-3xl font-bold text-[#0a2730] mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-ink mt-12 mb-6">
               Périodicité de six mois
             </h2>
             <FicheList fiches={bySix} />
 
-            <h2 className="text-3xl font-bold text-[#0a2730] mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-ink mt-12 mb-6">
               Périodicité de douze mois
             </h2>
             <FicheList fiches={byTwelve} />
@@ -107,7 +107,7 @@ export default async function VgpHubPage(props: Props) {
 
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold text-[#0a2730] mb-4">
+            <h2 className="text-3xl font-bold text-ink mb-4">
               Portée de ces fiches
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -127,7 +127,7 @@ export default async function VgpHubPage(props: Props) {
           </div>
         </section>
 
-        <section className="py-12 bg-[#0a2730]">
+        <section className="py-12 bg-ink">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
               Appliquer ces périodicités à votre parc
@@ -140,13 +140,13 @@ export default async function VgpHubPage(props: Props) {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href={pathFor("fr", "vgpTracker")}
-                className="inline-block bg-white hover:bg-white/90 text-[#0a2730] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+                className="inline-block bg-white hover:bg-white/90 text-ink font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
               >
                 Télécharger le tableau Excel
               </Link>
               <Link
                 href={pathFor("fr", "softwareVgp")}
-                className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+                className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
               >
                 Voir le logiciel de suivi VGP
               </Link>
@@ -167,9 +167,9 @@ function FicheList({ fiches }: { fiches: typeof FICHES }) {
         <li key={fiche.slug}>
           <Link
             href={`${pathFor("fr", "vgpHub")}/${fiche.slug}`}
-            className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-[#e8600a] transition-colors"
+            className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-brand transition-colors"
           >
-            <span className="block font-bold text-[#0a2730] mb-1">
+            <span className="block font-bold text-ink mb-1">
               {fiche.name}
             </span>
             <span className="block text-sm text-gray-600">

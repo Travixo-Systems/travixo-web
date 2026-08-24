@@ -47,7 +47,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
   if (status === "done") {
     return (
       <div className="bg-white rounded-lg p-8 text-center">
-        <h3 className="text-2xl font-bold text-[#0a2730] mb-3">
+        <h3 className="text-2xl font-bold text-ink mb-3">
           Le fichier est prêt
         </h3>
         <p className="text-gray-700 mb-6">
@@ -57,7 +57,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
         <a
           href={TRACKER_FILE.path}
           download
-          className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+          className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
         >
           Télécharger le tableau ({TRACKER_FILE.format})
         </a>
@@ -67,7 +67,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
 
   return (
     <div className="bg-white rounded-lg p-8">
-      <h3 className="text-2xl font-bold text-[#0a2730] mb-2">
+      <h3 className="text-2xl font-bold text-ink mb-2">
         Recevoir le tableau
       </h3>
       <p className="text-gray-600 mb-6">
@@ -92,7 +92,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
               value={form.name}
               onChange={change}
               autoComplete="name"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e8600a] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
             />
           </div>
           <div>
@@ -110,7 +110,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
               value={form.email}
               onChange={change}
               autoComplete="email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e8600a] focus:border-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
             />
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
             value={form.company}
             onChange={change}
             autoComplete="organization"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#e8600a] focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
 
@@ -154,12 +154,12 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
             required
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
-            className="mt-1 h-4 w-4 accent-[#e8600a]"
+            className="mt-1 h-4 w-4 accent-brand"
           />
           <span>
             J&apos;accepte que TraviXO utilise ces informations pour me
             recontacter au sujet du suivi des VGP.{" "}
-            <Link href="/fr/privacy" className="text-[#e8600a] hover:underline">
+            <Link href="/fr/privacy" className="text-brand hover:underline">
               Politique de confidentialité
             </Link>
             .
@@ -182,7 +182,7 @@ export default function DownloadForm({ sizeLabel }: { sizeLabel: string }) {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="w-full bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
         >
           {status === "loading" ? "Envoi..." : "Recevoir le tableau"}
         </button>

@@ -86,7 +86,7 @@ export default async function FichePage(props: Props) {
       <JsonLd id="fiche-breadcrumb" data={breadcrumb(fiche)} />
 
       <main className="min-h-screen bg-white">
-        <section className="bg-[#0a2730] py-14">
+        <section className="bg-ink py-14">
           <div className="container mx-auto px-4 max-w-3xl">
             <Link
               href={pathFor("fr", "vgpHub")}
@@ -104,15 +104,15 @@ export default async function FichePage(props: Props) {
         </section>
 
         {/* The answer, stated once and immediately. */}
-        <section className="py-10 bg-[#f6f8fd]">
+        <section className="py-10 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-3xl">
-            <div className="bg-white border-l-[3px] border-[#e8600a] rounded-lg p-6 shadow-sm">
+            <div className="bg-white border-l-[3px] border-brand rounded-lg p-6 shadow-sm">
               <div className="text-sm uppercase tracking-wide text-gray-500 mb-1">
                 Périodicité
               </div>
               {/* div, not p: globals.css sets an unlayered `p { font-size }`
                   that overrides Tailwind's layered text-* utilities. */}
-              <div className="text-4xl font-bold text-[#0a2730] mb-4">
+              <div className="text-4xl font-bold text-ink mb-4">
                 Tous les {fiche.periodicity.months} mois
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -133,7 +133,7 @@ export default async function FichePage(props: Props) {
         {fiche.checkpoints ? (
           <section className="py-10 bg-white">
             <div className="container mx-auto px-4 max-w-3xl">
-              <h2 className="text-2xl font-bold text-[#0a2730] mb-4">
+              <h2 className="text-2xl font-bold text-ink mb-4">
                 Sur quoi porte la vérification
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -143,16 +143,16 @@ export default async function FichePage(props: Props) {
                 {fiche.checkpoints.groups.map((group) => (
                   <div
                     key={group.heading}
-                    className="bg-[#f6f8fd] rounded-lg p-5"
+                    className="bg-surface-tint rounded-lg p-5"
                   >
-                    <h3 className="font-bold text-[#0a2730] mb-3">
+                    <h3 className="font-bold text-ink mb-3">
                       {group.heading}
                     </h3>
                     <ul className="space-y-2">
                       {group.items.map((item) => (
                         <li
                           key={item}
-                          className="text-gray-700 leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[0.6em] before:w-1.5 before:h-1.5 before:rounded-full before:bg-[#e8600a]"
+                          className="text-gray-700 leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[0.6em] before:w-1.5 before:h-1.5 before:rounded-full before:bg-brand"
                         >
                           {item}
                         </li>
@@ -169,7 +169,7 @@ export default async function FichePage(props: Props) {
         {fiche.notes?.length ? (
           <section className="py-10 bg-white">
             <div className="container mx-auto px-4 max-w-3xl">
-              <h2 className="text-2xl font-bold text-[#0a2730] mb-4">
+              <h2 className="text-2xl font-bold text-ink mb-4">
                 À noter
               </h2>
               {fiche.notes.map((note) => (
@@ -184,9 +184,9 @@ export default async function FichePage(props: Props) {
           </section>
         ) : null}
 
-        <section className="py-10 bg-[#f6f8fd]">
+        <section className="py-10 bg-surface-tint">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-2xl font-bold text-[#0a2730] mb-4">
+            <h2 className="text-2xl font-bold text-ink mb-4">
               Qui peut réaliser la vérification
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -206,10 +206,10 @@ export default async function FichePage(props: Props) {
         {fiche.regime === "levage-2004" ? (
           <section className="py-10 bg-white">
             <div className="container mx-auto px-4 max-w-3xl">
-              <h2 className="text-2xl font-bold text-[#0a2730] mb-4">
+              <h2 className="text-2xl font-bold text-ink mb-4">
                 En location : ce qui doit accompagner la machine
               </h2>
-              <blockquote className="border-l-[3px] border-[#e8600a] pl-6 my-6">
+              <blockquote className="border-l-[3px] border-brand pl-6 my-6">
                 <p className="text-lg text-gray-800 italic leading-relaxed">
                   {ART_15_QUOTE}
                 </p>
@@ -226,7 +226,7 @@ export default async function FichePage(props: Props) {
         ) : (
           <section className="py-10 bg-white">
             <div className="container mx-auto px-4 max-w-3xl">
-              <h2 className="text-2xl font-bold text-[#0a2730] mb-4">
+              <h2 className="text-2xl font-bold text-ink mb-4">
                 En location : une échéance qui se mesure à l&apos;utilisation
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -267,7 +267,7 @@ export default async function FichePage(props: Props) {
         {related.length ? (
           <section className="py-10 bg-white">
             <div className="container mx-auto px-4 max-w-3xl">
-              <h2 className="text-2xl font-bold text-[#0a2730] mb-4">
+              <h2 className="text-2xl font-bold text-ink mb-4">
                 Fiches liées
               </h2>
               <ul className="grid md:grid-cols-2 gap-4">
@@ -275,9 +275,9 @@ export default async function FichePage(props: Props) {
                   <li key={sibling.slug}>
                     <Link
                       href={`${pathFor("fr", "vgpHub")}/${sibling.slug}`}
-                      className="block p-5 bg-[#f6f8fd] border border-transparent rounded-lg hover:border-[#e8600a] transition-colors"
+                      className="block p-5 bg-surface-tint border border-transparent rounded-lg hover:border-brand transition-colors"
                     >
-                      <span className="block font-bold text-[#0a2730] mb-1">
+                      <span className="block font-bold text-ink mb-1">
                         {sibling.name}
                       </span>
                       <span className="text-sm text-gray-600">
@@ -291,7 +291,7 @@ export default async function FichePage(props: Props) {
           </section>
         ) : null}
 
-        <section className="py-12 bg-[#0a2730]">
+        <section className="py-12 bg-ink">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
               Suivre cette échéance sur tout le parc
@@ -302,7 +302,7 @@ export default async function FichePage(props: Props) {
             </p>
             <Link
               href={pathFor("fr", "softwareVgp")}
-              className="inline-block bg-[#e8600a] hover:bg-[#d05508] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
             >
               Voir le logiciel de suivi VGP
             </Link>
@@ -321,7 +321,7 @@ function SourceLine({ source }: { source: Source }) {
       Source :{" "}
       <a
         href={source.url}
-        className="text-[#e8600a] hover:underline"
+        className="text-brand hover:underline"
         rel="nofollow noopener"
         target="_blank"
       >
