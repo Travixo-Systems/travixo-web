@@ -202,6 +202,12 @@ export const FICHES: Fiche[] = [
         answer:
           "Non. L'arrêté du 1er mars 2004 porte sur l'appareil de levage. Le véhicule porteur relève des obligations propres aux véhicules, distinctes de la VGP de levage.",
       },
+      {
+        question:
+          "Quels documents doivent accompagner une grue auxiliaire en location ?",
+        answer:
+          "L'article 15-II de l'arrêté du 1er mars 2004 impose de placer sur l'appareil ou à proximité la notice d'instructions, le rapport de première mise en service, le dernier rapport de vérification et l'historique des vérifications.",
+      },
     ],
   },
 
@@ -265,6 +271,12 @@ export const FICHES: Fiche[] = [
         answer:
           "Oui. Les monte-matériaux de chantier figurent à la même liste du II de l'article 20 et relèvent donc de la même périodicité de six mois.",
       },
+      {
+        question:
+          "Qui peut réaliser la VGP d'un hayon élévateur ?",
+        answer:
+          "L'article R.4323-24 du Code du travail confie ces vérifications à des personnes qualifiées, appartenant ou non à l'établissement. Le texte n'impose pas d'organisme accrédité, mais la liste de ces personnes est tenue à disposition de l'inspection du travail.",
+      },
     ],
   },
 
@@ -290,6 +302,12 @@ export const FICHES: Fiche[] = [
         question: "Pourquoi douze mois et non six ?",
         answer:
           "Parce que la périodicité de six mois est une exception réservée aux appareils énumérés aux II et III de l'article 20. Un pont roulant fixe n'y figure pas, il reste donc sous la règle générale de douze mois.",
+      },
+      {
+        question:
+          "Un palan utilisé en extérieur change-t-il de périodicité ?",
+        answer:
+          "Non. La périodicité de douze mois de l'article 23 ne dépend pas du lieu d'utilisation. Elle est ramenée à six mois uniquement pour les appareils énumérés aux II et III de l'article 20, qui ne visent pas les ponts roulants et palans.",
       },
     ],
   },
