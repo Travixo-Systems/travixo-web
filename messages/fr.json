@@ -46,7 +46,8 @@
     "languages": {
       "english": "Anglais",
       "french": "Français"
-    }
+    },
+    "menuToggle": "Menu"
   },
   "footer": {
     "copyright": "© 2026 TraviXO Systems. Tous droits réservés.",
@@ -80,7 +81,8 @@
     "carousel": {
       "tabs": {
         "problem": "Le problème",
-        "solution": "Notre réponse"
+        "solution": "Notre réponse",
+        "label": "Problème ou réponse"
       },
       "problem": {
         "title": "Votre matériel est suivi. Mais entre vos systèmes, vos dossiers et vos mails, rien n'est relié.",

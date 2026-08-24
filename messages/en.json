@@ -46,7 +46,8 @@
     "languages": {
       "english": "English",
       "french": "French"
-    }
+    },
+    "menuToggle": "Menu"
   },
   "footer": {
     "copyright": "© 2026 TraviXO Systems. All rights reserved.",
@@ -80,7 +81,8 @@
     "carousel": {
       "tabs": {
         "problem": "The Problem",
-        "solution": "Our Answer"
+        "solution": "Our Answer",
+        "label": "Problem or answer"
       },
       "problem": {
         "title": "Your equipment is tracked. But across your systems, your folders, and your emails, nothing connects.",

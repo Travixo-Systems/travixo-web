@@ -88,7 +88,7 @@ ${formData.message}
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-[#0a2730]">
+      <main className="min-h-screen bg-ink">
         <section className="py-16">
           <div className="container mx-auto px-4 max-w-4xl">
             <h1 className="text-5xl font-bold text-center text-white mb-6">
@@ -121,31 +121,33 @@ ${formData.message}
               {/* Full Name + Email */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                     {t('form.fullName')} *
                   </label>
                   <input
                     type="text"
+                    id="name"
                     name="name"
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                     placeholder={t('form.fullNamePlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
                     {t('form.email')} *
                   </label>
                   <input
                     type="email"
+                    id="email"
                     name="email"
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                     placeholder={t('form.emailPlaceholder')}
                   />
                 </div>
@@ -154,30 +156,32 @@ ${formData.message}
               {/* Company + Phone */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
                     {t('form.company')} *
                   </label>
                   <input
                     type="text"
+                    id="company"
                     name="company"
                     required
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                     placeholder={t('form.companyPlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
                     {t('form.phone')}
                   </label>
                   <input
                     type="tel"
+                    id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                     placeholder={t('form.phonePlaceholder')}
                   />
                 </div>
@@ -185,15 +189,16 @@ ${formData.message}
 
               {/* Type */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="type" className="block text-sm font-semibold text-gray-700 mb-2">
                   {t('form.typeLabel')} *
                 </label>
                 <select
+                  id="type"
                   name="type"
                   required
                   value={formData.type}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                 >
                   <option value="">{t('form.typeSelect')}</option>
                   {typeOptions.map((option) => (
@@ -206,14 +211,15 @@ ${formData.message}
 
               {/* Fleet Size */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="fleetSize" className="block text-sm font-semibold text-gray-700 mb-2">
                   {t('form.fleetLabel')} *
                 </label>
                 <select
+                  id="fleetSize"
                   name="fleetSize"
                   value={formData.fleetSize}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                 >
                   <option value="">{t('form.fleetSelect')}</option>
                   {fleetSizeOptions.map((option) => (
@@ -226,16 +232,17 @@ ${formData.message}
 
               {/* Message */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
                   {t('form.message')} *
                 </label>
                 <textarea
+                  id="message"
                   name="message"
                   required
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                   placeholder={t('form.messagePlaceholder')}
                 />
               </div>
@@ -244,7 +251,7 @@ ${formData.message}
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+                className="w-full bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
                 {status === 'loading' ? t('form.sending') : t('form.send')}
               </button>
@@ -257,7 +264,7 @@ ${formData.message}
               <h3 className="font-semibold text-white mb-2">{t('contactInfo.email')}</h3>
               <a
                 href="mailto:info@travixosystems.com"
-                className="text-orange-500 hover:text-orange-600"
+                className="text-brand-ink hover:text-brand-ink"
               >
                 info@travixosystems.com
               </a>
@@ -266,7 +273,7 @@ ${formData.message}
               <h3 className="font-semibold text-white mb-2">{t('contactInfo.phone')}</h3>
               <a
                 href="tel:+33783357535"
-                className="text-orange-500 hover:text-orange-600"
+                className="text-brand-ink hover:text-brand-ink"
               >
                 +33 78 335 75 35
               </a>

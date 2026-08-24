@@ -26,7 +26,7 @@ export default async function FeaturesPage(props: Props) {
       <main className="min-h-screen bg-white">
         
         {/* Hero Section */}
-        <section className="bg-[#0a2730] py-16">
+        <section className="bg-ink py-16">
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-5xl font-bold text-white mb-4">
               {t("hero.title")}
@@ -38,12 +38,12 @@ export default async function FeaturesPage(props: Props) {
         </section>
 
         {/* Differentiators Section */}
-        <section className="bg-[#f6f8fd] py-8">
+        <section className="bg-surface-tint py-8">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
               <div className="text-center">
-                <div className="text-5xl font-bold text-orange-500 mb-3">{t("differentiators.import.time")}</div>
+                <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.import.time")}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.import.title")}
                 </h3>
@@ -53,7 +53,7 @@ export default async function FeaturesPage(props: Props) {
               </div>
 
               <div className="text-center">
-                <div className="text-5xl font-bold text-orange-500 mb-3">{t("differentiators.bulk.time")}</div>
+                <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.bulk.time")}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.bulk.title")}
                 </h3>
@@ -63,7 +63,7 @@ export default async function FeaturesPage(props: Props) {
               </div>
 
               <div className="text-center">
-                <div className="text-5xl font-bold text-orange-500 mb-3">{t("differentiators.deploy.time")}</div>
+                <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.deploy.time")}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.deploy.title")}
                 </h3>
@@ -124,7 +124,7 @@ export default async function FeaturesPage(props: Props) {
               </div>
 
               {/* Feature 2: VGP Compliance - HIGHLIGHTED */}
-              <div className="border-2 border-orange-500 bg-orange-50 rounded-lg p-6">
+              <div className="border-2 border-brand bg-orange-50 rounded-lg p-6">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-2xl font-bold text-gray-900">
                     {t("availableNow.features.vgp.title")}
@@ -138,19 +138,19 @@ export default async function FeaturesPage(props: Props) {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-orange-600 mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
+                    <span className="text-brand-ink mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
                     <span>{t("availableNow.features.vgp.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-orange-600 mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
+                    <span className="text-brand-ink mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
                     <span>{t("availableNow.features.vgp.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-orange-600 mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
+                    <span className="text-brand-ink mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
                     <span>{t("availableNow.features.vgp.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-orange-600 mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
+                    <span className="text-brand-ink mr-2 flex-shrink-0 mt-1 font-bold">✓</span>
                     <span>{t("availableNow.features.vgp.items.3")}</span>
                   </li>
                 </ul>
@@ -347,7 +347,7 @@ export default async function FeaturesPage(props: Props) {
         </section>
 
         {/* Section 2: Coming Soon - SPARSE */}
-        <section className="bg-[#0a2730] py-12">
+        <section className="bg-ink py-12">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-white mb-3">
@@ -363,7 +363,7 @@ export default async function FeaturesPage(props: Props) {
               {/* Roadmap Feature: API Access */}
               <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t("comingSoon.features.apiAccess.title")}</h3>
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 mb-3">
+                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-brand-tint text-orange-800 mb-3">
                   {t("status.comingQ2")}
                 </span>
                 <p className="text-gray-700 mb-4">{t("comingSoon.features.apiAccess.description")}</p>
@@ -423,7 +423,7 @@ export default async function FeaturesPage(props: Props) {
               </p>
               <Link
                 href={`/${locale}/contact`}
-                className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+                className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-8 py-3 rounded-lg transition-colors"
               >
                 {t("enterprise.cta")}
               </Link>
@@ -432,13 +432,13 @@ export default async function FeaturesPage(props: Props) {
         </section>
 
         {/* Final CTA */}
-        <section className="py-12 bg-[#0a2730] text-white">
+        <section className="py-12 bg-ink text-white">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">{t("finalCta.title")}</h2>
             <p className="text-xl mb-8 opacity-90">{t("finalCta.subtitle")}</p>
             <a
               href={SIGNUP_URL}
-              className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors"
+              className="inline-block bg-brand hover:bg-brand-hover text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors"
             >
               {t("finalCta.button")}
             </a>
