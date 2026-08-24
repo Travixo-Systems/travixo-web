@@ -61,7 +61,7 @@
       "title": "Votre parc vit dans 3 endroits. Il devrait n'en avoir qu'un.",
       "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à la conformité VGP, ses documents et à son historique, dans une seule chaîne, du dépôt au chantier.",
       "ctaPrimary": "Tester sur votre parc réel",
-      "ctaSecondary": "Organiser une démo"
+      "ctaSecondary": "Voir la démo"
     },
     "values": {
       "1": {
@@ -181,7 +181,7 @@
       "title": "Arrêtez de perdre la trace de votre matériel",
       "subtitle": "Remplacez le suivi dispersé entre vos systèmes, vos dossiers et vos mails par une seule chaîne qui relie la machine à ses documents.",
       "primary": "Tester sur votre parc réel",
-      "secondary": "Planifier une démo",
+      "secondary": "Voir la démo",
       "badges": [
         "Aucune carte bancaire demandée",
         "30 jours d'essai",

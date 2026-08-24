@@ -1,6 +1,6 @@
 import FaqSection, { type FaqItem } from "../components/FaqSection";
 import Footer from "../components/Footer";
-import { buildPageMetadata, type Locale } from "@/lib/seo";
+import { buildPageMetadata, type Locale , SIGNUP_URL } from "@/lib/seo";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navigation from '../components/navigation';
@@ -214,12 +214,12 @@ export default async function PricingPage(props: Props) {
                   <li>• {t('plans.extensions.starterAssets')}</li>
                 </ul>
               </details>
-              <Link
-                href={`/${locale}/contact`}
+              <a
+                href={SIGNUP_URL}
                 className="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 {t('cta.start')}
-              </Link>
+              </a>
             </div>
 
             {/* Professional - €14,400/yr (€1,200/mo) - MOST POPULAR */}
@@ -293,12 +293,12 @@ export default async function PricingPage(props: Props) {
                   <li>• {t('plans.extensions.sla')}</li>
                 </ul>
               </details>
-              <Link
-                href={`/${locale}/contact`}
+              <a
+                href={SIGNUP_URL}
                 className="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 {t('cta.start')}
-              </Link>
+              </a>
             </div>
 
             {/* Business - €28,800/yr (€2,400/mo) */}
@@ -457,12 +457,12 @@ export default async function PricingPage(props: Props) {
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-6">{t('finalCta.title')}</h2>
             <p className="text-xl mb-8 opacity-90">{t('finalCta.subtitle')}</p>
-            <Link
-              href={`/${locale}/contact`}
+            <a
+              href={SIGNUP_URL}
               className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors"
             >
               {t('finalCta.button')}
-            </Link>
+            </a>
           </div>
         </section>
       </main>

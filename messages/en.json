@@ -61,7 +61,7 @@
       "title": "Your fleet lives in 3 places. It should be one.",
       "subtitle": "It's tracked, but not connected. TraviXO links each machine to its QR code, its VGP compliance, its documents, and its history, in one chain, from depot to site.",
       "ctaPrimary": "Try It on Your Real Fleet",
-      "ctaSecondary": "Schedule a Demo"
+      "ctaSecondary": "See the demo"
     },
     "values": {
       "1": {
@@ -181,7 +181,7 @@
       "title": "Stop losing track of your equipment",
       "subtitle": "Replace tracking scattered across your systems, folders, and emails with one chain that links the machine to its documents.",
       "primary": "Try It on Your Real Fleet",
-      "secondary": "Schedule a Demo",
+      "secondary": "See the demo",
       "badges": [
         "No credit card required",
         "30-day trial",
