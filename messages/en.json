@@ -473,7 +473,6 @@
     },
     "comparison": {
       "title": "Why TraviXO?",
-      "scrollHint": "Scroll to see all columns",
       "headers": {
         "feature": "Comparison",
         "traditional": "Current methods",

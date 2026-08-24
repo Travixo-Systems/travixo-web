@@ -473,7 +473,6 @@
     },
     "comparison": {
       "title": "Pourquoi TraviXO ?",
-      "scrollHint": "Faites défiler pour voir toutes les colonnes",
       "headers": {
         "feature": "Point comparé",
         "traditional": "Méthodes actuelles",

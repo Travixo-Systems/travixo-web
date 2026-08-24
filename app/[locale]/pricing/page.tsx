@@ -10,6 +10,22 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+/**
+ * The comparison rows, in display order.
+ *
+ * Drives both the stacked cards below md and the table above it. The four rows
+ * were previously hand duplicated in the markup, so the two views would have
+ * had to be kept in step by hand.
+ *
+ * Keys index into pricing.comparison.rows in messages/*.json.
+ */
+const COMPARISON_ROWS = [
+  { key: "vgp", highlight: true },
+  { key: "setup", highlight: false },
+  { key: "excel", highlight: false },
+  { key: "qr", highlight: false },
+] as const;
+
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
@@ -50,110 +66,104 @@ export default async function PricingPage(props: Props) {
               </h2>
             </div>
 
-            {/* Responsive table wrapper */}
-            <div className="overflow-x-auto">
-              <div className="bg-white rounded-lg border border-gray-200 shadow-sm min-w-[900px]">
+            {/* Below lg the table becomes one card per row: 900px could not be
+                made to fit a phone (an iPhone 14 was 542px short), and the four
+                rows are four before/after arguments rather than data anyone
+                scans across, so stacking them loses nothing.
+
+                lg rather than md because the table's natural width is 771px:
+                at exactly 768px it rendered but overflowed by 47px, since the
+                container's own padding comes out of that. Cards carry the
+                whole tablet range instead.
+
+                Both views render from COMPARISON_ROWS above, so the card copy
+                and the table copy cannot drift apart. */}
+            <div className="space-y-4 lg:hidden">
+              {COMPARISON_ROWS.map((row) => (
+                <div
+                  key={row.key}
+                  className="bg-white rounded-lg border border-gray-200 shadow-sm p-5"
+                >
+                  <h3 className="text-base font-bold text-gray-900 mb-4">
+                    {t(`comparison.rows.${row.key}.label`)}
+                  </h3>
+
+                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">
+                    {t('comparison.headers.traditional')}
+                  </p>
+                  <p className="text-sm text-gray-600 mb-4">
+                    <span className="text-red-600 font-bold mr-2">✗</span>
+                    {t(`comparison.rows.${row.key}.traditional`)}
+                  </p>
+
+                  <p className="text-xs font-semibold uppercase tracking-wide text-brand-ink mb-1">
+                    TraviXO
+                  </p>
+                  <p className="text-sm text-gray-900 font-semibold">
+                    <span className="text-green-700 font-bold mr-2">✓</span>
+                    {t(`comparison.rows.${row.key}.travixo`)}
+                  </p>
+
+                  <p className="text-sm text-gray-700 italic border-t border-gray-200 mt-4 pt-3">
+                    {t(`comparison.rows.${row.key}.whyItMatters`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Tightened cell padding took the table's natural width from 900px
+                down to 771px, measured in the browser. min-w is 768 rather than
+                the old 820, which was padding beyond what the content needs and
+                put a scrollbar back at 820px. overflow-x-auto stays as the
+                backstop for longer translated strings. */}
+            <div className="hidden lg:block overflow-x-auto">
+              <div className="bg-white rounded-lg border border-gray-200 shadow-sm min-w-[768px]">
                 <table className="w-full">
                   <thead className="bg-surface-tint border-b-2 border-gray-200">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
                         {t('comparison.headers.feature')}
                       </th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[25%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[25%]">
                         {t('comparison.headers.traditional')}
                       </th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-brand-ink w-[25%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-brand-ink w-[25%]">
                         TraviXO
                       </th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 w-[30%]">
+                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[30%]">
                         {t('comparison.headers.whyItMatters')}
                       </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
-                    {/* VGP Compliance Row */}
-                    <tr className="hover:bg-surface-tint transition-colors bg-orange-50">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.vgp.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.vgp.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.vgp.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.vgp.whyItMatters')}
-                      </td>
-                    </tr>
-
-                    {/* Setup Time Row */}
-                    <tr className="hover:bg-surface-tint transition-colors">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.setup.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.setup.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.setup.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.setup.whyItMatters')}
-                      </td>
-                    </tr>
-
-                    {/* Data Migration Row */}
-                    <tr className="hover:bg-surface-tint transition-colors">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.excel.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.excel.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.excel.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.excel.whyItMatters')}
-                      </td>
-                    </tr>
-
-                    {/* QR Generation Row */}
-                    <tr className="hover:bg-surface-tint transition-colors">
-                      <td className="px-6 py-5 text-sm font-semibold text-gray-900">
-                        {t('comparison.rows.qr.label')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-600">
-                        <span className="text-red-600 font-bold mr-2">✗</span>
-                        {t('comparison.rows.qr.traditional')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-900 font-semibold">
-                        <span className="text-green-600 font-bold mr-2">✓</span>
-                        {t('comparison.rows.qr.travixo')}
-                      </td>
-                      <td className="px-6 py-5 text-sm text-gray-700 italic">
-                        {t('comparison.rows.qr.whyItMatters')}
-                      </td>
-                    </tr>
-
-
-
+                    {COMPARISON_ROWS.map((row) => (
+                      <tr
+                        key={row.key}
+                        className={`hover:bg-surface-tint transition-colors ${
+                          row.highlight ? "bg-orange-50" : ""
+                        }`}
+                      >
+                        <td className="px-4 py-5 text-sm font-semibold text-gray-900">
+                          {t(`comparison.rows.${row.key}.label`)}
+                        </td>
+                        <td className="px-4 py-5 text-sm text-gray-600">
+                          <span className="text-red-600 font-bold mr-2">✗</span>
+                          {t(`comparison.rows.${row.key}.traditional`)}
+                        </td>
+                        <td className="px-4 py-5 text-sm text-gray-900 font-semibold">
+                          <span className="text-green-700 font-bold mr-2">✓</span>
+                          {t(`comparison.rows.${row.key}.travixo`)}
+                        </td>
+                        <td className="px-4 py-5 text-sm text-gray-700 italic">
+                          {t(`comparison.rows.${row.key}.whyItMatters`)}
+                        </td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
             </div>
 
-            {/* Mobile scroll hint */}
-            <p className="text-center text-sm text-gray-500 mt-4 md:hidden">
-              ← {t('comparison.scrollHint')} →
-            </p>
           </div>
         </section>
 
@@ -180,23 +190,23 @@ export default async function PricingPage(props: Props) {
               </p>
               <ul className="space-y-2 mb-6 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.excel')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.qr')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.scan')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.starter.features.support')}</span>
                 </li>
                 <li className="flex items-start">
@@ -253,31 +263,31 @@ export default async function PricingPage(props: Props) {
                   <span className="text-sm font-semibold text-orange-900">{t('plans.professional.features.vgp')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.starter')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.multiSite')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.audit')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.integration')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.support')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.professional.features.emailAlerts')}</span>
                 </li>
               </ul>
@@ -320,31 +330,31 @@ export default async function PricingPage(props: Props) {
               </p>
               <ul className="space-y-2 mb-6 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.assets')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.professional')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.vgpPriority')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.integrations')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.manager')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.sla')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.business.features.advancedReporting')}</span>
                 </li>
 
@@ -387,15 +397,15 @@ export default async function PricingPage(props: Props) {
               </p>
               <ul className="space-y-2 mb-8 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.unlimited')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.vgpDedicated')}</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 mr-2 flex-shrink-0">✓</span>
+                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
                   <span className="text-sm">{t('plans.enterprise.features.support')}</span>
                 </li>
                 {/* Enterprise Custom Features */}
