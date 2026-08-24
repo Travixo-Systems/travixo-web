@@ -124,8 +124,11 @@ export default async function LocaleLayout({ children, params }: Props) {
       "areaServed": ["FR", "US", "GB"],
       "availableLanguage": ["English", "French"]
     },
+    // Entity graph: lets a crawler corroborate the organisation against a
+    // profile it already knows, rather than taking this page's word for it.
+    // The profile is branded TraviXO, which alternateName above carries.
     "sameAs": [
-      // Add social media profiles here when available
+      "https://www.linkedin.com/company/travixosystems"
     ]
   };
 
