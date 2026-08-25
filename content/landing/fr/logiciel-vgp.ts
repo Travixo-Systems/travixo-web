@@ -8,12 +8,12 @@ const page: LandingPage = {
 
   title: "Logiciel VGP : suivi des vérifications périodiques | TraviXO",
   description:
-    "Suivez les VGP de tout votre parc au même endroit. Échéances, rappels automatiques, certificats et rapports reliés à chaque machine.",
+    "Suivez les VGP de tout votre parc au même endroit. Échéances, alertes, rapports de vérification et historique reliés à chaque machine.",
 
   h1: "Logiciel de suivi VGP pour parcs de matériel",
   shortLabel: "Logiciel de suivi VGP",
   subtitle:
-    "Échéances, certificats et rapports de contrôle reliés à chaque machine. Vous savez à tout moment ce qui est conforme, ce qui arrive à échéance, et ce qui ne peut plus sortir.",
+    "Échéances, rapports de vérification et historique reliés à chaque machine. Vous savez à tout moment ce qui est dans les délais, ce qui arrive à échéance, et ce qui ne peut plus sortir.",
 
   sections: [
     {

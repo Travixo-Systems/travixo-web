@@ -193,11 +193,11 @@
     },
     "depotScene": {
       "title": "Une machine doit partir ce matin.",
-      "trigger": "Avant qu'elle quitte le dépôt, il faut remettre au client le dernier rapport VGP et le certificat de conformité. C'est la loi.",
+      "trigger": "Avant qu'elle quitte le dépôt, la machine doit partir avec sa notice, son dernier rapport de vérification et l'historique des VGP. C'est ce que demande l'arrêté du 1er mars 2004.",
       "search": {
         "title": "Vous cherchez :",
         "item1": "La date de dernière VGP : dans votre système, un classeur, ou de mémoire",
-        "item2": "Le certificat : dans un dossier partagé, un mail, ou une armoire",
+        "item2": "Le dernier rapport : dans un dossier partagé, un mail, ou une armoire",
         "item3": "La confirmation que le rapport est sans réserve"
       },
       "result": "Le temps de tout rassembler, la machine aurait déjà pu être en route.",
@@ -334,11 +334,11 @@
             "Dernier scan enregistré : opérateur, remarques, état du matériel"
           ]
         },
-        "direccte": {
+        "inspectionReports": {
           "title": "Rapports de contrôle VGP",
           "description": "Générez vos rapports en un clic. Historique complet des contrôles et exports formatés pour les inspections DREETS.",
           "items": [
-            "Suivi automatique de la conformité",
+            "Suivi des échéances et des rapports",
             "Export PDF ou Excel",
             "Historique complet des contrôles",
             "Présentation adaptée aux contrôles réglementaires"
@@ -358,7 +358,7 @@
           "title": "Alertes e-mail",
           "description": "Alertes VGP quotidiennes à J-30, J-14, J-7, J-1 et échues. Alerte de rappel si une machine arrive à échéance pendant une location. Notification d'inventaire avec liste des manquants.",
           "items": [
-            "Rappels automatiques à J-30, J-15, J-7 et J-1",
+            "Alertes d'échéance à J-30, J-15, J-7 et J-1",
             "Alerte si une machine arrive à échéance en cours de location",
             "Notifications d'inventaire avec liste des manquants",
             "Notifications bilingues FR/EN"
@@ -482,7 +482,7 @@
         "vgp": {
           "label": "Suivi VGP",
           "traditional": "Suivi manuel, risque d'écart de conformité",
-          "travixo": "Rappels automatiques, rapports centralisés, documents disponibles en cas de contrôle",
+          "travixo": "Alertes d'échéance, rapports centralisés, documents disponibles en cas de contrôle",
           "whyItMatters": "Indispensable dans la location de matériel"
         },
         "setup": {
