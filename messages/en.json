@@ -108,7 +108,7 @@
       },
       "solution": {
         "title": "One system linking equipment to compliance",
-        "subtitle": "Each machine becomes traceable, documented, and audit-ready",
+        "subtitle": "Each machine becomes traceable, documented, and ready for inspection",
         "items": {
           "1": {
             "title": "File import",
@@ -193,11 +193,11 @@
     },
     "depotScene": {
       "title": "A machine needs to leave this morning.",
-      "trigger": "Before it leaves the depot, you must hand the client the last VGP report and the compliance certificate. It's the law.",
+      "trigger": "Before it leaves the depot, the machine has to go out with its instruction manual, its latest inspection report and its VGP history. That is what the arrêté du 1er mars 2004 requires.",
       "search": {
         "title": "You start looking:",
         "item1": "Last VGP date: in your system, a binder, or from memory",
-        "item2": "The certificate: in a shared folder, an email, or a filing cabinet",
+        "item2": "The latest report: in a shared folder, an email, or a filing cabinet",
         "item3": "Confirmation that the report has no outstanding remarks"
       },
       "result": "By the time you've gathered everything, the machine could already have been on its way.",
@@ -334,14 +334,14 @@
             "Last scan recorded: operator, notes, equipment condition"
           ]
         },
-        "direccte": {
+        "inspectionReports": {
           "title": "VGP Inspection Reports",
           "description": "Generate your reports in one click. Complete inspection history and exports formatted for DREETS inspections.",
           "items": [
-            "Automatic compliance tracking",
+            "Due dates and reports tracked per machine",
             "Export to PDF or Excel",
             "Complete inspection history",
-            "Formatted for regulatory audits"
+            "Formatted for regulatory inspections"
           ]
         },
         "dashboard": {
@@ -358,7 +358,7 @@
           "title": "Email Alerts",
           "description": "Daily VGP alerts at D-30, D-14, D-7, D-1, and overdue. Recall alert when a machine approaches its deadline during a rental. Inventory notification with missing assets list.",
           "items": [
-            "Automated reminders at D-30, D-15, D-7, and D-1",
+            "Due-date alerts at D-30, D-15, D-7 and D-1",
             "Alert when a machine approaches its deadline during an active rental",
             "Inventory notifications with missing assets list",
             "Bilingual notifications (FR/EN)"
@@ -482,7 +482,7 @@
         "vgp": {
           "label": "VGP Tracking",
           "traditional": "Manual tracking, risk of compliance gaps",
-          "travixo": "Automated reminders, centralised reports, documents available for inspection",
+          "travixo": "Due-date alerts, centralised reports, documents available for inspection",
           "whyItMatters": "Essential in French equipment rental"
         },
         "setup": {

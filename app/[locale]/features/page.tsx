@@ -226,31 +226,31 @@ export default async function FeaturesPage(props: Props) {
               <div className="border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-2xl font-bold text-gray-900">
-                    {t("availableNow.features.direccte.title")}
+                    {t("availableNow.features.inspectionReports.title")}
                   </h3>
                   <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
                     {t("status.availableNow")}
                   </span>
                 </div>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  {t("availableNow.features.direccte.description")}
+                  {t("availableNow.features.inspectionReports.description")}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
-                    <span>{t("availableNow.features.direccte.items.0")}</span>
+                    <span>{t("availableNow.features.inspectionReports.items.0")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
-                    <span>{t("availableNow.features.direccte.items.1")}</span>
+                    <span>{t("availableNow.features.inspectionReports.items.1")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
-                    <span>{t("availableNow.features.direccte.items.2")}</span>
+                    <span>{t("availableNow.features.inspectionReports.items.2")}</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-700 mr-2 flex-shrink-0 mt-1">✓</span>
-                    <span>{t("availableNow.features.direccte.items.3")}</span>
+                    <span>{t("availableNow.features.inspectionReports.items.3")}</span>
                   </li>
                 </ul>
               </div>
