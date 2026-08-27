@@ -248,6 +248,17 @@ export default async function PricingPage(props: Props) {
                 <div className="mb-1">
                   <span className="text-4xl font-bold text-gray-900">€14 400</span>
                   <span className="text-lg text-gray-600">/{t('billing.year')}</span>
+                  {/*
+                    The annual term runs longer than the year paid for. It sits
+                    on Professional only: Starter gates VGP tracking behind an
+                    upgrade, so a long term there parks a customer on the tier
+                    that cannot deliver the product's point, and Business and
+                    Enterprise route through a demo where the term is worth
+                    more conceded in conversation than printed here.
+                  */}
+                  <span className="ml-2 text-sm font-semibold text-brand-ink">
+                    {t('billing.term')}
+                  </span>
                 </div>
                 <p className="text-sm text-gray-600">
                   {t('billing.or')} <span className="font-medium">€1 200</span>/{t('billing.month')}
@@ -455,6 +466,15 @@ export default async function PricingPage(props: Props) {
             </div>
 
           </div>
+
+          {/*
+            Below the grid rather than on a card: it qualifies every price, and
+            repeating it four times would read as a disclaimer rather than a
+            statement of fact.
+          */}
+          <p className="mt-8 text-center text-sm text-gray-500">
+            {t('billing.note')}
+          </p>
         </section>
 
 

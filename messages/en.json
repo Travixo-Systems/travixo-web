@@ -469,7 +469,9 @@
     "billing": {
       "year": "year",
       "month": "mo",
-      "or": "or"
+      "or": "or",
+      "term": "15 months of service",
+      "note": "Rates subject to change."
     },
     "comparison": {
       "title": "Why TraviXO?",
