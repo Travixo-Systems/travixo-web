@@ -470,8 +470,10 @@
       "year": "year",
       "month": "mo",
       "or": "or",
-      "term": "15 months of service",
-      "note": "Rates subject to change."
+      "note": "Rates subject to change.",
+      "termFrom": "12",
+      "termTo": "15",
+      "termUnit": "months of service"
     },
     "comparison": {
       "title": "Why TraviXO?",

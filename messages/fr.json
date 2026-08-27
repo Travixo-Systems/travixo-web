@@ -470,8 +470,10 @@
       "year": "an",
       "month": "mois",
       "or": "ou",
-      "term": "15 mois de service",
-      "note": "Tarifs susceptibles d'évoluer."
+      "note": "Tarifs susceptibles d'évoluer.",
+      "termFrom": "12",
+      "termTo": "15",
+      "termUnit": "mois de service"
     },
     "comparison": {
       "title": "Pourquoi TraviXO ?",

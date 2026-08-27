@@ -112,6 +112,20 @@ if (enPricing) {
   if (hits !== 1) fail(`EN pricing renders the term ${hits} times, expected exactly 1`);
 }
 
+// The 12 must actually render struck through. Asserted on the markup rather
+// than the text, because a bare "12" also occurs inside €1 200 and would pass
+// a substring check while the strike-through silently disappeared.
+for (const [label, file] of [
+  ["EN pricing", join("en", "pricing.html")],
+  ["FR pricing", join("fr", "pricing.html")],
+]) {
+  const src = html(file);
+  if (!src) continue;
+  if (!/line-through[^"]*"[^>]*>\s*12\s*</.test(src)) {
+    fail(`${label}: the 12 is not rendered with line-through`);
+  }
+}
+
 if (failed) process.exit(1);
 
 console.log(`  ${CASES.length} page/locale combinations verified in built HTML`);

@@ -248,18 +248,26 @@ export default async function PricingPage(props: Props) {
                 <div className="mb-1">
                   <span className="text-4xl font-bold text-gray-900">€14 400</span>
                   <span className="text-lg text-gray-600">/{t('billing.year')}</span>
-                  {/*
-                    The annual term runs longer than the year paid for. It sits
-                    on Professional only: Starter gates VGP tracking behind an
-                    upgrade, so a long term there parks a customer on the tier
-                    that cannot deliver the product's point, and Business and
-                    Enterprise route through a demo where the term is worth
-                    more conceded in conversation than printed here.
-                  */}
-                  <span className="ml-2 text-sm font-semibold text-brand-ink">
-                    {t('billing.term')}
-                  </span>
                 </div>
+                {/*
+                  The annual term runs longer than the year paid for. Struck
+                  12 then 15 so the gain is read rather than parsed: inline
+                  after the price it wrapped mid-phrase and competed with the
+                  4xl figure.
+
+                  Professional only. Starter gates VGP tracking behind an
+                  upgrade, so a long term there parks a customer on the tier
+                  that cannot deliver the product's point; Business and
+                  Enterprise route through a demo, where the term is worth
+                  more conceded in conversation than printed here.
+                */}
+                <p className="mb-1 text-base font-semibold text-brand-ink">
+                  <span className="text-gray-500 line-through decoration-gray-500">
+                    {t('billing.termFrom')}
+                  </span>
+                  <span className="mx-1.5">{t('billing.termTo')}</span>
+                  {t('billing.termUnit')}
+                </p>
                 <p className="text-sm text-gray-600">
                   {t('billing.or')} <span className="font-medium">€1 200</span>/{t('billing.month')}
                 </p>

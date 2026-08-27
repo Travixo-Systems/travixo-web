@@ -48,7 +48,11 @@ const priceNumbers = (src) =>
     Number(m[1].replace(/[^\d]/g, ""))
   );
 
-const termUses = (src) => [...src.matchAll(/t\(['"]billing\.term['"]\)/g)].length;
+/**
+ * Counts term blocks by termTo, the "15" itself. termFrom and termUnit always
+ * accompany it, so one key is enough to count cards without triple-counting.
+ */
+const termUses = (src) => [...src.matchAll(/t\(['"]billing\.termTo['"]\)/g)].length;
 const noteUses = (src) => [...src.matchAll(/t\(['"]billing\.note['"]\)/g)].length;
 
 /**
@@ -77,7 +81,7 @@ function check({ page, messages }, fail) {
 
   for (const [locale, data] of Object.entries(messages)) {
     const billing = data?.pricing?.billing ?? {};
-    for (const key of ["term", "note"]) {
+    for (const key of ["termFrom", "termTo", "termUnit", "note"]) {
       if (!billing[key] || !String(billing[key]).trim()) {
         fail(`messages/${locale}.json: pricing.billing.${key} missing or empty`);
       }
@@ -87,7 +91,7 @@ function check({ page, messages }, fail) {
   const terms = termUses(page);
   if (terms !== EXPECTED_TERM_CARDS) {
     fail(
-      `billing.term rendered on ${terms} card(s), expected ${EXPECTED_TERM_CARDS}. ` +
+      `the annual term block rendered on ${terms} card(s), expected ${EXPECTED_TERM_CARDS}. ` +
         `Putting it on another tier is a pricing decision: update EXPECTED_TERM_CARDS.`
     );
   }
@@ -131,7 +135,7 @@ if (process.argv.includes("--self-test")) {
     {
       name: "term key removed from fr",
       mutate: (i) => {
-        delete i.messages.fr.pricing.billing.term;
+        delete i.messages.fr.pricing.billing.termTo;
       },
     },
     {
@@ -144,8 +148,8 @@ if (process.argv.includes("--self-test")) {
       name: "term added to a second card",
       mutate: (i) => {
         i.page = i.page.replace(
-          "{t('billing.term')}",
-          "{t('billing.term')}{t('billing.term')}"
+          "{t('billing.termTo')}",
+          "{t('billing.termTo')}{t('billing.termTo')}"
         );
       },
     },
