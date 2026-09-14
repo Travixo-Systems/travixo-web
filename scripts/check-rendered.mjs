@@ -37,9 +37,40 @@ function html(rel) {
  * every message in the namespace, including copy for locales and routes the
  * page does not display, so searching raw HTML produces false positives.
  */
+/**
+ * Entities React emits for characters that are legal in text but special in
+ * markup. Without decoding these, an assertion written the way the copy reads
+ * ("Parc & identification", "Jusqu'à") is compared against "Parc &amp;
+ * identification" and "Jusqu&#x27;à" and fails on correct output.
+ *
+ * This bit a hand-written probe before it bit this script: the failure mode is
+ * a gate that passes only for strings containing no apostrophe or ampersand,
+ * which in French copy is a small and shrinking subset.
+ */
+const ENTITIES = {
+  "&amp;": "&",
+  "&lt;": "<",
+  "&gt;": ">",
+  "&quot;": '"',
+  "&#x27;": "'",
+  "&#39;": "'",
+  "&apos;": "'",
+  "&nbsp;": " ",
+  "&#x2F;": "/",
+};
+
+function decodeEntities(s) {
+  // &amp; last would double-decode "&amp;#x27;" into an apostrophe, so the
+  // named and numeric forms are replaced in one pass instead.
+  return s.replace(
+    /&(?:amp|lt|gt|quot|apos|nbsp|#x27|#39|#x2F);/g,
+    (m) => ENTITIES[m] ?? m
+  );
+}
+
 function visible(src) {
   const body = src.replace(/<script[\s\S]*?<\/script>/g, "");
-  return body.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  return decodeEntities(body.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ");
 }
 
 const CASES = [
@@ -75,11 +106,12 @@ const CASES = [
     file: join("en", "pricing.html"),
     label: "EN pricing",
     present: [
-      "Included",
-      "Examples",
-      "Fleet over 100 assets",
-      "See the full rate card",
-      "One TraviXO",
+      "The whole asset lifecycle in one history",
+      "Fleet & identification",
+      "VGP & compliance",
+      "Fleet examples",
+      "See the detailed rate card",
+      "You are not starting from scratch",
       "Rates subject to change",
     ],
     absent: [
@@ -89,26 +121,36 @@ const CASES = [
       "card.monthly",
       "examples.title",
       "included.title",
-      "scale.title",
       "bareme.title",
-      "allIn.title",
+      "groups",
+      "differentiator.title",
+      "onboarding.title",
       // The retired four-tier model, in either locale.
       "Most Popular",
       "VGP Included",
       "months of service",
       // The superseded h1, replaced by the one-subscription framing.
       "not on your headcount",
+      // Deleted outright: the comparison table and the compliance CTA.
+      "Why TraviXO",
+      "Current methods",
+      "Ready to secure your compliance",
+      // Unverified claims under a site-wide ban.
+      "2 to 4 weeks",
+      "500 assets in 5 minutes",
+      "500 codes in 30 seconds",
     ],
   },
   {
     file: join("fr", "pricing.html"),
     label: "FR pricing",
     present: [
-      "Inclus",
-      "Exemples",
-      "Votre parc dépasse 100 matériels",
-      "Voir le barème complet",
-      "Un seul TraviXO",
+      "Tout le cycle du matériel dans un même historique",
+      "Parc & identification",
+      "VGP & conformité",
+      "Exemples de parc",
+      "Voir le barème détaillé",
+      "Vous ne repartez pas de zéro",
       "Tarifs susceptibles d",
     ],
     absent: [
@@ -117,14 +159,23 @@ const CASES = [
       "card.monthly",
       "examples.title",
       "included.title",
-      "scale.title",
       "bareme.title",
-      "allIn.title",
+      "groups",
+      "differentiator.title",
+      "onboarding.title",
       "Le plus choisi",
       "VGP incluse",
       "mois de service",
       // The superseded h1, replaced by the one-product framing.
       "pas du nombre d'utilisateurs",
+      // Deleted outright: the comparison table and the compliance CTA.
+      "Pourquoi TraviXO",
+      "Méthodes actuelles",
+      "Prêt à sécuriser votre conformité",
+      // Unverified claims under a site-wide ban.
+      "2 à 4 semaines",
+      "500 matériels en 5 minutes",
+      "500 codes en 30 secondes",
     ],
   },
 ];

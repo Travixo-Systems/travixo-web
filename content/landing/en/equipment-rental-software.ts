@@ -79,7 +79,7 @@ const page: LandingPage = {
       kind: "pricing",
       heading: "Pricing",
       paragraphs: [
-        "179 € excl. VAT per month, 100 assets included and unlimited users. VGP management is part of the product, at no extra cost. Above 100 assets the rate tapers.",
+        "179 € per month, 100 assets included and unlimited users. VAT not applicable, art. 293 B of the French tax code. VGP management is part of the product, at no extra cost. Above 100 assets the rate tapers.",
       ],
       linkLabel: "View pricing",
     },

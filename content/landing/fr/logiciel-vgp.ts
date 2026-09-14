@@ -89,7 +89,7 @@ const page: LandingPage = {
       kind: "pricing",
       heading: "Tarifs",
       paragraphs: [
-        "179 € HT par mois, 100 matériels inclus et utilisateurs illimités. Le pilotage VGP fait partie du produit, sans supplément. Au-delà de 100 matériels, le tarif suit une grille dégressive.",
+        "179 € par mois, 100 matériels inclus et utilisateurs illimités. TVA non applicable, art. 293 B du CGI. Le pilotage VGP fait partie du produit, sans supplément. Au-delà de 100 matériels, le tarif suit une grille dégressive.",
       ],
       linkLabel: "Voir les tarifs",
     },

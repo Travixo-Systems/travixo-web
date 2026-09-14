@@ -7,7 +7,7 @@ const page: LandingPage = {
 
   title: "Logiciel de gestion de parc matériel BTP | TraviXO",
   description:
-    "Suivez chaque machine de votre parc par QR code : emplacement, état, documents et conformité. Import de votre fichier existant. À partir de 179 € HT par mois.",
+    "Suivez chaque machine de votre parc par QR code : emplacement, état, documents et conformité. Import de votre fichier existant. À partir de 179 € par mois.",
 
   h1: "Logiciel de gestion de parc matériel pour le BTP",
   shortLabel: "Logiciel de gestion de parc",
@@ -82,7 +82,7 @@ const page: LandingPage = {
       kind: "pricing",
       heading: "Tarifs",
       paragraphs: [
-        "179 € HT par mois, 100 matériels inclus et utilisateurs illimités. Au-delà de 100 matériels, le tarif suit une grille dégressive, pensée pour des parcs de 50 à 2 000 machines.",
+        "179 € par mois, 100 matériels inclus et utilisateurs illimités. TVA non applicable, art. 293 B du CGI. Au-delà de 100 matériels, le tarif suit une grille dégressive, pensée pour des parcs de 50 à 2 000 machines.",
       ],
       linkLabel: "Voir les tarifs",
     },

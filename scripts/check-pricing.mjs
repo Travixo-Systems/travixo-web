@@ -212,20 +212,43 @@ function check({ messages, page, landing }, fail) {
       }
     }
 
-    // 4. The included list is audit-verified and closed.
+    // 4. The capability groups are audit-verified and closed.
     //
-    //    Seven grouped lines covering the same audited scope as the flat
-    //    fifteen they replaced: nothing unshipped was folded in. Anything
-    //    added here is a claim about shipped functionality, so a longer list
-    //    fails until reviewed. The point is to stop unshipped features
-    //    (inspection edit/delete, weekly report, periodicity autofill) being
-    //    quietly promoted onto the pricing page.
-    const includedCount = (pricing.included?.items ?? []).length;
-    if (includedCount !== 7) {
+    //    Four groups covering the same audited scope as the flat fifteen
+    //    inclusions they replaced: nothing unshipped was folded in. Adding a
+    //    group, or naming an unshipped capability inside one, is a product
+    //    claim, so both fail until reviewed. The point is to stop unshipped
+    //    features (inspection edit/delete, weekly report, periodicity
+    //    autofill) being quietly promoted onto the pricing page.
+    const groups = pricing.groups ?? [];
+    if (groups.length !== 4) {
       fail(
-        `messages/${locale}.json: included list has ${includedCount} entries, ` +
-          `expected 7. Extending it is a product claim.`
+        `messages/${locale}.json: ${groups.length} capability group(s), ` +
+          `expected 4. Extending them is a product claim.`
       );
+    }
+    for (const group of groups) {
+      if (!group.title?.trim() || !group.body?.trim()) {
+        fail(
+          `messages/${locale}.json: a capability group is missing its title or body`
+        );
+      }
+    }
+    const NOT_SHIPPED = [
+      "rapport hebdomadaire",
+      "weekly report",
+      "modification d'inspection",
+      "suppression d'inspection",
+      "auto-remplissage",
+      "periodicity autofill",
+    ];
+    const groupText = JSON.stringify(groups).toLowerCase();
+    for (const claim of NOT_SHIPPED) {
+      if (groupText.includes(claim)) {
+        fail(
+          `messages/${locale}.json: capability groups name "${claim}", which is not shipped`
+        );
+      }
     }
   }
 
@@ -311,9 +334,15 @@ if (process.argv.includes("--self-test")) {
       },
     },
     {
-      name: "included list extended with an unshipped feature",
+      name: "a fifth capability group added",
       mutate: (i) => {
-        i.messages.fr.pricing.included.items.push("Rapport hebdomadaire");
+        i.messages.fr.pricing.groups.push({ title: "Extra", body: "Extra" });
+      },
+    },
+    {
+      name: "an unshipped feature named inside a group",
+      mutate: (i) => {
+        i.messages.fr.pricing.groups[0].body += " Rapport hebdomadaire.";
       },
     },
     {

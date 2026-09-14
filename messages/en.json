@@ -18,7 +18,7 @@
     },
     "pricing": {
       "title": "Pricing - Rented equipment traceability and compliance | TraviXO",
-      "description": "Traceability and compliance for rented equipment from 179 EUR excl. VAT per month, 100 assets included and unlimited users. 30-day trial, no card required."
+      "description": "Traceability and compliance for rented equipment from 179 € per month, 100 assets included and unlimited users. 30-day trial, no card required."
     },
     "privacy": {
       "title": "Privacy Policy - TraviXO",
@@ -470,41 +470,7 @@
     "billing": {
       "year": "year",
       "month": "mo",
-      "note": "Rates subject to change."
-    },
-    "comparison": {
-      "title": "Why TraviXO?",
-      "headers": {
-        "feature": "Comparison",
-        "traditional": "Current methods",
-        "whyItMatters": "Why It Matters"
-      },
-      "rows": {
-        "vgp": {
-          "label": "VGP Tracking",
-          "traditional": "Manual tracking, risk of compliance gaps",
-          "travixo": "Due-date alerts, centralised reports, documents available for inspection",
-          "whyItMatters": "Essential in French equipment rental"
-        },
-        "setup": {
-          "label": "Time to get started",
-          "traditional": "2 to 4 weeks of data re-entry",
-          "travixo": "Guided setup with file import",
-          "whyItMatters": "Skip 2 to 4 weeks of data entry"
-        },
-        "excel": {
-          "label": "Migrating your data",
-          "traditional": "Not supported",
-          "travixo": "500 assets in 5 minutes",
-          "whyItMatters": "No more manual re-entry"
-        },
-        "qr": {
-          "label": "QR Generation",
-          "traditional": "Manual, one at a time",
-          "travixo": "Bulk: 500 codes in 30 seconds",
-          "whyItMatters": "Your fleet is tagged from day one"
-        }
-      }
+      "note": "Rates subject to change. VAT not applicable, art. 293 B of the French tax code."
     },
     "cta": {
       "start": "Try for 30 days",
@@ -514,42 +480,45 @@
       "title": "Frequently Asked Questions",
       "questions": [
         {
-          "question": "How is the price calculated?",
-          "answer": "The price depends on how many assets you track in TraviXO. The first 100 are included in the 179 € excl. VAT/mo subscription, then the rate tapers progressively as your fleet grows. The full rate card is available on this page."
+          "question": "Can I stop whenever I want?",
+          "answer": "Yes. On monthly billing there is no commitment and you can stop at any time. An annual subscription runs to its term."
         },
         {
-          "question": "What is the difference between monthly and annual billing?",
-          "answer": "Annual billing is ten times the monthly rate: 1,790 € excl. VAT per year for the base, which is two months free. The tapering scale applies the same way, also at ten times the monthly amount. On monthly billing there is no commitment."
+          "question": "Do I pay more to add users?",
+          "answer": "No. Users are unlimited, and teams and permissions are included. The price depends on how many assets you track, not on how many people use them."
         },
         {
-          "question": "How many users can I create?",
-          "answer": "As many as you need. Users are unlimited, whatever the number of assets you track. Teams and permissions are included."
+          "question": "Are VGP and QR optional extras?",
+          "answer": "No. VGP due dates, inspections, certificates, QR codes and the public scan page are part of the subscription. There is no module to add and no option to unlock."
         },
         {
-          "question": "Are all features included?",
-          "answer": "Yes. There is a single product and no feature is reserved for a higher level. Fleet tracking, Excel import, QR codes, rental check-out and check-in, VGP due dates, inspections, certificates, alerts, the compliance report and audits are all part of the base rate."
+          "question": "Can I import my existing fleet?",
+          "answer": "Yes. You import your existing file and we work with you to structure the data you need to get started. Standard import is included. A complex migration or a specific integration is quoted separately."
         },
         {
-          "question": "What happens if my fleet goes beyond 2,000 assets?",
+          "question": "What happens beyond 2,000 assets?",
           "answer": "Above 2,000 assets we prepare a quote matched to your fleet. Contact us to discuss it."
         },
         {
-          "question": "Do you offer a trial period?",
-          "answer": "Yes. TraviXO can be tested for 30 days with full access to features. No credit card is required to start."
+          "question": "How does the trial work?",
+          "answer": "You get access to every feature for 30 days. No credit card is required to start. The rate that applies afterwards depends on the size of your fleet: the detailed rate card is on this page."
         }
       ]
     },
     "finalCta": {
-      "title": "Ready to secure your compliance?",
-      "subtitle": "Don't wait for the next inspection to discover your gaps. Try TraviXO free for 30 days.",
-      "button": "Start Free Trial"
+      "title": "Your fleet should not lose its history between two rentals.",
+      "subtitle": "Centralise the movements, documents and compliance of every asset in TraviXO.",
+      "button": "Try TraviXO for 30 days"
     },
     "card": {
       "name": "TraviXO",
-      "monthly": "179 € excl. VAT",
+      "monthly": "179 €",
       "included": "Up to 100 assets",
-      "annual": "1,790 € excl. VAT",
+      "annual": "1,790 € / year",
       "annualBadge": "2 months free",
+      "promise": "From check-out to check-in, movements, documents and due dates stay attached to the same asset.",
+      "groupsTitle": "The whole asset lifecycle in one history",
+      "reach": "Unlimited users · French & English",
       "noCommitment": "No commitment on monthly billing."
     },
     "tiers": [
@@ -567,54 +536,61 @@
       }
     ],
     "examples": {
-      "title": "Examples",
-      "note": "Monthly rates, excl. VAT.",
+      "title": "Fleet examples",
+      "note": "Monthly rates.",
       "items": [
         {
           "assets": "100 assets",
-          "monthly": "179 € excl. VAT/mo"
+          "monthly": "179 € / mo"
         },
         {
           "assets": "250 assets",
-          "monthly": "411.50 € excl. VAT/mo"
+          "monthly": "411.50 € / mo"
         },
         {
           "assets": "500 assets",
-          "monthly": "799 € excl. VAT/mo"
+          "monthly": "799 € / mo"
         },
         {
           "assets": "1,000 assets",
-          "monthly": "1,399 € excl. VAT/mo"
+          "monthly": "1,399 € / mo"
         }
-      ]
-    },
-    "included": {
-      "title": "Included",
-      "items": [
-        "Fleet and import",
-        "Rental check-out and check-in",
-        "QR codes and public page",
-        "Customers and reminders",
-        "VGP, inspections and certificates",
-        "Alerts and reports",
-        "Unlimited users"
-      ]
-    },
-    "scale": {
-      "title": "Fleet over 100 assets?",
-      "body": "The rate tapers progressively as your fleet grows.",
-      "link": "See the full rate card"
+      ],
+      "growth": "Fleet growing? The price per asset tapers progressively."
     },
     "bareme": {
-      "title": "Full rate card",
+      "title": "Detailed rate card",
+      "link": "See the detailed rate card",
       "unit": "per asset, per month",
       "quoteLabel": "2,000+",
       "quoteValue": "on quote"
     },
-    "allIn": {
-      "title": "One TraviXO.",
-      "body": "The core fleet, rental, QR and compliance features are included from the start.",
-      "note": "No VGP module to add. No QR option to unlock."
+    "groups": [
+      {
+        "title": "Fleet & identification",
+        "body": "Asset records, Excel import, QR codes and documents reachable from the field."
+      },
+      {
+        "title": "Rentals & movements",
+        "body": "Customer, check-out, check-in and asset condition attached to each rental."
+      },
+      {
+        "title": "VGP & compliance",
+        "body": "Due dates, inspections, certificates, alerts and the compliance report."
+      },
+      {
+        "title": "Operational tracking",
+        "body": "Customer reminders, audits, event history, teams and permissions."
+      }
+    ],
+    "differentiator": {
+      "title": "Everything you need to track an asset, included from the start.",
+      "body": "No VGP module to add. No QR option to unlock."
+    },
+    "onboarding": {
+      "title": "You are not starting from scratch.",
+      "body": "Import your existing fleet from a file. We work with you to structure the data you need to get started.",
+      "note": "Standard import included. Complex migration or specific integration: on quote."
     }
   },
   "privacy": {
@@ -938,8 +914,8 @@
     },
     "section16": {
       "title": "16. Prices and Taxes",
-      "paragraph1": "All prices displayed on our website are in Euros (€) and are exclusive of taxes unless otherwise indicated. Applicable VAT and any other taxes will be added at checkout or on invoices in accordance with applicable tax regulations.",
-      "paragraph2": "For customers within the European Union, VAT will be applied according to the applicable rate in the customer's country of residence, unless a valid intra-community VAT number is provided. French customers are subject to the standard French VAT rate."
+      "paragraph1": "All prices displayed on our website are in Euros (€). VAT not applicable, art. 293 B of the French tax code. No VAT is charged and no VAT is recoverable on our invoices.",
+      "paragraph2": "Should our VAT position change, in particular if the French franchise en base thresholds are exceeded, prices would then be subject to the applicable VAT and you would be informed before any affected billing date."
     },
     "section17": {
       "title": "17. Consumer Mediation",

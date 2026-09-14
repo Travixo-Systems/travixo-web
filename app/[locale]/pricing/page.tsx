@@ -11,22 +11,6 @@ type Props = {
 };
 
 /**
- * The comparison rows, in display order.
- *
- * Drives both the stacked cards below md and the table above it. The four rows
- * were previously hand duplicated in the markup, so the two views would have
- * had to be kept in step by hand.
- *
- * Keys index into pricing.comparison.rows in messages/*.json.
- */
-const COMPARISON_ROWS = [
-  { key: "vgp", highlight: true },
-  { key: "setup", highlight: false },
-  { key: "excel", highlight: false },
-  { key: "qr", highlight: false },
-] as const;
-
-/**
  * The graduated rate bands above the 100 assets the base rate includes, and
  * the worked examples below the card.
  *
@@ -37,6 +21,7 @@ const COMPARISON_ROWS = [
  * now live in one place per locale and the checker validates them from there.
  */
 type RateBand = { range: string; rate: string };
+type CapabilityGroup = { title: string; body: string };
 type PriceExample = { assets: string; monthly: string; annual: string };
 
 export async function generateMetadata(props: {
@@ -54,7 +39,7 @@ export default async function PricingPage(props: Props) {
   const faq = t.raw('faq.questions') as FaqItem[];
   const bands = t.raw('tiers') as RateBand[];
   const examples = t.raw('examples.items') as PriceExample[];
-  const included = t.raw('included.items') as string[];
+  const groups = t.raw('groups') as CapabilityGroup[];
 
   return (
     <>
@@ -73,116 +58,6 @@ export default async function PricingPage(props: Props) {
             <p className="text-xl text-center text-white/80 max-w-3xl mx-auto">
               {t('hero.subtitle')}
             </p>
-          </div>
-        </section>
-
-        {/* Comparison Table Section */}
-        <section className="bg-surface-tint py-6">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="text-center mb-4">
-              <h2 className="text-4xl font-bold text-gray-900 mb-2">
-                {t('comparison.title')}
-              </h2>
-            </div>
-
-            {/* Below lg the table becomes one card per row: 900px could not be
-                made to fit a phone (an iPhone 14 was 542px short), and the four
-                rows are four before/after arguments rather than data anyone
-                scans across, so stacking them loses nothing.
-
-                lg rather than md because the table's natural width is 771px:
-                at exactly 768px it rendered but overflowed by 47px, since the
-                container's own padding comes out of that. Cards carry the
-                whole tablet range instead.
-
-                Both views render from COMPARISON_ROWS above, so the card copy
-                and the table copy cannot drift apart. */}
-            <div className="space-y-4 lg:hidden">
-              {COMPARISON_ROWS.map((row) => (
-                <div
-                  key={row.key}
-                  className="bg-white rounded-lg border border-gray-200 shadow-sm p-5"
-                >
-                  <h3 className="text-base font-bold text-gray-900 mb-4">
-                    {t(`comparison.rows.${row.key}.label`)}
-                  </h3>
-
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">
-                    {t('comparison.headers.traditional')}
-                  </p>
-                  <p className="text-sm text-gray-600 mb-4">
-                    <span className="text-red-600 font-bold mr-2">✗</span>
-                    {t(`comparison.rows.${row.key}.traditional`)}
-                  </p>
-
-                  <p className="text-xs font-semibold uppercase tracking-wide text-brand-ink mb-1">
-                    TraviXO
-                  </p>
-                  <p className="text-sm text-gray-900 font-semibold">
-                    <span className="text-green-700 font-bold mr-2">✓</span>
-                    {t(`comparison.rows.${row.key}.travixo`)}
-                  </p>
-
-                  <p className="text-sm text-gray-700 italic border-t border-gray-200 mt-4 pt-3">
-                    {t(`comparison.rows.${row.key}.whyItMatters`)}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Tightened cell padding took the table's natural width from 900px
-                down to 771px, measured in the browser. min-w is 768 rather than
-                the old 820, which was padding beyond what the content needs and
-                put a scrollbar back at 820px. overflow-x-auto stays as the
-                backstop for longer translated strings. */}
-            <div className="hidden lg:block overflow-x-auto">
-              <div className="bg-white rounded-lg border border-gray-200 shadow-sm min-w-[768px]">
-                <table className="w-full">
-                  <thead className="bg-surface-tint border-b-2 border-gray-200">
-                    <tr>
-                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[20%]">
-                        {t('comparison.headers.feature')}
-                      </th>
-                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[25%]">
-                        {t('comparison.headers.traditional')}
-                      </th>
-                      <th className="px-4 py-4 text-left text-sm font-bold text-brand-ink w-[25%]">
-                        TraviXO
-                      </th>
-                      <th className="px-4 py-4 text-left text-sm font-bold text-gray-900 w-[30%]">
-                        {t('comparison.headers.whyItMatters')}
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {COMPARISON_ROWS.map((row) => (
-                      <tr
-                        key={row.key}
-                        className={`hover:bg-surface-tint transition-colors ${
-                          row.highlight ? "bg-orange-50" : ""
-                        }`}
-                      >
-                        <td className="px-4 py-5 text-sm font-semibold text-gray-900">
-                          {t(`comparison.rows.${row.key}.label`)}
-                        </td>
-                        <td className="px-4 py-5 text-sm text-gray-600">
-                          <span className="text-red-600 font-bold mr-2">✗</span>
-                          {t(`comparison.rows.${row.key}.traditional`)}
-                        </td>
-                        <td className="px-4 py-5 text-sm text-gray-900 font-semibold">
-                          <span className="text-green-700 font-bold mr-2">✓</span>
-                          {t(`comparison.rows.${row.key}.travixo`)}
-                        </td>
-                        <td className="px-4 py-5 text-sm text-gray-700 italic">
-                          {t(`comparison.rows.${row.key}.whyItMatters`)}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
           </div>
         </section>
 
@@ -214,21 +89,32 @@ export default async function PricingPage(props: Props) {
               <p className="text-gray-600">{t('card.included')}</p>
             </div>
 
-            {/* Inclusions sit on the card itself: they are what the entry
-                price buys, so separating them from it made the price read as
-                unqualified. */}
-            <div className="border-t border-gray-200 mt-4 pt-4">
+            {/* The promise states what the price buys before the capability
+                groups enumerate it: the four groups alone read as a feature
+                list, which is what the retired tier cards did. */}
+            <p className="border-t border-gray-200 mt-4 pt-4 text-gray-700">
+              {t('card.promise')}
+            </p>
+
+            {/* Four capability groups, title plus one line, rather than a
+                flat checkmark list. The list ran to fifteen items and read as
+                a spec sheet; grouped, it reads as one product with a single
+                history per asset. */}
+            <div className="mt-4">
               <h3 className="text-base font-bold text-gray-900 mb-3">
-                {t('included.title')}
+                {t('card.groupsTitle')}
               </h3>
-              <ul className="space-y-2">
-                {included.map((feature) => (
-                  <li key={feature} className="flex items-start">
-                    <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
-                    <span className="text-sm text-gray-700">{feature}</span>
+              <ul className="space-y-3">
+                {groups.map((group) => (
+                  <li key={group.title}>
+                    <p className="text-sm font-semibold text-gray-900">
+                      {group.title}
+                    </p>
+                    <p className="text-sm text-gray-700">{group.body}</p>
                   </li>
                 ))}
               </ul>
+              <p className="mt-3 text-sm text-gray-600">{t('card.reach')}</p>
             </div>
 
             {/* Annual sits under the monthly figure rather than beside it:
@@ -237,7 +123,6 @@ export default async function PricingPage(props: Props) {
               <span className="text-2xl font-bold text-gray-900">
                 {t('card.annual')}
               </span>
-              <span className="text-base text-gray-600">/{t('billing.year')}</span>
               <span className="inline-flex items-center rounded-full bg-brand-tint px-3 py-1 text-xs font-bold text-orange-700 border-2 border-brand">
                 {t('card.annualBadge')}
               </span>
@@ -261,19 +146,13 @@ export default async function PricingPage(props: Props) {
             </p>
           </div>
 
-          {/* How it scales, stated before the numbers that demonstrate it. */}
+          {/* Worked examples, deliberately not styled as cards: they are the
+              same product at four fleet sizes, and a bordered grid would read
+              as the tier grid this page replaced. */}
           <div className="mx-auto max-w-2xl mt-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-2">
-              {t('scale.title')}
-            </h2>
-            <p className="text-gray-700">{t('scale.body')}</p>
-
-            {/* Worked examples, deliberately not styled as cards: they are
-                the same product at four fleet sizes, and a bordered grid
-                would read as the tier grid this page replaced. */}
-            <h3 className="mt-6 text-base font-bold text-gray-900">
+            <h2 className="text-xl font-bold text-gray-900">
               {t('examples.title')}
-            </h3>
+            </h2>
             <p className="mb-1 text-sm text-gray-600">
               {t('examples.note')}
             </p>
@@ -291,12 +170,14 @@ export default async function PricingPage(props: Props) {
               ))}
             </ul>
 
+            <p className="mt-4 text-gray-700">{t('examples.growth')}</p>
+
             {/* Collapsed by default and visually secondary: the full rate
                 card answers a question most visitors do not have, and open
                 on the page it competes with the single headline price. */}
             <details className="mt-4 text-sm">
               <summary className="cursor-pointer text-gray-600 hover:text-gray-800">
-                {t('scale.link')}
+                {t('bareme.link')}
               </summary>
               <div className="mt-3 pl-4">
                 <h4 className="sr-only">{t('bareme.title')}</h4>
@@ -326,13 +207,24 @@ export default async function PricingPage(props: Props) {
 
           {/* States the absence of upsells outright: the retired model gated
               VGP behind a higher tier, and silence about that reads as the
-              gate still being there. */}
+              gate still being there. Deliberately does not re-list the four
+              capability groups; the card already carries them. */}
           <div className="mx-auto max-w-2xl mt-10 bg-surface-tint rounded-lg p-6">
             <h2 className="text-xl font-bold text-gray-900 mb-2">
-              {t('allIn.title')}
+              {t('differentiator.title')}
             </h2>
-            <p className="text-gray-700">{t('allIn.body')}</p>
-            <p className="mt-2 text-gray-700">{t('allIn.note')}</p>
+            <p className="text-gray-700">{t('differentiator.body')}</p>
+          </div>
+
+          {/* Onboarding answers the objection the price does not: what it
+              costs to get started, in effort rather than euros. No speed or
+              volume claims. */}
+          <div className="mx-auto max-w-2xl mt-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
+              {t('onboarding.title')}
+            </h2>
+            <p className="text-gray-700">{t('onboarding.body')}</p>
+            <p className="mt-2 text-sm text-gray-600">{t('onboarding.note')}</p>
           </div>
 
           {/*
