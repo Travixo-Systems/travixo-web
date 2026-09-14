@@ -156,8 +156,32 @@ it. Pre-existing, unrelated to this change.
 - [ ] G12: Site appears in search results
   EVIDENCE: pending.
 
-- [ ] G13: Published speed claims are sourced
-  EVIDENCE: pending.
+- [x] G13: No unverified speed or volume claim is published
+  CHECK: sweep messages/*.json for duration and volume promises, both locales
+  EXPECT: only the deliberate keeps
+  EVIDENCE: twelve strings per locale rewritten. "500 materiels en 5 minutes",
+  "500 codes en 30 secondes", "2 a 4 semaines de ressaisie" and the "500 codes
+  et plus" bulk-PDF line are gone from the homepage and the features page; the
+  pricing page's four went with the comparison table. Three further claims of
+  the same class were found by reading the structure rather than by pattern and
+  removed on the same basis: homepage.values.3 promising same-day tracking
+  against "d'autres projets prennent des semaines" (the FR phrasing "le jour
+  meme" escaped the first sweep), homepage.useCases.excel.body promising import
+  "en 10 minutes", and features.differentiators.deploy promising tracking
+  "quelques heures apres l'inscription".
+
+  A widened sweep (any digit followed by a time unit, plus same-day, within
+  hours, take weeks and the banned figures) returns one hit per locale, and it
+  is a deliberate keep: contact.form.successMessage, "sous 24 heures", which is
+  a response commitment the business makes about itself rather than a product
+  performance claim. Also kept deliberately: "en un clic" on QR generation and
+  inspection reports, which describes an interaction rather than a duration and
+  is verifiable from the UI.
+
+  This closes the handoff recorded here in the previous ledger, by removing the
+  claims rather than sourcing them. Sourcing remains open as a separate option:
+  if a real fleet import and a 500-code generation are ever timed against
+  production, the claims can be restated with evidence behind them.
 
 ABANDON: G10 Stripe cannot be gated from this repository. The web repo contains
 no Stripe code, no price IDs and no checkout: SIGNUP_URL is `${APP_URL}/signup`,
@@ -174,11 +198,9 @@ than a settled item.
 ABANDON: G12 Search visibility is not a property of this codebase. It depends
 on external index state and elapsed time. No honest local oracle exists.
 
-ABANDON: G13 Speed claims ("500 materiels en 5 minutes", "500 codes en 30
-secondes", "Skip 2 to 4 weeks") cannot be measured from the marketing repo:
-they describe product behaviour in the app repo, and the comparison-table row
-also makes a claim about competitors. This revision does not touch, restate or
-strengthen them; they sit in pricing.comparison.rows, above the new card, and
-this PR neither endorses nor sources them. Handoff unchanged: time one real
-fleet import and one 500-code generation against production, then source or
-soften.
+RESOLVED: G13 was abandoned in the previous ledger on the grounds that the
+speed claims could not be measured from the marketing repo. They have now been
+removed instead, which is a decision this repo can make and verify on its own.
+The copy states sequence rather than duration: tracking starts when the file is
+imported, with no deployment project first. That is a property of the product,
+not a measurement nobody has taken.
