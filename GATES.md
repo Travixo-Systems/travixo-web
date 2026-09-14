@@ -4,12 +4,18 @@ OWNS: app/[locale]/**, content/landing/**, messages/en.json, messages/fr.json,
 scripts/check-*.mjs
 
 Scope: replace the four-tier commercial model (Starter / Professional /
-Business / Enterprise) with one product priced on billable asset count.
-179 EUR HT per month including 100 assets, unlimited users, no commitment on
-monthly billing. Annual is ten monthly payments, so two months free. Above 100
-assets the rate tapers (1,55 / 1,20 / 0,80 per asset per month across three
+Business / Enterprise) with one subscription priced on billable asset count.
+179 EUR HT per month covering up to 100 assets, unlimited users, no commitment
+on monthly billing. Annual is ten monthly payments, so two months free. Above
+100 assets the rate tapers (1,55 / 1,20 / 0,80 per asset per month across three
 bands) and above 2 000 assets pricing is on quote. FR is the source, EN mirrors
 it.
+
+The page leads with the offer rather than the rate table: value, entry price,
+inclusions, how it scales, four worked examples, then the full rate card in a
+collapsed disclosure. The 2 000 row is not a worked example; it is "sur devis"
+in the rate card. Inclusions are seven grouped lines covering the same audited
+scope as the flat fifteen they replaced.
 
 This supersedes the previous ledger, which gated the 15-month Professional
 annual term (commits 527f7c2 and 09eb7e2, merged in #22). That term is deleted
@@ -32,7 +38,9 @@ it. Pre-existing, unrelated to this change.
   EVIDENCE: exit=0; output=base 179 EUR/mo, 100 assets included | annual 1790
   EUR/yr = 10 x monthly | 100=179/1790 250=411.5/4115 500=799/7990
   1000=1399/13990 2000=2199/21990, each equal to the grid computation |
-  PRICING_OK
+  PRICING_OK. The 2 000 row is asserted arithmetically although the page does
+  not publish it as a worked example, so a band edited without its examples
+  fails even for the unpublished row.
 
 - [x] G2: The pricing checker provably catches drift
   CHECK: node scripts/check-pricing.mjs --self-test
@@ -40,8 +48,9 @@ it. Pre-existing, unrelated to this change.
   EVIDENCE: exit=0; output=caught: base monthly rate changed on the card |
   annual no longer 10x monthly | a worked example edited by hand | an example's
   annual decoupled from its monthly | included list extended with an unshipped
-  feature | a retired tier price reappears in landing copy | retired popularity
-  badge reappears on the page | PRICING_SELFTEST_PASS (7 controls caught)
+  feature | a published example silently dropped | a retired tier price
+  reappears in landing copy | retired popularity badge reappears on the page |
+  PRICING_SELFTEST_PASS (8 controls caught)
 
 - [x] G3: No retired price survives on any pricing surface, either locale
   CHECK: grep -rnE "490 ?€|€ ?490|1,?200 ?€|2,?400 ?€|5,? ?880|14,? ?400|28,? ?800" messages/ content/landing/ app/[locale]/pricing/page.tsx app/[locale]/layout.tsx
@@ -75,24 +84,33 @@ it. Pre-existing, unrelated to this change.
   CHECK: node scripts/check-rendered.mjs
   EXPECT: RENDERED_OK
   EVIDENCE: exit=0; output=6 page/locale combinations verified in built HTML |
-  RENDERED_OK. The script's pricing cases were rewritten for this model (the
-  15-month term and struck-12 markup assertions are gone, replaced by
-  per-locale assertions that 179 and the 2 000-asset example reach the rendered
-  page in that locale's number formatting). Those new assertions executed here
-  for the first time and passed.
+  RENDERED_OK. The pricing cases assert the current headings (Inclus/Included,
+  Exemples/Examples, the scale question, the disclosure's own summary text, and
+  the one-subscription block), plus the base rate, the 1 000-asset example, a
+  band rate and the quote label, each in that locale's number formatting. The
+  rate-card heading is sr-only, so the summary text is asserted instead of it.
 
 - [x] G8: Built HTML independently inspected, not only self-certified
   CHECK: read .next/server/app/{fr,en}/pricing.html, strip scripts and tags,
   assert published figures present and retired ones absent
   EXPECT: every new figure present, every retired figure and badge absent
-  EVIDENCE: FR carries 179, 1 790, 411,50, 2 199, 21 990, "Tout est inclus",
-  "Exemples de prix", "Au-delà de 100 matériels"; EN carries 179, 1,790,
-  411.50, 2,199, 21,990, "Everything is included", "Example prices", "Above 100
-  assets", each in that locale's number formatting. Neither page contains
-  5 880, 14 400, 28 800, 490, 1 200, "Le plus choisi", "Most Popular", "VGP
-  incluse", "VGP Included", "mois de service" or "months of service". Read
-  directly from the build output rather than through check-rendered.mjs, so
-  this does not depend on that script being correct.
+  EVIDENCE: FR carries "Tarifs TraviXO", the one-subscription h1, 179 EUR HT,
+  1 790 EUR HT, 411,50 and 1 399 EUR HT/mois, "Inclus", "Exemples", "Votre parc
+  depasse 100 materiels", "Voir le bareme complet", +1,55, +0,80, "sur devis"
+  and "Un seul TraviXO". EN carries the mirrored strings in its own number
+  formatting. Neither page contains 5 880, 14 400, 28 800, 490, 1 200, 2 199,
+  "formule", "Tout est inclus", "Everything is included", "Le plus choisi",
+  "Most Popular", "VGP incluse", "VGP Included", "mois de service" or "months
+  of service", nor either superseded h1. Read directly from the build output
+  rather than through check-rendered.mjs, so this does not depend on that
+  script being correct.
+
+  Caveat on method: the first pass of this probe reported the FR string
+  "Jusqu'a 100 materiels" missing. React escapes the ASCII apostrophe to
+  &#x27;, and the probe stripped tags without decoding entities, so it compared
+  against text that never appears. The page was correct and the probe was not.
+  Any future run of this gate must decode entities before comparing, or it will
+  silently mishandle every apostrophe in the French copy.
 
 - [x] G9: The i18n leak fix still holds after both locales were rewritten
   CHECK: node scripts/check-i18n-leak.mjs; node scripts/check-i18n-leak.mjs --links
