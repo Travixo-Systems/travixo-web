@@ -11,11 +11,20 @@ on monthly billing. Annual is ten monthly payments, so two months free. Above
 bands) and above 2 000 assets pricing is on quote. FR is the source, EN mirrors
 it.
 
-The page leads with the offer rather than the rate table: value, entry price,
-inclusions, how it scales, four worked examples, then the full rate card in a
-collapsed disclosure. The 2 000 row is not a worked example; it is "sur devis"
-in the rate card. Inclusions are seven grouped lines covering the same audited
-scope as the flat fifteen they replaced.
+The page order is hero, card, fleet examples with the rate card, the
+differentiator, onboarding, FAQ, final CTA. The 2 000 row is not a worked
+example; it is "sur devis" in the rate card. The card carries a promise line
+and four capability groups covering the same audited scope as the flat fifteen
+inclusions they replaced.
+
+Prices are quoted without a bare "HT" suffix. The business is under the
+franchise en base, so "TVA non applicable, art. 293 B du CGI" appears in the
+legal line under the grid, on the worked examples, in the pricing meta
+description and on the landing pages that quote a price. terms.section16
+previously stated the opposite in both locales (prices hors taxes, VAT added at
+checkout and applied by country of residence) and was rewritten to match. The
+invoice template is not in this repository and needs the same mention app-side,
+where it is a legal requirement rather than a preference.
 
 This supersedes the previous ledger, which gated the 15-month Professional
 annual term (commits 527f7c2 and 09eb7e2, merged in #22). That term is deleted
@@ -48,9 +57,10 @@ it. Pre-existing, unrelated to this change.
   EVIDENCE: exit=0; output=caught: base monthly rate changed on the card |
   annual no longer 10x monthly | a worked example edited by hand | an example's
   annual decoupled from its monthly | included list extended with an unshipped
-  feature | a published example silently dropped | a retired tier price
+  feature | a published example silently dropped | a fifth capability group
+  added | an unshipped feature named inside a group | a retired tier price
   reappears in landing copy | retired popularity badge reappears on the page |
-  PRICING_SELFTEST_PASS (8 controls caught)
+  PRICING_SELFTEST_PASS (9 controls caught)
 
 - [x] G3: No retired price survives on any pricing surface, either locale
   CHECK: grep -rnE "490 ?€|€ ?490|1,?200 ?€|2,?400 ?€|5,? ?880|14,? ?400|28,? ?800" messages/ content/landing/ app/[locale]/pricing/page.tsx app/[locale]/layout.tsx
@@ -84,33 +94,51 @@ it. Pre-existing, unrelated to this change.
   CHECK: node scripts/check-rendered.mjs
   EXPECT: RENDERED_OK
   EVIDENCE: exit=0; output=6 page/locale combinations verified in built HTML |
-  RENDERED_OK. The pricing cases assert the current headings (Inclus/Included,
-  Exemples/Examples, the scale question, the disclosure's own summary text, and
-  the one-subscription block), plus the base rate, the 1 000-asset example, a
-  band rate and the quote label, each in that locale's number formatting. The
-  rate-card heading is sr-only, so the summary text is asserted instead of it.
+  RENDERED_OK. The pricing cases assert the current headings (the capability
+  groups title, two group titles, the fleet examples heading, the disclosure's
+  own summary text and the onboarding block), plus the base rate, the
+  1 000-asset example, a band rate and the quote label, each in that locale's
+  number formatting. The rate-card heading is sr-only, so the summary text is
+  asserted instead of it. The cases also assert the absence of the deleted
+  comparison table, the deleted compliance CTA, and the three banned speed
+  claims.
+
+  Defect found and fixed in this gate: visible() stripped tags without decoding
+  entities, so an assertion written the way the copy reads ("Parc &
+  identification") was compared against "Parc &amp; identification" and failed
+  on correct output. This is the caveat recorded under G8 last round, found
+  living in the committed script rather than an ad-hoc probe. visible() now
+  decodes entities, so the gate is correct for every apostrophe and ampersand
+  rather than for the strings that happen to contain neither.
 
 - [x] G8: Built HTML independently inspected, not only self-certified
   CHECK: read .next/server/app/{fr,en}/pricing.html, strip scripts and tags,
   assert published figures present and retired ones absent
   EXPECT: every new figure present, every retired figure and badge absent
-  EVIDENCE: FR carries "Tarifs TraviXO", the one-subscription h1, 179 EUR HT,
-  1 790 EUR HT, 411,50 and 1 399 EUR HT/mois, "Inclus", "Exemples", "Votre parc
-  depasse 100 materiels", "Voir le bareme complet", +1,55, +0,80, "sur devis"
-  and "Un seul TraviXO". EN carries the mirrored strings in its own number
-  formatting. Neither page contains 5 880, 14 400, 28 800, 490, 1 200, 2 199,
-  "formule", "Tout est inclus", "Everything is included", "Le plus choisi",
-  "Most Popular", "VGP incluse", "VGP Included", "mois de service" or "months
-  of service", nor either superseded h1. Read directly from the build output
-  rather than through check-rendered.mjs, so this does not depend on that
-  script being correct.
+  EVIDENCE: FR carries the one-subscription h1, 179 EUR, 1 790 EUR / an, the
+  promise line, "Tout le cycle du materiel dans un meme historique", all four
+  capability group titles, "Utilisateurs illimites", "Exemples de parc", the
+  four worked figures as "179 EUR / mois" through "1 399 EUR / mois", the
+  growth line, "Voir le bareme detaille", +1,55, +0,80, "sur devis", the
+  differentiator, "Vous ne repartez pas de zero", the first FAQ question and
+  the new final CTA. EN carries the mirrored strings in its own number
+  formatting. 56 present and 31 absent checks across the two locales, zero
+  problems.
 
-  Caveat on method: the first pass of this probe reported the FR string
-  "Jusqu'a 100 materiels" missing. React escapes the ASCII apostrophe to
-  &#x27;, and the probe stripped tags without decoding entities, so it compared
-  against text that never appears. The page was correct and the probe was not.
-  Any future run of this gate must decode entities before comparing, or it will
-  silently mishandle every apostrophe in the French copy.
+  Neither page contains 5 880, 14 400, 28 800, 490, 1 200, 2 199, "formule",
+  "Tout est inclus", "Everything is included", "Un seul TraviXO", "Le plus
+  choisi", "Most Popular", "VGP incluse", "VGP Included", "mois de service",
+  "months of service", either superseded h1, the deleted comparison table
+  ("Pourquoi TraviXO", "Methodes actuelles"), the deleted compliance CTA, or
+  the three banned speed claims. A separate sweep confirms no "HT", "hors
+  taxes", "excl. VAT" or "exclusive of tax" survives on either pricing page.
+
+  Read directly from the build output rather than through check-rendered.mjs,
+  so this does not depend on that script being correct. The probe decodes HTML
+  entities before comparing: an earlier version did not, and wrongly reported
+  "Jusqu'a 100 materiels" missing because React escapes the apostrophe to
+  &#x27;. Any future run must decode, or it will silently mishandle every
+  apostrophe and ampersand in the French copy.
 
 - [x] G9: The i18n leak fix still holds after both locales were rewritten
   CHECK: node scripts/check-i18n-leak.mjs; node scripts/check-i18n-leak.mjs --links
