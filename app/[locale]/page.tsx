@@ -179,8 +179,6 @@ export default async function Home(props: Props) {
             <InlineRouteLink
               locale={locale as Locale}
               routeKey="softwareRental"
-              lead="Comment la chaîne se construit, scan par scan"
-              anchor="logiciel pour loueur de matériel"
             />
           </div>
         </section>
@@ -200,8 +198,6 @@ export default async function Home(props: Props) {
             <InlineRouteLink
               locale={locale as Locale}
               routeKey="softwareVgp"
-              lead="Le détail du suivi des échéances sur un parc complet"
-              anchor="logiciel de suivi VGP"
             />
           </div>
         </section>

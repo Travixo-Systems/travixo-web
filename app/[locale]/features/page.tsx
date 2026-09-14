@@ -340,8 +340,6 @@ export default async function FeaturesPage(props: Props) {
             <InlineRouteLink
               locale={locale as Locale}
               routeKey="softwareFleet"
-              lead="Ces fonctions vues du point de vue d'un parc BTP"
-              anchor="logiciel de gestion de parc matériel"
             />
           </div>
         </section>

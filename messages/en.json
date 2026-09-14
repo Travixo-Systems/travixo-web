@@ -469,7 +469,11 @@
     "billing": {
       "year": "year",
       "month": "mo",
-      "or": "or"
+      "or": "or",
+      "note": "Rates subject to change.",
+      "termFrom": "12",
+      "termTo": "15",
+      "termUnit": "months of service"
     },
     "comparison": {
       "title": "Why TraviXO?",
@@ -1020,6 +1024,20 @@
     "section8": {
       "title": "8. Applicable Law",
       "content": "These legal notices are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
+    }
+  },
+  "inlineLinks": {
+    "softwareRental": {
+      "lead": "How the chain builds up, scan by scan",
+      "anchor": "equipment rental software"
+    },
+    "softwareFleet": {
+      "lead": "These features from the point of view of a construction fleet",
+      "anchor": "equipment fleet management software"
+    },
+    "softwareVgp": {
+      "lead": "The detail of deadline tracking across a whole fleet",
+      "anchor": "VGP tracking software"
     }
   }
 }

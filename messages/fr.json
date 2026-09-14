@@ -469,7 +469,11 @@
     "billing": {
       "year": "an",
       "month": "mois",
-      "or": "ou"
+      "or": "ou",
+      "note": "Tarifs susceptibles d'évoluer.",
+      "termFrom": "12",
+      "termTo": "15",
+      "termUnit": "mois de service"
     },
     "comparison": {
       "title": "Pourquoi TraviXO ?",
@@ -1020,6 +1024,20 @@
     "section8": {
       "title": "8. Droit applicable",
       "content": "Les présentes mentions légales sont soumises au droit français. Tout litige relatif à l'utilisation du site relève de la compétence exclusive des tribunaux de Paris, France."
+    }
+  },
+  "inlineLinks": {
+    "softwareRental": {
+      "lead": "Comment la chaîne se construit, scan par scan",
+      "anchor": "logiciel pour loueur de matériel"
+    },
+    "softwareFleet": {
+      "lead": "Ces fonctions vues du point de vue d'un parc BTP",
+      "anchor": "logiciel de gestion de parc matériel"
+    },
+    "softwareVgp": {
+      "lead": "Le détail du suivi des échéances sur un parc complet",
+      "anchor": "logiciel de suivi VGP"
     }
   }
 }
