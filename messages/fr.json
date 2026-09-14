@@ -17,8 +17,8 @@
       "description": "Importez votre parc, générez les QR codes, suivez le matériel sur le terrain et gérez la conformité VGP sans bricolage entre vos systèmes."
     },
     "pricing": {
-      "title": "Tarifs - Suivi de matériel TraviXO",
-      "description": "Suivi de matériel et conformité VGP à partir de 490 €/mois. Quatre offres, du dépôt unique au multi-sites. Essai de 30 jours, sans carte bancaire."
+      "title": "Tarifs - Traçabilité et conformité du matériel loué | TraviXO",
+      "description": "Traçabilité et conformité du matériel loué à partir de 179 € par mois, 100 matériels inclus et utilisateurs illimités. Essai de 30 jours, sans carte bancaire."
     },
     "privacy": {
       "title": "Politique de confidentialité - TraviXO",
@@ -66,16 +66,16 @@
     },
     "values": {
       "1": {
-        "title": "Importez votre fichier en 5 minutes",
+        "title": "Importez votre fichier existant",
         "text": "Pas besoin de nettoyer votre export avant. Colonnes incohérentes, cellules vides, intitulés approximatifs : on s'en charge. Vous importez, ça démarre."
       },
       "2": {
-        "title": "Imprimez 500 QR codes en 30 secondes",
+        "title": "Générez vos QR codes en masse",
         "text": "Le PDF prêt à imprimer est généré tout de suite. Vous collez les codes sur le matériel et c'est lancé."
       },
       "3": {
-        "title": "Commencez à suivre le parc dans la journée",
-        "text": "Là où d'autres projets prennent des semaines, TraviXO vous permet en général de commencer le suivi le jour même."
+        "title": "Commencez à suivre le parc dès l'import",
+        "text": "Vous n'avez pas de projet de déploiement à mener avant de commencer. Le suivi démarre sur votre fichier existant, tel qu'il est."
       }
     },
     "carousel": {
@@ -112,7 +112,7 @@
         "items": {
           "1": {
             "title": "Import du fichier",
-            "text": "Vous importez votre fichier tel qu'il existe aujourd'hui. Les colonnes sont reconnues automatiquement. 500 matériels peuvent être intégrés en 5 minutes."
+            "text": "Vous importez votre fichier tel qu'il existe aujourd'hui. Les colonnes sont reconnues automatiquement, sans ressaisie fiche par fiche."
           },
           "2": {
             "title": "Un QR code par machine",
@@ -176,7 +176,7 @@
       },
       "excel": {
         "title": "Centraliser la conformité",
-        "body": "Vos certificats sont à un endroit, vos dates à un autre, votre historique nulle part. Importez votre liste matériel en 10 minutes. TraviXO relie le tout : alertes automatiques, certificats centralisés, historique accessible."
+        "body": "Vos certificats sont à un endroit, vos dates à un autre, votre historique nulle part. Importez votre liste matériel et TraviXO relie le tout : alertes automatiques, certificats centralisés, historique accessible depuis chaque fiche."
       }
     },
     "finalCta": {
@@ -201,7 +201,7 @@
         "item3": "La confirmation que le rapport est sans réserve"
       },
       "result": "Le temps de tout rassembler, la machine aurait déjà pu être en route.",
-      "insight": "Si les documents étaient reliés à la machine, la réponse prendrait 30 secondes. Pas une demi-heure."
+      "insight": "Si les documents étaient reliés à la machine, la réponse serait immédiate. Pas une recherche dans un dossier partagé."
     },
     "erpPositioning": {
       "title": "TraviXO ne remplace pas votre ERP.",
@@ -277,17 +277,17 @@
       "import": {
         "time": "5 min",
         "title": "Import de n'importe quel fichier",
-        "description": "500 matériels importés en 5 minutes. Pas de ressaisie manuelle fiche par fiche."
+        "description": "Import de votre fichier existant. Pas de ressaisie manuelle fiche par fiche."
       },
       "bulk": {
         "time": "30 sec",
         "title": "Génération QR en masse",
-        "description": "500 codes prêts à imprimer en 30 secondes. Pas besoin d'ouvrir chaque fiche une par une."
+        "description": "Codes prêts à imprimer générés en masse. Pas besoin d'ouvrir chaque fiche une par une."
       },
       "deploy": {
         "time": "Heures",
         "title": "Mise en route rapide",
-        "description": "Le suivi peut commencer quelques heures après l'inscription. Pas 2 à 4 semaines plus tard."
+        "description": "Le suivi commence dès que votre fichier est importé, sans projet de déploiement préalable."
       }
     },
     "availableNow": {
@@ -301,7 +301,7 @@
             "Génération des codes en un clic",
             "Compatible avec étiquettes adhésives standard",
             "Désactivation des codes si nécessaire",
-            "PDF en masse pour 500 codes et plus"
+            "Génération PDF en masse"
           ]
         },
         "vgp": {
@@ -316,7 +316,7 @@
         },
         "excelImport": {
           "title": "Importez votre fichier tel qu'il est",
-          "description": "Chargez votre fichier matériel et commencez le suivi en 5 minutes. Les colonnes Numéro de série, Emplacement ou Date d'achat sont reconnues automatiquement, même si vos en-têtes sont en français, abrégés ou irréguliers.",
+          "description": "Chargez votre fichier matériel et commencez le suivi. Les colonnes Numéro de série, Emplacement ou Date d'achat sont reconnues automatiquement, même si vos en-têtes sont en français, abrégés ou irréguliers.",
           "items": [
             "Compatible avec les en-têtes français et anglais",
             "Gère les données imparfaites",
@@ -382,9 +382,9 @@
     },
     "enterprise": {
       "title": "Développements sur mesure",
-      "subtitle": "Intégration et développements spécifiques pour les clients Enterprise",
+      "subtitle": "Intégration et développements spécifiques pour les grands parcs",
       "note": "Comprend un service d'intégration et de développement adapté à vos besoins",
-      "cta": "Parler de vos besoins Enterprise",
+      "cta": "Parler de vos besoins",
       "features": {
         "customIntegrations": {
           "title": "Intégrations sur mesure",
@@ -463,161 +463,134 @@
   },
   "pricing": {
     "hero": {
-      "title": "Gardez vos VGP sous contrôle",
-      "subtitle": "Un manquement aux obligations périodiques de vérification peut exposer l'entreprise à des sanctions. TraviXO automatise le suivi de conformité de votre parc en France."
+      "category": "Tarifs TraviXO",
+      "title": "Toute la chaîne du matériel loué. Un seul abonnement.",
+      "subtitle": "Parc, locations, QR, VGP, alertes et traçabilité sont inclus. Votre abonnement évolue simplement avec la taille de votre parc."
     },
     "billing": {
       "year": "an",
       "month": "mois",
-      "or": "ou",
-      "note": "Tarifs susceptibles d'évoluer.",
-      "termFrom": "12",
-      "termTo": "15",
-      "termUnit": "mois de service"
-    },
-    "comparison": {
-      "title": "Pourquoi TraviXO ?",
-      "headers": {
-        "feature": "Point comparé",
-        "traditional": "Méthodes actuelles",
-        "whyItMatters": "Pourquoi c'est important"
-      },
-      "rows": {
-        "vgp": {
-          "label": "Suivi VGP",
-          "traditional": "Suivi manuel, risque d'écart de conformité",
-          "travixo": "Alertes d'échéance, rapports centralisés, documents disponibles en cas de contrôle",
-          "whyItMatters": "Indispensable dans la location de matériel"
-        },
-        "setup": {
-          "label": "Temps de mise en route",
-          "traditional": "2 à 4 semaines de ressaisie",
-          "travixo": "Mise en route accompagnée avec import de fichier",
-          "whyItMatters": "Évite 2 à 4 semaines de saisie"
-        },
-        "excel": {
-          "label": "Reprise de vos données",
-          "traditional": "Non prévue",
-          "travixo": "500 matériels en 5 minutes",
-          "whyItMatters": "Plus de ressaisie manuelle"
-        },
-        "qr": {
-          "label": "Génération QR",
-          "traditional": "Manuelle, une fiche après l'autre",
-          "travixo": "En masse : 500 codes en 30 secondes",
-          "whyItMatters": "Le parc est étiqueté dès le départ"
-        }
-      }
-    },
-    "plans": {
-      "popular": "Le plus choisi",
-      "vgpIncluded": "VGP incluse",
-      "starter": {
-        "name": "Starter",
-        "subtitle": "Structurez votre parc avant d'activer le suivi VGP",
-        "features": {
-          "assets": "Jusqu'à 100 matériels",
-          "excel": "Import de n'importe quel fichier",
-          "qr": "Génération QR en masse",
-          "scan": "Scan avec n'importe quel téléphone",
-          "support": "Support e-mail",
-          "noVgp": "Le suivi VGP est disponible en passant sur Professional"
-        }
-      },
-      "professional": {
-        "name": "Professional",
-        "subtitle": "Conformité complète et gestion du parc",
-        "features": {
-          "vgp": "Suivi VGP automatisé",
-          "assets": "Jusqu'à 500 matériels",
-          "starter": "Tout le contenu de Starter, plus :",
-          "multiSite": "Gestion multi-sites",
-          "audit": "Rapports prêts pour inspection DREETS",
-          "integration": "Export CSV de la liste du parc et de l'historique VGP",
-          "support": "Support prioritaire",
-          "teamManagement": "Gestion d'équipe",
-          "emailAlerts": "Alertes e-mail"
-        }
-      },
-      "business": {
-        "name": "Business",
-        "subtitle": "Pour les structures intermédiaires avec accompagnement renforcé",
-        "features": {
-          "assets": "Jusqu'à 2 000 matériels",
-          "professional": "Tout le contenu de Professional +",
-          "vgpPriority": "VGP + accompagnement conformité prioritaire",
-          "integrations": "Compatible SAGE, EBP, Cegid sur demande",
-          "manager": "Interlocuteur dédié",
-          "sla": "SLA 24 h garanti",
-          "advancedReporting": "Reporting avancé",
-          "apiAccess": "Accès API"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Sur devis",
-        "annual": "",
-        "subtitle": "Pour les grands parcs avec exigences de conformité renforcées",
-        "note": "Comprend intégration et développements spécifiques",
-        "features": {
-          "unlimited": "Matériels illimités",
-          "vgpDedicated": "VGP + équipe conformité dédiée",
-          "support": "Support 24/7",
-          "customIntegrations": "Intégrations sur mesure SAGE, SAP, Cegid",
-          "whiteLabel": "Marque blanche",
-          "onPremise": "Déploiement sur votre infrastructure",
-          "sla": "SLA 99,9 % et plus"
-        }
-      },
-      "extensions": {
-        "title": "Extensions disponibles ▼",
-        "starterAssets": "Pack matériels supplémentaires (+100 €/mois)",
-        "predictive": "Maintenance prédictive (+300 €/mois)",
-        "erp": "Intégration ERP (+2 500 € de mise en place)",
-        "sla": "SLA support 24 h (+400 €/mois)",
-        "advancedAnalytics": "Analytique prédictive avancée (+300 €/mois)",
-        "multiErp": "Plusieurs intégrations ERP (sur devis)"
-      }
-    },
-    "status": {
-      "comingQ1": "T1 2026",
-      "comingQ2": "T2 2026",
-      "builtOnDemand": "Développé à la demande"
+      "note": "Tarifs susceptibles d'évoluer. TVA non applicable, art. 293 B du CGI."
     },
     "cta": {
-      "start": "Lancer l'essai gratuit",
-      "demo": "Réserver une démo",
-      "contact": "Nous contacter"
+      "start": "Essayer 30 jours",
+      "contact": "Parler à un commercial"
     },
     "faq": {
       "title": "Questions fréquentes",
       "questions": [
         {
-          "question": "Pourquoi le suivi VGP n'est-il pas inclus dans l'offre Starter ?",
-          "answer": "L'offre Starter est prévue pour le suivi de base du parc. Le pilotage VGP demande des fonctions plus avancées comme la planification des contrôles, la gestion des certificats et les rapports d'inspection. Elles sont disponibles à partir de l'offre Professional. Pour un loueur de matériel en France, c'est généralement l'offre à retenir."
+          "question": "Puis-je arrêter quand je veux ?",
+          "answer": "Oui. En paiement mensuel, l'abonnement est sans engagement et vous pouvez l'arrêter à tout moment. L'abonnement annuel court jusqu'à son terme."
         },
         {
-          "question": "Quelle différence entre facturation mensuelle et annuelle ?",
-          "answer": "Les tarifs sont identiques en facturation mensuelle ou annuelle. Les conditions de conversion à l'issue d'un pilote sont définies ensemble."
+          "question": "Dois-je payer plus pour ajouter des utilisateurs ?",
+          "answer": "Non. Les utilisateurs sont illimités et les équipes et permissions sont comprises. Le tarif dépend du nombre de matériels suivis, pas du nombre de personnes qui les utilisent."
         },
         {
-          "question": "Puis-je changer d'offre à tout moment ?",
-          "answer": "Oui, vous pouvez monter d'offre à tout moment. Les passages à une offre inférieure sont possibles à la fin de la période annuelle. Contactez-nous pour voir votre cas précis."
+          "question": "VGP et QR sont-ils des options ?",
+          "answer": "Non. Les échéances VGP, les inspections, les certificats, les QR codes et la page publique de scan font partie de l'abonnement. Il n'y a pas de module à ajouter ni d'option à débloquer."
         },
         {
-          "question": "Les extensions sont-elles compatibles avec toutes les offres ?",
-          "answer": "Le pack de matériels supplémentaires est disponible sur toutes les offres. Les autres extensions, comme la maintenance prédictive, les intégrations ERP ou le SLA prioritaire, nécessitent l'offre Professional ou supérieure."
+          "question": "Puis-je importer mon parc existant ?",
+          "answer": "Oui. Vous importez votre fichier existant et nous vous accompagnons pour structurer les données nécessaires au démarrage. L'import standard est inclus. Une reprise complexe ou une intégration spécifique est établie sur devis."
         },
         {
-          "question": "Proposez-vous une période d'essai ?",
-          "answer": "Oui. Toutes les offres peuvent être testées pendant 30 jours avec accès complet aux fonctionnalités. Aucune carte bancaire n'est demandée au démarrage."
+          "question": "Que se passe-t-il au-delà de 2 000 matériels ?",
+          "answer": "Au-delà de 2 000 matériels, nous établissons un devis adapté à votre parc. Contactez-nous pour en discuter."
+        },
+        {
+          "question": "Comment fonctionne l'essai ?",
+          "answer": "Vous accédez à l'ensemble des fonctionnalités pendant 30 jours. Aucune carte bancaire n'est demandée au démarrage. Le tarif applicable ensuite dépend de la taille de votre parc : le barème détaillé figure sur cette page."
         }
       ]
     },
     "finalCta": {
-      "title": "Prêt à sécuriser votre conformité ?",
-      "subtitle": "N'attendez pas le prochain contrôle pour découvrir vos écarts. Essayez TraviXO gratuitement pendant 30 jours.",
-      "button": "Lancer l'essai gratuit"
+      "title": "Votre parc ne devrait pas perdre son histoire entre deux locations.",
+      "subtitle": "Centralisez les mouvements, les documents et la conformité de chaque matériel dans TraviXO.",
+      "button": "Essayer TraviXO pendant 30 jours"
+    },
+    "card": {
+      "name": "TraviXO",
+      "monthly": "179 €",
+      "included": "Jusqu'à 100 matériels",
+      "annual": "1 790 € / an",
+      "annualBadge": "2 mois offerts",
+      "promise": "De la sortie au retour, les mouvements, documents et échéances restent rattachés au même matériel.",
+      "groupsTitle": "Tout le cycle du matériel dans un même historique",
+      "reach": "Utilisateurs illimités · Français & anglais",
+      "noCommitment": "Sans engagement en paiement mensuel."
+    },
+    "tiers": [
+      {
+        "range": "101 à 500",
+        "rate": "+1,55 €"
+      },
+      {
+        "range": "501 à 1 000",
+        "rate": "+1,20 €"
+      },
+      {
+        "range": "1 001 à 2 000",
+        "rate": "+0,80 €"
+      }
+    ],
+    "examples": {
+      "title": "Exemples de parc",
+      "note": "Tarifs mensuels.",
+      "items": [
+        {
+          "assets": "100 matériels",
+          "monthly": "179 € / mois"
+        },
+        {
+          "assets": "250 matériels",
+          "monthly": "411,50 € / mois"
+        },
+        {
+          "assets": "500 matériels",
+          "monthly": "799 € / mois"
+        },
+        {
+          "assets": "1 000 matériels",
+          "monthly": "1 399 € / mois"
+        }
+      ],
+      "growth": "Votre parc grandit ? Le prix par matériel diminue progressivement."
+    },
+    "bareme": {
+      "title": "Barème détaillé",
+      "link": "Voir le barème détaillé",
+      "unit": "par matériel et par mois",
+      "quoteLabel": "2 000+",
+      "quoteValue": "sur devis"
+    },
+    "groups": [
+      {
+        "title": "Parc & identification",
+        "body": "Fiches matériel, import Excel, QR et documents accessibles depuis le terrain."
+      },
+      {
+        "title": "Locations & mouvements",
+        "body": "Client, sortie, retour et état du matériel rattachés à chaque location."
+      },
+      {
+        "title": "VGP & conformité",
+        "body": "Échéances, inspections, certificats, alertes et rapport de conformité."
+      },
+      {
+        "title": "Suivi opérationnel",
+        "body": "Rappels clients, audits, historique des événements, équipes et permissions."
+      }
+    ],
+    "differentiator": {
+      "title": "Tout ce qu'il faut pour suivre un matériel, inclus dès le départ.",
+      "body": "Pas de module VGP à ajouter. Pas d'option QR à débloquer."
+    },
+    "onboarding": {
+      "title": "Vous ne repartez pas de zéro.",
+      "body": "Importez votre parc existant à partir d'un fichier. Nous vous accompagnons pour structurer les données nécessaires au démarrage.",
+      "note": "Import standard inclus. Reprise complexe ou intégration spécifique : sur devis."
     }
   },
   "privacy": {
@@ -873,7 +846,7 @@
       "paragraph1": "Nous faisons le nécessaire pour fournir des Services fiables, sans garantir un accès ininterrompu. Les Services sont fournis en l'état et selon disponibilité. Des opérations de maintenance peuvent affecter temporairement leur accessibilité, avec information préalable lorsque cela est possible.",
       "sla": {
         "title": "Accord de niveau de service (SLA) :",
-        "content": "Les clients Enterprise bénéficient d'un SLA de disponibilité de 99,9 % selon les termes prévus dans leur contrat. Les autres offres n'incluent pas de SLA."
+        "content": "Un SLA de disponibilité peut être prévu contractuellement pour les grands parcs, selon les termes convenus. À défaut de stipulation contraire dans votre contrat, l'abonnement standard n'inclut pas de SLA."
       }
     },
     "section10": {
@@ -941,8 +914,8 @@
     },
     "section16": {
       "title": "16. Prix et taxes",
-      "paragraph1": "Tous les prix affichés sur notre site sont exprimés en euros (€) et hors taxes, sauf indication contraire. La TVA applicable et toute autre taxe seront ajoutées lors du paiement ou sur les factures conformément à la réglementation fiscale en vigueur.",
-      "paragraph2": "Pour les clients situés dans l'Union européenne, la TVA est appliquée selon le taux en vigueur dans le pays de résidence du client, sauf fourniture d'un numéro de TVA intracommunautaire valide. Les clients français sont soumis au taux de TVA français applicable."
+      "paragraph1": "Tous les prix affichés sur notre site sont exprimés en euros (€). TVA non applicable, art. 293 B du CGI. Aucune TVA n'est facturée et aucune TVA n'est récupérable sur nos factures.",
+      "paragraph2": "Si notre situation au regard de la TVA venait à changer, notamment en cas de dépassement des seuils de la franchise en base, les prix seraient alors majorés de la TVA applicable et vous en seriez informé avant toute échéance concernée."
     },
     "section17": {
       "title": "17. Médiation de la consommation",

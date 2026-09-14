@@ -9,7 +9,7 @@ const page: LandingPage = {
 
   title: "Construction Equipment Fleet Software | TraviXO",
   description:
-    "Track every machine in your fleet by QR code: location, condition, documents and compliance. Import your existing file. From €490/month.",
+    "Track every machine in your fleet by QR code: location, condition, documents and compliance. Import your existing file. From 179 € per month.",
 
   h1: "Equipment fleet management software for construction",
   shortLabel: "Fleet management software",
@@ -84,7 +84,7 @@ const page: LandingPage = {
       kind: "pricing",
       heading: "Pricing",
       paragraphs: [
-        "Plans start at €490/month and are designed for fleets of 50 to 2,000 machines.",
+        "179 € per month, 100 assets included and unlimited users. VAT not applicable, art. 293 B of the French tax code. Above 100 assets the rate tapers, and the product is designed for fleets of 50 to 2,000 machines.",
       ],
       linkLabel: "View pricing",
     },

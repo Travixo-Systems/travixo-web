@@ -17,8 +17,8 @@
       "description": "Import your fleet, generate QR codes, track equipment in the field, and manage VGP compliance without patching between systems."
     },
     "pricing": {
-      "title": "Pricing - TraviXO Equipment Tracking",
-      "description": "Equipment tracking with VGP compliance from €490/month. Four plans from single-depot fleets to multi-site operations. 30-day trial, no card required."
+      "title": "Pricing - Rented equipment traceability and compliance | TraviXO",
+      "description": "Traceability and compliance for rented equipment from 179 € per month, 100 assets included and unlimited users. 30-day trial, no card required."
     },
     "privacy": {
       "title": "Privacy Policy - TraviXO",
@@ -66,16 +66,16 @@
     },
     "values": {
       "1": {
-        "title": "Upload Your File in 5 Minutes",
+        "title": "Upload Your Existing File",
         "text": "No need to clean up your export first. Inconsistent columns, blank cells, rough headers. We handle it. You upload, it starts."
       },
       "2": {
-        "title": "Print 500 QR Codes in 30 Seconds",
+        "title": "Generate QR Codes in Bulk",
         "text": "The print-ready PDF is generated immediately. Stick the codes on your equipment and you're live."
       },
       "3": {
-        "title": "Start Tracking Your Fleet the Same Day",
-        "text": "Where other setups take weeks, TraviXO typically lets you start tracking the same day."
+        "title": "Start Tracking as Soon as You Import",
+        "text": "There is no deployment project to run before you start. Tracking begins on your existing file, exactly as it is."
       }
     },
     "carousel": {
@@ -112,7 +112,7 @@
         "items": {
           "1": {
             "title": "File import",
-            "text": "You upload your file as it exists today. Columns are detected automatically. 500 assets can be imported in 5 minutes."
+            "text": "You upload your file as it exists today. Columns are detected automatically, with no re-entry one record at a time."
           },
           "2": {
             "title": "One QR code per machine",
@@ -176,7 +176,7 @@
       },
       "excel": {
         "title": "Centralise your compliance",
-        "body": "Your certificates are in one place, your dates in another, your history nowhere. Import your equipment list in 10 minutes. TraviXO connects it all: automatic alerts, centralised certificates, accessible history."
+        "body": "Your certificates are in one place, your dates in another, your history nowhere. Import your equipment list and TraviXO connects it all: automatic alerts, centralised certificates, history accessible from every record."
       }
     },
     "finalCta": {
@@ -201,7 +201,7 @@
         "item3": "Confirmation that the report has no outstanding remarks"
       },
       "result": "By the time you've gathered everything, the machine could already have been on its way.",
-      "insight": "If the documents were linked to the machine, the answer would take 30 seconds. Not half an hour."
+      "insight": "If the documents were linked to the machine, the answer would be immediate. Not a search through a shared folder."
     },
     "erpPositioning": {
       "title": "TraviXO does not replace your ERP.",
@@ -277,17 +277,17 @@
       "import": {
         "time": "5 min",
         "title": "Upload Any File",
-        "description": "500 assets imported in 5 minutes. No manual re-entry, one record at a time."
+        "description": "Import your existing file. No manual re-entry, one record at a time."
       },
       "bulk": {
         "time": "30 sec",
         "title": "Bulk QR Generation",
-        "description": "500 print-ready codes in 30 seconds. No clicking through assets one by one."
+        "description": "Print-ready codes generated in bulk. No clicking through assets one by one."
       },
       "deploy": {
         "time": "Hours",
         "title": "Fast Setup",
-        "description": "Tracking can start within hours of signup. Not 2 to 4 weeks later."
+        "description": "Tracking starts as soon as your file is imported, with no deployment project first."
       }
     },
     "availableNow": {
@@ -301,7 +301,7 @@
             "Generate codes with one click",
             "Compatible with standard adhesive labels",
             "Revoke codes if needed",
-            "Bulk PDF generation for 500+ codes"
+            "Bulk PDF generation"
           ]
         },
         "vgp": {
@@ -316,7 +316,7 @@
         },
         "excelImport": {
           "title": "Import Your Equipment List",
-          "description": "Upload your equipment file and start tracking in 5 minutes. Columns like Serial Number, Location, or Purchase Date are detected automatically, even if your headers are in French, abbreviated, or inconsistent.",
+          "description": "Upload your equipment file and start tracking. Columns like Serial Number, Location, or Purchase Date are detected automatically, even if your headers are in French, abbreviated, or inconsistent.",
           "items": [
             "Works with French and English column headers",
             "Handles imperfect data",
@@ -463,161 +463,134 @@
   },
   "pricing": {
     "hero": {
-      "title": "Keep Your VGP Under Control",
-      "subtitle": "Failure to meet periodic inspection obligations can expose a company to penalties. TraviXO automates compliance tracking for your fleet in France."
+      "category": "TraviXO pricing",
+      "title": "The whole rented-equipment chain. One subscription.",
+      "subtitle": "Fleet, rentals, QR, VGP, alerts and traceability are included. Your subscription grows with the size of your fleet."
     },
     "billing": {
       "year": "year",
       "month": "mo",
-      "or": "or",
-      "note": "Rates subject to change.",
-      "termFrom": "12",
-      "termTo": "15",
-      "termUnit": "months of service"
-    },
-    "comparison": {
-      "title": "Why TraviXO?",
-      "headers": {
-        "feature": "Comparison",
-        "traditional": "Current methods",
-        "whyItMatters": "Why It Matters"
-      },
-      "rows": {
-        "vgp": {
-          "label": "VGP Tracking",
-          "traditional": "Manual tracking, risk of compliance gaps",
-          "travixo": "Due-date alerts, centralised reports, documents available for inspection",
-          "whyItMatters": "Essential in French equipment rental"
-        },
-        "setup": {
-          "label": "Time to get started",
-          "traditional": "2 to 4 weeks of data re-entry",
-          "travixo": "Guided setup with file import",
-          "whyItMatters": "Skip 2 to 4 weeks of data entry"
-        },
-        "excel": {
-          "label": "Migrating your data",
-          "traditional": "Not supported",
-          "travixo": "500 assets in 5 minutes",
-          "whyItMatters": "No more manual re-entry"
-        },
-        "qr": {
-          "label": "QR Generation",
-          "traditional": "Manual, one at a time",
-          "travixo": "Bulk: 500 codes in 30 seconds",
-          "whyItMatters": "Your fleet is tagged from day one"
-        }
-      }
-    },
-    "plans": {
-      "popular": "Most Popular",
-      "vgpIncluded": "VGP Included",
-      "starter": {
-        "name": "Starter",
-        "subtitle": "Structure your fleet before activating VGP tracking",
-        "features": {
-          "assets": "Up to 100 assets",
-          "excel": "Upload any file",
-          "qr": "Bulk QR generation",
-          "scan": "Scan with any phone",
-          "support": "Email support",
-          "noVgp": "VGP tracking available by upgrading to Professional"
-        }
-      },
-      "professional": {
-        "name": "Professional",
-        "subtitle": "Full compliance and fleet management",
-        "features": {
-          "vgp": "Automated VGP tracking",
-          "assets": "Up to 500 assets",
-          "starter": "Everything in Starter, plus:",
-          "multiSite": "Multi-site management",
-          "audit": "Reports ready for DREETS inspection",
-          "integration": "CSV export of asset list and VGP history",
-          "support": "Priority support",
-          "teamManagement": "Team management",
-          "emailAlerts": "Email alerts"
-        }
-      },
-      "business": {
-        "name": "Business",
-        "subtitle": "For mid-size operations with dedicated support",
-        "features": {
-          "assets": "Up to 2,000 assets",
-          "professional": "Everything in Professional +",
-          "vgpPriority": "VGP + priority compliance support",
-          "integrations": "Compatible with SAGE, EBP, Cegid (on request)",
-          "manager": "Dedicated account manager",
-          "sla": "24h SLA guaranteed",
-          "advancedReporting": "Advanced reporting",
-          "apiAccess": "API access"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Custom",
-        "annual": "",
-        "subtitle": "For large fleets with reinforced compliance requirements",
-        "note": "Includes integration and custom development service",
-        "features": {
-          "unlimited": "Unlimited assets",
-          "vgpDedicated": "VGP + dedicated compliance team",
-          "support": "24/7 support",
-          "customIntegrations": "Custom integrations (SAGE, SAP, Cegid)",
-          "whiteLabel": "White-label branding",
-          "onPremise": "On-premise deployment",
-          "sla": "SLA 99.9%+"
-        }
-      },
-      "extensions": {
-        "title": "Available Extensions ▼",
-        "starterAssets": "Extra Assets Pack (+€100/mo)",
-        "predictive": "Predictive Maintenance (+€300/mo)",
-        "erp": "ERP Integration (+€2,500 setup)",
-        "sla": "24h Support SLA (+€400/mo)",
-        "advancedAnalytics": "Advanced Predictive Analytics (+€300/mo)",
-        "multiErp": "Multiple ERP Integrations (custom quote)"
-      }
-    },
-    "status": {
-      "comingQ1": "Q1 2026",
-      "comingQ2": "Q2 2026",
-      "builtOnDemand": "Built on demand"
+      "note": "Rates subject to change. VAT not applicable, art. 293 B of the French tax code."
     },
     "cta": {
-      "start": "Start Free Trial",
-      "demo": "Book a Demo",
-      "contact": "Contact Us"
+      "start": "Try for 30 days",
+      "contact": "Talk to sales"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "questions": [
         {
-          "question": "Why is VGP tracking not included in the Starter plan?",
-          "answer": "The Starter plan is designed for basic fleet tracking. VGP management requires more advanced features like inspection scheduling, certificate management, and inspection reports. These are available from the Professional plan onwards. For equipment rental companies in France, this is generally the plan to go with."
+          "question": "Can I stop whenever I want?",
+          "answer": "Yes. On monthly billing there is no commitment and you can stop at any time. An annual subscription runs to its term."
         },
         {
-          "question": "What's the difference between monthly and annual billing?",
-          "answer": "Pricing is the same for monthly and annual billing. Pilot conversion terms are agreed together."
+          "question": "Do I pay more to add users?",
+          "answer": "No. Users are unlimited, and teams and permissions are included. The price depends on how many assets you track, not on how many people use them."
         },
         {
-          "question": "Can I change plans at any time?",
-          "answer": "Yes, you can upgrade at any time. Downgrades are possible at the end of your annual period. Contact us to discuss your specific situation."
+          "question": "Are VGP and QR optional extras?",
+          "answer": "No. VGP due dates, inspections, certificates, QR codes and the public scan page are part of the subscription. There is no module to add and no option to unlock."
         },
         {
-          "question": "Are extensions compatible with all plans?",
-          "answer": "The Extra Assets Pack is available on all plans. Other extensions like predictive maintenance, ERP integrations, and priority SLA require the Professional plan or higher."
+          "question": "Can I import my existing fleet?",
+          "answer": "Yes. You import your existing file and we work with you to structure the data you need to get started. Standard import is included. A complex migration or a specific integration is quoted separately."
         },
         {
-          "question": "Do you offer a trial period?",
-          "answer": "Yes. All plans can be tested for 30 days with full access to features. No credit card required to start."
+          "question": "What happens beyond 2,000 assets?",
+          "answer": "Above 2,000 assets we prepare a quote matched to your fleet. Contact us to discuss it."
+        },
+        {
+          "question": "How does the trial work?",
+          "answer": "You get access to every feature for 30 days. No credit card is required to start. The rate that applies afterwards depends on the size of your fleet: the detailed rate card is on this page."
         }
       ]
     },
     "finalCta": {
-      "title": "Ready to secure your compliance?",
-      "subtitle": "Don't wait for the next inspection to discover your gaps. Try TraviXO free for 30 days.",
-      "button": "Start Free Trial"
+      "title": "Your fleet should not lose its history between two rentals.",
+      "subtitle": "Centralise the movements, documents and compliance of every asset in TraviXO.",
+      "button": "Try TraviXO for 30 days"
+    },
+    "card": {
+      "name": "TraviXO",
+      "monthly": "179 €",
+      "included": "Up to 100 assets",
+      "annual": "1,790 € / year",
+      "annualBadge": "2 months free",
+      "promise": "From check-out to check-in, movements, documents and due dates stay attached to the same asset.",
+      "groupsTitle": "The whole asset lifecycle in one history",
+      "reach": "Unlimited users · French & English",
+      "noCommitment": "No commitment on monthly billing."
+    },
+    "tiers": [
+      {
+        "range": "101 to 500",
+        "rate": "+1.55 €"
+      },
+      {
+        "range": "501 to 1,000",
+        "rate": "+1.20 €"
+      },
+      {
+        "range": "1,001 to 2,000",
+        "rate": "+0.80 €"
+      }
+    ],
+    "examples": {
+      "title": "Fleet examples",
+      "note": "Monthly rates.",
+      "items": [
+        {
+          "assets": "100 assets",
+          "monthly": "179 € / mo"
+        },
+        {
+          "assets": "250 assets",
+          "monthly": "411.50 € / mo"
+        },
+        {
+          "assets": "500 assets",
+          "monthly": "799 € / mo"
+        },
+        {
+          "assets": "1,000 assets",
+          "monthly": "1,399 € / mo"
+        }
+      ],
+      "growth": "Fleet growing? The price per asset tapers progressively."
+    },
+    "bareme": {
+      "title": "Detailed rate card",
+      "link": "See the detailed rate card",
+      "unit": "per asset, per month",
+      "quoteLabel": "2,000+",
+      "quoteValue": "on quote"
+    },
+    "groups": [
+      {
+        "title": "Fleet & identification",
+        "body": "Asset records, Excel import, QR codes and documents reachable from the field."
+      },
+      {
+        "title": "Rentals & movements",
+        "body": "Customer, check-out, check-in and asset condition attached to each rental."
+      },
+      {
+        "title": "VGP & compliance",
+        "body": "Due dates, inspections, certificates, alerts and the compliance report."
+      },
+      {
+        "title": "Operational tracking",
+        "body": "Customer reminders, audits, event history, teams and permissions."
+      }
+    ],
+    "differentiator": {
+      "title": "Everything you need to track an asset, included from the start.",
+      "body": "No VGP module to add. No QR option to unlock."
+    },
+    "onboarding": {
+      "title": "You are not starting from scratch.",
+      "body": "Import your existing fleet from a file. We work with you to structure the data you need to get started.",
+      "note": "Standard import included. Complex migration or specific integration: on quote."
     }
   },
   "privacy": {
@@ -941,8 +914,8 @@
     },
     "section16": {
       "title": "16. Prices and Taxes",
-      "paragraph1": "All prices displayed on our website are in Euros (€) and are exclusive of taxes unless otherwise indicated. Applicable VAT and any other taxes will be added at checkout or on invoices in accordance with applicable tax regulations.",
-      "paragraph2": "For customers within the European Union, VAT will be applied according to the applicable rate in the customer's country of residence, unless a valid intra-community VAT number is provided. French customers are subject to the standard French VAT rate."
+      "paragraph1": "All prices displayed on our website are in Euros (€). VAT not applicable, art. 293 B of the French tax code. No VAT is charged and no VAT is recoverable on our invoices.",
+      "paragraph2": "Should our VAT position change, in particular if the French franchise en base thresholds are exceeded, prices would then be subject to the applicable VAT and you would be informed before any affected billing date."
     },
     "section17": {
       "title": "17. Consumer Mediation",

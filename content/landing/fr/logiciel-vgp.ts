@@ -89,7 +89,7 @@ const page: LandingPage = {
       kind: "pricing",
       heading: "Tarifs",
       paragraphs: [
-        "Gestion de parc à partir de 490 €/mois. Le pilotage VGP est disponible avec l'offre Professional, à 1 200 €/mois.",
+        "179 € par mois, 100 matériels inclus et utilisateurs illimités. TVA non applicable, art. 293 B du CGI. Le pilotage VGP fait partie du produit, sans supplément. Au-delà de 100 matériels, le tarif suit une grille dégressive.",
       ],
       linkLabel: "Voir les tarifs",
     },
