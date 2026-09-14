@@ -50,7 +50,13 @@ const BANDS = [
   { upTo: 2000, rate: 0.8 },
 ];
 
-/** Every worked example the page shows, as (assets, monthly, annual). */
+/**
+ * Every worked example the page shows, as (assets, monthly, annual).
+ *
+ * The arithmetic is asserted for all five regardless of which the page
+ * prints: a rate band changed without its examples must fail even for a row
+ * that is currently unpublished. Presence is checked per locale below.
+ */
 const EXPECTED_EXAMPLES = [
   { assets: 100, monthly: 179, annual: 1790 },
   { assets: 250, monthly: 411.5, annual: 4115 },
@@ -152,11 +158,12 @@ function check({ messages, page, landing }, fail) {
     }
 
     // 3. Every worked example matches the grid, monthly and annual alike.
+    // Four published examples; 2 000 is routed to the rate card as "sur
+    // devis" rather than shown as a worked figure, in both locales.
     const items = pricing.examples?.items ?? [];
-    if (items.length !== EXPECTED_EXAMPLES.length) {
+    if (items.length !== 4) {
       fail(
-        `messages/${locale}.json: ${items.length} pricing example(s), ` +
-          `expected ${EXPECTED_EXAMPLES.length}`
+        `messages/${locale}.json: ${items.length} pricing example(s), expected 4`
       );
     }
     for (const expected of EXPECTED_EXAMPLES) {
@@ -180,27 +187,44 @@ function check({ messages, page, landing }, fail) {
         euroFigures(String(i.monthly ?? "")).includes(expected.monthly)
       );
       if (!row) {
-        fail(
-          `messages/${locale}.json: no example showing ${expected.monthly} EUR/mo ` +
-            `for ${expected.assets} assets`
-        );
+        // 2 000 is deliberately unpublished as a worked example: it sits in
+        // the rate card as "sur devis". Its arithmetic is still asserted
+        // above, so a band edited without it still fails.
+        if (expected.assets <= 1000) {
+          fail(
+            `messages/${locale}.json: no example showing ${expected.monthly} EUR/mo ` +
+              `for ${expected.assets} assets`
+          );
+        }
         continue;
       }
-      if (!euroFigures(String(row.annual ?? "")).includes(expected.annual)) {
-        fail(
-          `messages/${locale}.json: example at ${expected.monthly} EUR/mo shows ` +
-            `annual "${row.annual}", expected ${expected.annual}`
-        );
+      // A row carries an annual figure only where the locale publishes one.
+      // FR shows monthly-only examples and states the annual on the card;
+      // EN still pairs both. Assert the annual only where it is published,
+      // rather than demanding a figure the page deliberately omits.
+      if (row.annual !== undefined) {
+        if (!euroFigures(String(row.annual)).includes(expected.annual)) {
+          fail(
+            `messages/${locale}.json: example at ${expected.monthly} EUR/mo shows ` +
+              `annual "${row.annual}", expected ${expected.annual}`
+          );
+        }
       }
     }
 
-    // 4. The included list is audit-verified and closed. Anything added here
-    //    is a claim about shipped functionality, so it fails until reviewed.
+    // 4. The included list is audit-verified and closed.
+    //
+    //    Seven grouped lines covering the same audited scope as the flat
+    //    fifteen they replaced: nothing unshipped was folded in. Anything
+    //    added here is a claim about shipped functionality, so a longer list
+    //    fails until reviewed. The point is to stop unshipped features
+    //    (inspection edit/delete, weekly report, periodicity autofill) being
+    //    quietly promoted onto the pricing page.
     const includedCount = (pricing.included?.items ?? []).length;
-    if (includedCount !== 15) {
+    if (includedCount !== 7) {
       fail(
         `messages/${locale}.json: included list has ${includedCount} entries, ` +
-          `expected the 15 audit-verified ones. Extending it is a product claim.`
+          `expected 7. Extending it is a product claim.`
       );
     }
   }
@@ -290,6 +314,12 @@ if (process.argv.includes("--self-test")) {
       name: "included list extended with an unshipped feature",
       mutate: (i) => {
         i.messages.fr.pricing.included.items.push("Rapport hebdomadaire");
+      },
+    },
+    {
+      name: "a published example silently dropped",
+      mutate: (i) => {
+        i.messages.fr.pricing.examples.items.splice(1, 1);
       },
     },
     {

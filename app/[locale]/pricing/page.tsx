@@ -186,14 +186,18 @@ export default async function PricingPage(props: Props) {
           </div>
         </section>
 
-        {/* Pricing Section - one product, one card */}
+        {/*
+          Order: entry price, what it includes, how it scales, worked
+          examples, then the full rate card. The bands moved off the primary
+          card into a collapsed disclosure below: on the card they turned the
+          headline offer into a rate table, which is the opposite of "one
+          product, one price".
+        */}
         <section className="container mx-auto px-4 py-6 max-w-7xl">
           {/*
-            One product, so one card rather than a tier grid. The card keeps
-            the styling the highlighted card carried: border-2, the orange
-            border-brand, rounded-lg p-6 and the same CTA block. What changed
-            is that it no longer competes with three siblings, so it is capped
-            at max-w-2xl and centred instead of sitting in a 4-column grid.
+            One product, so one card rather than a tier grid. Keeps the
+            styling the highlighted card carried: border-2, the orange
+            border-brand, rounded-lg p-6 and the same CTA block.
           */}
           <div className="mx-auto max-w-2xl border-2 border-brand rounded-lg p-6 shadow-xl">
             <h2 className="text-2xl font-bold text-gray-900">
@@ -210,6 +214,23 @@ export default async function PricingPage(props: Props) {
               <p className="text-gray-600">{t('card.included')}</p>
             </div>
 
+            {/* Inclusions sit on the card itself: they are what the entry
+                price buys, so separating them from it made the price read as
+                unqualified. */}
+            <div className="border-t border-gray-200 mt-4 pt-4">
+              <h3 className="text-base font-bold text-gray-900 mb-3">
+                {t('included.title')}
+              </h3>
+              <ul className="space-y-2">
+                {included.map((feature) => (
+                  <li key={feature} className="flex items-start">
+                    <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
+                    <span className="text-sm text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Annual sits under the monthly figure rather than beside it:
                 inline after a 4xl price it wrapped mid-phrase. */}
             <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 border-t border-gray-200 mt-4 pt-4">
@@ -221,37 +242,6 @@ export default async function PricingPage(props: Props) {
                 {t('card.annualBadge')}
               </span>
             </div>
-
-            {/* Graduated rates. The bands read out of messages rather than
-                being written into the markup, so a rate and the worked
-                examples below cannot drift apart unchecked. */}
-            <div className="border-t border-gray-200 mt-4 pt-4">
-              <h3 className="text-base font-bold text-gray-900 mb-1">
-                {t('card.tiersTitle')}
-              </h3>
-              <p className="text-sm text-gray-600 mb-3">{t('card.tiersUnit')}</p>
-              <ul className="space-y-2">
-                {bands.map((band) => (
-                  <li
-                    key={band.range}
-                    className="flex items-baseline justify-between text-sm"
-                  >
-                    <span className="text-gray-700">{band.range}</span>
-                    <span className="font-semibold text-gray-900">{band.rate}</span>
-                  </li>
-                ))}
-                <li className="flex items-baseline justify-between text-sm">
-                  <span className="text-gray-700">{t('card.quoteLabel')}</span>
-                  <span className="font-semibold text-gray-900">
-                    {t('card.quoteValue')}
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <p className="mt-4 text-sm font-medium text-gray-700">
-              {t('card.noCommitment')}
-            </p>
 
             <a
               href={SIGNUP_URL}
@@ -265,50 +255,84 @@ export default async function PricingPage(props: Props) {
             >
               {t('cta.contact')}
             </Link>
+
+            <p className="mt-4 text-sm text-gray-600">
+              {t('card.noCommitment')}
+            </p>
           </div>
 
-          {/*
-            Worked examples, deliberately not styled as cards: they are the
-            same product at four fleet sizes, and a bordered grid of four
-            would read as the tier grid this page just replaced.
-          */}
+          {/* How it scales, stated before the numbers that demonstrate it. */}
           <div className="mx-auto max-w-2xl mt-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-1">
-              {t('examples.title')}
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
+              {t('scale.title')}
             </h2>
-            <p className="text-sm text-gray-600 mb-4">{t('examples.note')}</p>
+            <p className="text-gray-700">{t('scale.body')}</p>
+
+            {/* Worked examples, deliberately not styled as cards: they are
+                the same product at four fleet sizes, and a bordered grid
+                would read as the tier grid this page replaced. */}
+            <h3 className="mt-6 text-base font-bold text-gray-900">
+              {t('examples.title')}
+            </h3>
+            <p className="mb-1 text-sm text-gray-600">
+              {t('examples.note')}
+            </p>
             <ul className="divide-y divide-gray-200 border-t border-b border-gray-200">
               {examples.map((example) => (
                 <li
                   key={example.assets}
                   className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 py-3"
                 >
+                  <span className="text-sm text-gray-700">{example.assets}</span>
                   <span className="text-sm font-semibold text-gray-900">
-                    {example.assets}
-                  </span>
-                  <span className="text-sm text-gray-900">
-                    <span className="font-semibold">{example.monthly}</span>
-                    <span className="text-gray-500"> / {example.annual}</span>
+                    {example.monthly}
                   </span>
                 </li>
               ))}
             </ul>
+
+            {/* Collapsed by default and visually secondary: the full rate
+                card answers a question most visitors do not have, and open
+                on the page it competes with the single headline price. */}
+            <details className="mt-4 text-sm">
+              <summary className="cursor-pointer text-gray-600 hover:text-gray-800">
+                {t('scale.link')}
+              </summary>
+              <div className="mt-3 pl-4">
+                <h4 className="sr-only">{t('bareme.title')}</h4>
+                <p className="mb-2 text-xs text-gray-500">{t('bareme.unit')}</p>
+                <ul className="space-y-2">
+                  {bands.map((band) => (
+                    <li
+                      key={band.range}
+                      className="flex items-baseline justify-between"
+                    >
+                      <span className="text-gray-700">{band.range}</span>
+                      <span className="font-semibold text-gray-900">
+                        {band.rate}
+                      </span>
+                    </li>
+                  ))}
+                  <li className="flex items-baseline justify-between">
+                    <span className="text-gray-700">{t('bareme.quoteLabel')}</span>
+                    <span className="font-semibold text-gray-900">
+                      {t('bareme.quoteValue')}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </details>
           </div>
 
-          {/* Everything ships in the one product, so the list is a plain
-              two-column set rather than a per-tier feature column. */}
-          <div className="mx-auto max-w-2xl mt-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">
-              {t('included.title')}
+          {/* States the absence of upsells outright: the retired model gated
+              VGP behind a higher tier, and silence about that reads as the
+              gate still being there. */}
+          <div className="mx-auto max-w-2xl mt-10 bg-surface-tint rounded-lg p-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
+              {t('allIn.title')}
             </h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-              {included.map((feature) => (
-                <li key={feature} className="flex items-start">
-                  <span className="text-green-700 mr-2 flex-shrink-0">✓</span>
-                  <span className="text-sm text-gray-700">{feature}</span>
-                </li>
-              ))}
-            </ul>
+            <p className="text-gray-700">{t('allIn.body')}</p>
+            <p className="mt-2 text-gray-700">{t('allIn.note')}</p>
           </div>
 
           {/*

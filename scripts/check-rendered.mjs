@@ -75,30 +75,40 @@ const CASES = [
     file: join("en", "pricing.html"),
     label: "EN pricing",
     present: [
-      "Everything is included",
-      "Example prices",
-      "Above 100 assets",
+      "Included",
+      "Examples",
+      "Fleet over 100 assets",
+      "See the full rate card",
+      "One TraviXO",
       "Rates subject to change",
     ],
     absent: [
       "Tout est inclus",
+      "Inclus dans",
       "billing.note",
       "card.monthly",
       "examples.title",
       "included.title",
+      "scale.title",
+      "bareme.title",
+      "allIn.title",
       // The retired four-tier model, in either locale.
       "Most Popular",
       "VGP Included",
       "months of service",
+      // The superseded h1, replaced by the one-subscription framing.
+      "not on your headcount",
     ],
   },
   {
     file: join("fr", "pricing.html"),
     label: "FR pricing",
     present: [
-      "Tout est inclus",
-      "Exemples de prix",
-      "Au-delà de 100 matériels",
+      "Inclus",
+      "Exemples",
+      "Votre parc dépasse 100 matériels",
+      "Voir le barème complet",
+      "Un seul TraviXO",
       "Tarifs susceptibles d",
     ],
     absent: [
@@ -107,9 +117,14 @@ const CASES = [
       "card.monthly",
       "examples.title",
       "included.title",
+      "scale.title",
+      "bareme.title",
+      "allIn.title",
       "Le plus choisi",
       "VGP incluse",
       "mois de service",
+      // The superseded h1, replaced by the one-product framing.
+      "pas du nombre d'utilisateurs",
     ],
   },
 ];
@@ -143,8 +158,8 @@ if (enHome && /href="\/en\/logiciel-vgp/.test(enHome)) {
 // comma, and reading one page with the other's convention is the drift this
 // catches.
 for (const [label, file, needles] of [
-  ["EN pricing", join("en", "pricing.html"), ["179", "2,199", "21,990"]],
-  ["FR pricing", join("fr", "pricing.html"), ["179", "2 199", "21 990"]],
+  ["EN pricing", join("en", "pricing.html"), ["179", "1,399", "+1.55", "on quote"]],
+  ["FR pricing", join("fr", "pricing.html"), ["179", "1 399", "+1,55", "sur devis"]],
 ]) {
   const src = html(file);
   if (!src) continue;

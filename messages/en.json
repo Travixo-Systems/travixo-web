@@ -463,9 +463,9 @@
   },
   "pricing": {
     "hero": {
-      "category": "Rented equipment traceability and compliance",
-      "title": "Pricing that follows your fleet, not your headcount",
-      "subtitle": "Every feature is included. Unlimited users."
+      "category": "TraviXO pricing",
+      "title": "The whole rented-equipment chain. One subscription.",
+      "subtitle": "Fleet, rentals, QR, VGP, alerts and traceability are included. Your subscription grows with the size of your fleet."
     },
     "billing": {
       "year": "year",
@@ -515,7 +515,7 @@
       "questions": [
         {
           "question": "How is the price calculated?",
-          "answer": "The price depends on how many assets you track, not on how many users you have. The base rate is 179 € excl. VAT per month and includes 100 assets. Above that, each additional asset is billed on a tapering scale: 1.55 € from 101 to 500, 1.20 € from 501 to 1,000, then 0.80 € from 1,001 to 2,000, per asset per month. Above 2,000 assets, pricing is set on quote."
+          "answer": "The price depends on how many assets you track in TraviXO. The first 100 are included in the 179 € excl. VAT/mo subscription, then the rate tapers progressively as your fleet grows. The full rate card is available on this page."
         },
         {
           "question": "What is the difference between monthly and annual billing?",
@@ -547,14 +547,10 @@
     "card": {
       "name": "TraviXO",
       "monthly": "179 € excl. VAT",
-      "included": "100 assets included",
+      "included": "Up to 100 assets",
       "annual": "1,790 € excl. VAT",
       "annualBadge": "2 months free",
-      "noCommitment": "No commitment on monthly billing",
-      "tiersTitle": "Above 100 assets",
-      "tiersUnit": "per asset, per month",
-      "quoteLabel": "More than 2,000",
-      "quoteValue": "On quote"
+      "noCommitment": "No commitment on monthly billing."
     },
     "tiers": [
       {
@@ -571,55 +567,54 @@
       }
     ],
     "examples": {
-      "title": "Example prices",
-      "note": "All prices are exclusive of VAT.",
+      "title": "Examples",
+      "note": "Monthly rates, excl. VAT.",
       "items": [
         {
           "assets": "100 assets",
-          "monthly": "179 € / mo",
-          "annual": "1,790 € / yr"
+          "monthly": "179 € excl. VAT/mo"
         },
         {
           "assets": "250 assets",
-          "monthly": "411.50 € / mo",
-          "annual": "4,115 € / yr"
+          "monthly": "411.50 € excl. VAT/mo"
         },
         {
           "assets": "500 assets",
-          "monthly": "799 € / mo",
-          "annual": "7,990 € / yr"
+          "monthly": "799 € excl. VAT/mo"
         },
         {
           "assets": "1,000 assets",
-          "monthly": "1,399 € / mo",
-          "annual": "13,990 € / yr"
-        },
-        {
-          "assets": "2,000 assets",
-          "monthly": "2,199 € / mo",
-          "annual": "21,990 € / yr"
+          "monthly": "1,399 € excl. VAT/mo"
         }
       ]
     },
     "included": {
-      "title": "Everything is included",
+      "title": "Included",
       "items": [
-        "Fleet",
-        "Excel import",
-        "QR codes and public scan page",
+        "Fleet and import",
         "Rental check-out and check-in",
-        "Customers",
-        "Customer recall",
-        "VGP due dates",
-        "Inspections",
-        "Certificates",
-        "Alerts",
-        "Compliance report",
-        "Audits",
-        "Teams and permissions",
-        "Unlimited users",
-        "FR/EN"
+        "QR codes and public page",
+        "Customers and reminders",
+        "VGP, inspections and certificates",
+        "Alerts and reports",
+        "Unlimited users"
       ]
+    },
+    "scale": {
+      "title": "Fleet over 100 assets?",
+      "body": "The rate tapers progressively as your fleet grows.",
+      "link": "See the full rate card"
+    },
+    "bareme": {
+      "title": "Full rate card",
+      "unit": "per asset, per month",
+      "quoteLabel": "2,000+",
+      "quoteValue": "on quote"
+    },
+    "allIn": {
+      "title": "One TraviXO.",
+      "body": "The core fleet, rental, QR and compliance features are included from the start.",
+      "note": "No VGP module to add. No QR option to unlock."
     }
   },
   "privacy": {

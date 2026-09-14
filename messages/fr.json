@@ -463,9 +463,9 @@
   },
   "pricing": {
     "hero": {
-      "category": "Traçabilité et conformité du matériel loué",
-      "title": "Un tarif qui dépend de votre parc, pas du nombre d'utilisateurs",
-      "subtitle": "Toutes les fonctionnalités sont incluses. Utilisateurs illimités."
+      "category": "Tarifs TraviXO",
+      "title": "Toute la chaîne du matériel loué. Un seul abonnement.",
+      "subtitle": "Parc, locations, QR, VGP, alertes et traçabilité sont inclus. Votre abonnement évolue simplement avec la taille de votre parc."
     },
     "billing": {
       "year": "an",
@@ -515,7 +515,7 @@
       "questions": [
         {
           "question": "Comment le tarif est-il calculé ?",
-          "answer": "Le tarif dépend du nombre de matériels suivis, pas du nombre d'utilisateurs. La base est de 179 € HT par mois et comprend 100 matériels. Au-delà, chaque matériel supplémentaire est facturé selon une grille dégressive : 1,55 € de 101 à 500, 1,20 € de 501 à 1 000, puis 0,80 € de 1 001 à 2 000, par matériel et par mois. Au-delà de 2 000 matériels, le tarif est établi sur devis."
+          "answer": "Le tarif dépend du nombre de matériels suivis dans TraviXO. Les 100 premiers sont inclus dans l'abonnement à 179 € HT/mois, puis le prix devient progressivement dégressif lorsque votre parc grandit. Le barème complet est disponible sur cette page."
         },
         {
           "question": "Quelle différence entre le mensuel et l'annuel ?",
@@ -547,14 +547,10 @@
     "card": {
       "name": "TraviXO",
       "monthly": "179 € HT",
-      "included": "100 matériels inclus",
+      "included": "Jusqu'à 100 matériels",
       "annual": "1 790 € HT",
       "annualBadge": "2 mois offerts",
-      "noCommitment": "Sans engagement en mensuel",
-      "tiersTitle": "Au-delà de 100 matériels",
-      "tiersUnit": "par matériel et par mois",
-      "quoteLabel": "Plus de 2 000",
-      "quoteValue": "Sur devis"
+      "noCommitment": "Sans engagement en paiement mensuel."
     },
     "tiers": [
       {
@@ -571,55 +567,54 @@
       }
     ],
     "examples": {
-      "title": "Exemples de prix",
-      "note": "Tous les prix sont indiqués HT.",
+      "title": "Exemples",
+      "note": "Tarifs mensuels HT.",
       "items": [
         {
           "assets": "100 matériels",
-          "monthly": "179 € / mois",
-          "annual": "1 790 € / an"
+          "monthly": "179 € HT/mois"
         },
         {
           "assets": "250 matériels",
-          "monthly": "411,50 € / mois",
-          "annual": "4 115 € / an"
+          "monthly": "411,50 € HT/mois"
         },
         {
           "assets": "500 matériels",
-          "monthly": "799 € / mois",
-          "annual": "7 990 € / an"
+          "monthly": "799 € HT/mois"
         },
         {
           "assets": "1 000 matériels",
-          "monthly": "1 399 € / mois",
-          "annual": "13 990 € / an"
-        },
-        {
-          "assets": "2 000 matériels",
-          "monthly": "2 199 € / mois",
-          "annual": "21 990 € / an"
+          "monthly": "1 399 € HT/mois"
         }
       ]
     },
     "included": {
-      "title": "Tout est inclus",
+      "title": "Inclus",
       "items": [
-        "Parc",
-        "Import Excel",
-        "QR et page publique de scan",
+        "Parc et import",
         "Sorties et retours de location",
-        "Clients",
-        "Rappel client",
-        "Échéances VGP",
-        "Inspections",
-        "Certificats",
-        "Alertes",
-        "Rapport de conformité",
-        "Audits",
-        "Équipes et permissions",
-        "Utilisateurs illimités",
-        "FR/EN"
+        "QR et page publique",
+        "Clients et rappels",
+        "VGP, inspections et certificats",
+        "Alertes et rapports",
+        "Utilisateurs illimités"
       ]
+    },
+    "scale": {
+      "title": "Votre parc dépasse 100 matériels ?",
+      "body": "Le tarif devient progressivement dégressif à mesure que votre parc grandit.",
+      "link": "Voir le barème complet"
+    },
+    "bareme": {
+      "title": "Barème complet",
+      "unit": "par matériel et par mois",
+      "quoteLabel": "2 000+",
+      "quoteValue": "sur devis"
+    },
+    "allIn": {
+      "title": "Un seul TraviXO.",
+      "body": "Les fonctions essentielles de parc, location, QR et conformité sont incluses dès le départ.",
+      "note": "Pas de module VGP à ajouter. Pas d'option QR à débloquer."
     }
   },
   "privacy": {
