@@ -66,16 +66,16 @@
     },
     "values": {
       "1": {
-        "title": "Upload Your File in 5 Minutes",
+        "title": "Upload Your Existing File",
         "text": "No need to clean up your export first. Inconsistent columns, blank cells, rough headers. We handle it. You upload, it starts."
       },
       "2": {
-        "title": "Print 500 QR Codes in 30 Seconds",
+        "title": "Generate QR Codes in Bulk",
         "text": "The print-ready PDF is generated immediately. Stick the codes on your equipment and you're live."
       },
       "3": {
-        "title": "Start Tracking Your Fleet the Same Day",
-        "text": "Where other setups take weeks, TraviXO typically lets you start tracking the same day."
+        "title": "Start Tracking as Soon as You Import",
+        "text": "There is no deployment project to run before you start. Tracking begins on your existing file, exactly as it is."
       }
     },
     "carousel": {
@@ -112,7 +112,7 @@
         "items": {
           "1": {
             "title": "File import",
-            "text": "You upload your file as it exists today. Columns are detected automatically. 500 assets can be imported in 5 minutes."
+            "text": "You upload your file as it exists today. Columns are detected automatically, with no re-entry one record at a time."
           },
           "2": {
             "title": "One QR code per machine",
@@ -176,7 +176,7 @@
       },
       "excel": {
         "title": "Centralise your compliance",
-        "body": "Your certificates are in one place, your dates in another, your history nowhere. Import your equipment list in 10 minutes. TraviXO connects it all: automatic alerts, centralised certificates, accessible history."
+        "body": "Your certificates are in one place, your dates in another, your history nowhere. Import your equipment list and TraviXO connects it all: automatic alerts, centralised certificates, history accessible from every record."
       }
     },
     "finalCta": {
@@ -201,7 +201,7 @@
         "item3": "Confirmation that the report has no outstanding remarks"
       },
       "result": "By the time you've gathered everything, the machine could already have been on its way.",
-      "insight": "If the documents were linked to the machine, the answer would take 30 seconds. Not half an hour."
+      "insight": "If the documents were linked to the machine, the answer would be immediate. Not a search through a shared folder."
     },
     "erpPositioning": {
       "title": "TraviXO does not replace your ERP.",
@@ -277,17 +277,17 @@
       "import": {
         "time": "5 min",
         "title": "Upload Any File",
-        "description": "500 assets imported in 5 minutes. No manual re-entry, one record at a time."
+        "description": "Import your existing file. No manual re-entry, one record at a time."
       },
       "bulk": {
         "time": "30 sec",
         "title": "Bulk QR Generation",
-        "description": "500 print-ready codes in 30 seconds. No clicking through assets one by one."
+        "description": "Print-ready codes generated in bulk. No clicking through assets one by one."
       },
       "deploy": {
         "time": "Hours",
         "title": "Fast Setup",
-        "description": "Tracking can start within hours of signup. Not 2 to 4 weeks later."
+        "description": "Tracking starts as soon as your file is imported, with no deployment project first."
       }
     },
     "availableNow": {
@@ -301,7 +301,7 @@
             "Generate codes with one click",
             "Compatible with standard adhesive labels",
             "Revoke codes if needed",
-            "Bulk PDF generation for 500+ codes"
+            "Bulk PDF generation"
           ]
         },
         "vgp": {
@@ -316,7 +316,7 @@
         },
         "excelImport": {
           "title": "Import Your Equipment List",
-          "description": "Upload your equipment file and start tracking in 5 minutes. Columns like Serial Number, Location, or Purchase Date are detected automatically, even if your headers are in French, abbreviated, or inconsistent.",
+          "description": "Upload your equipment file and start tracking. Columns like Serial Number, Location, or Purchase Date are detected automatically, even if your headers are in French, abbreviated, or inconsistent.",
           "items": [
             "Works with French and English column headers",
             "Handles imperfect data",
