@@ -12,12 +12,14 @@ bands) and above 2 000 assets pricing is on quote. FR is the source, EN mirrors
 it.
 
 This supersedes the previous ledger, which gated the 15-month Professional
-annual term (commits 527f7c2 and 09eb7e2). That term is deleted here, so the
-gates asserting it are not carried forward: G5 and G6 below replace their
-earlier namesakes, and the old G12 ("do not deploy until billing grants 15
-months") is void because the page no longer publishes a 15-month term. The
-i18n-leak work from that ledger is untouched by this revision and its gates
-still hold.
+annual term (commits 527f7c2 and 09eb7e2, merged in #22). That term is deleted
+here, so the gates asserting it are not carried forward: the old ledger's
+pricing gates are replaced by G1 and G2 below, and its final gate ("do not
+deploy until billing grants 15 months on an annual Professional subscription")
+is void, because the page no longer publishes a 15-month term at all. The
+i18n-leak work from that ledger is untouched by this revision, and G9 below
+re-runs its checks to confirm they still hold after both locales were
+rewritten.
 
 Shell: Git Bash (win32). CWD: d:/Dev/projects/travixo-web
 Build needs RESEND_API_KEY set to any non-empty value: app/api/contact/route.ts
@@ -56,54 +58,77 @@ it. Pre-existing, unrelated to this change.
 - [x] G5: Trial-length copy stays 30 days and agrees across locales
   CHECK: node scripts/check-trial-claims.mjs
   EXPECT: TRIAL_CLAIMS_4_3
-  EVIDENCE: carried forward from the previous ledger; the trial copy is
-  unchanged by this revision except for rewording within the same 30-day claim.
-  Re-run before merge.
+  EVIDENCE: exit=0; output=Advertised trial length: 30 days (both locales
+  agree) | TRIAL_CLAIMS_4_3. Re-run after the FAQ and CTA copy were rewritten
+  in both locales, not carried forward from the previous ledger. Note this
+  gates only that the site says 30 days consistently; whether provisioning
+  delivers 30 days is G11, and it is open.
 
-- [ ] G6: Production build compiles and prerenders every route
+- [x] G6: Production build compiles and prerenders every route
   CHECK: node scripts/build-check.mjs
   EXPECT: BUILD_OK
-  EVIDENCE: pending. Not run in this session: requires RESEND_API_KEY, which
-  is not available here. Must pass in CI or preview with the real environment
-  before merge.
+  EVIDENCE: exit=0; output=compiled, 43 static pages prerendered | BUILD_OK.
+  Run with RESEND_API_KEY supplied as an environment variable only; the key is
+  not stored in this repository.
 
-- [ ] G7: Rendered HTML carries the new pricing in each locale
+- [x] G7: Rendered HTML carries the new pricing in each locale
   CHECK: node scripts/check-rendered.mjs
   EXPECT: RENDERED_OK
-  EVIDENCE: pending, blocked by G6. The script's pricing cases were rewritten
-  for this model (the 15-month term and struck-12 markup assertions are gone,
-  replaced by per-locale assertions that 179 and the 2 000-asset example reach
-  the rendered page in that locale's number formatting). Those new assertions
-  have never executed against built HTML.
+  EVIDENCE: exit=0; output=6 page/locale combinations verified in built HTML |
+  RENDERED_OK. The script's pricing cases were rewritten for this model (the
+  15-month term and struck-12 markup assertions are gone, replaced by
+  per-locale assertions that 179 and the 2 000-asset example reach the rendered
+  page in that locale's number formatting). Those new assertions executed here
+  for the first time and passed.
 
-- [ ] G8: Stripe prices and checkout match the published model (app repo)
+- [x] G8: Built HTML independently inspected, not only self-certified
+  CHECK: read .next/server/app/{fr,en}/pricing.html, strip scripts and tags,
+  assert published figures present and retired ones absent
+  EXPECT: every new figure present, every retired figure and badge absent
+  EVIDENCE: FR carries 179, 1 790, 411,50, 2 199, 21 990, "Tout est inclus",
+  "Exemples de prix", "Au-delà de 100 matériels"; EN carries 179, 1,790,
+  411.50, 2,199, 21,990, "Everything is included", "Example prices", "Above 100
+  assets", each in that locale's number formatting. Neither page contains
+  5 880, 14 400, 28 800, 490, 1 200, "Le plus choisi", "Most Popular", "VGP
+  incluse", "VGP Included", "mois de service" or "months of service". Read
+  directly from the build output rather than through check-rendered.mjs, so
+  this does not depend on that script being correct.
+
+- [x] G9: The i18n leak fix still holds after both locales were rewritten
+  CHECK: node scripts/check-i18n-leak.mjs; node scripts/check-i18n-leak.mjs --links
+  EXPECT: I18N_LEAK_OK; LINKS_OK
+  EVIDENCE: exit=0 for both; output=I18N_LEAK_OK (no hardcoded literals at
+  English-visible call sites) | LINKS_OK (2 English-visible inbound links
+  present).
+
+- [ ] G10: Stripe prices and checkout match the published model (app repo)
   EVIDENCE: pending, not gateable here.
 
-- [ ] G9: Backend trial interval is 30 days (app repo)
+- [ ] G11: Backend trial interval is 30 days (app repo)
   EVIDENCE: pending.
 
-- [ ] G10: Site appears in search results
+- [ ] G12: Site appears in search results
   EVIDENCE: pending.
 
-- [ ] G11: Published speed claims are sourced
+- [ ] G13: Published speed claims are sourced
   EVIDENCE: pending.
 
-ABANDON: G8 Stripe cannot be gated from this repository. The web repo contains
+ABANDON: G10 Stripe cannot be gated from this repository. The web repo contains
 no Stripe code, no price IDs and no checkout: SIGNUP_URL is `${APP_URL}/signup`,
 a plain outbound link. Confirmed by grep across the tree. The new price points
 must exist as Stripe prices, and checkout must charge them, before this page
 publishes them. Handoff: verify in the app repo, per the user's own merge gate.
 
-ABANDON: G9 Backend trial interval cannot be gated from this repository. That
+ABANDON: G11 Backend trial interval cannot be gated from this repository. That
 code lives in the app repo. The previous session recorded 30 days verified live
 against the production database, but the user has since flagged trial
 provisioning as needing a fix before merge, so this reopens as a handoff rather
 than a settled item.
 
-ABANDON: G10 Search visibility is not a property of this codebase. It depends
+ABANDON: G12 Search visibility is not a property of this codebase. It depends
 on external index state and elapsed time. No honest local oracle exists.
 
-ABANDON: G11 Speed claims ("500 materiels en 5 minutes", "500 codes en 30
+ABANDON: G13 Speed claims ("500 materiels en 5 minutes", "500 codes en 30
 secondes", "Skip 2 to 4 weeks") cannot be measured from the marketing repo:
 they describe product behaviour in the app repo, and the comparison-table row
 also makes a claim about competitors. This revision does not touch, restate or
