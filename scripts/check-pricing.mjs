@@ -1,25 +1,26 @@
 #!/usr/bin/env node
 /**
- * Guards the pricing card against the drift class that produced the 30-vs-15
- * trial discrepancy: a number published on the site that nothing keeps true.
+ * Guards the published pricing against the drift class that produced the
+ * 30-vs-15 trial discrepancy: a number published on the site that nothing
+ * keeps true.
  *
- * Two distinct hazards, because prices and copy live in different files.
+ * The four-tier grid is gone, and with it the two assumptions the previous
+ * version of this script enforced: that every annual figure was 12x its
+ * monthly, and that exactly one card carried a longer service term. Both were
+ * properties of a commercial model that no longer exists, so asserting them
+ * now would fail the correct tree.
  *
- * 1. Prices are hardcoded in pricing/page.tsx JSX, NOT in messages/*.json.
- *    Only the units (/an, /mois, ou) are translated. So a price edited on one
- *    card, or an annual figure that stops being 12x its monthly, is invisible
- *    to any i18n parity check. Checked here arithmetically, from source.
+ * What replaces them is arithmetic the new model actually claims:
  *
- * 2. The annual term and the rate note ARE in messages/*.json and must exist
- *    in both locales. A key present in fr and missing in en renders a raw key
- *    path to an English visitor.
+ * 1. The base rate is 179 EUR HT per month, 100 assets included.
+ * 2. Above 100 assets a graduated rate applies, and every worked example on
+ *    the page must equal what that grid computes. An example edited by hand,
+ *    or a band rate changed without its examples, fails here.
+ * 3. Annual is exactly 10x monthly (two months offered), on the base rate and
+ *    on every example alike.
  *
- * The term is deliberately Professional-only: Starter gates VGP tracking
- * behind an upgrade, so a long term there parks a customer on the tier that
- * cannot deliver the product's point; Business and Enterprise route through a
- * demo, where the term is worth more conceded in conversation than printed.
- * If it ever appears on another card that is a pricing decision, so this fails
- * until EXPECTED_TERM_CARDS is updated to match.
+ * Prices now live in messages/*.json rather than hardcoded in the page JSX,
+ * so this reads them from the same place the page does.
  *
  * Run with --self-test to prove the checker can fail: it mutates an in-memory
  * copy of each input and asserts every rule rejects it.
@@ -30,89 +31,224 @@ import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
-const PAGE = join(ROOT, "app", "[locale]", "pricing", "page.tsx");
 
-/** Annual / monthly pairs as published, in card order. */
-const EXPECTED_PLANS = [
-  { name: "Starter", annual: 5880, monthly: 490 },
-  { name: "Professional", annual: 14400, monthly: 1200 },
-  { name: "Business", annual: 28800, monthly: 2400 },
+/** Base rate, in euros HT per month, and the assets it includes. */
+const BASE_MONTHLY = 179;
+const BASE_ASSETS = 100;
+
+/** Annual is two months offered: ten monthly payments, not twelve. */
+const ANNUAL_MULTIPLIER = 10;
+
+/**
+ * The graduated bands above BASE_ASSETS, as published. `upTo` is inclusive.
+ * Kept here rather than parsed from copy: this is the model the copy is
+ * checked against, so it has to be stated independently of it.
+ */
+const BANDS = [
+  { upTo: 500, rate: 1.55 },
+  { upTo: 1000, rate: 1.2 },
+  { upTo: 2000, rate: 0.8 },
 ];
 
-/** Cards that should carry the longer annual term. */
-const EXPECTED_TERM_CARDS = 1;
+/** Every worked example the page shows, as (assets, monthly, annual). */
+const EXPECTED_EXAMPLES = [
+  { assets: 100, monthly: 179, annual: 1790 },
+  { assets: 250, monthly: 411.5, annual: 4115 },
+  { assets: 500, monthly: 799, annual: 7990 },
+  { assets: 1000, monthly: 1399, annual: 13990 },
+  { assets: 2000, monthly: 2199, annual: 21990 },
+];
 
-/** Prices render as `€14 400`, with a plain or non-breaking space. */
-const priceNumbers = (src) =>
-  [...src.matchAll(/€\s?([\d   ]{3,})/g)].map((m) =>
-    Number(m[1].replace(/[^\d]/g, ""))
-  );
-
-/**
- * Counts term blocks by termTo, the "15" itself. termFrom and termUnit always
- * accompany it, so one key is enough to count cards without triple-counting.
- */
-const termUses = (src) => [...src.matchAll(/t\(['"]billing\.termTo['"]\)/g)].length;
-const noteUses = (src) => [...src.matchAll(/t\(['"]billing\.note['"]\)/g)].length;
+/** Figures from the retired four-tier model. None may reappear anywhere. */
+const RETIRED_FIGURES = [490, 1200, 2400, 5880, 14400, 28800];
 
 /**
- * Every rule, as a pure function of its inputs, so the self-test can feed it
- * deliberately broken inputs without touching the working tree.
+ * Wording from the retired model, in either locale.
+ *
+ * Checked against the pricing namespace and the landing copy, NOT against the
+ * whole message file. "Developpe a la demande" also labels unbuilt features on
+ * the features page, where it is a shipping-status claim rather than a pricing
+ * one: banning it outright there would quietly promote unshipped features to
+ * shipped, which is the opposite of what this script exists to prevent.
  */
-function check({ page, messages }, fail) {
-  const found = priceNumbers(page);
+const RETIRED_WORDING = [
+  "Most Popular",
+  "Le plus choisi",
+  "VGP Included",
+  "VGP incluse",
+  "Everything in",
+  "Tout le contenu de",
+  "built on demand",
+  "Built on demand",
+  "Développé à la demande",
+  "mois de service",
+  "months of service",
+];
 
-  for (const plan of EXPECTED_PLANS) {
-    if (!found.includes(plan.annual)) {
-      fail(`${plan.name}: annual €${plan.annual} not found on the page`);
+/**
+ * The monthly rate the published grid computes for a given asset count.
+ * Marginal, not flat: each band applies only to the assets that fall inside
+ * it, which is what "+1,55 par materiel" means on the page.
+ */
+function computeMonthly(assets) {
+  let total = BASE_MONTHLY;
+  let counted = BASE_ASSETS;
+  for (const band of BANDS) {
+    if (assets <= counted) break;
+    const inBand = Math.min(assets, band.upTo) - counted;
+    total += inBand * band.rate;
+    counted += inBand;
+  }
+  return Math.round(total * 100) / 100;
+}
+
+/**
+ * Euro figures appearing in a string, as numbers. Both locales' conventions,
+ * because the same rule runs over fr.json and en.json:
+ *
+ *   FR  "1 790 €" -> 1790     (space thousands, comma decimal)
+ *   FR  "411,50 €" -> 411.5
+ *   EN  "1,790 € / yr" -> 1790  (comma thousands, dot decimal)
+ *   EN  "411.50 € / mo" -> 411.5
+ *
+ * A comma is a thousands separator only when followed by exactly three digits
+ * that are not themselves followed by another digit; otherwise it is a decimal
+ * comma. Reading EN "1,790" as 1.79 is exactly the failure this disambiguates.
+ */
+const euroFigures = (s) =>
+  [...s.matchAll(/([\d][\d  .,]*)\s*€/g)].map((m) => {
+    const cleaned = m[1]
+      .replace(/[  ]/g, "")
+      .replace(/,(\d{3})(?!\d)/g, "$1")
+      .replace(",", ".");
+    return Number(cleaned);
+  });
+
+function check({ messages, page, landing }, fail) {
+  for (const [locale, data] of Object.entries(messages)) {
+    const pricing = data?.pricing;
+    if (!pricing) {
+      fail(`messages/${locale}.json: pricing namespace missing`);
       continue;
     }
-    if (!found.includes(plan.monthly)) {
-      fail(`${plan.name}: monthly €${plan.monthly} not found on the page`);
-      continue;
-    }
-    if (plan.annual !== plan.monthly * 12) {
+
+    // 1. The base rate, as published on the card.
+    const cardMonthly = euroFigures(String(pricing.card?.monthly ?? ""));
+    if (!cardMonthly.includes(BASE_MONTHLY)) {
       fail(
-        `${plan.name}: annual €${plan.annual} != 12 x €${plan.monthly} ` +
-          `(= €${plan.monthly * 12}). One of the two was edited alone.`
+        `messages/${locale}.json: card.monthly is "${pricing.card?.monthly}", ` +
+          `expected the base rate of ${BASE_MONTHLY} EUR`
+      );
+    }
+
+    // 2. Annual is 10x monthly, stated on the card itself.
+    const cardAnnual = euroFigures(String(pricing.card?.annual ?? ""));
+    const expectedAnnual = BASE_MONTHLY * ANNUAL_MULTIPLIER;
+    if (!cardAnnual.includes(expectedAnnual)) {
+      fail(
+        `messages/${locale}.json: card.annual is "${pricing.card?.annual}", ` +
+          `expected ${expectedAnnual} (= ${BASE_MONTHLY} x ${ANNUAL_MULTIPLIER})`
+      );
+    }
+
+    // 3. Every worked example matches the grid, monthly and annual alike.
+    const items = pricing.examples?.items ?? [];
+    if (items.length !== EXPECTED_EXAMPLES.length) {
+      fail(
+        `messages/${locale}.json: ${items.length} pricing example(s), ` +
+          `expected ${EXPECTED_EXAMPLES.length}`
+      );
+    }
+    for (const expected of EXPECTED_EXAMPLES) {
+      const computed = computeMonthly(expected.assets);
+      if (computed !== expected.monthly) {
+        fail(
+          `the published grid computes ${computed} EUR/mo for ${expected.assets} ` +
+            `assets, but the example claims ${expected.monthly}. ` +
+            `A band rate and its examples have gone out of step.`
+        );
+      }
+      if (expected.monthly * ANNUAL_MULTIPLIER !== expected.annual) {
+        fail(
+          `${expected.assets} assets: annual ${expected.annual} != ` +
+            `${ANNUAL_MULTIPLIER} x ${expected.monthly} ` +
+            `(= ${expected.monthly * ANNUAL_MULTIPLIER})`
+        );
+      }
+
+      const row = items.find((i) =>
+        euroFigures(String(i.monthly ?? "")).includes(expected.monthly)
+      );
+      if (!row) {
+        fail(
+          `messages/${locale}.json: no example showing ${expected.monthly} EUR/mo ` +
+            `for ${expected.assets} assets`
+        );
+        continue;
+      }
+      if (!euroFigures(String(row.annual ?? "")).includes(expected.annual)) {
+        fail(
+          `messages/${locale}.json: example at ${expected.monthly} EUR/mo shows ` +
+            `annual "${row.annual}", expected ${expected.annual}`
+        );
+      }
+    }
+
+    // 4. The included list is audit-verified and closed. Anything added here
+    //    is a claim about shipped functionality, so it fails until reviewed.
+    const includedCount = (pricing.included?.items ?? []).length;
+    if (includedCount !== 15) {
+      fail(
+        `messages/${locale}.json: included list has ${includedCount} entries, ` +
+          `expected the 15 audit-verified ones. Extending it is a product claim.`
       );
     }
   }
 
+  // 5. No figure or wording from the retired four-tier model survives, in
+  //    messages or in the page and landing copy.
+  const sources = { page, ...landing };
   for (const [locale, data] of Object.entries(messages)) {
-    const billing = data?.pricing?.billing ?? {};
-    for (const key of ["termFrom", "termTo", "termUnit", "note"]) {
-      if (!billing[key] || !String(billing[key]).trim()) {
-        fail(`messages/${locale}.json: pricing.billing.${key} missing or empty`);
+    // The pricing namespace only: see RETIRED_WORDING above.
+    sources[`messages/${locale}.json (pricing)`] = JSON.stringify(data?.pricing ?? {});
+  }
+  for (const [where, src] of Object.entries(sources)) {
+    for (const figure of RETIRED_FIGURES) {
+      const spaced = String(figure).replace(/\B(?=(\d{3})+(?!\d))/g, "[  ]?");
+      if (new RegExp(`${spaced}\\s*€|€\\s*${spaced}`).test(src)) {
+        fail(`${where}: retired price ${figure} EUR still present`);
       }
     }
-  }
-
-  const terms = termUses(page);
-  if (terms !== EXPECTED_TERM_CARDS) {
-    fail(
-      `the annual term block rendered on ${terms} card(s), expected ${EXPECTED_TERM_CARDS}. ` +
-        `Putting it on another tier is a pricing decision: update EXPECTED_TERM_CARDS.`
-    );
-  }
-
-  const notes = noteUses(page);
-  if (notes !== 1) {
-    fail(`billing.note rendered ${notes} times, expected exactly 1 (below the grid)`);
+    for (const phrase of RETIRED_WORDING) {
+      if (src.includes(phrase)) {
+        fail(`${where}: retired wording "${phrase}" still present`);
+      }
+    }
   }
 }
 
 function readInputs() {
+  const landingFiles = {
+    "content/landing/fr/logiciel-vgp.ts": join(ROOT, "content", "landing", "fr", "logiciel-vgp.ts"),
+    "content/landing/fr/logiciel-loueur-materiel.ts": join(ROOT, "content", "landing", "fr", "logiciel-loueur-materiel.ts"),
+    "content/landing/fr/logiciel-gestion-parc-materiel.ts": join(ROOT, "content", "landing", "fr", "logiciel-gestion-parc-materiel.ts"),
+    "content/landing/en/equipment-fleet-management-software.ts": join(ROOT, "content", "landing", "en", "equipment-fleet-management-software.ts"),
+    "content/landing/en/equipment-rental-software.ts": join(ROOT, "content", "landing", "en", "equipment-rental-software.ts"),
+  };
+  const landing = {};
+  for (const [label, path] of Object.entries(landingFiles)) {
+    landing[label] = readFileSync(path, "utf8");
+  }
   return {
-    page: readFileSync(PAGE, "utf8"),
+    page: readFileSync(join(ROOT, "app", "[locale]", "pricing", "page.tsx"), "utf8"),
     messages: {
       en: JSON.parse(readFileSync(join(ROOT, "messages", "en.json"), "utf8")),
       fr: JSON.parse(readFileSync(join(ROOT, "messages", "fr.json"), "utf8")),
     },
+    landing,
   };
 }
 
-/** Run `check` against inputs and return the failures it produced. */
 function failuresFor(inputs) {
   const out = [];
   check(inputs, (m) => out.push(m));
@@ -127,37 +263,56 @@ if (process.argv.includes("--self-test")) {
   const base = readInputs();
   const cases = [
     {
-      name: "annual price decoupled from monthly",
+      name: "base monthly rate changed on the card",
       mutate: (i) => {
-        i.page = i.page.replace("€14 400", "€13 000");
+        i.messages.fr.pricing.card.monthly = "199 € HT";
       },
     },
     {
-      name: "term key removed from fr",
+      name: "annual no longer 10x monthly",
       mutate: (i) => {
-        delete i.messages.fr.pricing.billing.termTo;
+        i.messages.fr.pricing.card.annual = "2 148 € HT";
       },
     },
     {
-      name: "note key blanked in en",
+      name: "a worked example edited by hand",
       mutate: (i) => {
-        i.messages.en.pricing.billing.note = "   ";
+        i.messages.fr.pricing.examples.items[2].monthly = "850 € / mois";
       },
     },
     {
-      name: "term added to a second card",
+      name: "an example's annual decoupled from its monthly",
       mutate: (i) => {
-        i.page = i.page.replace(
-          "{t('billing.termTo')}",
-          "{t('billing.termTo')}{t('billing.termTo')}"
-        );
+        i.messages.fr.pricing.examples.items[1].annual = "4 500 € / an";
+      },
+    },
+    {
+      name: "included list extended with an unshipped feature",
+      mutate: (i) => {
+        i.messages.fr.pricing.included.items.push("Rapport hebdomadaire");
+      },
+    },
+    {
+      name: "a retired tier price reappears in landing copy",
+      mutate: (i) => {
+        i.landing["content/landing/fr/logiciel-vgp.ts"] += "\n// 490 €/mois\n";
+      },
+    },
+    {
+      name: "retired popularity badge reappears on the page",
+      mutate: (i) => {
+        i.page += "\n// Most Popular\n";
       },
     },
   ];
 
   let ok = true;
   for (const c of cases) {
-    const mutated = { page: base.page, messages: clone(base.messages) };
+    const mutated = {
+      page: base.page,
+      messages: clone(base.messages),
+      landing: { ...base.landing },
+    };
     c.mutate(mutated);
     const caught = failuresFor(mutated).length;
     if (caught === 0) {
@@ -184,8 +339,12 @@ const failures = failuresFor(readInputs());
 for (const f of failures) console.error(`FAIL ${f}`);
 if (failures.length > 0) process.exit(1);
 
-for (const p of EXPECTED_PLANS) {
-  console.log(`  ${p.name.padEnd(13)} €${p.annual}/yr = 12 x €${p.monthly}/mo`);
+console.log(`  base           ${BASE_MONTHLY} EUR/mo, ${BASE_ASSETS} assets included`);
+console.log(`  annual         ${BASE_MONTHLY * ANNUAL_MULTIPLIER} EUR/yr = ${ANNUAL_MULTIPLIER} x monthly`);
+for (const e of EXPECTED_EXAMPLES) {
+  console.log(
+    `  ${String(e.assets).padStart(5)} assets  ${String(e.monthly).padStart(8)} EUR/mo  ` +
+      `${String(e.annual).padStart(6)} EUR/yr  (grid: ${computeMonthly(e.assets)})`
+  );
 }
-console.log(`  term on ${EXPECTED_TERM_CARDS} card (Professional), note rendered once`);
 console.log("PRICING_OK");

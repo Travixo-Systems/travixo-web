@@ -17,8 +17,8 @@
       "description": "Importez votre parc, générez les QR codes, suivez le matériel sur le terrain et gérez la conformité VGP sans bricolage entre vos systèmes."
     },
     "pricing": {
-      "title": "Tarifs - Suivi de matériel TraviXO",
-      "description": "Suivi de matériel et conformité VGP à partir de 490 €/mois. Quatre offres, du dépôt unique au multi-sites. Essai de 30 jours, sans carte bancaire."
+      "title": "Tarifs - Traçabilité et conformité du matériel loué | TraviXO",
+      "description": "Traçabilité et conformité du matériel loué à partir de 179 € HT par mois, 100 matériels inclus et utilisateurs illimités. Essai de 30 jours, sans carte bancaire."
     },
     "privacy": {
       "title": "Politique de confidentialité - TraviXO",
@@ -382,9 +382,9 @@
     },
     "enterprise": {
       "title": "Développements sur mesure",
-      "subtitle": "Intégration et développements spécifiques pour les clients Enterprise",
+      "subtitle": "Intégration et développements spécifiques pour les grands parcs",
       "note": "Comprend un service d'intégration et de développement adapté à vos besoins",
-      "cta": "Parler de vos besoins Enterprise",
+      "cta": "Parler de vos besoins",
       "features": {
         "customIntegrations": {
           "title": "Intégrations sur mesure",
@@ -463,17 +463,14 @@
   },
   "pricing": {
     "hero": {
-      "title": "Gardez vos VGP sous contrôle",
-      "subtitle": "Un manquement aux obligations périodiques de vérification peut exposer l'entreprise à des sanctions. TraviXO automatise le suivi de conformité de votre parc en France."
+      "category": "Traçabilité et conformité du matériel loué",
+      "title": "Un tarif qui dépend de votre parc, pas du nombre d'utilisateurs",
+      "subtitle": "Toutes les fonctionnalités sont incluses. Utilisateurs illimités."
     },
     "billing": {
       "year": "an",
       "month": "mois",
-      "or": "ou",
-      "note": "Tarifs susceptibles d'évoluer.",
-      "termFrom": "12",
-      "termTo": "15",
-      "termUnit": "mois de service"
+      "note": "Tarifs susceptibles d'évoluer."
     },
     "comparison": {
       "title": "Pourquoi TraviXO ?",
@@ -509,108 +506,36 @@
         }
       }
     },
-    "plans": {
-      "popular": "Le plus choisi",
-      "vgpIncluded": "VGP incluse",
-      "starter": {
-        "name": "Starter",
-        "subtitle": "Structurez votre parc avant d'activer le suivi VGP",
-        "features": {
-          "assets": "Jusqu'à 100 matériels",
-          "excel": "Import de n'importe quel fichier",
-          "qr": "Génération QR en masse",
-          "scan": "Scan avec n'importe quel téléphone",
-          "support": "Support e-mail",
-          "noVgp": "Le suivi VGP est disponible en passant sur Professional"
-        }
-      },
-      "professional": {
-        "name": "Professional",
-        "subtitle": "Conformité complète et gestion du parc",
-        "features": {
-          "vgp": "Suivi VGP automatisé",
-          "assets": "Jusqu'à 500 matériels",
-          "starter": "Tout le contenu de Starter, plus :",
-          "multiSite": "Gestion multi-sites",
-          "audit": "Rapports prêts pour inspection DREETS",
-          "integration": "Export CSV de la liste du parc et de l'historique VGP",
-          "support": "Support prioritaire",
-          "teamManagement": "Gestion d'équipe",
-          "emailAlerts": "Alertes e-mail"
-        }
-      },
-      "business": {
-        "name": "Business",
-        "subtitle": "Pour les structures intermédiaires avec accompagnement renforcé",
-        "features": {
-          "assets": "Jusqu'à 2 000 matériels",
-          "professional": "Tout le contenu de Professional +",
-          "vgpPriority": "VGP + accompagnement conformité prioritaire",
-          "integrations": "Compatible SAGE, EBP, Cegid sur demande",
-          "manager": "Interlocuteur dédié",
-          "sla": "SLA 24 h garanti",
-          "advancedReporting": "Reporting avancé",
-          "apiAccess": "Accès API"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Sur devis",
-        "annual": "",
-        "subtitle": "Pour les grands parcs avec exigences de conformité renforcées",
-        "note": "Comprend intégration et développements spécifiques",
-        "features": {
-          "unlimited": "Matériels illimités",
-          "vgpDedicated": "VGP + équipe conformité dédiée",
-          "support": "Support 24/7",
-          "customIntegrations": "Intégrations sur mesure SAGE, SAP, Cegid",
-          "whiteLabel": "Marque blanche",
-          "onPremise": "Déploiement sur votre infrastructure",
-          "sla": "SLA 99,9 % et plus"
-        }
-      },
-      "extensions": {
-        "title": "Extensions disponibles ▼",
-        "starterAssets": "Pack matériels supplémentaires (+100 €/mois)",
-        "predictive": "Maintenance prédictive (+300 €/mois)",
-        "erp": "Intégration ERP (+2 500 € de mise en place)",
-        "sla": "SLA support 24 h (+400 €/mois)",
-        "advancedAnalytics": "Analytique prédictive avancée (+300 €/mois)",
-        "multiErp": "Plusieurs intégrations ERP (sur devis)"
-      }
-    },
-    "status": {
-      "comingQ1": "T1 2026",
-      "comingQ2": "T2 2026",
-      "builtOnDemand": "Développé à la demande"
-    },
     "cta": {
-      "start": "Lancer l'essai gratuit",
-      "demo": "Réserver une démo",
-      "contact": "Nous contacter"
+      "start": "Essayer 30 jours",
+      "contact": "Parler à un commercial"
     },
     "faq": {
       "title": "Questions fréquentes",
       "questions": [
         {
-          "question": "Pourquoi le suivi VGP n'est-il pas inclus dans l'offre Starter ?",
-          "answer": "L'offre Starter est prévue pour le suivi de base du parc. Le pilotage VGP demande des fonctions plus avancées comme la planification des contrôles, la gestion des certificats et les rapports d'inspection. Elles sont disponibles à partir de l'offre Professional. Pour un loueur de matériel en France, c'est généralement l'offre à retenir."
+          "question": "Comment le tarif est-il calculé ?",
+          "answer": "Le tarif dépend du nombre de matériels suivis, pas du nombre d'utilisateurs. La base est de 179 € HT par mois et comprend 100 matériels. Au-delà, chaque matériel supplémentaire est facturé selon une grille dégressive : 1,55 € de 101 à 500, 1,20 € de 501 à 1 000, puis 0,80 € de 1 001 à 2 000, par matériel et par mois. Au-delà de 2 000 matériels, le tarif est établi sur devis."
         },
         {
-          "question": "Quelle différence entre facturation mensuelle et annuelle ?",
-          "answer": "Les tarifs sont identiques en facturation mensuelle ou annuelle. Les conditions de conversion à l'issue d'un pilote sont définies ensemble."
+          "question": "Quelle différence entre le mensuel et l'annuel ?",
+          "answer": "L'abonnement annuel correspond à dix fois le tarif mensuel : 1 790 € HT par an pour la base, soit deux mois offerts. La grille dégressive s'applique de la même manière, également à dix fois le montant mensuel. En mensuel, l'abonnement est sans engagement."
         },
         {
-          "question": "Puis-je changer d'offre à tout moment ?",
-          "answer": "Oui, vous pouvez monter d'offre à tout moment. Les passages à une offre inférieure sont possibles à la fin de la période annuelle. Contactez-nous pour voir votre cas précis."
+          "question": "Combien d'utilisateurs puis-je créer ?",
+          "answer": "Autant que nécessaire. Les utilisateurs sont illimités, quel que soit le nombre de matériels suivis. Les équipes et les permissions sont comprises."
         },
         {
-          "question": "Les extensions sont-elles compatibles avec toutes les offres ?",
-          "answer": "Le pack de matériels supplémentaires est disponible sur toutes les offres. Les autres extensions, comme la maintenance prédictive, les intégrations ERP ou le SLA prioritaire, nécessitent l'offre Professional ou supérieure."
+          "question": "Toutes les fonctionnalités sont-elles comprises ?",
+          "answer": "Oui. Il n'y a qu'un seul produit et aucune fonctionnalité n'est réservée à un niveau supérieur. Le suivi du parc, l'import Excel, les QR codes, les sorties et retours de location, les échéances VGP, les inspections, les certificats, les alertes, le rapport de conformité et les audits sont compris dans le tarif de base."
+        },
+        {
+          "question": "Que se passe-t-il si mon parc dépasse 2 000 matériels ?",
+          "answer": "Au-delà de 2 000 matériels, nous établissons un devis adapté à votre parc. Contactez-nous pour en discuter."
         },
         {
           "question": "Proposez-vous une période d'essai ?",
-          "answer": "Oui. Toutes les offres peuvent être testées pendant 30 jours avec accès complet aux fonctionnalités. Aucune carte bancaire n'est demandée au démarrage."
+          "answer": "Oui. TraviXO peut être testé pendant 30 jours avec accès complet aux fonctionnalités. Aucune carte bancaire n'est demandée au démarrage."
         }
       ]
     },
@@ -618,6 +543,83 @@
       "title": "Prêt à sécuriser votre conformité ?",
       "subtitle": "N'attendez pas le prochain contrôle pour découvrir vos écarts. Essayez TraviXO gratuitement pendant 30 jours.",
       "button": "Lancer l'essai gratuit"
+    },
+    "card": {
+      "name": "TraviXO",
+      "monthly": "179 € HT",
+      "included": "100 matériels inclus",
+      "annual": "1 790 € HT",
+      "annualBadge": "2 mois offerts",
+      "noCommitment": "Sans engagement en mensuel",
+      "tiersTitle": "Au-delà de 100 matériels",
+      "tiersUnit": "par matériel et par mois",
+      "quoteLabel": "Plus de 2 000",
+      "quoteValue": "Sur devis"
+    },
+    "tiers": [
+      {
+        "range": "101 à 500",
+        "rate": "+1,55 €"
+      },
+      {
+        "range": "501 à 1 000",
+        "rate": "+1,20 €"
+      },
+      {
+        "range": "1 001 à 2 000",
+        "rate": "+0,80 €"
+      }
+    ],
+    "examples": {
+      "title": "Exemples de prix",
+      "note": "Tous les prix sont indiqués HT.",
+      "items": [
+        {
+          "assets": "100 matériels",
+          "monthly": "179 € / mois",
+          "annual": "1 790 € / an"
+        },
+        {
+          "assets": "250 matériels",
+          "monthly": "411,50 € / mois",
+          "annual": "4 115 € / an"
+        },
+        {
+          "assets": "500 matériels",
+          "monthly": "799 € / mois",
+          "annual": "7 990 € / an"
+        },
+        {
+          "assets": "1 000 matériels",
+          "monthly": "1 399 € / mois",
+          "annual": "13 990 € / an"
+        },
+        {
+          "assets": "2 000 matériels",
+          "monthly": "2 199 € / mois",
+          "annual": "21 990 € / an"
+        }
+      ]
+    },
+    "included": {
+      "title": "Tout est inclus",
+      "items": [
+        "Parc",
+        "Import Excel",
+        "QR et page publique de scan",
+        "Sorties et retours de location",
+        "Clients",
+        "Rappel client",
+        "Échéances VGP",
+        "Inspections",
+        "Certificats",
+        "Alertes",
+        "Rapport de conformité",
+        "Audits",
+        "Équipes et permissions",
+        "Utilisateurs illimités",
+        "FR/EN"
+      ]
     }
   },
   "privacy": {
@@ -873,7 +875,7 @@
       "paragraph1": "Nous faisons le nécessaire pour fournir des Services fiables, sans garantir un accès ininterrompu. Les Services sont fournis en l'état et selon disponibilité. Des opérations de maintenance peuvent affecter temporairement leur accessibilité, avec information préalable lorsque cela est possible.",
       "sla": {
         "title": "Accord de niveau de service (SLA) :",
-        "content": "Les clients Enterprise bénéficient d'un SLA de disponibilité de 99,9 % selon les termes prévus dans leur contrat. Les autres offres n'incluent pas de SLA."
+        "content": "Un SLA de disponibilité peut être prévu contractuellement pour les grands parcs, selon les termes convenus. À défaut de stipulation contraire dans votre contrat, l'abonnement standard n'inclut pas de SLA."
       }
     },
     "section10": {

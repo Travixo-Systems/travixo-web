@@ -74,14 +74,43 @@ const CASES = [
   {
     file: join("en", "pricing.html"),
     label: "EN pricing",
-    present: ["15 months of service", "Rates subject to change"],
-    absent: ["15 mois de service", "billing.term", "billing.note"],
+    present: [
+      "Everything is included",
+      "Example prices",
+      "Above 100 assets",
+      "Rates subject to change",
+    ],
+    absent: [
+      "Tout est inclus",
+      "billing.note",
+      "card.monthly",
+      "examples.title",
+      "included.title",
+      // The retired four-tier model, in either locale.
+      "Most Popular",
+      "VGP Included",
+      "months of service",
+    ],
   },
   {
     file: join("fr", "pricing.html"),
     label: "FR pricing",
-    present: ["15 mois de service", "Tarifs susceptibles d"],
-    absent: ["15 months of service", "billing.term", "billing.note"],
+    present: [
+      "Tout est inclus",
+      "Exemples de prix",
+      "Au-delà de 100 matériels",
+      "Tarifs susceptibles d",
+    ],
+    absent: [
+      "Everything is included",
+      "billing.note",
+      "card.monthly",
+      "examples.title",
+      "included.title",
+      "Le plus choisi",
+      "VGP incluse",
+      "mois de service",
+    ],
   },
 ];
 
@@ -105,24 +134,25 @@ if (enHome && /href="\/en\/logiciel-vgp/.test(enHome)) {
   fail("EN home links to /en/logiciel-vgp: the hasRoute guard stopped working");
 }
 
-// The term belongs to Professional alone.
-const enPricing = html(join("en", "pricing.html"));
-if (enPricing) {
-  const hits = (visible(enPricing).match(/15 months of service/g) ?? []).length;
-  if (hits !== 1) fail(`EN pricing renders the term ${hits} times, expected exactly 1`);
-}
-
-// The 12 must actually render struck through. Asserted on the markup rather
-// than the text, because a bare "12" also occurs inside €1 200 and would pass
-// a substring check while the strike-through silently disappeared.
-for (const [label, file] of [
-  ["EN pricing", join("en", "pricing.html")],
-  ["FR pricing", join("fr", "pricing.html")],
+// The published figures must reach the rendered page, not just the message
+// file. A t() call resolving to a raw key path still produces valid HTML, so
+// source-level checks alone cannot catch it.
+//
+// The base rate and the top worked example are asserted per locale, in that
+// locale's number formatting: FR groups thousands with a space, EN with a
+// comma, and reading one page with the other's convention is the drift this
+// catches.
+for (const [label, file, needles] of [
+  ["EN pricing", join("en", "pricing.html"), ["179", "2,199", "21,990"]],
+  ["FR pricing", join("fr", "pricing.html"), ["179", "2 199", "21 990"]],
 ]) {
   const src = html(file);
   if (!src) continue;
-  if (!/line-through[^"]*"[^>]*>\s*12\s*</.test(src)) {
-    fail(`${label}: the 12 is not rendered with line-through`);
+  const text = visible(src);
+  for (const needle of needles) {
+    if (!text.includes(needle)) {
+      fail(`${label}: published figure "${needle}" is not in the rendered page`);
+    }
   }
 }
 

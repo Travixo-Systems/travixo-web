@@ -17,8 +17,8 @@
       "description": "Import your fleet, generate QR codes, track equipment in the field, and manage VGP compliance without patching between systems."
     },
     "pricing": {
-      "title": "Pricing - TraviXO Equipment Tracking",
-      "description": "Equipment tracking with VGP compliance from €490/month. Four plans from single-depot fleets to multi-site operations. 30-day trial, no card required."
+      "title": "Pricing - Rented equipment traceability and compliance | TraviXO",
+      "description": "Traceability and compliance for rented equipment from 179 EUR excl. VAT per month, 100 assets included and unlimited users. 30-day trial, no card required."
     },
     "privacy": {
       "title": "Privacy Policy - TraviXO",
@@ -463,17 +463,14 @@
   },
   "pricing": {
     "hero": {
-      "title": "Keep Your VGP Under Control",
-      "subtitle": "Failure to meet periodic inspection obligations can expose a company to penalties. TraviXO automates compliance tracking for your fleet in France."
+      "category": "Rented equipment traceability and compliance",
+      "title": "Pricing that follows your fleet, not your headcount",
+      "subtitle": "Every feature is included. Unlimited users."
     },
     "billing": {
       "year": "year",
       "month": "mo",
-      "or": "or",
-      "note": "Rates subject to change.",
-      "termFrom": "12",
-      "termTo": "15",
-      "termUnit": "months of service"
+      "note": "Rates subject to change."
     },
     "comparison": {
       "title": "Why TraviXO?",
@@ -509,108 +506,36 @@
         }
       }
     },
-    "plans": {
-      "popular": "Most Popular",
-      "vgpIncluded": "VGP Included",
-      "starter": {
-        "name": "Starter",
-        "subtitle": "Structure your fleet before activating VGP tracking",
-        "features": {
-          "assets": "Up to 100 assets",
-          "excel": "Upload any file",
-          "qr": "Bulk QR generation",
-          "scan": "Scan with any phone",
-          "support": "Email support",
-          "noVgp": "VGP tracking available by upgrading to Professional"
-        }
-      },
-      "professional": {
-        "name": "Professional",
-        "subtitle": "Full compliance and fleet management",
-        "features": {
-          "vgp": "Automated VGP tracking",
-          "assets": "Up to 500 assets",
-          "starter": "Everything in Starter, plus:",
-          "multiSite": "Multi-site management",
-          "audit": "Reports ready for DREETS inspection",
-          "integration": "CSV export of asset list and VGP history",
-          "support": "Priority support",
-          "teamManagement": "Team management",
-          "emailAlerts": "Email alerts"
-        }
-      },
-      "business": {
-        "name": "Business",
-        "subtitle": "For mid-size operations with dedicated support",
-        "features": {
-          "assets": "Up to 2,000 assets",
-          "professional": "Everything in Professional +",
-          "vgpPriority": "VGP + priority compliance support",
-          "integrations": "Compatible with SAGE, EBP, Cegid (on request)",
-          "manager": "Dedicated account manager",
-          "sla": "24h SLA guaranteed",
-          "advancedReporting": "Advanced reporting",
-          "apiAccess": "API access"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Custom",
-        "annual": "",
-        "subtitle": "For large fleets with reinforced compliance requirements",
-        "note": "Includes integration and custom development service",
-        "features": {
-          "unlimited": "Unlimited assets",
-          "vgpDedicated": "VGP + dedicated compliance team",
-          "support": "24/7 support",
-          "customIntegrations": "Custom integrations (SAGE, SAP, Cegid)",
-          "whiteLabel": "White-label branding",
-          "onPremise": "On-premise deployment",
-          "sla": "SLA 99.9%+"
-        }
-      },
-      "extensions": {
-        "title": "Available Extensions ▼",
-        "starterAssets": "Extra Assets Pack (+€100/mo)",
-        "predictive": "Predictive Maintenance (+€300/mo)",
-        "erp": "ERP Integration (+€2,500 setup)",
-        "sla": "24h Support SLA (+€400/mo)",
-        "advancedAnalytics": "Advanced Predictive Analytics (+€300/mo)",
-        "multiErp": "Multiple ERP Integrations (custom quote)"
-      }
-    },
-    "status": {
-      "comingQ1": "Q1 2026",
-      "comingQ2": "Q2 2026",
-      "builtOnDemand": "Built on demand"
-    },
     "cta": {
-      "start": "Start Free Trial",
-      "demo": "Book a Demo",
-      "contact": "Contact Us"
+      "start": "Try for 30 days",
+      "contact": "Talk to sales"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "questions": [
         {
-          "question": "Why is VGP tracking not included in the Starter plan?",
-          "answer": "The Starter plan is designed for basic fleet tracking. VGP management requires more advanced features like inspection scheduling, certificate management, and inspection reports. These are available from the Professional plan onwards. For equipment rental companies in France, this is generally the plan to go with."
+          "question": "How is the price calculated?",
+          "answer": "The price depends on how many assets you track, not on how many users you have. The base rate is 179 € excl. VAT per month and includes 100 assets. Above that, each additional asset is billed on a tapering scale: 1.55 € from 101 to 500, 1.20 € from 501 to 1,000, then 0.80 € from 1,001 to 2,000, per asset per month. Above 2,000 assets, pricing is set on quote."
         },
         {
-          "question": "What's the difference between monthly and annual billing?",
-          "answer": "Pricing is the same for monthly and annual billing. Pilot conversion terms are agreed together."
+          "question": "What is the difference between monthly and annual billing?",
+          "answer": "Annual billing is ten times the monthly rate: 1,790 € excl. VAT per year for the base, which is two months free. The tapering scale applies the same way, also at ten times the monthly amount. On monthly billing there is no commitment."
         },
         {
-          "question": "Can I change plans at any time?",
-          "answer": "Yes, you can upgrade at any time. Downgrades are possible at the end of your annual period. Contact us to discuss your specific situation."
+          "question": "How many users can I create?",
+          "answer": "As many as you need. Users are unlimited, whatever the number of assets you track. Teams and permissions are included."
         },
         {
-          "question": "Are extensions compatible with all plans?",
-          "answer": "The Extra Assets Pack is available on all plans. Other extensions like predictive maintenance, ERP integrations, and priority SLA require the Professional plan or higher."
+          "question": "Are all features included?",
+          "answer": "Yes. There is a single product and no feature is reserved for a higher level. Fleet tracking, Excel import, QR codes, rental check-out and check-in, VGP due dates, inspections, certificates, alerts, the compliance report and audits are all part of the base rate."
+        },
+        {
+          "question": "What happens if my fleet goes beyond 2,000 assets?",
+          "answer": "Above 2,000 assets we prepare a quote matched to your fleet. Contact us to discuss it."
         },
         {
           "question": "Do you offer a trial period?",
-          "answer": "Yes. All plans can be tested for 30 days with full access to features. No credit card required to start."
+          "answer": "Yes. TraviXO can be tested for 30 days with full access to features. No credit card is required to start."
         }
       ]
     },
@@ -618,6 +543,83 @@
       "title": "Ready to secure your compliance?",
       "subtitle": "Don't wait for the next inspection to discover your gaps. Try TraviXO free for 30 days.",
       "button": "Start Free Trial"
+    },
+    "card": {
+      "name": "TraviXO",
+      "monthly": "179 € excl. VAT",
+      "included": "100 assets included",
+      "annual": "1,790 € excl. VAT",
+      "annualBadge": "2 months free",
+      "noCommitment": "No commitment on monthly billing",
+      "tiersTitle": "Above 100 assets",
+      "tiersUnit": "per asset, per month",
+      "quoteLabel": "More than 2,000",
+      "quoteValue": "On quote"
+    },
+    "tiers": [
+      {
+        "range": "101 to 500",
+        "rate": "+1.55 €"
+      },
+      {
+        "range": "501 to 1,000",
+        "rate": "+1.20 €"
+      },
+      {
+        "range": "1,001 to 2,000",
+        "rate": "+0.80 €"
+      }
+    ],
+    "examples": {
+      "title": "Example prices",
+      "note": "All prices are exclusive of VAT.",
+      "items": [
+        {
+          "assets": "100 assets",
+          "monthly": "179 € / mo",
+          "annual": "1,790 € / yr"
+        },
+        {
+          "assets": "250 assets",
+          "monthly": "411.50 € / mo",
+          "annual": "4,115 € / yr"
+        },
+        {
+          "assets": "500 assets",
+          "monthly": "799 € / mo",
+          "annual": "7,990 € / yr"
+        },
+        {
+          "assets": "1,000 assets",
+          "monthly": "1,399 € / mo",
+          "annual": "13,990 € / yr"
+        },
+        {
+          "assets": "2,000 assets",
+          "monthly": "2,199 € / mo",
+          "annual": "21,990 € / yr"
+        }
+      ]
+    },
+    "included": {
+      "title": "Everything is included",
+      "items": [
+        "Fleet",
+        "Excel import",
+        "QR codes and public scan page",
+        "Rental check-out and check-in",
+        "Customers",
+        "Customer recall",
+        "VGP due dates",
+        "Inspections",
+        "Certificates",
+        "Alerts",
+        "Compliance report",
+        "Audits",
+        "Teams and permissions",
+        "Unlimited users",
+        "FR/EN"
+      ]
     }
   },
   "privacy": {

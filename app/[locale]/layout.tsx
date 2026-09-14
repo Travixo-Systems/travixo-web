@@ -146,6 +146,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   };
 
   // Entry price as published on the pricing page. Keep in step with it.
+  // 179 EUR HT per month is the base rate, 100 assets included; beyond that
+  // the rate is graduated, so this is the entry price rather than the only one.
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -157,7 +159,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     "inLanguage": locale,
     "offers": {
       "@type": "Offer",
-      "price": "490",
+      "price": "179",
       "priceCurrency": "EUR",
       "url": `${BASE_URL}${pathFor(locale as Locale, "pricing")}`
     },

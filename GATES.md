@@ -1,91 +1,113 @@
-# Gates: marketing site - i18n leak fix and Professional annual term
+# Gates: marketing site - single-product pricing revision
 
-OWNS: app/[locale]/**, messages/en.json, messages/fr.json, scripts/check-*.mjs
+OWNS: app/[locale]/**, content/landing/**, messages/en.json, messages/fr.json,
+scripts/check-*.mjs
 
-Scope: two independent deliverables on the marketing site. (A) French copy no
-longer renders on English pages, fixed at the component level so the bug class
-cannot recur. (B) The Professional card publishes a 15-month annual term and
-the plan grid carries a rate-change note, in both locales, guarded against the
-drift class that produced the 30-vs-15 trial discrepancy.
+Scope: replace the four-tier commercial model (Starter / Professional /
+Business / Enterprise) with one product priced on billable asset count.
+179 EUR HT per month including 100 assets, unlimited users, no commitment on
+monthly billing. Annual is ten monthly payments, so two months free. Above 100
+assets the rate tapers (1,55 / 1,20 / 0,80 per asset per month across three
+bands) and above 2 000 assets pricing is on quote. FR is the source, EN mirrors
+it.
+
+This supersedes the previous ledger, which gated the 15-month Professional
+annual term (commits 527f7c2 and 09eb7e2). That term is deleted here, so the
+gates asserting it are not carried forward: G5 and G6 below replace their
+earlier namesakes, and the old G12 ("do not deploy until billing grants 15
+months") is void because the page no longer publishes a 15-month term. The
+i18n-leak work from that ledger is untouched by this revision and its gates
+still hold.
 
 Shell: Git Bash (win32). CWD: d:/Dev/projects/travixo-web
 Build needs RESEND_API_KEY set to any non-empty value: app/api/contact/route.ts
 calls `new Resend(...)` at module scope, so page-data collection throws without
-it. Pre-existing, verified against a stashed baseline that failed identically.
+it. Pre-existing, unrelated to this change.
 
-- [x] G1: No French lead/anchor literal renders on any English page
-  CHECK: node scripts/check-i18n-leak.mjs
-  EXPECT: I18N_LEAK_OK
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=I18N_LEAK_OK (no hardcoded literals at English-visible call sites)
-
-- [x] G2: The leak checker provably catches a planted leak
-  CHECK: node scripts/check-i18n-leak.mjs --self-test
-  EXPECT: SELFTEST_PASS
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=SELFTEST_PASS (planted leak detected: 2 props)
-
-- [x] G3: English inbound landing-page links still render
-  CHECK: node scripts/check-i18n-leak.mjs --links
-  EXPECT: LINKS_OK
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=LINKS_OK (2 English-visible inbound links present)
-
-- [x] G4: Trial-length copy stays 30 days and agrees across locales
-  CHECK: node scripts/check-trial-claims.mjs
-  EXPECT: TRIAL_CLAIMS_4_3
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=Advertised trial length: 30 days (both locales agree) | TRIAL_CLAIMS_4_3
-
-- [x] G5: Pricing figures self-consistent, term/note present in both locales
+- [x] G1: Published figures match the graduated grid, both locales
   CHECK: node scripts/check-pricing.mjs
   EXPECT: PRICING_OK
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=term on 1 card (Professional), note rendered once | PRICING_OK
+  EVIDENCE: exit=0; output=base 179 EUR/mo, 100 assets included | annual 1790
+  EUR/yr = 10 x monthly | 100=179/1790 250=411.5/4115 500=799/7990
+  1000=1399/13990 2000=2199/21990, each equal to the grid computation |
+  PRICING_OK
 
-- [x] G6: The pricing checker provably catches a locale-drift regression
+- [x] G2: The pricing checker provably catches drift
   CHECK: node scripts/check-pricing.mjs --self-test
   EXPECT: PRICING_SELFTEST_PASS
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=caught: term added to a second card | PRICING_SELFTEST_PASS (4 controls caught)
+  EVIDENCE: exit=0; output=caught: base monthly rate changed on the card |
+  annual no longer 10x monthly | a worked example edited by hand | an example's
+  annual decoupled from its monthly | included list extended with an unshipped
+  feature | a retired tier price reappears in landing copy | retired popularity
+  badge reappears on the page | PRICING_SELFTEST_PASS (7 controls caught)
 
-- [x] G7: Production build compiles and prerenders every route
+- [x] G3: No retired price survives on any pricing surface, either locale
+  CHECK: grep -rnE "490 ?€|€ ?490|1,?200 ?€|2,?400 ?€|5,? ?880|14,? ?400|28,? ?800" messages/ content/landing/ app/[locale]/pricing/page.tsx app/[locale]/layout.tsx
+  EXPECT: no matches
+  EVIDENCE: exit=1 (no matches); the same sweep for retired wording (Most
+  Popular, Le plus choisi, VGP Included, VGP incluse, Everything in, Tout le
+  contenu de, months of service, mois de service) also returns no matches.
+
+- [x] G4: Typecheck and lint clean
+  CHECK: npx tsc --noEmit -p tsconfig.json; npx eslint app/[locale]/pricing/page.tsx app/[locale]/layout.tsx scripts/check-pricing.mjs scripts/check-rendered.mjs
+  EXPECT: both silent
+  EVIDENCE: exit=0 for both, no diagnostics emitted.
+
+- [x] G5: Trial-length copy stays 30 days and agrees across locales
+  CHECK: node scripts/check-trial-claims.mjs
+  EXPECT: TRIAL_CLAIMS_4_3
+  EVIDENCE: carried forward from the previous ledger; the trial copy is
+  unchanged by this revision except for rewording within the same 30-day claim.
+  Re-run before merge.
+
+- [ ] G6: Production build compiles and prerenders every route
   CHECK: node scripts/build-check.mjs
   EXPECT: BUILD_OK
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=(node:8380) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated. | (Use `node --trace-deprecation ...` to show where 
+  EVIDENCE: pending. Not run in this session: requires RESEND_API_KEY, which
+  is not available here. Must pass in CI or preview with the real environment
+  before merge.
 
-- [x] G8: Rendered HTML carries the intended copy in each locale
+- [ ] G7: Rendered HTML carries the new pricing in each locale
   CHECK: node scripts/check-rendered.mjs
   EXPECT: RENDERED_OK
-  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=D:\Dev\projects\travixo-web; path=19928cd7e4cd/41 entries; output=6 page/locale combinations verified in built HTML | RENDERED_OK
+  EVIDENCE: pending, blocked by G6. The script's pricing cases were rewritten
+  for this model (the 15-month term and struck-12 markup assertions are gone,
+  replaced by per-locale assertions that 179 and the 2 000-asset example reach
+  the rendered page in that locale's number formatting). Those new assertions
+  have never executed against built HTML.
+
+- [ ] G8: Stripe prices and checkout match the published model (app repo)
+  EVIDENCE: pending, not gateable here.
 
 - [ ] G9: Backend trial interval is 30 days (app repo)
-  EVIDENCE: pending
+  EVIDENCE: pending.
 
 - [ ] G10: Site appears in search results
-  EVIDENCE: pending
+  EVIDENCE: pending.
 
 - [ ] G11: Published speed claims are sourced
-  EVIDENCE: pending
+  EVIDENCE: pending.
 
-- [ ] G12: Billing grants 15 months on annual Professional
-  EVIDENCE: pending
+ABANDON: G8 Stripe cannot be gated from this repository. The web repo contains
+no Stripe code, no price IDs and no checkout: SIGNUP_URL is `${APP_URL}/signup`,
+a plain outbound link. Confirmed by grep across the tree. The new price points
+must exist as Stripe prices, and checkout must charge them, before this page
+publishes them. Handoff: verify in the app repo, per the user's own merge gate.
 
-ABANDON: G9 Backend trial interval cannot be gated from this repository.
-create_organization_and_user, subscriptions/route.ts, pilot_end_date and
-trial_ends_at return zero hits across the tree (GATES.md itself excluded).
-That code lives in the app repo. The user has since verified 30 days live
-against the production database, 5/5 checks passing, so the site's advertised
-30 days is now true. Nothing to fix here.
+ABANDON: G9 Backend trial interval cannot be gated from this repository. That
+code lives in the app repo. The previous session recorded 30 days verified live
+against the production database, but the user has since flagged trial
+provisioning as needing a fix before merge, so this reopens as a handoff rather
+than a settled item.
 
 ABANDON: G10 Search visibility is not a property of this codebase. It depends
 on external index state and elapsed time. No honest local oracle exists.
 
-ABANDON: G11 Speed claims ("5 minutes", "500 QR codes in 30 seconds", "same
-day", "Operational in hours", "Skip 2 to 4 weeks") cannot be measured from the
-marketing repo: they describe product behaviour in the app repo, and the
-comparison-table row also makes a claim about competitors. Handoff: with 17
-pilot orgs live, time one real fleet import and one 500-code generation
-against production, then either source or soften. Flagged to the user as the
-highest-value open item.
-
-ABANDON: G12 "15 mois de service" cannot be verified from this repository.
-It becomes a published payment term the moment this deploys, and only the app
-repo's billing can honour it. The user has stated they will implement it
-backend-side. Handoff: do not deploy this page until billing grants 15 months
-on an annual Professional subscription, or the site republishes the 30-vs-15
-failure class as a billing dispute.
+ABANDON: G11 Speed claims ("500 materiels en 5 minutes", "500 codes en 30
+secondes", "Skip 2 to 4 weeks") cannot be measured from the marketing repo:
+they describe product behaviour in the app repo, and the comparison-table row
+also makes a claim about competitors. This revision does not touch, restate or
+strengthen them; they sit in pricing.comparison.rows, above the new card, and
+this PR neither endorses nor sources them. Handoff unchanged: time one real
+fleet import and one 500-code generation against production, then source or
+soften.

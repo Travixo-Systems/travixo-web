@@ -79,7 +79,7 @@ const page: LandingPage = {
       kind: "pricing",
       heading: "Pricing",
       paragraphs: [
-        "Plans start at €490/month. VGP management is included from the Professional plan, at €1,200/month.",
+        "179 € excl. VAT per month, 100 assets included and unlimited users. VGP management is part of the product, at no extra cost. Above 100 assets the rate tapers.",
       ],
       linkLabel: "View pricing",
     },
