@@ -1,8 +1,14 @@
 import type { LandingPage } from "../types";
 
-// English of content/landing/fr/logiciel-gestion-parc-materiel.ts, translated
-// 20/08/2026. Screenshots are shared with the French page: the app interface in
-// them is French, which is honest for a product sold into the French market.
+// English of content/landing/fr/logiciel-gestion-parc-materiel.ts,
+// retranslated 15/09/2026 against the repositioned French rather than the
+// previous English. Screenshots are shared with the French page: the app
+// interface in them is French, which is honest for a product sold into the
+// French market.
+//
+// This is the English counterpart of an FR doorway, so it carries the same
+// body structure: fleet, movements, compliance, then the handoff to
+// /en/equipment-rental-software.
 const page: LandingPage = {
   routeKey: "softwareFleet",
   locale: "en",
@@ -21,12 +27,13 @@ const page: LandingPage = {
       kind: "prose",
       heading: "A tracked fleet, but not a connected one",
       paragraphs: [
-        "A fleet of 50 to 2,000 machines can quickly become spread across several systems. The ERP holds the billing data. The spreadsheet holds the locations. The documents are elsewhere. Getting a complete view of a particular machine becomes difficult.",
+        "A fleet of 50 to 2,000 machines quickly ends up spread across several systems. The ERP holds the billing data. The spreadsheet holds the locations. The documents are elsewhere. Each of those tools is correct within its own scope.",
+        "What is missing is the link. Getting a complete view of one machine — where it is, who had it, the condition it came back in and whether it is compliant — means assembling four answers held in four places. That joining up is what TraviXO takes on.",
       ],
     },
     {
       kind: "blocks",
-      heading: "One record per machine, accessible by scanning",
+      heading: "The fleet: one record per machine, accessible by scanning",
       items: [
         {
           title: "QR code tracking",
@@ -56,6 +63,14 @@ const page: LandingPage = {
       height: 745,
     },
     {
+      kind: "prose",
+      heading: "Movements: what the fleet becomes once it moves",
+      paragraphs: [
+        "A fleet is not a fixed inventory. Machines go out, change depot, go to site, and come back in a different condition from the one they left in.",
+        "Each scan writes a dated event: who checked the machine out, when, with what notes, and the condition it was taken back in. End to end, those events form the machine's history, readable from its record. The same chain feeds compliance: the inspection due date follows the machine rather than a spreadsheet row kept alongside it.",
+      ],
+    },
+    {
       kind: "bullets",
       heading: "The exceptions you need to see straight away",
       items: [
@@ -68,9 +83,18 @@ const page: LandingPage = {
           body: "The depot stocktake is complete and two items are missing. The list is automatically sent as a PDF.",
         },
         {
-          title: "VGP due soon for a machine on hire.",
+          title: "Inspection due soon for a machine on hire.",
           body: "The machine is with a customer and its due date is approaching. The reminder is sent early enough to arrange its return.",
         },
+      ],
+    },
+    {
+      kind: "prose",
+      heading: "Compliance attached to the equipment",
+      paragraphs: [
+        "Periodic general inspections fall under article R.4323-23 of the French Code du travail, which refers to ministerial orders for the intervals: twelve months as the general rule for lifting equipment, six months for the categories listed in section II of article 20 of the arrêté du 1er mars 2004, and three months in certain cases.",
+        "Across a fleet split between several depots, the difficulty is not knowing those intervals but holding them machine by machine. Each item carries its own due date, and the fleet can be filtered on what is coming up.",
+        "Compressors and generators are part of the fleet vocabulary but fall under inspection regimes other than those two orders. TraviXO tracks them as equipment without applying a lifting-equipment inspection interval that does not apply to them.",
       ],
     },
     {
@@ -96,7 +120,7 @@ const page: LandingPage = {
     {
       question: "How many items of equipment can you track?",
       answer:
-        "The product is designed for fleets of 50 to 2,000 machines. For larger fleets, the Enterprise plan is priced on request.",
+        "The product is designed for fleets of 50 to 2,000 machines. Above 2,000 assets, pricing is on quote.",
     },
     {
       question: "Do you need to install an app?",
@@ -107,6 +131,11 @@ const page: LandingPage = {
       question: "What if our existing file is poorly maintained?",
       answer:
         "The import handles imperfect data. Columns are recognised even when their headings are inconsistent, and errors are flagged before confirmation.",
+    },
+    {
+      question: "Are compressors and generators tracked?",
+      answer:
+        "Yes, as fleet equipment: record, QR code, location, movements and documents. No lifting-equipment inspection interval is applied to them, however: they fall under inspection regimes other than the arrêté du 1er mars 2004 and the arrêté du 5 mars 1993.",
     },
     {
       question: "Can you export the data?",
@@ -126,7 +155,7 @@ const page: LandingPage = {
   // filters unavailable siblings anyway, but listing one would be misleading.
   related: [
     {
-      label: "For rental traceability.",
+      label: "Rental business? The complete chain, from check-out to return.",
       routeKey: "softwareRental",
     },
   ],

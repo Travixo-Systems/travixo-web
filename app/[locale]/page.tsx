@@ -77,8 +77,11 @@ export default async function Home(props: Props) {
         {/* Values */}
         <section className="bg-surface-tint py-8">
           <div className="container mx-auto px-2">
-            <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-              {[1, 2, 3].map((i) => (
+            {/* Four stages, in chain order: parc, location, conformite,
+                preuve. The count is the content, not a layout choice: the
+                chain has four links and dropping one would misstate it. */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+              {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="bg-white p-4 rounded-lg shadow-sm">
                   {/* h2, not h3: this section follows the hero h1 directly and
                       has no heading of its own above it, so an h3 skipped a

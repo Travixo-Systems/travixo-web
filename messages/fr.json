@@ -1,8 +1,8 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - Votre matériel est suivi. Mais pas connecté.",
-      "description": "Reliez chaque machine à son QR code, sa conformité VGP, ses documents et son historique. Fini le suivi dispersé entre vos systèmes. Opérationnel en heures."
+      "title": "TraviXO - Le matériel part, la preuve part avec lui.",
+      "description": "Reliez chaque matériel à ses locations, ses mouvements, ses documents et sa conformité, de la sortie au retour. Une seule chaîne, du dépôt au chantier."
     },
     "about": {
       "title": "À propos de TraviXO - Construit depuis le terrain de la location",
@@ -59,23 +59,27 @@
   },
   "homepage": {
     "hero": {
-      "title": "Votre parc vit dans 3 endroits. Il devrait n'en avoir qu'un.",
-      "subtitle": "Il est suivi, mais pas connecté. TraviXO relie la machine à la conformité VGP, ses documents et à son historique, dans une seule chaîne, du dépôt au chantier.",
+      "title": "Le matériel part chez le client.\nLa preuve doit partir avec lui.",
+      "subtitle": "TraviXO relie chaque matériel à ses locations, ses mouvements, ses documents et sa conformité, de la sortie au retour. Une seule chaîne, du dépôt au chantier.",
       "ctaPrimary": "Tester sur votre parc réel",
       "ctaSecondary": "Voir la démo"
     },
     "values": {
       "1": {
-        "title": "Importez votre fichier existant",
-        "text": "Pas besoin de nettoyer votre export avant. Colonnes incohérentes, cellules vides, intitulés approximatifs : on s'en charge. Vous importez, ça démarre."
+        "title": "Parc",
+        "text": "Une fiche et un QR code par machine. Vous savez ce que vous avez, où il est, et ce qui peut sortir aujourd'hui."
       },
       "2": {
-        "title": "Générez vos QR codes en masse",
-        "text": "Le PDF prêt à imprimer est généré tout de suite. Vous collez les codes sur le matériel et c'est lancé."
+        "title": "Location",
+        "text": "Sortie et retour scannés. Qui a eu la machine, sur quelle période, et dans quel état elle est revenue."
       },
       "3": {
-        "title": "Commencez à suivre le parc dès l'import",
-        "text": "Vous n'avez pas de projet de déploiement à mener avant de commencer. Le suivi démarre sur votre fichier existant, tel qu'il est."
+        "title": "Conformité",
+        "text": "L'échéance de vérification est portée par le matériel, pas par une ligne de tableur tenue à côté."
+      },
+      "4": {
+        "title": "Preuve",
+        "text": "Documents, historique et état constaté restent rattachés à la machine. La réponse existe avant qu'on la demande."
       }
     },
     "carousel": {
@@ -86,7 +90,7 @@
       },
       "problem": {
         "title": "Votre matériel est suivi. Mais entre vos systèmes, vos dossiers et vos mails, rien n'est relié.",
-        "subtitle": "C'est de là que viennent les pertes, les erreurs et les risques de conformité.",
+        "subtitle": "La chaîne se rompt à chaque passage de main : c'est de là que viennent les litiges, les pertes et les écarts de conformité.",
         "items": {
           "1": {
             "title": "Le matériel se perd entre les systèmes",
@@ -107,8 +111,8 @@
         }
       },
       "solution": {
-        "title": "Un seul système qui relie le matériel à sa conformité",
-        "subtitle": "Chaque machine devient traçable, documentée et prête en cas de contrôle",
+        "title": "Une seule chaîne, de la sortie au retour",
+        "subtitle": "Chaque machine porte ses locations, ses mouvements, ses documents et sa conformité",
         "items": {
           "1": {
             "title": "Import du fichier",
@@ -130,27 +134,27 @@
       }
     },
     "handover": {
-      "title": "Chaque passage de main laisse une trace.",
+      "title": "La location : le moment où la machine change de mains",
       "scanOut": {
         "title": "Départ chez le client",
-        "body": "Quand le matériel quitte le dépôt, un scan crée un événement horodaté : qui l'a sorti, quand, avec quelles remarques. Pas de papier à retrouver. La preuve est déjà enregistrée."
+        "body": "Quand le matériel quitte le dépôt, un scan crée un événement horodaté : qui l'a sorti, quand, avec quelles remarques. Pas de papier à retrouver. La trace est déjà enregistrée."
       },
       "scanReturn": {
         "title": "Retour avec état constaté",
-        "body": "Au retour, un second scan enregistre l'état du matériel, avec notes et photos si besoin. En cas de litige sur un choc ou sur une date, l'historique est là."
+        "body": "Au retour, un second scan enregistre l'état du matériel, avec notes et photos si besoin. L'écart entre l'état de départ et l'état de retour est documenté au moment où il se constate."
       },
       "chain": {
-        "title": "Chaîne de responsabilité complète",
-        "body": "Chaque matériel affiche son parcours complet : qui l'a eu, sur quelle période, et dans quel état il a été restitué."
+        "title": "Le parcours complet du matériel",
+        "body": "Chaque matériel affiche qui l'a eu, sur quelle période, dans quel état il a été restitué, et où en est sa prochaine échéance."
       }
     },
     "recall": {
-      "title": "Une VGP arrive à échéance chez un client ? Vous le savez avant lui.",
-      "body": "TraviXO recoupe automatiquement vos dates de VGP avec les locations en cours. Si une machine arrive à échéance pendant qu'elle est encore chez le client, vous recevez une alerte assez tôt pour organiser le retour et planifier le contrôle avant la date limite.",
-      "cta": "Pas de matériel non conforme qui circule sans que vous le sachiez."
+      "title": "La conformité : une échéance qui tombe pendant une location",
+      "body": "C'est le cas qu'un suivi par tableur détecte mal, parce qu'il demande de rapprocher deux informations tenues séparément : la date de vérification et la situation locative de la machine. TraviXO fait ce rapprochement et prévient assez tôt pour organiser le retour et planifier le contrôle.",
+      "cta": "L'échéance suit la machine, y compris quand la machine n'est plus chez vous."
     },
     "exceptions": {
-      "title": "Les écarts à voir tout de suite",
+      "title": "La preuve : les écarts que la chaîne fait ressortir",
       "overdueReturn": {
         "title": "Retour prévu non scanné",
         "body": "Une machine devait rentrer hier soir et aucun retour n'a été scanné. TraviXO vous alerte dès le lendemain matin."
@@ -168,20 +172,20 @@
       "title": "Pensé pour votre façon de travailler",
       "btp": {
         "title": "Location de matériel BTP",
-        "body": "Nacelles, chariots, compresseurs, groupes électrogènes. Gérez les VGP de tout le parc, sachez à quel client chaque machine est affectée, et recevez une alerte avant qu'un contrôle n'expire en cours de location."
+        "body": "Nacelles, chariots, compresseurs, groupes électrogènes. Sachez à quel client chaque machine est affectée, suivez les échéances de vérification de celles qui y sont soumises, et soyez prévenu avant qu'une échéance ne tombe en cours de location."
       },
       "multiDepot": {
         "title": "Parc réparti sur plusieurs dépôts",
         "body": "Du matériel sur 2 ou 3 sites, avec des mouvements permanents. Chaque scan crée une trace horodatée. Un inventaire fait ressortir la liste des manquants en PDF, envoyée automatiquement."
       },
       "excel": {
-        "title": "Centraliser la conformité",
-        "body": "Vos certificats sont à un endroit, vos dates à un autre, votre historique nulle part. Importez votre liste matériel et TraviXO relie le tout : alertes automatiques, certificats centralisés, historique accessible depuis chaque fiche."
+        "title": "Reprendre un suivi éclaté",
+        "body": "Vos certificats sont à un endroit, vos dates à un autre, votre historique nulle part. Importez votre liste matériel telle qu'elle est et TraviXO rattache le reste à la machine : échéances, rapports, mouvements et historique sur une même fiche."
       }
     },
     "finalCta": {
-      "title": "Arrêtez de perdre la trace de votre matériel",
-      "subtitle": "Remplacez le suivi dispersé entre vos systèmes, vos dossiers et vos mails par une seule chaîne qui relie la machine à ses documents.",
+      "title": "Le matériel part. La preuve part avec lui.",
+      "subtitle": "Reliez chaque matériel à ses locations, ses mouvements, ses documents et sa conformité, de la sortie au retour.",
       "primary": "Tester sur votre parc réel",
       "secondary": "Voir la démo",
       "badges": [
@@ -205,7 +209,7 @@
     },
     "erpPositioning": {
       "title": "TraviXO ne remplace pas votre ERP.",
-      "body": "Il relie ce que votre ERP ne relie pas : la machine physique, sa conformité, ses documents et sa traçabilité terrain."
+      "body": "Votre ERP connaît le contrat et la facturation. Il ne connaît généralement pas l'état dans lequel la machine est revenue, ni où se trouve son dernier rapport de vérification. TraviXO relie la machine physique à ses locations, ses mouvements, ses documents et sa conformité."
     },
     "credibility": {
       "title": "Conçu pour des opérations réelles",
@@ -232,7 +236,7 @@
     },
     "mission": {
       "title": "Notre mission",
-      "description": "Remplacer le suivi fragmenté par un système clair où chaque machine est identifiable, traçable et conforme sans travail manuel."
+      "description": "Faire que la preuve parte avec le matériel. Chaque machine reste reliée à ses locations, ses mouvements, ses documents et sa conformité, de la sortie au retour."
     },
     "values": {
       "title": "Ce qui nous guide",
@@ -263,31 +267,28 @@
       "conclusion": "TraviXO est développé à Paris, hébergé en Europe et conforme au RGPD. Notre objectif est simple : aider toute entreprise qui gère du matériel à savoir ce qu'elle a, où cela se trouve, et qui l'a."
     },
     "cta": {
-      "title": "Commencez à suivre correctement",
-      "description": "Remplacez le suivi fragmenté par un système construit pour vos opérations",
+      "title": "Voir la chaîne sur votre propre parc",
+      "description": "De la sortie au retour, sur votre fichier matériel tel qu'il est aujourd'hui.",
       "button": "Tester sur votre parc réel"
     }
   },
   "features": {
     "hero": {
       "title": "Fonctionnalités TraviXO",
-      "subtitle": "Du suivi QR au pilotage VGP, l'essentiel pour exploiter un parc sans angle mort"
+      "subtitle": "Quatre familles, dans l'ordre de la chaîne : le parc, les locations, la conformité, la preuve."
     },
     "differentiators": {
       "import": {
-        "time": "5 min",
-        "title": "Import de n'importe quel fichier",
-        "description": "Import de votre fichier existant. Pas de ressaisie manuelle fiche par fiche."
+        "title": "Parc et identification",
+        "description": "Une fiche et un QR code par machine, importés depuis votre fichier existant."
       },
       "bulk": {
-        "time": "30 sec",
-        "title": "Génération QR en masse",
-        "description": "Codes prêts à imprimer générés en masse. Pas besoin d'ouvrir chaque fiche une par une."
+        "title": "Locations et mouvements",
+        "description": "Sortie, retour et état constaté, enregistrés au scan et rattachés au matériel."
       },
       "deploy": {
-        "time": "Heures",
-        "title": "Mise en route rapide",
-        "description": "Le suivi commence dès que votre fichier est importé, sans projet de déploiement préalable."
+        "title": "Conformité et preuve",
+        "description": "Échéances, rapports et historique portés par la machine, disponibles au moment du contrôle."
       }
     },
     "availableNow": {
@@ -408,8 +409,8 @@
       "builtOnDemand": "Développé à la demande"
     },
     "finalCta": {
-      "title": "Prêt à démarrer ?",
-      "subtitle": "Commencez par reprendre le contrôle de vos VGP dès aujourd'hui",
+      "title": "Voir la chaîne sur votre propre parc",
+      "subtitle": "De la sortie au retour, sur votre fichier matériel tel qu'il est aujourd'hui.",
       "button": "Lancer l'essai gratuit"
     }
   },

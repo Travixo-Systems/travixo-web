@@ -40,10 +40,14 @@ export default async function FeaturesPage(props: Props) {
         {/* Differentiators Section */}
         <section className="bg-surface-tint py-8">
           <div className="container mx-auto px-4 max-w-6xl">
+            {/* The three display figures that stood here ("5 min", "30 sec",
+                "Heures") were speed claims with no source behind them, and
+                being set at 5xl made them the loudest thing on the page. They
+                are gone rather than restated: see DECISIONS.md D-1. What
+                replaces them names the chain, which the page can support. */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              
+
               <div className="text-center">
-                <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.import.time")}</div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.import.title")}
                 </h2>
@@ -53,7 +57,6 @@ export default async function FeaturesPage(props: Props) {
               </div>
 
               <div className="text-center">
-                <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.bulk.time")}</div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.bulk.title")}
                 </h2>
@@ -63,7 +66,6 @@ export default async function FeaturesPage(props: Props) {
               </div>
 
               <div className="text-center">
-                <div className="text-5xl font-bold text-brand-ink mb-3">{t("differentiators.deploy.time")}</div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {t("differentiators.deploy.title")}
                 </h2>

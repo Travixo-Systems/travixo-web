@@ -1,6 +1,14 @@
 import type { LandingPage } from "../types";
 
-// Copy validated 19/08/2026 (copybofufr v2).
+// SEO doorway. routeKey, h1, title and description are FROZEN: they carry the
+// existing keyword targeting and are asserted byte-identical to origin/main by
+// scripts/check-doorway-frozen.mjs. Only the body below was rewritten.
+//
+// Verified intent (DECISIONS.md S-1): "logiciel gestion parc materiel" is
+// commercial but broad, spanning plant, vehicle fleets and IT assets, so the
+// body keeps its BTP scoping rather than competing as a generic asset manager.
+// The body follows the chain and hands off to /logiciel-loueur-materiel, which
+// is where the rental-specific obligation is argued in full.
 const page: LandingPage = {
   routeKey: "softwareFleet",
   locale: "fr",
@@ -19,12 +27,13 @@ const page: LandingPage = {
       kind: "prose",
       heading: "Un parc suivi, mais pas relié",
       paragraphs: [
-        "Un parc de 50 à 2 000 machines peut rapidement se retrouver réparti entre plusieurs systèmes. L'ERP connaît la facturation. Le tableur connaît les emplacements. Les documents sont ailleurs. Obtenir la vue complète d'une machine donnée devient difficile.",
+        "Un parc de 50 à 2 000 machines se retrouve vite réparti entre plusieurs systèmes. L'ERP connaît la facturation. Le tableur connaît les emplacements. Les documents sont ailleurs. Chacun de ces outils est correct sur son propre périmètre.",
+        "Ce qui manque est le lien. Obtenir la vue complète d'une machine donnée, où elle est, qui l'a eue, dans quel état elle est revenue et si elle est en règle, demande de rassembler quatre réponses tenues à quatre endroits. C'est ce rapprochement que TraviXO prend en charge.",
       ],
     },
     {
       kind: "blocks",
-      heading: "Une fiche par machine, accessible par scan",
+      heading: "Le parc : une fiche par machine, accessible par scan",
       items: [
         {
           title: "Suivi par QR code",
@@ -54,6 +63,14 @@ const page: LandingPage = {
       height: 745,
     },
     {
+      kind: "prose",
+      heading: "Les mouvements : ce que le parc devient quand il bouge",
+      paragraphs: [
+        "Un parc n'est pas un inventaire figé. Les machines sortent, changent de dépôt, partent en chantier, reviennent dans un état différent de celui dans lequel elles sont parties.",
+        "Chaque scan écrit un événement daté : qui a sorti la machine, quand, avec quelles remarques, et dans quel état elle a été reprise. Bout à bout, ces événements forment le parcours du matériel, consultable depuis sa fiche. C'est la même chaîne qui alimente la conformité : l'échéance de vérification suit la machine plutôt qu'une ligne de tableur tenue à côté.",
+      ],
+    },
+    {
       kind: "bullets",
       heading: "Les écarts que vous voulez voir tout de suite",
       items: [
@@ -66,9 +83,18 @@ const page: LandingPage = {
           body: "L'inventaire dépôt est terminé, deux matériels manquent. La liste part en PDF automatiquement.",
         },
         {
-          title: "VGP qui approche sur une machine en location.",
+          title: "Échéance qui approche sur une machine en location.",
           body: "La machine est chez un client et son échéance arrive. L'alerte de rappel part assez tôt pour organiser le retour.",
         },
+      ],
+    },
+    {
+      kind: "prose",
+      heading: "La conformité rattachée au matériel",
+      paragraphs: [
+        "Les vérifications générales périodiques relèvent de l'article R.4323-23 du Code du travail, qui renvoie à des arrêtés ministériels pour les périodicités : douze mois en règle générale pour les appareils de levage, six mois pour les catégories énumérées au II de l'article 20 de l'arrêté du 1er mars 2004, trois mois dans certains cas.",
+        "Sur un parc réparti entre plusieurs dépôts, la difficulté n'est pas de connaître ces périodicités mais de les tenir machine par machine. Chaque matériel porte sa propre échéance, et le parc se filtre sur ce qui arrive à terme.",
+        "Les compresseurs et les groupes électrogènes figurent dans le vocabulaire du parc, mais relèvent d'autres régimes de vérification que ces deux arrêtés. TraviXO les suit comme matériels sans leur appliquer une périodicité de VGP levage qui ne les concerne pas.",
       ],
     },
     {
@@ -107,6 +133,11 @@ const page: LandingPage = {
         "L'import gère les données imparfaites. Les colonnes sont reconnues même avec des en-têtes irréguliers, et les erreurs sont signalées avant validation.",
     },
     {
+      question: "Les compresseurs et groupes électrogènes sont-ils suivis ?",
+      answer:
+        "Oui, comme matériels du parc : fiche, QR code, emplacement, mouvements et documents. En revanche, aucune périodicité de VGP levage ne leur est appliquée : ils ne relèvent ni de l'arrêté du 1er mars 2004 ni de celui du 5 mars 1993, mais d'autres régimes de vérification.",
+    },
+    {
       question: "Peut-on exporter les données ?",
       answer:
         "Oui, en CSV ou Excel depuis le tableau de bord, et en PDF pour les rapports de contrôle.",
@@ -122,11 +153,12 @@ const page: LandingPage = {
 
   related: [
     {
-      label: "Pour le suivi des vérifications réglementaires.",
+      label: "Le détail du suivi des vérifications réglementaires.",
       routeKey: "softwareVgp",
     },
     {
-      label: "Pour la traçabilité des locations.",
+      label:
+        "Activité de location ? La chaîne complète, de la sortie au retour.",
       routeKey: "softwareRental",
     },
   ],
