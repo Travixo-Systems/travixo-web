@@ -322,11 +322,12 @@ export default async function TrackerPage(props: Props) {
               échéance approche, et quelqu&apos;un doit penser à l&apos;ouvrir.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Il ne conserve pas les rapports. En location, l&apos;article 15-II
-              de l&apos;arrêté du 1er mars 2004 demande que la notice, le rapport
+              Il ne conserve pas les rapports. Pour un appareil de levage
+              d&apos;occasion donné en location, l&apos;article 15-II de
+              l&apos;arrêté du 1er mars 2004 demande que la notice, le rapport
               de première mise en service, le dernier rapport et
-              l&apos;historique accompagnent la machine. Une colonne de tableur
-              ne les transporte pas.
+              l&apos;historique soient placés sur la machine ou à proximité.
+              Une colonne de tableur ne les transporte pas.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Il ne sait pas où est la machine. Or l&apos;échéance tombe souvent
