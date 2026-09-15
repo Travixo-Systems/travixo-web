@@ -1,8 +1,8 @@
 {
   "metadata": {
     "home": {
-      "title": "TraviXO - Your Fleet Is Tracked. But Not Connected.",
-      "description": "Link each machine to its QR code, VGP compliance, documents, and history. Replace tracking scattered across your systems. Operational in hours."
+      "title": "TraviXO - The equipment goes out. The proof goes with it.",
+      "description": "Link every asset to its rentals, its movements, its documents and its compliance, from check-out to return. One chain, from depot to site."
     },
     "about": {
       "title": "About TraviXO - Built from Real Rental Operations",
@@ -59,23 +59,27 @@
   },
   "homepage": {
     "hero": {
-      "title": "Your fleet lives in 3 places. It should be one.",
-      "subtitle": "It's tracked, but not connected. TraviXO links each machine to its QR code, its VGP compliance, its documents, and its history, in one chain, from depot to site.",
+      "title": "The equipment goes out to the customer.\nThe proof has to go with it.",
+      "subtitle": "TraviXO links every asset to its rentals, its movements, its documents and its compliance, from check-out to return. One chain, from depot to site.",
       "ctaPrimary": "Try It on Your Real Fleet",
       "ctaSecondary": "See the demo"
     },
     "values": {
       "1": {
-        "title": "Upload Your Existing File",
-        "text": "No need to clean up your export first. Inconsistent columns, blank cells, rough headers. We handle it. You upload, it starts."
+        "title": "Fleet",
+        "text": "One record and one QR code per machine. You know what you have, where it is, and what can go out today."
       },
       "2": {
-        "title": "Generate QR Codes in Bulk",
-        "text": "The print-ready PDF is generated immediately. Stick the codes on your equipment and you're live."
+        "title": "Rental",
+        "text": "Check-out and return, both scanned. Who had the machine, for what period, and the condition it came back in."
       },
       "3": {
-        "title": "Start Tracking as Soon as You Import",
-        "text": "There is no deployment project to run before you start. Tracking begins on your existing file, exactly as it is."
+        "title": "Compliance",
+        "text": "The inspection due date is carried by the equipment, not by a spreadsheet row kept alongside it."
+      },
+      "4": {
+        "title": "Proof",
+        "text": "Documents, history and recorded condition stay attached to the machine. The answer exists before anyone asks for it."
       }
     },
     "carousel": {
@@ -86,7 +90,7 @@
       },
       "problem": {
         "title": "Your equipment is tracked. But across your systems, your folders, and your emails, nothing connects.",
-        "subtitle": "That's where losses, errors, and compliance risks come from.",
+        "subtitle": "The chain breaks at every handover: that is where disputes, losses and compliance gaps come from.",
         "items": {
           "1": {
             "title": "Equipment gets lost between systems",
@@ -107,8 +111,8 @@
         }
       },
       "solution": {
-        "title": "One system linking equipment to compliance",
-        "subtitle": "Each machine becomes traceable, documented, and ready for inspection",
+        "title": "One chain, from check-out to return",
+        "subtitle": "Each machine carries its rentals, its movements, its documents and its compliance",
         "items": {
           "1": {
             "title": "File import",
@@ -130,27 +134,27 @@
       }
     },
     "handover": {
-      "title": "Every handover leaves a trace.",
+      "title": "The rental: the moment the machine changes hands",
       "scanOut": {
         "title": "Checkout to client",
-        "body": "When equipment leaves the depot, a scan creates a timestamped event: who took it out, when, with what notes. No paperwork to dig up. The proof is already recorded."
+        "body": "When equipment leaves the depot, a scan creates a timestamped event: who took it out, when, with what notes. No paperwork to dig up. The record already exists."
       },
       "scanReturn": {
         "title": "Return with recorded condition",
-        "body": "On return, a second scan records the equipment condition, with notes and photos if needed. If there's a dispute about damage or a date, the history is there."
+        "body": "On return, a second scan records the equipment condition, with notes and photos if needed. The difference between the condition it left in and the condition it came back in is documented as it is observed."
       },
       "chain": {
-        "title": "Complete chain of responsibility",
-        "body": "Every piece of equipment shows its full journey: who had it, for how long, and in what condition it was returned."
+        "title": "The machine's complete history",
+        "body": "Every asset shows who had it, for what period, the condition it was returned in, and where its next due date stands."
       }
     },
     "recall": {
-      "title": "A VGP is expiring at a client site? You know before they do.",
-      "body": "TraviXO automatically cross-references your VGP dates with active rentals. If a machine is approaching its deadline while still at a client, you receive an alert early enough to arrange the return and schedule the inspection before the due date.",
-      "cta": "No non-compliant equipment circulating without your knowledge."
+      "title": "Compliance: an inspection falling due during a rental",
+      "body": "This is the case spreadsheet tracking handles badly, because it requires joining two things kept separately: the inspection date and the machine's rental situation. TraviXO makes that connection and warns you early enough to arrange the return and schedule the inspection.",
+      "cta": "The due date follows the machine, including when the machine is no longer with you."
     },
     "exceptions": {
-      "title": "The gaps you need to see right away",
+      "title": "Proof: the gaps the chain surfaces",
       "overdueReturn": {
         "title": "Expected return not scanned",
         "body": "A machine was due back last night and no return has been scanned. TraviXO alerts you the next morning."
@@ -168,20 +172,20 @@
       "title": "Built for how you actually work",
       "btp": {
         "title": "Construction equipment rental",
-        "body": "Aerial platforms, forklifts, compressors, generators. Manage VGP across the whole fleet, know which client each machine is assigned to, and get an alert before an inspection expires during a rental."
+        "body": "Aerial platforms, forklifts, compressors, generators. Know which client each machine is assigned to, track inspection due dates for the equipment subject to them, and be warned before one falls due mid-rental."
       },
       "multiDepot": {
         "title": "Fleet spread across multiple depots",
         "body": "Equipment on 2 or 3 sites, with constant movement. Every scan creates a timestamped trace. An inventory surfaces the missing list as a PDF, sent automatically."
       },
       "excel": {
-        "title": "Centralise your compliance",
-        "body": "Your certificates are in one place, your dates in another, your history nowhere. Import your equipment list and TraviXO connects it all: automatic alerts, centralised certificates, history accessible from every record."
+        "title": "Taking over a scattered record",
+        "body": "Your certificates are in one place, your dates in another, your history nowhere. Import your equipment list exactly as it is and TraviXO attaches the rest to the machine: due dates, reports, movements and history on one record."
       }
     },
     "finalCta": {
-      "title": "Stop losing track of your equipment",
-      "subtitle": "Replace tracking scattered across your systems, folders, and emails with one chain that links the machine to its documents.",
+      "title": "The equipment goes out. The proof goes with it.",
+      "subtitle": "Link every asset to its rentals, its movements, its documents and its compliance, from check-out to return.",
       "primary": "Try It on Your Real Fleet",
       "secondary": "See the demo",
       "badges": [
@@ -205,7 +209,7 @@
     },
     "erpPositioning": {
       "title": "TraviXO does not replace your ERP.",
-      "body": "It connects what your ERP doesn't: the physical machine, its compliance, its documents, and its field traceability."
+      "body": "Your ERP knows the contract and the billing. It does not usually know the condition the machine came back in, or where its latest inspection report is filed. TraviXO links the physical machine to its rentals, its movements, its documents and its compliance."
     },
     "credibility": {
       "title": "Built for real operations",
@@ -232,7 +236,7 @@
     },
     "mission": {
       "title": "Our Mission",
-      "description": "Replace fragmented tracking with a clear system where every machine is identifiable, traceable, and compliant without manual work."
+      "description": "Make the proof travel with the equipment. Every machine stays linked to its rentals, its movements, its documents and its compliance, from check-out to return."
     },
     "values": {
       "title": "What Drives Us",
@@ -263,31 +267,28 @@
       "conclusion": "TraviXO is developed in Paris, hosted in Europe, and GDPR compliant. Our goal is simple: help any company managing equipment know what they have, where it is, and who has it."
     },
     "cta": {
-      "title": "Start tracking properly",
-      "description": "Replace fragmented tracking with a system built for your operations",
+      "title": "See the chain on your own fleet",
+      "description": "From check-out to return, on your equipment file exactly as it is today.",
       "button": "Try It on Your Real Fleet"
     }
   },
   "features": {
     "hero": {
       "title": "TraviXO Features",
-      "subtitle": "From QR tracking to VGP management. The essentials for running a fleet with no blind spots."
+      "subtitle": "Four families, in the order of the chain: the fleet, the rentals, compliance, the proof."
     },
     "differentiators": {
       "import": {
-        "time": "5 min",
-        "title": "Upload Any File",
-        "description": "Import your existing file. No manual re-entry, one record at a time."
+        "title": "Fleet and identification",
+        "description": "One record and one QR code per machine, imported from your existing file."
       },
       "bulk": {
-        "time": "30 sec",
-        "title": "Bulk QR Generation",
-        "description": "Print-ready codes generated in bulk. No clicking through assets one by one."
+        "title": "Rentals and movements",
+        "description": "Check-out, return and recorded condition, captured by scan and attached to the asset."
       },
       "deploy": {
-        "time": "Hours",
-        "title": "Fast Setup",
-        "description": "Tracking starts as soon as your file is imported, with no deployment project first."
+        "title": "Compliance and proof",
+        "description": "Due dates, reports and history carried by the machine, available when an inspection comes."
       }
     },
     "availableNow": {
@@ -408,8 +409,8 @@
       "builtOnDemand": "Built on demand"
     },
     "finalCta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Start by taking back control of your VGP today",
+      "title": "See the chain on your own fleet",
+      "subtitle": "From check-out to return, on your equipment file exactly as it is today.",
       "button": "Start Free Trial"
     }
   },
